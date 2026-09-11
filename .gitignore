@@ -1,0 +1,28 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[oc]
+*.egg-info
+.venv/
+dist/
+wheels/
+
+# Build output (deck, compressed media)
+build/
+
+# Generated data: maps go to GitHub releases, the database is rebuilt from sources
+data/maps/
+data/geography.db
+
+# Downloaded source data caches
+src/geography/*.zip
+src/geography/places/
+src/geography/cache/
+
+# Local scratch and logs
+/maps/
+scratch/
+errors.log
+*.part

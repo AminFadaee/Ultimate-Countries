@@ -1,0 +1,31 @@
+[project]
+name = "geography"
+version = "0.1.0"
+description = "Country data pipeline and the Ultimate Countries Anki deck"
+license = "MIT"
+readme = "README.md"
+authors = [
+    { name = "Amin", email = "amenfd@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "cartopy>=0.26",
+    "genanki>=0.13.1",
+    "geopandas>=1.1",
+    "lxml>=6.1",
+    "matplotlib>=3.11",
+    "numpy>=2.5",
+    "pandas>=3.0",
+    "pyogrio>=0.13",
+    "pyproj>=3.8",
+    "python-dotenv>=1.2",
+    "requests>=2.34",
+    "shapely>=2.1",
+]
+
+[project.scripts]
+geography = "geography.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
