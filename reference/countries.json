@@ -1,0 +1,1426 @@
+{
+  "NLD": {
+    "capitals": [
+      "Amsterdam"
+    ],
+    "demonym": [
+      "Dutch"
+    ],
+    "currencies": [
+      "EUR"
+    ],
+    "official_languages": [
+      [
+        "Dutch"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Rotterdam",
+      "The Hague"
+    ],
+    "member_of": [
+      "European Union",
+      "Eurozone",
+      "Schengen Area",
+      "NATO",
+      "OECD"
+    ],
+    "not_member_of": [
+      "G7",
+      "Commonwealth of Nations"
+    ]
+  },
+  "BEL": {
+    "capitals": [
+      "Brussels",
+      "City of Brussels"
+    ],
+    "demonym": [
+      "Belgian"
+    ],
+    "currencies": [
+      "EUR"
+    ],
+    "official_languages": [
+      [
+        "Dutch"
+      ],
+      [
+        "French"
+      ],
+      [
+        "German"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Antwerp",
+      "Ghent"
+    ],
+    "member_of": [
+      "European Union",
+      "Eurozone",
+      "Schengen Area",
+      "NATO",
+      "OECD"
+    ],
+    "not_member_of": [
+      "G7"
+    ]
+  },
+  "CHE": {
+    "capitals": [
+      "Bern"
+    ],
+    "demonym": [
+      "Swiss"
+    ],
+    "currencies": [
+      "CHF"
+    ],
+    "official_languages": [
+      [
+        "German"
+      ],
+      [
+        "French"
+      ],
+      [
+        "Italian"
+      ]
+    ],
+    "optional_languages": [
+      "Romansh"
+    ],
+    "state_religion": [],
+    "notable_cities": [
+      "Zurich",
+      "Geneva"
+    ],
+    "member_of": [
+      "Schengen Area",
+      "OECD"
+    ],
+    "not_member_of": [
+      "European Union",
+      "NATO"
+    ]
+  },
+  "ESP": {
+    "capitals": [
+      "Madrid"
+    ],
+    "demonym": [
+      "Spanish",
+      "Spaniard"
+    ],
+    "currencies": [
+      "EUR"
+    ],
+    "official_languages": [
+      [
+        "Spanish"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Barcelona",
+      "Seville"
+    ],
+    "member_of": [
+      "European Union",
+      "Eurozone",
+      "Schengen Area",
+      "NATO",
+      "OECD"
+    ],
+    "not_member_of": [
+      "G7"
+    ]
+  },
+  "IRL": {
+    "capitals": [
+      "Dublin"
+    ],
+    "demonym": [
+      "Irish"
+    ],
+    "currencies": [
+      "EUR"
+    ],
+    "official_languages": [
+      [
+        "Irish"
+      ],
+      [
+        "English"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Cork"
+    ],
+    "member_of": [
+      "European Union",
+      "Eurozone",
+      "OECD"
+    ],
+    "not_member_of": [
+      "NATO",
+      "Schengen Area",
+      "Commonwealth of Nations"
+    ]
+  },
+  "MLT": {
+    "capitals": [
+      "Valletta"
+    ],
+    "demonym": [
+      "Maltese"
+    ],
+    "currencies": [
+      "EUR"
+    ],
+    "official_languages": [
+      [
+        "Maltese"
+      ],
+      [
+        "English"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [
+      "Catholicism",
+      "Catholic Church",
+      "Roman Catholicism",
+      "Christianity"
+    ],
+    "notable_cities": [],
+    "member_of": [
+      "European Union",
+      "Eurozone",
+      "Schengen Area",
+      "Commonwealth of Nations"
+    ],
+    "not_member_of": [
+      "NATO"
+    ]
+  },
+  "ITA": {
+    "capitals": [
+      "Rome"
+    ],
+    "demonym": [
+      "Italian"
+    ],
+    "currencies": [
+      "EUR"
+    ],
+    "official_languages": [
+      [
+        "Italian"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Milan",
+      "Venice"
+    ],
+    "member_of": [
+      "European Union",
+      "Eurozone",
+      "Schengen Area",
+      "NATO",
+      "OECD",
+      "G7",
+      "G20"
+    ],
+    "not_member_of": []
+  },
+  "DEU": {
+    "capitals": [
+      "Berlin"
+    ],
+    "demonym": [
+      "German"
+    ],
+    "currencies": [
+      "EUR"
+    ],
+    "official_languages": [
+      [
+        "German"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Munich",
+      "Hamburg"
+    ],
+    "member_of": [
+      "European Union",
+      "Eurozone",
+      "Schengen Area",
+      "NATO",
+      "OECD",
+      "G7",
+      "G20"
+    ],
+    "not_member_of": []
+  },
+  "FRA": {
+    "capitals": [
+      "Paris"
+    ],
+    "demonym": [
+      "French"
+    ],
+    "currencies": [
+      "EUR"
+    ],
+    "official_languages": [
+      [
+        "French"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Lyon",
+      "Marseille"
+    ],
+    "member_of": [
+      "European Union",
+      "Eurozone",
+      "Schengen Area",
+      "NATO",
+      "OECD",
+      "G7",
+      "G20"
+    ],
+    "not_member_of": []
+  },
+  "POL": {
+    "capitals": [
+      "Warsaw"
+    ],
+    "demonym": [
+      "Polish",
+      "Pole"
+    ],
+    "currencies": [
+      "PLN"
+    ],
+    "official_languages": [
+      [
+        "Polish"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Kraków"
+    ],
+    "member_of": [
+      "European Union",
+      "Schengen Area",
+      "NATO",
+      "OECD"
+    ],
+    "not_member_of": [
+      "Eurozone"
+    ]
+  },
+  "RUS": {
+    "capitals": [
+      "Moscow"
+    ],
+    "demonym": [
+      "Russian"
+    ],
+    "currencies": [
+      "RUB"
+    ],
+    "official_languages": [
+      [
+        "Russian"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Saint Petersburg"
+    ],
+    "member_of": [
+      "G20",
+      "BRICS"
+    ],
+    "not_member_of": [
+      "NATO",
+      "European Union"
+    ]
+  },
+  "UKR": {
+    "capitals": [
+      "Kyiv",
+      "Kiev"
+    ],
+    "demonym": [
+      "Ukrainian"
+    ],
+    "currencies": [
+      "UAH"
+    ],
+    "official_languages": [
+      [
+        "Ukrainian"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [],
+    "member_of": [],
+    "not_member_of": [
+      "NATO",
+      "European Union"
+    ]
+  },
+  "TUR": {
+    "capitals": [
+      "Ankara"
+    ],
+    "demonym": [
+      "Turkish",
+      "Turk"
+    ],
+    "currencies": [
+      "TRY"
+    ],
+    "official_languages": [
+      [
+        "Turkish"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Istanbul"
+    ],
+    "member_of": [
+      "NATO",
+      "OECD",
+      "G20"
+    ],
+    "not_member_of": [
+      "European Union"
+    ]
+  },
+  "IRN": {
+    "capitals": [
+      "Tehran"
+    ],
+    "demonym": [
+      "Iranian"
+    ],
+    "currencies": [
+      "IRR"
+    ],
+    "official_languages": [
+      [
+        "Persian"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [
+      "Islam",
+      "Shia Islam",
+      "Twelver Shia Islam"
+    ],
+    "notable_cities": [
+      "Isfahan"
+    ],
+    "member_of": [
+      "OPEC",
+      "BRICS"
+    ],
+    "not_member_of": [
+      "Arab League"
+    ]
+  },
+  "IRQ": {
+    "capitals": [
+      "Baghdad"
+    ],
+    "demonym": [
+      "Iraqi"
+    ],
+    "currencies": [
+      "IQD"
+    ],
+    "official_languages": [
+      [
+        "Arabic"
+      ],
+      [
+        "Kurdish",
+        "Kurdish language",
+        "Sorani"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [
+      "Islam"
+    ],
+    "notable_cities": [
+      "Basra"
+    ],
+    "member_of": [
+      "Arab League",
+      "OPEC"
+    ],
+    "not_member_of": []
+  },
+  "SAU": {
+    "capitals": [
+      "Riyadh"
+    ],
+    "demonym": [
+      "Saudi",
+      "Saudi Arabian"
+    ],
+    "currencies": [
+      "SAR"
+    ],
+    "official_languages": [
+      [
+        "Arabic"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [
+      "Islam"
+    ],
+    "notable_cities": [
+      "Mecca",
+      "Jeddah"
+    ],
+    "member_of": [
+      "Arab League",
+      "OPEC",
+      "G20"
+    ],
+    "not_member_of": []
+  },
+  "EGY": {
+    "capitals": [
+      "Cairo"
+    ],
+    "demonym": [
+      "Egyptian"
+    ],
+    "currencies": [
+      "EGP"
+    ],
+    "official_languages": [
+      [
+        "Arabic"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [
+      "Islam"
+    ],
+    "notable_cities": [
+      "Alexandria"
+    ],
+    "member_of": [
+      "African Union",
+      "Arab League",
+      "BRICS"
+    ],
+    "not_member_of": []
+  },
+  "JOR": {
+    "capitals": [
+      "Amman"
+    ],
+    "demonym": [
+      "Jordanian"
+    ],
+    "currencies": [
+      "JOD"
+    ],
+    "official_languages": [
+      [
+        "Arabic"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [
+      "Islam"
+    ],
+    "notable_cities": [],
+    "member_of": [
+      "Arab League"
+    ],
+    "not_member_of": []
+  },
+  "KWT": {
+    "capitals": [
+      "Kuwait City"
+    ],
+    "demonym": [
+      "Kuwaiti"
+    ],
+    "currencies": [
+      "KWD"
+    ],
+    "official_languages": [
+      [
+        "Arabic"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [
+      "Islam"
+    ],
+    "notable_cities": [],
+    "member_of": [
+      "Arab League",
+      "OPEC"
+    ],
+    "not_member_of": []
+  },
+  "MAR": {
+    "capitals": [
+      "Rabat"
+    ],
+    "demonym": [
+      "Moroccan"
+    ],
+    "currencies": [
+      "MAD"
+    ],
+    "official_languages": [
+      [
+        "Arabic"
+      ],
+      [
+        "Berber",
+        "Tamazight",
+        "Standard Moroccan Tamazight",
+        "Berber languages"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [
+      "Islam"
+    ],
+    "notable_cities": [
+      "Casablanca",
+      "Marrakech"
+    ],
+    "member_of": [
+      "African Union",
+      "Arab League"
+    ],
+    "not_member_of": []
+  },
+  "NGA": {
+    "capitals": [
+      "Abuja"
+    ],
+    "demonym": [
+      "Nigerian"
+    ],
+    "currencies": [
+      "NGN"
+    ],
+    "official_languages": [
+      [
+        "English"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Lagos"
+    ],
+    "member_of": [
+      "African Union",
+      "OPEC",
+      "Commonwealth of Nations"
+    ],
+    "not_member_of": []
+  },
+  "KEN": {
+    "capitals": [
+      "Nairobi"
+    ],
+    "demonym": [
+      "Kenyan"
+    ],
+    "currencies": [
+      "KES"
+    ],
+    "official_languages": [
+      [
+        "English"
+      ],
+      [
+        "Swahili"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Mombasa"
+    ],
+    "member_of": [
+      "African Union",
+      "Commonwealth of Nations"
+    ],
+    "not_member_of": []
+  },
+  "ZAF": {
+    "capitals": [
+      "Pretoria",
+      "Cape Town",
+      "Bloemfontein"
+    ],
+    "demonym": [
+      "South African"
+    ],
+    "currencies": [
+      "ZAR"
+    ],
+    "official_languages": [],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Johannesburg"
+    ],
+    "member_of": [
+      "African Union",
+      "BRICS",
+      "G20",
+      "Commonwealth of Nations"
+    ],
+    "not_member_of": []
+  },
+  "CIV": {
+    "capitals": [
+      "Yamoussoukro"
+    ],
+    "demonym": [
+      "Ivorian"
+    ],
+    "currencies": [
+      "XOF"
+    ],
+    "official_languages": [
+      [
+        "French"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Abidjan"
+    ],
+    "member_of": [
+      "African Union"
+    ],
+    "not_member_of": []
+  },
+  "SEN": {
+    "capitals": [
+      "Dakar"
+    ],
+    "demonym": [
+      "Senegalese"
+    ],
+    "currencies": [
+      "XOF"
+    ],
+    "official_languages": [
+      [
+        "French"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Saint-Louis"
+    ],
+    "member_of": [
+      "African Union"
+    ],
+    "not_member_of": []
+  },
+  "IND": {
+    "capitals": [
+      "New Delhi"
+    ],
+    "demonym": [
+      "Indian"
+    ],
+    "currencies": [
+      "INR"
+    ],
+    "official_languages": [
+      [
+        "Hindi"
+      ],
+      [
+        "English"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Mumbai"
+    ],
+    "member_of": [
+      "Commonwealth of Nations",
+      "G20",
+      "BRICS"
+    ],
+    "not_member_of": []
+  },
+  "PAK": {
+    "capitals": [
+      "Islamabad"
+    ],
+    "demonym": [
+      "Pakistani"
+    ],
+    "currencies": [
+      "PKR"
+    ],
+    "official_languages": [
+      [
+        "Urdu"
+      ],
+      [
+        "English"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [
+      "Islam"
+    ],
+    "notable_cities": [
+      "Karachi",
+      "Lahore"
+    ],
+    "member_of": [
+      "Commonwealth of Nations"
+    ],
+    "not_member_of": []
+  },
+  "CHN": {
+    "capitals": [
+      "Beijing"
+    ],
+    "demonym": [
+      "Chinese"
+    ],
+    "currencies": [
+      "CNY"
+    ],
+    "official_languages": [
+      [
+        "Chinese",
+        "Standard Chinese",
+        "Mandarin Chinese",
+        "Putonghua"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Shanghai"
+    ],
+    "member_of": [
+      "G20",
+      "BRICS"
+    ],
+    "not_member_of": []
+  },
+  "JPN": {
+    "capitals": [
+      "Tokyo"
+    ],
+    "demonym": [
+      "Japanese"
+    ],
+    "currencies": [
+      "JPY"
+    ],
+    "official_languages": [
+      [
+        "Japanese"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Osaka",
+      "Kyoto"
+    ],
+    "member_of": [
+      "G7",
+      "G20",
+      "OECD"
+    ],
+    "not_member_of": []
+  },
+  "IDN": {
+    "capitals": [
+      "Jakarta",
+      "Nusantara"
+    ],
+    "demonym": [
+      "Indonesian"
+    ],
+    "currencies": [
+      "IDR"
+    ],
+    "official_languages": [
+      [
+        "Indonesian"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Surabaya",
+      "Bandung"
+    ],
+    "member_of": [
+      "ASEAN",
+      "G20",
+      "BRICS"
+    ],
+    "not_member_of": []
+  },
+  "PHL": {
+    "capitals": [
+      "Manila"
+    ],
+    "demonym": [
+      "Filipino",
+      "Philippine"
+    ],
+    "currencies": [
+      "PHP"
+    ],
+    "official_languages": [
+      [
+        "Filipino"
+      ],
+      [
+        "English"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [],
+    "member_of": [
+      "ASEAN"
+    ],
+    "not_member_of": []
+  },
+  "MMR": {
+    "capitals": [
+      "Naypyidaw",
+      "Nay Pyi Taw"
+    ],
+    "demonym": [
+      "Burmese",
+      "Myanmar"
+    ],
+    "currencies": [
+      "MMK"
+    ],
+    "official_languages": [
+      [
+        "Burmese"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Yangon",
+      "Mandalay"
+    ],
+    "member_of": [
+      "ASEAN"
+    ],
+    "not_member_of": []
+  },
+  "SGP": {
+    "capitals": [
+      "Singapore"
+    ],
+    "demonym": [
+      "Singaporean"
+    ],
+    "currencies": [
+      "SGD"
+    ],
+    "official_languages": [
+      [
+        "English"
+      ],
+      [
+        "Malay"
+      ],
+      [
+        "Chinese",
+        "Standard Chinese",
+        "Mandarin Chinese"
+      ],
+      [
+        "Tamil"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [],
+    "member_of": [
+      "ASEAN",
+      "Commonwealth of Nations"
+    ],
+    "not_member_of": []
+  },
+  "AUS": {
+    "capitals": [
+      "Canberra"
+    ],
+    "demonym": [
+      "Australian"
+    ],
+    "currencies": [
+      "AUD"
+    ],
+    "official_languages": [
+      [
+        "English"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Sydney",
+      "Melbourne"
+    ],
+    "member_of": [
+      "G20",
+      "OECD",
+      "Commonwealth of Nations"
+    ],
+    "not_member_of": []
+  },
+  "NZL": {
+    "capitals": [
+      "Wellington"
+    ],
+    "demonym": [
+      "New Zealander"
+    ],
+    "currencies": [
+      "NZD"
+    ],
+    "official_languages": [
+      [
+        "English"
+      ],
+      [
+        "Māori",
+        "Maori"
+      ]
+    ],
+    "optional_languages": [
+      "New Zealand Sign Language"
+    ],
+    "state_religion": [],
+    "notable_cities": [
+      "Auckland"
+    ],
+    "member_of": [
+      "Commonwealth of Nations",
+      "OECD"
+    ],
+    "not_member_of": []
+  },
+  "USA": {
+    "capitals": [
+      "Washington, D.C.",
+      "Washington"
+    ],
+    "demonym": [
+      "American"
+    ],
+    "currencies": [
+      "USD"
+    ],
+    "official_languages": [
+      [
+        "English"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "New York City",
+      "Los Angeles"
+    ],
+    "member_of": [
+      "NATO",
+      "G7",
+      "G20",
+      "OECD"
+    ],
+    "not_member_of": []
+  },
+  "CAN": {
+    "capitals": [
+      "Ottawa"
+    ],
+    "demonym": [
+      "Canadian"
+    ],
+    "currencies": [
+      "CAD"
+    ],
+    "official_languages": [
+      [
+        "English"
+      ],
+      [
+        "French"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Toronto",
+      "Montreal"
+    ],
+    "member_of": [
+      "NATO",
+      "G7",
+      "G20",
+      "OECD",
+      "Commonwealth of Nations"
+    ],
+    "not_member_of": []
+  },
+  "MEX": {
+    "capitals": [
+      "Mexico City"
+    ],
+    "demonym": [
+      "Mexican"
+    ],
+    "currencies": [
+      "MXN"
+    ],
+    "official_languages": [
+      [
+        "Spanish"
+      ]
+    ],
+    "optional_languages": [
+      "Nahuatl"
+    ],
+    "state_religion": [],
+    "notable_cities": [
+      "Guadalajara"
+    ],
+    "member_of": [
+      "G20",
+      "OECD"
+    ],
+    "not_member_of": []
+  },
+  "BRA": {
+    "capitals": [
+      "Brasília"
+    ],
+    "demonym": [
+      "Brazilian"
+    ],
+    "currencies": [
+      "BRL"
+    ],
+    "official_languages": [
+      [
+        "Portuguese"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "São Paulo",
+      "Rio de Janeiro"
+    ],
+    "member_of": [
+      "G20",
+      "BRICS"
+    ],
+    "not_member_of": []
+  },
+  "ARG": {
+    "capitals": [
+      "Buenos Aires"
+    ],
+    "demonym": [
+      "Argentine",
+      "Argentinian"
+    ],
+    "currencies": [
+      "ARS"
+    ],
+    "official_languages": [
+      [
+        "Spanish"
+      ]
+    ],
+    "optional_languages": [
+      "Argentine Sign Language"
+    ],
+    "state_religion": [],
+    "notable_cities": [
+      "Córdoba",
+      "Rosario"
+    ],
+    "member_of": [
+      "G20"
+    ],
+    "not_member_of": [
+      "BRICS"
+    ]
+  },
+  "BOL": {
+    "capitals": [
+      "Sucre",
+      "La Paz"
+    ],
+    "demonym": [
+      "Bolivian"
+    ],
+    "currencies": [
+      "BOB"
+    ],
+    "official_languages": [
+      [
+        "Spanish"
+      ],
+      [
+        "Quechua"
+      ],
+      [
+        "Aymara"
+      ],
+      [
+        "Guarani"
+      ]
+    ],
+    "optional_languages": [
+      "Araona",
+      "Baure",
+      "Bésiro",
+      "Canichana",
+      "Cavineña",
+      "Cayubaba",
+      "Chácobo",
+      "Chimán",
+      "Ese Ejja",
+      "Guarasu'we",
+      "Guarayu",
+      "Itonama",
+      "Leco",
+      "Machajuyai-Kallawaya",
+      "Machineri",
+      "Maropa",
+      "Mojeño-Ignaciano",
+      "Mojeño-Trinitario",
+      "Moré",
+      "Mosetén",
+      "Movima",
+      "Pacawara",
+      "Puquina",
+      "Sirionó",
+      "Tacana",
+      "Tapieté",
+      "Toromona",
+      "Uru-Chipaya",
+      "Weenhayek",
+      "Yaminawa",
+      "Yuki",
+      "Yuracaré",
+      "Zamuco"
+    ],
+    "state_religion": [],
+    "notable_cities": [
+      "Santa Cruz de la Sierra"
+    ],
+    "member_of": [],
+    "not_member_of": []
+  },
+  "PRY": {
+    "capitals": [
+      "Asunción"
+    ],
+    "demonym": [
+      "Paraguayan"
+    ],
+    "currencies": [
+      "PYG"
+    ],
+    "official_languages": [
+      [
+        "Spanish"
+      ],
+      [
+        "Guarani"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [],
+    "notable_cities": [
+      "Ciudad del Este"
+    ],
+    "member_of": [],
+    "not_member_of": []
+  },
+  "PER": {
+    "capitals": [
+      "Lima"
+    ],
+    "demonym": [
+      "Peruvian"
+    ],
+    "currencies": [
+      "PEN"
+    ],
+    "official_languages": [
+      [
+        "Spanish"
+      ]
+    ],
+    "optional_languages": [
+      "Quechua",
+      "Aymara"
+    ],
+    "state_religion": [],
+    "notable_cities": [
+      "Cusco",
+      "Arequipa"
+    ],
+    "member_of": [],
+    "not_member_of": []
+  },
+  "CRI": {
+    "capitals": [
+      "San José"
+    ],
+    "demonym": [
+      "Costa Rican"
+    ],
+    "currencies": [
+      "CRC"
+    ],
+    "official_languages": [
+      [
+        "Spanish"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [
+      "Catholicism",
+      "Catholic Church",
+      "Roman Catholicism",
+      "Christianity"
+    ],
+    "notable_cities": [],
+    "member_of": [
+      "OECD"
+    ],
+    "not_member_of": []
+  },
+  "ISL": {
+    "capitals": [
+      "Reykjavík"
+    ],
+    "demonym": [
+      "Icelander",
+      "Icelandic"
+    ],
+    "currencies": [
+      "ISK"
+    ],
+    "official_languages": [
+      [
+        "Icelandic"
+      ]
+    ],
+    "optional_languages": [],
+    "state_religion": [
+      "Church of Iceland",
+      "Lutheranism",
+      "Christianity"
+    ],
+    "notable_cities": [
+      "Akureyri"
+    ],
+    "member_of": [
+      "NATO",
+      "Schengen Area",
+      "OECD"
+    ],
+    "not_member_of": [
+      "European Union"
+    ]
+  },
+  "ETH": {
+    "capitals": [
+      "Addis Ababa"
+    ],
+    "demonym": [
+      "Ethiopian"
+    ],
+    "currencies": [
+      "ETB"
+    ],
+    "official_languages": [
+      [
+        "Amharic"
+      ]
+    ],
+    "optional_languages": [
+      "Oromo",
+      "Tigrinya",
+      "Somali",
+      "Afar"
+    ],
+    "state_religion": [],
+    "notable_cities": [],
+    "member_of": [
+      "African Union",
+      "BRICS"
+    ],
+    "not_member_of": []
+  }
+}
