@@ -1,0 +1,244 @@
+{
+  "id": "Q790",
+  "name": "Haiti",
+  "official_name": "Republic of Haiti",
+  "codes": {
+    "alpha_2": "HT",
+    "alpha_3": "HTI",
+    "ccn3": "332"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 27750.0,
+  "population": 11906095,
+  "demonym": {
+    "male": "Haitian",
+    "female": "Haitian",
+    "others": []
+  },
+  "capitals": [
+    "Port-au-Prince"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q34261",
+      "name": "Port-au-Prince",
+      "latitude": 18.546944444,
+      "longitude": -72.340277777,
+      "population": 987310,
+      "map": "maps/cities/haiti__port_au_prince.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q216835",
+      "name": "Cap-Haïtien",
+      "latitude": 19.75,
+      "longitude": -72.2,
+      "population": 190289,
+      "map": "maps/cities/haiti__cap_haitien.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q923362",
+      "name": "Jacmel",
+      "latitude": 18.234166666,
+      "longitude": -72.534722222,
+      "population": 221965,
+      "map": "maps/cities/haiti__jacmel.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "HTG",
+      "name": "Haitian gourde",
+      "symbol": "G",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Haitian Creole",
+      "code": "hat",
+      "official": "national",
+      "percent": 81.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 42.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 88.7
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 9.4
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.8
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Semi-presidential republic (de jure)",
+    "form": "Semi-presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 6.3,
+    "military_spending_pct_gdp": 0.1
+  },
+  "established": "1804-01-01",
+  "independence": {
+    "date": "1804-01-01",
+    "from": "France"
+  },
+  "memberships": [],
+  "flag": "flags/haiti.svg",
+  "map": "maps/countries/haiti.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Haiti",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

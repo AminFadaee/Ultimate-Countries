@@ -1,0 +1,265 @@
+{
+  "id": "Q1246",
+  "name": "Kosovo",
+  "official_name": "Republic of Kosovo",
+  "codes": {
+    "alpha_2": "XK",
+    "alpha_3": "UNK",
+    "ccn3": null
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": true,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 10908.0,
+  "population": 1582322,
+  "demonym": {
+    "male": "Kosovar",
+    "female": "Kosovar",
+    "others": [
+      "Kosovan"
+    ]
+  },
+  "capitals": [
+    "Pristina"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q25270",
+      "name": "Pristina",
+      "latitude": 42.666666666,
+      "longitude": 21.166666666,
+      "population": 227466,
+      "map": "maps/cities/kosovo__pristina.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q200061",
+      "name": "Prizren",
+      "latitude": 42.23,
+      "longitude": 20.74,
+      "population": 186986,
+      "map": "maps/cities/kosovo__prizren.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q178168",
+      "name": "Mitrovica",
+      "latitude": 42.883333333,
+      "longitude": 20.866666666,
+      "population": 71601,
+      "map": "maps/cities/kosovo__mitrovica.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q112657",
+      "name": "Peja",
+      "latitude": 42.65913,
+      "longitude": 20.28828,
+      "population": 82661,
+      "map": "maps/cities/kosovo__peja.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q739808",
+      "name": "Gjilan",
+      "latitude": 42.466666666,
+      "longitude": 21.466666666,
+      "population": 82980,
+      "map": "maps/cities/kosovo__gjilan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q738901",
+      "name": "Ferizaj",
+      "latitude": 42.37,
+      "longitude": 21.155,
+      "population": 180583,
+      "map": "maps/cities/kosovo__ferizaj.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Albanian",
+      "code": "sqi",
+      "official": "national",
+      "percent": 92.0
+    },
+    {
+      "name": "Serbian",
+      "code": "srp",
+      "official": "national",
+      "percent": 5.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 94.3
+    },
+    {
+      "religion": "Christianity",
+      "percent": 5.6
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 31.9,
+    "military_spending_pct_gdp": null
+  },
+  "established": "2008-02-17",
+  "independence": {
+    "date": "2008-02-17",
+    "from": "Serbia"
+  },
+  "memberships": [],
+  "flag": "flags/kosovo.svg",
+  "map": "maps/countries/kosovo.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Kosovo",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-14",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-14",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-14",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-14",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-14",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-14",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-14",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "id": "Q1030",
+  "name": "Namibia",
+  "official_name": "Republic of Namibia",
+  "codes": {
+    "alpha_2": "NA",
+    "alpha_3": "NAM",
+    "ccn3": "516"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 825615.0,
+  "population": 3092816,
+  "demonym": {
+    "male": "Namibian",
+    "female": "Namibian",
+    "others": []
+  },
+  "capitals": [
+    "Windhoek"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3935",
+      "name": "Windhoek",
+      "latitude": -22.57,
+      "longitude": 17.083611111,
+      "population": 486169,
+      "map": "maps/cities/namibia__windhoek.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q220843",
+      "name": "Walvis Bay",
+      "latitude": -22.949444444,
+      "longitude": 14.506944444,
+      "population": 102704,
+      "map": "maps/cities/namibia__walvis_bay.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q59698",
+      "name": "Swakopmund",
+      "latitude": -22.666666666,
+      "longitude": 14.533333333,
+      "population": 75921,
+      "map": "maps/cities/namibia__swakopmund.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q160884",
+      "name": "Keetmanshoop",
+      "latitude": -26.583333333,
+      "longitude": 18.133333333,
+      "population": 18900,
+      "map": "maps/cities/namibia__keetmanshoop.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "NAD",
+      "name": "Namibian dollar",
+      "symbol": "$",
+      "main": true
+    },
+    {
+      "code": "ZAR",
+      "name": "South African rand",
+      "symbol": "R",
+      "main": false
+    }
+  ],
+  "languages": [
+    {
+      "name": "Afrikaans",
+      "code": "afr",
+      "official": null,
+      "percent": 75.0
+    },
+    {
+      "name": "Kuanyama",
+      "code": "kua",
+      "official": null,
+      "percent": 35.0
+    },
+    {
+      "name": "Ndonga",
+      "code": "ndo",
+      "official": null,
+      "percent": 21.0
+    },
+    {
+      "name": "Nama",
+      "code": "naq",
+      "official": null,
+      "percent": 11.0
+    },
+    {
+      "name": "Herero",
+      "code": "her",
+      "official": null,
+      "percent": 9.1
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 7.0
+    },
+    {
+      "name": "German",
+      "code": "deu",
+      "official": "regional",
+      "percent": 0.9
+    },
+    {
+      "name": "Tswana",
+      "code": "tsn",
+      "official": null,
+      "percent": 0.56
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 90.5
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 5.6
+    },
+    {
+      "religion": "Other religions",
+      "percent": 3.6
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.1
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary semi-presidential republic",
+    "form": "Semi-presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 37.7,
+    "military_spending_pct_gdp": 2.7
+  },
+  "established": "1990-03-21",
+  "independence": {
+    "date": "1990-03-21",
+    "from": "South Africa"
+  },
+  "memberships": [
+    "African Union",
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/namibia.svg",
+  "map": "maps/countries/namibia.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Namibia",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

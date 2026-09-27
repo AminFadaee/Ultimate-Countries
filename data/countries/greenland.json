@@ -1,0 +1,207 @@
+{
+  "id": "Q223",
+  "name": "Greenland",
+  "official_name": "Greenland",
+  "codes": {
+    "alpha_2": "GL",
+    "alpha_3": "GRL",
+    "ccn3": "304"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "autonomous_region",
+    "parent_alpha_3": "DNK"
+  },
+  "region": "Americas",
+  "subregion": "North America",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 2166086.0,
+  "population": 56831,
+  "demonym": {
+    "male": "Greenlandic",
+    "female": "Greenlandic",
+    "others": []
+  },
+  "capitals": [
+    "Nuuk"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q226",
+      "name": "Nuuk",
+      "latitude": 64.175,
+      "longitude": -51.733333333,
+      "population": 18326,
+      "map": "maps/cities/greenland__nuuk.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q695387",
+      "name": "Sermersooq",
+      "latitude": 66.0,
+      "longitude": -40.0,
+      "population": 24643,
+      "map": "maps/cities/greenland__sermersooq.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "DKK",
+      "name": "Danish krone",
+      "symbol": "kr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Greenlandic",
+      "code": "kal",
+      "official": "national",
+      "percent": 84.0
+    },
+    {
+      "name": "Danish",
+      "code": "dan",
+      "official": null,
+      "percent": 14.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Devolved parliamentary government within a unitary constitutional monarchy",
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/greenland.svg",
+  "map": "maps/countries/greenland.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Greenland",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

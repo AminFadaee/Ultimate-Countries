@@ -1,0 +1,204 @@
+{
+  "id": "Q4628",
+  "name": "Faroe Islands",
+  "official_name": "Faroe Islands",
+  "codes": {
+    "alpha_2": "FO",
+    "alpha_3": "FRO",
+    "ccn3": "234"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "autonomous_region",
+    "parent_alpha_3": "DNK"
+  },
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 1393.0,
+  "population": 54900,
+  "demonym": {
+    "male": "Faroese",
+    "female": "Faroese",
+    "others": []
+  },
+  "capitals": [
+    "Tórshavn"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q10704",
+      "name": "Tórshavn",
+      "latitude": 62.00981,
+      "longitude": -6.77135,
+      "population": 14038,
+      "map": "maps/cities/faroe_islands__torshavn.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "DKK",
+      "name": "Danish krone",
+      "symbol": "kr",
+      "main": true
+    },
+    {
+      "code": "FOK",
+      "name": "Faroese króna",
+      "symbol": "kr",
+      "main": false
+    }
+  ],
+  "languages": [
+    {
+      "name": "Faroese",
+      "code": "fao",
+      "official": "national",
+      "percent": 95.0
+    },
+    {
+      "name": "Danish",
+      "code": "dan",
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Devolved governments within a parliamentary constitutional monarchy",
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/faroe_islands.svg",
+  "map": "maps/countries/faroe_islands.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Faroe_Islands",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-26",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-26",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-26",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-26",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-26",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-26",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "id": "Q769",
+  "name": "Grenada",
+  "official_name": "Grenada",
+  "codes": {
+    "alpha_2": "GD",
+    "alpha_3": "GRD",
+    "ccn3": "308"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 344.0,
+  "population": 117303,
+  "demonym": {
+    "male": "Grenadian",
+    "female": "Grenadian",
+    "others": []
+  },
+  "capitals": [
+    "St. George's"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q41547",
+      "name": "St. George's",
+      "latitude": 12.0525,
+      "longitude": -61.753055555,
+      "population": 33734,
+      "map": "maps/cities/grenada__st__george_s.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "XCD",
+      "name": "Eastern Caribbean dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 96.0
+    },
+    {
+      "name": "Grenadian Creole English",
+      "code": "gcl",
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 87.5
+    },
+    {
+      "religion": "Other religions",
+      "percent": 6.2
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 5.8
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.4
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.2
+    }
+  ],
+  "government": {
+    "label": "Unitary constitutional monarchy",
+    "form": "Constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 32.6,
+    "military_spending_pct_gdp": null
+  },
+  "established": "1974-02-07",
+  "independence": {
+    "date": "1974-02-07",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/grenada.svg",
+  "map": "maps/countries/grenada.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Grenada",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-07",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-07",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-07",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-07",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-07",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-07",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

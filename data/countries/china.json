@@ -1,0 +1,305 @@
+{
+  "id": "Q148",
+  "name": "China",
+  "official_name": "People's Republic of China",
+  "codes": {
+    "alpha_2": "CN",
+    "alpha_3": "CHN",
+    "ccn3": "156"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 9706961.0,
+  "population": 1406585000,
+  "demonym": {
+    "male": "Chinese",
+    "female": "Chinese",
+    "others": []
+  },
+  "capitals": [
+    "Beijing"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q956",
+      "name": "Beijing",
+      "latitude": 39.90403,
+      "longitude": 116.407526,
+      "population": 21893095,
+      "map": "maps/cities/china__beijing.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q8686",
+      "name": "Shanghai",
+      "latitude": 31.2325,
+      "longitude": 121.469166666,
+      "population": 24870895,
+      "map": "maps/cities/china__shanghai.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q11725",
+      "name": "Chongqing",
+      "latitude": 29.55,
+      "longitude": 106.506944444,
+      "population": 32054159,
+      "map": "maps/cities/china__chongqing.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q16572",
+      "name": "Guangzhou",
+      "latitude": 23.13,
+      "longitude": 113.26,
+      "population": 18676605,
+      "map": "maps/cities/china__guangzhou.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q11736",
+      "name": "Tianjin",
+      "latitude": 39.146666666,
+      "longitude": 117.205555555,
+      "population": 13866009,
+      "map": "maps/cities/china__tianjin.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q11746",
+      "name": "Wuhan",
+      "latitude": 30.595,
+      "longitude": 114.2975,
+      "population": 12326518,
+      "map": "maps/cities/china__wuhan.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "CNY",
+      "name": "Chinese yuan",
+      "symbol": "¥",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Chinese",
+      "code": "zho",
+      "official": "national",
+      "percent": 90.0
+    },
+    {
+      "name": "Sichuan Yi",
+      "code": "iii",
+      "official": null,
+      "percent": 0.6
+    },
+    {
+      "name": "Uyghur",
+      "code": "uig",
+      "official": null,
+      "percent": 0.55
+    },
+    {
+      "name": "Zhuang",
+      "code": "zha",
+      "official": null,
+      "percent": 0.31
+    },
+    {
+      "name": "Mongolian",
+      "code": "mon",
+      "official": null,
+      "percent": 0.26
+    },
+    {
+      "name": "Tibetan",
+      "code": "bod",
+      "official": null,
+      "percent": 0.2
+    },
+    {
+      "name": "Korean",
+      "code": "kor",
+      "official": null,
+      "percent": 0.15
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Unaffiliated",
+      "percent": 89.6
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 3.7
+    },
+    {
+      "religion": "Other religions",
+      "percent": 3.0
+    },
+    {
+      "religion": "Christianity",
+      "percent": 1.8
+    },
+    {
+      "religion": "Islam",
+      "percent": 1.8
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary communist state",
+    "form": "Communist state"
+  },
+  "economy": {
+    "system": "Socialist market economy",
+    "disputed": true,
+    "disputed_with": "Market economy",
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 33.8,
+    "military_spending_pct_gdp": 1.7
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [
+    "BRICS",
+    "G20"
+  ],
+  "flag": "flags/china.svg",
+  "map": "maps/countries/china.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/China",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

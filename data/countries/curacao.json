@@ -1,0 +1,239 @@
+{
+  "id": "Q25279",
+  "name": "Curaçao",
+  "official_name": "Country of Curaçao",
+  "codes": {
+    "alpha_2": "CW",
+    "alpha_3": "CUW",
+    "ccn3": "531"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "constituent_country",
+    "parent_alpha_3": "NLD"
+  },
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 444.0,
+  "population": 156263,
+  "demonym": {
+    "male": "Curaçaoan",
+    "female": "Curaçaoan",
+    "others": []
+  },
+  "capitals": [
+    "Willemstad"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q132679",
+      "name": "Willemstad",
+      "latitude": 12.108,
+      "longitude": -68.935,
+      "population": 136660,
+      "map": "maps/cities/curacao__willemstad.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "XCG",
+      "name": "Caribbean guilder",
+      "symbol": "Cg",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Papiamento",
+      "code": "pap",
+      "official": "national",
+      "percent": 81.0
+    },
+    {
+      "name": "Dutch",
+      "code": "nld",
+      "official": "national",
+      "percent": 8.0
+    },
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": null,
+      "percent": 3.7
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 90.6
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 5.9
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 2.0
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.5
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.4
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.3
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.2
+    }
+  ],
+  "government": {
+    "label": "Parliamentary representative democracy within a constitutional monarchy",
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/curacao.svg",
+  "map": "maps/countries/curacao.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Cura%C3%A7ao",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

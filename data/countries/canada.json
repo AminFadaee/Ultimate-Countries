@@ -1,0 +1,461 @@
+{
+  "id": "Q16",
+  "name": "Canada",
+  "official_name": "Canada",
+  "codes": {
+    "alpha_2": "CA",
+    "alpha_3": "CAN",
+    "ccn3": "124"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "North America",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 9984670.0,
+  "population": 41651653,
+  "demonym": {
+    "male": "Canadian",
+    "female": "Canadian",
+    "others": []
+  },
+  "capitals": [
+    "Ottawa"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1930",
+      "name": "Ottawa",
+      "latitude": 45.424722222,
+      "longitude": -75.695,
+      "population": 1017449,
+      "map": "maps/cities/canada__ottawa.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q172",
+      "name": "Toronto",
+      "latitude": 43.670277777,
+      "longitude": -79.386666666,
+      "population": 2794356,
+      "map": "maps/cities/canada__toronto.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q340",
+      "name": "Montreal",
+      "latitude": 45.5033426,
+      "longitude": -73.5868411,
+      "population": 1895211,
+      "map": "maps/cities/canada__montreal.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q36312",
+      "name": "Calgary",
+      "latitude": 51.0475,
+      "longitude": -114.0625,
+      "population": 1306784,
+      "map": "maps/cities/canada__calgary.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q24639",
+      "name": "Vancouver",
+      "latitude": 49.260833333,
+      "longitude": -123.113888888,
+      "population": 662248,
+      "map": "maps/cities/canada__vancouver.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q2096",
+      "name": "Edmonton",
+      "latitude": 53.533333333,
+      "longitude": -113.5,
+      "population": 1010899,
+      "map": "maps/cities/canada__edmonton.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "CAD",
+      "name": "Canadian dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 87.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 29.0
+    },
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": null,
+      "percent": 3.2
+    },
+    {
+      "name": "Chinese",
+      "code": "zho",
+      "official": null,
+      "percent": 2.7
+    },
+    {
+      "name": "Punjabi",
+      "code": "pan",
+      "official": null,
+      "percent": 2.6
+    },
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": null,
+      "percent": 2.3
+    },
+    {
+      "name": "Hindi",
+      "code": "hin",
+      "official": null,
+      "percent": 2.1
+    },
+    {
+      "name": "Filipino",
+      "code": "fil",
+      "official": null,
+      "percent": 2.0
+    },
+    {
+      "name": "Italian",
+      "code": "ita",
+      "official": null,
+      "percent": 1.5
+    },
+    {
+      "name": "German",
+      "code": "deu",
+      "official": null,
+      "percent": 1.2
+    },
+    {
+      "name": "Urdu",
+      "code": "urd",
+      "official": null,
+      "percent": 1.1
+    },
+    {
+      "name": "Portuguese",
+      "code": "por",
+      "official": null,
+      "percent": 0.93
+    },
+    {
+      "name": "Russian",
+      "code": "rus",
+      "official": null,
+      "percent": 0.85
+    },
+    {
+      "name": "Tamil",
+      "code": "tam",
+      "official": null,
+      "percent": 0.65
+    },
+    {
+      "name": "Vietnamese",
+      "code": "vie",
+      "official": null,
+      "percent": 0.64
+    },
+    {
+      "name": "Persian",
+      "code": "fas",
+      "official": null,
+      "percent": 0.61
+    },
+    {
+      "name": "Gujarati",
+      "code": "guj",
+      "official": null,
+      "percent": 0.58
+    },
+    {
+      "name": "Korean",
+      "code": "kor",
+      "official": null,
+      "percent": 0.56
+    },
+    {
+      "name": "Polish",
+      "code": "pol",
+      "official": null,
+      "percent": 0.56
+    },
+    {
+      "name": "Greek",
+      "code": "ell",
+      "official": null,
+      "percent": 0.4
+    },
+    {
+      "name": "Ukrainian",
+      "code": "ukr",
+      "official": null,
+      "percent": 0.36
+    },
+    {
+      "name": "Bangla",
+      "code": "ben",
+      "official": null,
+      "percent": 0.33
+    },
+    {
+      "name": "Romanian",
+      "code": "ron",
+      "official": null,
+      "percent": 0.32
+    },
+    {
+      "name": "Dutch",
+      "code": "nld",
+      "official": null,
+      "percent": 0.3
+    },
+    {
+      "name": "Japanese",
+      "code": "jpn",
+      "official": null,
+      "percent": 0.27
+    },
+    {
+      "name": "Serbian",
+      "code": "srp",
+      "official": null,
+      "percent": 0.23
+    },
+    {
+      "name": "Turkish",
+      "code": "tur",
+      "official": null,
+      "percent": 0.22
+    },
+    {
+      "name": "Croatian",
+      "code": "hrv",
+      "official": null,
+      "percent": 0.2
+    },
+    {
+      "name": "Hungarian",
+      "code": "hun",
+      "official": null,
+      "percent": 0.18
+    },
+    {
+      "name": "Somali",
+      "code": "som",
+      "official": null,
+      "percent": 0.16
+    },
+    {
+      "name": "Inuktitut",
+      "code": "iku",
+      "official": "regional",
+      "percent": 0.11
+    },
+    {
+      "name": "Plautdietsch",
+      "code": "pdt",
+      "official": null,
+      "percent": 0.11
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 53.3
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 34.6
+    },
+    {
+      "religion": "Islam",
+      "percent": 4.9
+    },
+    {
+      "religion": "Other religions",
+      "percent": 3.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 1.7
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 1.5
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.9
+    }
+  ],
+  "government": {
+    "label": "Federal parliamentary constitutional monarchy",
+    "form": "Federal constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy with extensive welfare state",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 43.8,
+    "military_spending_pct_gdp": 1.3
+  },
+  "established": null,
+  "independence": {
+    "date": "1867-07-01",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "Commonwealth of Nations",
+    "G20",
+    "G7",
+    "NATO",
+    "OECD"
+  ],
+  "flag": "flags/canada.svg",
+  "map": "maps/countries/canada.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Canada",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-23",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-23",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-23",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-23",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-23",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-23",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "id": "Q36",
+  "name": "Poland",
+  "official_name": "Republic of Poland",
+  "codes": {
+    "alpha_2": "PL",
+    "alpha_3": "POL",
+    "ccn3": "616"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 312679.0,
+  "population": 36435861,
+  "demonym": {
+    "male": "Polish",
+    "female": "Polish",
+    "others": []
+  },
+  "capitals": [
+    "Warsaw"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q270",
+      "name": "Warsaw",
+      "latitude": 52.23,
+      "longitude": 21.011111111,
+      "population": 1862402,
+      "map": "maps/cities/poland__warsaw.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q31487",
+      "name": "Kraków",
+      "latitude": 50.061388888,
+      "longitude": 19.937222222,
+      "population": 804237,
+      "map": "maps/cities/poland__krakow.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1799",
+      "name": "Wrocław",
+      "latitude": 51.11,
+      "longitude": 17.0325,
+      "population": 673531,
+      "map": "maps/cities/poland__wrocaw.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1792",
+      "name": "Gdańsk",
+      "latitude": 54.3482907,
+      "longitude": 18.6540233,
+      "population": 487834,
+      "map": "maps/cities/poland__gdansk.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q268",
+      "name": "Poznań",
+      "latitude": 52.408333333,
+      "longitude": 16.933611111,
+      "population": 546859,
+      "map": "maps/cities/poland__poznan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q580",
+      "name": "Łódź",
+      "latitude": 51.75,
+      "longitude": 19.466666666,
+      "population": 648711,
+      "map": "maps/cities/poland__odz.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "PLN",
+      "name": "Polish złoty",
+      "symbol": "zł",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Polish",
+      "code": "pol",
+      "official": "national",
+      "percent": 96.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 33.0
+    },
+    {
+      "name": "German",
+      "code": "deu",
+      "official": "regional",
+      "percent": 19.0
+    },
+    {
+      "name": "Russian",
+      "code": "rus",
+      "official": null,
+      "percent": 18.0
+    },
+    {
+      "name": "Silesian",
+      "code": "szl",
+      "official": null,
+      "percent": 1.3
+    },
+    {
+      "name": "Belarusian",
+      "code": "bel",
+      "official": "regional",
+      "percent": 0.58
+    },
+    {
+      "name": "Ukrainian",
+      "code": "ukr",
+      "official": null,
+      "percent": 0.39
+    },
+    {
+      "name": "Kashubian",
+      "code": "csb",
+      "official": "regional",
+      "percent": 0.13
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 91.2
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 8.6
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy with extensive welfare state",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 49.8,
+    "military_spending_pct_gdp": 4.2
+  },
+  "established": "1918-11-11",
+  "independence": {
+    "date": "1918-11-11",
+    "from": "Russia, Austria-Hungary, Germany"
+  },
+  "memberships": [
+    "European Union",
+    "NATO",
+    "OECD",
+    "Schengen Area"
+  ],
+  "flag": "flags/poland.svg",
+  "map": "maps/countries/poland.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Poland",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-24",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-24",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-24",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-24",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-24",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-24",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

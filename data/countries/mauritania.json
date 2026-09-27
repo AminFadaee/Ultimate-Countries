@@ -1,0 +1,272 @@
+{
+  "id": "Q1025",
+  "name": "Mauritania",
+  "official_name": "Islamic Republic of Mauritania",
+  "codes": {
+    "alpha_2": "MR",
+    "alpha_3": "MRT",
+    "ccn3": "478"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 1030700.0,
+  "population": 5315065,
+  "demonym": {
+    "male": "Mauritanian",
+    "female": "Mauritanian",
+    "others": []
+  },
+  "capitals": [
+    "Nouakchott"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3688",
+      "name": "Nouakchott",
+      "latitude": 18.08581,
+      "longitude": -15.9785,
+      "population": 1446761,
+      "map": "maps/cities/mauritania__nouakchott.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q184184",
+      "name": "Nouadhibou",
+      "latitude": 20.91475,
+      "longitude": -17.050166666,
+      "population": 173525,
+      "map": "maps/cities/mauritania__nouadhibou.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q492778",
+      "name": "Kiffa",
+      "latitude": 16.622888888,
+      "longitude": -11.399111111,
+      "population": 84101,
+      "map": "maps/cities/mauritania__kiffa.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q735645",
+      "name": "Atar",
+      "latitude": 20.518555555,
+      "longitude": -13.053888888,
+      "population": 35170,
+      "map": "maps/cities/mauritania__atar.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "MRU",
+      "name": "Mauritanian ouguiya",
+      "symbol": "UM",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Hassaniyya",
+      "code": "mey",
+      "official": null,
+      "percent": 87.0
+    },
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 85.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": null,
+      "percent": 13.0
+    },
+    {
+      "name": "Fula",
+      "code": "ful",
+      "official": null,
+      "percent": 5.7
+    },
+    {
+      "name": "Wolof",
+      "code": "wol",
+      "official": null,
+      "percent": 0.23
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 99.2
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.5
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.2
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary semi-presidential Islamic republic",
+    "form": "Islamic republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 26.2,
+    "military_spending_pct_gdp": 2.2
+  },
+  "established": "1960-11-28",
+  "independence": {
+    "date": "1960-11-28",
+    "from": "France"
+  },
+  "memberships": [
+    "African Union",
+    "Arab League"
+  ],
+  "flag": "flags/mauritania.svg",
+  "map": "maps/countries/mauritania.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Mauritania",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

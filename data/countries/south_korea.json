@@ -1,0 +1,275 @@
+{
+  "id": "Q884",
+  "name": "South Korea",
+  "official_name": "Republic of Korea",
+  "codes": {
+    "alpha_2": "KR",
+    "alpha_3": "KOR",
+    "ccn3": "410"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 100210.0,
+  "population": 51684564,
+  "demonym": {
+    "male": "South Korean",
+    "female": "South Korean",
+    "others": []
+  },
+  "capitals": [
+    "Seoul"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q8684",
+      "name": "Seoul",
+      "latitude": 37.56,
+      "longitude": 126.99,
+      "population": 9668465,
+      "map": "maps/cities/south_korea__seoul.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q16520",
+      "name": "Busan",
+      "latitude": 35.18,
+      "longitude": 129.075,
+      "population": 3453198,
+      "map": "maps/cities/south_korea__busan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q20934",
+      "name": "Incheon",
+      "latitude": 37.463888888,
+      "longitude": 126.648611111,
+      "population": 3049315,
+      "map": "maps/cities/south_korea__incheon.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q20927",
+      "name": "Daegu",
+      "latitude": 35.871666666,
+      "longitude": 128.601666666,
+      "population": 2376044,
+      "map": "maps/cities/south_korea__daegu.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q41283",
+      "name": "Gwangju",
+      "latitude": 35.166666666,
+      "longitude": 126.916666666,
+      "population": 1409624,
+      "map": "maps/cities/south_korea__gwangju.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q20921",
+      "name": "Daejeon",
+      "latitude": 36.35,
+      "longitude": 127.385,
+      "population": 1475221,
+      "map": "maps/cities/south_korea__daejeon.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "KRW",
+      "name": "South Korean won",
+      "symbol": "₩",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Korean",
+      "code": "kor",
+      "official": "national",
+      "percent": 100.0
+    },
+    {
+      "name": "Korean Sign Language",
+      "code": "kvk",
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Unaffiliated",
+      "percent": 48.3
+    },
+    {
+      "religion": "Christianity",
+      "percent": 32.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 19.0
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.3
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.3
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 23.4,
+    "military_spending_pct_gdp": 2.6
+  },
+  "established": "1948-08-15",
+  "independence": null,
+  "memberships": [
+    "G20",
+    "OECD"
+  ],
+  "flag": "flags/south_korea.svg",
+  "map": "maps/countries/south_korea.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/South_Korea",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-08",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-08",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-08",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-08",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-08",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-08",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

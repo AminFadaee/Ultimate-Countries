@@ -1,0 +1,324 @@
+{
+  "id": "Q1041",
+  "name": "Senegal",
+  "official_name": "Republic of Senegal",
+  "codes": {
+    "alpha_2": "SN",
+    "alpha_3": "SEN",
+    "ccn3": "686"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 196722.0,
+  "population": 18931966,
+  "demonym": {
+    "male": "Senegalese",
+    "female": "Senegalese",
+    "others": []
+  },
+  "capitals": [
+    "Dakar"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3718",
+      "name": "Dakar",
+      "latitude": 14.672555555,
+      "longitude": -17.432,
+      "population": 1438725,
+      "map": "maps/cities/senegal__dakar.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q273779",
+      "name": "Saint-Louis",
+      "latitude": 16.033333333,
+      "longitude": -16.5,
+      "population": 258592,
+      "map": "maps/cities/senegal__saint_louis.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q600693",
+      "name": "Thiès",
+      "latitude": 14.791638888,
+      "longitude": -16.924944444,
+      "population": 391253,
+      "map": "maps/cities/senegal__thies.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q202776",
+      "name": "Ziguinchor",
+      "latitude": 12.586111111,
+      "longitude": -16.27075,
+      "population": 214874,
+      "map": "maps/cities/senegal__ziguinchor.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q847677",
+      "name": "Kaolack",
+      "latitude": 14.138888888,
+      "longitude": -16.076388888,
+      "population": 172305,
+      "map": "maps/cities/senegal__kaolack.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "XOF",
+      "name": "West African CFA franc",
+      "symbol": "Fr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Wolof",
+      "code": "wol",
+      "official": null,
+      "percent": 70.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 26.0
+    },
+    {
+      "name": "Fula",
+      "code": "ful",
+      "official": null,
+      "percent": 21.0
+    },
+    {
+      "name": "Serer",
+      "code": "srr",
+      "official": null,
+      "percent": 11.0
+    },
+    {
+      "name": "Jola-Fonyi",
+      "code": "dyo",
+      "official": null,
+      "percent": 2.6
+    },
+    {
+      "name": "Saafi-Saafi",
+      "code": "sav",
+      "official": null,
+      "percent": 1.5
+    },
+    {
+      "name": "Mandjak",
+      "code": "mfv",
+      "official": null,
+      "percent": 0.77
+    },
+    {
+      "name": "Balanta-Ganja",
+      "code": "bjt",
+      "official": null,
+      "percent": 0.61
+    },
+    {
+      "name": "Noon",
+      "code": "snf",
+      "official": null,
+      "percent": 0.24
+    },
+    {
+      "name": "Mankanya",
+      "code": "knf",
+      "official": null,
+      "percent": 0.21
+    },
+    {
+      "name": "Badyara",
+      "code": "pbp",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Balanta",
+      "code": null,
+      "official": null,
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 97.6
+    },
+    {
+      "religion": "Christianity",
+      "percent": 2.4
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary semi-presidential republic",
+    "form": "Semi-presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 27.3,
+    "military_spending_pct_gdp": 1.6
+  },
+  "established": "1960-08-20",
+  "independence": {
+    "date": "1960",
+    "from": "France"
+  },
+  "memberships": [
+    "African Union"
+  ],
+  "flag": "flags/senegal.svg",
+  "map": "maps/countries/senegal.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Senegal",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

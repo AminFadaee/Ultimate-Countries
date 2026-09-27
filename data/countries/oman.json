@@ -1,0 +1,282 @@
+{
+  "id": "Q842",
+  "name": "Oman",
+  "official_name": "Sultanate of Oman",
+  "codes": {
+    "alpha_2": "OM",
+    "alpha_3": "OMN",
+    "ccn3": "512"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 309500.0,
+  "population": 5494691,
+  "demonym": {
+    "male": "Omani",
+    "female": "Omani",
+    "others": []
+  },
+  "capitals": [
+    "Muscat"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3826",
+      "name": "Muscat",
+      "latitude": 23.613888888,
+      "longitude": 58.592222222,
+      "population": 1421409,
+      "map": "maps/cities/oman__muscat.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1294439",
+      "name": "Salalah",
+      "latitude": 17.019722222,
+      "longitude": 54.089722222,
+      "population": 331949,
+      "map": "maps/cities/oman__salalah.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1915327",
+      "name": "Nizwa",
+      "latitude": 22.933333333,
+      "longitude": 57.533333333,
+      "population": 83544,
+      "map": "maps/cities/oman__nizwa.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q943270",
+      "name": "Sohar",
+      "latitude": 24.342,
+      "longitude": 56.729888888,
+      "population": 219264,
+      "map": "maps/cities/oman__sohar.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q737270",
+      "name": "Sur",
+      "latitude": 22.566666666,
+      "longitude": 59.528888888,
+      "population": 120000,
+      "map": "maps/cities/oman__sur.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q426646",
+      "name": "Khasab",
+      "latitude": 26.183333333,
+      "longitude": 56.25,
+      "population": 17777,
+      "map": "maps/cities/oman__khasab.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "OMR",
+      "name": "Omani rial",
+      "symbol": "ر.ع.",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 81.0
+    },
+    {
+      "name": "Baluchi",
+      "code": "bal",
+      "official": null,
+      "percent": 4.9
+    },
+    {
+      "name": "Persian",
+      "code": "fas",
+      "official": null,
+      "percent": 0.94
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 81.8
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 9.5
+    },
+    {
+      "religion": "Christianity",
+      "percent": 8.1
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.4
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary Islamic absolute monarchy",
+    "form": "Absolute monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 27.5,
+    "military_spending_pct_gdp": 5.6
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [
+    "Arab League"
+  ],
+  "flag": "flags/oman.svg",
+  "map": "maps/countries/oman.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Oman",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

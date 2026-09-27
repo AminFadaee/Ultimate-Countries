@@ -1,0 +1,197 @@
+{
+  "id": "Q763",
+  "name": "Saint Kitts and Nevis",
+  "official_name": "Federation of Saint Christopher and Nevis",
+  "codes": {
+    "alpha_2": "KN",
+    "alpha_3": "KNA",
+    "ccn3": "659"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 261.0,
+  "population": 46922,
+  "demonym": {
+    "male": "Kittitian or Nevisian",
+    "female": "Kittitian or Nevisian",
+    "others": []
+  },
+  "capitals": [
+    "Basseterre"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q41295",
+      "name": "Basseterre",
+      "latitude": 17.298333333,
+      "longitude": -62.734166666,
+      "population": 12920,
+      "map": "maps/cities/saint_kitts_and_nevis__basseterre.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "XCD",
+      "name": "Eastern Caribbean dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 98.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Federal parliamentary constitutional monarchy",
+    "form": "Federal constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": true,
+    "disputed_with": "Market economy with extensive welfare state",
+    "income_group": "High income",
+    "government_spending_pct_gdp": 40.0,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": {
+    "date": "1983-09-19",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/saint_kitts_and_nevis.svg",
+  "map": "maps/countries/saint_kitts_and_nevis.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

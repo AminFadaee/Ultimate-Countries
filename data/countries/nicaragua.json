@@ -1,0 +1,265 @@
+{
+  "id": "Q811",
+  "name": "Nicaragua",
+  "official_name": "Republic of Nicaragua",
+  "codes": {
+    "alpha_2": "NI",
+    "alpha_3": "NIC",
+    "ccn3": "558"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "Central America",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 130373.0,
+  "population": 7007502,
+  "demonym": {
+    "male": "Nicaraguan",
+    "female": "Nicaraguan",
+    "others": []
+  },
+  "capitals": [
+    "Managua"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3274",
+      "name": "Managua",
+      "latitude": 12.154680555,
+      "longitude": -86.273725,
+      "population": 937489,
+      "map": "maps/cities/nicaragua__managua.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q208151",
+      "name": "León",
+      "latitude": 12.434825,
+      "longitude": -86.878833333,
+      "population": 174051,
+      "map": "maps/cities/nicaragua__leon.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1001914",
+      "name": "Masaya",
+      "latitude": 11.973616666,
+      "longitude": -86.096058333,
+      "population": 139582,
+      "map": "maps/cities/nicaragua__masaya.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q974354",
+      "name": "Chinandega",
+      "latitude": 12.631052777,
+      "longitude": -87.134738888,
+      "population": 121793,
+      "map": "maps/cities/nicaragua__chinandega.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1007634",
+      "name": "Estelí",
+      "latitude": 13.092930555,
+      "longitude": -86.356158333,
+      "population": 112084,
+      "map": "maps/cities/nicaragua__esteli.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q885996",
+      "name": "Bluefields",
+      "latitude": 12.013125,
+      "longitude": -83.764911111,
+      "population": 45547,
+      "map": "maps/cities/nicaragua__bluefields.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "NIO",
+      "name": "Nicaraguan córdoba",
+      "symbol": "C$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": "national",
+      "percent": 78.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 84.8
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 13.3
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.9
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary diarchic presidential socialist republic under an authoritarian dictatorship",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 27.2,
+    "military_spending_pct_gdp": 0.5
+  },
+  "established": null,
+  "independence": {
+    "date": "1821",
+    "from": "Spain"
+  },
+  "memberships": [],
+  "flag": "flags/nicaragua.svg",
+  "map": "maps/countries/nicaragua.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Nicaragua",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

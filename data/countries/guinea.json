@@ -1,0 +1,275 @@
+{
+  "id": "Q1006",
+  "name": "Guinea",
+  "official_name": "Republic of Guinea",
+  "codes": {
+    "alpha_2": "GN",
+    "alpha_3": "GIN",
+    "ccn3": "324"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 245857.0,
+  "population": 15099727,
+  "demonym": {
+    "male": "Guinean",
+    "female": "Guinean",
+    "others": []
+  },
+  "capitals": [
+    "Conakry"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3733",
+      "name": "Conakry",
+      "latitude": 9.509166666,
+      "longitude": -13.712222222,
+      "population": 1667864,
+      "map": "maps/cities/guinea__conakry.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1002799",
+      "name": "Nzérékoré",
+      "latitude": 7.752222222,
+      "longitude": -8.821666666,
+      "population": 316065,
+      "map": "maps/cities/guinea__nzerekore.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q874317",
+      "name": "Kankan",
+      "latitude": 10.383333333,
+      "longitude": -9.3,
+      "population": 190772,
+      "map": "maps/cities/guinea__kankan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q997057",
+      "name": "Kindia",
+      "latitude": 10.05692,
+      "longitude": -12.86576,
+      "population": null,
+      "map": "maps/cities/guinea__kindia.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "GNF",
+      "name": "Guinean franc",
+      "symbol": "Fr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 27.0
+    },
+    {
+      "name": "Fula",
+      "code": "ful",
+      "official": null,
+      "percent": 26.0
+    },
+    {
+      "name": "Mandingo",
+      "code": "man",
+      "official": null,
+      "percent": 23.0
+    },
+    {
+      "name": "Susu",
+      "code": "sus",
+      "official": null,
+      "percent": 11.0
+    },
+    {
+      "name": "N’Ko",
+      "code": "nqo",
+      "official": null,
+      "percent": 5.0
+    },
+    {
+      "name": "Kpelle",
+      "code": "kpe",
+      "official": null,
+      "percent": 3.8
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 86.8
+    },
+    {
+      "religion": "Christianity",
+      "percent": 11.7
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 1.3
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 17.6,
+    "military_spending_pct_gdp": 2.1
+  },
+  "established": "1958-10-02",
+  "independence": {
+    "date": "1958-10-02",
+    "from": "France"
+  },
+  "memberships": [
+    "African Union"
+  ],
+  "flag": "flags/guinea.svg",
+  "map": "maps/countries/guinea.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Guinea",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

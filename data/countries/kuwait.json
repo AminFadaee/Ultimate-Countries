@@ -1,0 +1,229 @@
+{
+  "id": "Q817",
+  "name": "Kuwait",
+  "official_name": "State of Kuwait",
+  "codes": {
+    "alpha_2": "KW",
+    "alpha_3": "KWT",
+    "ccn3": "414"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 17818.0,
+  "population": 4865298,
+  "demonym": {
+    "male": "Kuwaiti",
+    "female": "Kuwaiti",
+    "others": []
+  },
+  "capitals": [
+    "Kuwait City"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q35178",
+      "name": "Kuwait City",
+      "latitude": 29.375,
+      "longitude": 47.98,
+      "population": 2989000,
+      "map": "maps/cities/kuwait__kuwait_city.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "KWD",
+      "name": "Kuwaiti dinar",
+      "symbol": "د.ك",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 100.0
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 80.2
+    },
+    {
+      "religion": "Christianity",
+      "percent": 10.5
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 8.5
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.3
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.2
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary constitutional monarchy",
+    "form": "Constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy with extensive welfare state",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 51.8,
+    "military_spending_pct_gdp": 4.8
+  },
+  "established": null,
+  "independence": {
+    "date": "1961",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "Arab League",
+    "OPEC"
+  ],
+  "flag": "flags/kuwait.svg",
+  "map": "maps/countries/kuwait.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Kuwait",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

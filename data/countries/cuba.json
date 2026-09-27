@@ -1,0 +1,269 @@
+{
+  "id": "Q241",
+  "name": "Cuba",
+  "official_name": "Republic of Cuba",
+  "codes": {
+    "alpha_2": "CU",
+    "alpha_3": "CUB",
+    "ccn3": "192"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 109884.0,
+  "population": 10937203,
+  "demonym": {
+    "male": "Cuban",
+    "female": "Cuban",
+    "others": []
+  },
+  "capitals": [
+    "Havana"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1563",
+      "name": "Havana",
+      "latitude": 23.136666666,
+      "longitude": -82.358888888,
+      "population": 2492618,
+      "map": "maps/cities/cuba__havana.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q117040",
+      "name": "Santiago de Cuba",
+      "latitude": 20.021666666,
+      "longitude": -75.829444444,
+      "population": 506037,
+      "map": "maps/cities/cuba__santiago_de_cuba.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q115329",
+      "name": "Camagüey",
+      "latitude": 21.378611111,
+      "longitude": -77.918611111,
+      "population": 321992,
+      "map": "maps/cities/cuba__camaguey.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q185156",
+      "name": "Guantánamo",
+      "latitude": 20.138333,
+      "longitude": -75.206111,
+      "population": 228436,
+      "map": "maps/cities/cuba__guantanamo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q211590",
+      "name": "Santa Clara",
+      "latitude": 22.406666666,
+      "longitude": -79.953055555,
+      "population": 247436,
+      "map": "maps/cities/cuba__santa_clara.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q244154",
+      "name": "Holguin",
+      "latitude": 20.887222222,
+      "longitude": -76.263055555,
+      "population": 350191,
+      "map": "maps/cities/cuba__holguin.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "CUP",
+      "name": "Cuban peso",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": "national",
+      "percent": 100.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 60.7
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 21.6
+    },
+    {
+      "religion": "Other religions",
+      "percent": 17.4
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.2
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Communist state",
+    "form": "Communist state"
+  },
+  "economy": {
+    "system": "Socialist planned economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": {
+    "date": "1902-05-20",
+    "from": "United States"
+  },
+  "memberships": [],
+  "flag": "flags/cuba.svg",
+  "map": "maps/countries/cuba.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Cuba",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

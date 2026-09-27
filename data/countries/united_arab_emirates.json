@@ -1,0 +1,290 @@
+{
+  "id": "Q878",
+  "name": "United Arab Emirates",
+  "official_name": "United Arab Emirates",
+  "codes": {
+    "alpha_2": "AE",
+    "alpha_3": "ARE",
+    "ccn3": "784"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 83600.0,
+  "population": 11513149,
+  "demonym": {
+    "male": "Emirati",
+    "female": "Emirati",
+    "others": [
+      "Emiri",
+      "Emirian"
+    ]
+  },
+  "capitals": [
+    "Abu Dhabi"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1519",
+      "name": "Abu Dhabi",
+      "latitude": 24.451111111,
+      "longitude": 54.396944444,
+      "population": 1570000,
+      "map": "maps/cities/united_arab_emirates__abu_dhabi.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q612",
+      "name": "Dubai",
+      "latitude": 25.269722222,
+      "longitude": 55.309444444,
+      "population": 3944751,
+      "map": "maps/cities/united_arab_emirates__dubai.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q234600",
+      "name": "Al Ain",
+      "latitude": 24.2075,
+      "longitude": 55.744722222,
+      "population": 766936,
+      "map": "maps/cities/united_arab_emirates__al_ain.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q530171",
+      "name": "Ajman",
+      "latitude": 25.399444444,
+      "longitude": 55.479722222,
+      "population": 490035,
+      "map": "maps/cities/united_arab_emirates__ajman.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "AED",
+      "name": "United Arab Emirates dirham",
+      "symbol": "د.إ",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 78.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 50.0
+    },
+    {
+      "name": "Malayalam",
+      "code": "mal",
+      "official": null,
+      "percent": 7.0
+    },
+    {
+      "name": "Pashto",
+      "code": "pus",
+      "official": null,
+      "percent": 2.9
+    },
+    {
+      "name": "Baluchi",
+      "code": "bal",
+      "official": null,
+      "percent": 2.3
+    },
+    {
+      "name": "Persian",
+      "code": "fas",
+      "official": null,
+      "percent": 1.9
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 72.9
+    },
+    {
+      "religion": "Christianity",
+      "percent": 14.3
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 11.8
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.5
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.3
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.2
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Federal semi-presidential elective semi-constitutional monarchy",
+    "form": "Federal semi-constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 24.0,
+    "military_spending_pct_gdp": null
+  },
+  "established": "1971-12-02",
+  "independence": {
+    "date": "1971-12-02",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "Arab League",
+    "BRICS",
+    "OPEC"
+  ],
+  "flag": "flags/united_arab_emirates.svg",
+  "map": "maps/countries/united_arab_emirates.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/United_Arab_Emirates",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

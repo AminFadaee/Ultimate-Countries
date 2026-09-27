@@ -1,0 +1,257 @@
+{
+  "id": "Q1027",
+  "name": "Mauritius",
+  "official_name": "Republic of Mauritius",
+  "codes": {
+    "alpha_2": "MU",
+    "alpha_3": "MUS",
+    "ccn3": "480"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 2040.0,
+  "population": 1243741,
+  "demonym": {
+    "male": "Mauritian",
+    "female": "Mauritian",
+    "others": []
+  },
+  "capitals": [
+    "Port Louis"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3929",
+      "name": "Port Louis",
+      "latitude": -20.161944444,
+      "longitude": 57.498888888,
+      "population": 149194,
+      "map": "maps/cities/mauritius__port_louis.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "MUR",
+      "name": "Mauritian rupee",
+      "symbol": "₨",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Morisyen",
+      "code": "mfe",
+      "official": null,
+      "percent": 90.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 73.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 72.0
+    },
+    {
+      "name": "Bhojpuri",
+      "code": "bho",
+      "official": null,
+      "percent": 8.6
+    },
+    {
+      "name": "Urdu",
+      "code": "urd",
+      "official": null,
+      "percent": 5.2
+    },
+    {
+      "name": "Tamil",
+      "code": "tam",
+      "official": null,
+      "percent": 2.5
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Hinduism",
+      "percent": 48.3
+    },
+    {
+      "religion": "Christianity",
+      "percent": 32.9
+    },
+    {
+      "religion": "Islam",
+      "percent": 17.5
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.8
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.4
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.2
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 27.9,
+    "military_spending_pct_gdp": 0.1
+  },
+  "established": "1968-03-12",
+  "independence": {
+    "date": "1968-03-12",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "African Union",
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/mauritius.svg",
+  "map": "maps/countries/mauritius.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Mauritius",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-19",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-19",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-19",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-19",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-19",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-19",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

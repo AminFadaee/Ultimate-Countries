@@ -1,0 +1,306 @@
+{
+  "id": "Q1049",
+  "name": "Sudan",
+  "official_name": "Republic of the Sudan",
+  "codes": {
+    "alpha_2": "SD",
+    "alpha_3": "SDN",
+    "ccn3": "729"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 1886068.0,
+  "population": 51662147,
+  "demonym": {
+    "male": "Sudanese",
+    "female": "Sudanese",
+    "others": []
+  },
+  "capitals": [
+    "Khartoum"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1963",
+      "name": "Khartoum",
+      "latitude": 15.60308,
+      "longitude": 32.52654,
+      "population": 5345000,
+      "map": "maps/cities/sudan__khartoum.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q208718",
+      "name": "Port Sudan",
+      "latitude": 19.615833333,
+      "longitude": 37.216388888,
+      "population": 579942,
+      "map": "maps/cities/sudan__port_sudan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q309475",
+      "name": "El-Obeid",
+      "latitude": 13.183333333,
+      "longitude": 30.216666666,
+      "population": 560471,
+      "map": "maps/cities/sudan__el_obeid.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q686813",
+      "name": "Kassala",
+      "latitude": 15.45,
+      "longitude": 36.4,
+      "population": 536009,
+      "map": "maps/cities/sudan__kassala.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q311204",
+      "name": "Al-Fashir",
+      "latitude": 13.626983333,
+      "longitude": 25.349583333,
+      "population": 286277,
+      "map": "maps/cities/sudan__al_fashir.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q851576",
+      "name": "Nyala",
+      "latitude": 12.05,
+      "longitude": 24.883333333,
+      "population": 492984,
+      "map": "maps/cities/sudan__nyala.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "SDG",
+      "name": "Sudanese pound",
+      "symbol": "ج.س",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 61.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 61.0
+    },
+    {
+      "name": "Beja",
+      "code": "bej",
+      "official": null,
+      "percent": 5.4
+    },
+    {
+      "name": "Fur",
+      "code": "fvr",
+      "official": null,
+      "percent": 2.7
+    },
+    {
+      "name": "Hausa",
+      "code": "hau",
+      "official": null,
+      "percent": 1.8
+    },
+    {
+      "name": "Masalit",
+      "code": "mls",
+      "official": null,
+      "percent": 0.99
+    },
+    {
+      "name": "Nobiin",
+      "code": "fia",
+      "official": null,
+      "percent": 0.83
+    },
+    {
+      "name": "Zaghawa",
+      "code": "zag",
+      "official": null,
+      "percent": 0.51
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 98.9
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.6
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.5
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Federal republic under a military junta",
+    "form": "Federal republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Low income",
+    "government_spending_pct_gdp": 12.6,
+    "military_spending_pct_gdp": 0.9
+  },
+  "established": "1956-01-01",
+  "independence": {
+    "date": "1956-01-01",
+    "from": "United Kingdom, Egypt"
+  },
+  "memberships": [
+    "African Union",
+    "Arab League"
+  ],
+  "flag": "flags/sudan.svg",
+  "map": "maps/countries/sudan.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Sudan",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2021",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

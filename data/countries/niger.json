@@ -1,0 +1,271 @@
+{
+  "id": "Q1032",
+  "name": "Niger",
+  "official_name": "Republic of Niger",
+  "codes": {
+    "alpha_2": "NE",
+    "alpha_3": "NER",
+    "ccn3": "562"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 1267000.0,
+  "population": 27917831,
+  "demonym": {
+    "male": "Nigerien",
+    "female": "Nigerien",
+    "others": []
+  },
+  "capitals": [
+    "Niamey"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3674",
+      "name": "Niamey",
+      "latitude": 13.515,
+      "longitude": 2.1175,
+      "population": 1496260,
+      "map": "maps/cities/niger__niamey.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q204365",
+      "name": "Zinder",
+      "latitude": 13.801705555,
+      "longitude": 8.98535246,
+      "population": 235605,
+      "map": "maps/cities/niger__zinder.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q664550",
+      "name": "Maradi",
+      "latitude": 13.5,
+      "longitude": 7.1,
+      "population": 267249,
+      "map": "maps/cities/niger__maradi.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q320049",
+      "name": "Agadez",
+      "latitude": 16.9742,
+      "longitude": 7.9865,
+      "population": 110497,
+      "map": "maps/cities/niger__agadez.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "XOF",
+      "name": "West African CFA franc",
+      "symbol": "Fr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Hausa",
+      "code": "hau",
+      "official": "national",
+      "percent": 41.0
+    },
+    {
+      "name": "Zarma",
+      "code": "dje",
+      "official": null,
+      "percent": 17.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": null,
+      "percent": 13.0
+    },
+    {
+      "name": "Fula",
+      "code": "ful",
+      "official": null,
+      "percent": 7.0
+    },
+    {
+      "name": "Tamashek",
+      "code": "tmh",
+      "official": null,
+      "percent": 6.0
+    },
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": null,
+      "percent": 0.21
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 98.1
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 1.2
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.6
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    }
+  ],
+  "government": {
+    "label": "Unitary semi-presidential republic under a military junta",
+    "form": "Semi-presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Low income",
+    "government_spending_pct_gdp": 14.1,
+    "military_spending_pct_gdp": 2.2
+  },
+  "established": "1960-08-07",
+  "independence": {
+    "date": "1960",
+    "from": "France"
+  },
+  "memberships": [
+    "African Union"
+  ],
+  "flag": "flags/niger.svg",
+  "map": "maps/countries/niger.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Niger",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

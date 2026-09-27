@@ -1,0 +1,258 @@
+{
+  "id": "Q1000",
+  "name": "Gabon",
+  "official_name": "Gabonese Republic",
+  "codes": {
+    "alpha_2": "GA",
+    "alpha_3": "GAB",
+    "ccn3": "266"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 267668.0,
+  "population": 2593130,
+  "demonym": {
+    "male": "Gabonese",
+    "female": "Gabonese",
+    "others": []
+  },
+  "capitals": [
+    "Libreville"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3825",
+      "name": "Libreville",
+      "latitude": 0.407777777,
+      "longitude": 9.440277777,
+      "population": 899000,
+      "map": "maps/cities/gabon__libreville.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q501715",
+      "name": "Port-Gentil",
+      "latitude": -0.716666666,
+      "longitude": 8.783333333,
+      "population": 154632,
+      "map": "maps/cities/gabon__port_gentil.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q459369",
+      "name": "Franceville",
+      "latitude": -1.633333333,
+      "longitude": 13.583333333,
+      "population": 110568,
+      "map": "maps/cities/gabon__franceville.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q983886",
+      "name": "Oyem",
+      "latitude": 1.599972222,
+      "longitude": 11.573583333,
+      "population": 60685,
+      "map": "maps/cities/gabon__oyem.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q874197",
+      "name": "Lambaréné",
+      "latitude": -0.688333333,
+      "longitude": 10.231944444,
+      "population": 38775,
+      "map": "maps/cities/gabon__lambarene.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "XAF",
+      "name": "Central African CFA franc",
+      "symbol": "Fr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 63.0
+    },
+    {
+      "name": "Punu",
+      "code": "puu",
+      "official": null,
+      "percent": 9.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 83.7
+    },
+    {
+      "religion": "Islam",
+      "percent": 8.6
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 5.8
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.9
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 25.5,
+    "military_spending_pct_gdp": 1.5
+  },
+  "established": "1960-08-17",
+  "independence": {
+    "date": "1960-08-17",
+    "from": "France"
+  },
+  "memberships": [
+    "African Union",
+    "Commonwealth of Nations",
+    "OPEC"
+  ],
+  "flag": "flags/gabon.svg",
+  "map": "maps/countries/gabon.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Gabon",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

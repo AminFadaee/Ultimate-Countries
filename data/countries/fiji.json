@@ -1,0 +1,259 @@
+{
+  "id": "Q712",
+  "name": "Fiji",
+  "official_name": "Republic of Fiji",
+  "codes": {
+    "alpha_2": "FJ",
+    "alpha_3": "FJI",
+    "ccn3": "242"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Oceania",
+  "subregion": "Melanesia",
+  "continents": [
+    "Oceania"
+  ],
+  "area_km2": 18272.0,
+  "population": 933154,
+  "demonym": {
+    "male": "Fijian",
+    "female": "Fijian",
+    "others": []
+  },
+  "capitals": [
+    "Suva"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q38807",
+      "name": "Suva",
+      "latitude": -18.133333333,
+      "longitude": 178.433333333,
+      "population": 88271,
+      "map": "maps/cities/fiji__suva.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q619443",
+      "name": "Nadi",
+      "latitude": -17.8,
+      "longitude": 177.416666666,
+      "population": 71048,
+      "map": "maps/cities/fiji__nadi.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "FJD",
+      "name": "Fijian dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 94.0
+    },
+    {
+      "name": "Fiji Hindi",
+      "code": "hif",
+      "official": "national",
+      "percent": 44.0
+    },
+    {
+      "name": "Fijian",
+      "code": "fij",
+      "official": "national",
+      "percent": 39.0
+    },
+    {
+      "name": "Rotuman",
+      "code": "rtm",
+      "official": null,
+      "percent": 0.26
+    },
+    {
+      "name": "Standard Hindi",
+      "code": null,
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 69.5
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 24.1
+    },
+    {
+      "religion": "Islam",
+      "percent": 5.8
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.3
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.3
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 31.2,
+    "military_spending_pct_gdp": 1.3
+  },
+  "established": "1970-10-10",
+  "independence": {
+    "date": "1970-10-10",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/fiji.svg",
+  "map": "maps/countries/fiji.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Fiji",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

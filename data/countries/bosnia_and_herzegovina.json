@@ -1,0 +1,283 @@
+{
+  "id": "Q225",
+  "name": "Bosnia and Herzegovina",
+  "official_name": "Bosnia and Herzegovina",
+  "codes": {
+    "alpha_2": "BA",
+    "alpha_3": "BIH",
+    "ccn3": "070"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 51209.0,
+  "population": 3140095,
+  "demonym": {
+    "male": "Bosnian, Herzegovinian",
+    "female": "Bosnian, Herzegovinian",
+    "others": []
+  },
+  "capitals": [
+    "Sarajevo"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q11194",
+      "name": "Sarajevo",
+      "latitude": 43.856388888,
+      "longitude": 18.413055555,
+      "population": 275524,
+      "map": "maps/cities/bosnia_and_herzegovina__sarajevo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q131127",
+      "name": "Banja Luka",
+      "latitude": 44.7725,
+      "longitude": 17.1925,
+      "population": 185042,
+      "map": "maps/cities/bosnia_and_herzegovina__banja_luka.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q93347",
+      "name": "Mostar",
+      "latitude": 43.343611111,
+      "longitude": 17.8075,
+      "population": 105448,
+      "map": "maps/cities/bosnia_and_herzegovina__mostar.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q174684",
+      "name": "Tuzla",
+      "latitude": 44.5391105,
+      "longitude": 18.675193,
+      "population": 110979,
+      "map": "maps/cities/bosnia_and_herzegovina__tuzla.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q184046",
+      "name": "Zenica",
+      "latitude": 44.201666666,
+      "longitude": 17.903888888,
+      "population": 70553,
+      "map": "maps/cities/bosnia_and_herzegovina__zenica.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q204434",
+      "name": "Bihać",
+      "latitude": 44.814722222,
+      "longitude": 15.869166666,
+      "population": 56261,
+      "map": "maps/cities/bosnia_and_herzegovina__bihac.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "BAM",
+      "name": "Bosnia and Herzegovina convertible mark",
+      "symbol": "KM",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Bosnian",
+      "code": "bos",
+      "official": "national",
+      "percent": 99.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 45.0
+    },
+    {
+      "name": "Croatian",
+      "code": "hrv",
+      "official": "national",
+      "percent": 12.0
+    },
+    {
+      "name": "Serbian",
+      "code": "srp",
+      "official": "national",
+      "percent": 10.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 53.6
+    },
+    {
+      "religion": "Christianity",
+      "percent": 44.7
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 1.0
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.6
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Federal parliamentary directorial republic",
+    "form": "Federal directorial republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 44.6,
+    "military_spending_pct_gdp": 0.7
+  },
+  "established": "1992-03-03",
+  "independence": {
+    "date": "1992",
+    "from": "Yugoslavia"
+  },
+  "memberships": [],
+  "flag": "flags/bosnia_and_herzegovina.svg",
+  "map": "maps/countries/bosnia_and_herzegovina.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

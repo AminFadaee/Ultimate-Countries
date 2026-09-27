@@ -1,0 +1,312 @@
+{
+  "id": "Q833",
+  "name": "Malaysia",
+  "official_name": "Malaysia",
+  "codes": {
+    "alpha_2": "MY",
+    "alpha_3": "MYS",
+    "ccn3": "458"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 330803.0,
+  "population": 35977838,
+  "demonym": {
+    "male": "Malaysian",
+    "female": "Malaysian",
+    "others": []
+  },
+  "capitals": [
+    "Kuala Lumpur"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1865",
+      "name": "Kuala Lumpur",
+      "latitude": 3.147777777,
+      "longitude": 101.695277777,
+      "population": 9000280,
+      "map": "maps/cities/malaysia__kuala_lumpur.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q231318",
+      "name": "Johor Bahru",
+      "latitude": 1.455555555,
+      "longitude": 103.761111111,
+      "population": 797882,
+      "map": "maps/cities/malaysia__johor_bahru.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q271619",
+      "name": "Ipoh",
+      "latitude": 4.6,
+      "longitude": 101.07,
+      "population": 866772,
+      "map": "maps/cities/malaysia__ipoh.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q61092",
+      "name": "George Town",
+      "latitude": 5.4145,
+      "longitude": 100.3292,
+      "population": 794313,
+      "map": "maps/cities/malaysia__george_town.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q61089",
+      "name": "Malacca",
+      "latitude": 2.188888888,
+      "longitude": 102.251111111,
+      "population": 455300,
+      "map": "maps/cities/malaysia__malacca.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q182378",
+      "name": "Putrajaya",
+      "latitude": 2.93,
+      "longitude": 101.69,
+      "population": 109202,
+      "map": "maps/cities/malaysia__putrajaya.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "MYR",
+      "name": "Malaysian ringgit",
+      "symbol": "RM",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Malay",
+      "code": "msa",
+      "official": "national",
+      "percent": 75.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 21.0
+    },
+    {
+      "name": "Chinese",
+      "code": "zho",
+      "official": null,
+      "percent": 17.0
+    },
+    {
+      "name": "Tamil",
+      "code": "tam",
+      "official": null,
+      "percent": 4.2
+    },
+    {
+      "name": "Iban",
+      "code": "iba",
+      "official": null,
+      "percent": 2.5
+    },
+    {
+      "name": "Javanese",
+      "code": "jav",
+      "official": null,
+      "percent": 1.2
+    },
+    {
+      "name": "Central Dusun",
+      "code": "dtp",
+      "official": null,
+      "percent": 0.56
+    },
+    {
+      "name": "Malayalam",
+      "code": "mal",
+      "official": null,
+      "percent": 0.15
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 64.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 18.9
+    },
+    {
+      "religion": "Christianity",
+      "percent": 9.2
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 6.1
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.9
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.8
+    }
+  ],
+  "government": {
+    "label": "Federal parliamentary constitutional elective monarchy",
+    "form": "Federal constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 22.5,
+    "military_spending_pct_gdp": 1.0
+  },
+  "established": null,
+  "independence": {
+    "date": "1963-09-16",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "ASEAN",
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/malaysia.svg",
+  "map": "maps/countries/malaysia.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Malaysia",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "id": "Q786",
+  "name": "Dominican Republic",
+  "official_name": "Dominican Republic",
+  "codes": {
+    "alpha_2": "DO",
+    "alpha_3": "DOM",
+    "ccn3": "214"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 48671.0,
+  "population": 11520487,
+  "demonym": {
+    "male": "Dominican",
+    "female": "Dominican",
+    "others": []
+  },
+  "capitals": [
+    "Santo Domingo"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q34820",
+      "name": "Santo Domingo",
+      "latitude": 18.4625,
+      "longitude": -69.936111111,
+      "population": 2201941,
+      "map": "maps/cities/dominican_republic__santo_domingo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q42763",
+      "name": "Santiago de los Caballeros",
+      "latitude": 19.45,
+      "longitude": -70.7,
+      "population": 1343423,
+      "map": "maps/cities/dominican_republic__santiago_de_los_caballeros.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q988413",
+      "name": "Puerto Plata",
+      "latitude": 19.795833,
+      "longitude": -70.694444,
+      "population": 338339,
+      "map": "maps/cities/dominican_republic__puerto_plata.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1568095",
+      "name": "Punta Cana",
+      "latitude": 18.533333333,
+      "longitude": -68.366666666,
+      "population": 138919,
+      "map": "maps/cities/dominican_republic__punta_cana.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q680596",
+      "name": "San Pedro de Macorís",
+      "latitude": 18.457222,
+      "longitude": -69.306111,
+      "population": 217141,
+      "map": "maps/cities/dominican_republic__san_pedro_de_macoris.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q40508",
+      "name": "La Romana",
+      "latitude": 18.43,
+      "longitude": -68.97,
+      "population": 139238,
+      "map": "maps/cities/dominican_republic__la_romana.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "DOP",
+      "name": "Dominican peso",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": "national",
+      "percent": 78.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 77.6
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 19.6
+    },
+    {
+      "religion": "Other religions",
+      "percent": 2.7
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 18.3,
+    "military_spending_pct_gdp": 0.8
+  },
+  "established": "1844-02-27",
+  "independence": {
+    "date": "1844-02-27",
+    "from": "Haiti"
+  },
+  "memberships": [],
+  "flag": "flags/dominican_republic.svg",
+  "map": "maps/countries/dominican_republic.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Dominican_Republic",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

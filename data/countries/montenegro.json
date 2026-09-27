@@ -1,0 +1,271 @@
+{
+  "id": "Q236",
+  "name": "Montenegro",
+  "official_name": "Montenegro",
+  "codes": {
+    "alpha_2": "ME",
+    "alpha_3": "MNE",
+    "ccn3": "499"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 13812.0,
+  "population": 623129,
+  "demonym": {
+    "male": "Montenegrin",
+    "female": "Montenegrin",
+    "others": []
+  },
+  "capitals": [
+    "Podgorica"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q23564",
+      "name": "Podgorica",
+      "latitude": 42.441388888,
+      "longitude": 19.262777777,
+      "population": 150977,
+      "map": "maps/cities/montenegro__podgorica.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q200733",
+      "name": "Nikšić",
+      "latitude": 42.7731,
+      "longitude": 18.94446,
+      "population": 58212,
+      "map": "maps/cities/montenegro__niksic.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q173338",
+      "name": "Cetinje",
+      "latitude": 42.389444444,
+      "longitude": 18.924722222,
+      "population": 13991,
+      "map": "maps/cities/montenegro__cetinje.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q193103",
+      "name": "Herceg Novi",
+      "latitude": 42.453055555,
+      "longitude": 18.5375,
+      "population": 19536,
+      "map": "maps/cities/montenegro__herceg_novi.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q207470",
+      "name": "Bijelo Polje",
+      "latitude": 43.029166666,
+      "longitude": 19.745555555,
+      "population": 15883,
+      "map": "maps/cities/montenegro__bijelo_polje.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q115276",
+      "name": "Bar",
+      "latitude": 42.1,
+      "longitude": 19.1,
+      "population": 13719,
+      "map": "maps/cities/montenegro__bar.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Serbian",
+      "code": "srp",
+      "official": null,
+      "percent": 100.0
+    },
+    {
+      "name": "Albanian",
+      "code": "sqi",
+      "official": null,
+      "percent": 7.9
+    },
+    {
+      "name": "Montenegrin",
+      "code": null,
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 76.0
+    },
+    {
+      "religion": "Islam",
+      "percent": 21.3
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.5
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 1.1
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 44.0,
+    "military_spending_pct_gdp": 1.8
+  },
+  "established": null,
+  "independence": {
+    "date": "2006-05-21",
+    "from": "Serbia and Montenegro"
+  },
+  "memberships": [
+    "NATO"
+  ],
+  "flag": "flags/montenegro.svg",
+  "map": "maps/countries/montenegro.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Montenegro",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

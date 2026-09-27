@@ -1,0 +1,230 @@
+{
+  "id": "Q17012",
+  "name": "Guadeloupe",
+  "official_name": "Guadeloupe",
+  "codes": {
+    "alpha_2": "GP",
+    "alpha_3": "GLP",
+    "ccn3": "312"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "overseas_department",
+    "parent_alpha_3": "FRA"
+  },
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 1628.0,
+  "population": 400132,
+  "demonym": {
+    "male": "Guadeloupean",
+    "female": "Guadeloupean",
+    "others": []
+  },
+  "capitals": [
+    "Basse-Terre"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q167024",
+      "name": "Basse-Terre",
+      "latitude": 15.996944444,
+      "longitude": -61.732777777,
+      "population": 9417,
+      "map": "maps/cities/guadeloupe__basse_terre.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q13636",
+      "name": "Les Abymes",
+      "latitude": 16.270555555,
+      "longitude": -61.504722222,
+      "population": 51055,
+      "map": "maps/cities/guadeloupe__les_abymes.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "French",
+      "code": "fra",
+      "official": null,
+      "percent": 84.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 95.9
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 2.5
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.5
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.4
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.4
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.2
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.2
+    }
+  ],
+  "government": {
+    "label": null,
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/guadeloupe.svg",
+  "map": "maps/countries/guadeloupe.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Guadeloupe",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

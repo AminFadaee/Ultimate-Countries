@@ -1,0 +1,316 @@
+{
+  "id": "Q29",
+  "name": "Spain",
+  "official_name": "Kingdom of Spain",
+  "codes": {
+    "alpha_2": "ES",
+    "alpha_3": "ESP",
+    "ccn3": "724"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 505992.0,
+  "population": 49355143,
+  "demonym": {
+    "male": "Spanish",
+    "female": "Spanish",
+    "others": [
+      "Spaniard"
+    ]
+  },
+  "capitals": [
+    "Madrid"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q2807",
+      "name": "Madrid",
+      "latitude": 40.416944444,
+      "longitude": -3.703333333,
+      "population": 3506730,
+      "map": "maps/cities/spain__madrid.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1492",
+      "name": "Barcelona",
+      "latitude": 41.3825,
+      "longitude": 2.176944444,
+      "population": 1731649,
+      "map": "maps/cities/spain__barcelona.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q8818",
+      "name": "Valencia",
+      "latitude": 39.47,
+      "longitude": -0.376388888,
+      "population": 840792,
+      "map": "maps/cities/spain__valencia.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q8717",
+      "name": "Seville",
+      "latitude": 37.388611111,
+      "longitude": -5.995,
+      "population": 689423,
+      "map": "maps/cities/spain__seville.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q10305",
+      "name": "Zaragoza",
+      "latitude": 41.65,
+      "longitude": -0.883333333,
+      "population": 693091,
+      "map": "maps/cities/spain__zaragoza.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q8851",
+      "name": "Málaga",
+      "latitude": 36.716666666,
+      "longitude": -4.416666666,
+      "population": 599063,
+      "map": "maps/cities/spain__malaga.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": "national",
+      "percent": 99.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 24.0
+    },
+    {
+      "name": "Catalan",
+      "code": "cat",
+      "official": "regional",
+      "percent": 17.0
+    },
+    {
+      "name": "Galician",
+      "code": "glg",
+      "official": "regional",
+      "percent": 7.0
+    },
+    {
+      "name": "Basque",
+      "code": "eus",
+      "official": "regional",
+      "percent": 2.0
+    },
+    {
+      "name": "Asturian",
+      "code": "ast",
+      "official": null,
+      "percent": 1.3
+    },
+    {
+      "name": "Extremaduran",
+      "code": "ext",
+      "official": null,
+      "percent": 0.49
+    },
+    {
+      "name": "Occitan",
+      "code": "oci",
+      "official": "regional",
+      "percent": 0.01
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 69.5
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 26.4
+    },
+    {
+      "religion": "Islam",
+      "percent": 3.6
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.4
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary constitutional monarchy",
+    "form": "Constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy with extensive welfare state",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 45.3,
+    "military_spending_pct_gdp": 1.4
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [
+    "European Union",
+    "Eurozone",
+    "NATO",
+    "OECD",
+    "Schengen Area"
+  ],
+  "flag": "flags/spain.svg",
+  "map": "maps/countries/spain.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Spain",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

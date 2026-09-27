@@ -1,0 +1,316 @@
+{
+  "id": "Q34",
+  "name": "Sweden",
+  "official_name": "Kingdom of Sweden",
+  "codes": {
+    "alpha_2": "SE",
+    "alpha_3": "SWE",
+    "ccn3": "752"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 450295.0,
+  "population": 10596620,
+  "demonym": {
+    "male": "Swedish",
+    "female": "Swedish",
+    "others": []
+  },
+  "capitals": [
+    "Stockholm"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1754",
+      "name": "Stockholm",
+      "latitude": 59.329444444,
+      "longitude": 18.068611111,
+      "population": 984748,
+      "map": "maps/cities/sweden__stockholm.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q25287",
+      "name": "Gothenburg",
+      "latitude": 57.7075,
+      "longitude": 11.9675,
+      "population": 674529,
+      "map": "maps/cities/sweden__gothenburg.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q2211",
+      "name": "Malmö",
+      "latitude": 55.583333333,
+      "longitude": 13.0,
+      "population": 339316,
+      "map": "maps/cities/sweden__malmo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q25286",
+      "name": "Uppsala",
+      "latitude": 59.849760548,
+      "longitude": 17.638946597,
+      "population": 174982,
+      "map": "maps/cities/sweden__uppsala.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q25732",
+      "name": "Örebro",
+      "latitude": 59.266926001,
+      "longitude": 15.196522467,
+      "population": 128658,
+      "map": "maps/cities/sweden__orebro.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q25412",
+      "name": "Västerås",
+      "latitude": 59.61731938,
+      "longitude": 16.542157497,
+      "population": 131643,
+      "map": "maps/cities/sweden__vasteras.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "SEK",
+      "name": "Swedish krona",
+      "symbol": "kr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Swedish",
+      "code": "swe",
+      "official": "national",
+      "percent": 95.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 86.0
+    },
+    {
+      "name": "Finnish",
+      "code": "fin",
+      "official": null,
+      "percent": 2.2
+    },
+    {
+      "name": "Meänkieli",
+      "code": "fit",
+      "official": null,
+      "percent": 0.55
+    },
+    {
+      "name": "Northern Sami",
+      "code": "sme",
+      "official": null,
+      "percent": 0.33
+    },
+    {
+      "name": "Romani",
+      "code": "rom",
+      "official": null,
+      "percent": 0.09
+    },
+    {
+      "name": "Yiddish",
+      "code": "yid",
+      "official": null,
+      "percent": 0.028
+    },
+    {
+      "name": "Sámi",
+      "code": null,
+      "official": null,
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 60.8
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 28.9
+    },
+    {
+      "religion": "Islam",
+      "percent": 8.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.8
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.8
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.5
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.2
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary constitutional monarchy",
+    "form": "Constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy with extensive welfare state",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 48.2,
+    "military_spending_pct_gdp": 2.0
+  },
+  "established": null,
+  "independence": {
+    "date": "1523-06-06",
+    "from": "Kalmar Union"
+  },
+  "memberships": [
+    "European Union",
+    "NATO",
+    "OECD",
+    "Schengen Area"
+  ],
+  "flag": "flags/sweden.svg",
+  "map": "maps/countries/sweden.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Sweden",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-18",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-18",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-18",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-18",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-18",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-18",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "id": "Q717",
+  "name": "Venezuela",
+  "official_name": "Bolivarian Republic of Venezuela",
+  "codes": {
+    "alpha_2": "VE",
+    "alpha_3": "VEN",
+    "ccn3": "862"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "South America",
+  "continents": [
+    "South America"
+  ],
+  "area_km2": 916445.0,
+  "population": 28516896,
+  "demonym": {
+    "male": "Venezuelan",
+    "female": "Venezuelan",
+    "others": []
+  },
+  "capitals": [
+    "Caracas"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1533",
+      "name": "Caracas",
+      "latitude": 10.506111111,
+      "longitude": -66.914444444,
+      "population": 2245744,
+      "map": "maps/cities/venezuela__caracas.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q171632",
+      "name": "Maracaibo",
+      "latitude": 10.633333333,
+      "longitude": -71.633333333,
+      "population": 1551539,
+      "map": "maps/cities/venezuela__maracaibo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q54880",
+      "name": "Valencia",
+      "latitude": 10.166666666,
+      "longitude": -68.0,
+      "population": 1484430,
+      "map": "maps/cities/venezuela__valencia.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q4709",
+      "name": "Barquisimeto",
+      "latitude": 10.067777777,
+      "longitude": -69.346694444,
+      "population": 1059092,
+      "map": "maps/cities/venezuela__barquisimeto.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q333928",
+      "name": "Maracay",
+      "latitude": 10.246944444,
+      "longitude": -67.595833333,
+      "population": 1102088,
+      "map": "maps/cities/venezuela__maracay.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q26906",
+      "name": "Ciudad Bolívar",
+      "latitude": 8.1028532,
+      "longitude": -63.5469562,
+      "population": 567953,
+      "map": "maps/cities/venezuela__ciudad_bolivar.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "VES",
+      "name": "Venezuelan bolívar soberano",
+      "symbol": "Bs.S.",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": "national",
+      "percent": 82.0
+    },
+    {
+      "name": "Venezuelan Sign Language",
+      "code": "vsl",
+      "official": null,
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 88.1
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 9.7
+    },
+    {
+      "religion": "Other religions",
+      "percent": 2.1
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Federal presidential republic under an authoritarian dictatorship",
+    "form": "Federal presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 17.6,
+    "military_spending_pct_gdp": 0.5
+  },
+  "established": null,
+  "independence": {
+    "date": "1811-07-05",
+    "from": "Spain"
+  },
+  "memberships": [
+    "OPEC"
+  ],
+  "flag": "flags/venezuela.svg",
+  "map": "maps/countries/venezuela.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Venezuela",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2023",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

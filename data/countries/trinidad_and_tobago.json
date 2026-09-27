@@ -1,0 +1,250 @@
+{
+  "id": "Q754",
+  "name": "Trinidad and Tobago",
+  "official_name": "Republic of Trinidad and Tobago",
+  "codes": {
+    "alpha_2": "TT",
+    "alpha_3": "TTO",
+    "ccn3": "780"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 5130.0,
+  "population": 1367764,
+  "demonym": {
+    "male": "Trinidadian",
+    "female": "Trinidadian",
+    "others": []
+  },
+  "capitals": [
+    "Port of Spain"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q39178",
+      "name": "Port of Spain",
+      "latitude": 10.666666666,
+      "longitude": -61.516666666,
+      "population": 49031,
+      "map": "maps/cities/trinidad_and_tobago__port_of_spain.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1444575",
+      "name": "Chaguanas",
+      "latitude": 10.514444444,
+      "longitude": -61.4075,
+      "population": 83489,
+      "map": "maps/cities/trinidad_and_tobago__chaguanas.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1023712",
+      "name": "San Fernando",
+      "latitude": 10.283333333,
+      "longitude": -61.466666666,
+      "population": 55419,
+      "map": "maps/cities/trinidad_and_tobago__san_fernando.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "TTD",
+      "name": "Trinidad and Tobago dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 88.0
+    },
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": null,
+      "percent": 0.29
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 70.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 20.6
+    },
+    {
+      "religion": "Islam",
+      "percent": 5.5
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 2.4
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.4
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 32.9,
+    "military_spending_pct_gdp": 0.9
+  },
+  "established": null,
+  "independence": {
+    "date": "1962-08-31",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/trinidad_and_tobago.svg",
+  "map": "maps/countries/trinidad_and_tobago.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,531 @@
+{
+  "id": "Q668",
+  "name": "India",
+  "official_name": "Republic of India",
+  "codes": {
+    "alpha_2": "IN",
+    "alpha_3": "IND",
+    "ccn3": "356"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 3287590.0,
+  "population": 1463865525,
+  "demonym": {
+    "male": "Indian",
+    "female": "Indian",
+    "others": []
+  },
+  "capitals": [
+    "New Delhi"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q987",
+      "name": "New Delhi",
+      "latitude": 28.613888888,
+      "longitude": 77.208888888,
+      "population": 249998,
+      "map": "maps/cities/india__new_delhi.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1156",
+      "name": "Mumbai",
+      "latitude": 19.075833333,
+      "longitude": 72.8775,
+      "population": 15414288,
+      "map": "maps/cities/india__mumbai.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1353",
+      "name": "Delhi",
+      "latitude": 28.666666666,
+      "longitude": 77.216666666,
+      "population": 26495000,
+      "map": "maps/cities/india__delhi.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1355",
+      "name": "Bengaluru",
+      "latitude": 12.9791198,
+      "longitude": 77.5912997,
+      "population": 12327000,
+      "map": "maps/cities/india__bengaluru.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1361",
+      "name": "Hyderabad",
+      "latitude": 17.361666666,
+      "longitude": 78.474722222,
+      "population": 9191000,
+      "map": "maps/cities/india__hyderabad.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1352",
+      "name": "Chennai",
+      "latitude": 13.0825,
+      "longitude": 80.275,
+      "population": 6599000,
+      "map": "maps/cities/india__chennai.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "INR",
+      "name": "Indian rupee",
+      "symbol": "₹",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Hindi",
+      "code": "hin",
+      "official": "national",
+      "percent": 41.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 19.0
+    },
+    {
+      "name": "Bangla",
+      "code": "ben",
+      "official": null,
+      "percent": 8.1
+    },
+    {
+      "name": "Telugu",
+      "code": "tel",
+      "official": "regional",
+      "percent": 7.2
+    },
+    {
+      "name": "Marathi",
+      "code": "mar",
+      "official": "regional",
+      "percent": 7.0
+    },
+    {
+      "name": "Tamil",
+      "code": "tam",
+      "official": "regional",
+      "percent": 5.9
+    },
+    {
+      "name": "Urdu",
+      "code": "urd",
+      "official": "regional",
+      "percent": 5.0
+    },
+    {
+      "name": "Gujarati",
+      "code": "guj",
+      "official": "regional",
+      "percent": 4.5
+    },
+    {
+      "name": "Kannada",
+      "code": "kan",
+      "official": "regional",
+      "percent": 3.7
+    },
+    {
+      "name": "Malayalam",
+      "code": "mal",
+      "official": null,
+      "percent": 3.2
+    },
+    {
+      "name": "Odia",
+      "code": "ori",
+      "official": "regional",
+      "percent": 3.2
+    },
+    {
+      "name": "Punjabi",
+      "code": "pan",
+      "official": "regional",
+      "percent": 2.8
+    },
+    {
+      "name": "Bhojpuri",
+      "code": "bho",
+      "official": null,
+      "percent": 2.3
+    },
+    {
+      "name": "Awadhi",
+      "code": "awa",
+      "official": null,
+      "percent": 1.9
+    },
+    {
+      "name": "Assamese",
+      "code": "asm",
+      "official": "regional",
+      "percent": 1.3
+    },
+    {
+      "name": "Haryanvi",
+      "code": "bgc",
+      "official": null,
+      "percent": 1.2
+    },
+    {
+      "name": "Magahi",
+      "code": "mag",
+      "official": null,
+      "percent": 1.2
+    },
+    {
+      "name": "Maithili",
+      "code": "mai",
+      "official": "regional",
+      "percent": 1.2
+    },
+    {
+      "name": "Marwari",
+      "code": "mwr",
+      "official": null,
+      "percent": 1.2
+    },
+    {
+      "name": "Chhattisgarhi",
+      "code": "hne",
+      "official": "regional",
+      "percent": 1.1
+    },
+    {
+      "name": "Deccan",
+      "code": "dcc",
+      "official": null,
+      "percent": 0.99
+    },
+    {
+      "name": "Kanauji",
+      "code": "bjj",
+      "official": null,
+      "percent": 0.56
+    },
+    {
+      "name": "Nepali",
+      "code": "nep",
+      "official": "regional",
+      "percent": 0.56
+    },
+    {
+      "name": "Santali",
+      "code": "sat",
+      "official": "regional",
+      "percent": 0.55
+    },
+    {
+      "name": "Mewati",
+      "code": "wtm",
+      "official": null,
+      "percent": 0.46
+    },
+    {
+      "name": "Rangpuri",
+      "code": "rkt",
+      "official": null,
+      "percent": 0.43
+    },
+    {
+      "name": "Kashmiri",
+      "code": "kas",
+      "official": "regional",
+      "percent": 0.41
+    },
+    {
+      "name": "Konkani",
+      "code": "kok",
+      "official": "regional",
+      "percent": 0.37
+    },
+    {
+      "name": "Garhwali",
+      "code": "gbm",
+      "official": null,
+      "percent": 0.27
+    },
+    {
+      "name": "Lambadi",
+      "code": "lmn",
+      "official": null,
+      "percent": 0.27
+    },
+    {
+      "name": "Sindhi",
+      "code": "snd",
+      "official": "regional",
+      "percent": 0.26
+    },
+    {
+      "name": "Gondi",
+      "code": "gon",
+      "official": null,
+      "percent": 0.24
+    },
+    {
+      "name": "Kumaoni",
+      "code": "kfy",
+      "official": null,
+      "percent": 0.22
+    },
+    {
+      "name": "Dogri",
+      "code": "doi",
+      "official": "regional",
+      "percent": 0.2
+    },
+    {
+      "name": "Kurukh",
+      "code": "kru",
+      "official": null,
+      "percent": 0.19
+    },
+    {
+      "name": "Sadri",
+      "code": "sck",
+      "official": null,
+      "percent": 0.18
+    },
+    {
+      "name": "Waddar",
+      "code": "wbq",
+      "official": null,
+      "percent": 0.18
+    },
+    {
+      "name": "Rajasthani",
+      "code": "raj",
+      "official": null,
+      "percent": 0.15
+    },
+    {
+      "name": "Khandesi",
+      "code": "khn",
+      "official": null,
+      "percent": 0.15
+    },
+    {
+      "name": "Tulu",
+      "code": "tcy",
+      "official": null,
+      "percent": 0.15
+    },
+    {
+      "name": "Bodo",
+      "code": "brx",
+      "official": null,
+      "percent": 0.14
+    },
+    {
+      "name": "Nimadi",
+      "code": "noe",
+      "official": null,
+      "percent": 0.13
+    },
+    {
+      "name": "Bhili",
+      "code": "bhb",
+      "official": null,
+      "percent": 0.12
+    },
+    {
+      "name": "Manipuri",
+      "code": "mni",
+      "official": null,
+      "percent": 0.11
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Hinduism",
+      "percent": 79.4
+    },
+    {
+      "religion": "Islam",
+      "percent": 15.2
+    },
+    {
+      "religion": "Other religions",
+      "percent": 2.5
+    },
+    {
+      "religion": "Christianity",
+      "percent": 2.2
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.7
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Federal parliamentary republic",
+    "form": "Federal parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 27.9,
+    "military_spending_pct_gdp": 2.3
+  },
+  "established": "1947-08-15",
+  "independence": {
+    "date": "1947-08-15",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "BRICS",
+    "Commonwealth of Nations",
+    "G20"
+  ],
+  "flag": "flags/india.svg",
+  "map": "maps/countries/india.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/India",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

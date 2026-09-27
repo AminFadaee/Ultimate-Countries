@@ -1,0 +1,204 @@
+{
+  "id": "Q23427",
+  "name": "South Ossetia",
+  "official_name": "Republic of South Ossetia",
+  "codes": {
+    "alpha_2": null,
+    "alpha_3": null,
+    "ccn3": null
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": true,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": "GEO"
+  },
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 3900.0,
+  "population": 56520,
+  "demonym": {
+    "male": "South Ossetian",
+    "female": "South Ossetian",
+    "others": []
+  },
+  "capitals": [
+    "Tskhinval"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q79863",
+      "name": "Tskhinval",
+      "latitude": 42.225661,
+      "longitude": 43.970072,
+      "population": 32699,
+      "map": "maps/cities/south_ossetia__tskhinval.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "RUB",
+      "name": "Russian ruble",
+      "symbol": "₽",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Georgian",
+      "code": "kat",
+      "official": "regional",
+      "percent": null
+    },
+    {
+      "name": "Ossetian",
+      "code": null,
+      "official": "national",
+      "percent": null
+    },
+    {
+      "name": "Russian",
+      "code": "rus",
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Unitary semi-presidential republic",
+    "form": "Semi-presidential republic"
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/south_ossetia.svg",
+  "map": "maps/countries/south_ossetia.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/South_Ossetia",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

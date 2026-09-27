@@ -1,0 +1,211 @@
+{
+  "id": "Q672",
+  "name": "Tuvalu",
+  "official_name": "Tuvalu",
+  "codes": {
+    "alpha_2": "TV",
+    "alpha_3": "TUV",
+    "ccn3": "798"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "continents": [
+    "Oceania"
+  ],
+  "area_km2": 26.0,
+  "population": 9492,
+  "demonym": {
+    "male": "Tuvaluan",
+    "female": "Tuvaluan",
+    "others": []
+  },
+  "capitals": [
+    "Funafuti"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q34126",
+      "name": "Funafuti",
+      "latitude": -8.504777777,
+      "longitude": 179.117361111,
+      "population": 6025,
+      "map": "maps/cities/tuvalu__funafuti.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "AUD",
+      "name": "Australian dollar",
+      "symbol": "$",
+      "main": true
+    },
+    {
+      "code": "TVD",
+      "name": "Tuvaluan dollar",
+      "symbol": "$",
+      "main": false
+    }
+  ],
+  "languages": [
+    {
+      "name": "Tuvaluan",
+      "code": "tvl",
+      "official": "national",
+      "percent": 85.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 9.1
+    }
+  ],
+  "official_religions": [
+    "Christianity"
+  ],
+  "religions": [],
+  "government": {
+    "label": "Constitutional monarchy",
+    "form": "Constitutional monarchy"
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 99.9,
+    "military_spending_pct_gdp": null
+  },
+  "established": "1978-10-01",
+  "independence": {
+    "date": "1978-10-01",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/tuvalu.svg",
+  "map": "maps/countries/tuvalu.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Tuvalu",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

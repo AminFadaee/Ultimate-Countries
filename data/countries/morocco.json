@@ -1,0 +1,311 @@
+{
+  "id": "Q1028",
+  "name": "Morocco",
+  "official_name": "Kingdom of Morocco",
+  "codes": {
+    "alpha_2": "MA",
+    "alpha_3": "MAR",
+    "ccn3": "504"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 446550.0,
+  "population": 38430770,
+  "demonym": {
+    "male": "Moroccan",
+    "female": "Moroccan",
+    "others": []
+  },
+  "capitals": [
+    "Rabat"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3551",
+      "name": "Rabat",
+      "latitude": 34.021111111,
+      "longitude": -6.841388888,
+      "population": 515619,
+      "map": "maps/cities/morocco__rabat.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q7903",
+      "name": "Casablanca",
+      "latitude": 33.599166666,
+      "longitude": -7.62,
+      "population": 3215935,
+      "map": "maps/cities/morocco__casablanca.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q126148",
+      "name": "Tangier",
+      "latitude": 35.7696302,
+      "longitude": -5.8033522,
+      "population": 1275428,
+      "map": "maps/cities/morocco__tangier.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q101625",
+      "name": "Marrakech",
+      "latitude": 31.62947,
+      "longitude": -7.98108,
+      "population": 1002697,
+      "map": "maps/cities/morocco__marrakech.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q80985",
+      "name": "Fez",
+      "latitude": 34.043333333,
+      "longitude": -5.003333333,
+      "population": 1167842,
+      "map": "maps/cities/morocco__fez.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q170525",
+      "name": "Agadir",
+      "latitude": 30.421388888,
+      "longitude": -9.583055555,
+      "population": 538000,
+      "map": "maps/cities/morocco__agadir.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "MAD",
+      "name": "Moroccan dirham",
+      "symbol": "د.م.",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 87.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": null,
+      "percent": 36.0
+    },
+    {
+      "name": "Standard Moroccan Tamazight",
+      "code": "zgh",
+      "official": null,
+      "percent": 22.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 14.0
+    },
+    {
+      "name": "Central Atlas Tamazight",
+      "code": "tzm",
+      "official": null,
+      "percent": 9.8
+    },
+    {
+      "name": "Tachelhit",
+      "code": "shi",
+      "official": null,
+      "percent": 8.7
+    },
+    {
+      "name": "Riffian",
+      "code": "rif",
+      "official": null,
+      "percent": 4.9
+    },
+    {
+      "name": "Hassaniyya",
+      "code": "mey",
+      "official": null,
+      "percent": 0.82
+    },
+    {
+      "name": "Berber",
+      "code": null,
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 99.7
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.1
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.1
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary semi-constitutional monarchy",
+    "form": "Semi-constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 32.8,
+    "military_spending_pct_gdp": 3.5
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [
+    "African Union",
+    "Arab League"
+  ],
+  "flag": "flags/morocco.svg",
+  "map": "maps/countries/morocco.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Morocco",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

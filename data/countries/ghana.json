@@ -1,0 +1,299 @@
+{
+  "id": "Q117",
+  "name": "Ghana",
+  "official_name": "Republic of Ghana",
+  "codes": {
+    "alpha_2": "GH",
+    "alpha_3": "GHA",
+    "ccn3": "288"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 238533.0,
+  "population": 35064272,
+  "demonym": {
+    "male": "Ghanaian",
+    "female": "Ghanaian",
+    "others": []
+  },
+  "capitals": [
+    "Accra"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3761",
+      "name": "Accra",
+      "latitude": 5.55602,
+      "longitude": -0.1969,
+      "population": 1782150,
+      "map": "maps/cities/ghana__accra.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q182059",
+      "name": "Kumasi",
+      "latitude": 6.7,
+      "longitude": -1.625,
+      "population": 3903480,
+      "map": "maps/cities/ghana__kumasi.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q217040",
+      "name": "Tamale",
+      "latitude": 9.4075,
+      "longitude": -0.853333333,
+      "population": 729768,
+      "map": "maps/cities/ghana__tamale.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q243293",
+      "name": "Sekondi-Takoradi",
+      "latitude": 4.916666666,
+      "longitude": -1.766666666,
+      "population": 539548,
+      "map": "maps/cities/ghana__sekondi_takoradi.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q221283",
+      "name": "Cape Coast",
+      "latitude": 5.1,
+      "longitude": -1.25,
+      "population": 189925,
+      "map": "maps/cities/ghana__cape_coast.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "GHS",
+      "name": "Ghanaian cedi",
+      "symbol": "₵",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Akan",
+      "code": "aka",
+      "official": null,
+      "percent": 39.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 21.0
+    },
+    {
+      "name": "Ewe",
+      "code": "ewe",
+      "official": "regional",
+      "percent": 11.0
+    },
+    {
+      "name": "Abron",
+      "code": "abr",
+      "official": null,
+      "percent": 5.0
+    },
+    {
+      "name": "Frafra",
+      "code": "gur",
+      "official": null,
+      "percent": 3.5
+    },
+    {
+      "name": "Adangme",
+      "code": "ada",
+      "official": "regional",
+      "percent": 3.0
+    },
+    {
+      "name": "Ga",
+      "code": "gaa",
+      "official": "regional",
+      "percent": 2.8
+    },
+    {
+      "name": "Nzima",
+      "code": "nzi",
+      "official": "regional",
+      "percent": 1.0
+    },
+    {
+      "name": "Hausa",
+      "code": "hau",
+      "official": null,
+      "percent": 0.86
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 71.3
+    },
+    {
+      "religion": "Islam",
+      "percent": 19.9
+    },
+    {
+      "religion": "Other religions",
+      "percent": 7.8
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 1.1
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 18.7,
+    "military_spending_pct_gdp": 0.4
+  },
+  "established": "1957-05-06",
+  "independence": {
+    "date": "1957",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "African Union",
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/ghana.svg",
+  "map": "maps/countries/ghana.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Ghana",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

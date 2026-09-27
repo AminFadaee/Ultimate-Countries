@@ -1,0 +1,363 @@
+{
+  "id": "Q258",
+  "name": "South Africa",
+  "official_name": "Republic of South Africa",
+  "codes": {
+    "alpha_2": "ZA",
+    "alpha_3": "ZAF",
+    "ccn3": "710"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Southern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 1221037.0,
+  "population": 64747319,
+  "demonym": {
+    "male": "South African",
+    "female": "South African",
+    "others": []
+  },
+  "capitals": [
+    "Pretoria",
+    "Cape Town",
+    "Bloemfontein"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3926",
+      "name": "Pretoria",
+      "latitude": -25.746388888,
+      "longitude": 28.188055555,
+      "population": 741651,
+      "map": "maps/cities/south_africa__pretoria.png"
+    },
+    {
+      "role": "capital",
+      "id": "Q5465",
+      "name": "Cape Town",
+      "latitude": -33.925277777,
+      "longitude": 18.423888888,
+      "population": 3776313,
+      "map": "maps/cities/south_africa__cape_town.png"
+    },
+    {
+      "role": "capital",
+      "id": "Q37701",
+      "name": "Bloemfontein",
+      "latitude": -29.1,
+      "longitude": 26.216666666,
+      "population": 256185,
+      "map": "maps/cities/south_africa__bloemfontein.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q34647",
+      "name": "Johannesburg",
+      "latitude": -26.204361111,
+      "longitude": 28.041638888,
+      "population": 4803262,
+      "map": "maps/cities/south_africa__johannesburg.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q5468",
+      "name": "Durban",
+      "latitude": -29.858333333,
+      "longitude": 31.025,
+      "population": 595061,
+      "map": "maps/cities/south_africa__durban.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q125434",
+      "name": "Gqeberha",
+      "latitude": -33.958055555,
+      "longitude": 25.6,
+      "population": 312392,
+      "map": "maps/cities/south_africa__gqeberha.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q209537",
+      "name": "East London",
+      "latitude": -33.0175,
+      "longitude": 27.904722222,
+      "population": 478676,
+      "map": "maps/cities/south_africa__east_london.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q125905",
+      "name": "Kimberley",
+      "latitude": -28.738333333,
+      "longitude": 24.763888888,
+      "population": 225160,
+      "map": "maps/cities/south_africa__kimberley.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "ZAR",
+      "name": "South African rand",
+      "symbol": "R",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 31.0
+    },
+    {
+      "name": "Zulu",
+      "code": "zul",
+      "official": "national",
+      "percent": 24.0
+    },
+    {
+      "name": "Xhosa",
+      "code": "xho",
+      "official": "national",
+      "percent": 18.0
+    },
+    {
+      "name": "Afrikaans",
+      "code": "afr",
+      "official": "national",
+      "percent": 13.0
+    },
+    {
+      "name": "Northern Sotho",
+      "code": "nso",
+      "official": "national",
+      "percent": 9.4
+    },
+    {
+      "name": "Tswana",
+      "code": "tsn",
+      "official": "national",
+      "percent": 8.2
+    },
+    {
+      "name": "Sesotho",
+      "code": "sot",
+      "official": "national",
+      "percent": 7.9
+    },
+    {
+      "name": "Tsonga",
+      "code": "tso",
+      "official": "national",
+      "percent": 4.4
+    },
+    {
+      "name": "Swazi",
+      "code": "ssw",
+      "official": "national",
+      "percent": 2.7
+    },
+    {
+      "name": "Venda",
+      "code": "ven",
+      "official": "national",
+      "percent": 2.3
+    },
+    {
+      "name": "Hindi",
+      "code": "hin",
+      "official": null,
+      "percent": 2.0
+    },
+    {
+      "name": "Southern Ndebele",
+      "code": "nbl",
+      "official": "national",
+      "percent": 1.6
+    },
+    {
+      "name": "South African Sign Language",
+      "code": "sfs",
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 85.3
+    },
+    {
+      "religion": "Other religions",
+      "percent": 8.9
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 3.1
+    },
+    {
+      "religion": "Islam",
+      "percent": 1.6
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 1.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic with an executive presidency",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 33.6,
+    "military_spending_pct_gdp": 0.7
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [
+    "African Union",
+    "BRICS",
+    "Commonwealth of Nations",
+    "G20"
+  ],
+  "flag": "flags/south_africa.svg",
+  "map": "maps/countries/south_africa.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/South_Africa",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

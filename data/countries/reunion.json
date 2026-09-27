@@ -1,0 +1,245 @@
+{
+  "id": "Q17070",
+  "name": "Réunion",
+  "official_name": "Réunion Island",
+  "codes": {
+    "alpha_2": "RE",
+    "alpha_3": "REU",
+    "ccn3": "638"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "overseas_department",
+    "parent_alpha_3": "FRA"
+  },
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 2511.0,
+  "population": 840974,
+  "demonym": {
+    "male": "Réunionese",
+    "female": "Réunionese",
+    "others": []
+  },
+  "capitals": [
+    "Saint-Denis"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q47045",
+      "name": "Saint-Denis",
+      "latitude": -20.878888888,
+      "longitude": 55.448055555,
+      "population": 155634,
+      "map": "maps/cities/reunion__saint_denis.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q316887",
+      "name": "Saint-Paul",
+      "latitude": -21.009722222,
+      "longitude": 55.269722222,
+      "population": 108088,
+      "map": "maps/cities/reunion__saint_paul.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q249884",
+      "name": "Saint-Pierre",
+      "latitude": -21.341944444,
+      "longitude": 55.477777777,
+      "population": 85038,
+      "map": "maps/cities/reunion__saint_pierre.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 89.0
+    },
+    {
+      "name": "Tamil",
+      "code": "tam",
+      "official": null,
+      "percent": 15.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 87.5
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 4.5
+    },
+    {
+      "religion": "Islam",
+      "percent": 4.2
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 2.1
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.4
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.2
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.1
+    }
+  ],
+  "government": {
+    "label": null,
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/reunion.svg",
+  "map": "maps/countries/reunion.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/R%C3%A9union",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

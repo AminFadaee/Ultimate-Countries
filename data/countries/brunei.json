@@ -1,0 +1,243 @@
+{
+  "id": "Q921",
+  "name": "Brunei",
+  "official_name": "Nation of Brunei, the Abode of Peace",
+  "codes": {
+    "alpha_2": "BN",
+    "alpha_3": "BRN",
+    "ccn3": "096"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 5765.0,
+  "population": 466330,
+  "demonym": {
+    "male": "Bruneian",
+    "female": "Bruneian",
+    "others": []
+  },
+  "capitals": [
+    "Bandar Seri Begawan"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q9279",
+      "name": "Bandar Seri Begawan",
+      "latitude": 4.916666666,
+      "longitude": 114.916666666,
+      "population": 50000,
+      "map": "maps/cities/brunei__bandar_seri_begawan.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "BND",
+      "name": "Brunei dollar",
+      "symbol": "$",
+      "main": true
+    },
+    {
+      "code": "SGD",
+      "name": "Singapore dollar",
+      "symbol": "$",
+      "main": false
+    }
+  ],
+  "languages": [
+    {
+      "name": "Malay",
+      "code": "msa",
+      "official": "national",
+      "percent": 93.0
+    },
+    {
+      "name": "Chinese",
+      "code": "zho",
+      "official": null,
+      "percent": 11.0
+    },
+    {
+      "name": "British English",
+      "code": "eng",
+      "official": null,
+      "percent": 1.6
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 82.2
+    },
+    {
+      "religion": "Christianity",
+      "percent": 6.7
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 6.3
+    },
+    {
+      "religion": "Other religions",
+      "percent": 3.4
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 1.3
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.2
+    }
+  ],
+  "government": {
+    "label": "Unitary Islamic absolute monarchy",
+    "form": "Absolute monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 29.3,
+    "military_spending_pct_gdp": 3.6
+  },
+  "established": null,
+  "independence": {
+    "date": "1984",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "ASEAN",
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/brunei.svg",
+  "map": "maps/countries/brunei.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Brunei",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

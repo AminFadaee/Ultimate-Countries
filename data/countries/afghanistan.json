@@ -1,0 +1,328 @@
+{
+  "id": "Q889",
+  "name": "Afghanistan",
+  "official_name": "Islamic Republic of Afghanistan",
+  "codes": {
+    "alpha_2": "AF",
+    "alpha_3": "AFG",
+    "ccn3": "004"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 652230.0,
+  "population": 43844111,
+  "demonym": {
+    "male": "Afghan",
+    "female": "Afghan",
+    "others": []
+  },
+  "capitals": [
+    "Kabul"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q5838",
+      "name": "Kabul",
+      "latitude": 34.532777777,
+      "longitude": 69.165833333,
+      "population": 5333284,
+      "map": "maps/cities/afghanistan__kabul.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q45604",
+      "name": "Kandahar",
+      "latitude": 31.62068,
+      "longitude": 65.71588,
+      "population": 614254,
+      "map": "maps/cities/afghanistan__kandahar.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q45313",
+      "name": "Herat",
+      "latitude": 34.341944,
+      "longitude": 62.203056,
+      "population": 556205,
+      "map": "maps/cities/afghanistan__herat.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q130469",
+      "name": "Mazar-i-Sharif",
+      "latitude": 36.7,
+      "longitude": 67.116666666,
+      "population": 469247,
+      "map": "maps/cities/afghanistan__mazar_i_sharif.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q108155",
+      "name": "Kunduz",
+      "latitude": 36.728888888,
+      "longitude": 68.856944444,
+      "population": 356536,
+      "map": "maps/cities/afghanistan__kunduz.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q173731",
+      "name": "Ghazni",
+      "latitude": 33.549166666,
+      "longitude": 68.423333333,
+      "population": 143379,
+      "map": "maps/cities/afghanistan__ghazni.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "AFN",
+      "name": "Afghan afghani",
+      "symbol": "؋",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Dari",
+      "code": "fas",
+      "official": "national",
+      "percent": 50.0
+    },
+    {
+      "name": "Pashto",
+      "code": "pus",
+      "official": "national",
+      "percent": 43.0
+    },
+    {
+      "name": "Hazaragi",
+      "code": "haz",
+      "official": null,
+      "percent": 5.9
+    },
+    {
+      "name": "Uzbek",
+      "code": "uzb",
+      "official": "regional",
+      "percent": 4.7
+    },
+    {
+      "name": "Turkmen",
+      "code": "tuk",
+      "official": "regional",
+      "percent": 1.7
+    },
+    {
+      "name": "Parsi-Dari",
+      "code": "prd",
+      "official": null,
+      "percent": 1.2
+    },
+    {
+      "name": "Balochi",
+      "code": "bgn",
+      "official": "regional",
+      "percent": 0.63
+    },
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Nuristani",
+      "code": null,
+      "official": "regional",
+      "percent": null
+    },
+    {
+      "name": "Pamir",
+      "code": null,
+      "official": "regional",
+      "percent": null
+    },
+    {
+      "name": "Pashayi",
+      "code": null,
+      "official": "regional",
+      "percent": null
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 99.9
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.0
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary totalitarian theocratic Islamic emirate",
+    "form": "Islamic emirate"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Low income",
+    "government_spending_pct_gdp": 17.0,
+    "military_spending_pct_gdp": 1.8
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/afghanistan.svg",
+  "map": "maps/countries/afghanistan.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Afghanistan",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2023",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2021",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

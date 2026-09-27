@@ -1,0 +1,290 @@
+{
+  "id": "Q408",
+  "name": "Australia",
+  "official_name": "Commonwealth of Australia",
+  "codes": {
+    "alpha_2": "AU",
+    "alpha_3": "AUS",
+    "ccn3": "036"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Oceania",
+  "subregion": "Australia and New Zealand",
+  "continents": [
+    "Oceania"
+  ],
+  "area_km2": 7692024.0,
+  "population": 27614411,
+  "demonym": {
+    "male": "Australian",
+    "female": "Australian",
+    "others": [
+      "Aussie"
+    ]
+  },
+  "capitals": [
+    "Canberra"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3114",
+      "name": "Canberra",
+      "latitude": -35.293055555,
+      "longitude": 149.126944444,
+      "population": 381488,
+      "map": "maps/cities/australia__canberra.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q3130",
+      "name": "Sydney",
+      "latitude": -33.867777777,
+      "longitude": 151.21,
+      "population": 5450496,
+      "map": "maps/cities/australia__sydney.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q3141",
+      "name": "Melbourne",
+      "latitude": -37.814166666,
+      "longitude": 144.963055555,
+      "population": 5350705,
+      "map": "maps/cities/australia__melbourne.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q3183",
+      "name": "Perth",
+      "latitude": -31.955833333,
+      "longitude": 115.859722222,
+      "population": 2141834,
+      "map": "maps/cities/australia__perth.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q34932",
+      "name": "Brisbane",
+      "latitude": -27.467777777,
+      "longitude": 153.027777777,
+      "population": 2706966,
+      "map": "maps/cities/australia__brisbane.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q5112",
+      "name": "Adelaide",
+      "latitude": -34.9275,
+      "longitude": 138.6,
+      "population": 1387290,
+      "map": "maps/cities/australia__adelaide.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "AUD",
+      "name": "Australian dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 96.0
+    },
+    {
+      "name": "Chinese",
+      "code": "zho",
+      "official": "regional",
+      "percent": 2.1
+    },
+    {
+      "name": "Italian",
+      "code": "ita",
+      "official": null,
+      "percent": 1.9
+    },
+    {
+      "name": "Auslan",
+      "code": "asf",
+      "official": null,
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 46.8
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 42.3
+    },
+    {
+      "religion": "Islam",
+      "percent": 3.5
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 3.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 2.6
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.4
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.4
+    }
+  ],
+  "government": {
+    "label": "Federal parliamentary constitutional monarchy",
+    "form": "Federal constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 37.9,
+    "military_spending_pct_gdp": 1.9
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [
+    "Commonwealth of Nations",
+    "G20",
+    "OECD"
+  ],
+  "flag": "flags/australia.svg",
+  "map": "maps/countries/australia.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Australia",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-18",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-18",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-18",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-18",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-18",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-18",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

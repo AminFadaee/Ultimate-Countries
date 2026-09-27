@@ -1,0 +1,393 @@
+{
+  "id": "Q252",
+  "name": "Indonesia",
+  "official_name": "Republic of Indonesia",
+  "codes": {
+    "alpha_2": "ID",
+    "alpha_3": "IDN",
+    "ccn3": "360"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 1904569.0,
+  "population": 285721236,
+  "demonym": {
+    "male": "Indonesian",
+    "female": "Indonesian",
+    "others": []
+  },
+  "capitals": [
+    "Jakarta"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3630",
+      "name": "Jakarta",
+      "latitude": -6.175277777,
+      "longitude": 106.826944444,
+      "population": 11135191,
+      "map": "maps/cities/indonesia__jakarta.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q11462",
+      "name": "Surabaya",
+      "latitude": -7.246283611,
+      "longitude": 112.737767222,
+      "population": 3009286,
+      "map": "maps/cities/indonesia__surabaya.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q10389",
+      "name": "Bandung",
+      "latitude": -6.921944444,
+      "longitude": 107.606944444,
+      "population": 2875673,
+      "map": "maps/cities/indonesia__bandung.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q5972",
+      "name": "Medan",
+      "latitude": 3.589444444,
+      "longitude": 98.673888888,
+      "population": 2109330,
+      "map": "maps/cities/indonesia__medan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q10392",
+      "name": "Bekasi",
+      "latitude": -6.233333333,
+      "longitude": 107.0,
+      "population": 2381053,
+      "map": "maps/cities/indonesia__bekasi.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q8131",
+      "name": "Palembang",
+      "latitude": -2.983333333,
+      "longitude": 104.764444444,
+      "population": 1535952,
+      "map": "maps/cities/indonesia__palembang.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "IDR",
+      "name": "Indonesian rupiah",
+      "symbol": "Rp",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Indonesian",
+      "code": "msa",
+      "official": "national",
+      "percent": 64.0
+    },
+    {
+      "name": "Javanese",
+      "code": "jav",
+      "official": "regional",
+      "percent": 34.0
+    },
+    {
+      "name": "Sundanese",
+      "code": "sun",
+      "official": null,
+      "percent": 12.0
+    },
+    {
+      "name": "Madurese",
+      "code": "mad",
+      "official": null,
+      "percent": 6.3
+    },
+    {
+      "name": "Betawi",
+      "code": "bew",
+      "official": null,
+      "percent": 2.1
+    },
+    {
+      "name": "Balinese",
+      "code": "ban",
+      "official": null,
+      "percent": 1.8
+    },
+    {
+      "name": "Buginese",
+      "code": "bug",
+      "official": null,
+      "percent": 1.6
+    },
+    {
+      "name": "Acehnese",
+      "code": "ace",
+      "official": null,
+      "percent": 1.4
+    },
+    {
+      "name": "Sasak",
+      "code": "sas",
+      "official": null,
+      "percent": 0.97
+    },
+    {
+      "name": "Batak Toba",
+      "code": "bbc",
+      "official": null,
+      "percent": 0.92
+    },
+    {
+      "name": "Chinese",
+      "code": "zho",
+      "official": null,
+      "percent": 0.92
+    },
+    {
+      "name": "Makasar",
+      "code": "mak",
+      "official": null,
+      "percent": 0.73
+    },
+    {
+      "name": "Lampung Api",
+      "code": "ljp",
+      "official": null,
+      "percent": 0.69
+    },
+    {
+      "name": "Rejang",
+      "code": "rej",
+      "official": null,
+      "percent": 0.46
+    },
+    {
+      "name": "Gorontalo",
+      "code": "gor",
+      "official": null,
+      "percent": 0.41
+    },
+    {
+      "name": "Ngaju",
+      "code": "nij",
+      "official": null,
+      "percent": 0.37
+    },
+    {
+      "name": "Komering",
+      "code": "kge",
+      "official": null,
+      "percent": 0.32
+    },
+    {
+      "name": "Uab Meto",
+      "code": "aoz",
+      "official": null,
+      "percent": 0.27
+    },
+    {
+      "name": "Tolaki",
+      "code": "lbw",
+      "official": null,
+      "percent": 0.13
+    },
+    {
+      "name": "Gayo",
+      "code": "gay",
+      "official": null,
+      "percent": 0.12
+    },
+    {
+      "name": "Tae'",
+      "code": "rob",
+      "official": null,
+      "percent": 0.11
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 87.0
+    },
+    {
+      "religion": "Christianity",
+      "percent": 10.3
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 1.6
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.7
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.4
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 16.7,
+    "military_spending_pct_gdp": 0.8
+  },
+  "established": "1945-08-17",
+  "independence": {
+    "date": "1945-08-17",
+    "from": "Japan, Netherlands"
+  },
+  "memberships": [
+    "ASEAN",
+    "BRICS",
+    "G20"
+  ],
+  "flag": "flags/indonesia.svg",
+  "map": "maps/countries/indonesia.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Indonesia",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

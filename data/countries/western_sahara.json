@@ -1,0 +1,248 @@
+{
+  "id": "Q6250",
+  "name": "Western Sahara",
+  "official_name": "Sahrawi Arab Democratic Republic",
+  "codes": {
+    "alpha_2": "EH",
+    "alpha_3": "ESH",
+    "ccn3": "732"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": true,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "disputed",
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 266000.0,
+  "population": 510713,
+  "demonym": {
+    "male": "Sahrawi",
+    "female": "Sahrawi",
+    "others": []
+  },
+  "capitals": [
+    "Laayoune"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q47837",
+      "name": "Laayoune",
+      "latitude": 27.15,
+      "longitude": -13.2,
+      "population": 262791,
+      "map": "maps/cities/western_sahara__laayoune.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q345204",
+      "name": "Dakhla",
+      "latitude": 23.716666666,
+      "longitude": -15.95,
+      "population": 165463,
+      "map": "maps/cities/western_sahara__dakhla.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q842810",
+      "name": "Smara",
+      "latitude": 26.739444444,
+      "longitude": -11.670277777,
+      "population": 56607,
+      "map": "maps/cities/western_sahara__smara.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q599897",
+      "name": "Boujdour",
+      "latitude": 26.13333333,
+      "longitude": -14.46666667,
+      "population": 57360,
+      "map": "maps/cities/western_sahara__boujdour.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "DZD",
+      "name": "Algerian dinar",
+      "symbol": "د.ج",
+      "main": true
+    },
+    {
+      "code": "MAD",
+      "name": "Moroccan dirham",
+      "symbol": "د.م.",
+      "main": true
+    },
+    {
+      "code": "MRU",
+      "name": "Mauritanian ouguiya",
+      "symbol": "UM",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 100.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 99.6
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.3
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.2
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": null,
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/western_sahara.svg",
+  "map": "maps/countries/western_sahara.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Western_Sahara",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

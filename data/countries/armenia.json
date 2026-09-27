@@ -1,0 +1,281 @@
+{
+  "id": "Q399",
+  "name": "Armenia",
+  "official_name": "Republic of Armenia",
+  "codes": {
+    "alpha_2": "AM",
+    "alpha_3": "ARM",
+    "ccn3": "051"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 29743.0,
+  "population": 3086700,
+  "demonym": {
+    "male": "Armenian",
+    "female": "Armenian",
+    "others": []
+  },
+  "capitals": [
+    "Yerevan"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1953",
+      "name": "Yerevan",
+      "latitude": 40.181388888,
+      "longitude": 44.514444444,
+      "population": 1106300,
+      "map": "maps/cities/armenia__yerevan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q199500",
+      "name": "Gyumri",
+      "latitude": 40.783333333,
+      "longitude": 43.833333333,
+      "population": 121976,
+      "map": "maps/cities/armenia__gyumri.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q62337",
+      "name": "Vanadzor",
+      "latitude": 40.812777777,
+      "longitude": 44.488333333,
+      "population": 90525,
+      "map": "maps/cities/armenia__vanadzor.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q31583",
+      "name": "Kapan",
+      "latitude": 39.201111111,
+      "longitude": 46.415,
+      "population": 32780,
+      "map": "maps/cities/armenia__kapan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q31610",
+      "name": "Hrazdan",
+      "latitude": 40.5,
+      "longitude": 44.766666666,
+      "population": 52283,
+      "map": "maps/cities/armenia__hrazdan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q39560",
+      "name": "Artashat",
+      "latitude": 39.953925,
+      "longitude": 44.550556,
+      "population": 21300,
+      "map": "maps/cities/armenia__artashat.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "AMD",
+      "name": "Armenian dram",
+      "symbol": "֏",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Armenian",
+      "code": "hye",
+      "official": "national",
+      "percent": 99.0
+    },
+    {
+      "name": "Russian",
+      "code": "rus",
+      "official": null,
+      "percent": 65.0
+    },
+    {
+      "name": "Kurdish",
+      "code": "kur",
+      "official": null,
+      "percent": 3.3
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 97.3
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 1.2
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.2
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.3
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 30.0,
+    "military_spending_pct_gdp": 5.5
+  },
+  "established": "1991-09-23",
+  "independence": {
+    "date": "1991",
+    "from": "Soviet Union"
+  },
+  "memberships": [],
+  "flag": "flags/armenia.svg",
+  "map": "maps/countries/armenia.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Armenia",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-19",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-19",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-19",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-19",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-19",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-19",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

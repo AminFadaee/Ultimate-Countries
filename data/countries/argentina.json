@@ -1,0 +1,285 @@
+{
+  "id": "Q414",
+  "name": "Argentina",
+  "official_name": "Argentine Republic",
+  "codes": {
+    "alpha_2": "AR",
+    "alpha_3": "ARG",
+    "ccn3": "032"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "South America",
+  "continents": [
+    "South America"
+  ],
+  "area_km2": 2780400.0,
+  "population": 45851378,
+  "demonym": {
+    "male": "Argentine",
+    "female": "Argentine",
+    "others": [
+      "Argentinian"
+    ]
+  },
+  "capitals": [
+    "Buenos Aires"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1486",
+      "name": "Buenos Aires",
+      "latitude": -34.599722222,
+      "longitude": -58.381944444,
+      "population": 3121707,
+      "map": "maps/cities/argentina__buenos_aires.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q52535",
+      "name": "Rosario",
+      "latitude": -32.9575,
+      "longitude": -60.639444444,
+      "population": 1037710,
+      "map": "maps/cities/argentina__rosario.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q44210",
+      "name": "Córdoba",
+      "latitude": -31.416666666,
+      "longitude": -64.183333333,
+      "population": 1505250,
+      "map": "maps/cities/argentina__cordoba.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q52607",
+      "name": "Mar del Plata",
+      "latitude": -38.0,
+      "longitude": -57.55,
+      "population": 593337,
+      "map": "maps/cities/argentina__mar_del_plata.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q36307",
+      "name": "Salta",
+      "latitude": -24.788333333,
+      "longitude": -65.410555555,
+      "population": 594772,
+      "map": "maps/cities/argentina__salta.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q44255",
+      "name": "San Miguel de Tucumán",
+      "latitude": -26.816666666,
+      "longitude": -65.216666666,
+      "population": 601888,
+      "map": "maps/cities/argentina__san_miguel_de_tucuman.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "ARS",
+      "name": "Argentine peso",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": "national",
+      "percent": 100.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 7.0
+    },
+    {
+      "name": "Argentine Sign Language",
+      "code": null,
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 88.5
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 9.2
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.0
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.9
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.4
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Federal presidential republic",
+    "form": "Federal presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 33.2,
+    "military_spending_pct_gdp": 0.6
+  },
+  "established": null,
+  "independence": {
+    "date": "1816-07-09",
+    "from": "Spain"
+  },
+  "memberships": [
+    "G20"
+  ],
+  "flag": "flags/argentina.svg",
+  "map": "maps/countries/argentina.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Argentina",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "id": "Q962",
+  "name": "Benin",
+  "official_name": "Republic of Benin",
+  "codes": {
+    "alpha_2": "BJ",
+    "alpha_3": "BEN",
+    "ccn3": "204"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 112622.0,
+  "population": 14814460,
+  "demonym": {
+    "male": "Beninese",
+    "female": "Beninese",
+    "others": []
+  },
+  "capitals": [
+    "Porto-Novo"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3799",
+      "name": "Porto-Novo",
+      "latitude": 6.483333333,
+      "longitude": 2.616666666,
+      "population": 234168,
+      "map": "maps/cities/benin__porto_novo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q43595",
+      "name": "Cotonou",
+      "latitude": 6.366666666,
+      "longitude": 2.416666666,
+      "population": 780000,
+      "map": "maps/cities/benin__cotonou.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q868198",
+      "name": "Djougou",
+      "latitude": 9.7,
+      "longitude": 1.666666666,
+      "population": 237040,
+      "map": "maps/cities/benin__djougou.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q850031",
+      "name": "Ouidah",
+      "latitude": 6.366666666,
+      "longitude": 2.083333333,
+      "population": 162034,
+      "map": "maps/cities/benin__ouidah.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q688324",
+      "name": "Parakou",
+      "latitude": 9.35,
+      "longitude": 2.616666666,
+      "population": null,
+      "map": "maps/cities/benin__parakou.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "XOF",
+      "name": "West African CFA franc",
+      "symbol": "Fr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 34.0
+    },
+    {
+      "name": "Fon",
+      "code": "fon",
+      "official": null,
+      "percent": 25.0
+    },
+    {
+      "name": "Yoruba",
+      "code": "yor",
+      "official": null,
+      "percent": 6.7
+    },
+    {
+      "name": "Anii",
+      "code": "blo",
+      "official": null,
+      "percent": 0.3
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 53.2
+    },
+    {
+      "religion": "Islam",
+      "percent": 31.4
+    },
+    {
+      "religion": "Other religions",
+      "percent": 10.5
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 4.9
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 19.1,
+    "military_spending_pct_gdp": 0.7
+  },
+  "established": "1960-08-01",
+  "independence": {
+    "date": "1960-08-01",
+    "from": "France"
+  },
+  "memberships": [
+    "African Union"
+  ],
+  "flag": "flags/benin.svg",
+  "map": "maps/countries/benin.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Benin",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

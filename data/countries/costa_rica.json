@@ -1,0 +1,255 @@
+{
+  "id": "Q800",
+  "name": "Costa Rica",
+  "official_name": "Republic of Costa Rica",
+  "codes": {
+    "alpha_2": "CR",
+    "alpha_3": "CRI",
+    "ccn3": "188"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "Central America",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 51100.0,
+  "population": 5152950,
+  "demonym": {
+    "male": "Costa Rican",
+    "female": "Costa Rican",
+    "others": []
+  },
+  "capitals": [
+    "San José"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3070",
+      "name": "San José",
+      "latitude": 9.932738888,
+      "longitude": -84.079613888,
+      "population": 335007,
+      "map": "maps/cities/costa_rica__san_jose.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q30620",
+      "name": "Limón",
+      "latitude": 10.0022155,
+      "longitude": -83.0840367,
+      "population": 71514,
+      "map": "maps/cities/costa_rica__limon.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1387526",
+      "name": "Liberia",
+      "latitude": 10.629638888,
+      "longitude": -85.438252777,
+      "population": 65922,
+      "map": "maps/cities/costa_rica__liberia.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q30687",
+      "name": "Puntarenas",
+      "latitude": 9.977302777,
+      "longitude": -84.834641666,
+      "population": 41528,
+      "map": "maps/cities/costa_rica__puntarenas.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "CRC",
+      "name": "Costa Rican colón",
+      "symbol": "₡",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": "national",
+      "percent": 95.0
+    }
+  ],
+  "official_religions": [
+    "Catholicism"
+  ],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 87.9
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 10.1
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.9
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 17.9,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": {
+    "date": "1821",
+    "from": "Spain"
+  },
+  "memberships": [
+    "OECD"
+  ],
+  "flag": "flags/costa_rica.svg",
+  "map": "maps/countries/costa_rica.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Costa_Rica",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

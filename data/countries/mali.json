@@ -1,0 +1,373 @@
+{
+  "id": "Q912",
+  "name": "Mali",
+  "official_name": "Republic of Mali",
+  "codes": {
+    "alpha_2": "ML",
+    "alpha_3": "MLI",
+    "ccn3": "466"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 1240192.0,
+  "population": 25198821,
+  "demonym": {
+    "male": "Malian",
+    "female": "Malian",
+    "others": []
+  },
+  "capitals": [
+    "Bamako"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3703",
+      "name": "Bamako",
+      "latitude": 12.645833333,
+      "longitude": -7.992222222,
+      "population": 4227569,
+      "map": "maps/cities/mali__bamako.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q333476",
+      "name": "Ségou",
+      "latitude": 13.45,
+      "longitude": -6.266666666,
+      "population": 133501,
+      "map": "maps/cities/mali__segou.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q722827",
+      "name": "Sikasso",
+      "latitude": 11.316666666,
+      "longitude": -5.666666666,
+      "population": 213977,
+      "map": "maps/cities/mali__sikasso.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q188904",
+      "name": "Gao",
+      "latitude": 16.266666666,
+      "longitude": -0.05,
+      "population": 49483,
+      "map": "maps/cities/mali__gao.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q9427",
+      "name": "Timbuktu",
+      "latitude": 16.77348,
+      "longitude": -3.00742,
+      "population": 35330,
+      "map": "maps/cities/mali__timbuktu.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q211227",
+      "name": "Mopti",
+      "latitude": 14.4873,
+      "longitude": -4.1896,
+      "population": 120786,
+      "map": "maps/cities/mali__mopti.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "XOF",
+      "name": "West African CFA franc",
+      "symbol": "Fr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Bambara",
+      "code": "bam",
+      "official": "national",
+      "percent": 46.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": null,
+      "percent": 17.0
+    },
+    {
+      "name": "Fula",
+      "code": "ffm",
+      "official": "national",
+      "percent": 7.7
+    },
+    {
+      "name": "Soninke",
+      "code": "snk",
+      "official": "national",
+      "percent": 5.9
+    },
+    {
+      "name": "Kita Maninkakan",
+      "code": "mwk",
+      "official": null,
+      "percent": 5.0
+    },
+    {
+      "name": "Koyraboro Senni",
+      "code": "ses",
+      "official": null,
+      "percent": 3.4
+    },
+    {
+      "name": "Tamasheq",
+      "code": "tmh",
+      "official": "national",
+      "percent": 2.1
+    },
+    {
+      "name": "Koyra Chiini",
+      "code": "khq",
+      "official": null,
+      "percent": 1.7
+    },
+    {
+      "name": "Dogon",
+      "code": null,
+      "official": "national",
+      "percent": 1.1
+    },
+    {
+      "name": "Kassonke",
+      "code": "kao",
+      "official": "national",
+      "percent": 1.0
+    },
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": null,
+      "percent": 0.9
+    },
+    {
+      "name": "Bomu",
+      "code": "bmq",
+      "official": null,
+      "percent": 0.86
+    },
+    {
+      "name": "Bozo",
+      "code": null,
+      "official": "national",
+      "percent": 0.85
+    },
+    {
+      "name": "Bobo",
+      "code": null,
+      "official": "national",
+      "percent": null
+    },
+    {
+      "name": "Hassaniya Arabic",
+      "code": "mey",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Maninka",
+      "code": "myq",
+      "official": "national",
+      "percent": null
+    },
+    {
+      "name": "Minyanka",
+      "code": "myk",
+      "official": "national",
+      "percent": null
+    },
+    {
+      "name": "Senufo",
+      "code": null,
+      "official": "national",
+      "percent": null
+    },
+    {
+      "name": "Songhay",
+      "code": null,
+      "official": "national",
+      "percent": null
+    },
+    {
+      "name": "Hassaniya",
+      "code": null,
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 94.1
+    },
+    {
+      "religion": "Christianity",
+      "percent": 2.6
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 2.5
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.8
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic under a military junta",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Low income",
+    "government_spending_pct_gdp": 25.0,
+    "military_spending_pct_gdp": 4.2
+  },
+  "established": "1960-08-20",
+  "independence": {
+    "date": "1960-09-22",
+    "from": "France"
+  },
+  "memberships": [
+    "African Union"
+  ],
+  "flag": "flags/mali.svg",
+  "map": "maps/countries/mali.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Mali",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "id": "Q1042",
+  "name": "Seychelles",
+  "official_name": "Republic of Seychelles",
+  "codes": {
+    "alpha_2": "SC",
+    "alpha_3": "SYC",
+    "ccn3": "690"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 452.0,
+  "population": 122730,
+  "demonym": {
+    "male": "Seychellois",
+    "female": "Seychellois",
+    "others": []
+  },
+  "capitals": [
+    "Victoria"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3940",
+      "name": "Victoria",
+      "latitude": -4.623611111,
+      "longitude": 55.454444444,
+      "population": 24701,
+      "map": "maps/cities/seychelles__victoria.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "SCR",
+      "name": "Seychellois rupee",
+      "symbol": "₨",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Seychellois Creole",
+      "code": "crs",
+      "official": "national",
+      "percent": 98.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 53.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 38.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 94.0
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 2.4
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 1.4
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.9
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.8
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.6
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 35.2,
+    "military_spending_pct_gdp": 1.2
+  },
+  "established": "1976-06-29",
+  "independence": {
+    "date": "1976-06-29",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "African Union",
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/seychelles.svg",
+  "map": "maps/countries/seychelles.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Seychelles",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-12",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-12",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-12",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-12",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-12",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-12",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

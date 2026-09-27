@@ -1,0 +1,203 @@
+{
+  "id": "Q237",
+  "name": "Vatican City",
+  "official_name": "Vatican City State",
+  "codes": {
+    "alpha_2": "VA",
+    "alpha_3": "VAT",
+    "ccn3": "336"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": true,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 0.44,
+  "population": 882,
+  "demonym": {
+    "male": "Vatican",
+    "female": "Vatican",
+    "others": []
+  },
+  "capitals": [
+    "Vatican City"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q237",
+      "name": "Vatican City",
+      "latitude": 41.904,
+      "longitude": 12.453,
+      "population": 882,
+      "map": "maps/cities/vatican_city__vatican_city.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Italian",
+      "code": "ita",
+      "official": "national",
+      "percent": 82.0
+    },
+    {
+      "name": "Latin",
+      "code": "lat",
+      "official": "national",
+      "percent": 82.0
+    }
+  ],
+  "official_religions": [
+    "Catholicism"
+  ],
+  "religions": [],
+  "government": {
+    "label": "Unitary theocratic elective absolute monarchy",
+    "form": "Absolute monarchy"
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": "1929-02-11",
+  "independence": {
+    "date": "1929-02-11",
+    "from": "Italy"
+  },
+  "memberships": [],
+  "flag": "flags/vatican_city.svg",
+  "map": "maps/countries/vatican_city.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Vatican_City",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "id": "Q262",
+  "name": "Algeria",
+  "official_name": "People's Democratic Republic of Algeria",
+  "codes": {
+    "alpha_2": "DZ",
+    "alpha_3": "DZA",
+    "ccn3": "012"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 2381741.0,
+  "population": 47435312,
+  "demonym": {
+    "male": "Algerian",
+    "female": "Algerian",
+    "others": []
+  },
+  "capitals": [
+    "Algiers"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3561",
+      "name": "Algiers",
+      "latitude": 36.776388888,
+      "longitude": 3.058611111,
+      "population": 2364230,
+      "map": "maps/cities/algeria__algiers.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q131818",
+      "name": "Oran",
+      "latitude": 35.696944444,
+      "longitude": -0.633055555,
+      "population": 803329,
+      "map": "maps/cities/algeria__oran.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q187346",
+      "name": "Constantine",
+      "latitude": 36.365,
+      "longitude": 6.614722222,
+      "population": 465138,
+      "map": "maps/cities/algeria__constantine.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q45942",
+      "name": "Annaba",
+      "latitude": 36.9,
+      "longitude": 7.766666666,
+      "population": 257359,
+      "map": "maps/cities/algeria__annaba.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q244004",
+      "name": "Sétif",
+      "latitude": 36.19,
+      "longitude": 5.41,
+      "population": 288461,
+      "map": "maps/cities/algeria__setif.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q338844",
+      "name": "Batna",
+      "latitude": 35.55,
+      "longitude": 6.166666666,
+      "population": 290645,
+      "map": "maps/cities/algeria__batna.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "DZD",
+      "name": "Algerian dinar",
+      "symbol": "د.ج",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 83.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": null,
+      "percent": 33.0
+    },
+    {
+      "name": "Hassaniyya",
+      "code": "mey",
+      "official": null,
+      "percent": 11.0
+    },
+    {
+      "name": "Kabyle",
+      "code": "kab",
+      "official": null,
+      "percent": 7.8
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 7.0
+    },
+    {
+      "name": "Tumzabt",
+      "code": "mzb",
+      "official": null,
+      "percent": 0.36
+    },
+    {
+      "name": "Standard Algerian Berber",
+      "code": null,
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 98.4
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 1.3
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.3
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary semi-presidential republic",
+    "form": "Semi-presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 37.2,
+    "military_spending_pct_gdp": 8.0
+  },
+  "established": "1962-07-03",
+  "independence": {
+    "date": "1962-07-05",
+    "from": "France"
+  },
+  "memberships": [
+    "African Union",
+    "Arab League",
+    "OPEC"
+  ],
+  "flag": "flags/algeria.svg",
+  "map": "maps/countries/algeria.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Algeria",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

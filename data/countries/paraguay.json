@@ -1,0 +1,259 @@
+{
+  "id": "Q733",
+  "name": "Paraguay",
+  "official_name": "Republic of Paraguay",
+  "codes": {
+    "alpha_2": "PY",
+    "alpha_3": "PRY",
+    "ccn3": "600"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "South America",
+  "continents": [
+    "South America"
+  ],
+  "area_km2": 406752.0,
+  "population": 7013078,
+  "demonym": {
+    "male": "Paraguayan",
+    "female": "Paraguayan",
+    "others": []
+  },
+  "capitals": [
+    "Asunción"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q2933",
+      "name": "Asunción",
+      "latitude": -25.28,
+      "longitude": -57.634444444,
+      "population": 462241,
+      "map": "maps/cities/paraguay__asuncion.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q192235",
+      "name": "Ciudad del Este",
+      "latitude": -25.516666666,
+      "longitude": -54.616666666,
+      "population": 350000,
+      "map": "maps/cities/paraguay__ciudad_del_este.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q849292",
+      "name": "Pedro Juan Caballero",
+      "latitude": -22.566666666,
+      "longitude": -55.716666666,
+      "population": 127437,
+      "map": "maps/cities/paraguay__pedro_juan_caballero.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q47138",
+      "name": "Encarnación",
+      "latitude": -27.333333333,
+      "longitude": -55.866666666,
+      "population": 106842,
+      "map": "maps/cities/paraguay__encarnacion.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "PYG",
+      "name": "Paraguayan guaraní",
+      "symbol": "₲",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Guarani",
+      "code": "grn",
+      "official": "national",
+      "percent": 80.0
+    },
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": "national",
+      "percent": 3.2
+    },
+    {
+      "name": "German",
+      "code": "deu",
+      "official": null,
+      "percent": 2.9
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 93.5
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 4.2
+    },
+    {
+      "religion": "Other religions",
+      "percent": 2.2
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 20.4,
+    "military_spending_pct_gdp": 0.9
+  },
+  "established": "1811-05-14",
+  "independence": {
+    "date": "1811",
+    "from": "Spain"
+  },
+  "memberships": [],
+  "flag": "flags/paraguay.svg",
+  "map": "maps/countries/paraguay.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Paraguay",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

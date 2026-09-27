@@ -1,0 +1,266 @@
+{
+  "id": "Q977",
+  "name": "Djibouti",
+  "official_name": "Republic of Djibouti",
+  "codes": {
+    "alpha_2": "DJ",
+    "alpha_3": "DJI",
+    "ccn3": "262"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 23200.0,
+  "population": 1184076,
+  "demonym": {
+    "male": "Djiboutian",
+    "female": "Djiboutian",
+    "others": []
+  },
+  "capitals": [
+    "Djibouti"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3604",
+      "name": "Djibouti",
+      "latitude": 11.595,
+      "longitude": 43.148055555,
+      "population": 603900,
+      "map": "maps/cities/djibouti__djibouti.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q842854",
+      "name": "Ali Sabieh",
+      "latitude": 11.155833333,
+      "longitude": 42.7125,
+      "population": 71230,
+      "map": "maps/cities/djibouti__ali_sabieh.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q820972",
+      "name": "Tadjoura",
+      "latitude": 11.783333333,
+      "longitude": 42.883333333,
+      "population": 14820,
+      "map": "maps/cities/djibouti__tadjoura.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q860179",
+      "name": "Obock",
+      "latitude": 11.966666666,
+      "longitude": 43.283333333,
+      "population": 21200,
+      "map": "maps/cities/djibouti__obock.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "DJF",
+      "name": "Djiboutian franc",
+      "symbol": "Fr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 50.0
+    },
+    {
+      "name": "Afar",
+      "code": "aar",
+      "official": null,
+      "percent": 42.0
+    },
+    {
+      "name": "Somali",
+      "code": "som",
+      "official": null,
+      "percent": 41.0
+    },
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 7.3
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 97.7
+    },
+    {
+      "religion": "Christianity",
+      "percent": 1.1
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 1.1
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic under a hereditary dictatorship",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 20.8,
+    "military_spending_pct_gdp": null
+  },
+  "established": "1977-06-27",
+  "independence": {
+    "date": "1977-06-27",
+    "from": "France"
+  },
+  "memberships": [
+    "African Union",
+    "Arab League"
+  ],
+  "flag": "flags/djibouti.svg",
+  "map": "maps/countries/djibouti.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Djibouti",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

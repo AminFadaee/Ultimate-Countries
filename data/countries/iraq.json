@@ -1,0 +1,308 @@
+{
+  "id": "Q796",
+  "name": "Iraq",
+  "official_name": "Republic of Iraq",
+  "codes": {
+    "alpha_2": "IQ",
+    "alpha_3": "IRQ",
+    "ccn3": "368"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 438317.0,
+  "population": 47020774,
+  "demonym": {
+    "male": "Iraqi",
+    "female": "Iraqi",
+    "others": []
+  },
+  "capitals": [
+    "Baghdad"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1530",
+      "name": "Baghdad",
+      "latitude": 33.315277777,
+      "longitude": 44.366111111,
+      "population": 8126755,
+      "map": "maps/cities/iraq__baghdad.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q83317",
+      "name": "Mosul",
+      "latitude": 36.341666666,
+      "longitude": 43.129166666,
+      "population": 1792000,
+      "map": "maps/cities/iraq__mosul.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q48195",
+      "name": "Basra",
+      "latitude": 30.515,
+      "longitude": 47.81,
+      "population": 1326564,
+      "map": "maps/cities/iraq__basra.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q132754",
+      "name": "Erbil",
+      "latitude": 36.191111111,
+      "longitude": 44.009444444,
+      "population": 846000,
+      "map": "maps/cities/iraq__erbil.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q173310",
+      "name": "Kirkuk",
+      "latitude": 35.466666666,
+      "longitude": 44.4,
+      "population": 975000,
+      "map": "maps/cities/iraq__kirkuk.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q5684",
+      "name": "Babylon",
+      "latitude": 32.522907,
+      "longitude": 44.42415,
+      "population": 150000,
+      "map": "maps/cities/iraq__babylon.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "IQD",
+      "name": "Iraqi dinar",
+      "symbol": "ع.د",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 68.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 35.0
+    },
+    {
+      "name": "Kurdish language",
+      "code": "kur",
+      "official": null,
+      "percent": 12.0
+    },
+    {
+      "name": "Azerbaijani",
+      "code": "aze",
+      "official": null,
+      "percent": 1.8
+    },
+    {
+      "name": "Persian",
+      "code": "fas",
+      "official": null,
+      "percent": 0.87
+    },
+    {
+      "name": "Northern Luri",
+      "code": "lrc",
+      "official": null,
+      "percent": 0.61
+    },
+    {
+      "name": "Syriac",
+      "code": "syr",
+      "official": null,
+      "percent": 0.5
+    },
+    {
+      "name": "Kurdish",
+      "code": null,
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 99.5
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.4
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Federal parliamentary republic",
+    "form": "Federal parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 42.1,
+    "military_spending_pct_gdp": 2.4
+  },
+  "established": "1932-10-03",
+  "independence": {
+    "date": "1932-10-03",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "Arab League",
+    "OPEC"
+  ],
+  "flag": "flags/iraq.svg",
+  "map": "maps/countries/iraq.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Iraq",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-09",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-09",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-09",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-09",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-09",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-09",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

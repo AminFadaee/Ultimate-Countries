@@ -1,0 +1,390 @@
+{
+  "id": "Q865",
+  "name": "Taiwan",
+  "official_name": "Republic of China (Taiwan)",
+  "codes": {
+    "alpha_2": "TW",
+    "alpha_3": "TWN",
+    "ccn3": "158"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": true,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 36193.0,
+  "population": 23224721,
+  "demonym": {
+    "male": "Taiwanese",
+    "female": "Taiwanese",
+    "others": []
+  },
+  "capitals": [
+    "Taipei"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1867",
+      "name": "Taipei",
+      "latitude": 25.0375,
+      "longitude": 121.5625,
+      "population": 2429429,
+      "map": "maps/cities/taiwan__taipei.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q181557",
+      "name": "Kaohsiung",
+      "latitude": 22.615,
+      "longitude": 120.2975,
+      "population": 2713032,
+      "map": "maps/cities/taiwan__kaohsiung.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q245023",
+      "name": "Taichung",
+      "latitude": 24.143888888,
+      "longitude": 120.679444444,
+      "population": 2868452,
+      "map": "maps/cities/taiwan__taichung.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q140631",
+      "name": "Tainan",
+      "latitude": 22.99,
+      "longitude": 120.185,
+      "population": 1849762,
+      "map": "maps/cities/taiwan__tainan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q115256",
+      "name": "Taoyuan",
+      "latitude": 24.991278,
+      "longitude": 121.314328,
+      "population": 2356795,
+      "map": "maps/cities/taiwan__taoyuan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q249994",
+      "name": "Hsinchu City",
+      "latitude": 24.804722222,
+      "longitude": 120.971388888,
+      "population": 455871,
+      "map": "maps/cities/taiwan__hsinchu_city.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "TWD",
+      "name": "New Taiwan dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Chinese",
+      "code": "zho",
+      "official": "national",
+      "percent": 95.0
+    },
+    {
+      "name": "Seediq",
+      "code": "trv",
+      "official": null,
+      "percent": 0.02
+    },
+    {
+      "name": "Amis",
+      "code": "ami",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Atayal",
+      "code": "tay",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Bunun",
+      "code": "bnn",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Kanakanavu",
+      "code": "xnb",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Kavalan",
+      "code": "ckv",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Kinmen dialect",
+      "code": null,
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Matsu dialect",
+      "code": null,
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Paiwan",
+      "code": "pwn",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Puyuma",
+      "code": "pyu",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Rukai",
+      "code": "dru",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Saaroa",
+      "code": "sxr",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Saisiyat",
+      "code": "xsy",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Sakizaya",
+      "code": "szy",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Standard Taiwanese Mandarin",
+      "code": null,
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Taiwanese Hakka",
+      "code": null,
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Taiwanese Hokkien",
+      "code": null,
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Taiwanese Sign Language",
+      "code": "tss",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Truku",
+      "code": null,
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Tsou",
+      "code": "tsu",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Wuqiu dialect",
+      "code": null,
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Yami",
+      "code": "tao",
+      "official": null,
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Other religions",
+      "percent": 51.7
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 23.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 19.2
+    },
+    {
+      "religion": "Christianity",
+      "percent": 5.5
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.5
+    }
+  ],
+  "government": {
+    "label": "Unitary semi-presidential republic",
+    "form": "Semi-presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": 18.3,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/taiwan.svg",
+  "map": "maps/countries/taiwan.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Taiwan",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-28",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-28",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-28",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-28",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-28",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-28",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-28",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

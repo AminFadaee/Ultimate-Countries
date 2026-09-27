@@ -1,0 +1,249 @@
+{
+  "id": "Q686",
+  "name": "Vanuatu",
+  "official_name": "Republic of Vanuatu",
+  "codes": {
+    "alpha_2": "VU",
+    "alpha_3": "VUT",
+    "ccn3": "548"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Oceania",
+  "subregion": "Melanesia",
+  "continents": [
+    "Oceania"
+  ],
+  "area_km2": 12189.0,
+  "population": 335169,
+  "demonym": {
+    "male": "Ni-Vanuatu",
+    "female": "Ni-Vanuatu",
+    "others": [
+      "Vanuatuan"
+    ]
+  },
+  "capitals": [
+    "Port Vila"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q37806",
+      "name": "Port Vila",
+      "latitude": -17.73333,
+      "longitude": 168.316667,
+      "population": 49034,
+      "map": "maps/cities/vanuatu__port_vila.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q876557",
+      "name": "Luganville",
+      "latitude": -15.5128,
+      "longitude": 167.1735,
+      "population": 17719,
+      "map": "maps/cities/vanuatu__luganville.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "VUV",
+      "name": "Vanuatu vatu",
+      "symbol": "Vt",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Bislama",
+      "code": "bis",
+      "official": "national",
+      "percent": 90.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 83.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 31.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 83.5
+    },
+    {
+      "religion": "Other religions",
+      "percent": 15.1
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 1.4
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 37.8,
+    "military_spending_pct_gdp": null
+  },
+  "established": "1980-07-30",
+  "independence": {
+    "date": "1980-07-30",
+    "from": "United Kingdom, France"
+  },
+  "memberships": [
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/vanuatu.svg",
+  "map": "maps/countries/vanuatu.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Vanuatu",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

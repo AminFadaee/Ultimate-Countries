@@ -1,0 +1,320 @@
+{
+  "id": "Q39",
+  "name": "Switzerland",
+  "official_name": "Swiss Confederation",
+  "codes": {
+    "alpha_2": "CH",
+    "alpha_3": "CHE",
+    "ccn3": "756"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 41284.0,
+  "population": 9092436,
+  "demonym": {
+    "male": "Swiss",
+    "female": "Swiss",
+    "others": []
+  },
+  "capitals": [
+    "Bern"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q70",
+      "name": "Bern",
+      "latitude": 46.94798,
+      "longitude": 7.44743,
+      "population": 136988,
+      "map": "maps/cities/switzerland__bern.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q71",
+      "name": "Geneva",
+      "latitude": 46.2,
+      "longitude": 6.15,
+      "population": 209061,
+      "map": "maps/cities/switzerland__geneva.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q72",
+      "name": "Zurich",
+      "latitude": 47.374444444,
+      "longitude": 8.541111111,
+      "population": 452421,
+      "map": "maps/cities/switzerland__zurich.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q78",
+      "name": "Basel",
+      "latitude": 47.560555555,
+      "longitude": 7.590555555,
+      "population": 176329,
+      "map": "maps/cities/switzerland__basel.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q807",
+      "name": "Lausanne",
+      "latitude": 46.533333333,
+      "longitude": 6.633333333,
+      "population": 144873,
+      "map": "maps/cities/switzerland__lausanne.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q4191",
+      "name": "Lucerne",
+      "latitude": 47.0523,
+      "longitude": 8.3059,
+      "population": 86234,
+      "map": "maps/cities/switzerland__lucerne.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "CHF",
+      "name": "Swiss franc",
+      "symbol": "Fr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "German",
+      "code": "deu",
+      "official": "national",
+      "percent": 76.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 45.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 39.0
+    },
+    {
+      "name": "Italian",
+      "code": "ita",
+      "official": "national",
+      "percent": 15.0
+    },
+    {
+      "name": "Lombard",
+      "code": "lmo",
+      "official": null,
+      "percent": 4.1
+    },
+    {
+      "name": "Portuguese",
+      "code": "por",
+      "official": null,
+      "percent": 3.4
+    },
+    {
+      "name": "Romansh",
+      "code": "roh",
+      "official": "national",
+      "percent": 0.5
+    },
+    {
+      "name": "Sinte Romani",
+      "code": "rmo",
+      "official": null,
+      "percent": 0.29
+    },
+    {
+      "name": "Walser",
+      "code": "wae",
+      "official": null,
+      "percent": 0.11
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 61.6
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 30.8
+    },
+    {
+      "religion": "Islam",
+      "percent": 6.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.6
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.5
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.2
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.2
+    }
+  ],
+  "government": {
+    "label": "Federal assembly-independent directorial republic",
+    "form": "Federal directorial republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 32.2,
+    "military_spending_pct_gdp": 0.7
+  },
+  "established": null,
+  "independence": {
+    "date": "1291",
+    "from": "Holy Roman Empire"
+  },
+  "memberships": [
+    "OECD",
+    "Schengen Area"
+  ],
+  "flag": "flags/switzerland.svg",
+  "map": "maps/countries/switzerland.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Switzerland",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "id": "Q983",
+  "name": "Equatorial Guinea",
+  "official_name": "Republic of Equatorial Guinea",
+  "codes": {
+    "alpha_2": "GQ",
+    "alpha_3": "GNQ",
+    "ccn3": "226"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Middle Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 28051.0,
+  "population": 1938431,
+  "demonym": {
+    "male": "Equatorial Guinean",
+    "female": "Equatorial Guinean",
+    "others": [
+      "Equatoguinean"
+    ]
+  },
+  "capitals": [
+    "Malabo"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3818",
+      "name": "Malabo",
+      "latitude": 3.752063888,
+      "longitude": 8.7737,
+      "population": 297000,
+      "map": "maps/cities/equatorial_guinea__malabo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q320792",
+      "name": "Bata",
+      "latitude": 1.865,
+      "longitude": 9.77,
+      "population": 290000,
+      "map": "maps/cities/equatorial_guinea__bata.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "XAF",
+      "name": "Central African CFA franc",
+      "symbol": "Fr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": "national",
+      "percent": 87.0
+    },
+    {
+      "name": "Fang",
+      "code": "fan",
+      "official": null,
+      "percent": 51.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 29.0
+    },
+    {
+      "name": "Bube",
+      "code": "bvb",
+      "official": null,
+      "percent": 7.9
+    },
+    {
+      "name": "Portuguese",
+      "code": "por",
+      "official": "national",
+      "percent": 0.0001
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 88.7
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 5.0
+    },
+    {
+      "religion": "Islam",
+      "percent": 4.0
+    },
+    {
+      "religion": "Other religions",
+      "percent": 2.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic under a hereditary dictatorship",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 19.0,
+    "military_spending_pct_gdp": 1.0
+  },
+  "established": "1968-10-12",
+  "independence": {
+    "date": "1968-10-12",
+    "from": "Spain"
+  },
+  "memberships": [
+    "African Union",
+    "OPEC"
+  ],
+  "flag": "flags/equatorial_guinea.svg",
+  "map": "maps/countries/equatorial_guinea.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Equatorial_Guinea",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

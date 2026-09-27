@@ -1,0 +1,217 @@
+{
+  "id": "Q785",
+  "name": "Jersey",
+  "official_name": "Bailiwick of Jersey",
+  "codes": {
+    "alpha_2": "JE",
+    "alpha_3": "JEY",
+    "ccn3": "832"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "crown_dependency",
+    "parent_alpha_3": "GBR"
+  },
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 116.0,
+  "population": 104540,
+  "demonym": {
+    "male": "Channel Islander",
+    "female": "Channel Islander",
+    "others": [
+      "Islander",
+      "Jersey bean",
+      "Jerseyman",
+      "Jerseywoman"
+    ]
+  },
+  "capitals": [
+    "Saint Helier"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q147738",
+      "name": "Saint Helier",
+      "latitude": 49.185833333,
+      "longitude": -2.11,
+      "population": 35822,
+      "map": "maps/cities/jersey__saint_helier.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "GBP",
+      "name": "British pound",
+      "symbol": "£",
+      "main": true
+    },
+    {
+      "code": "JEP",
+      "name": "Jersey pound",
+      "symbol": "£",
+      "main": false
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 95.0
+    },
+    {
+      "name": "Jersey Legal French",
+      "code": null,
+      "official": "national",
+      "percent": null
+    },
+    {
+      "name": "Jèrriais",
+      "code": null,
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [
+    "Christianity"
+  ],
+  "religions": [],
+  "government": {
+    "label": "Parliamentary constitutional monarchy",
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/jersey.svg",
+  "map": "maps/countries/jersey.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Jersey",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

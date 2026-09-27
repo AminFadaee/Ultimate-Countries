@@ -1,0 +1,268 @@
+{
+  "id": "Q819",
+  "name": "Laos",
+  "official_name": "Lao People's Democratic Republic",
+  "codes": {
+    "alpha_2": "LA",
+    "alpha_3": "LAO",
+    "ccn3": "418"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 236800.0,
+  "population": 7873046,
+  "demonym": {
+    "male": "Laotian",
+    "female": "Laotian",
+    "others": [
+      "Lao"
+    ]
+  },
+  "capitals": [
+    "Vientiane"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q9326",
+      "name": "Vientiane",
+      "latitude": 17.98,
+      "longitude": 102.63,
+      "population": 948487,
+      "map": "maps/cities/laos__vientiane.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q383622",
+      "name": "Pāksē",
+      "latitude": 15.116666666,
+      "longitude": 105.783333333,
+      "population": 119848,
+      "map": "maps/cities/laos__pakse.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q750443",
+      "name": "Savannakhet",
+      "latitude": 16.55,
+      "longitude": 104.75,
+      "population": 124000,
+      "map": "maps/cities/laos__savannakhet.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q190165",
+      "name": "Luang Prabang",
+      "latitude": 19.89,
+      "longitude": 102.134722222,
+      "population": 53792,
+      "map": "maps/cities/laos__luang_prabang.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "LAK",
+      "name": "Lao kip",
+      "symbol": "₭",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Lao",
+      "code": "lao",
+      "official": "national",
+      "percent": 69.0
+    },
+    {
+      "name": "Khmu",
+      "code": "kjg",
+      "official": null,
+      "percent": 5.8
+    },
+    {
+      "name": "Hmong Njua",
+      "code": "hnj",
+      "official": null,
+      "percent": 3.0
+    },
+    {
+      "name": "Hmong Daw",
+      "code": "mww",
+      "official": null,
+      "percent": 2.3
+    },
+    {
+      "name": "Kuy",
+      "code": "kdt",
+      "official": null,
+      "percent": 0.96
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Buddhism",
+      "percent": 64.2
+    },
+    {
+      "religion": "Other religions",
+      "percent": 34.2
+    },
+    {
+      "religion": "Christianity",
+      "percent": 1.5
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.1
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Communist state",
+    "form": "Communist state"
+  },
+  "economy": {
+    "system": "Socialist market economy",
+    "disputed": true,
+    "disputed_with": "Market economy",
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 16.6,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [
+    "ASEAN"
+  ],
+  "flag": "flags/laos.svg",
+  "map": "maps/countries/laos.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Laos",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

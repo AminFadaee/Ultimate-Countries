@@ -1,0 +1,240 @@
+{
+  "id": "Q34754",
+  "name": "Somaliland",
+  "official_name": "Republic of Somaliland",
+  "codes": {
+    "alpha_2": null,
+    "alpha_3": null,
+    "ccn3": null
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": true,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": "SOM"
+  },
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 137600.0,
+  "population": 4914100,
+  "demonym": {
+    "male": "Somalilander",
+    "female": "Somalilander",
+    "others": []
+  },
+  "capitals": [
+    "Hargeisa"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q168652",
+      "name": "Hargeisa",
+      "latitude": 9.565556,
+      "longitude": 44.060556,
+      "population": 1227620,
+      "map": "maps/cities/somaliland__hargeisa.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q191718",
+      "name": "Berbera",
+      "latitude": 10.43953,
+      "longitude": 45.01305,
+      "population": 263000,
+      "map": "maps/cities/somaliland__berbera.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q948448",
+      "name": "Burao",
+      "latitude": 9.527889,
+      "longitude": 45.5345,
+      "population": 350211,
+      "map": "maps/cities/somaliland__burao.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1017183",
+      "name": "Erigavo",
+      "latitude": 10.618055555,
+      "longitude": 47.37,
+      "population": 41000,
+      "map": "maps/cities/somaliland__erigavo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q893092",
+      "name": "Borama",
+      "latitude": 9.933055555,
+      "longitude": 43.181666666,
+      "population": 68074,
+      "map": "maps/cities/somaliland__borama.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "SLSH",
+      "name": "Somaliland shilling",
+      "symbol": "Sl.Sh",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": null
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": null
+    },
+    {
+      "name": "Somali",
+      "code": "som",
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/somaliland.svg",
+  "map": "maps/countries/somaliland.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Somaliland",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

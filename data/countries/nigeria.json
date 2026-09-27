@@ -1,0 +1,333 @@
+{
+  "id": "Q1033",
+  "name": "Nigeria",
+  "official_name": "Federal Republic of Nigeria",
+  "codes": {
+    "alpha_2": "NG",
+    "alpha_3": "NGA",
+    "ccn3": "566"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 923768.0,
+  "population": 237527782,
+  "demonym": {
+    "male": "Nigerian",
+    "female": "Nigerian",
+    "others": []
+  },
+  "capitals": [
+    "Abuja"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3787",
+      "name": "Abuja",
+      "latitude": 9.055555555,
+      "longitude": 7.491388888,
+      "population": 1693400,
+      "map": "maps/cities/nigeria__abuja.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q8673",
+      "name": "Lagos",
+      "latitude": 6.456111111,
+      "longitude": 3.393611111,
+      "population": 15070000,
+      "map": "maps/cities/nigeria__lagos.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q182984",
+      "name": "Kano",
+      "latitude": 12.0,
+      "longitude": 8.516666666,
+      "population": 4348000,
+      "map": "maps/cities/nigeria__kano.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q183298",
+      "name": "Ibadan",
+      "latitude": 7.3775,
+      "longitude": 3.905833333,
+      "population": 2559853,
+      "map": "maps/cities/nigeria__ibadan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q217432",
+      "name": "Port Harcourt",
+      "latitude": 4.765466,
+      "longitude": 7.016316,
+      "population": 3325000,
+      "map": "maps/cities/nigeria__port_harcourt.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q320704",
+      "name": "Benin City",
+      "latitude": 6.3176,
+      "longitude": 5.6145,
+      "population": 1780000,
+      "map": "maps/cities/nigeria__benin_city.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "NGN",
+      "name": "Nigerian naira",
+      "symbol": "₦",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 53.0
+    },
+    {
+      "name": "Nigerian Pidgin",
+      "code": "pcm",
+      "official": null,
+      "percent": 21.0
+    },
+    {
+      "name": "Hausa",
+      "code": "hau",
+      "official": null,
+      "percent": 13.0
+    },
+    {
+      "name": "Igbo",
+      "code": "ibo",
+      "official": null,
+      "percent": 13.0
+    },
+    {
+      "name": "Yoruba",
+      "code": "yor",
+      "official": null,
+      "percent": 13.0
+    },
+    {
+      "name": "Fula",
+      "code": "ful",
+      "official": null,
+      "percent": 6.7
+    },
+    {
+      "name": "Tiv",
+      "code": "tiv",
+      "official": null,
+      "percent": 1.6
+    },
+    {
+      "name": "Efik",
+      "code": "efi",
+      "official": null,
+      "percent": 1.4
+    },
+    {
+      "name": "Ibibio",
+      "code": "ibb",
+      "official": null,
+      "percent": 1.4
+    },
+    {
+      "name": "Bini",
+      "code": "bin",
+      "official": null,
+      "percent": 0.71
+    },
+    {
+      "name": "Jju",
+      "code": "kaj",
+      "official": null,
+      "percent": 0.21
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 56.1
+    },
+    {
+      "religion": "Christianity",
+      "percent": 43.4
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.4
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.2
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Federal presidential republic",
+    "form": "Federal presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 18.5,
+    "military_spending_pct_gdp": 0.6
+  },
+  "established": null,
+  "independence": {
+    "date": "1960-10-01",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "African Union",
+    "Commonwealth of Nations",
+    "OPEC"
+  ],
+  "flag": "flags/nigeria.svg",
+  "map": "maps/countries/nigeria.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Nigeria",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "id": "Q924",
+  "name": "Tanzania",
+  "official_name": "United Republic of Tanzania",
+  "codes": {
+    "alpha_2": "TZ",
+    "alpha_3": "TZA",
+    "ccn3": "834"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 945087.0,
+  "population": 70545865,
+  "demonym": {
+    "male": "Tanzanian",
+    "female": "Tanzanian",
+    "others": []
+  },
+  "capitals": [
+    "Dodoma"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3866",
+      "name": "Dodoma",
+      "latitude": -6.1835,
+      "longitude": 35.746,
+      "population": 213636,
+      "map": "maps/cities/tanzania__dodoma.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1960",
+      "name": "Dar es Salaam",
+      "latitude": -6.816111111,
+      "longitude": 39.280277777,
+      "population": 4715000,
+      "map": "maps/cities/tanzania__dar_es_salaam.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q110218",
+      "name": "Mwanza",
+      "latitude": -2.516666666,
+      "longitude": 32.9,
+      "population": 706453,
+      "map": "maps/cities/tanzania__mwanza.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q2222874",
+      "name": "Zanzibar City",
+      "latitude": -6.166666666,
+      "longitude": 39.2,
+      "population": 709809,
+      "map": "maps/cities/tanzania__zanzibar_city.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q4301",
+      "name": "Arusha",
+      "latitude": -3.366666666,
+      "longitude": 36.683333333,
+      "population": 416442,
+      "map": "maps/cities/tanzania__arusha.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q243319",
+      "name": "Morogoro",
+      "latitude": -6.824166666,
+      "longitude": 37.663333333,
+      "population": 471409,
+      "map": "maps/cities/tanzania__morogoro.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "TZS",
+      "name": "Tanzanian shilling",
+      "symbol": "Sh",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Swahili",
+      "code": "swa",
+      "official": "national",
+      "percent": 90.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 69.0
+    },
+    {
+      "name": "Sukuma",
+      "code": "suk",
+      "official": null,
+      "percent": 8.7
+    },
+    {
+      "name": "Nyamwezi",
+      "code": "nym",
+      "official": null,
+      "percent": 3.3
+    },
+    {
+      "name": "Makonde",
+      "code": "kde",
+      "official": null,
+      "percent": 2.5
+    },
+    {
+      "name": "Bena",
+      "code": "bez",
+      "official": null,
+      "percent": 1.7
+    },
+    {
+      "name": "Shambala",
+      "code": "ksb",
+      "official": null,
+      "percent": 1.7
+    },
+    {
+      "name": "Masai",
+      "code": "mas",
+      "official": null,
+      "percent": 1.5
+    },
+    {
+      "name": "Mbunga",
+      "code": "mgy",
+      "official": null,
+      "percent": 1.4
+    },
+    {
+      "name": "Asu",
+      "code": "asa",
+      "official": null,
+      "percent": 1.2
+    },
+    {
+      "name": "Langi",
+      "code": "lag",
+      "official": null,
+      "percent": 0.87
+    },
+    {
+      "name": "Machame",
+      "code": "jmc",
+      "official": null,
+      "percent": 0.74
+    },
+    {
+      "name": "Rombo",
+      "code": "rof",
+      "official": null,
+      "percent": 0.74
+    },
+    {
+      "name": "Vunjo",
+      "code": "vun",
+      "official": null,
+      "percent": 0.74
+    },
+    {
+      "name": "Rwa",
+      "code": "rwk",
+      "official": null,
+      "percent": 0.22
+    },
+    {
+      "name": "Sangu",
+      "code": "sbp",
+      "official": null,
+      "percent": 0.2
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 64.7
+    },
+    {
+      "religion": "Islam",
+      "percent": 29.9
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 3.5
+    },
+    {
+      "religion": "Other religions",
+      "percent": 2.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary dominant-party presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 19.3,
+    "military_spending_pct_gdp": 1.2
+  },
+  "established": "1964-04-26",
+  "independence": null,
+  "memberships": [
+    "African Union",
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/tanzania.svg",
+  "map": "maps/countries/tanzania.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Tanzania",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-09",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-09",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-09",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-09",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-09",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-09",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

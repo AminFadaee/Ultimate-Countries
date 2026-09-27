@@ -1,0 +1,278 @@
+{
+  "id": "Q1020",
+  "name": "Malawi",
+  "official_name": "Republic of Malawi",
+  "codes": {
+    "alpha_2": "MW",
+    "alpha_3": "MWI",
+    "ccn3": "454"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 118484.0,
+  "population": 22216120,
+  "demonym": {
+    "male": "Malawian",
+    "female": "Malawian",
+    "others": []
+  },
+  "capitals": [
+    "Lilongwe"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3876",
+      "name": "Lilongwe",
+      "latitude": -13.986388888,
+      "longitude": 33.768055555,
+      "population": 989318,
+      "map": "maps/cities/malawi__lilongwe.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q188693",
+      "name": "Blantyre",
+      "latitude": -15.786111111,
+      "longitude": 35.005833333,
+      "population": 800264,
+      "map": "maps/cities/malawi__blantyre.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q219117",
+      "name": "Zomba",
+      "latitude": -15.385957,
+      "longitude": 35.318801,
+      "population": 101140,
+      "map": "maps/cities/malawi__zomba.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q502216",
+      "name": "Mzuzu",
+      "latitude": -11.45,
+      "longitude": 34.033333333,
+      "population": 150100,
+      "map": "maps/cities/malawi__mzuzu.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "MWK",
+      "name": "Malawian kwacha",
+      "symbol": "MK",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 63.0
+    },
+    {
+      "name": "Chewa",
+      "code": "nya",
+      "official": null,
+      "percent": 63.0
+    },
+    {
+      "name": "Tumbuka",
+      "code": "tum",
+      "official": null,
+      "percent": 8.4
+    },
+    {
+      "name": "Nyasa Tonga",
+      "code": "tog",
+      "official": null,
+      "percent": 0.98
+    },
+    {
+      "name": "Zulu",
+      "code": "zul",
+      "official": null,
+      "percent": 0.33
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 87.4
+    },
+    {
+      "religion": "Islam",
+      "percent": 11.6
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.9
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Low income",
+    "government_spending_pct_gdp": 26.3,
+    "military_spending_pct_gdp": 1.0
+  },
+  "established": "1964-07-06",
+  "independence": {
+    "date": "1964-07-06",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "African Union",
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/malawi.svg",
+  "map": "maps/countries/malawi.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Malawi",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

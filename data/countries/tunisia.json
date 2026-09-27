@@ -1,0 +1,266 @@
+{
+  "id": "Q948",
+  "name": "Tunisia",
+  "official_name": "Republic of Tunisia",
+  "codes": {
+    "alpha_2": "TN",
+    "alpha_3": "TUN",
+    "ccn3": "788"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 163610.0,
+  "population": 12348573,
+  "demonym": {
+    "male": "Tunisian",
+    "female": "Tunisian",
+    "others": []
+  },
+  "capitals": [
+    "Tunis"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3572",
+      "name": "Tunis",
+      "latitude": 36.800833333,
+      "longitude": 10.18,
+      "population": 602560,
+      "map": "maps/cities/tunisia__tunis.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q180717",
+      "name": "Sousse",
+      "latitude": 35.833333333,
+      "longitude": 10.633333333,
+      "population": 221530,
+      "map": "maps/cities/tunisia__sousse.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q46325",
+      "name": "Sfax",
+      "latitude": 34.74,
+      "longitude": 10.76,
+      "population": 272801,
+      "map": "maps/cities/tunisia__sfax.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q179570",
+      "name": "Kairouan",
+      "latitude": 35.683333333,
+      "longitude": 10.1,
+      "population": 186653,
+      "map": "maps/cities/tunisia__kairouan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q189546",
+      "name": "Bizerte",
+      "latitude": 37.276147,
+      "longitude": 9.873108,
+      "population": 136917,
+      "map": "maps/cities/tunisia__bizerte.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q215661",
+      "name": "Gabès",
+      "latitude": 33.881388888,
+      "longitude": 10.098333333,
+      "population": 116323,
+      "map": "maps/cities/tunisia__gabes.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "TND",
+      "name": "Tunisian dinar",
+      "symbol": "د.ت",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 90.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": null,
+      "percent": 53.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 99.3
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.4
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.2
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 31.8,
+    "military_spending_pct_gdp": 2.5
+  },
+  "established": "1956-03-20",
+  "independence": {
+    "date": "1956-03-20",
+    "from": "France"
+  },
+  "memberships": [
+    "African Union",
+    "Arab League"
+  ],
+  "flag": "flags/tunisia.svg",
+  "map": "maps/countries/tunisia.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Tunisia",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

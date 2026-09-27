@@ -1,0 +1,276 @@
+{
+  "id": "Q805",
+  "name": "Yemen",
+  "official_name": "Republic of Yemen",
+  "codes": {
+    "alpha_2": "YE",
+    "alpha_3": "YEM",
+    "ccn3": "887"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 527968.0,
+  "population": 41773878,
+  "demonym": {
+    "male": "Yemeni",
+    "female": "Yemeni",
+    "others": []
+  },
+  "capitals": [
+    "Sanaa"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q2471",
+      "name": "Sanaa",
+      "latitude": 15.35,
+      "longitude": 44.2,
+      "population": 2957000,
+      "map": "maps/cities/yemen__sanaa.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q131694",
+      "name": "Aden",
+      "latitude": 12.8,
+      "longitude": 45.033333333,
+      "population": 1154410,
+      "map": "maps/cities/yemen__aden.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q466216",
+      "name": "Ta'izz",
+      "latitude": 13.578888888,
+      "longitude": 44.021944444,
+      "population": 615000,
+      "map": "maps/cities/yemen__ta_izz.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q270041",
+      "name": "Al Hudaydah",
+      "latitude": 14.802222222,
+      "longitude": 42.951111111,
+      "population": 617871,
+      "map": "maps/cities/yemen__al_hudaydah.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q310772",
+      "name": "Mukalla",
+      "latitude": 14.533333333,
+      "longitude": 49.133333333,
+      "population": 144137,
+      "map": "maps/cities/yemen__mukalla.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q99648",
+      "name": "Ibb",
+      "latitude": 13.966666666,
+      "longitude": 44.166666666,
+      "population": 350864,
+      "map": "maps/cities/yemen__ibb.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "YER",
+      "name": "Yemeni rial",
+      "symbol": "﷼",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 74.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 9.0
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 99.9
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.1
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary semi-presidential republic under a provisional government",
+    "form": "Semi-presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Low income",
+    "government_spending_pct_gdp": 11.4,
+    "military_spending_pct_gdp": null
+  },
+  "established": "1990-05-22",
+  "independence": null,
+  "memberships": [
+    "Arab League"
+  ],
+  "flag": "flags/yemen.svg",
+  "map": "maps/countries/yemen.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Yemen",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

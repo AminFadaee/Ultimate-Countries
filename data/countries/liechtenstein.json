@@ -1,0 +1,202 @@
+{
+  "id": "Q347",
+  "name": "Liechtenstein",
+  "official_name": "Principality of Liechtenstein",
+  "codes": {
+    "alpha_2": "LI",
+    "alpha_3": "LIE",
+    "ccn3": "438"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Western Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 160.0,
+  "population": 41024,
+  "demonym": {
+    "male": "Liechtensteiner",
+    "female": "Liechtensteiner",
+    "others": []
+  },
+  "capitals": [
+    "Vaduz"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1844",
+      "name": "Vaduz",
+      "latitude": 47.140555555,
+      "longitude": 9.522222222,
+      "population": 5668,
+      "map": "maps/cities/liechtenstein__vaduz.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "CHF",
+      "name": "Swiss franc",
+      "symbol": "Fr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "German",
+      "code": "deu",
+      "official": "national",
+      "percent": 100.0
+    },
+    {
+      "name": "Walser",
+      "code": "wae",
+      "official": null,
+      "percent": 3.2
+    }
+  ],
+  "official_religions": [
+    "Catholicism"
+  ],
+  "religions": [],
+  "government": {
+    "label": "Constitutional monarchy",
+    "form": "Constitutional monarchy"
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": "1806-08-06",
+  "independence": null,
+  "memberships": [
+    "Schengen Area"
+  ],
+  "flag": "flags/liechtenstein.svg",
+  "map": "maps/countries/liechtenstein.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Liechtenstein",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-17",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-17",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-17",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-17",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-17",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-17",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

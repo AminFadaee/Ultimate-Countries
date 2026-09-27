@@ -1,0 +1,279 @@
+{
+  "id": "Q965",
+  "name": "Burkina Faso",
+  "official_name": "Burkina Faso",
+  "codes": {
+    "alpha_2": "BF",
+    "alpha_3": "BFA",
+    "ccn3": "854"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 272967.0,
+  "population": 24074580,
+  "demonym": {
+    "male": "Burkinabe",
+    "female": "Burkinabe",
+    "others": []
+  },
+  "capitals": [
+    "Ouagadougou"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3777",
+      "name": "Ouagadougou",
+      "latitude": 12.368611111,
+      "longitude": -1.5275,
+      "population": 2453496,
+      "map": "maps/cities/burkina_faso__ouagadougou.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q223761",
+      "name": "Bobo-Dioulasso",
+      "latitude": 11.183333333,
+      "longitude": -4.283333333,
+      "population": 903887,
+      "map": "maps/cities/burkina_faso__bobo_dioulasso.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q460697",
+      "name": "Koudougou",
+      "latitude": 12.25,
+      "longitude": -2.366666666,
+      "population": 160207,
+      "map": "maps/cities/burkina_faso__koudougou.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q639674",
+      "name": "Banfora",
+      "latitude": 10.630833333,
+      "longitude": -4.758888888,
+      "population": 117200,
+      "map": "maps/cities/burkina_faso__banfora.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "XOF",
+      "name": "West African CFA franc",
+      "symbol": "Fr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Mooré",
+      "code": "mos",
+      "official": "national",
+      "percent": 40.0
+    },
+    {
+      "name": "Dioula",
+      "code": "dyu",
+      "official": null,
+      "percent": 32.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": null,
+      "percent": 25.0
+    },
+    {
+      "name": "Bissa",
+      "code": "bib",
+      "official": "national",
+      "percent": null
+    },
+    {
+      "name": "Dyula",
+      "code": null,
+      "official": "national",
+      "percent": null
+    },
+    {
+      "name": "Fula",
+      "code": null,
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 67.4
+    },
+    {
+      "religion": "Christianity",
+      "percent": 28.0
+    },
+    {
+      "religion": "Other religions",
+      "percent": 4.0
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.6
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary semi-presidential republic under a military junta",
+    "form": "Semi-presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Low income",
+    "government_spending_pct_gdp": 23.6,
+    "military_spending_pct_gdp": 4.7
+  },
+  "established": "1960-08-05",
+  "independence": {
+    "date": "1960-08-05",
+    "from": "France"
+  },
+  "memberships": [
+    "African Union"
+  ],
+  "flag": "flags/burkina_faso.svg",
+  "map": "maps/countries/burkina_faso.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Burkina_Faso",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

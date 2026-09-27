@@ -1,0 +1,297 @@
+{
+  "id": "Q836",
+  "name": "Myanmar",
+  "official_name": "Republic of the Union of Myanmar",
+  "codes": {
+    "alpha_2": "MM",
+    "alpha_3": "MMR",
+    "ccn3": "104"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "South-Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 676578.0,
+  "population": 54850648,
+  "demonym": {
+    "male": "Burmese",
+    "female": "Burmese",
+    "others": [
+      "Myanma"
+    ]
+  },
+  "capitals": [
+    "Naypyidaw"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q37400",
+      "name": "Naypyidaw",
+      "latitude": 19.7475,
+      "longitude": 96.115,
+      "population": 1160242,
+      "map": "maps/cities/myanmar__naypyidaw.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q37995",
+      "name": "Yangon",
+      "latitude": 16.795,
+      "longitude": 96.16,
+      "population": 6874000,
+      "map": "maps/cities/myanmar__yangon.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q185518",
+      "name": "Mandalay",
+      "latitude": 21.97473,
+      "longitude": 96.08359,
+      "population": 1225546,
+      "map": "maps/cities/myanmar__mandalay.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q685941",
+      "name": "Mawlamyine",
+      "latitude": 16.484722222,
+      "longitude": 97.625833333,
+      "population": 289388,
+      "map": "maps/cities/myanmar__mawlamyine.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q800122",
+      "name": "Bago",
+      "latitude": 17.343333333,
+      "longitude": 96.498055555,
+      "population": 284179,
+      "map": "maps/cities/myanmar__bago.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q870103",
+      "name": "Pathein",
+      "latitude": 16.766666666,
+      "longitude": 94.733333333,
+      "population": 287071,
+      "map": "maps/cities/myanmar__pathein.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "MMK",
+      "name": "Burmese kyat",
+      "symbol": "Ks",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Burmese",
+      "code": "mya",
+      "official": "national",
+      "percent": 64.0
+    },
+    {
+      "name": "Shan",
+      "code": "shn",
+      "official": "regional",
+      "percent": 6.4
+    },
+    {
+      "name": "Kachin",
+      "code": "kac",
+      "official": "regional",
+      "percent": 1.7
+    },
+    {
+      "name": "Rohingya",
+      "code": "rhg",
+      "official": null,
+      "percent": 1.7
+    },
+    {
+      "name": "Mon",
+      "code": "mnw",
+      "official": "regional",
+      "percent": 1.5
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Buddhism",
+      "percent": 89.1
+    },
+    {
+      "religion": "Christianity",
+      "percent": 6.1
+    },
+    {
+      "religion": "Islam",
+      "percent": 3.3
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.4
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary assembly-independent republic",
+    "form": "Republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 21.8,
+    "military_spending_pct_gdp": 6.8
+  },
+  "established": "1948-01-04",
+  "independence": {
+    "date": "1948-01-04",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "ASEAN"
+  ],
+  "flag": "flags/myanmar.svg",
+  "map": "maps/countries/myanmar.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Myanmar",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "id": "Q221",
+  "name": "North Macedonia",
+  "official_name": "Republic of North Macedonia",
+  "codes": {
+    "alpha_2": "MK",
+    "alpha_3": "MKD",
+    "ccn3": "807"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Southeast Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 25713.0,
+  "population": 1820909,
+  "demonym": {
+    "male": "Macedonian",
+    "female": "Macedonian",
+    "others": []
+  },
+  "capitals": [
+    "Skopje"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q384",
+      "name": "Skopje",
+      "latitude": 41.996111111,
+      "longitude": 21.431666666,
+      "population": 422540,
+      "map": "maps/cities/north_macedonia__skopje.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q157246",
+      "name": "Bitola",
+      "latitude": 41.031944444,
+      "longitude": 21.334722222,
+      "population": 69287,
+      "map": "maps/cities/north_macedonia__bitola.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q54452",
+      "name": "Kumanovo",
+      "latitude": 42.132222222,
+      "longitude": 21.714444444,
+      "population": 70842,
+      "map": "maps/cities/north_macedonia__kumanovo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q157024",
+      "name": "Tetovo",
+      "latitude": 42.010277777,
+      "longitude": 20.971388888,
+      "population": 63176,
+      "map": "maps/cities/north_macedonia__tetovo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q157032",
+      "name": "Prilep",
+      "latitude": 41.346388888,
+      "longitude": 21.554166666,
+      "population": 63308,
+      "map": "maps/cities/north_macedonia__prilep.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1223508",
+      "name": "Ohrid",
+      "latitude": 41.116944444,
+      "longitude": 20.801944444,
+      "population": 38818,
+      "map": "maps/cities/north_macedonia__ohrid.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "MKD",
+      "name": "Macedonian denar",
+      "symbol": "den",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Macedonian",
+      "code": "mkd",
+      "official": "national",
+      "percent": 67.0
+    },
+    {
+      "name": "Albanian",
+      "code": "sqi",
+      "official": "national",
+      "percent": 25.0
+    },
+    {
+      "name": "Turkish",
+      "code": "tur",
+      "official": null,
+      "percent": 3.5
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 64.7
+    },
+    {
+      "religion": "Islam",
+      "percent": 34.7
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.5
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 38.5,
+    "military_spending_pct_gdp": 2.1
+  },
+  "established": "1991-09-08",
+  "independence": {
+    "date": "1991-09-08",
+    "from": "Yugoslavia"
+  },
+  "memberships": [
+    "NATO"
+  ],
+  "flag": "flags/north_macedonia.svg",
+  "map": "maps/countries/north_macedonia.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/North_Macedonia",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

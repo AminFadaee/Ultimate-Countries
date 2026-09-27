@@ -1,0 +1,412 @@
+{
+  "id": "Q145",
+  "name": "United Kingdom",
+  "official_name": "United Kingdom of Great Britain and Northern Ireland",
+  "codes": {
+    "alpha_2": "GB",
+    "alpha_3": "GBR",
+    "ccn3": "826"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 242900.0,
+  "population": 69487000,
+  "demonym": {
+    "male": "British",
+    "female": "British",
+    "others": [
+      "Briton"
+    ]
+  },
+  "capitals": [
+    "London"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q84",
+      "name": "London",
+      "latitude": 51.507222222,
+      "longitude": -0.1275,
+      "population": 8799728,
+      "map": "maps/cities/united_kingdom__london.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q18125",
+      "name": "Manchester",
+      "latitude": 53.479444444,
+      "longitude": -2.245277777,
+      "population": 547627,
+      "map": "maps/cities/united_kingdom__manchester.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q4093",
+      "name": "Glasgow",
+      "latitude": 55.861111111,
+      "longitude": -4.25,
+      "population": 626410,
+      "map": "maps/cities/united_kingdom__glasgow.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q2256",
+      "name": "Birmingham",
+      "latitude": 52.48,
+      "longitude": -1.9025,
+      "population": 1137100,
+      "map": "maps/cities/united_kingdom__birmingham.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q23436",
+      "name": "Edinburgh",
+      "latitude": 55.953333333,
+      "longitude": -3.189166666,
+      "population": 488050,
+      "map": "maps/cities/united_kingdom__edinburgh.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q24826",
+      "name": "Liverpool",
+      "latitude": 53.407222222,
+      "longitude": -2.991666666,
+      "population": 513441,
+      "map": "maps/cities/united_kingdom__liverpool.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "GBP",
+      "name": "British pound",
+      "symbol": "£",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 98.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "regional",
+      "percent": 17.0
+    },
+    {
+      "name": "German",
+      "code": "deu",
+      "official": null,
+      "percent": 9.0
+    },
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": null,
+      "percent": 8.0
+    },
+    {
+      "name": "Polish",
+      "code": "pol",
+      "official": null,
+      "percent": 4.0
+    },
+    {
+      "name": "Punjabi",
+      "code": "pan",
+      "official": null,
+      "percent": 3.6
+    },
+    {
+      "name": "Urdu",
+      "code": "urd",
+      "official": null,
+      "percent": 3.5
+    },
+    {
+      "name": "Tamil",
+      "code": "tam",
+      "official": null,
+      "percent": 3.2
+    },
+    {
+      "name": "Gujarati",
+      "code": "guj",
+      "official": null,
+      "percent": 2.9
+    },
+    {
+      "name": "Scots",
+      "code": "sco",
+      "official": "regional",
+      "percent": 2.5
+    },
+    {
+      "name": "Welsh",
+      "code": "cym",
+      "official": "regional",
+      "percent": 1.3
+    },
+    {
+      "name": "Romanian",
+      "code": "ron",
+      "official": null,
+      "percent": 0.8
+    },
+    {
+      "name": "Bangla",
+      "code": "ben",
+      "official": null,
+      "percent": 0.4
+    },
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": null,
+      "percent": 0.3
+    },
+    {
+      "name": "Chinese",
+      "code": "zho",
+      "official": null,
+      "percent": 0.3
+    },
+    {
+      "name": "Italian",
+      "code": "ita",
+      "official": null,
+      "percent": 0.2
+    },
+    {
+      "name": "Lithuanian",
+      "code": "lit",
+      "official": null,
+      "percent": 0.2
+    },
+    {
+      "name": "Portuguese",
+      "code": "por",
+      "official": null,
+      "percent": 0.2
+    },
+    {
+      "name": "Somali",
+      "code": "som",
+      "official": null,
+      "percent": 0.2
+    },
+    {
+      "name": "Turkish",
+      "code": "tur",
+      "official": null,
+      "percent": 0.2
+    },
+    {
+      "name": "Irish",
+      "code": "gle",
+      "official": "regional",
+      "percent": 0.15
+    },
+    {
+      "name": "Scottish Gaelic",
+      "code": "gla",
+      "official": "regional",
+      "percent": 0.11
+    },
+    {
+      "name": "Cornish",
+      "code": "cor",
+      "official": null,
+      "percent": 0.0029
+    },
+    {
+      "name": "British Sign Language",
+      "code": "bfi",
+      "official": null,
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 49.4
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 40.2
+    },
+    {
+      "religion": "Islam",
+      "percent": 6.4
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 1.7
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.4
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.5
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.4
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary constitutional monarchy",
+    "form": "Constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": true,
+    "disputed_with": "Market economy with extensive welfare state",
+    "income_group": "High income",
+    "government_spending_pct_gdp": 44.0,
+    "military_spending_pct_gdp": 2.3
+  },
+  "established": "1801-01-01",
+  "independence": null,
+  "memberships": [
+    "Commonwealth of Nations",
+    "G20",
+    "G7",
+    "NATO",
+    "OECD"
+  ],
+  "flag": "flags/united_kingdom.svg",
+  "map": "maps/countries/united_kingdom.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/United_Kingdom",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

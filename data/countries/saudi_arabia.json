@@ -1,0 +1,272 @@
+{
+  "id": "Q851",
+  "name": "Saudi Arabia",
+  "official_name": "Kingdom of Saudi Arabia",
+  "codes": {
+    "alpha_2": "SA",
+    "alpha_3": "SAU",
+    "ccn3": "682"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 2149690.0,
+  "population": 36973555,
+  "demonym": {
+    "male": "Saudi Arabian",
+    "female": "Saudi Arabian",
+    "others": []
+  },
+  "capitals": [
+    "Riyadh"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3692",
+      "name": "Riyadh",
+      "latitude": 24.65,
+      "longitude": 46.71,
+      "population": 7009100,
+      "map": "maps/cities/saudi_arabia__riyadh.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q5806",
+      "name": "Mecca",
+      "latitude": 21.4225,
+      "longitude": 39.826111111,
+      "population": 2427924,
+      "map": "maps/cities/saudi_arabia__mecca.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q374365",
+      "name": "Jeddah",
+      "latitude": 21.529166666,
+      "longitude": 39.161111111,
+      "population": 4697000,
+      "map": "maps/cities/saudi_arabia__jeddah.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q35484",
+      "name": "Medina",
+      "latitude": 24.47,
+      "longitude": 39.61,
+      "population": 1411599,
+      "map": "maps/cities/saudi_arabia__medina.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q160320",
+      "name": "Dammam",
+      "latitude": 26.433333333,
+      "longitude": 50.1,
+      "population": 903312,
+      "map": "maps/cities/saudi_arabia__dammam.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q182640",
+      "name": "Ta'if",
+      "latitude": 21.266666666,
+      "longitude": 40.416666666,
+      "population": 579970,
+      "map": "maps/cities/saudi_arabia__ta_if.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "SAR",
+      "name": "Saudi riyal",
+      "symbol": "ر.س",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 100.0
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 92.7
+    },
+    {
+      "religion": "Christianity",
+      "percent": 4.4
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 2.6
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.1
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Absolute monarchy",
+    "form": "Absolute monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 32.4,
+    "military_spending_pct_gdp": 7.3
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [
+    "Arab League",
+    "G20",
+    "OPEC"
+  ],
+  "flag": "flags/saudi_arabia.svg",
+  "map": "maps/countries/saudi_arabia.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Saudi_Arabia",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-24",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-24",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-24",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-24",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-24",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-24",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

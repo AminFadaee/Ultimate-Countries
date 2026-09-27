@@ -1,0 +1,375 @@
+{
+  "id": "Q837",
+  "name": "Nepal",
+  "official_name": "Federal Democratic Republic of Nepal",
+  "codes": {
+    "alpha_2": "NP",
+    "alpha_3": "NPL",
+    "ccn3": "524"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 147181.0,
+  "population": 29618118,
+  "demonym": {
+    "male": "Nepalese",
+    "female": "Nepalese",
+    "others": [
+      "Nepali"
+    ]
+  },
+  "capitals": [
+    "Kathmandu"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3037",
+      "name": "Kathmandu",
+      "latitude": 27.71,
+      "longitude": 85.32,
+      "population": 845767,
+      "map": "maps/cities/nepal__kathmandu.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q6640",
+      "name": "Pokhara",
+      "latitude": 28.209722222,
+      "longitude": 83.985277777,
+      "population": 353841,
+      "map": "maps/cities/nepal__pokhara.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q8247",
+      "name": "Biratnagar",
+      "latitude": 26.483333333,
+      "longitude": 87.283333333,
+      "population": 242548,
+      "map": "maps/cities/nepal__biratnagar.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "NPR",
+      "name": "Nepalese rupee",
+      "symbol": "₨",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Nepali",
+      "code": "nep",
+      "official": "national",
+      "percent": 44.0
+    },
+    {
+      "name": "Maithili",
+      "code": "mai",
+      "official": null,
+      "percent": 11.0
+    },
+    {
+      "name": "Bhojpuri",
+      "code": "bho",
+      "official": null,
+      "percent": 6.8
+    },
+    {
+      "name": "Newari",
+      "code": "new",
+      "official": null,
+      "percent": 3.3
+    },
+    {
+      "name": "Jumli",
+      "code": "jml",
+      "official": null,
+      "percent": 3.2
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 3.0
+    },
+    {
+      "name": "Awadhi",
+      "code": "awa",
+      "official": null,
+      "percent": 2.2
+    },
+    {
+      "name": "Dangaura Tharu",
+      "code": "thl",
+      "official": null,
+      "percent": 2.0
+    },
+    {
+      "name": "Bantawa",
+      "code": "bap",
+      "official": null,
+      "percent": 1.5
+    },
+    {
+      "name": "Western Tamang",
+      "code": "tdg",
+      "official": null,
+      "percent": 1.3
+    },
+    {
+      "name": "Rana Tharu",
+      "code": "thr",
+      "official": null,
+      "percent": 1.2
+    },
+    {
+      "name": "Limbu",
+      "code": "lif",
+      "official": null,
+      "percent": 1.1
+    },
+    {
+      "name": "Magar",
+      "code": "mgp",
+      "official": null,
+      "percent": 1.1
+    },
+    {
+      "name": "Kochila Tharu",
+      "code": "thq",
+      "official": null,
+      "percent": 1.0
+    },
+    {
+      "name": "Bagheli",
+      "code": "bfy",
+      "official": null,
+      "percent": 0.54
+    },
+    {
+      "name": "Sherpa",
+      "code": "xsr",
+      "official": null,
+      "percent": 0.52
+    },
+    {
+      "name": "Rajbanshi",
+      "code": "rjs",
+      "official": null,
+      "percent": 0.44
+    },
+    {
+      "name": "Eastern Tamang",
+      "code": "taj",
+      "official": null,
+      "percent": 0.43
+    },
+    {
+      "name": "Hindi",
+      "code": "hin",
+      "official": null,
+      "percent": 0.42
+    },
+    {
+      "name": "Gurung",
+      "code": "gvr",
+      "official": null,
+      "percent": 0.29
+    },
+    {
+      "name": "Tibetan",
+      "code": "bod",
+      "official": null,
+      "percent": 0.24
+    },
+    {
+      "name": "Kathoriya Tharu",
+      "code": "tkt",
+      "official": null,
+      "percent": 0.24
+    },
+    {
+      "name": "Sunwar",
+      "code": "suz",
+      "official": null,
+      "percent": 0.13
+    },
+    {
+      "name": "Thulung",
+      "code": "tdh",
+      "official": null,
+      "percent": 0.12
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Hinduism",
+      "percent": 81.2
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 8.2
+    },
+    {
+      "religion": "Islam",
+      "percent": 5.1
+    },
+    {
+      "religion": "Other religions",
+      "percent": 3.8
+    },
+    {
+      "religion": "Christianity",
+      "percent": 1.8
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Federal parliamentary republic",
+    "form": "Federal parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 24.7,
+    "military_spending_pct_gdp": 1.0
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/nepal.svg",
+  "map": "maps/countries/nepal.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Nepal",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

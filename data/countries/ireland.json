@@ -1,0 +1,282 @@
+{
+  "id": "Q27",
+  "name": "Ireland",
+  "official_name": "Republic of Ireland",
+  "codes": {
+    "alpha_2": "IE",
+    "alpha_3": "IRL",
+    "ccn3": "372"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 70273.0,
+  "population": 5484367,
+  "demonym": {
+    "male": "Irish",
+    "female": "Irish",
+    "others": []
+  },
+  "capitals": [
+    "Dublin"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1761",
+      "name": "Dublin",
+      "latitude": 53.349722222,
+      "longitude": -6.260277777,
+      "population": 592713,
+      "map": "maps/cities/ireland__dublin.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q36647",
+      "name": "Cork",
+      "latitude": 51.9,
+      "longitude": -8.473055555,
+      "population": 222333,
+      "map": "maps/cities/ireland__cork.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q133315",
+      "name": "Limerick",
+      "latitude": 52.6653,
+      "longitude": -8.6238,
+      "population": 62702,
+      "map": "maps/cities/ireland__limerick.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q129610",
+      "name": "Galway",
+      "latitude": 53.2719,
+      "longitude": -9.0488,
+      "population": 83456,
+      "map": "maps/cities/ireland__galway.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q183551",
+      "name": "Waterford",
+      "latitude": 52.2583,
+      "longitude": -7.119,
+      "population": 48369,
+      "map": "maps/cities/ireland__waterford.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q204956",
+      "name": "Dundalk",
+      "latitude": 54.004444444,
+      "longitude": -6.400277777,
+      "population": 39004,
+      "map": "maps/cities/ireland__dundalk.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 98.0
+    },
+    {
+      "name": "Irish",
+      "code": "gle",
+      "official": "national",
+      "percent": 22.0
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": null,
+      "percent": 13.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 81.2
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 15.6
+    },
+    {
+      "religion": "Islam",
+      "percent": 1.7
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.7
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.5
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.2
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.1
+    }
+  ],
+  "government": {
+    "label": "Republic, unitary state",
+    "form": "Republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 24.2,
+    "military_spending_pct_gdp": 0.2
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [
+    "European Union",
+    "Eurozone",
+    "OECD"
+  ],
+  "flag": "flags/ireland.svg",
+  "map": "maps/countries/ireland.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Ireland",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

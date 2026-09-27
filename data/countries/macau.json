@@ -1,0 +1,235 @@
+{
+  "id": "Q14773",
+  "name": "Macau",
+  "official_name": "Macao Special Administrative Region of the People's Republic of China",
+  "codes": {
+    "alpha_2": "MO",
+    "alpha_3": "MAC",
+    "ccn3": "446"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "special_administrative_region",
+    "parent_alpha_3": "CHN"
+  },
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 30.0,
+  "population": 685900,
+  "demonym": {
+    "male": "Macanese",
+    "female": "Macanese",
+    "others": []
+  },
+  "capitals": [],
+  "cities": [
+    {
+      "role": "notable",
+      "id": "Q14773",
+      "name": "Macau",
+      "latitude": 22.19,
+      "longitude": 113.538055555,
+      "population": 682100,
+      "map": "maps/cities/macau__macau.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "MOP",
+      "name": "Macanese pataca",
+      "symbol": "P",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Standard Chinese",
+      "code": "zho",
+      "official": null,
+      "percent": 98.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 23.0
+    },
+    {
+      "name": "Filipino",
+      "code": "fil",
+      "official": null,
+      "percent": 3.1
+    },
+    {
+      "name": "Portuguese",
+      "code": "por",
+      "official": "national",
+      "percent": 2.3
+    },
+    {
+      "name": "Cantonese",
+      "code": null,
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Unaffiliated",
+      "percent": 67.6
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 19.6
+    },
+    {
+      "religion": "Christianity",
+      "percent": 10.1
+    },
+    {
+      "religion": "Other religions",
+      "percent": 2.2
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.5
+    }
+  ],
+  "government": {
+    "label": "Devolved executive-led government within a unitary state",
+    "form": null
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 24.5,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/macau.svg",
+  "map": "maps/countries/macau.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Macau",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-27",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-27",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-27",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-27",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-27",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-27",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

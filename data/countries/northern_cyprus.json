@@ -1,0 +1,201 @@
+{
+  "id": "Q23681",
+  "name": "Northern Cyprus",
+  "official_name": "Turkish Republic of Northern Cyprus",
+  "codes": {
+    "alpha_2": null,
+    "alpha_3": null,
+    "ccn3": null
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": true,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": "CYP"
+  },
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 3355.0,
+  "population": 382836,
+  "demonym": {
+    "male": "Turkish Cypriot",
+    "female": "Turkish Cypriot",
+    "others": []
+  },
+  "capitals": [
+    "North Nicosia"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q2762100",
+      "name": "North Nicosia",
+      "latitude": 35.19,
+      "longitude": 33.363611111,
+      "population": 61378,
+      "map": "maps/cities/northern_cyprus__north_nicosia.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q193190",
+      "name": "Famagusta",
+      "latitude": 35.116666666,
+      "longitude": 33.95,
+      "population": 40920,
+      "map": "maps/cities/northern_cyprus__famagusta.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "TRY",
+      "name": "Turkish lira",
+      "symbol": "₺",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Turkish",
+      "code": "tur",
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Unitary semi-presidential republic",
+    "form": "Semi-presidential republic"
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/northern_cyprus.svg",
+  "map": "maps/countries/northern_cyprus.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Northern_Cyprus",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

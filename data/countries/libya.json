@@ -1,0 +1,275 @@
+{
+  "id": "Q1016",
+  "name": "Libya",
+  "official_name": "State of Libya",
+  "codes": {
+    "alpha_2": "LY",
+    "alpha_3": "LBY",
+    "ccn3": "434"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Northern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 1759540.0,
+  "population": 7458555,
+  "demonym": {
+    "male": "Libyan",
+    "female": "Libyan",
+    "others": []
+  },
+  "capitals": [
+    "Tripoli"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3579",
+      "name": "Tripoli",
+      "latitude": 32.8875,
+      "longitude": 13.1875,
+      "population": 1293016,
+      "map": "maps/cities/libya__tripoli.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q40816",
+      "name": "Benghazi",
+      "latitude": 32.116666666,
+      "longitude": 20.066666666,
+      "population": 631555,
+      "map": "maps/cities/libya__benghazi.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q35784",
+      "name": "Al Bayda",
+      "latitude": 32.762777777,
+      "longitude": 21.755,
+      "population": 250000,
+      "map": "maps/cities/libya__al_bayda.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q202991",
+      "name": "Ajdabiya",
+      "latitude": 30.755555555,
+      "longitude": 20.225277777,
+      "population": 416000,
+      "map": "maps/cities/libya__ajdabiya.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q182092",
+      "name": "Tobruk",
+      "latitude": 32.083333333,
+      "longitude": 23.95,
+      "population": 135832,
+      "map": "maps/cities/libya__tobruk.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q162413",
+      "name": "Sirte",
+      "latitude": 31.2,
+      "longitude": 16.6,
+      "population": 76788,
+      "map": "maps/cities/libya__sirte.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "LYD",
+      "name": "Libyan dinar",
+      "symbol": "ل.د",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 74.0
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 99.0
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.5
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.3
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary republic under a provisional government (GNU)",
+    "form": "Republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 60.8,
+    "military_spending_pct_gdp": 5.3
+  },
+  "established": null,
+  "independence": {
+    "date": "1951-12-24",
+    "from": "United Kingdom, Italy, France"
+  },
+  "memberships": [
+    "African Union",
+    "Arab League",
+    "OPEC"
+  ],
+  "flag": "flags/libya.svg",
+  "map": "maps/countries/libya.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Libya",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-12",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-12",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-12",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-12",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-12",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2023",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-12",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

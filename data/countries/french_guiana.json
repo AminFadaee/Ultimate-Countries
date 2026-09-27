@@ -1,0 +1,260 @@
+{
+  "id": "Q3769",
+  "name": "French Guiana",
+  "official_name": "Guiana",
+  "codes": {
+    "alpha_2": "GF",
+    "alpha_3": "GUF",
+    "ccn3": "254"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "overseas_department",
+    "parent_alpha_3": "FRA"
+  },
+  "region": "Americas",
+  "subregion": "South America",
+  "continents": [
+    "South America"
+  ],
+  "area_km2": 83534.0,
+  "population": 254541,
+  "demonym": {
+    "male": "Guianan",
+    "female": "Guianan",
+    "others": [
+      "French Guianese",
+      "Guianese"
+    ]
+  },
+  "capitals": [
+    "Cayenne"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q44401",
+      "name": "Cayenne",
+      "latitude": 4.938611111,
+      "longitude": -52.335,
+      "population": 62675,
+      "map": "maps/cities/french_guiana__cayenne.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q319959",
+      "name": "Saint-Laurent-du-Maroni",
+      "latitude": 5.503888888,
+      "longitude": -54.028888888,
+      "population": 54429,
+      "map": "maps/cities/french_guiana__saint_laurent_du_maroni.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q273312",
+      "name": "Kourou",
+      "latitude": 5.158333333,
+      "longitude": -52.642777777,
+      "population": 24824,
+      "map": "maps/cities/french_guiana__kourou.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 62.0
+    },
+    {
+      "name": "Guianan Creole",
+      "code": "gcr",
+      "official": "national",
+      "percent": 26.0
+    },
+    {
+      "name": "Chinese",
+      "code": "zho",
+      "official": null,
+      "percent": 2.5
+    },
+    {
+      "name": "Hmong Njua",
+      "code": "hnj",
+      "official": null,
+      "percent": 2.4
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 84.2
+    },
+    {
+      "religion": "Other religions",
+      "percent": 9.2
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 3.4
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 1.6
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.9
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.6
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": null,
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/french_guiana.svg",
+  "map": "maps/countries/french_guiana.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/French_Guiana",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

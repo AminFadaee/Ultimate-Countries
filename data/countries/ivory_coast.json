@@ -1,0 +1,289 @@
+{
+  "id": "Q1008",
+  "name": "Ivory Coast",
+  "official_name": "Republic of Côte d'Ivoire",
+  "codes": {
+    "alpha_2": "CI",
+    "alpha_3": "CIV",
+    "ccn3": "384"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 322463.0,
+  "population": 32711547,
+  "demonym": {
+    "male": "Ivorian",
+    "female": "Ivorian",
+    "others": []
+  },
+  "capitals": [
+    "Yamoussoukro"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3768",
+      "name": "Yamoussoukro",
+      "latitude": 6.816111111,
+      "longitude": -5.274166666,
+      "population": 340234,
+      "map": "maps/cities/ivory_coast__yamoussoukro.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1515",
+      "name": "Abidjan",
+      "latitude": 5.336388888,
+      "longitude": -4.026666666,
+      "population": 5616633,
+      "map": "maps/cities/ivory_coast__abidjan.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q271000",
+      "name": "Bouaké",
+      "latitude": 7.68333,
+      "longitude": -5.03306,
+      "population": 740000,
+      "map": "maps/cities/ivory_coast__bouake.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q985627",
+      "name": "Korhogo",
+      "latitude": 9.457777777,
+      "longitude": -5.629444444,
+      "population": 440926,
+      "map": "maps/cities/ivory_coast__korhogo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q609831",
+      "name": "San-Pédro",
+      "latitude": 4.733333333,
+      "longitude": -6.633333333,
+      "population": 390654,
+      "map": "maps/cities/ivory_coast__san_pedro.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q860304",
+      "name": "Daloa",
+      "latitude": 6.866666666,
+      "longitude": -6.45,
+      "population": 421879,
+      "map": "maps/cities/ivory_coast__daloa.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "XOF",
+      "name": "West African CFA franc",
+      "symbol": "Fr",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 34.0
+    },
+    {
+      "name": "Baoulé",
+      "code": "bci",
+      "official": null,
+      "percent": 11.0
+    },
+    {
+      "name": "Cebaara Senoufo",
+      "code": "sef",
+      "official": null,
+      "percent": 4.3
+    },
+    {
+      "name": "Dan",
+      "code": "dnj",
+      "official": null,
+      "percent": 4.0
+    },
+    {
+      "name": "Koro",
+      "code": "kfo",
+      "official": null,
+      "percent": 0.23
+    },
+    {
+      "name": "Koro Wachi",
+      "code": "bqv",
+      "official": null,
+      "percent": 0.17
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 46.3
+    },
+    {
+      "religion": "Christianity",
+      "percent": 44.9
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 5.6
+    },
+    {
+      "religion": "Other religions",
+      "percent": 3.2
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 20.8,
+    "military_spending_pct_gdp": 0.8
+  },
+  "established": "1960-08-07",
+  "independence": {
+    "date": "1960-08-07",
+    "from": "France"
+  },
+  "memberships": [
+    "African Union"
+  ],
+  "flag": "flags/ivory_coast.svg",
+  "map": "maps/countries/ivory_coast.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Ivory_Coast",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-23",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-23",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-23",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-23",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-23",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-23",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "id": "Q423",
+  "name": "North Korea",
+  "official_name": "Democratic People's Republic of Korea",
+  "codes": {
+    "alpha_2": "KP",
+    "alpha_3": "PRK",
+    "ccn3": "408"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 120538.0,
+  "population": 26571036,
+  "demonym": {
+    "male": "North Korean",
+    "female": "North Korean",
+    "others": []
+  },
+  "capitals": [
+    "Pyongyang"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q18808",
+      "name": "Pyongyang",
+      "latitude": 39.016666666,
+      "longitude": 125.7475,
+      "population": 2863000,
+      "map": "maps/cities/north_korea__pyongyang.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q109356",
+      "name": "Hamhung",
+      "latitude": 39.965555555,
+      "longitude": 127.488611111,
+      "population": 768551,
+      "map": "maps/cities/north_korea__hamhung.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q109386",
+      "name": "Nampo",
+      "latitude": 38.733333333,
+      "longitude": 125.4,
+      "population": 366815,
+      "map": "maps/cities/north_korea__nampo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q109336",
+      "name": "Chongjin",
+      "latitude": 41.783333333,
+      "longitude": 129.783333333,
+      "population": 667929,
+      "map": "maps/cities/north_korea__chongjin.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q109079",
+      "name": "Kaesong",
+      "latitude": 37.971666666,
+      "longitude": 126.552777777,
+      "population": 308440,
+      "map": "maps/cities/north_korea__kaesong.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q109374",
+      "name": "Wonsan",
+      "latitude": 39.171444,
+      "longitude": 127.433509,
+      "population": 363127,
+      "map": "maps/cities/north_korea__wonsan.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "KPW",
+      "name": "North Korean won",
+      "symbol": "₩",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Korean",
+      "code": "kor",
+      "official": "national",
+      "percent": 88.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Unaffiliated",
+      "percent": 72.9
+    },
+    {
+      "religion": "Other religions",
+      "percent": 25.2
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 1.5
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.4
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary communist state",
+    "form": "Communist state"
+  },
+  "economy": {
+    "system": "Socialist planned economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Low income",
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": "1948-09-09",
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/north_korea.svg",
+  "map": "maps/countries/north_korea.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/North_Korea",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-11",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-11",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-11",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-11",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-11",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-11",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

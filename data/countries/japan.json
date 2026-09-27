@@ -1,0 +1,282 @@
+{
+  "id": "Q17",
+  "name": "Japan",
+  "official_name": "Japan",
+  "codes": {
+    "alpha_2": "JP",
+    "alpha_3": "JPN",
+    "ccn3": "392"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Eastern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 377930.0,
+  "population": 123366734,
+  "demonym": {
+    "male": "Japanese",
+    "female": "Japanese",
+    "others": []
+  },
+  "capitals": [
+    "Tokyo"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1490",
+      "name": "Tokyo",
+      "latitude": 35.689444444,
+      "longitude": 139.691666666,
+      "population": 14264798,
+      "map": "maps/cities/japan__tokyo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q35765",
+      "name": "Osaka",
+      "latitude": 34.69375,
+      "longitude": 135.502111111,
+      "population": 2751862,
+      "map": "maps/cities/japan__osaka.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q38283",
+      "name": "Yokohama",
+      "latitude": 35.450333333,
+      "longitude": 139.634222222,
+      "population": 3757630,
+      "map": "maps/cities/japan__yokohama.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q34600",
+      "name": "Kyoto",
+      "latitude": 35.011611111,
+      "longitude": 135.768111111,
+      "population": 1463723,
+      "map": "maps/cities/japan__kyoto.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q37951",
+      "name": "Sapporo",
+      "latitude": 43.061944444,
+      "longitude": 141.354444444,
+      "population": 1959313,
+      "map": "maps/cities/japan__sapporo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q11751",
+      "name": "Nagoya",
+      "latitude": 35.181388888,
+      "longitude": 136.906388888,
+      "population": 2326844,
+      "map": "maps/cities/japan__nagoya.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "JPY",
+      "name": "Japanese yen",
+      "symbol": "¥",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Japanese",
+      "code": "jpn",
+      "official": "national",
+      "percent": 95.0
+    },
+    {
+      "name": "Central Okinawan",
+      "code": "ryu",
+      "official": null,
+      "percent": 0.77
+    },
+    {
+      "name": "Korean",
+      "code": "kor",
+      "official": null,
+      "percent": 0.52
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Unaffiliated",
+      "percent": 57.5
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 37.2
+    },
+    {
+      "religion": "Other religions",
+      "percent": 2.9
+    },
+    {
+      "religion": "Christianity",
+      "percent": 2.2
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.2
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary constitutional monarchy",
+    "form": "Constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": true,
+    "disputed_with": "Market economy with extensive welfare state",
+    "income_group": "High income",
+    "government_spending_pct_gdp": 39.8,
+    "military_spending_pct_gdp": 1.4
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [
+    "G20",
+    "G7",
+    "OECD"
+  ],
+  "flag": "flags/japan.svg",
+  "map": "maps/countries/japan.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Japan",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-26",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-26",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-26",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-26",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-26",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-26",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

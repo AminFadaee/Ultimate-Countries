@@ -1,0 +1,270 @@
+{
+  "id": "Q219060",
+  "name": "Palestine",
+  "official_name": "State of Palestine",
+  "codes": {
+    "alpha_2": "PS",
+    "alpha_3": "PSE",
+    "ccn3": "275"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": true,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 6220.0,
+  "population": 5413596,
+  "demonym": {
+    "male": "Palestinian",
+    "female": "Palestinian",
+    "others": []
+  },
+  "capitals": [
+    "Ramallah",
+    "Jerusalem"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q158119",
+      "name": "Ramallah",
+      "latitude": 31.896944444,
+      "longitude": 35.201666666,
+      "population": 43880,
+      "map": "maps/cities/palestine__ramallah.png"
+    },
+    {
+      "role": "capital",
+      "id": "Q1218",
+      "name": "Jerusalem",
+      "latitude": 31.776679,
+      "longitude": 35.234156,
+      "population": 1050151,
+      "map": "maps/cities/israel__jerusalem.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q47492",
+      "name": "Gaza City",
+      "latitude": 31.5075,
+      "longitude": 34.459722222,
+      "population": 590481,
+      "map": "maps/cities/palestine__gaza_city.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q168225",
+      "name": "Hebron",
+      "latitude": 31.535,
+      "longitude": 35.098611111,
+      "population": 215452,
+      "map": "maps/cities/palestine__hebron.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q214178",
+      "name": "Nablus",
+      "latitude": 32.220833333,
+      "longitude": 35.262777777,
+      "population": 177638,
+      "map": "maps/cities/palestine__nablus.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q5776",
+      "name": "Bethlehem",
+      "latitude": 31.704444444,
+      "longitude": 35.206111111,
+      "population": 36000,
+      "map": "maps/cities/palestine__bethlehem.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "EGP",
+      "name": "Egyptian pound",
+      "symbol": "ج.م",
+      "main": true
+    },
+    {
+      "code": "ILS",
+      "name": "Israeli new shekel",
+      "symbol": "₪",
+      "main": true
+    },
+    {
+      "code": "JOD",
+      "name": "Jordanian dinar",
+      "symbol": "د.ا",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 100.0
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 99.0
+    },
+    {
+      "religion": "Christianity",
+      "percent": 1.0
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary semi-presidential republic under a provisional government",
+    "form": "Semi-presidential republic"
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": "1988-11-15",
+  "independence": {
+    "date": "1988-11-15",
+    "from": "Israel"
+  },
+  "memberships": [
+    "Arab League"
+  ],
+  "flag": "flags/palestine.svg",
+  "map": "maps/countries/palestine.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Palestine",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "id": "Q792",
+  "name": "El Salvador",
+  "official_name": "Republic of El Salvador",
+  "codes": {
+    "alpha_2": "SV",
+    "alpha_3": "SLV",
+    "ccn3": "222"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "Central America",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 21041.0,
+  "population": 6365503,
+  "demonym": {
+    "male": "Salvadoran",
+    "female": "Salvadoran",
+    "others": []
+  },
+  "capitals": [
+    "San Salvador"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3110",
+      "name": "San Salvador",
+      "latitude": 13.697597222,
+      "longitude": -89.191155555,
+      "population": 330543,
+      "map": "maps/cities/el_salvador__san_salvador.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q739664",
+      "name": "Santa Ana",
+      "latitude": 13.994744444,
+      "longitude": -89.556608333,
+      "population": 250760,
+      "map": "maps/cities/el_salvador__santa_ana.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q672458",
+      "name": "San Miguel",
+      "latitude": 13.480358333,
+      "longitude": -88.177222222,
+      "population": 232887,
+      "map": "maps/cities/el_salvador__san_miguel.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q186935",
+      "name": "Ahuachapán",
+      "latitude": 13.923388888,
+      "longitude": -89.846294444,
+      "population": 127301,
+      "map": "maps/cities/el_salvador__ahuachapan.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "USD",
+      "name": "United States dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": "national",
+      "percent": 89.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 87.1
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 11.9
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.0
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 29.3,
+    "military_spending_pct_gdp": 1.2
+  },
+  "established": "1841-02-01",
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/el_salvador.svg",
+  "map": "maps/countries/el_salvador.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/El_Salvador",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

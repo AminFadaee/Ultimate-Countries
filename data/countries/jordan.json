@@ -1,0 +1,275 @@
+{
+  "id": "Q810",
+  "name": "Jordan",
+  "official_name": "Hashemite Kingdom of Jordan",
+  "codes": {
+    "alpha_2": "JO",
+    "alpha_3": "JOR",
+    "ccn3": "400"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 89342.0,
+  "population": 11520684,
+  "demonym": {
+    "male": "Jordanian",
+    "female": "Jordanian",
+    "others": []
+  },
+  "capitals": [
+    "Amman"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3805",
+      "name": "Amman",
+      "latitude": 31.930983,
+      "longitude": 35.926084,
+      "population": 4007526,
+      "map": "maps/cities/jordan__amman.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q148062",
+      "name": "Zarqa",
+      "latitude": 32.083333333,
+      "longitude": 36.1,
+      "population": 481300,
+      "map": "maps/cities/jordan__zarqa.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q194165",
+      "name": "Irbid",
+      "latitude": 32.555555555,
+      "longitude": 35.85,
+      "population": 1911600,
+      "map": "maps/cities/jordan__irbid.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q180522",
+      "name": "Aqaba",
+      "latitude": 29.532222222,
+      "longitude": 35.006111111,
+      "population": 140000,
+      "map": "maps/cities/jordan__aqaba.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q31565",
+      "name": "Jerash",
+      "latitude": 32.272280555,
+      "longitude": 35.891397222,
+      "population": 50745,
+      "map": "maps/cities/jordan__jerash.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q867586",
+      "name": "Salt",
+      "latitude": 32.039166666,
+      "longitude": 35.727222222,
+      "population": 88900,
+      "map": "maps/cities/jordan__salt.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "JOD",
+      "name": "Jordanian dinar",
+      "symbol": "د.ا",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 100.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 45.0
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 97.1
+    },
+    {
+      "religion": "Christianity",
+      "percent": 2.8
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary semi-constitutional monarchy",
+    "form": "Semi-constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 30.5,
+    "military_spending_pct_gdp": 4.8
+  },
+  "established": "1946-05-25",
+  "independence": {
+    "date": "1946-05-25",
+    "from": "United Kingdom, Emirate of Transjordan, Mandate for Palestine"
+  },
+  "memberships": [
+    "Arab League"
+  ],
+  "flag": "flags/jordan.svg",
+  "map": "maps/countries/jordan.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Jordan",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

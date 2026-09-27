@@ -1,0 +1,359 @@
+{
+  "id": "Q774",
+  "name": "Guatemala",
+  "official_name": "Republic of Guatemala",
+  "codes": {
+    "alpha_2": "GT",
+    "alpha_3": "GTM",
+    "ccn3": "320"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "Central America",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 108889.0,
+  "population": 18687881,
+  "demonym": {
+    "male": "Guatemalan",
+    "female": "Guatemalan",
+    "others": []
+  },
+  "capitals": [
+    "Guatemala City"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1555",
+      "name": "Guatemala City",
+      "latitude": 14.641666666,
+      "longitude": -90.513333333,
+      "population": 994938,
+      "map": "maps/cities/guatemala__guatemala_city.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q334577",
+      "name": "Quetzaltenango",
+      "latitude": 14.833333333,
+      "longitude": -91.516666666,
+      "population": 207620,
+      "map": "maps/cities/guatemala__quetzaltenango.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q212773",
+      "name": "Antigua Guatemala",
+      "latitude": 14.5575,
+      "longitude": -90.733333333,
+      "population": 59091,
+      "map": "maps/cities/guatemala__antigua_guatemala.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q991400",
+      "name": "Puerto Barrios",
+      "latitude": 15.73,
+      "longitude": -88.6,
+      "population": 110846,
+      "map": "maps/cities/guatemala__puerto_barrios.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q867077",
+      "name": "Cobán",
+      "latitude": 15.483333333,
+      "longitude": -90.366666666,
+      "population": 228664,
+      "map": "maps/cities/guatemala__coban.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q679383",
+      "name": "Flores",
+      "latitude": 16.933333333,
+      "longitude": -89.883333333,
+      "population": 44706,
+      "map": "maps/cities/guatemala__flores.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "GTQ",
+      "name": "Guatemalan quetzal",
+      "symbol": "Q",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": "national",
+      "percent": 88.0
+    },
+    {
+      "name": "Kaqchikel",
+      "code": "cak",
+      "official": null,
+      "percent": 8.8
+    },
+    {
+      "name": "Qʼeqchiʼ",
+      "code": "kek",
+      "official": null,
+      "percent": 8.8
+    },
+    {
+      "name": "Kʼicheʼ",
+      "code": "quc",
+      "official": null,
+      "percent": 8.6
+    },
+    {
+      "name": "Mam",
+      "code": "mam",
+      "official": null,
+      "percent": 4.6
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 3.1
+    },
+    {
+      "name": "Q'anjob'al",
+      "code": "kjb",
+      "official": null,
+      "percent": 1.2
+    },
+    {
+      "name": "Poqomchi'",
+      "code": "poh",
+      "official": null,
+      "percent": 1.2
+    },
+    {
+      "name": "Achi",
+      "code": "acr",
+      "official": null,
+      "percent": 1.1
+    },
+    {
+      "name": "Ixil",
+      "code": "ixl",
+      "official": null,
+      "percent": 0.89
+    },
+    {
+      "name": "Tz'utujil",
+      "code": "tzj",
+      "official": null,
+      "percent": 0.61
+    },
+    {
+      "name": "Western Kanjobal",
+      "code": "knj",
+      "official": null,
+      "percent": 0.58
+    },
+    {
+      "name": "Chuj",
+      "code": "cac",
+      "official": null,
+      "percent": 0.43
+    },
+    {
+      "name": "Popti'",
+      "code": "jac",
+      "official": null,
+      "percent": 0.31
+    },
+    {
+      "name": "Aguacateco",
+      "code": "agu",
+      "official": null,
+      "percent": 0.26
+    },
+    {
+      "name": "Chortí",
+      "code": "caa",
+      "official": null,
+      "percent": 0.13
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 92.0
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 6.0
+    },
+    {
+      "religion": "Other religions",
+      "percent": 2.0
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.0
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary presidential republic",
+    "form": "Presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Upper middle income",
+    "government_spending_pct_gdp": 15.0,
+    "military_spending_pct_gdp": 0.4
+  },
+  "established": null,
+  "independence": {
+    "date": "1821",
+    "from": "Spain"
+  },
+  "memberships": [],
+  "flag": "flags/guatemala.svg",
+  "map": "maps/countries/guatemala.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Guatemala",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-11",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-11",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-11",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-11",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-11",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-11",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

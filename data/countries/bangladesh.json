@@ -1,0 +1,307 @@
+{
+  "id": "Q902",
+  "name": "Bangladesh",
+  "official_name": "People's Republic of Bangladesh",
+  "codes": {
+    "alpha_2": "BD",
+    "alpha_3": "BGD",
+    "ccn3": "050"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 147570.0,
+  "population": 175686899,
+  "demonym": {
+    "male": "Bangladeshi",
+    "female": "Bangladeshi",
+    "others": []
+  },
+  "capitals": [
+    "Dhaka"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1354",
+      "name": "Dhaka",
+      "latitude": 23.728888888,
+      "longitude": 90.394444444,
+      "population": 16800000,
+      "map": "maps/cities/bangladesh__dhaka.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q376749",
+      "name": "Chittagong",
+      "latitude": 22.335,
+      "longitude": 91.8325,
+      "population": 3230507,
+      "map": "maps/cities/bangladesh__chittagong.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q466221",
+      "name": "Sylhet",
+      "latitude": 24.9,
+      "longitude": 91.866666666,
+      "population": 479837,
+      "map": "maps/cities/bangladesh__sylhet.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q243325",
+      "name": "Khulna",
+      "latitude": 22.816666666,
+      "longitude": 89.55,
+      "population": 928891,
+      "map": "maps/cities/bangladesh__khulna.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q322155",
+      "name": "Rajshahi",
+      "latitude": 24.366666666,
+      "longitude": 88.6,
+      "population": 448087,
+      "map": "maps/cities/bangladesh__rajshahi.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q949746",
+      "name": "Cox's Bazar",
+      "latitude": 21.583333333,
+      "longitude": 92.016666666,
+      "population": 196374,
+      "map": "maps/cities/bangladesh__cox_s_bazar.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "BDT",
+      "name": "Bangladeshi taka",
+      "symbol": "৳",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Bangla",
+      "code": "ben",
+      "official": null,
+      "percent": 98.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 18.0
+    },
+    {
+      "name": "Rangpuri",
+      "code": "rkt",
+      "official": null,
+      "percent": 6.5
+    },
+    {
+      "name": "Sylheti",
+      "code": "syl",
+      "official": "regional",
+      "percent": 5.0
+    },
+    {
+      "name": "Rohingya",
+      "code": "rhg",
+      "official": null,
+      "percent": 0.53
+    },
+    {
+      "name": "Chakma",
+      "code": "ccp",
+      "official": null,
+      "percent": 0.22
+    },
+    {
+      "name": "Burmese",
+      "code": "mya",
+      "official": null,
+      "percent": 0.21
+    },
+    {
+      "name": "Bengali",
+      "code": null,
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 91.1
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 7.9
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.6
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.3
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.1
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 14.0,
+    "military_spending_pct_gdp": 0.9
+  },
+  "established": "1971-12-16",
+  "independence": {
+    "date": "1971-03-26",
+    "from": "Pakistan"
+  },
+  "memberships": [
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/bangladesh.svg",
+  "map": "maps/countries/bangladesh.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Bangladesh",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

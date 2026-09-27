@@ -1,0 +1,293 @@
+{
+  "id": "Q191",
+  "name": "Estonia",
+  "official_name": "Republic of Estonia",
+  "codes": {
+    "alpha_2": "EE",
+    "alpha_3": "EST",
+    "ccn3": "233"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Northern Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 45227.0,
+  "population": 1366475,
+  "demonym": {
+    "male": "Estonian",
+    "female": "Estonian",
+    "others": []
+  },
+  "capitals": [
+    "Tallinn"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1770",
+      "name": "Tallinn",
+      "latitude": 59.437222222,
+      "longitude": 24.745,
+      "population": 457572,
+      "map": "maps/cities/estonia__tallinn.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q13972",
+      "name": "Tartu",
+      "latitude": 58.38,
+      "longitude": 26.7225,
+      "population": 97759,
+      "map": "maps/cities/estonia__tartu.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q102158",
+      "name": "Narva",
+      "latitude": 59.379166666,
+      "longitude": 28.200555555,
+      "population": 53360,
+      "map": "maps/cities/estonia__narva.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q102365",
+      "name": "Pärnu",
+      "latitude": 58.384444444,
+      "longitude": 24.498888888,
+      "population": 41520,
+      "map": "maps/cities/estonia__parnu.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q44840",
+      "name": "Viljandi",
+      "latitude": 58.363333333,
+      "longitude": 25.595555555,
+      "population": 17255,
+      "map": "maps/cities/estonia__viljandi.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q188179",
+      "name": "Kuressaare",
+      "latitude": 58.253333333,
+      "longitude": 22.486111111,
+      "population": 13185,
+      "map": "maps/cities/estonia__kuressaare.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Estonian",
+      "code": "est",
+      "official": "national",
+      "percent": 71.0
+    },
+    {
+      "name": "Russian",
+      "code": "rus",
+      "official": null,
+      "percent": 56.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 50.0
+    },
+    {
+      "name": "Finnish",
+      "code": "fin",
+      "official": null,
+      "percent": 21.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 52.6
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 43.6
+    },
+    {
+      "religion": "Other religions",
+      "percent": 2.8
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.6
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.2
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.1
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": true,
+    "disputed_with": "Market economy with extensive welfare state",
+    "income_group": "High income",
+    "government_spending_pct_gdp": 44.6,
+    "military_spending_pct_gdp": 3.4
+  },
+  "established": "1918-02-24",
+  "independence": {
+    "date": "1991-08-20",
+    "from": "Soviet Union"
+  },
+  "memberships": [
+    "European Union",
+    "Eurozone",
+    "NATO",
+    "OECD",
+    "Schengen Area"
+  ],
+  "flag": "flags/estonia.svg",
+  "map": "maps/countries/estonia.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Estonia",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

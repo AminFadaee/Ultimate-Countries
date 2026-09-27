@@ -1,0 +1,262 @@
+{
+  "id": "Q917",
+  "name": "Bhutan",
+  "official_name": "Kingdom of Bhutan",
+  "codes": {
+    "alpha_2": "BT",
+    "alpha_3": "BTN",
+    "ccn3": "064"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Southern Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 38394.0,
+  "population": 796682,
+  "demonym": {
+    "male": "Bhutanese",
+    "female": "Bhutanese",
+    "others": []
+  },
+  "capitals": [
+    "Thimphu"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q9270",
+      "name": "Thimphu",
+      "latitude": 27.47135,
+      "longitude": 89.63367,
+      "population": 114551,
+      "map": "maps/cities/bhutan__thimphu.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q826112",
+      "name": "Punakha",
+      "latitude": 27.616666666,
+      "longitude": 89.866666666,
+      "population": null,
+      "map": "maps/cities/bhutan__punakha.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "BTN",
+      "name": "Bhutanese ngultrum",
+      "symbol": "Nu.",
+      "main": true
+    },
+    {
+      "code": "INR",
+      "name": "Indian rupee",
+      "symbol": "₹",
+      "main": false
+    }
+  ],
+  "languages": [
+    {
+      "name": "Dzongkha",
+      "code": "dzo",
+      "official": "national",
+      "percent": 47.0
+    },
+    {
+      "name": "Nepali",
+      "code": "nep",
+      "official": null,
+      "percent": 17.0
+    },
+    {
+      "name": "Tshangla",
+      "code": "tsj",
+      "official": null,
+      "percent": 15.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 11.0
+    },
+    {
+      "name": "Lepcha",
+      "code": "lep",
+      "official": null,
+      "percent": 3.9
+    }
+  ],
+  "official_religions": [
+    "Buddhism"
+  ],
+  "religions": [
+    {
+      "religion": "Buddhism",
+      "percent": 74.7
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 22.5
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.9
+    },
+    {
+      "religion": "Christianity",
+      "percent": 0.6
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.2
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary semi-constitutional monarchy",
+    "form": "Semi-constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Lower middle income",
+    "government_spending_pct_gdp": 33.2,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [],
+  "flag": "flags/bhutan.svg",
+  "map": "maps/countries/bhutan.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Bhutan",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-13",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-13",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-13",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-13",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-13",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-13",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

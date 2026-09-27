@@ -1,0 +1,322 @@
+{
+  "id": "Q1029",
+  "name": "Mozambique",
+  "official_name": "Republic of Mozambique",
+  "codes": {
+    "alpha_2": "MZ",
+    "alpha_3": "MOZ",
+    "ccn3": "508"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Africa",
+  "subregion": "Eastern Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 801590.0,
+  "population": 35631653,
+  "demonym": {
+    "male": "Mozambican",
+    "female": "Mozambican",
+    "others": []
+  },
+  "capitals": [
+    "Maputo"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3889",
+      "name": "Maputo",
+      "latitude": -25.968888888,
+      "longitude": 32.573333333,
+      "population": 1133200,
+      "map": "maps/cities/mozambique__maputo.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q211563",
+      "name": "Beira",
+      "latitude": -19.833333333,
+      "longitude": 34.85,
+      "population": 530604,
+      "map": "maps/cities/mozambique__beira.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q323801",
+      "name": "Nampula",
+      "latitude": -15.116666666,
+      "longitude": 39.266666666,
+      "population": 743000,
+      "map": "maps/cities/mozambique__nampula.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q318306",
+      "name": "Quelimane",
+      "latitude": -17.876388888,
+      "longitude": 36.887222222,
+      "population": 349842,
+      "map": "maps/cities/mozambique__quelimane.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q388242",
+      "name": "Tete",
+      "latitude": -16.157916666,
+      "longitude": 33.589805555,
+      "population": 152909,
+      "map": "maps/cities/mozambique__tete.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q638509",
+      "name": "Chimoio",
+      "latitude": -19.116666666,
+      "longitude": 33.45,
+      "population": 238976,
+      "map": "maps/cities/mozambique__chimoio.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "MZN",
+      "name": "Mozambican metical",
+      "symbol": "MT",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "code": "por",
+      "official": "national",
+      "percent": 27.0
+    },
+    {
+      "name": "Makhuwa",
+      "code": "vmw",
+      "official": null,
+      "percent": 13.0
+    },
+    {
+      "name": "Ndau",
+      "code": "ndc",
+      "official": null,
+      "percent": 9.9
+    },
+    {
+      "name": "Tsonga",
+      "code": "tso",
+      "official": null,
+      "percent": 7.9
+    },
+    {
+      "name": "Lomwe",
+      "code": "ngl",
+      "official": null,
+      "percent": 6.8
+    },
+    {
+      "name": "Sena",
+      "code": "seh",
+      "official": null,
+      "percent": 4.6
+    },
+    {
+      "name": "Makhuwa-Meetto",
+      "code": "mgh",
+      "official": null,
+      "percent": 4.5
+    },
+    {
+      "name": "Ronga",
+      "code": "rng",
+      "official": null,
+      "percent": 3.4
+    },
+    {
+      "name": "Nyanja",
+      "code": "nya",
+      "official": null,
+      "percent": 2.6
+    },
+    {
+      "name": "Yao",
+      "code": "yao",
+      "official": null,
+      "percent": 2.4
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 61.3
+    },
+    {
+      "religion": "Islam",
+      "percent": 19.4
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 14.3
+    },
+    {
+      "religion": "Other religions",
+      "percent": 4.9
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary dominant-party semi-presidential republic under an authoritarian government",
+    "form": "Semi-presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "Low income",
+    "government_spending_pct_gdp": 31.7,
+    "military_spending_pct_gdp": 2.0
+  },
+  "established": "1975-06-25",
+  "independence": {
+    "date": "1975-06-25",
+    "from": "Portugal"
+  },
+  "memberships": [
+    "African Union",
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/mozambique.svg",
+  "map": "maps/countries/mozambique.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Mozambique",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

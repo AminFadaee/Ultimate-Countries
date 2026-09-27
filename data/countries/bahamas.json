@@ -1,0 +1,237 @@
+{
+  "id": "Q778",
+  "name": "Bahamas",
+  "official_name": "Commonwealth of the Bahamas",
+  "codes": {
+    "alpha_2": "BS",
+    "alpha_3": "BHS",
+    "ccn3": "044"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 13943.0,
+  "population": 403033,
+  "demonym": {
+    "male": "Bahamian",
+    "female": "Bahamian",
+    "others": []
+  },
+  "capitals": [
+    "Nassau"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q2467",
+      "name": "Nassau",
+      "latitude": 25.078055555,
+      "longitude": -77.338611111,
+      "population": 227940,
+      "map": "maps/cities/bahamas__nassau.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q867573",
+      "name": "Freeport",
+      "latitude": 26.52,
+      "longitude": -78.66,
+      "population": 45945,
+      "map": "maps/cities/bahamas__freeport.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "BSD",
+      "name": "Bahamian dollar",
+      "symbol": "$",
+      "main": true
+    },
+    {
+      "code": "USD",
+      "name": "United States dollar",
+      "symbol": "$",
+      "main": false
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 100.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 97.6
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 1.9
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.3
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.1
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary constitutional monarchy",
+    "form": "Constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 23.9,
+    "military_spending_pct_gdp": null
+  },
+  "established": "1973-07-10",
+  "independence": {
+    "date": "1973-07-10",
+    "from": "United Kingdom"
+  },
+  "memberships": [
+    "Commonwealth of Nations"
+  ],
+  "flag": "flags/bahamas.svg",
+  "map": "maps/countries/bahamas.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/The_Bahamas",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}

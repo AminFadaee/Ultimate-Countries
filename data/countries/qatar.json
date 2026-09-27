@@ -1,0 +1,246 @@
+{
+  "id": "Q846",
+  "name": "Qatar",
+  "official_name": "State of Qatar",
+  "codes": {
+    "alpha_2": "QA",
+    "alpha_3": "QAT",
+    "ccn3": "634"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Asia",
+  "subregion": "Western Asia",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 11586.0,
+  "population": 2972215,
+  "demonym": {
+    "male": "Qatari",
+    "female": "Qatari",
+    "others": []
+  },
+  "capitals": [
+    "Doha"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q3861",
+      "name": "Doha",
+      "latitude": 25.286111111,
+      "longitude": 51.529444444,
+      "population": 1186023,
+      "map": "maps/cities/qatar__doha.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q311717",
+      "name": "Al Khor",
+      "latitude": 25.68389,
+      "longitude": 51.50583,
+      "population": 31547,
+      "map": "maps/cities/qatar__al_khor.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "QAR",
+      "name": "Qatari riyal",
+      "symbol": "ر.ق",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "code": "ara",
+      "official": "national",
+      "percent": 89.0
+    },
+    {
+      "name": "Persian",
+      "code": "fas",
+      "official": null,
+      "percent": 11.0
+    },
+    {
+      "name": "Malayalam",
+      "code": "mal",
+      "official": null,
+      "percent": 0.25
+    }
+  ],
+  "official_religions": [
+    "Islam"
+  ],
+  "religions": [
+    {
+      "religion": "Islam",
+      "percent": 75.9
+    },
+    {
+      "religion": "Christianity",
+      "percent": 12.5
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 10.6
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.4
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 0.3
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.2
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary authoritarian semi-constitutional monarchy",
+    "form": "Semi-constitutional monarchy"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 26.3,
+    "military_spending_pct_gdp": 6.5
+  },
+  "established": null,
+  "independence": null,
+  "memberships": [
+    "Arab League"
+  ],
+  "flag": "flags/qatar.svg",
+  "map": "maps/countries/qatar.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Qatar",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026",
+      "retrieved": "2026-09-28"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2022",
+      "retrieved": "2026-09-28"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null,
+      "retrieved": "2026-09-28"
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025",
+      "retrieved": "2026-09-28"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04",
+      "retrieved": "2026-09-28"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020",
+      "retrieved": "2026-09-28"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48",
+      "retrieved": "2026-09-28"
+    }
+  }
+}
