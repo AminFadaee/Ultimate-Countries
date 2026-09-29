@@ -89,21 +89,66 @@ def stable_id(name: str) -> int:
     return int(hashlib.sha256(name.encode()).hexdigest()[:12], 16) % (1 << 40) + (1 << 30)
 
 
-def prompt(kind: str, subject: str) -> str:
-    return f'<div class="prompt"><span class="kind">{kind}:</span> {subject}</div>'
-
-
-def image_prompt(kind: str, field: str) -> str:
-    return f'<div class="kind">{kind}</div><div class="image">{{{{{field}}}}}</div>'
-
-
-def back(answer: str, info_field: str | None = None, context: str = COUNTRY_CONTEXT) -> str:
-    info = f'{{{{#{info_field}}}}}<div class="info">{{{{{info_field}}}}}</div>{{{{/{info_field}}}}}' if info_field else ""
-    return f'{{{{FrontSide}}}}<hr id="answer"><div class="answer">{answer}</div>{info}<div class="context">{context}</div>'
+UNKNOWN_ENTITY = '<div class="entity unknown">?</div>'
+UNKNOWN_VALUE = '<div class="value unknown">?</div>'
+FLAG_HEIGHT_PX = 160
+COUNTRY_NAME = '{{#Flag}}<span class="mini-flag">{{Flag}}</span>{{/Flag}}{{Name}}'
+MAP_THUMBNAIL = '{{#Map}}<div class="thumbnail map">{{Map}}</div>{{/Map}}'
 
 
 def conditional(field: str, content: str) -> str:
     return f"{{{{#{field}}}}}{content}{{{{/{field}}}}}"
+
+
+def placeholder(field: str) -> str:
+    return f"{{{{{field}}}}}"
+
+
+def entity(content: str, answered: bool = False) -> str:
+    return f'<div class="entity answer" id="answer">{content}</div>' if answered else f'<div class="entity">{content}</div>'
+
+
+def value(content: str, answered: bool = False) -> str:
+    return f'<div class="value answer" id="answer">{content}</div>' if answered else f'<div class="value">{content}</div>'
+
+
+def image(field: str, kind: str) -> str:
+    return f'<div class="value image {kind}">{placeholder(field)}</div>'
+
+
+def face(entity_html: str, label: str, value_html: str) -> str:
+    return f'{entity_html}<hr class="divider"><div class="label">{label}</div>{value_html}'
+
+
+def details(info_field: str | None, context: str, extra: str = "") -> str:
+    info = conditional(info_field, f'<div class="info">{placeholder(info_field)}</div>') if info_field else ""
+    return f'{info}{extra}<div class="context">{context}</div>'
+
+
+def ask_attribute(
+    label: str, field: str, info_field: str | None = None, subject: str = COUNTRY_NAME, context: str = COUNTRY_CONTEXT
+) -> tuple[str, str]:
+    front = face(entity(subject), label, UNKNOWN_VALUE)
+    back = face(entity(subject), label, value(placeholder(field), answered=True)) + details(info_field, context)
+    return front, back
+
+
+def ask_entity(
+    label: str,
+    shown: str,
+    answer: str = COUNTRY_NAME,
+    info_field: str | None = None,
+    context: str = COUNTRY_CONTEXT,
+    extra: str = "",
+) -> tuple[str, str]:
+    front = face(UNKNOWN_ENTITY, label, shown)
+    back = face(entity(answer, answered=True), label, shown) + details(info_field, context, extra)
+    return front, back
+
+
+def guarded(field: str, faces: tuple[str, str]) -> tuple[str, str]:
+    front, back = faces
+    return conditional(field, front), back
 
 
 TEXT_CARDS = (
@@ -116,29 +161,26 @@ TEXT_CARDS = (
 )
 
 COUNTRY_TEMPLATES = (
-    Template(
-        "Capital",
-        Subdeck.CAPITALS,
-        "Capital",
-        conditional("Capital", prompt("Capital", "{{Name}}")),
-        back("{{Capital}}", "CapitalInfo"),
-    ),
+    Template("Capital", Subdeck.CAPITALS, "Capital", *guarded("Capital", ask_attribute("Capital", "Capital", "CapitalInfo"))),
     Template(
         "Capital of",
         Subdeck.CAPITALS,
         "Capital",
-        conditional("Capital", prompt("Capital of", "{{Capital}}")),
-        back("{{Name}}", "CapitalInfo"),
+        *guarded("Capital", ask_entity("Capital", value(placeholder("Capital")), info_field="CapitalInfo")),
     ),
-    Template("Flag", Subdeck.FLAGS, "Flag", conditional("Flag", image_prompt("Flag", "Flag")), back("{{Name}}")),
-    Template("Map", Subdeck.MAPS, "Map", conditional("Map", image_prompt("Map", "Map")), back("{{Name}}")),
+    Template(
+        "Flag",
+        Subdeck.FLAGS,
+        "Flag",
+        *guarded("Flag", ask_entity("Flag", image("Flag", "flag"), answer="{{Name}}", extra=MAP_THUMBNAIL)),
+    ),
+    Template("Map", Subdeck.MAPS, "Map", *guarded("Map", ask_entity("Map", image("Map", "map")))),
     *(
         Template(
             card.field,
             card.subdeck,
             card.field,
-            conditional(card.field, prompt(card.field, "{{Name}}")),
-            back(f"{{{{{card.field}}}}}", f"{card.field}Info"),
+            *guarded(card.field, ask_attribute(card.field, card.field, f"{card.field}Info")),
         )
         for card in TEXT_CARDS
     ),
@@ -156,35 +198,43 @@ COUNTRY_FIELDS = (
     "NotableCities",
 )
 
+CITY_MAP_FRONT, CITY_MAP_BACK = ask_entity(
+    "Map", image("Map", "map"), answer='{{City}}<div class="subtitle">{{Country}}</div>', context=CITY_CONTEXT
+)
+CITY_COUNTRY_FRONT, CITY_COUNTRY_BACK = ask_attribute("Country", "Country", subject="{{City}}", context=CITY_CONTEXT)
+
 CITY_TEMPLATES = (
-    Template(
-        "Map",
-        Subdeck.CITIES,
-        "Map",
-        conditional("Map", image_prompt("City", "Map")),
-        back("{{City}}<br>{{Country}}", context=CITY_CONTEXT),
-    ),
-    Template(
-        "Country",
-        Subdeck.CITIES,
-        "City",
-        f"{{{{^IsCapital}}}}{prompt('Country', '{{City}}')}{{{{/IsCapital}}}}",
-        back("{{Country}}", context=CITY_CONTEXT),
-    ),
+    Template("Map", Subdeck.CITIES, "Map", conditional("Map", CITY_MAP_FRONT), CITY_MAP_BACK),
+    Template("Country", Subdeck.CITIES, "City", f"{{{{^IsCapital}}}}{CITY_COUNTRY_FRONT}{{{{/IsCapital}}}}", CITY_COUNTRY_BACK),
 )
 
 CITY_FIELDS = ("Id", "City", "Country", "Map", "IsCapital", "Region")
 
-CSS = """
-.card { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 22px; text-align: center; color: #1d1d1f; background: #fdfdfd; }
-.nightMode.card, .night_mode .card { color: #e8e8ea; background: #1e1e20; }
-.prompt { font-size: 26px; }
-.kind { color: #8a8a8e; font-size: 18px; letter-spacing: 0.02em; }
-.image img { max-width: 100%; max-height: 70vh; margin-top: 8px; }
-.answer { font-size: 28px; font-weight: 600; margin: 8px 0; }
-.info { color: #555; font-size: 17px; margin: 6px auto; max-width: 42em; }
-.nightMode .info, .night_mode .info { color: #b5b5ba; }
-.context { color: #8a8a8e; font-size: 15px; margin-top: 14px; }
+CSS = f"""
+.card {{
+  --text: #1d1d1f; --muted: #8a8a8e; --faint: #c2c2c8; --accent: #0a66c2;
+  --line: #d8d8dd; --info: #505055; --outline: rgba(120, 120, 128, 0.35); --background: #fdfdfd;
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif; text-align: center;
+  color: var(--text); background: var(--background); padding: 12px 8px;
+}}
+.nightMode.card, .night_mode .card, .card.night_mode {{
+  --text: #e8e8ea; --muted: #9a9aa0; --faint: #5c5c62; --accent: #6cb2ff;
+  --line: #3a3a3f; --info: #bdbdc2; --background: #1e1e20;
+}}
+.entity {{ font-size: 30px; font-weight: 600; }}
+.subtitle {{ font-size: 20px; font-weight: 400; color: var(--muted); margin-top: 2px; }}
+.divider {{ border: none; border-top: 1px solid var(--line); width: min(60%, 360px); margin: 14px auto; }}
+.label {{ font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }}
+.value {{ font-size: 26px; }}
+.unknown {{ color: var(--faint); font-weight: 600; }}
+.answer {{ color: var(--accent); font-weight: 700; }}
+.flag img {{ height: {FLAG_HEIGHT_PX}px; width: auto; max-width: 100%; object-fit: contain; filter: drop-shadow(0 0 1px var(--outline)); }}
+.map img {{ width: 100%; max-width: 900px; height: auto; max-height: 60vh; object-fit: contain; }}
+.mini-flag img {{ height: 0.8em; width: auto; vertical-align: 0.02em; margin-right: 0.4em; filter: drop-shadow(0 0 1px var(--outline)); }}
+.thumbnail {{ margin-top: 14px; }}
+.thumbnail.map img {{ width: 100%; max-width: 360px; height: auto; }}
+.info {{ font-size: 16px; line-height: 1.45; color: var(--info); margin: 10px auto 0; max-width: 40em; }}
+.context {{ font-size: 14px; line-height: 1.5; color: var(--muted); margin-top: 22px; }}
 """
 
 
