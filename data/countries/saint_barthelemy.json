@@ -1,0 +1,171 @@
+{
+  "id": "Q25362",
+  "name": "Saint Barthélemy",
+  "official_name": "Collectivity of Saint Barthélemy",
+  "codes": {
+    "alpha_2": "BL",
+    "alpha_3": "BLM",
+    "ccn3": "652"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "overseas_collectivity",
+    "parent_alpha_3": "FRA"
+  },
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 21.0,
+  "population": 4255,
+  "demonym": {
+    "male": "Saint Barthélemy Islander",
+    "female": "Saint Barthélemy Islander",
+    "others": []
+  },
+  "capitals": [
+    "Gustavia"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q34112",
+      "name": "Gustavia",
+      "latitude": 17.898611111,
+      "longitude": -62.849166666,
+      "population": 9131,
+      "map": "maps/cities/saint_barthelemy__gustavia.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 85.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Devolved parliamentary dependency",
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "recognition": null,
+  "memberships": [],
+  "flag": "flags/saint_barthelemy.svg",
+  "map": "maps/countries/saint_barthelemy.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Saint_Barth%C3%A9lemy",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48"
+    }
+  }
+}

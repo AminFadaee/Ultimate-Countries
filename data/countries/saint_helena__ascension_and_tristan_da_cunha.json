@@ -1,0 +1,177 @@
+{
+  "id": "Q192184",
+  "name": "Saint Helena, Ascension and Tristan da Cunha",
+  "official_name": "Saint Helena, Ascension and Tristan da Cunha",
+  "codes": {
+    "alpha_2": "SH",
+    "alpha_3": "SHN",
+    "ccn3": "654"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "overseas_territory",
+    "parent_alpha_3": "GBR"
+  },
+  "region": "Africa",
+  "subregion": "Western Africa",
+  "continents": [
+    "Africa"
+  ],
+  "area_km2": 394.0,
+  "population": 53192,
+  "demonym": {
+    "male": "Saint Helenian",
+    "female": "Saint Helenian",
+    "others": []
+  },
+  "capitals": [
+    "Jamestown"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q30970",
+      "name": "Jamestown",
+      "latitude": -15.925138888,
+      "longitude": -5.717916666,
+      "population": 714,
+      "map": "maps/cities/saint_helena__ascension_and_tristan_da_cunha__jamestown.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "SHP",
+      "name": "Saint Helena pound",
+      "symbol": "£",
+      "main": true
+    },
+    {
+      "code": "GBP",
+      "name": "British pound",
+      "symbol": "£",
+      "main": false
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 68.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Self-governing dependency under a constitutional monarchy",
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "recognition": null,
+  "memberships": [],
+  "flag": "flags/saint_helena__ascension_and_tristan_da_cunha.svg",
+  "map": "maps/countries/saint_helena__ascension_and_tristan_da_cunha.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Saint_Helena%2C_Ascension_and_Tristan_da_Cunha",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48"
+    }
+  }
+}

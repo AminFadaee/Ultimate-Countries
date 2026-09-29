@@ -1,0 +1,183 @@
+{
+  "id": "Q27561",
+  "name": "Caribbean Netherlands",
+  "official_name": "Bonaire, Sint Eustatius and Saba",
+  "codes": {
+    "alpha_2": "BQ",
+    "alpha_3": "BES",
+    "ccn3": "535"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "special_municipality",
+    "parent_alpha_3": "NLD"
+  },
+  "region": "Americas",
+  "subregion": "Caribbean",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 328.0,
+  "population": 31980,
+  "demonym": {
+    "male": "Dutch",
+    "female": "Dutch",
+    "others": []
+  },
+  "capitals": [
+    "Kralendijk"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q331584",
+      "name": "Kralendijk",
+      "latitude": 12.150833333,
+      "longitude": -68.276666666,
+      "population": 12531,
+      "map": "maps/cities/caribbean_netherlands__kralendijk.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "USD",
+      "name": "United States dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Papiamento",
+      "code": "pap",
+      "official": "regional",
+      "percent": 81.0
+    },
+    {
+      "name": "Dutch",
+      "code": "nld",
+      "official": "national",
+      "percent": 8.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": null,
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "recognition": null,
+  "memberships": [],
+  "flag": "flags/caribbean_netherlands.svg",
+  "map": "maps/countries/caribbean_netherlands.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Caribbean_Netherlands",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48"
+    }
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "id": "Q213",
+  "name": "Czechia",
+  "official_name": "Czech Republic",
+  "codes": {
+    "alpha_2": "CZ",
+    "alpha_3": "CZE",
+    "ccn3": "203"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Europe",
+  "subregion": "Central Europe",
+  "continents": [
+    "Europe"
+  ],
+  "area_km2": 78865.0,
+  "population": 10886878,
+  "demonym": {
+    "male": "Czech",
+    "female": "Czech",
+    "others": []
+  },
+  "capitals": [
+    "Prague"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q1085",
+      "name": "Prague",
+      "latitude": 50.0875,
+      "longitude": 14.421388888,
+      "population": 1397880,
+      "map": "maps/cities/czechia__prague.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q14960",
+      "name": "Brno",
+      "latitude": 49.195277777,
+      "longitude": 16.608333333,
+      "population": 402739,
+      "map": "maps/cities/czechia__brno.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q43453",
+      "name": "Plzeň",
+      "latitude": 49.741388888,
+      "longitude": 13.3825,
+      "population": 187928,
+      "map": "maps/cities/czechia__plzen.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q8385",
+      "name": "Ostrava",
+      "latitude": 49.835555555,
+      "longitude": 18.2925,
+      "population": 283187,
+      "map": "maps/cities/czechia__ostrava.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q81137",
+      "name": "Olomouc",
+      "latitude": 49.593888888,
+      "longitude": 17.250833333,
+      "population": 103063,
+      "map": "maps/cities/czechia__olomouc.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q146351",
+      "name": "Liberec",
+      "latitude": 50.766666666,
+      "longitude": 15.05,
+      "population": 108090,
+      "map": "maps/cities/czechia__liberec.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "CZK",
+      "name": "Czech koruna",
+      "symbol": "Kč",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Czech",
+      "code": "ces",
+      "official": "national",
+      "percent": 98.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 27.0
+    },
+    {
+      "name": "Slovak",
+      "code": "slk",
+      "official": null,
+      "percent": 16.0
+    },
+    {
+      "name": "German",
+      "code": "deu",
+      "official": null,
+      "percent": 15.0
+    },
+    {
+      "name": "Polish",
+      "code": "pol",
+      "official": null,
+      "percent": 0.49
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Unaffiliated",
+      "percent": 72.8
+    },
+    {
+      "religion": "Christianity",
+      "percent": 26.4
+    },
+    {
+      "religion": "Islam",
+      "percent": 0.3
+    },
+    {
+      "religion": "Other religions",
+      "percent": 0.3
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 0.1
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.0
+    },
+    {
+      "religion": "Judaism",
+      "percent": 0.0
+    }
+  ],
+  "government": {
+    "label": "Unitary parliamentary republic",
+    "form": "Parliamentary republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": true,
+    "disputed_with": "Market economy with extensive welfare state",
+    "income_group": "High income",
+    "government_spending_pct_gdp": 42.7,
+    "military_spending_pct_gdp": 1.9
+  },
+  "established": "1993-01-01",
+  "independence": {
+    "date": "1993-01-01",
+    "from": "Czechoslovakia"
+  },
+  "recognition": null,
+  "memberships": [
+    "European Union",
+    "NATO",
+    "OECD",
+    "Schengen Area"
+  ],
+  "flag": "flags/czechia.svg",
+  "map": "maps/countries/czechia.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Czechia",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-12"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-12"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-12"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-12"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-12"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-12"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48"
+    }
+  }
+}

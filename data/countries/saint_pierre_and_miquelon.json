@@ -1,0 +1,177 @@
+{
+  "id": "Q34617",
+  "name": "Saint Pierre and Miquelon",
+  "official_name": "Saint Pierre and Miquelon",
+  "codes": {
+    "alpha_2": "PM",
+    "alpha_3": "SPM",
+    "ccn3": "666"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "overseas_collectivity",
+    "parent_alpha_3": "FRA"
+  },
+  "region": "Americas",
+  "subregion": "North America",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 242.0,
+  "population": 5819,
+  "demonym": {
+    "male": "Saint-Pierrais, Miquelonnais",
+    "female": "Saint-Pierrais, Miquelonnais",
+    "others": []
+  },
+  "capitals": [
+    "Saint-Pierre"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q185678",
+      "name": "Saint-Pierre",
+      "latitude": 46.777777777,
+      "longitude": -56.177777777,
+      "population": 5282,
+      "map": "maps/cities/saint_pierre_and_miquelon__saint_pierre.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "French",
+      "code": "fra",
+      "official": "national",
+      "percent": 100.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": null,
+      "percent": 3.7
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Devolved parliamentary local authority within French Republic",
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "recognition": null,
+  "memberships": [],
+  "flag": "flags/saint_pierre_and_miquelon.svg",
+  "map": "maps/countries/saint_pierre_and_miquelon.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Saint_Pierre_and_Miquelon",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48"
+    }
+  }
+}

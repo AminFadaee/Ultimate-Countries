@@ -1,0 +1,177 @@
+{
+  "id": "Q31057",
+  "name": "Norfolk Island",
+  "official_name": "Territory of Norfolk Island",
+  "codes": {
+    "alpha_2": "NF",
+    "alpha_3": "NFK",
+    "ccn3": "574"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "external_territory",
+    "parent_alpha_3": "AUS"
+  },
+  "region": "Oceania",
+  "subregion": "Australia and New Zealand",
+  "continents": [
+    "Oceania"
+  ],
+  "area_km2": 36.0,
+  "population": 2188,
+  "demonym": {
+    "male": "Norfolk Islander",
+    "female": "Norfolk Islander",
+    "others": []
+  },
+  "capitals": [
+    "Kingston"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q30963",
+      "name": "Kingston",
+      "latitude": -29.05,
+      "longitude": 167.966666666,
+      "population": null,
+      "map": "maps/cities/norfolk_island__kingston.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "AUD",
+      "name": "Australian dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 96.0
+    },
+    {
+      "name": "Norfuk",
+      "code": null,
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Directly administered dependency",
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "recognition": null,
+  "memberships": [],
+  "flag": "flags/norfolk_island.svg",
+  "map": "maps/countries/norfolk_island.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Norfolk_Island",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48"
+    }
+  }
+}

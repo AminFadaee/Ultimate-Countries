@@ -1,0 +1,171 @@
+{
+  "id": "Q31063",
+  "name": "Christmas Island",
+  "official_name": "Territory of Christmas Island",
+  "codes": {
+    "alpha_2": "CX",
+    "alpha_3": "CXR",
+    "ccn3": "162"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "external_territory",
+    "parent_alpha_3": "AUS"
+  },
+  "region": "Oceania",
+  "subregion": "Australia and New Zealand",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 135.0,
+  "population": 1692,
+  "demonym": {
+    "male": "Christmas Islander",
+    "female": "Christmas Islander",
+    "others": []
+  },
+  "capitals": [
+    "Flying Fish Cove"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q30980",
+      "name": "Flying Fish Cove",
+      "latitude": -10.421666666,
+      "longitude": 105.678055555,
+      "population": 1355,
+      "map": "maps/cities/christmas_island__flying_fish_cove.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "AUD",
+      "name": "Australian dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 83.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Directly administered dependency",
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "recognition": null,
+  "memberships": [],
+  "flag": "flags/christmas_island.svg",
+  "map": "maps/countries/christmas_island.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Christmas_Island",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-26"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-26"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-26"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-26"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-26"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-26"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-26"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48"
+    }
+  }
+}

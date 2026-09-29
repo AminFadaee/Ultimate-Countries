@@ -1,0 +1,177 @@
+{
+  "id": "Q35672",
+  "name": "Pitcairn Islands",
+  "official_name": "Pitcairn Group of Islands",
+  "codes": {
+    "alpha_2": "PN",
+    "alpha_3": "PCN",
+    "ccn3": "612"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "overseas_territory",
+    "parent_alpha_3": "GBR"
+  },
+  "region": "Oceania",
+  "subregion": "Polynesia",
+  "continents": [
+    "Oceania"
+  ],
+  "area_km2": 47.0,
+  "population": 35,
+  "demonym": {
+    "male": "Pitcairn Islander",
+    "female": "Pitcairn Islander",
+    "others": []
+  },
+  "capitals": [
+    "Adamstown"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q48273",
+      "name": "Adamstown",
+      "latitude": -25.066666666,
+      "longitude": -130.1,
+      "population": 50,
+      "map": "maps/cities/pitcairn_islands__adamstown.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "NZD",
+      "name": "New Zealand dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 92.0
+    },
+    {
+      "name": "Pitkern",
+      "code": "pih",
+      "official": "national",
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Self-governing dependency under a constitutional monarchy",
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "recognition": null,
+  "memberships": [],
+  "flag": "flags/pitcairn_islands.svg",
+  "map": "maps/countries/pitcairn_islands.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Pitcairn_Islands",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48"
+    }
+  }
+}

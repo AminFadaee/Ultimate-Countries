@@ -1,0 +1,177 @@
+{
+  "id": "Q36004",
+  "name": "Cocos (Keeling) Islands",
+  "official_name": "Territory of the Cocos (Keeling) Islands",
+  "codes": {
+    "alpha_2": "CC",
+    "alpha_3": "CCK",
+    "ccn3": "166"
+  },
+  "status": {
+    "sovereign": false,
+    "disputed": false,
+    "un_member": false,
+    "un_observer": false,
+    "dependency_type": "external_territory",
+    "parent_alpha_3": "AUS"
+  },
+  "region": "Oceania",
+  "subregion": "Australia and New Zealand",
+  "continents": [
+    "Asia"
+  ],
+  "area_km2": 14.0,
+  "population": 593,
+  "demonym": {
+    "male": "Cocos Islander",
+    "female": "Cocos Islander",
+    "others": []
+  },
+  "capitals": [
+    "West Island"
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q48675",
+      "name": "West Island",
+      "latitude": -12.186944444,
+      "longitude": 96.828333333,
+      "population": 147,
+      "map": "maps/cities/cocos__keeling__islands__west_island.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "AUD",
+      "name": "Australian dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "Malay",
+      "code": "msa",
+      "official": null,
+      "percent": 84.0
+    },
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 17.0
+    }
+  ],
+  "official_religions": [],
+  "religions": [],
+  "government": {
+    "label": "Directly administered dependency",
+    "form": null
+  },
+  "economy": {
+    "system": null,
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": null,
+    "government_spending_pct_gdp": null,
+    "military_spending_pct_gdp": null
+  },
+  "established": null,
+  "independence": null,
+  "recognition": null,
+  "memberships": [],
+  "flag": "flags/cocos__keeling__islands.svg",
+  "map": "maps/countries/cocos__keeling__islands.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Cocos_%28Keeling%29_Islands",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_languages": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "population": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-06"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48"
+    }
+  }
+}

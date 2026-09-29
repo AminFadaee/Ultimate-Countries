@@ -1,0 +1,331 @@
+{
+  "id": "Q30",
+  "name": "United States",
+  "official_name": "United States of America",
+  "codes": {
+    "alpha_2": "US",
+    "alpha_3": "USA",
+    "ccn3": "840"
+  },
+  "status": {
+    "sovereign": true,
+    "disputed": false,
+    "un_member": true,
+    "un_observer": false,
+    "dependency_type": null,
+    "parent_alpha_3": null
+  },
+  "region": "Americas",
+  "subregion": "North America",
+  "continents": [
+    "North America"
+  ],
+  "area_km2": 9372610.0,
+  "population": 341784857,
+  "demonym": {
+    "male": "American",
+    "female": "American",
+    "others": []
+  },
+  "capitals": [
+    "Washington, D.C."
+  ],
+  "cities": [
+    {
+      "role": "capital",
+      "id": "Q61",
+      "name": "Washington, D.C.",
+      "latitude": 38.895,
+      "longitude": -77.036666666,
+      "population": 689545,
+      "map": "maps/cities/united_states__washington__d_c.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q60",
+      "name": "New York City",
+      "latitude": 40.712777777,
+      "longitude": -74.006111111,
+      "population": 8804190,
+      "map": "maps/cities/united_states__new_york_city.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q65",
+      "name": "Los Angeles",
+      "latitude": 34.05223,
+      "longitude": -118.24368,
+      "population": 3898747,
+      "map": "maps/cities/united_states__los_angeles.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1297",
+      "name": "Chicago",
+      "latitude": 41.881944444,
+      "longitude": -87.627777777,
+      "population": 2746388,
+      "map": "maps/cities/united_states__chicago.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q16555",
+      "name": "Houston",
+      "latitude": 29.762777777,
+      "longitude": -95.383055555,
+      "population": 2304580,
+      "map": "maps/cities/united_states__houston.png"
+    },
+    {
+      "role": "notable",
+      "id": "Q1345",
+      "name": "Philadelphia",
+      "latitude": 39.952777777,
+      "longitude": -75.163611111,
+      "population": 1603797,
+      "map": "maps/cities/united_states__philadelphia.png"
+    }
+  ],
+  "currencies": [
+    {
+      "code": "USD",
+      "name": "United States dollar",
+      "symbol": "$",
+      "main": true
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "code": "eng",
+      "official": "national",
+      "percent": 96.0
+    },
+    {
+      "name": "Spanish",
+      "code": "spa",
+      "official": null,
+      "percent": 9.6
+    },
+    {
+      "name": "Chinese",
+      "code": "zho",
+      "official": null,
+      "percent": 0.69
+    },
+    {
+      "name": "French",
+      "code": "fra",
+      "official": null,
+      "percent": 0.56
+    },
+    {
+      "name": "German",
+      "code": "deu",
+      "official": null,
+      "percent": 0.47
+    },
+    {
+      "name": "Filipino",
+      "code": "fil",
+      "official": null,
+      "percent": 0.42
+    },
+    {
+      "name": "Italian",
+      "code": "ita",
+      "official": null,
+      "percent": 0.34
+    },
+    {
+      "name": "Vietnamese",
+      "code": "vie",
+      "official": null,
+      "percent": 0.34
+    },
+    {
+      "name": "Korean",
+      "code": "kor",
+      "official": null,
+      "percent": 0.3
+    },
+    {
+      "name": "Russian",
+      "code": "rus",
+      "official": null,
+      "percent": 0.24
+    },
+    {
+      "name": "Hawaiian",
+      "code": "haw",
+      "official": null,
+      "percent": 0.0089
+    },
+    {
+      "name": "Carolinian",
+      "code": "cal",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Chamorro",
+      "code": "cha",
+      "official": null,
+      "percent": null
+    },
+    {
+      "name": "Samoan",
+      "code": "smo",
+      "official": null,
+      "percent": null
+    }
+  ],
+  "official_religions": [],
+  "religions": [
+    {
+      "religion": "Christianity",
+      "percent": 64.0
+    },
+    {
+      "religion": "Unaffiliated",
+      "percent": 29.7
+    },
+    {
+      "religion": "Judaism",
+      "percent": 1.7
+    },
+    {
+      "religion": "Buddhism",
+      "percent": 1.3
+    },
+    {
+      "religion": "Islam",
+      "percent": 1.2
+    },
+    {
+      "religion": "Other religions",
+      "percent": 1.2
+    },
+    {
+      "religion": "Hinduism",
+      "percent": 0.9
+    }
+  ],
+  "government": {
+    "label": "Federal presidential republic",
+    "form": "Federal presidential republic"
+  },
+  "economy": {
+    "system": "Market economy",
+    "disputed": false,
+    "disputed_with": null,
+    "income_group": "High income",
+    "government_spending_pct_gdp": 38.0,
+    "military_spending_pct_gdp": 3.4
+  },
+  "established": null,
+  "independence": {
+    "date": "1776-07-04",
+    "from": "Kingdom of Great Britain"
+  },
+  "recognition": null,
+  "memberships": [
+    "G20",
+    "G7",
+    "NATO",
+    "OECD"
+  ],
+  "flag": "flags/united_states.svg",
+  "map": "maps/countries/united_states.png",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/United_States",
+  "sources": {
+    "capitals": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "currencies": {
+      "source": "restcountries",
+      "as_of": "2026-09-04"
+    },
+    "demonym": {
+      "source": "restcountries",
+      "as_of": "2026-09-04"
+    },
+    "economic_system": {
+      "source": "derived",
+      "as_of": null
+    },
+    "established": {
+      "source": "derived",
+      "as_of": null
+    },
+    "flag": {
+      "source": "restcountries",
+      "as_of": null
+    },
+    "government": {
+      "source": "restcountries",
+      "as_of": "2026-09-04"
+    },
+    "government_form": {
+      "source": "derived",
+      "as_of": null
+    },
+    "government_spending": {
+      "source": "imf",
+      "as_of": "WEO:2025-04, 2026"
+    },
+    "identity": {
+      "source": "restcountries",
+      "as_of": "2026-09-04"
+    },
+    "income_group": {
+      "source": "world_bank",
+      "as_of": null
+    },
+    "independence": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "map": {
+      "source": "natural_earth",
+      "as_of": null
+    },
+    "memberships": {
+      "source": "restcountries",
+      "as_of": "2026-09-04"
+    },
+    "military_spending": {
+      "source": "world_bank",
+      "as_of": "SIPRI via World Bank, 2024"
+    },
+    "notable_cities": {
+      "source": "wikidata",
+      "as_of": null
+    },
+    "official_languages": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "official_religions": {
+      "source": "wikipedia",
+      "as_of": null
+    },
+    "population": {
+      "source": "world_bank",
+      "as_of": "2025"
+    },
+    "region": {
+      "source": "restcountries",
+      "as_of": "2026-09-04"
+    },
+    "religions": {
+      "source": "pew",
+      "as_of": "2020"
+    },
+    "spoken_languages": {
+      "source": "cldr",
+      "as_of": "CLDR 48"
+    }
+  }
+}
