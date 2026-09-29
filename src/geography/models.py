@@ -17,6 +17,7 @@ class Field(StrEnum):
     RELIGIONS = "religions"
     ESTABLISHED = "established"
     INDEPENDENCE = "independence"
+    RECOGNITION = "recognition"
     INCOME_GROUP = "income_group"
     GOVERNMENT_SPENDING = "government_spending"
     MILITARY_SPENDING = "military_spending"
@@ -91,6 +92,14 @@ class Independence:
 
 
 @dataclass(frozen=True)
+class Recognition:
+    limited: bool
+    recognised_count: int | None
+    recognised_by: list[str]
+    claimants: list[str]
+
+
+@dataclass(frozen=True)
 class ListedCapital:
     name: str
     latitude: float | None
@@ -141,6 +150,7 @@ class Country:
     religions: list[Religion] = field(default_factory=list)
     established: str | None = None
     independence: Independence | None = None
+    recognition: Recognition | None = None
     economy: Economy | None = None
     flag: str | None = None
     map: str | None = None

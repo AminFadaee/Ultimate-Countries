@@ -93,6 +93,26 @@ CREATE TABLE IF NOT EXISTS membership (
     PRIMARY KEY (entity_id, organization)
 );
 
+CREATE TABLE IF NOT EXISTS recognition (
+    entity_id TEXT PRIMARY KEY REFERENCES entity(id) ON DELETE CASCADE,
+    limited INTEGER NOT NULL,
+    recognised_count INTEGER
+);
+
+CREATE TABLE IF NOT EXISTS recognising_state (
+    entity_id TEXT NOT NULL REFERENCES entity(id) ON DELETE CASCADE,
+    rank INTEGER NOT NULL,
+    name TEXT NOT NULL,
+    PRIMARY KEY (entity_id, rank)
+);
+
+CREATE TABLE IF NOT EXISTS claimant (
+    entity_id TEXT NOT NULL REFERENCES entity(id) ON DELETE CASCADE,
+    rank INTEGER NOT NULL,
+    name TEXT NOT NULL,
+    PRIMARY KEY (entity_id, rank)
+);
+
 CREATE TABLE IF NOT EXISTS founding (
     entity_id TEXT PRIMARY KEY REFERENCES entity(id) ON DELETE CASCADE,
     established TEXT,
@@ -165,7 +185,7 @@ ECONOMY_COLUMNS = [
 ]
 CITY_COLUMNS = [f.name for f in fields(City)]
 BOOLEAN_COLUMNS = ("sovereign", "disputed", "un_member", "un_observer", "economic_system_disputed")
-CHILD_TABLES = ("continent", "currency", "other_demonym", "language", "official_religion", "religion", "membership", "founding")
+CHILD_TABLES = ("continent", "currency", "other_demonym", "language", "official_religion", "religion", "membership", "founding", "recognition", "recognising_state", "claimant")
 ROLE_FIELDS = {CityRole.CAPITAL: Field.CAPITALS, CityRole.NOTABLE: Field.NOTABLE_CITIES}
 
 
@@ -329,6 +349,20 @@ class Database:
                     independence.from_power if independence else None,
                 ),
             )
+        if country.recognition:
+            recognition = country.recognition
+            self.connection.execute(
+                "INSERT INTO recognition VALUES (?, ?, ?)",
+                (country.id, recognition.limited, recognition.recognised_count),
+            )
+            self.connection.executemany(
+                "INSERT INTO recognising_state VALUES (?, ?, ?)",
+                [(country.id, rank, name) for rank, name in enumerate(recognition.recognised_by)],
+            )
+            self.connection.executemany(
+                "INSERT INTO claimant VALUES (?, ?, ?)",
+                [(country.id, rank, name) for rank, name in enumerate(recognition.claimants)],
+            )
         for field, provenance in country.provenance.items():
             self._save_provenance(country.id, field, provenance, retrieved)
 
@@ -341,6 +375,17 @@ class Database:
             """,
             (entity_id, field, provenance.source, provenance.as_of, retrieved),
         )
+
+    def _recognition(self, entity_id: str) -> dict | None:
+        rows = self._rows("SELECT limited, recognised_count FROM recognition WHERE entity_id = ?", entity_id)
+        if not rows:
+            return None
+        return {
+            "limited": bool(rows[0]["limited"]),
+            "recognised_by_un_members": rows[0]["recognised_count"],
+            "recognised_by": [r["name"] for r in self._rows("SELECT name FROM recognising_state WHERE entity_id = ? ORDER BY rank", entity_id)],
+            "claimants": [r["name"] for r in self._rows("SELECT name FROM claimant WHERE entity_id = ? ORDER BY rank", entity_id)],
+        }
 
     def _rows(self, query: str, entity_id: str) -> list[dict]:
         return [dict(row) for row in self.connection.execute(query, (entity_id,))]
@@ -403,6 +448,7 @@ class Database:
                 if founding.get("independence")
                 else None
             ),
+            "recognition": self._recognition(entity_id),
             "memberships": [r["organization"] for r in self._rows("SELECT organization FROM membership WHERE entity_id = ?", entity_id)],
             "flag": row["flag"],
             "map": row["map"],

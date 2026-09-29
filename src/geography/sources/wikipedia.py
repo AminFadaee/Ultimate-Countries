@@ -38,6 +38,15 @@ PARENTHESES = re.compile(r"\([^)]*\)")
 ALIAS = re.compile(r"\(([A-Z][\w'-]*(?: [A-Z][\w'-]*)*)\)")
 SEPARATORS = re.compile(r",| and ")
 
+LIMITED_RECOGNITION_PAGE = "List of states with limited recognition"
+STATUS_COLUMN = "status"
+CLAIMANTS_COLUMN = "other claimants"
+NAME_COLUMN = "name"
+NUMBER_WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10}
+RECOGNISED_COUNT = re.compile(r"recognised (?:as a state )?by (\d+|" + "|".join(NUMBER_WORDS) + r") UN members?(?: states?)?([^.)]*)")
+MAX_NAMED_RECOGNISERS = 4
+RECOGNISED_BY_ONE = re.compile(r"recognised by ([A-Z][^ .,]*)")
+
 STATE_RELIGION_PAGE = "State religion"
 STATE_RELIGION_SECTION = "Current states with a state religion"
 RELIGION_SECTIONS = {"Buddhism", "Christianity", "Islam", "Judaism"}
@@ -85,6 +94,14 @@ class LanguageStatus:
     @property
     def incomplete(self) -> bool:
         return self.stated_count is not None and len(self.national) < self.stated_count
+
+
+@dataclass(frozen=True)
+class RecognitionRecord:
+    country_url: str
+    recognised_count: int | None
+    recognised_by: list[str]
+    claimant_url: str | None
 
 
 @dataclass(frozen=True)
@@ -187,6 +204,20 @@ def article_url(href: str | None) -> str | None:
     return ARTICLE_URL + urllib.parse.unquote(href.removeprefix("/wiki/")).split("#")[0]
 
 
+def recognition_of(status_cell) -> tuple[int | None, list[str]]:
+    text = cell_text(status_cell) or ""
+    linked = [clean(link.text_content()) for link in status_cell.xpath(".//a[not(ancestor::sup)]")]
+    if match := RECOGNISED_COUNT.search(text):
+        number = match.group(1)
+        count = int(number) if number.isdigit() else NUMBER_WORDS[number]
+        if count > MAX_NAMED_RECOGNISERS:
+            return count, []
+        return count, [name for name in linked if name and name in match.group(2)][:count]
+    if (match := RECOGNISED_BY_ONE.search(text)) and match.group(1) in linked:
+        return 1, [match.group(1)]
+    return None, []
+
+
 def column_indexes(headers: list[str], names: tuple[str, ...], page: str) -> dict[str, int]:
     missing = [name for name in names if name not in headers]
     if missing:
@@ -281,6 +312,23 @@ class Wikipedia:
                 )
             )
         return required(statuses, LANGUAGES_PAGE)
+
+    def limited_recognition(self) -> list[RecognitionRecord]:
+        document = html.fromstring(self._page_html(LIMITED_RECOGNITION_PAGE))
+        records = []
+        for table in document.xpath("//table[contains(@class, 'wikitable')]"):
+            rows = expanded_rows(table)
+            headers = [(cell_text(cell) or "").casefold() for cell in rows[0]]
+            if STATUS_COLUMN not in headers:
+                continue
+            column = column_indexes(headers, (NAME_COLUMN, STATUS_COLUMN, CLAIMANTS_COLUMN), LIMITED_RECOGNITION_PAGE)
+            for cells in rows[1:]:
+                url = first_link(cells[column[NAME_COLUMN]]) if reaches(cells, column) else None
+                if url is None:
+                    continue
+                count, names = recognition_of(cells[column[STATUS_COLUMN]])
+                records.append(RecognitionRecord(url, count, names, first_link(cells[column[CLAIMANTS_COLUMN]])))
+        return required(records, LIMITED_RECOGNITION_PAGE)
 
     def state_religions(self) -> list[StateReligion]:
         document = html.fromstring(self._page_html(STATE_RELIGION_PAGE))

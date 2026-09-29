@@ -38,7 +38,17 @@ from geography.maps import (
     city_boundary,
     render_maps,
 )
-from geography.models import City, CityRole, Country, Field, ListedCapital, OfficialStatus, Provenance, Source
+from geography.models import (
+    City,
+    CityRole,
+    Country,
+    Field,
+    ListedCapital,
+    OfficialStatus,
+    Provenance,
+    Recognition,
+    Source,
+)
 from geography.naming import slugify
 from geography.places import CITY_ZOOM, DISTRICT_ZOOM, Nominatim
 from geography.sources import cldr, geonames, iso639, iso4217, pew, restcountries, worldbank
@@ -128,6 +138,14 @@ def select_in_scope(raw_countries: list[dict], scope: list[ScopeEntry]) -> dict[
     return selected
 
 
+def claimant_name(url: str, qid_by_url: dict[str, str], name_by_qid: dict[str, str]) -> str:
+    qid = qid_by_url.get(url)
+    if qid in name_by_qid:
+        return name_by_qid[qid]
+    title = urllib.parse.unquote(url.rsplit("/wiki/", 1)[-1]).replace("_", " ")
+    return re.sub(r"\s*\([^)]*\)$", "", title)
+
+
 def display_name(country: Country, scope_name: str) -> str:
     return country.name if country.disputed else scope_name
 
@@ -209,6 +227,7 @@ class Collector:
         self._add_languages(countries)
         self._add_religions(countries)
         self._add_founding(countries)
+        self._add_recognition(countries)
         self._add_economy(countries)
         self._add_flags(countries, raw_countries)
         self._remove_orphans(self.paths.flags, {country.flag for country in countries if country.flag}, "flags")
@@ -358,6 +377,24 @@ class Collector:
             country.independence = founding.independence(records, record, country_inceptions)
             country.provenance[Field.ESTABLISHED] = Provenance(Source.DERIVED)
             country.provenance[Field.INDEPENDENCE] = Provenance(Source.WIKIPEDIA)
+
+    def _add_recognition(self, countries: list[Country]) -> None:
+        candidates = [country for country in countries if country.disputed or country.un_observer]
+        records = {record.country_url: record for record in self.wikipedia.limited_recognition()}
+        urls = self._by_country(candidates, list(records))
+        claimant_urls = {record.claimant_url for record in records.values() if record.claimant_url}
+        qid_by_url = self.wikidata.resolve({url: url for url in claimant_urls})
+        name_by_qid = {country.id: country.name for country in countries}
+        fallback = self.wikidata.state_claimants({country.id for country in candidates if country.id not in urls})
+        for country in candidates:
+            record = records[urls[country.id][0]] if country.id in urls else None
+            if record is None:
+                country.recognition = Recognition(False, None, [], fallback.get(country.id, []))
+                country.provenance[Field.RECOGNITION] = Provenance(Source.WIKIDATA)
+                continue
+            claimants = [claimant_name(record.claimant_url, qid_by_url, name_by_qid)] if record.claimant_url else []
+            country.recognition = Recognition(True, record.recognised_count, record.recognised_by, claimants)
+            country.provenance[Field.RECOGNITION] = Provenance(Source.WIKIPEDIA)
 
     def _add_economy(self, countries: list[Country]) -> None:
         income_groups = worldbank.fetch_income_groups(self.session)

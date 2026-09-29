@@ -22,6 +22,7 @@ SETTLEMENT_KINDS = ("Q486972", "Q15284")
 CITY_POPULATION_FLOORS = (100_000, 10_000, 0)
 CITY_CANDIDATES = 30
 LAKE = "Q23397"
+STATE = "Q7275"
 LABEL_LANGUAGES = ("en", "mul")
 
 POINT = re.compile(r"Point\(([-\d.eE]+) ([-\d.eE]+)\)")
@@ -185,6 +186,19 @@ class Wikidata:
             date = formatted_time(row["time"], int(row["precision"]))
             inceptions[qid_of(row["c"])].append(Inception(date, row["rank"].endswith("PreferredRank")))
         return dict(inceptions)
+
+    def state_claimants(self, qids: set[str]) -> dict[str, list[str]]:
+        rows = self._select(f"""
+            SELECT ?c ?claimantLabel WHERE {{
+              VALUES ?c {{ {values_clause(qids)} }}
+              ?c wdt:P1336 ?claimant .
+              FILTER EXISTS {{ ?claimant wdt:P31/wdt:P279* wd:{STATE} }}
+              SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,mul" }}
+            }}""")
+        claimants = defaultdict(list)
+        for row in rows:
+            claimants[qid_of(row["c"])].append(row["claimantLabel"])
+        return {qid: sorted(set(names)) for qid, names in claimants.items()}
 
     def forms_of_government(self, qids: set[str]) -> dict[str, list[str]]:
         rows = self._select(f"""
