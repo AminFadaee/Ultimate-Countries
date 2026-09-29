@@ -115,7 +115,7 @@ class Options:
     workers: int = 4
 
 
-def select_in_scope(raw_countries: list[dict], scope: list[ScopeEntry]) -> list[dict]:
+def select_in_scope(raw_countries: list[dict], scope: list[ScopeEntry]) -> dict[str, tuple[dict, ScopeEntry]]:
     by_alpha_2 = {raw["codes"]["alpha_2"]: raw for raw in raw_countries if raw["codes"]["alpha_2"]}
     by_name = {raw["names"]["common"].casefold(): raw for raw in raw_countries}
     selected = {}
@@ -124,8 +124,12 @@ def select_in_scope(raw_countries: list[dict], scope: list[ScopeEntry]) -> list[
         if raw is None:
             logger.warning("Not in restcountries: %s", entry.name)
             continue
-        selected[raw["uuid"]] = raw
-    return list(selected.values())
+        selected.setdefault(raw["uuid"], (raw, entry))
+    return selected
+
+
+def display_name(country: Country, scope_name: str) -> str:
+    return country.name if country.disputed else scope_name
 
 
 def file_extension(url: str) -> str:
@@ -185,9 +189,12 @@ class Collector:
 
     def run(self, options: Options) -> None:
         scope = fetch_scope(self.session)
-        raw_countries = select_in_scope(self.restcountries.fetch_all(), scope)
+        in_scope = select_in_scope(self.restcountries.fetch_all(), scope)
+        raw_countries = [raw for raw, _ in in_scope.values()]
         qids = self._resolve_wikidata(raw_countries)
         countries = [restcountries.to_country(raw, qids[raw["uuid"]]) for raw in raw_countries if raw["uuid"] in qids]
+        for country in countries:
+            country.name = display_name(country, in_scope[country.restcountries_id][1].name)
         logger.info("%d countries in scope", len(countries))
 
         removed = self.database.remove_entities_except({country.id for country in countries})
@@ -204,6 +211,7 @@ class Collector:
         self._add_founding(countries)
         self._add_economy(countries)
         self._add_flags(countries, raw_countries)
+        self._remove_orphans(self.paths.flags, {country.flag for country in countries if country.flag}, "flags")
         self._add_existing_maps(countries)
         self.database.save_countries(countries)
 
@@ -211,6 +219,8 @@ class Collector:
         self._collect_cities(countries, options.refresh_cities)
         if not options.skip_maps:
             self._render_country_maps(countries, options)
+            expected = {self.paths.relative(self._country_map_path(country)) for country in countries}
+            self._remove_orphans(self.paths.country_maps, expected, "country maps")
             self._render_city_maps(options)
 
         count = self.database.export_json(self.paths.countries)
@@ -618,15 +628,15 @@ class Collector:
                 logger.error("Map failed for %s: %s", job.place_name, error)
             else:
                 self.database.set_city_map(job.key, self.paths.relative(job.output))
-        self._remove_orphan_maps()
-
-    def _remove_orphan_maps(self) -> None:
         referenced = {row["map"] for row in self.database.city_map_targets() if row["map"]}
-        orphans = [path for path in self.paths.city_maps.glob("*.png") if self.paths.relative(path) not in referenced]
+        self._remove_orphans(self.paths.city_maps, referenced, "city maps")
+
+    def _remove_orphans(self, directory: pathlib.Path, referenced: set[str], kind: str) -> None:
+        orphans = [path for path in directory.glob("*") if path.is_file() and self.paths.relative(path) not in referenced]
         for path in orphans:
             path.unlink()
         if orphans:
-            logger.info("Removed %d orphaned city maps", len(orphans))
+            logger.info("Removed %d orphaned %s", len(orphans), kind)
 
     def _city_boundary(
         self,
