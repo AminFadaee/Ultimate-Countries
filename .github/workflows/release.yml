@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Download maps
+        run: |
+          gh release download maps --pattern maps.zip --dir build
+          unzip -q build/maps.zip -d data
+
+      - name: Build deck
+        run: uv run geography deck
+
+      - name: Publish release
+        run: |
+          gh release create "$GITHUB_REF_NAME" build/ultimate_countries.apkg \
+            --title "Ultimate Countries ${GITHUB_REF_NAME#v}" \
+            --notes "Anki deck built from the data in this commit. Import ultimate_countries.apkg into Anki; updating from an earlier version keeps your progress." \
+            --verify-tag

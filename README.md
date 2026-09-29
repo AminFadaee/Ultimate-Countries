@@ -105,6 +105,30 @@ Useful options:
 uv run geography place "Bruges" --country Belgium --borders regions
 ```
 
+## Releasing
+
+Releases are built by GitHub Actions. The map renders are too large for the repository, so they live in a separate
+release tagged `maps` and the workflow downloads them from there.
+
+1. Refresh the data locally with `uv run geography collect` and commit the changes in `data/`.
+2. If any maps changed, upload them again:
+
+   ```sh
+   (cd data && zip -rq ../build/maps.zip maps)
+   gh release upload maps build/maps.zip --clobber
+   ```
+
+   The first time, create the release instead:
+   `gh release create maps build/maps.zip --prerelease --title "Map renders" --notes "Maps used to build the deck"`.
+3. Tag and push. Versions are dates, so the version says how fresh the data is:
+
+   ```sh
+   git tag v2026.09.29
+   git push origin v2026.09.29
+   ```
+
+The workflow builds `ultimate_countries.apkg` and publishes it as a release under that tag.
+
 ## Quality checks
 
 `reference/countries.json` holds hand-checked answers for 46 countries. It is only used to measure accuracy and never
