@@ -408,7 +408,7 @@ class Database:
             "map": row["map"],
             "wikipedia_url": row["wikipedia_url"],
             "sources": {
-                r["field"]: {"source": r["source"], "as_of": r["as_of"], "retrieved": r["retrieved"]}
-                for r in self._rows("SELECT field, source, as_of, retrieved FROM provenance WHERE entity_id = ? ORDER BY field", entity_id)
+                r["field"]: {"source": r["source"], "as_of": r["as_of"]}
+                for r in self._rows("SELECT field, source, as_of FROM provenance WHERE entity_id = ? ORDER BY field", entity_id)
             },
         }
