@@ -2,6 +2,9 @@
 
 An Anki deck of the world's countries, territories and major cities, and the pipeline that builds it.
 
+**Get the deck:** [on AnkiWeb](https://ankiweb.net/shared/info/164142051), or download `ultimate_countries.apkg` from
+the [latest release](https://github.com/AminFadaee/Ultimate-Countries/releases/latest).
+
 The deck is inspired by [Ultimate Geography](https://github.com/anki-geo/ultimate-geography) and follows its list of
 238 countries and territories. Ultimate Geography covers flags, maps and capitals; Ultimate Countries adds demonyms,
 languages, currencies, religions, population, government and city maps.
