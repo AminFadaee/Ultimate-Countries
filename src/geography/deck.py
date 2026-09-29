@@ -8,7 +8,6 @@ from datetime import date
 from enum import StrEnum
 
 import genanki
-from PIL import Image
 
 from geography.cards import Answer, CardType, answers, shared_context
 from geography.naming import slugify
@@ -18,8 +17,6 @@ COUNTRY_MODEL_ID = 1_730_418_562
 CITY_MODEL_ID = 1_730_418_563
 TAG_PREFIX = "UC"
 MEDIA_PREFIX = "uc"
-MAP_WIDTH = 1000
-MAP_COLORS = 64
 ULTIMATE_GEOGRAPHY_URL = "https://github.com/anki-geo/ultimate-geography"
 TAG_UNSAFE = re.compile(r"[^\w-]+")
 COUNTRY_CONTEXT = "{{Region}}{{#NotableCities}}<br>{{NotableCities}}{{/NotableCities}}"
@@ -257,13 +254,7 @@ class MediaLibrary:
 
     def _prepare(self, source: pathlib.Path, target: pathlib.Path) -> None:
         target.parent.mkdir(parents=True, exist_ok=True)
-        if source.suffix != ".png":
-            target.write_bytes(source.read_bytes())
-            return
-        with Image.open(source) as image:
-            height = round(image.height * MAP_WIDTH / image.width)
-            small = image.convert("RGB").resize((MAP_WIDTH, height), Image.LANCZOS)
-            small.quantize(colors=MAP_COLORS, method=Image.Quantize.MEDIANCUT).save(target, optimize=True)
+        target.write_bytes(source.read_bytes())
 
 
 class DeckBuilder:

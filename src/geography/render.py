@@ -1,3 +1,4 @@
+import io
 import math
 import pathlib
 from dataclasses import dataclass
@@ -16,6 +17,7 @@ from shapely.geometry import box
 
 from geography.data import Country, NaturalEarth
 from geography.detail import DetailLayers
+from geography.images import save_compact
 from geography.places import Place
 
 GEODETIC = ccrs.PlateCarree()
@@ -248,7 +250,10 @@ class LocatorMap:
             self._plot_inset(fig, projection, extent)
             if zoom:
                 self._plot_zoom(fig, scene, projection, extent, zoom)
-            fig.savefig(out_path, dpi=self.dpi)
+            rendered = io.BytesIO()
+            fig.savefig(rendered, dpi=self.dpi, format="png")
+            rendered.seek(0)
+            save_compact(rendered, out_path)
         finally:
             plt.close(fig)
 
