@@ -3,6 +3,7 @@ from dataclasses import dataclass, field
 from enum import StrEnum
 
 WORLD_BANK = "world_bank"
+DISPUTED = "disputed"
 NATIONAL = "national"
 REGIONAL = "regional"
 MAX_CONTEXT_ITEMS = 5
@@ -154,13 +155,39 @@ def answers(document: dict) -> dict[CardType, Answer]:
     return {card_type: answer for card_type, answer in built.items() if answer is not None}
 
 
-def shared_context(document: dict) -> list[str]:
+@dataclass(frozen=True)
+class Context:
+    region: str
+    status: str | None
+    notable_cities: str | None
+
+
+def recognised(count: int, names: list[str]) -> str:
+    text = f"recognised by {count} UN member{'' if count == 1 else 's'}"
+    return f"{text} ({joined(names)})" if names else text
+
+
+def status_line(document: dict) -> str | None:
+    status, recognition = document["status"], document["recognition"]
+    parts = []
+    if status["dependency_type"] == DISPUTED:
+        parts.append("Disputed territory")
+    if recognition and recognition["limited"]:
+        parts.append("State with limited recognition")
+    if status["un_observer"]:
+        parts.append("UN observer state")
+    if recognition and recognition["recognised_by_un_members"]:
+        parts.append(recognised(recognition["recognised_by_un_members"], recognition["recognised_by"]))
+    if recognition and recognition["claimants"]:
+        wording = "claimed by" if status["dependency_type"] == DISPUTED else "other claimants:"
+        parts.append(f"{wording} {joined(recognition['claimants'])}")
+    return " · ".join(parts) or None
+
+
+def shared_context(document: dict) -> Context:
     region = " · ".join(part for part in (document["region"], document["subregion"]) if part)
     notable = [city["name"] for city in document["cities"] if city["role"] == "notable"]
-    context = [region] if region else []
-    if notable:
-        context.append(f"Notable cities: {joined(notable)}")
-    return context
+    return Context(region, status_line(document), f"Notable cities: {joined(notable)}" if notable else None)
 
 
 def coverage(documents: list[dict]) -> dict[CardType, int]:

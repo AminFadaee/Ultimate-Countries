@@ -9,7 +9,7 @@ from enum import StrEnum
 
 import genanki
 
-from geography.cards import Answer, CardType, answers, shared_context
+from geography.cards import Answer, CardType, Context, answers, shared_context
 from geography.naming import slugify
 
 DECK_NAME = "Ultimate Countries"
@@ -276,6 +276,10 @@ def escaped(value: str | None) -> str:
     return html.escape(value or "")
 
 
+def context_html(context: Context) -> str:
+    return "<br>".join(escaped(line) for line in (context.region, context.status) if line)
+
+
 def info(answer: Answer | None) -> str:
     return "<br>".join(escaped(line) for line in answer.context) if answer else ""
 
@@ -328,8 +332,8 @@ class DeckBuilder:
             "CapitalInfo": info(found.get(CardType.CAPITAL)),
             "Flag": self.media.image(document["flag"], "flag") if CardType.FLAG in found else "",
             "Map": self.media.image(document["map"], "map") if CardType.MAP in found else "",
-            "Region": escaped(context[0]) if context else "",
-            "NotableCities": escaped(context[1]) if len(context) > 1 else "",
+            "Region": context_html(context),
+            "NotableCities": escaped(context.notable_cities),
         }
         for card in TEXT_CARDS:
             answer = found.get(card.card_type)
@@ -347,14 +351,13 @@ class DeckBuilder:
 
     def add_city(self, city: dict, country: dict) -> None:
         is_capital = city["role"] == "capital"
-        region = " · ".join(part for part in (country["region"], country["subregion"]) if part)
         values = {
             "Id": city["id"],
             "City": escaped(city["name"]),
             "Country": escaped(country["name"]),
             "Map": self.media.image(city["map"], "city"),
             "IsCapital": "yes" if is_capital else "",
-            "Region": escaped(region),
+            "Region": context_html(shared_context(country)),
         }
         cards = []
         if values["Map"]:
