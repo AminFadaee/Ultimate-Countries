@@ -5,9 +5,10 @@ An Anki deck of the world's countries, territories and major cities, and the pip
 **Get the deck:** [on AnkiWeb](https://ankiweb.net/shared/info/164142051), or download `ultimate_countries.apkg` from
 the [latest release](https://github.com/AminFadaee/Ultimate-Countries/releases/latest).
 
-The deck is inspired by [Ultimate Geography](https://github.com/anki-geo/ultimate-geography) and follows its list of
-238 countries and territories. Ultimate Geography covers flags, maps and capitals; Ultimate Countries adds demonyms,
-languages, currencies, religions, population, government and city maps.
+It is inspired by [Ultimate Geography](https://github.com/anki-geo/ultimate-geography), the deck that got me excited
+about learning geography. Ultimate Countries covers every country and territory with a permanent population: 247 in
+all, each with its flag, map and capital, plus demonyms, languages, currencies, religions, population, government and
+city maps.
 
 Every value comes from public sources through code. There are no hand-written overrides, so the whole dataset can be
 rebuilt on any day to pick up changes (new currencies, new members of an organisation, updated population figures).
@@ -61,8 +62,9 @@ update.
 
 | Field | Source | Rule |
 |---|---|---|
-| Country list | Ultimate Geography | The entities in its deck |
-| Name, demonym, currencies, government label, capitals | restcountries | Demonym spelling cross-checked with Wikidata |
+| Country list | ISO 3166, restcountries | Every entity with an ISO 3166 code, plus sovereign states without one (Kosovo, Abkhazia…), keeping only places with a permanent population: listed in Wikipedia's population list, or at least 2,250 people |
+| Name | Wikipedia | The title of the country's English Wikipedia article, which follows the most common English name |
+| Demonym, currencies, government label, capitals | restcountries | Demonym spelling cross-checked with Wikidata |
 | Capital cities, notable cities, city populations | Wikidata, GeoNames | Notable cities rank on fame (Wikipedia sitelinks) and size, skipping suburbs and villages |
 | Population | World Bank | Latest figure, at most 5 years old; restcountries otherwise |
 | Official languages | Wikipedia, Wikidata | National and regional status from Wikipedia's list of official languages |

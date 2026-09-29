@@ -241,12 +241,13 @@ CSS = f"""
 def description() -> str:
     return f"""
 <p><b>{DECK_NAME}</b>: countries, territories and their major cities.</p>
-<p>Inspired by <a href="{ULTIMATE_GEOGRAPHY_URL}">Ultimate Geography</a>, whose list of countries and territories it follows,
-extended with demonyms, languages, currencies, religions, population and government.</p>
+<p>Inspired by <a href="{ULTIMATE_GEOGRAPHY_URL}">Ultimate Geography</a>, the deck that got me excited about learning geography.
+Ultimate Countries covers every country and territory with a permanent population, with demonyms, languages, currencies,
+religions, population, government and city maps on top of flags, maps and capitals.</p>
 <p>Each question type lives in its own subdeck. To skip a type, <b>suspend</b> its subdeck rather than deleting it,
 because deleted cards come back when you import an update.</p>
 <p>Data is collected automatically from Wikidata (CC0), Wikipedia (CC BY-SA), restcountries, the World Bank,
-the Pew Research Center, Unicode CLDR, GeoNames (CC BY), ISO 4217 and Natural Earth (public domain);
+the Pew Research Center, Unicode CLDR, GeoNames (CC BY), ISO 3166, ISO 4217 and Natural Earth (public domain);
 maps use OpenStreetMap data (ODbL).</p>
 <p>Source code, data and new releases: <a href="{REPOSITORY_URL}">{REPOSITORY_URL.removeprefix("https://")}</a>.
 Built {date.today().isoformat()}.</p>
