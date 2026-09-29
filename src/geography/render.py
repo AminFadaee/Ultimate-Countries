@@ -14,6 +14,7 @@ from matplotlib.figure import Figure
 from matplotlib.lines import Line2D
 from matplotlib.path import Path
 from shapely.geometry import box
+from shapely.ops import transform
 
 from geography.data import Country, NaturalEarth
 from geography.detail import DetailLayers
@@ -43,6 +44,11 @@ MARKER_RADIUS = 0.12
 LENS_CLEARANCE = 0.1
 MARKER_REACH = 1.4
 MIN_POINT_LENS_SPAN = 40_000
+WORLD_SIZE = (10, 5.26)
+WORLD_SIMPLIFY = 0.05
+SEAM_CLOSING = 0.2
+WORLD_OUTLINE_WIDTH = 1.6
+WORLD_LINE_WIDTH = 2.4
 
 
 class Color(StrEnum):
@@ -89,6 +95,13 @@ class Borders(StrEnum):
 
 
 @dataclass(frozen=True)
+class Style:
+    highlight: str = Color.HIGHLIGHT
+    host: str = Color.HOST
+    outline: str = Color.OUTLINE
+
+
+@dataclass(frozen=True)
 class Scene:
     highlight: gpd.GeoSeries
     frame: gpd.GeoSeries
@@ -99,6 +112,7 @@ class Scene:
     lens_highlight: gpd.GeoSeries | None = None
     lens_host: gpd.GeoSeries | None = None
     framing: Framing = Framing.REGION
+    style: Style = Style()
 
     @classmethod
     def for_country(cls, country: Country, borders: Borders) -> "Scene":
@@ -262,9 +276,15 @@ def figure_position(geometry: gpd.GeoSeries, projection: ccrs.Projection, extent
     return ((minx + maxx) / 2 - xmin) / extent.width, ((miny + maxy) / 2 - ymin) / extent.height
 
 
+def local_projection(mainland: gpd.GeoSeries) -> str:
+    lat, lng = get_center(mainland)
+    return f"+proj=aeqd +lat_0={lat} +lon_0={lng} +units=m"
+
+
 def get_nearby_parts(geometry: gpd.GeoSeries, mainland: gpd.GeoSeries) -> gpd.GeoSeries:
     parts = geometry.explode(index_parts=False)
-    distances = parts.to_crs(EQUAL_AREA).distance(mainland.to_crs(EQUAL_AREA).iloc[0])
+    local = local_projection(mainland)
+    distances = parts.to_crs(local).distance(mainland.to_crs(local).iloc[0])
     return parts[distances <= NEARBY_PART_DISTANCE]
 
 
@@ -296,6 +316,15 @@ def get_zoom(
         return None
     span = max(size * LENS_PADDING, min_span)
     return Zoom(Extent(span, span, (minx + maxx) / 2, (miny + maxy) / 2), size)
+
+
+def recentred(geometry, centre: float):
+    return transform(lambda x, y, z=None: (((x - centre + 180) % 360) - 180, y), geometry)
+
+
+def seamless(areas: gpd.GeoSeries, centre: float):
+    shifted = gpd.GeoSeries([recentred(area.simplify(WORLD_SIMPLIFY), centre) for area in areas.to_crs(GEODETIC.proj4_init)])
+    return shifted.buffer(SEAM_CLOSING).union_all().buffer(-SEAM_CLOSING)
 
 
 def get_visible(features: gpd.GeoSeries, projection: ccrs.Projection, extent: Extent) -> gpd.GeoSeries:
@@ -348,6 +377,44 @@ class LocatorMap:
         finally:
             plt.close(fig)
 
+    def render_world(
+        self,
+        out_path: pathlib.Path,
+        style: Style,
+        centre: float = 0.0,
+        areas: gpd.GeoSeries | None = None,
+        lines: gpd.GeoSeries | None = None,
+    ) -> None:
+        fig = plt.figure(figsize=WORLD_SIZE)
+        try:
+            ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.Robinson(central_longitude=centre))
+            ax.set_global()
+            ax.set_facecolor(Color.OCEAN)
+            ax.spines["geo"].set_visible(False)
+            shifted = ccrs.PlateCarree(central_longitude=centre)
+            merged = seamless(areas, centre) if areas is not None else None
+            if merged is not None:
+                ax.add_geometries([merged], crs=shifted, facecolor=style.host, edgecolor="none")
+            ax.add_geometries(
+                self.data.countries.geometry, crs=GEODETIC, facecolor=Color.LAND, edgecolor=Color.BORDER, linewidth=0.3
+            )
+            if merged is not None:
+                ax.add_geometries(
+                    [merged.boundary], crs=shifted, facecolor="none", edgecolor=style.highlight,
+                    linewidth=WORLD_OUTLINE_WIDTH, zorder=6,
+                )
+            if lines is not None:
+                ax.add_geometries(
+                    lines.to_crs(GEODETIC.proj4_init), crs=GEODETIC, facecolor="none", edgecolor=style.highlight,
+                    linewidth=WORLD_LINE_WIDTH, zorder=6,
+                )
+            rendered = io.BytesIO()
+            fig.savefig(rendered, dpi=self.dpi, format="png")
+            rendered.seek(0)
+            save_compact(rendered, out_path)
+        finally:
+            plt.close(fig)
+
     def _draw_layers(self, ax, scene: Scene, projection: ccrs.Projection, extent: Extent) -> None:
         ax.set_extent(extent.bounds, crs=projection)
         ax.set_facecolor(Color.OCEAN)
@@ -362,7 +429,7 @@ class LocatorMap:
             ax.add_geometries(
                 scene.host,
                 crs=GEODETIC,
-                facecolor=Color.HOST,
+                facecolor=scene.style.host,
                 edgecolor=Color.BORDER,
                 linewidth=0.5,
                 zorder=2,
@@ -370,8 +437,8 @@ class LocatorMap:
         ax.add_geometries(
             scene.highlight,
             crs=GEODETIC,
-            facecolor=Color.HIGHLIGHT,
-            edgecolor=Color.OUTLINE,
+            facecolor=scene.style.highlight,
+            edgecolor=scene.style.outline,
             linewidth=0.8,
             zorder=3,
         )
@@ -417,7 +484,7 @@ class LocatorMap:
             ax.add_geometries(
                 scene.lens_host,
                 crs=GEODETIC,
-                facecolor=Color.HOST,
+                facecolor=scene.style.host,
                 edgecolor=Color.BORDER,
                 linewidth=0.5,
                 zorder=3,
@@ -425,8 +492,8 @@ class LocatorMap:
         ax.add_geometries(
             scene.highlight if scene.lens_highlight is None else scene.lens_highlight,
             crs=GEODETIC,
-            facecolor=Color.HIGHLIGHT,
-            edgecolor=Color.OUTLINE,
+            facecolor=scene.style.highlight,
+            edgecolor=scene.style.outline,
             linewidth=0.8,
             zorder=4,
         )
@@ -493,14 +560,14 @@ class LocatorMap:
         x, y, w, h = lens.rect
         ax = fig.add_axes([x / fig_w, y / fig_h, w / fig_w, h / fig_h], projection=projection)
         ax.set_boundary(flatten(Path.circle((0.5, 0.5), 0.5)), transform=ax.transAxes)
-        ax.spines["geo"].set_edgecolor(Color.HIGHLIGHT)
+        ax.spines["geo"].set_edgecolor(scene.style.highlight)
         ax.spines["geo"].set_linewidth(1.2)
         if self.detail is None:
             self._draw_layers(ax, scene, projection, zoom.lens)
         else:
             self._draw_detail(ax, scene, projection, zoom.lens)
 
-        style = {"color": Color.HIGHLIGHT, "linewidth": 1.2, "transform": fig.dpi_scale_trans}
+        style = {"color": scene.style.highlight, "linewidth": 1.2, "transform": fig.dpi_scale_trans}
         fig.add_artist(patches.Circle((marker.x, marker.y), marker.radius, fill=False, **style))
         for xs, ys in marker.tangents_to(lens):
             fig.add_artist(Line2D(xs, ys, **style))
