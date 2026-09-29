@@ -107,27 +107,20 @@ uv run geography place "Bruges" --country Belgium --borders regions
 
 ## Releasing
 
-Releases are built by GitHub Actions. The map renders are too large for the repository, so they live in a separate
-release tagged `maps` and the workflow downloads them from there.
+Releases are built by GitHub Actions from the committed data, flags and maps.
 
-1. Refresh the data locally with `uv run geography collect` and commit the changes in `data/`.
-2. If any maps changed, upload them again:
+```sh
+uv run geography collect
+uv run geography check
+git add data
+git commit -m "Update data"
+git push
+git tag v$(date +%Y.%m.%d)
+git push origin v$(date +%Y.%m.%d)
+```
 
-   ```sh
-   (cd data && zip -rq ../build/maps.zip maps)
-   gh release upload maps build/maps.zip --clobber
-   ```
-
-   The first time, create the release instead:
-   `gh release create maps build/maps.zip --prerelease --title "Map renders" --notes "Maps used to build the deck"`.
-3. Tag and push. Versions are dates, so the version says how fresh the data is:
-
-   ```sh
-   git tag v2026.09.29
-   git push origin v2026.09.29
-   ```
-
-The workflow builds `ultimate_countries.apkg` and publishes it as a release under that tag.
+Versions are dates, so the version says how fresh the data is. Pushing the tag builds `ultimate_countries.apkg` and
+publishes it as a release under that tag.
 
 ## Quality checks
 
@@ -151,10 +144,11 @@ src/geography/
 data/
   countries/        one JSON file per country (the exported dataset)
   flags/            flag SVGs
+  maps/             locator maps for countries and cities
 reference/          hand-checked answers for the quality check
 ```
 
-Maps and the built deck are not stored in the repository; they are attached to releases.
+The built deck is not stored in the repository; it is attached to each release.
 
 ## Licence
 

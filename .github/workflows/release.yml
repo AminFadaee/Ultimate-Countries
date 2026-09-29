@@ -20,11 +20,6 @@ jobs:
       - name: Install dependencies
         run: uv sync --frozen
 
-      - name: Download maps
-        run: |
-          gh release download maps --pattern maps.zip --dir build
-          unzip -q build/maps.zip -d data
-
       - name: Build deck
         run: uv run geography deck
 
