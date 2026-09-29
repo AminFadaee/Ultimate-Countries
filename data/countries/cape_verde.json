@@ -1,6 +1,6 @@
 {
   "id": "Q1011",
-  "name": "Cabo Verde",
+  "name": "Cape Verde",
   "official_name": "Republic of Cabo Verde",
   "codes": {
     "alpha_2": "CV",
@@ -40,7 +40,7 @@
       "latitude": 14.917719444,
       "longitude": -23.509155555,
       "population": 159050,
-      "map": "maps/cities/cabo_verde__praia.png"
+      "map": "maps/cities/cape_verde__praia.png"
     },
     {
       "role": "notable",
@@ -49,7 +49,7 @@
       "latitude": 16.891352777,
       "longitude": -24.987983333,
       "population": 70468,
-      "map": "maps/cities/cabo_verde__mindelo.png"
+      "map": "maps/cities/cape_verde__mindelo.png"
     }
   ],
   "currencies": [
@@ -125,119 +125,97 @@
   "memberships": [
     "African Union"
   ],
-  "flag": "flags/cabo_verde.svg",
-  "map": "maps/countries/cabo_verde.png",
+  "flag": "flags/cape_verde.svg",
+  "map": "maps/countries/cape_verde.png",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Verde",
   "sources": {
     "capitals": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-21",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-21"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-21",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-21"
     },
     "economic_system": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "established": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "flag": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-21",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-21"
     },
     "government_form": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government_spending": {
       "source": "imf",
-      "as_of": "WEO:2025-04, 2026",
-      "retrieved": "2026-09-28"
+      "as_of": "WEO:2025-04, 2026"
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-21",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-21"
     },
     "income_group": {
       "source": "world_bank",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "independence": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "map": {
       "source": "natural_earth",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-21",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-21"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024",
-      "retrieved": "2026-09-28"
+      "as_of": "SIPRI via World Bank, 2024"
     },
     "notable_cities": {
       "source": "wikidata",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_languages": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_religions": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "population": {
       "source": "world_bank",
-      "as_of": "2025",
-      "retrieved": "2026-09-28"
+      "as_of": "2025"
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-21",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-21"
     },
     "religions": {
       "source": "pew",
-      "as_of": "2020",
-      "retrieved": "2026-09-28"
+      "as_of": "2020"
     },
     "spoken_languages": {
       "source": "cldr",
-      "as_of": "CLDR 48",
-      "retrieved": "2026-09-28"
+      "as_of": "CLDR 48"
     }
   }
 }

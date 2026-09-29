@@ -149,113 +149,91 @@
   "sources": {
     "capitals": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "economic_system": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "established": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "flag": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "government_form": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government_spending": {
       "source": "imf",
-      "as_of": "WEO:2025-04, 2026",
-      "retrieved": "2026-09-28"
+      "as_of": "WEO:2025-04, 2026"
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "income_group": {
       "source": "world_bank",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "independence": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "map": {
       "source": "natural_earth",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024",
-      "retrieved": "2026-09-28"
+      "as_of": "SIPRI via World Bank, 2024"
     },
     "notable_cities": {
       "source": "wikidata",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_languages": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_religions": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "population": {
       "source": "world_bank",
-      "as_of": "2025",
-      "retrieved": "2026-09-28"
+      "as_of": "2025"
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "religions": {
       "source": "pew",
-      "as_of": "2020",
-      "retrieved": "2026-09-28"
+      "as_of": "2020"
     },
     "spoken_languages": {
       "source": "cldr",
-      "as_of": "CLDR 48",
-      "retrieved": "2026-09-28"
+      "as_of": "CLDR 48"
     }
   }
 }

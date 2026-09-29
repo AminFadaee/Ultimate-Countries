@@ -1,6 +1,6 @@
 {
   "id": "Q971",
-  "name": "Congo",
+  "name": "Republic of the Congo",
   "official_name": "Republic of the Congo",
   "codes": {
     "alpha_2": "CG",
@@ -38,7 +38,7 @@
       "latitude": -4.269444444,
       "longitude": 15.271111111,
       "population": 2145783,
-      "map": "maps/cities/congo__brazzaville.png"
+      "map": "maps/cities/republic_of_the_congo__brazzaville.png"
     },
     {
       "role": "notable",
@@ -47,7 +47,7 @@
       "latitude": -4.7975,
       "longitude": 11.850277777,
       "population": 1420612,
-      "map": "maps/cities/congo__pointe_noire.png"
+      "map": "maps/cities/republic_of_the_congo__pointe_noire.png"
     },
     {
       "role": "notable",
@@ -56,7 +56,7 @@
       "latitude": 0.020833333,
       "longitude": 14.893333333,
       "population": 10862,
-      "map": "maps/cities/congo__etoumbi.png"
+      "map": "maps/cities/republic_of_the_congo__etoumbi.png"
     }
   ],
   "currencies": [
@@ -133,119 +133,97 @@
     "African Union",
     "OPEC"
   ],
-  "flag": "flags/congo.svg",
-  "map": "maps/countries/congo.png",
+  "flag": "flags/republic_of_the_congo.svg",
+  "map": "maps/countries/republic_of_the_congo.png",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Republic_of_the_Congo",
   "sources": {
     "capitals": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "economic_system": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "established": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "flag": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "government_form": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government_spending": {
       "source": "imf",
-      "as_of": "WEO:2025-04, 2026",
-      "retrieved": "2026-09-28"
+      "as_of": "WEO:2025-04, 2026"
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "income_group": {
       "source": "world_bank",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "independence": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "map": {
       "source": "natural_earth",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024",
-      "retrieved": "2026-09-28"
+      "as_of": "SIPRI via World Bank, 2024"
     },
     "notable_cities": {
       "source": "wikidata",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_languages": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_religions": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "population": {
       "source": "world_bank",
-      "as_of": "2025",
-      "retrieved": "2026-09-28"
+      "as_of": "2025"
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "religions": {
       "source": "pew",
-      "as_of": "2020",
-      "retrieved": "2026-09-28"
+      "as_of": "2020"
     },
     "spoken_languages": {
       "source": "cldr",
-      "as_of": "CLDR 48",
-      "retrieved": "2026-09-28"
+      "as_of": "CLDR 48"
     }
   }
 }

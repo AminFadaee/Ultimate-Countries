@@ -1,6 +1,6 @@
 {
   "id": "Q30",
-  "name": "United States",
+  "name": "United States of America",
   "official_name": "United States of America",
   "codes": {
     "alpha_2": "US",
@@ -38,7 +38,7 @@
       "latitude": 38.895,
       "longitude": -77.036666666,
       "population": 689545,
-      "map": "maps/cities/united_states__washington__d_c.png"
+      "map": "maps/cities/united_states_of_america__washington__d_c.png"
     },
     {
       "role": "notable",
@@ -47,7 +47,7 @@
       "latitude": 40.712777777,
       "longitude": -74.006111111,
       "population": 8804190,
-      "map": "maps/cities/united_states__new_york_city.png"
+      "map": "maps/cities/united_states_of_america__new_york_city.png"
     },
     {
       "role": "notable",
@@ -56,7 +56,7 @@
       "latitude": 34.05223,
       "longitude": -118.24368,
       "population": 3898747,
-      "map": "maps/cities/united_states__los_angeles.png"
+      "map": "maps/cities/united_states_of_america__los_angeles.png"
     },
     {
       "role": "notable",
@@ -65,7 +65,7 @@
       "latitude": 41.881944444,
       "longitude": -87.627777777,
       "population": 2746388,
-      "map": "maps/cities/united_states__chicago.png"
+      "map": "maps/cities/united_states_of_america__chicago.png"
     },
     {
       "role": "notable",
@@ -74,7 +74,7 @@
       "latitude": 29.762777777,
       "longitude": -95.383055555,
       "population": 2304580,
-      "map": "maps/cities/united_states__houston.png"
+      "map": "maps/cities/united_states_of_america__houston.png"
     },
     {
       "role": "notable",
@@ -83,7 +83,7 @@
       "latitude": 39.952777777,
       "longitude": -75.163611111,
       "population": 1603797,
-      "map": "maps/cities/united_states__philadelphia.png"
+      "map": "maps/cities/united_states_of_america__philadelphia.png"
     }
   ],
   "currencies": [
@@ -234,119 +234,97 @@
     "NATO",
     "OECD"
   ],
-  "flag": "flags/united_states.svg",
-  "map": "maps/countries/united_states.png",
+  "flag": "flags/united_states_of_america.svg",
+  "map": "maps/countries/united_states_of_america.png",
   "wikipedia_url": "https://en.wikipedia.org/wiki/United_States",
   "sources": {
     "capitals": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "economic_system": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "established": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "flag": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "government_form": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government_spending": {
       "source": "imf",
-      "as_of": "WEO:2025-04, 2026",
-      "retrieved": "2026-09-28"
+      "as_of": "WEO:2025-04, 2026"
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "income_group": {
       "source": "world_bank",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "independence": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "map": {
       "source": "natural_earth",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024",
-      "retrieved": "2026-09-28"
+      "as_of": "SIPRI via World Bank, 2024"
     },
     "notable_cities": {
       "source": "wikidata",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_languages": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_religions": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "population": {
       "source": "world_bank",
-      "as_of": "2025",
-      "retrieved": "2026-09-28"
+      "as_of": "2025"
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "religions": {
       "source": "pew",
-      "as_of": "2020",
-      "retrieved": "2026-09-28"
+      "as_of": "2020"
     },
     "spoken_languages": {
       "source": "cldr",
-      "as_of": "CLDR 48",
-      "retrieved": "2026-09-28"
+      "as_of": "CLDR 48"
     }
   }
 }

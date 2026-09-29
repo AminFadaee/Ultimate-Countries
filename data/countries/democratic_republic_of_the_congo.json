@@ -1,6 +1,6 @@
 {
   "id": "Q974",
-  "name": "DRC",
+  "name": "Democratic Republic of the Congo",
   "official_name": "Democratic Republic of the Congo",
   "codes": {
     "alpha_2": "CD",
@@ -38,7 +38,7 @@
       "latitude": -4.321944444,
       "longitude": 15.311944444,
       "population": 14565700,
-      "map": "maps/cities/drc__kinshasa.png"
+      "map": "maps/cities/democratic_republic_of_the_congo__kinshasa.png"
     },
     {
       "role": "notable",
@@ -47,7 +47,7 @@
       "latitude": -11.664166666,
       "longitude": 27.482777777,
       "population": 1786397,
-      "map": "maps/cities/drc__lubumbashi.png"
+      "map": "maps/cities/democratic_republic_of_the_congo__lubumbashi.png"
     },
     {
       "role": "notable",
@@ -56,7 +56,7 @@
       "latitude": -6.126111111,
       "longitude": 23.599722222,
       "population": 2892000,
-      "map": "maps/cities/drc__mbuji_mayi.png"
+      "map": "maps/cities/democratic_republic_of_the_congo__mbuji_mayi.png"
     },
     {
       "role": "notable",
@@ -65,7 +65,7 @@
       "latitude": 0.515277777,
       "longitude": 25.191111111,
       "population": 1366000,
-      "map": "maps/cities/drc__kisangani.png"
+      "map": "maps/cities/democratic_republic_of_the_congo__kisangani.png"
     },
     {
       "role": "notable",
@@ -74,7 +74,7 @@
       "latitude": -1.6641,
       "longitude": 29.22286,
       "population": 781875,
-      "map": "maps/cities/drc__goma.png"
+      "map": "maps/cities/democratic_republic_of_the_congo__goma.png"
     },
     {
       "role": "notable",
@@ -83,7 +83,7 @@
       "latitude": -5.896111111,
       "longitude": 22.416666666,
       "population": 1971704,
-      "map": "maps/cities/drc__kananga.png"
+      "map": "maps/cities/democratic_republic_of_the_congo__kananga.png"
     }
   ],
   "currencies": [
@@ -195,119 +195,97 @@
   "memberships": [
     "African Union"
   ],
-  "flag": "flags/drc.svg",
-  "map": "maps/countries/drc.png",
+  "flag": "flags/democratic_republic_of_the_congo.svg",
+  "map": "maps/countries/democratic_republic_of_the_congo.png",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo",
   "sources": {
     "capitals": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "economic_system": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "established": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "flag": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "government_form": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government_spending": {
       "source": "imf",
-      "as_of": "WEO:2025-04, 2026",
-      "retrieved": "2026-09-28"
+      "as_of": "WEO:2025-04, 2026"
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "income_group": {
       "source": "world_bank",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "independence": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "map": {
       "source": "natural_earth",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024",
-      "retrieved": "2026-09-28"
+      "as_of": "SIPRI via World Bank, 2024"
     },
     "notable_cities": {
       "source": "wikidata",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_languages": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_religions": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "population": {
       "source": "world_bank",
-      "as_of": "2025",
-      "retrieved": "2026-09-28"
+      "as_of": "2025"
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "religions": {
       "source": "pew",
-      "as_of": "2020",
-      "retrieved": "2026-09-28"
+      "as_of": "2020"
     },
     "spoken_languages": {
       "source": "cldr",
-      "as_of": "CLDR 48",
-      "retrieved": "2026-09-28"
+      "as_of": "CLDR 48"
     }
   }
 }

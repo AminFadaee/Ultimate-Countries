@@ -1,6 +1,6 @@
 {
   "id": "Q778",
-  "name": "Bahamas",
+  "name": "The Bahamas",
   "official_name": "Commonwealth of the Bahamas",
   "codes": {
     "alpha_2": "BS",
@@ -38,7 +38,7 @@
       "latitude": 25.078055555,
       "longitude": -77.338611111,
       "population": 227940,
-      "map": "maps/cities/bahamas__nassau.png"
+      "map": "maps/cities/the_bahamas__nassau.png"
     },
     {
       "role": "notable",
@@ -47,7 +47,7 @@
       "latitude": 26.52,
       "longitude": -78.66,
       "population": 45945,
-      "map": "maps/cities/bahamas__freeport.png"
+      "map": "maps/cities/the_bahamas__freeport.png"
     }
   ],
   "currencies": [
@@ -119,119 +119,97 @@
   "memberships": [
     "Commonwealth of Nations"
   ],
-  "flag": "flags/bahamas.svg",
-  "map": "maps/countries/bahamas.png",
+  "flag": "flags/the_bahamas.svg",
+  "map": "maps/countries/the_bahamas.png",
   "wikipedia_url": "https://en.wikipedia.org/wiki/The_Bahamas",
   "sources": {
     "capitals": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "economic_system": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "established": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "flag": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "government_form": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government_spending": {
       "source": "imf",
-      "as_of": "WEO:2025-04, 2026",
-      "retrieved": "2026-09-28"
+      "as_of": "WEO:2025-04, 2026"
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "income_group": {
       "source": "world_bank",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "independence": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "map": {
       "source": "natural_earth",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_languages": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_religions": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "population": {
       "source": "world_bank",
-      "as_of": "2025",
-      "retrieved": "2026-09-28"
+      "as_of": "2025"
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-04",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-04"
     },
     "religions": {
       "source": "pew",
-      "as_of": "2020",
-      "retrieved": "2026-09-28"
+      "as_of": "2020"
     },
     "spoken_languages": {
       "source": "cldr",
-      "as_of": "CLDR 48",
-      "retrieved": "2026-09-28"
+      "as_of": "CLDR 48"
     }
   }
 }

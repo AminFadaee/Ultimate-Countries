@@ -1,6 +1,6 @@
 {
   "id": "Q213",
-  "name": "Czechia",
+  "name": "Czech Republic",
   "official_name": "Czech Republic",
   "codes": {
     "alpha_2": "CZ",
@@ -38,7 +38,7 @@
       "latitude": 50.0875,
       "longitude": 14.421388888,
       "population": 1397880,
-      "map": "maps/cities/czechia__prague.png"
+      "map": "maps/cities/czech_republic__prague.png"
     },
     {
       "role": "notable",
@@ -47,7 +47,7 @@
       "latitude": 49.195277777,
       "longitude": 16.608333333,
       "population": 402739,
-      "map": "maps/cities/czechia__brno.png"
+      "map": "maps/cities/czech_republic__brno.png"
     },
     {
       "role": "notable",
@@ -56,7 +56,7 @@
       "latitude": 49.741388888,
       "longitude": 13.3825,
       "population": 187928,
-      "map": "maps/cities/czechia__plzen.png"
+      "map": "maps/cities/czech_republic__plzen.png"
     },
     {
       "role": "notable",
@@ -65,7 +65,7 @@
       "latitude": 49.835555555,
       "longitude": 18.2925,
       "population": 283187,
-      "map": "maps/cities/czechia__ostrava.png"
+      "map": "maps/cities/czech_republic__ostrava.png"
     },
     {
       "role": "notable",
@@ -74,7 +74,7 @@
       "latitude": 49.593888888,
       "longitude": 17.250833333,
       "population": 103063,
-      "map": "maps/cities/czechia__olomouc.png"
+      "map": "maps/cities/czech_republic__olomouc.png"
     },
     {
       "role": "notable",
@@ -83,7 +83,7 @@
       "latitude": 50.766666666,
       "longitude": 15.05,
       "population": 108090,
-      "map": "maps/cities/czechia__liberec.png"
+      "map": "maps/cities/czech_republic__liberec.png"
     }
   ],
   "currencies": [
@@ -180,119 +180,97 @@
     "OECD",
     "Schengen Area"
   ],
-  "flag": "flags/czechia.svg",
-  "map": "maps/countries/czechia.png",
+  "flag": "flags/czech_republic.svg",
+  "map": "maps/countries/czech_republic.png",
   "wikipedia_url": "https://en.wikipedia.org/wiki/Czechia",
   "sources": {
     "capitals": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-12",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-12"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-12",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-12"
     },
     "economic_system": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "established": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "flag": {
       "source": "restcountries",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-12",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-12"
     },
     "government_form": {
       "source": "derived",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "government_spending": {
       "source": "imf",
-      "as_of": "WEO:2025-04, 2026",
-      "retrieved": "2026-09-28"
+      "as_of": "WEO:2025-04, 2026"
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-12",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-12"
     },
     "income_group": {
       "source": "world_bank",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "independence": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "map": {
       "source": "natural_earth",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-12",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-12"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024",
-      "retrieved": "2026-09-28"
+      "as_of": "SIPRI via World Bank, 2024"
     },
     "notable_cities": {
       "source": "wikidata",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_languages": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "official_religions": {
       "source": "wikipedia",
-      "as_of": null,
-      "retrieved": "2026-09-28"
+      "as_of": null
     },
     "population": {
       "source": "world_bank",
-      "as_of": "2025",
-      "retrieved": "2026-09-28"
+      "as_of": "2025"
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-12",
-      "retrieved": "2026-09-28"
+      "as_of": "2026-09-12"
     },
     "religions": {
       "source": "pew",
-      "as_of": "2020",
-      "retrieved": "2026-09-28"
+      "as_of": "2020"
     },
     "spoken_languages": {
       "source": "cldr",
-      "as_of": "CLDR 48",
-      "retrieved": "2026-09-28"
+      "as_of": "CLDR 48"
     }
   }
 }
