@@ -1,3 +1,5 @@
+import re
+import urllib.parse
 from datetime import UTC, datetime
 
 import requests
@@ -8,6 +10,8 @@ from geography.sources.http import TIMEOUT
 API_URL = "https://api.restcountries.com/countries/v5"
 PAGE_SIZE = 100
 DISPUTED = "disputed"
+OFFICIAL_ISO_CODE = "official"
+DISAMBIGUATION = re.compile(r"\s*\([^)]*\)$")
 
 MEMBERSHIPS = {
     "eu": "European Union",
@@ -57,6 +61,19 @@ class RestCountries:
             offset += PAGE_SIZE
 
 
+def in_scope(raw: dict) -> bool:
+    classification = raw["classification"]
+    return classification["iso_status"] == OFFICIAL_ISO_CODE or classification["sovereign"]
+
+
+def common_name(raw: dict) -> str:
+    url = raw["links"].get("wikipedia")
+    if not url:
+        return raw["names"]["common"]
+    title = urllib.parse.unquote(url.rsplit("/wiki/", 1)[-1]).replace("_", " ")
+    return DISAMBIGUATION.sub("", title)
+
+
 def updated_on(raw: dict) -> str | None:
     timestamp = raw.get("_meta", {}).get("lastUpdatedTimestamp")
     return datetime.fromtimestamp(timestamp, UTC).date().isoformat() if timestamp else None
@@ -71,7 +88,7 @@ def to_country(raw: dict, qid: str) -> Country:
     return Country(
         id=qid,
         restcountries_id=raw["uuid"],
-        name=raw["names"]["common"],
+        name=common_name(raw),
         official_name=raw["names"]["official"],
         alpha_2=codes["alpha_2"] or None,
         alpha_3=codes["alpha_3"] or None,

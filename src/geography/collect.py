@@ -55,7 +55,6 @@ from geography.sources import cldr, geonames, iso639, iso4217, pew, restcountrie
 from geography.sources.http import create_session
 from geography.sources.imf import fetch_government_spending
 from geography.sources.restcountries import MEMBERSHIPS, RestCountries
-from geography.sources.ultimate_geography import ScopeEntry, fetch_scope
 from geography.sources.wikidata import Wikidata
 from geography.sources.wikipedia import ARTICLE_URL, ListedLanguage, Wikipedia
 
@@ -85,6 +84,7 @@ SUBURB_MIN_SITELINKS = 100
 EARTH_RADIUS_KM = 6371
 CAPITAL_MATCH_KM = 50
 RECENT_JOIN_YEARS = 3
+MIN_UNLISTED_POPULATION = 2_250
 
 logger = logging.getLogger(__name__)
 
@@ -125,29 +125,12 @@ class Options:
     workers: int = 4
 
 
-def select_in_scope(raw_countries: list[dict], scope: list[ScopeEntry]) -> dict[str, tuple[dict, ScopeEntry]]:
-    by_alpha_2 = {raw["codes"]["alpha_2"]: raw for raw in raw_countries if raw["codes"]["alpha_2"]}
-    by_name = {raw["names"]["common"].casefold(): raw for raw in raw_countries}
-    selected = {}
-    for entry in scope:
-        raw = by_alpha_2.get(entry.alpha_2) or by_name.get(entry.name.casefold())
-        if raw is None:
-            logger.warning("Not in restcountries: %s", entry.name)
-            continue
-        selected.setdefault(raw["uuid"], (raw, entry))
-    return selected
-
-
 def claimant_name(url: str, qid_by_url: dict[str, str], name_by_qid: dict[str, str]) -> str:
     qid = qid_by_url.get(url)
     if qid in name_by_qid:
         return name_by_qid[qid]
     title = urllib.parse.unquote(url.rsplit("/wiki/", 1)[-1]).replace("_", " ")
     return re.sub(r"\s*\([^)]*\)$", "", title)
-
-
-def display_name(country: Country, scope_name: str) -> str:
-    return country.name if country.disputed else scope_name
 
 
 def file_extension(url: str) -> str:
@@ -206,13 +189,10 @@ class Collector:
         self.nominatim = Nominatim()
 
     def run(self, options: Options) -> None:
-        scope = fetch_scope(self.session)
-        in_scope = select_in_scope(self.restcountries.fetch_all(), scope)
-        raw_countries = [raw for raw, _ in in_scope.values()]
+        raw_countries = [raw for raw in self.restcountries.fetch_all() if restcountries.in_scope(raw)]
         qids = self._resolve_wikidata(raw_countries)
         countries = [restcountries.to_country(raw, qids[raw["uuid"]]) for raw in raw_countries if raw["uuid"] in qids]
-        for country in countries:
-            country.name = display_name(country, in_scope[country.restcountries_id][1].name)
+        countries = self._inhabited(countries)
         logger.info("%d countries in scope", len(countries))
 
         removed = self.database.remove_entities_except({country.id for country in countries})
@@ -244,6 +224,15 @@ class Collector:
 
         count = self.database.export_json(self.paths.countries)
         logger.info("Exported %d countries to %s", count, self.paths.countries)
+
+    def _inhabited(self, countries: list[Country]) -> list[Country]:
+        listed = self._by_country(countries, self.wikipedia.populated_places())
+        inhabited = [
+            country for country in countries if country.id in listed or (country.population or 0) >= MIN_UNLISTED_POPULATION
+        ]
+        dropped = sorted(country.name for country in countries if country not in inhabited)
+        logger.info("Without permanent population: %s", ", ".join(dropped))
+        return inhabited
 
     def _resolve_wikidata(self, raw_countries: list[dict]) -> dict[str, str]:
         codes = {raw["uuid"]: raw["codes"]["alpha_2"] for raw in raw_countries if raw["codes"]["alpha_2"]}

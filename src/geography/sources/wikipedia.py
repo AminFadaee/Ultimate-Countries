@@ -38,6 +38,9 @@ PARENTHESES = re.compile(r"\([^)]*\)")
 ALIAS = re.compile(r"\(([A-Z][\w'-]*(?: [A-Z][\w'-]*)*)\)")
 SEPARATORS = re.compile(r",| and ")
 
+POPULATION_PAGE = "List of countries and dependencies by population"
+DEMOGRAPHICS_OF = re.compile(r"^Demographics_of_(?:the_)?")
+
 LIMITED_RECOGNITION_PAGE = "List of states with limited recognition"
 STATUS_COLUMN = "status"
 CLAIMANTS_COLUMN = "other claimants"
@@ -312,6 +315,16 @@ class Wikipedia:
                 )
             )
         return required(statuses, LANGUAGES_PAGE)
+
+    def populated_places(self) -> list[str]:
+        document = html.fromstring(self._page_html(POPULATION_PAGE))
+        table = max(document.xpath("//table[contains(@class, 'wikitable')]"), key=lambda t: len(t.xpath(".//tr")))
+        urls = []
+        for cells in expanded_rows(table)[1:]:
+            url = first_link(cells[0]) if cells else None
+            if url:
+                urls.append(ARTICLE_URL + DEMOGRAPHICS_OF.sub("", url.removeprefix(ARTICLE_URL)))
+        return required(urls, POPULATION_PAGE)
 
     def limited_recognition(self) -> list[RecognitionRecord]:
         document = html.fromstring(self._page_html(LIMITED_RECOGNITION_PAGE))
