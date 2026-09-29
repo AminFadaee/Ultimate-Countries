@@ -129,6 +129,15 @@
   },
   "established": null,
   "independence": null,
+  "recognition": {
+    "limited": false,
+    "recognised_by_un_members": null,
+    "recognised_by": [],
+    "claimants": [
+      "Morocco",
+      "Sahrawi Arab Democratic Republic"
+    ]
+  },
   "memberships": [],
   "flag": "flags/western_sahara.svg",
   "map": "maps/countries/western_sahara.png",
@@ -209,6 +218,10 @@
     "population": {
       "source": "restcountries",
       "as_of": "2026-09-06"
+    },
+    "recognition": {
+      "source": "wikidata",
+      "as_of": null
     },
     "region": {
       "source": "restcountries",

@@ -376,6 +376,7 @@
     "date": "1825-08-06",
     "from": "Spain"
   },
+  "recognition": null,
   "memberships": [],
   "flag": "flags/bolivia.svg",
   "map": "maps/countries/bolivia.png",

@@ -146,6 +146,14 @@
     "date": "2008-02-17",
     "from": "Serbia"
   },
+  "recognition": {
+    "limited": true,
+    "recognised_by_un_members": 110,
+    "recognised_by": [],
+    "claimants": [
+      "Serbia"
+    ]
+  },
   "memberships": [],
   "flag": "flags/kosovo.svg",
   "map": "maps/countries/kosovo.png",
@@ -226,6 +234,10 @@
     "population": {
       "source": "restcountries",
       "as_of": "2026-09-14"
+    },
+    "recognition": {
+      "source": "wikipedia",
+      "as_of": null
     },
     "region": {
       "source": "restcountries",

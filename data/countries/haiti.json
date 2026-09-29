@@ -125,6 +125,7 @@
     "date": "1804-01-01",
     "from": "France"
   },
+  "recognition": null,
   "memberships": [],
   "flag": "flags/haiti.svg",
   "map": "maps/countries/haiti.png",

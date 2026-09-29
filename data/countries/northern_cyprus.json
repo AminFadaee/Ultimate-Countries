@@ -82,6 +82,16 @@
   },
   "established": null,
   "independence": null,
+  "recognition": {
+    "limited": true,
+    "recognised_by_un_members": 1,
+    "recognised_by": [
+      "Turkey"
+    ],
+    "claimants": [
+      "Cyprus"
+    ]
+  },
   "memberships": [],
   "flag": "flags/northern_cyprus.svg",
   "map": "maps/countries/northern_cyprus.png",
@@ -162,6 +172,10 @@
     "population": {
       "source": "restcountries",
       "as_of": "2026-09-04"
+    },
+    "recognition": {
+      "source": "wikipedia",
+      "as_of": null
     },
     "region": {
       "source": "restcountries",

@@ -84,6 +84,12 @@
     "date": "1929-02-11",
     "from": "Italy"
   },
+  "recognition": {
+    "limited": false,
+    "recognised_by_un_members": null,
+    "recognised_by": [],
+    "claimants": []
+  },
   "memberships": [],
   "flag": "flags/vatican_city.svg",
   "map": "maps/countries/vatican_city.png",
@@ -164,6 +170,10 @@
     "population": {
       "source": "restcountries",
       "as_of": "2026-09-04"
+    },
+    "recognition": {
+      "source": "wikidata",
+      "as_of": null
     },
     "region": {
       "source": "restcountries",

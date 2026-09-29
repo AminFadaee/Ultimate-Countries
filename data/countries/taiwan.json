@@ -271,6 +271,14 @@
   },
   "established": null,
   "independence": null,
+  "recognition": {
+    "limited": true,
+    "recognised_by_un_members": 11,
+    "recognised_by": [],
+    "claimants": [
+      "China"
+    ]
+  },
   "memberships": [],
   "flag": "flags/taiwan.svg",
   "map": "maps/countries/taiwan.png",
@@ -351,6 +359,10 @@
     "population": {
       "source": "restcountries",
       "as_of": "2026-09-28"
+    },
+    "recognition": {
+      "source": "wikipedia",
+      "as_of": null
     },
     "region": {
       "source": "restcountries",

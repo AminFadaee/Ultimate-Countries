@@ -149,6 +149,14 @@
     "date": "1988-11-15",
     "from": "Israel"
   },
+  "recognition": {
+    "limited": true,
+    "recognised_by_un_members": 157,
+    "recognised_by": [],
+    "claimants": [
+      "Israel"
+    ]
+  },
   "memberships": [
     "Arab League"
   ],
@@ -231,6 +239,10 @@
     "population": {
       "source": "world_bank",
       "as_of": "2025"
+    },
+    "recognition": {
+      "source": "wikipedia",
+      "as_of": null
     },
     "region": {
       "source": "restcountries",

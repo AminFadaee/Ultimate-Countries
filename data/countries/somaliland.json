@@ -121,6 +121,16 @@
   },
   "established": null,
   "independence": null,
+  "recognition": {
+    "limited": true,
+    "recognised_by_un_members": 1,
+    "recognised_by": [
+      "Israel"
+    ],
+    "claimants": [
+      "Somalia"
+    ]
+  },
   "memberships": [],
   "flag": "flags/somaliland.svg",
   "map": "maps/countries/somaliland.png",
@@ -201,6 +211,10 @@
     "population": {
       "source": "restcountries",
       "as_of": "2026-09-04"
+    },
+    "recognition": {
+      "source": "wikipedia",
+      "as_of": null
     },
     "region": {
       "source": "restcountries",

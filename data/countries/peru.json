@@ -162,6 +162,7 @@
     "date": "1821-07-28",
     "from": "Spain"
   },
+  "recognition": null,
   "memberships": [],
   "flag": "flags/peru.svg",
   "map": "maps/countries/peru.png",

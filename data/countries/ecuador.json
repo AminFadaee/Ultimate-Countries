@@ -162,6 +162,7 @@
     "date": "1809-08-10",
     "from": "Spain"
   },
+  "recognition": null,
   "memberships": [],
   "flag": "flags/ecuador.svg",
   "map": "maps/countries/ecuador.png",

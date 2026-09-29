@@ -85,6 +85,19 @@
   },
   "established": null,
   "independence": null,
+  "recognition": {
+    "limited": true,
+    "recognised_by_un_members": 4,
+    "recognised_by": [
+      "Russia",
+      "Syria",
+      "Nicaragua",
+      "Venezuela"
+    ],
+    "claimants": [
+      "Georgia"
+    ]
+  },
   "memberships": [],
   "flag": "flags/south_ossetia.svg",
   "map": "maps/countries/south_ossetia.png",
@@ -165,6 +178,10 @@
     "population": {
       "source": "restcountries",
       "as_of": "2026-09-04"
+    },
+    "recognition": {
+      "source": "wikipedia",
+      "as_of": null
     },
     "region": {
       "source": "restcountries",

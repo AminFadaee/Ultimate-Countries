@@ -150,6 +150,7 @@
     "date": "1902-05-20",
     "from": "United States"
   },
+  "recognition": null,
   "memberships": [],
   "flag": "flags/cuba.svg",
   "map": "maps/countries/cuba.png",
