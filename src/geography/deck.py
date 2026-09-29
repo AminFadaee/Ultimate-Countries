@@ -18,6 +18,7 @@ CITY_MODEL_ID = 1_730_418_563
 TAG_PREFIX = "UC"
 MEDIA_PREFIX = "uc"
 ULTIMATE_GEOGRAPHY_URL = "https://github.com/anki-geo/ultimate-geography"
+REPOSITORY_URL = "https://github.com/AminFadaee/Ultimate-Countries"
 TAG_UNSAFE = re.compile(r"[^\w-]+")
 COUNTRY_CONTEXT = "{{Region}}{{#NotableCities}}<br>{{NotableCities}}{{/NotableCities}}"
 CITY_CONTEXT = "{{Region}}"
@@ -197,7 +198,8 @@ because deleted cards come back when you import an update.</p>
 <p>Data is collected automatically from Wikidata (CC0), Wikipedia (CC BY-SA), restcountries, the World Bank,
 the Pew Research Center, Unicode CLDR, GeoNames (CC BY), ISO 4217 and Natural Earth (public domain);
 maps use OpenStreetMap data (ODbL).</p>
-<p>Built {date.today().isoformat()}.</p>
+<p>Source code, data and new releases: <a href="{REPOSITORY_URL}">{REPOSITORY_URL.removeprefix("https://")}</a>.
+Built {date.today().isoformat()}.</p>
 """
 
 
