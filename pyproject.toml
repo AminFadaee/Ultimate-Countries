@@ -16,6 +16,7 @@ dependencies = [
     "matplotlib>=3.11",
     "numpy>=2.5",
     "pandas>=3.0",
+    "pillow>=12.3.0",
     "pyogrio>=0.13",
     "pyproj>=3.8",
     "python-dotenv>=1.2",

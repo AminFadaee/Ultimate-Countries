@@ -231,18 +231,23 @@ def info(answer: Answer | None) -> str:
     return "<br>".join(escaped(line) for line in answer.context) if answer else ""
 
 
+class MissingMediaError(FileNotFoundError):
+    pass
+
+
 class MediaLibrary:
     def __init__(self, data_dir: pathlib.Path, build_dir: pathlib.Path):
         self.data_dir = data_dir
         self.build_dir = build_dir
         self.files: list[str] = []
+        self.missing: list[pathlib.Path] = []
 
     def image(self, relative: str | None, kind: str) -> str:
         if not relative:
             return ""
         source = self.data_dir / relative
         if not source.exists():
-            logger.warning("Missing media %s", source)
+            self.missing.append(source)
             return ""
         target = self.build_dir / f"{MEDIA_PREFIX}-{kind}-{slugify(source.stem)}{source.suffix}"
         if not target.exists() or target.stat().st_mtime < source.stat().st_mtime:
@@ -317,6 +322,9 @@ class DeckBuilder:
         self._add(self.city_model, CITY_FIELDS, values, cards, tags, city["id"], country["id"])
 
     def write(self, output: pathlib.Path) -> None:
+        if self.media.missing:
+            examples = ", ".join(str(path) for path in self.media.missing[:3])
+            raise MissingMediaError(f"{len(self.media.missing)} media files are missing, e.g. {examples}")
         output.parent.mkdir(parents=True, exist_ok=True)
         package = genanki.Package([self.root, *self.subdecks], media_files=sorted(set(self.media.files)))
         package.write_to_file(str(output))
