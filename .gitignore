@@ -9,11 +9,10 @@ __pycache__/
 dist/
 wheels/
 
-# Build output (deck, compressed media)
+# Build output (deck and its media)
 build/
 
-# Generated data: maps go to GitHub releases, the database is rebuilt from sources
-data/maps/
+# The database is rebuilt from sources; the JSON export is the committed dataset
 data/geography.db
 
 # Downloaded source data caches
