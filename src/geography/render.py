@@ -27,6 +27,9 @@ METERS_PER_DEGREE = 111_320
 FRAME_MARGIN_X = 25 * METERS_PER_DEGREE
 FRAME_MARGIN_Y = 40 * METERS_PER_DEGREE
 MIN_FRAME_HEIGHT = 10 * METERS_PER_DEGREE
+COUNTRY_FRAME_MARGIN = 0.12
+MIN_COUNTRY_FRAME_HEIGHT = 1.5 * METERS_PER_DEGREE
+NEARBY_PART_DISTANCE = 300_000
 MIN_INSET_BOX = 8 * METERS_PER_DEGREE
 
 INSET_WIDTH = 0.26
@@ -37,6 +40,7 @@ LENS_PADDING = 3
 LENS_RADIUS = 1.1
 LENS_MARGIN = 0.25
 MARKER_RADIUS = 0.12
+LENS_CLEARANCE = 0.1
 MARKER_REACH = 1.4
 MIN_POINT_LENS_SPAN = 40_000
 
@@ -55,6 +59,30 @@ class Color(StrEnum):
     INSET_BOX = "red"
 
 
+class Corner(StrEnum):
+    TOP_RIGHT = "top right"
+    TOP_LEFT = "top left"
+    BOTTOM_RIGHT = "bottom right"
+    BOTTOM_LEFT = "bottom left"
+
+    @property
+    def is_left(self) -> bool:
+        return self in (Corner.TOP_LEFT, Corner.BOTTOM_LEFT)
+
+    @property
+    def is_bottom(self) -> bool:
+        return self in (Corner.BOTTOM_LEFT, Corner.BOTTOM_RIGHT)
+
+
+INSET_CORNERS = (Corner.BOTTOM_LEFT, Corner.BOTTOM_RIGHT, Corner.TOP_LEFT)
+LENS_CORNERS = (Corner.TOP_RIGHT, Corner.TOP_LEFT, Corner.BOTTOM_RIGHT, Corner.BOTTOM_LEFT)
+
+
+class Framing(StrEnum):
+    REGION = "region"
+    COUNTRY = "country"
+
+
 class Borders(StrEnum):
     COUNTRIES = "countries"
     REGIONS = "regions"
@@ -70,6 +98,7 @@ class Scene:
     min_zoom_span: float = 0.0
     lens_highlight: gpd.GeoSeries | None = None
     lens_host: gpd.GeoSeries | None = None
+    framing: Framing = Framing.REGION
 
     @classmethod
     def for_country(cls, country: Country, borders: Borders) -> "Scene":
@@ -82,7 +111,7 @@ class Scene:
         )
 
     @classmethod
-    def for_place(cls, place: Place, borders: Borders) -> "Scene":
+    def for_place(cls, place: Place, borders: Borders, framing: Framing = Framing.REGION) -> "Scene":
         country = place.country
         return cls(
             highlight=place.geometry,
@@ -91,6 +120,7 @@ class Scene:
             host=country.core.geometry,
             regions=region_borders(country, borders),
             min_zoom_span=MIN_POINT_LENS_SPAN if place.approximate else 0.0,
+            framing=framing,
         )
 
     @property
@@ -143,6 +173,12 @@ class Circle:
     def rect(self) -> tuple[float, float, float, float]:
         return (self.x - self.radius, self.y - self.radius, 2 * self.radius, 2 * self.radius)
 
+    def distance_to(self, other: "Circle") -> float:
+        return math.hypot(other.x - self.x, other.y - self.y)
+
+    def is_clear_of(self, other: "Circle") -> bool:
+        return self.distance_to(other) > self.radius + other.radius + LENS_CLEARANCE
+
     def tangents_to(self, other: "Circle") -> list[tuple[list[float], list[float]]]:
         dx, dy = other.x - self.x, other.y - self.y
         base = math.atan2(dy, dx)
@@ -183,16 +219,69 @@ def get_mainland(geometry: gpd.GeoSeries) -> gpd.GeoSeries:
     return parts.iloc[[parts.to_crs(EQUAL_AREA).area.argmax()]]
 
 
+def lens_at(corner: Corner, fig_w: float, fig_h: float) -> "Circle":
+    x = LENS_MARGIN + LENS_RADIUS if corner.is_left else fig_w - LENS_MARGIN - LENS_RADIUS
+    y = LENS_MARGIN + LENS_RADIUS if corner.is_bottom else fig_h - LENS_MARGIN - LENS_RADIUS
+    return Circle(x, y, LENS_RADIUS)
+
+
+def place_lens(marker: "Circle", fig_w: float, fig_h: float, taken: Corner) -> "Circle":
+    lenses = [lens_at(corner, fig_w, fig_h) for corner in LENS_CORNERS if corner is not taken]
+    clear = [lens for lens in lenses if lens.is_clear_of(marker)]
+    return clear[0] if clear else max(lenses, key=lambda lens: lens.distance_to(marker))
+
+
+def inset_rect(corner: Corner, aspect: float) -> tuple[float, float, float, float]:
+    height = INSET_WIDTH * 0.5 * aspect
+    x = INSET_MARGIN if corner.is_left else 1 - INSET_MARGIN - INSET_WIDTH
+    y = INSET_MARGIN if corner.is_bottom else 1 - INSET_MARGIN - height
+    return x, y, INSET_WIDTH, height
+
+
+def place_inset(subject: tuple[float, float], aspect: float) -> Corner:
+    def covers(corner: Corner) -> bool:
+        x, y, width, height = inset_rect(corner, aspect)
+        return x - INSET_MARGIN <= subject[0] <= x + width + INSET_MARGIN and y - INSET_MARGIN <= subject[1] <= y + height + INSET_MARGIN
+
+    return next((corner for corner in INSET_CORNERS if not covers(corner)), INSET_CORNERS[0])
+
+
+def get_frame_area(scene: "Scene", mainland: gpd.GeoSeries, projection: ccrs.Projection) -> tuple[gpd.GeoSeries, Framing]:
+    if scene.framing is Framing.REGION:
+        return mainland, Framing.REGION
+    country = get_nearby_parts(scene.frame, mainland)
+    minx, miny, maxx, maxy = country.to_crs(projection).total_bounds
+    if max(maxx - minx, maxy - miny) < MIN_COUNTRY_FRAME_HEIGHT:
+        return mainland, Framing.REGION
+    return pd.concat([country, get_mainland(scene.highlight)]), Framing.COUNTRY
+
+
+def figure_position(geometry: gpd.GeoSeries, projection: ccrs.Projection, extent: Extent) -> tuple[float, float]:
+    minx, miny, maxx, maxy = geometry.to_crs(projection).total_bounds
+    xmin, _, ymin, _ = extent.bounds
+    return ((minx + maxx) / 2 - xmin) / extent.width, ((miny + maxy) / 2 - ymin) / extent.height
+
+
+def get_nearby_parts(geometry: gpd.GeoSeries, mainland: gpd.GeoSeries) -> gpd.GeoSeries:
+    parts = geometry.explode(index_parts=False)
+    distances = parts.to_crs(EQUAL_AREA).distance(mainland.to_crs(EQUAL_AREA).iloc[0])
+    return parts[distances <= NEARBY_PART_DISTANCE]
+
+
 def get_center(mainland: gpd.GeoSeries) -> tuple[float, float]:
     centroid = mainland.to_crs(EQUAL_AREA).centroid.to_crs(mainland.crs).iloc[0]
     return centroid.y, centroid.x
 
 
-def get_frame(mainland: gpd.GeoSeries, projection: ccrs.Projection, aspect_ratio: float) -> Extent:
-    minx, miny, maxx, maxy = mainland.to_crs(projection).total_bounds
-    height = max(pad(maxy - miny, FRAME_MARGIN_Y), MIN_FRAME_HEIGHT)
-    width = max(pad(maxx - minx, FRAME_MARGIN_X), aspect_ratio * height)
-    return Extent(width, height)
+def get_frame(area: gpd.GeoSeries, projection: ccrs.Projection, aspect_ratio: float, framing: Framing) -> Extent:
+    minx, miny, maxx, maxy = area.to_crs(projection).total_bounds
+    if framing is Framing.REGION:
+        height = max(pad(maxy - miny, FRAME_MARGIN_Y), MIN_FRAME_HEIGHT)
+        width = max(pad(maxx - minx, FRAME_MARGIN_X), aspect_ratio * height)
+        return Extent(width, height)
+    height = max((maxy - miny) * (1 + 2 * COUNTRY_FRAME_MARGIN), MIN_COUNTRY_FRAME_HEIGHT)
+    width = max((maxx - minx) * (1 + 2 * COUNTRY_FRAME_MARGIN), aspect_ratio * height)
+    return Extent(width, height, (minx + maxx) / 2, (miny + maxy) / 2)
 
 
 def get_zoom(
@@ -241,15 +330,17 @@ class LocatorMap:
         mainland = get_mainland(scene.frame)
         lat, lng = get_center(mainland)
         projection = ccrs.LambertAzimuthalEqualArea(central_longitude=lng, central_latitude=lat)
-        extent = get_frame(mainland, projection, self.aspect_ratio)
+        area, framing = get_frame_area(scene, mainland, projection)
+        extent = get_frame(area, projection, self.aspect_ratio, framing)
         zoom = get_zoom(scene.lens_subject, projection, extent, scene.min_zoom_span)
+        inset_corner = place_inset(figure_position(scene.lens_subject, projection, extent), extent.width / extent.height)
 
         fig = plt.figure(figsize=(self.width, self.width * extent.height / extent.width))
         try:
             self._plot_main(fig, scene, projection, extent)
-            self._plot_inset(fig, projection, extent)
+            self._plot_inset(fig, projection, extent, inset_corner)
             if zoom:
-                self._plot_zoom(fig, scene, projection, extent, zoom)
+                self._plot_zoom(fig, scene, projection, extent, zoom, inset_corner)
             rendered = io.BytesIO()
             fig.savefig(rendered, dpi=self.dpi, format="png")
             rendered.seek(0)
@@ -353,10 +444,9 @@ class LocatorMap:
         ax.spines["geo"].set_visible(False)
         self._draw_layers(ax, scene, projection, extent)
 
-    def _plot_inset(self, fig: Figure, projection: ccrs.Projection, extent: Extent) -> None:
+    def _plot_inset(self, fig: Figure, projection: ccrs.Projection, extent: Extent, corner: Corner) -> None:
         fig_w, fig_h = fig.get_size_inches()
-        height = INSET_WIDTH * 0.5 * fig_w / fig_h
-        inset = fig.add_axes([INSET_MARGIN, INSET_MARGIN, INSET_WIDTH, height], projection=GEODETIC)
+        inset = fig.add_axes(list(inset_rect(corner, fig_w / fig_h)), projection=GEODETIC)
         inset.set_global()
 
         frame = patches.FancyBboxPatch((0, 0), 1, 1, boxstyle="round,pad=0.02,rounding_size=0.52")
@@ -387,6 +477,7 @@ class LocatorMap:
         projection: ccrs.Projection,
         extent: Extent,
         zoom: Zoom,
+        inset_corner: Corner,
     ) -> None:
         fig_w, fig_h = fig.get_size_inches()
         xmin, _, ymin, _ = extent.bounds
@@ -397,7 +488,7 @@ class LocatorMap:
             (zoom.lens.y - ymin) * scale,
             max(MARKER_RADIUS, MARKER_REACH * reach),
         )
-        lens = Circle(fig_w - LENS_MARGIN - LENS_RADIUS, fig_h - LENS_MARGIN - LENS_RADIUS, LENS_RADIUS)
+        lens = place_lens(marker, fig_w, fig_h, inset_corner)
 
         x, y, w, h = lens.rect
         ax = fig.add_axes([x / fig_w, y / fig_h, w / fig_w, h / fig_h], projection=projection)

@@ -12,7 +12,7 @@ from shapely.geometry import Point, shape
 from geography.data import Country, NaturalEarth
 from geography.detail import AREA_TYPES, DetailLayers, simplify
 from geography.places import Place
-from geography.render import Borders, LocatorMap, Scene
+from geography.render import Borders, Framing, LocatorMap, Scene
 
 POINT_RADIUS = 1_500
 MAX_CITY_AREA = 20_000_000_000
@@ -61,7 +61,7 @@ class MapWorker:
             if job.place_geometry is not None:
                 geometry = clip_to(geometry, detail if detail is not None else land_of(country))
             place = Place(job.place_name, geometry, country, approximate=job.place_geometry is None)
-            scene = Scene.for_place(place, Borders.REGIONS)
+            scene = Scene.for_place(place, Borders.REGIONS, Framing.COUNTRY)
             if detail is not None:
                 scene = replace(scene, lens_host=gpd.GeoSeries([detail], crs=data.crs))
         cls.renderer.render(scene, job.output)
