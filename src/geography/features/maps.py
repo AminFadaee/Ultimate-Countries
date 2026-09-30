@@ -5,8 +5,12 @@ import pathlib
 from collections.abc import Iterable
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from dataclasses import dataclass, replace
+from enum import StrEnum
 
+import cartopy.crs as ccrs
 import geopandas as gpd
+import numpy as np
+import shapely
 from shapely import affinity
 from shapely.errors import GEOSException
 from shapely.geometry import MultiPolygon, Polygon, box
@@ -16,7 +20,16 @@ from geography.detail import DetailLayers
 from geography.features.kinds import Kind, Shape
 from geography.features.model import Feature
 from geography.features.spatial import CRS
-from geography.render import EQUAL_AREA, PROJECTABLE_LATITUDE, Framing, LocatorMap, Scene, local_projection
+from geography.render import (
+    EQUAL_AREA,
+    PROJECTABLE_LATITUDE,
+    CentredScene,
+    Extent,
+    Framing,
+    LocatorMap,
+    Scene,
+    local_projection,
+)
 from geography.sources.natural_earth_physical import PhysicalLayer, load_layer
 
 CONTEXT = 1.35
@@ -32,6 +45,14 @@ BORDER_FRAME_M = 350_000
 WATER_KINDS = {Kind.SEA, Kind.LAKE}
 FRAME_SEGMENTS = 32
 MAX_FRAME_WIDTH_M = 15_000_000
+MIN_CONTEXT = 1.05
+CONTEXT_STEP = 0.05
+HEMISPHERE_M = 8_500_000
+POLAR_RING_LATITUDE = 60
+ANTIPODE_CLEARANCE_DEG = 30
+SEAM_CLOSING_M = 1_000
+POLAR_VIEW_LATITUDE = 45
+EARTH_RADIUS_M = 6_371_000
 
 logger = logging.getLogger(__name__)
 
@@ -134,12 +155,124 @@ def point_scene(job: FeatureMapJob, data: NaturalEarth) -> Scene:
                  regions=empty(), min_zoom_span=POINT_LENS_SPAN_M, framing=Framing.COUNTRY, style=style)
 
 
-def needs_world_view(geometry: gpd.GeoSeries, aspect_ratio: float) -> bool:
-    minx, miny, maxx, maxy = geometry.total_bounds
-    if max(-miny, maxy) > PROJECTABLE_LATITUDE or maxx - minx > 180:
-        return True
+class View(StrEnum):
+    REGIONAL = "regional"
+    CENTRED = "centred"
+    WORLD = "world"
+
+
+def shifted_east(shape):
+    return shapely.transform(shape, lambda xy: np.column_stack([np.where(xy[:, 0] < 0, xy[:, 0] + 360, xy[:, 0]), xy[:, 1]]))
+
+
+def longitude_span(geometry: gpd.GeoSeries) -> tuple[float, float]:
+    minx, _, maxx, _ = geometry.total_bounds
+    east_minx, _, east_maxx, _ = shifted_east(geometry.union_all()).bounds
+    return maxx - minx, east_maxx - east_minx
+
+
+def pole_of(geometry: gpd.GeoSeries) -> float | None:
+    _, miny, _, maxy = geometry.total_bounds
+    around_pole = min(longitude_span(geometry)) > 180
+    if maxy > PROJECTABLE_LATITUDE or (around_pole and miny > POLAR_RING_LATITUDE):
+        return 90.0
+    if miny < -PROJECTABLE_LATITUDE or (around_pole and maxy < -POLAR_RING_LATITUDE):
+        return -90.0
+    return None
+
+
+def crosses_date_line(geometry: gpd.GeoSeries) -> bool:
+    span, east_span = longitude_span(geometry)
+    return span > 180 >= east_span
+
+
+def too_wide_for_regional(geometry: gpd.GeoSeries, aspect_ratio: float) -> bool:
     minx, miny, maxx, maxy = geometry.to_crs(local_projection(geometry)).total_bounds
     return max(maxx - minx, (maxy - miny) * aspect_ratio) * CONTEXT > MAX_FRAME_WIDTH_M
+
+
+def centre_of(geometry: gpd.GeoSeries) -> tuple[float, float]:
+    if (pole := pole_of(geometry)) is not None:
+        return pole, 0.0
+    shape = geometry.union_all()
+    if crosses_date_line(geometry):
+        shape = shifted_east(shape)
+    minx, miny, maxx, maxy = shape.bounds
+    return (miny + maxy) / 2, ((minx + maxx) / 2 + 180) % 360 - 180
+
+
+def view_for(job: FeatureMapJob, aspect_ratio: float) -> View:
+    shape = job.kind.spec.shape
+    if shape in (Shape.POINT, Shape.LINE) or job.geometry.geom_type.iloc[0] == "Point":
+        return View.REGIONAL
+    if pole_of(job.geometry) is not None:
+        return View.CENTRED
+    if shape in (Shape.WORLD_AREA, Shape.WORLD_LINE):
+        return View.WORLD
+    if crosses_date_line(job.geometry) or too_wide_for_regional(job.geometry, aspect_ratio):
+        return View.CENTRED
+    return View.REGIONAL
+
+
+def angular_distance(coordinates: np.ndarray, latitude: float, longitude: float) -> np.ndarray:
+    lon, lat = np.radians(coordinates[:, 0]), np.radians(coordinates[:, 1])
+    lat0, lon0 = np.radians(latitude), np.radians(longitude)
+    cosine = np.sin(lat) * np.sin(lat0) + np.cos(lat) * np.cos(lat0) * np.cos(lon - lon0)
+    return np.degrees(np.arccos(np.clip(cosine, -1, 1)))
+
+
+def facing(countries: gpd.GeoSeries, latitude: float, longitude: float) -> gpd.GeoSeries:
+    antipode = -latitude, (longitude + 360) % 360 - 180
+    clear = [angular_distance(shapely.get_coordinates(country), *antipode).min() > ANTIPODE_CLEARANCE_DEG for country in countries]
+    return countries[clear]
+
+
+def closed_seams(projected: gpd.GeoSeries) -> gpd.GeoSeries:
+    return projected.buffer(SEAM_CLOSING_M).buffer(-SEAM_CLOSING_M)
+
+
+def reach_of(latitude: float) -> float:
+    return 2 * EARTH_RADIUS_M * np.sin(np.radians(90 - abs(latitude)) / 2)
+
+
+def fitted_extent(projected: gpd.GeoSeries, aspect_ratio: float, polar: bool) -> Extent | None:
+    minx, miny, maxx, maxy = projected.total_bounds
+    width = max(maxx - minx, (maxy - miny) * aspect_ratio, MIN_FRAME_M)
+    if polar:
+        width = max(width * CONTEXT, 2 * reach_of(POLAR_VIEW_LATITUDE) * aspect_ratio)
+        return Extent(width, width / aspect_ratio)
+    centre_x, centre_y = (minx + maxx) / 2, (miny + maxy) / 2
+    context = CONTEXT
+    while context >= MIN_CONTEXT:
+        extent = Extent(width * context, width * context / aspect_ratio, centre_x, centre_y)
+        xmin, xmax, ymin, ymax = extent.bounds
+        if max(abs(xmin), abs(xmax)) ** 2 + max(abs(ymin), abs(ymax)) ** 2 <= HEMISPHERE_M ** 2:
+            return extent
+        context = round(context - CONTEXT_STEP, 2)
+    return None
+
+
+def centred_scene(job: FeatureMapJob, data: NaturalEarth, aspect_ratio: float) -> CentredScene | None:
+    latitude, longitude = centre_of(job.geometry)
+    projection = ccrs.LambertAzimuthalEqualArea(central_longitude=longitude, central_latitude=latitude)
+    shape = job.geometry.union_all()
+    if job.kind is Kind.SEA:
+        shape = shape.buffer(0).difference(land())
+    projected = gpd.GeoSeries([shape], crs=CRS).to_crs(projection.proj4_init)
+    polar = pole_of(job.geometry) is not None
+    extent = fitted_extent(projected, aspect_ratio, polar)
+    if extent is None:
+        return None
+    size = max(extent.width, extent.height) / CONTEXT
+    style = job.kind.spec.palette.style(job.kind.spec.shape)
+    if job.kind.spec.shape in (Shape.LINE, Shape.WORLD_LINE):
+        host, highlight = empty(), projected.buffer(size * LINE_BAND_SHARE)
+    else:
+        host = closed_seams(projected).apply(lambda part: without_specks(part, (size * SPECK_SHARE) ** 2))
+        share = WATER_OUTLINE_SHARE if job.kind in WATER_KINDS else OUTLINE_SHARE
+        highlight = host.simplify(size * SIMPLIFY_SHARE).boundary.buffer(size * share)
+    countries = closed_seams(facing(data.countries.geometry, latitude, longitude).to_crs(projection.proj4_init))
+    return CentredScene(projection, extent, host, highlight, countries, style, inset_shape=job.geometry if polar else None)
 
 
 def line_centre(geometry: gpd.GeoSeries) -> float:
@@ -160,12 +293,14 @@ class FeatureMapWorker:
         shape = job.kind.spec.shape
         job.output.parent.mkdir(parents=True, exist_ok=True)
         style = job.kind.spec.palette.style(shape)
-        if shape is Shape.WORLD_AREA or (shape is Shape.AREA and needs_world_view(job.geometry, cls.renderer.aspect_ratio)):
+        view = view_for(job, cls.renderer.aspect_ratio)
+        if view is View.CENTRED and (scene := centred_scene(job, cls.renderer.data, cls.renderer.aspect_ratio)):
+            cls.renderer.render_centred(scene, job.output)
+        elif view is not View.REGIONAL and shape is Shape.WORLD_LINE:
+            cls.renderer.render_world(job.output, style, line_centre(job.geometry), lines=job.geometry)
+        elif view is not View.REGIONAL:
             centre = job.geometry.to_crs(EQUAL_AREA).centroid.to_crs(CRS).iloc[0].x
             cls.renderer.render_world(job.output, style, centre, areas=job.geometry)
-        elif shape is Shape.WORLD_LINE:
-            centre = line_centre(job.geometry)
-            cls.renderer.render_world(job.output, style, centre, lines=job.geometry)
         elif shape is Shape.POINT or job.geometry.geom_type.iloc[0] == "Point":
             try:
                 cls.renderer.render(point_scene(job, cls.renderer.data), job.output)
