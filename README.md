@@ -6,7 +6,8 @@ An Anki deck of the world's countries, territories and major cities, and the pip
 the [latest release](https://github.com/AminFadaee/Ultimate-Countries/releases/latest).
 
 **Ultimate Places**, the companion deck of continents, seas, mountains, rivers, deserts, rainforests, regions and
-landmarks, is in the same release as `ultimate_places.apkg`. See [Ultimate Places](#ultimate-places) below.
+landmarks: [on AnkiWeb](https://ankiweb.net/shared/info/216393289), or `ultimate_places.apkg` from the same release.
+See [Ultimate Places](#ultimate-places) below.
 
 It is inspired by [Ultimate Geography](https://github.com/anki-geo/ultimate-geography), the deck that got me excited
 about learning geography. Ultimate Countries covers every country and territory with a permanent population: 247 in
@@ -83,6 +84,9 @@ update.
 
 A second deck about the world's geography beyond borders: 386 places, each drawn on a map with its real outline,
 coloured by kind (snowy white for mountains, orange for deserts, blue for water, green for lowlands and so on).
+
+**Get the deck:** [on AnkiWeb](https://ankiweb.net/shared/info/216393289), or download `ultimate_places.apkg` from the
+[latest release](https://github.com/AminFadaee/Ultimate-Countries/releases/latest).
 
 ### Cards
 
