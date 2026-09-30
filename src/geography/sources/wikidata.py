@@ -11,6 +11,7 @@ import requests
 from geography.models import City
 from geography.sources.http import TIMEOUT
 
+FLAG_RANKS = ("PreferredRank", "NormalRank", "DeprecatedRank")
 SPARQL_URL = "https://query.wikidata.org/sparql"
 WIKIPEDIA_API_URL = "https://en.wikipedia.org/w/api.php"
 TITLE_BATCH = 50
@@ -281,11 +282,13 @@ class Wikidata:
 
     def flag_urls(self, qids: set[str]) -> dict[str, str]:
         rows = self._select(f"""
-            SELECT ?c ?flag WHERE {{
+            SELECT ?c ?flag ?rank WHERE {{
               VALUES ?c {{ {values_clause(qids)} }}
-              ?c wdt:P41 ?flag .
+              ?c p:P41 ?statement .
+              ?statement ps:P41 ?flag ; wikibase:rank ?rank .
             }}""")
-        return {qid_of(row["c"]): row["flag"] for row in rows}
+        by_rank = sorted(rows, key=lambda row: FLAG_RANKS.index(row["rank"].rsplit("#", 1)[-1]), reverse=True)
+        return {qid_of(row["c"]): row["flag"] for row in by_rank}
 
     def osm_relations(self, qids: set[str]) -> dict[str, str]:
         rows = self._select(f"""
