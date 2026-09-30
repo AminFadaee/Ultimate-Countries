@@ -26,6 +26,7 @@ from geography.features.kinds import Kind
 DECK_NAME = "Ultimate Places"
 PLACE_MODEL_ID = 1_730_418_564
 TAG_PREFIX = "UP"
+MEDIA_PREFIX = "up"
 MIN_NOTABLE_HEIGHT_M = 20
 FIELDS = ("Id", "Name", "Kind", "Map", "Photo", "Details")
 PLACES_CSS = CSS + """
@@ -150,7 +151,7 @@ Built {date.today().isoformat()}.</p>
 
 class PlacesDeckBuilder:
     def __init__(self, data_dir: pathlib.Path, build_dir: pathlib.Path):
-        self.media = MediaLibrary(data_dir, build_dir / "media")
+        self.media = MediaLibrary(data_dir, build_dir / "media", MEDIA_PREFIX)
         self.deck = genanki.Deck(stable_id(DECK_NAME), DECK_NAME, description())
         self.model = genanki.Model(
             PLACE_MODEL_ID,
@@ -167,8 +168,8 @@ class PlacesDeckBuilder:
             "Id": document["key"],
             "Name": html.escape(document["name"]),
             "Kind": html.escape(document["kind"]),
-            "Map": self.media.image(document["map"], "place-map"),
-            "Photo": self.media.image(document["photo"]["file"], "place-photo") if document["photo"] else "",
+            "Map": self.media.image(document["map"], "map"),
+            "Photo": self.media.image(document["photo"]["file"], "photo") if document["photo"] else "",
             "Details": details_html(document),
         }
         cards = [RoutedCard(ord, self.deck.deck_id) for ord, template in enumerate(TEMPLATES) if values[template.requires]]
@@ -179,7 +180,7 @@ class PlacesDeckBuilder:
             model=self.model,
             fields=[values[name] for name in FIELDS],
             tags=tags(document),
-            guid=genanki.guid_for(document["key"]),
+            guid=genanki.guid_for(DECK_NAME, document["key"]),
         ))
         self.notes += 1
 

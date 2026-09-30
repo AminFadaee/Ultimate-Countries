@@ -290,9 +290,10 @@ class MissingMediaError(FileNotFoundError):
 
 
 class MediaLibrary:
-    def __init__(self, data_dir: pathlib.Path, build_dir: pathlib.Path):
+    def __init__(self, data_dir: pathlib.Path, build_dir: pathlib.Path, prefix: str = MEDIA_PREFIX):
         self.data_dir = data_dir
         self.build_dir = build_dir
+        self.prefix = prefix
         self.files: list[str] = []
         self.missing: list[pathlib.Path] = []
 
@@ -303,7 +304,7 @@ class MediaLibrary:
         if not source.exists():
             self.missing.append(source)
             return ""
-        target = self.build_dir / f"{MEDIA_PREFIX}-{kind}-{slugify(source.stem)}{source.suffix}"
+        target = self.build_dir / f"{self.prefix}-{kind}-{slugify(source.stem)}{source.suffix}"
         if not target.exists() or target.stat().st_mtime < source.stat().st_mtime:
             self._prepare(source, target)
         self.files.append(str(target))
