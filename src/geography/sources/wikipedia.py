@@ -50,6 +50,17 @@ RECOGNISED_COUNT = re.compile(r"recognised (?:as a state )?by (\d+|" + "|".join(
 MAX_NAMED_RECOGNISERS = 4
 RECOGNISED_BY_ONE = re.compile(r"recognised by ([A-Z][^ .,]*)")
 
+ERA = r"(?:BCE?|CE|AD)"
+NUMBER = r"(?:c\. ?)?(?:AD ?)?\d{1,4}"
+YEAR = re.compile(rf"{NUMBER}(?: ?{ERA}\b)?")
+YEAR_RANGE = re.compile(rf"{NUMBER}(?:\s*[–-]\s*{NUMBER})?(?: ?{ERA}\b)?")
+PLAIN_YEAR = re.compile(r"\d{3,4}")
+START_FIELDS = ("construction start", "construction began", "construction started", "groundbreaking")
+END_FIELDS = ("completed", "date completed", "construction end", "opened", "opening", "built")
+CULTURE_FIELDS = ("culture", "cultures", "architectural style", "civilization")
+MEMBER_FIELDS = ("composition", "countries", "countries and regions", "countries and territories", "member states")
+SENTENCE = re.compile(r"[A-Za-z]{3,}")
+
 STATE_RELIGION_PAGE = "State religion"
 STATE_RELIGION_SECTION = "Current states with a state religion"
 RELIGION_SECTIONS = {"Buddhism", "Christianity", "Islam", "Judaism"}
@@ -105,6 +116,13 @@ class RecognitionRecord:
     recognised_count: int | None
     recognised_by: list[str]
     claimant_url: str | None
+
+
+@dataclass(frozen=True)
+class Infobox:
+    built: str | None
+    culture: str | None
+    members: list[str]
 
 
 @dataclass(frozen=True)
@@ -219,6 +237,33 @@ def recognition_of(status_cell) -> tuple[int | None, list[str]]:
     if (match := RECOGNISED_BY_ONE.search(text)) and match.group(1) in linked:
         return 1, [match.group(1)]
     return None, []
+
+
+def first_year(text: str, pattern: re.Pattern = YEAR) -> str | None:
+    for match in pattern.finditer(text):
+        year = match.group().strip()
+        if re.search(ERA, year) or PLAIN_YEAR.search(year):
+            return year
+    return None
+
+
+def listed_members(cell) -> list[str]:
+    members = []
+    for element in cell.iter():
+        if element.tag == "a" and article_url(element.get("href")):
+            members.append(clean(element.text_content()) or "")
+        elif members and element.tag != "a" and SENTENCE.search(element.tail or ""):
+            break
+    return [member for member in members if member]
+
+
+def built_range(started: str | None, finished: str | None) -> str | None:
+    if started and finished and started != finished and "–" not in finished:
+        era = re.search(rf" {ERA}$", started)
+        if era and finished.endswith(era.group()):
+            started = started.removesuffix(era.group())
+        return f"{started}–{finished}"
+    return finished or started
 
 
 def column_indexes(headers: list[str], names: tuple[str, ...], page: str) -> dict[str, int]:
@@ -369,6 +414,26 @@ class Wikipedia:
         if missing:
             raise PageLayoutError(f"Sections {sorted(missing)} not found on '{STATE_RELIGION_PAGE}'")
         return required(religions, STATE_RELIGION_PAGE)
+
+    def infobox(self, title: str) -> Infobox:
+        document = html.fromstring(self._page_html(title))
+        boxes = document.xpath("//table[contains(@class, 'infobox')]")
+        started = finished = culture = None
+        members: list[str] = []
+        for row in boxes[0].xpath(".//tr") if boxes else []:
+            header, value = row.xpath("./th"), row.xpath("./td")
+            if not header or not value:
+                continue
+            label, text = (cell_text(header[0]) or "").casefold(), cell_text(value[0]) or ""
+            if started is None and label.startswith(START_FIELDS):
+                started = first_year(text)
+            if finished is None and label.startswith(END_FIELDS):
+                finished = first_year(text, YEAR_RANGE if label == "built" else YEAR)
+            if culture is None and label in CULTURE_FIELDS:
+                culture = text.split(",")[0].strip() or None
+            if not members and label in MEMBER_FIELDS:
+                members = listed_members(value[0])
+        return Infobox(built_range(started, finished), culture, members)
 
     def communist_states(self) -> list[str]:
         document = html.fromstring(self._page_html(COMMUNIST_STATES_PAGE))
