@@ -173,6 +173,17 @@ class Extent:
 
 
 @dataclass(frozen=True)
+class CentredScene:
+    projection: ccrs.Projection
+    extent: Extent
+    host: gpd.GeoSeries
+    highlight: gpd.GeoSeries
+    countries: gpd.GeoSeries
+    style: Style = Style()
+    inset_shape: gpd.GeoSeries | None = None
+
+
+@dataclass(frozen=True)
 class Zoom:
     lens: Extent
     subject_size: float
@@ -379,6 +390,40 @@ class LocatorMap:
         finally:
             plt.close(fig)
 
+    def render_centred(self, scene: CentredScene, out_path: pathlib.Path) -> None:
+        extent = scene.extent
+        fig = plt.figure(figsize=(self.width, self.width * extent.height / extent.width))
+        try:
+            ax = fig.add_axes([0, 0, 1, 1], projection=scene.projection)
+            ax.spines["geo"].set_visible(False)
+            ax.set_extent(extent.bounds, crs=scene.projection)
+            ax.set_facecolor(Color.OCEAN)
+            ax.add_geometries(scene.countries, crs=scene.projection, facecolor=Color.LAND, edgecolor=Color.BORDER, linewidth=0.4)
+            if not scene.host.empty:
+                ax.add_geometries(scene.host, crs=scene.projection, facecolor=scene.style.host, edgecolor="none", zorder=2)
+                ax.add_geometries(
+                    scene.countries, crs=scene.projection, facecolor="none", edgecolor=Color.REGION_BORDER, linewidth=0.3,
+                    zorder=5,
+                )
+            ax.add_geometries(
+                scene.highlight, crs=scene.projection, facecolor=scene.style.highlight, edgecolor=scene.style.outline,
+                linewidth=0.8, zorder=3,
+            )
+            minx, miny, maxx, maxy = scene.highlight.total_bounds
+            xmin, _, ymin, _ = extent.bounds
+            subject = ((minx + maxx) / 2 - xmin) / extent.width, ((miny + maxy) / 2 - ymin) / extent.height
+            corner = place_inset(subject, extent.width / extent.height)
+            if scene.inset_shape is None:
+                self._plot_inset(fig, scene.projection, extent, corner)
+            else:
+                self._plot_inset_shape(fig, scene.inset_shape, corner)
+            rendered = io.BytesIO()
+            fig.savefig(rendered, dpi=self.dpi, format="png")
+            rendered.seek(0)
+            save_compact(rendered, out_path)
+        finally:
+            plt.close(fig)
+
     def render_world(
         self,
         out_path: pathlib.Path,
@@ -514,6 +559,29 @@ class LocatorMap:
         self._draw_layers(ax, scene, projection, extent)
 
     def _plot_inset(self, fig: Figure, projection: ccrs.Projection, extent: Extent, corner: Corner) -> None:
+        inset = self._inset_axes(fig, corner)
+        inset.add_geometries(
+            [extent.at_least(MIN_INSET_BOX).box],
+            crs=projection,
+            facecolor="none",
+            edgecolor=Color.INSET_BOX,
+            linewidth=1.3,
+            zorder=5,
+        )
+
+    def _plot_inset_shape(self, fig: Figure, shape: gpd.GeoSeries, corner: Corner) -> None:
+        inset = self._inset_axes(fig, corner)
+        filled = shape.geom_type.isin(["Polygon", "MultiPolygon"]).all()
+        inset.add_geometries(
+            shape,
+            crs=GEODETIC,
+            facecolor=Color.INSET_BOX if filled else "none",
+            edgecolor=Color.INSET_BOX,
+            linewidth=1.3,
+            zorder=5,
+        )
+
+    def _inset_axes(self, fig: Figure, corner: Corner):
         fig_w, fig_h = fig.get_size_inches()
         inset = fig.add_axes(list(inset_rect(corner, fig_w / fig_h)), projection=GEODETIC)
         inset.set_global()
@@ -530,14 +598,7 @@ class LocatorMap:
             edgecolor=Color.INSET_LAND,
             linewidth=0,
         )
-        inset.add_geometries(
-            [extent.at_least(MIN_INSET_BOX).box],
-            crs=projection,
-            facecolor="none",
-            edgecolor=Color.INSET_BOX,
-            linewidth=1.3,
-            zorder=5,
-        )
+        return inset
 
     def _plot_zoom(
         self,
