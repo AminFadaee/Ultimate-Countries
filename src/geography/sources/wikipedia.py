@@ -55,6 +55,8 @@ NUMBER = r"(?:c\. ?)?(?:AD ?)?\d{1,4}"
 YEAR = re.compile(rf"{NUMBER}(?: ?{ERA}\b)?")
 YEAR_RANGE = re.compile(rf"{NUMBER}(?:\s*[–-]\s*{NUMBER})?(?: ?{ERA}\b)?")
 PLAIN_YEAR = re.compile(r"\d{3,4}")
+HAS_ERA = re.compile(ERA)
+ERA_SUFFIX = re.compile(rf" {ERA}$")
 START_FIELDS = ("construction start", "construction began", "construction started", "groundbreaking")
 END_FIELDS = ("completed", "date completed", "construction end", "opened", "opening", "built")
 CULTURE_FIELDS = ("culture", "cultures", "architectural style", "civilization")
@@ -242,7 +244,7 @@ def recognition_of(status_cell) -> tuple[int | None, list[str]]:
 def first_year(text: str, pattern: re.Pattern = YEAR) -> str | None:
     for match in pattern.finditer(text):
         year = match.group().strip()
-        if re.search(ERA, year) or PLAIN_YEAR.search(year):
+        if HAS_ERA.search(year) or PLAIN_YEAR.search(year):
             return year
     return None
 
@@ -259,7 +261,7 @@ def listed_members(cell) -> list[str]:
 
 def built_range(started: str | None, finished: str | None) -> str | None:
     if started and finished and started != finished and "–" not in finished:
-        era = re.search(rf" {ERA}$", started)
+        era = ERA_SUFFIX.search(started)
         if era and finished.endswith(era.group()):
             started = started.removesuffix(era.group())
         return f"{started}–{finished}"

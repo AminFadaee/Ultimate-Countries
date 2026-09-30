@@ -5,6 +5,7 @@ import geopandas as gpd
 
 from geography.data import download_file, is_younger_than
 from geography.detail import CACHE_DIR
+from geography.render import EQUAL_AREA
 
 ECOREGIONS_URL = "https://storage.googleapis.com/teow2016/Ecoregions2017.zip"
 ECOREGIONS_FILE = CACHE_DIR / "Ecoregions2017.zip"
@@ -12,7 +13,6 @@ BLOCKS_FILE = CACHE_DIR / "rainforest_blocks.gpkg"
 MONTANE = "montane"
 MAX_AGE = timedelta(days=365)
 MOIST_BROADLEAF_FOREST = 1
-EQUAL_AREA = "EPSG:6933"
 SIMPLIFY_M = 5_000
 BRIDGE_M = 20_000
 CRS = "EPSG:4326"

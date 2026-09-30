@@ -45,12 +45,6 @@ def tidy_author(author: str) -> str:
     return text or "Unknown author"
 
 
-def tidy_credit(credit: str) -> str:
-    prefix, _, rest = credit.partition("Photo: ")
-    author, separator, tail = rest.partition(" · ")
-    return f"{prefix}Photo: {tidy_author(author)}{separator}{tail}"
-
-
 def file_title(image_url: str) -> str:
     return "File:" + urllib.parse.unquote(image_url.rsplit("/", 1)[-1])
 
