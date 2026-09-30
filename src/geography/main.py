@@ -16,6 +16,7 @@ from geography.features.deck import build_places_deck
 from geography.naming import slugify
 from geography.places import PlaceFinder
 from geography.render import Borders, LocatorMap
+from geography.samples import render_samples
 from geography.sources.http import create_session
 
 MAPS_DIR = pathlib.Path("maps")
@@ -25,6 +26,7 @@ REFERENCE_FILE = pathlib.Path("reference/countries.json")
 BUILD_DIR = pathlib.Path("build")
 DECK_FILE = BUILD_DIR / "ultimate_countries.apkg"
 PLACES_DECK_FILE = BUILD_DIR / "ultimate_places.apkg"
+SAMPLES_DIR = pathlib.Path("docs/samples")
 
 logger = logging.getLogger(__name__)
 
@@ -64,6 +66,10 @@ def parse_args() -> argparse.Namespace:
     places_deck = commands.add_parser("places-deck", help="build the Ultimate Places Anki deck")
     places_deck.add_argument("--data-dir", type=pathlib.Path, default=DATA_DIR)
     places_deck.add_argument("--output", type=pathlib.Path, default=PLACES_DECK_FILE)
+
+    samples = commands.add_parser("samples", help="render sample cards from the built decks for the README")
+    samples.add_argument("--build-dir", type=pathlib.Path, default=BUILD_DIR)
+    samples.add_argument("--output", type=pathlib.Path, default=SAMPLES_DIR)
 
     place = commands.add_parser("place", help="render a city, island or other area")
     place.add_argument("name")
@@ -120,6 +126,8 @@ def main() -> None:
         case "places-deck":
             documents = [json.loads(path.read_text()) for path in sorted(PlacesPaths(args.data_dir).features.glob("*.json"))]
             build_places_deck(documents, args.data_dir, BUILD_DIR, args.output)
+        case "samples":
+            render_samples(args.build_dir, args.output)
         case "place":
             render_place(args.output, args.borders, args.name, args.country)
 
