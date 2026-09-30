@@ -20,12 +20,14 @@ jobs:
       - name: Install dependencies
         run: uv sync --frozen
 
-      - name: Build deck
-        run: uv run geography deck
+      - name: Build decks
+        run: |
+          uv run geography deck
+          uv run geography places-deck
 
       - name: Publish release
         run: |
-          gh release create "$GITHUB_REF_NAME" build/ultimate_countries.apkg \
-            --title "Ultimate Countries ${GITHUB_REF_NAME#v}" \
-            --notes "Anki deck built from the data in this commit. Import ultimate_countries.apkg into Anki; updating from an earlier version keeps your progress." \
+          gh release create "$GITHUB_REF_NAME" build/ultimate_countries.apkg build/ultimate_places.apkg \
+            --title "Ultimate Countries and Ultimate Places ${GITHUB_REF_NAME#v}" \
+            --notes "Anki decks built from the data in this commit: ultimate_countries.apkg and ultimate_places.apkg. Importing a newer version keeps your progress." \
             --verify-tag

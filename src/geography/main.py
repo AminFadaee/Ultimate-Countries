@@ -11,6 +11,8 @@ from geography.collect import Collector, DataPaths, Options
 from geography.data import NaturalEarth
 from geography.db import Database
 from geography.deck import build_deck
+from geography.features.collect import PlacesCollector, PlacesOptions, PlacesPaths
+from geography.features.deck import build_places_deck
 from geography.naming import slugify
 from geography.places import PlaceFinder
 from geography.render import Borders, LocatorMap
@@ -22,6 +24,7 @@ ERROR_LOG = pathlib.Path("errors.log")
 REFERENCE_FILE = pathlib.Path("reference/countries.json")
 BUILD_DIR = pathlib.Path("build")
 DECK_FILE = BUILD_DIR / "ultimate_countries.apkg"
+PLACES_DECK_FILE = BUILD_DIR / "ultimate_places.apkg"
 
 logger = logging.getLogger(__name__)
 
@@ -52,6 +55,15 @@ def parse_args() -> argparse.Namespace:
     deck = commands.add_parser("deck", help="build the Anki deck from the exported country data")
     deck.add_argument("--data-dir", type=pathlib.Path, default=DATA_DIR)
     deck.add_argument("--output", type=pathlib.Path, default=DECK_FILE)
+
+    places = commands.add_parser("places", help="collect geographic features and landmarks for Ultimate Places")
+    places.add_argument("--data-dir", type=pathlib.Path, default=DATA_DIR)
+    places.add_argument("--rerender-maps", action="store_true", help="render maps even if they already exist")
+    places.add_argument("--workers", type=int, default=PlacesOptions.workers, help="parallel map renderers")
+
+    places_deck = commands.add_parser("places-deck", help="build the Ultimate Places Anki deck")
+    places_deck.add_argument("--data-dir", type=pathlib.Path, default=DATA_DIR)
+    places_deck.add_argument("--output", type=pathlib.Path, default=PLACES_DECK_FILE)
 
     place = commands.add_parser("place", help="render a city, island or other area")
     place.add_argument("name")
@@ -103,6 +115,11 @@ def main() -> None:
         case "deck":
             documents = quality.load_documents(DataPaths(args.data_dir).countries)
             build_deck(documents, args.data_dir, BUILD_DIR, args.output)
+        case "places":
+            PlacesCollector(PlacesPaths(args.data_dir), create_session()).run(PlacesOptions(args.rerender_maps, args.workers))
+        case "places-deck":
+            documents = [json.loads(path.read_text()) for path in sorted(PlacesPaths(args.data_dir).features.glob("*.json"))]
+            build_places_deck(documents, args.data_dir, BUILD_DIR, args.output)
         case "place":
             render_place(args.output, args.borders, args.name, args.country)
 
