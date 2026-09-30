@@ -1,4 +1,3 @@
-import logging
 import re
 import urllib.parse
 from collections import defaultdict
@@ -88,8 +87,6 @@ PRIME_MERIDIAN = "Q3401774"
 PRIME_MERIDIAN_NAME = "Prime Meridian"
 BASIN_SUFFIX = re.compile(r"\s+basin$", re.IGNORECASE)
 
-logger = logging.getLogger(__name__)
-
 
 def article_title(article_url: str) -> str:
     return urllib.parse.unquote(article_url.rsplit("/wiki/", 1)[-1]).replace("_", " ")
@@ -126,7 +123,7 @@ class Catalog:
             *self.rivers(),
             *self.mountains(),
             *self.from_ranking(Kind.WATERFALL, (WATERFALL,), MIN_WATERFALL_LINKS),
-            *self.canyons(),
+            *self.from_ranking(Kind.CANYON, (CANYON,), MIN_CANYON_LINKS),
             *self.rainforests(),
             *self.landmarks(),
             *self.canals(),
@@ -235,9 +232,6 @@ class Catalog:
         facts = self.known(set(ranked))
         return [self.feature(qid, kind, point(*facts[qid].coordinates)) for qid in ranked if qid in facts and facts[qid].coordinates]
 
-    def canyons(self) -> list[Feature]:
-        return self.from_ranking(Kind.CANYON, (CANYON,), MIN_CANYON_LINKS)
-
     def rainforests(self) -> list[Feature]:
         blocks = rainforest_blocks(MIN_RAINFOREST_KM2)
         ranked = set(self.queries.ranked(FOREST_CLASSES, MIN_FOREST_LINKS))
@@ -291,11 +285,10 @@ class Catalog:
         settlements = self.queries.instances_of(built, HUMAN_SETTLEMENT)
         living = self.queries.inhabited(settlements) | (settlements - self.queries.instances_of(settlements, ARCHAEOLOGICAL_SITE))
         excluded = living | self.queries.instances_of(built, SHIP)
-        candidates = built
-        facts = self.known(candidates)
+        facts = self.known(built)
         return [
             self.feature(qid, Kind.LANDMARK, point(*facts[qid].coordinates))
-            for qid in candidates - excluded
+            for qid in built - excluded
             if qid in facts and facts[qid].coordinates
         ]
 
