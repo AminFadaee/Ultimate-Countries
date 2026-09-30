@@ -1,7 +1,7 @@
 import json
 import logging
 import pathlib
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass, fields
 
 import requests
 
@@ -19,6 +19,7 @@ from geography.sources.wikipedia import Wikipedia
 BORDER_RADIUS_M = {Kind.WATERFALL: 6_000, Kind.MOUNTAIN: 8_000, Kind.VOLCANO: 8_000}
 INFOBOX_KINDS = {Kind.LANDMARK, Kind.CANAL}
 WITHOUT_COUNTRIES = {Kind.CONTINENT, Kind.OCEAN}
+PHOTO_FIELDS = {field.name for field in fields(Photo)}
 
 logger = logging.getLogger(__name__)
 
@@ -129,20 +130,23 @@ class PlacesCollector:
                 continue
             try:
                 image = commons.describe_image(self.session, feature.image)
+                if image is None:
+                    logger.info("No photo for %s: its licence or author can't be credited", feature.name)
+                    continue
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_bytes(commons.download_thumbnail(self.session, image))
             except (requests.RequestException, KeyError) as error:
                 logger.warning("No photo for %s: %s", feature.name, error)
                 continue
-            feature.photo = Photo(self.paths.relative(path), feature.image, image.credit)
+            feature.photo = Photo(self.paths.relative(path), feature.image, image.page, image.author, image.license,
+                                  image.license_url)
 
     def _previous_photos(self) -> dict[str, Photo]:
         found = {}
         for path in self.paths.features.glob("*.json"):
             document = json.loads(path.read_text())
-            if document.get("photo"):
-                photo = document["photo"]
-                found[document["key"]] = Photo(photo["file"], photo["source"], photo["credit"])
+            if (photo := document.get("photo")) and photo.keys() == PHOTO_FIELDS:
+                found[document["key"]] = Photo(**photo)
         return found
 
     def _render_maps(self, features: list[Feature], slugs: dict[str, str], options: PlacesOptions) -> None:
@@ -161,9 +165,12 @@ class PlacesCollector:
     def _export(self, features: list[Feature], slugs: dict[str, str]) -> int:
         self.paths.features.mkdir(parents=True, exist_ok=True)
         documents = {slugs[feature.key]: document(feature) for feature in features}
+        referenced = {self.paths.features / f"{slug}.json" for slug in documents}
+        referenced |= {self.paths.root / content["map"] for content in documents.values() if content["map"]}
+        referenced |= {self.paths.root / content["photo"]["file"] for content in documents.values() if content["photo"]}
         for directory, suffix in ((self.paths.features, ".json"), (self.paths.maps, ".png"), (self.paths.photos, ".jpg")):
             for stale in directory.glob(f"*{suffix}"):
-                if stale.stem not in documents:
+                if stale not in referenced:
                     stale.unlink()
         for slug, content in documents.items():
             path = self.paths.features / f"{slug}.json"
@@ -202,7 +209,7 @@ def document(feature: Feature) -> dict:
         "world_heritage": feature.world_heritage,
         "tags": feature.tags,
         "map": feature.map,
-        "photo": {"file": feature.photo.file, "source": feature.photo.source, "credit": feature.photo.credit} if feature.photo else None,
+        "photo": asdict(feature.photo) if feature.photo else None,
         "wikipedia": feature.wikipedia,
         "fame": feature.sitelinks,
     }

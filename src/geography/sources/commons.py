@@ -18,17 +18,16 @@ SPACES = re.compile(r"\s+")
 FILE_PREFIX = re.compile(r"\S+\.(?:jpe?g|png|tiff?|svg)\s*:\s*", re.IGNORECASE)
 TALK = re.compile(r"\(\s*talk\s*\)", re.IGNORECASE)
 DERIVATIVE = re.compile(r"\s*derivative work:\s*", re.IGNORECASE)
+UNUSABLE_LICENSE = re.compile(r"^GFDL", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
 class CommonsImage:
     thumbnail_url: str
+    page: str
     author: str
     license: str
-
-    @property
-    def credit(self) -> str:
-        return f"Photo: {self.author} · {self.license} · Wikimedia Commons"
+    license_url: str
 
 
 def plain(markup: str) -> str:
@@ -42,7 +41,7 @@ def tidy_author(author: str) -> str:
         text = text[:MAX_CREDIT].rsplit(" ", 1)[0].rstrip(" ,;") + "…"
     if text.count("(") != text.count(")"):
         text = SPACES.sub(" ", text.replace("(", "").replace(")", "")).strip(" ,;")
-    return text or "Unknown author"
+    return text
 
 
 def file_title(image_url: str) -> str:
@@ -60,15 +59,22 @@ def get_with_retries(session: requests.Session, url: str, **kwargs) -> requests.
     return response
 
 
-def describe_image(session: requests.Session, image_url: str) -> CommonsImage:
+def describe_image(session: requests.Session, image_url: str) -> CommonsImage | None:
     params = {"action": "query", "titles": file_title(image_url), "prop": "imageinfo",
               "iiprop": "url|extmetadata", "iiurlwidth": THUMB_WIDTH, "format": "json"}
     page = next(iter(get_with_retries(session, API_URL, params=params).json()["query"]["pages"].values()))
     info = page["imageinfo"][0]
     metadata = info["extmetadata"]
-    author = tidy_author(plain(metadata.get("Artist", {}).get("value", "")))
-    license_name = metadata.get("LicenseShortName", {}).get("value", "")
-    return CommonsImage(info["thumburl"], author, license_name)
+
+    def field(name: str) -> str:
+        return plain(metadata.get(name, {}).get("value", ""))
+
+    license_name = field("LicenseShortName")
+    author = tidy_author(field("Artist")) or tidy_author(field("Attribution"))
+    credit_required = field("AttributionRequired") != "false"
+    if UNUSABLE_LICENSE.match(license_name) or (credit_required and not author):
+        return None
+    return CommonsImage(info["thumburl"], info["descriptionurl"], author, license_name, field("LicenseUrl"))
 
 
 def download_thumbnail(session: requests.Session, image: CommonsImage) -> bytes:
