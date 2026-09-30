@@ -23,6 +23,7 @@ from geography.places import Place
 
 GEODETIC = ccrs.PlateCarree()
 EQUAL_AREA = "EPSG:6933"
+PROJECTABLE_LATITUDE = 85
 METERS_PER_DEGREE = 111_320
 
 FRAME_MARGIN_X = 25 * METERS_PER_DEGREE
@@ -289,7 +290,8 @@ def get_nearby_parts(geometry: gpd.GeoSeries, mainland: gpd.GeoSeries) -> gpd.Ge
 
 
 def get_center(mainland: gpd.GeoSeries) -> tuple[float, float]:
-    centroid = mainland.to_crs(EQUAL_AREA).centroid.to_crs(mainland.crs).iloc[0]
+    projectable = mainland.clip_by_rect(-180, -PROJECTABLE_LATITUDE, 180, PROJECTABLE_LATITUDE)
+    centroid = projectable.to_crs(EQUAL_AREA).centroid.to_crs(mainland.crs).iloc[0]
     return centroid.y, centroid.x
 
 
