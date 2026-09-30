@@ -5,6 +5,9 @@ An Anki deck of the world's countries, territories and major cities, and the pip
 **Get the deck:** [on AnkiWeb](https://ankiweb.net/shared/info/164142051), or download `ultimate_countries.apkg` from
 the [latest release](https://github.com/AminFadaee/Ultimate-Countries/releases/latest).
 
+**Ultimate Places**, the companion deck of continents, seas, mountains, rivers, deserts, rainforests, regions and
+landmarks, is in the same release as `ultimate_places.apkg`. See [Ultimate Places](#ultimate-places) below.
+
 It is inspired by [Ultimate Geography](https://github.com/anki-geo/ultimate-geography), the deck that got me excited
 about learning geography. Ultimate Countries covers every country and territory with a permanent population: 247 in
 all, each with its flag, map and capital, plus demonyms, languages, currencies, religions, population, government and
@@ -58,6 +61,48 @@ Notes are tagged so you can filter or suspend groups of them:
 To skip a kind of question, suspend its subdeck rather than deleting it: deleted cards come back when you import an
 update.
 
+## Ultimate Places
+
+A second deck about the world's geography beyond borders: 386 places, each drawn on a map with its real outline,
+coloured by kind (snowy white for mountains, orange for deserts, blue for water, green for lowlands and so on).
+
+### Cards
+
+| Question | Answer |
+|---|---|
+| the map, with the kind of place (MOUNTAIN RANGE, DESERT…) | its name, with countries, one fact and, for landmarks, the city and when it was built |
+| a photo (mountains, volcanoes, waterfalls, canyons, reefs, rainforests, canals and landmarks) | its name, kind, map and the same details |
+
+### Everything in one deck
+
+Ultimate Places has no subdecks. Every note is tagged with its kind and continent, for example `UP::Volcano`,
+`UP::Mountain_range`, `UP::Africa` or `UP::World_Heritage`. To study one kind at a time, create a filtered deck:
+
+1. Tools → Create Filtered Deck
+2. Search for `deck:"Ultimate Places" tag:UP::Volcano` (or any other tag, or several joined with `or`)
+3. Build
+
+To leave a kind out for good, open the Browser, search for its tag and suspend the cards.
+
+### Kinds and sources
+
+| Kind | Source | Rule |
+|---|---|---|
+| Continents | Natural Earth | All of them |
+| Oceans and seas | Marine Regions (the IHO sea areas), Natural Earth for seas IHO doesn't cover (Caspian) | Linked to Wikidata; halves and basins merge into the whole sea, and marginal seas into the sea they belong to |
+| Mountain ranges, deserts, plateaus, plains, basins, valleys, deltas, wetlands, peninsulas, isthmuses | Natural Earth physical regions | Natural Earth's importance rank, plus enough Wikipedia coverage to be well known |
+| Rivers, lakes, reefs | Natural Earth | Same as above |
+| Mountains and volcanoes | Natural Earth peaks and Wikidata | Well known; volcanoes by their Wikidata type |
+| Waterfalls, canyons, canals | Wikidata, with shapes from Natural Earth and OpenStreetMap | The best known of each kind |
+| Rainforests | RESOLVE Ecoregions 2017 | Large continuous blocks of tropical moist forest, named after the forest or the basin or island they cover |
+| Regions | Wikipedia | Regions whose Wikipedia infobox lists their countries (Scandinavia, the Middle East…), drawn from those countries |
+| Landmarks | Wikidata | World Heritage sites and famous structures that are buildings, monuments or archaeological sites; living cities are left out |
+| Lines | Natural Earth | The Equator, the tropics, the polar circles and the International Date Line, plus the Prime Meridian |
+
+Countries are computed from the shapes: the countries that hold a share of an area, border a sea or lake, or are
+crossed by a river. Facts (heights, lengths, areas) come from Wikidata, converted to metric; build dates and cultures
+from the Wikipedia infobox; photos from Wikimedia Commons, with the photographer and licence on every card.
+
 ## How the data is chosen
 
 | Field | Source | Rule |
@@ -91,6 +136,8 @@ echo 'RESTCOUNTRIES_API_KEY=your-key' > .env
 uv run geography collect      # fetch data, flags, city lists and render maps into data/
 uv run geography check        # accuracy against the reference set, anomalies, card coverage
 uv run geography deck         # build build/ultimate_countries.apkg
+uv run geography places       # collect places, photos and maps into data/places/
+uv run geography places-deck  # build build/ultimate_places.apkg
 ```
 
 The first `collect` downloads several hundred MB of source data and renders about 1,150 maps, which takes a few hours.
@@ -117,6 +164,7 @@ Releases are built by GitHub Actions from the committed data, flags and maps.
 ```sh
 uv run geography collect
 uv run geography check
+uv run geography places
 git add data
 git commit -m "Update data"
 git push
@@ -125,7 +173,7 @@ git push origin v$(date +%Y.%m.%d)
 ```
 
 Versions are dates, so the version says how fresh the data is. Pushing the tag builds `ultimate_countries.apkg` and
-publishes it as a release under that tag.
+`ultimate_places.apkg` and publishes them as a release under that tag.
 
 ## Quality checks
 
@@ -146,10 +194,12 @@ src/geography/
   render.py, maps.py, detail.py
                     locator maps
   quality.py        reference scoring and anomaly scan
+  features/         Ultimate Places: selection rules, maps and deck
 data/
   countries/        one JSON file per country (the exported dataset)
   flags/            flag SVGs
   maps/             locator maps for countries and cities
+  places/           Ultimate Places: one JSON file per place, maps and photos
 reference/          hand-checked answers for the quality check
 ```
 
@@ -164,5 +214,8 @@ The code is released under the [MIT licence](LICENSE). The data keeps the licenc
 - OpenStreetMap: ODbL
 - GeoNames: CC BY
 - Natural Earth: public domain
+- Marine Regions (IHO sea areas): CC BY
+- RESOLVE Ecoregions 2017: CC BY
+- Wikimedia Commons photos: the licence of each photo, named on its card
 - Unicode CLDR: Unicode License
 - restcountries, World Bank, Pew Research Center, IMF and ISO 4217 data are used under their respective terms
