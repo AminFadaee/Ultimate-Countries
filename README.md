@@ -39,6 +39,19 @@ Every card also shows the region and the country's notable cities.
 
 A card is only created when its data exists: Antarctica has no language card and territories have no government card.
 
+<p>
+  <img src="docs/samples/countries-capital.webp" width="49%" alt="Capital card for France">
+  <img src="docs/samples/countries-capital-of.webp" width="49%" alt="Capital of card for Paris">
+  <img src="docs/samples/countries-flag.webp" width="49%" alt="Flag card for France">
+  <img src="docs/samples/countries-map.webp" width="49%" alt="Map card for France">
+  <img src="docs/samples/countries-demonym.webp" width="49%" alt="Demonym card for France">
+  <img src="docs/samples/countries-language.webp" width="49%" alt="Language card for Switzerland">
+  <img src="docs/samples/countries-currency.webp" width="49%" alt="Currency card for Panama">
+  <img src="docs/samples/countries-religion.webp" width="49%" alt="Religion card for Malta">
+  <img src="docs/samples/countries-population.webp" width="49%" alt="Population card for Nigeria">
+  <img src="docs/samples/countries-government.webp" width="49%" alt="Government card for Germany">
+</p>
+
 ### City notes
 
 Capitals and notable cities, each with its own locator map:
@@ -47,6 +60,11 @@ Capitals and notable cities, each with its own locator map:
 |---|---|
 | the city's locator map | City and country |
 | Country: Lyon | France (not asked for capitals, which the capital cards already cover) |
+
+<p>
+  <img src="docs/samples/cities-map.webp" width="49%" alt="City map card for Lyon">
+  <img src="docs/samples/cities-country.webp" width="49%" alt="City country card for Lyon">
+</p>
 
 ### Tags
 
@@ -72,6 +90,11 @@ coloured by kind (snowy white for mountains, orange for deserts, blue for water,
 |---|---|
 | the map, with the kind of place (MOUNTAIN RANGE, DESERT…) | its name, with countries, one fact and, for landmarks, the city and when it was built |
 | a photo (mountains, volcanoes, waterfalls, canyons, reefs, rainforests, canals and landmarks) | its name, kind, map and the same details |
+
+<p>
+  <img src="docs/samples/places-map.webp" width="49%" alt="Map card for Mount Fuji">
+  <img src="docs/samples/places-photo.webp" width="49%" alt="Photo card for the Taj Mahal">
+</p>
 
 ### Everything in one deck
 
@@ -138,6 +161,7 @@ uv run geography check        # accuracy against the reference set, anomalies, c
 uv run geography deck         # build build/ultimate_countries.apkg
 uv run geography places       # collect places, photos and maps into data/places/
 uv run geography places-deck  # build build/ultimate_places.apkg
+uv run geography samples      # render the sample cards in docs/samples/ from the built decks
 ```
 
 The first `collect` downloads several hundred MB of source data and renders about 1,150 maps, which takes a few hours.
@@ -150,6 +174,7 @@ Useful options:
 - `collect --rerender-maps` redraws every map
 - `collect --workers N` sets the number of parallel map renderers (default 4)
 - `check --details` lists every failure and anomaly
+- `places --rerender-maps` redraws every place map
 
 `place` renders a map for any single place, independent of the deck:
 
@@ -194,6 +219,7 @@ src/geography/
   render.py, maps.py, detail.py
                     locator maps
   quality.py        reference scoring and anomaly scan
+  samples.py        renders the sample cards shown in this README
   features/         Ultimate Places: selection rules, maps and deck
 data/
   countries/        one JSON file per country (the exported dataset)
@@ -201,6 +227,7 @@ data/
   maps/             locator maps for countries and cities
   places/           Ultimate Places: one JSON file per place, maps and photos
 reference/          hand-checked answers for the quality check
+docs/samples/       sample cards for this README
 ```
 
 The built deck is not stored in the repository; it is attached to each release.
