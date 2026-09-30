@@ -124,7 +124,7 @@ To leave a kind out for good, open the Browser, search for its tag and suspend t
 
 Countries are computed from the shapes: the countries that hold a share of an area, border a sea or lake, or are
 crossed by a river. Facts (heights, lengths, areas) come from Wikidata, converted to metric; build dates and cultures
-from the Wikipedia infobox; photos from Wikimedia Commons, with the photographer and licence on every card.
+from the Wikipedia infobox; photos from Wikimedia Commons.
 
 ## How the data is chosen
 
@@ -243,6 +243,6 @@ The code is released under the [MIT licence](LICENSE). The data keeps the licenc
 - Natural Earth: public domain
 - Marine Regions (IHO sea areas): CC BY
 - RESOLVE Ecoregions 2017: CC BY
-- Wikimedia Commons photos: the licence of each photo, named on its card
+- Wikimedia Commons photos: each under the licence given on its Commons page
 - Unicode CLDR: Unicode License
 - restcountries, World Bank, Pew Research Center, IMF and ISO 4217 data are used under their respective terms

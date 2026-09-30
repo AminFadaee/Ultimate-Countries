@@ -10,10 +10,6 @@ from geography.features.spatial import OurCountry
 class Photo:
     file: str
     source: str
-    page: str
-    author: str
-    license: str
-    license_url: str
 
 
 @dataclass

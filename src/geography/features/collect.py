@@ -1,7 +1,7 @@
 import json
 import logging
 import pathlib
-from dataclasses import asdict, dataclass, fields
+from dataclasses import asdict, dataclass
 
 import requests
 
@@ -19,7 +19,6 @@ from geography.sources.wikipedia import Wikipedia
 BORDER_RADIUS_M = {Kind.WATERFALL: 6_000, Kind.MOUNTAIN: 8_000, Kind.VOLCANO: 8_000}
 INFOBOX_KINDS = {Kind.LANDMARK, Kind.CANAL}
 WITHOUT_COUNTRIES = {Kind.CONTINENT, Kind.OCEAN}
-PHOTO_FIELDS = {field.name for field in fields(Photo)}
 
 logger = logging.getLogger(__name__)
 
@@ -129,24 +128,20 @@ class PlacesCollector:
                 feature.photo = known
                 continue
             try:
-                image = commons.describe_image(self.session, feature.image)
-                if image is None:
-                    logger.info("No photo for %s: its licence or author can't be credited", feature.name)
-                    continue
+                thumbnail = commons.thumbnail_url(self.session, feature.image)
                 path.parent.mkdir(parents=True, exist_ok=True)
-                path.write_bytes(commons.download_thumbnail(self.session, image))
+                path.write_bytes(commons.download_thumbnail(self.session, thumbnail))
             except (requests.RequestException, KeyError) as error:
                 logger.warning("No photo for %s: %s", feature.name, error)
                 continue
-            feature.photo = Photo(self.paths.relative(path), feature.image, image.page, image.author, image.license,
-                                  image.license_url)
+            feature.photo = Photo(self.paths.relative(path), feature.image)
 
     def _previous_photos(self) -> dict[str, Photo]:
         found = {}
         for path in self.paths.features.glob("*.json"):
             document = json.loads(path.read_text())
-            if (photo := document.get("photo")) and photo.keys() == PHOTO_FIELDS:
-                found[document["key"]] = Photo(**photo)
+            if photo := document.get("photo"):
+                found[document["key"]] = Photo(photo["file"], photo["source"])
         return found
 
     def _render_maps(self, features: list[Feature], slugs: dict[str, str], options: PlacesOptions) -> None:

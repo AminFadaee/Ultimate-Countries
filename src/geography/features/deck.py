@@ -39,8 +39,6 @@ PLACES_CSS = CSS + """
 .photo + .map { margin-top: 10px; }
 .kind-name { color: var(--kind); font-weight: 600; }
 .nightMode .kind-name, .night_mode .kind-name { filter: brightness(1.6); }
-.credit { font-size: 11px; }
-.credit a { color: inherit; }
 """
 
 logger = logging.getLogger(__name__)
@@ -114,16 +112,6 @@ def location(document: dict) -> str | None:
     return None
 
 
-def link(text: str, url: str) -> str:
-    return f'<a href="{html.escape(url)}">{html.escape(text)}</a>' if url else html.escape(text)
-
-
-def credit_html(photo: dict) -> str:
-    parts = [html.escape(photo["author"])] if photo["author"] else []
-    parts += [link(photo["license"], photo["license_url"]), link("Wikimedia Commons", photo["page"])]
-    return f'<span class="credit">Photo: {" · ".join(parts)}</span>'
-
-
 def details_html(document: dict) -> str:
     kind = Kind(document["kind"])
     colour = kind.spec.palette.outline
@@ -135,8 +123,6 @@ def details_html(document: dict) -> str:
         lines.append(html.escape(place))
     if document["built"]:
         lines.append(html.escape(" · ".join(part for part in (f"Built {document['built']}", document["culture"]) if part)))
-    if document["photo"]:
-        lines.append(credit_html(document["photo"]))
     return "<br>".join(lines)
 
 
@@ -153,8 +139,8 @@ rainforests, regions and famous landmarks, each shown on a map. Places with a re
 <code>UP::Africa</code>), so you can study one kind at a time with a filtered deck: Tools → Create Filtered Deck,
 then search for <code>deck:"Ultimate Places" tag:UP::Volcano</code>.</p>
 <p>Data comes from Natural Earth (public domain), Marine Regions IHO sea areas (CC BY), RESOLVE Ecoregions (CC BY),
-Wikidata (CC0), Wikipedia (CC BY-SA) and OpenStreetMap (ODbL). Photos come from Wikimedia Commons; each card names
-the photographer and links the licence and the original file.</p>
+Wikidata (CC0), Wikipedia (CC BY-SA) and OpenStreetMap (ODbL). Photos come from Wikimedia Commons, each under the
+licence given on its Commons page.</p>
 <p>Source code, data and new releases: <a href="{REPOSITORY_URL}">{REPOSITORY_URL.removeprefix("https://")}</a>.
 Built {date.today().isoformat()}.</p>
 """
