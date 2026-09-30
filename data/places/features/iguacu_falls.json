@@ -1,0 +1,33 @@
+{
+  "key": "Q36332",
+  "qid": "Q36332",
+  "name": "Iguaçu Falls",
+  "kind": "Waterfall",
+  "countries": [
+    "Argentina",
+    "Brazil"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": 82.0,
+  "elevation_m": 1.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Waterfall",
+    "Americas"
+  ],
+  "map": "places/maps/iguacu_falls.png",
+  "photo": {
+    "file": "places/photos/iguacu_falls.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20Foz%20de%20Igua%C3%A7u%2026%20Nov%202005.jpg",
+    "credit": "Photo: Mariordo (Mario Roberto Durán Ortiz) · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Iguazu_Falls",
+  "fame": 99
+}

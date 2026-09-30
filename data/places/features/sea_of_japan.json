@@ -1,0 +1,34 @@
+{
+  "key": "Q27092",
+  "qid": "Q27092",
+  "name": "Sea of Japan",
+  "kind": "Sea",
+  "countries": [
+    "China",
+    "Japan",
+    "North Korea",
+    "Russia",
+    "South Korea"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 2254.0,
+  "area_km2": 1048950.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/sea_of_japan.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Sea_of_Japan",
+  "fame": 128
+}

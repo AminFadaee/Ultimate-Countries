@@ -1,0 +1,30 @@
+{
+  "key": "Q3503",
+  "qid": "Q3503",
+  "name": "River Congo",
+  "kind": "River",
+  "countries": [
+    "Democratic Republic of the Congo",
+    "Republic of the Congo",
+    "Angola"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 32.0,
+  "length_km": 4700.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Africa"
+  ],
+  "map": "places/maps/river_congo.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Congo_River",
+  "fame": 168
+}

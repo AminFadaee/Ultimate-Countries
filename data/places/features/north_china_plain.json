@@ -1,0 +1,28 @@
+{
+  "key": "Q147304",
+  "qid": "Q147304",
+  "name": "North China Plain",
+  "kind": "Plain",
+  "countries": [
+    "China"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Plain",
+    "Asia"
+  ],
+  "map": "places/maps/north_china_plain.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/North_China_Plain",
+  "fame": 57
+}

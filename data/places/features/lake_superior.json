@@ -1,0 +1,29 @@
+{
+  "key": "Q1066",
+  "qid": "Q1066",
+  "name": "Lake Superior",
+  "kind": "Lake",
+  "countries": [
+    "Canada",
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 183.0,
+  "length_km": 563.0,
+  "area_km2": 82350.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Americas"
+  ],
+  "map": "places/maps/lake_superior.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Superior",
+  "fame": 112
+}

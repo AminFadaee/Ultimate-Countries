@@ -1,0 +1,30 @@
+{
+  "key": "Q14686",
+  "qid": "Q14686",
+  "name": "Gulf of Finland",
+  "kind": "Sea",
+  "countries": [
+    "Estonia",
+    "Finland",
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 29500.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Europe"
+  ],
+  "map": "places/maps/gulf_of_finland.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Gulf_of_Finland",
+  "fame": 106
+}

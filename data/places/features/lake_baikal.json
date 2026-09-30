@@ -1,0 +1,29 @@
+{
+  "key": "Q5513",
+  "qid": "Q5513",
+  "name": "Lake Baikal",
+  "kind": "Lake",
+  "countries": [
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 455.5,
+  "length_km": 636.0,
+  "area_km2": 31722.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Lake",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/lake_baikal.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Baikal",
+  "fame": 183
+}

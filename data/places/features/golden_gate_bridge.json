@@ -1,0 +1,32 @@
+{
+  "key": "Q44440",
+  "qid": "Q44440",
+  "name": "Golden Gate Bridge",
+  "kind": "Landmark",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": "San Francisco",
+  "height_m": 227.3812476,
+  "elevation_m": null,
+  "length_km": 2.7374141886000003,
+  "area_km2": null,
+  "built": "1933–1937",
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Americas"
+  ],
+  "map": "places/maps/golden_gate_bridge.png",
+  "photo": {
+    "file": "places/photos/golden_gate_bridge.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/GoldenGateBridge-001.jpg",
+    "credit": "Photo: Rich Niewiroski Jr. · CC BY 2.5 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
+  "fame": 110
+}

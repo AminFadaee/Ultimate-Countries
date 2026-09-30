@@ -1,0 +1,28 @@
+{
+  "key": "Q5419",
+  "qid": "Q5419",
+  "name": "Missouri River",
+  "kind": "River",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 3726.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Americas"
+  ],
+  "map": "places/maps/missouri_river.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Missouri_River",
+  "fame": 109
+}

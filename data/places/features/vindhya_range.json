@@ -1,0 +1,28 @@
+{
+  "key": "Q271435",
+  "qid": "Q271435",
+  "name": "Vindhya Range",
+  "kind": "Mountain range",
+  "countries": [
+    "India"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 752.0,
+  "length_km": 1000.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia"
+  ],
+  "map": "places/maps/vindhya_range.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Vindhya_Range",
+  "fame": 51
+}

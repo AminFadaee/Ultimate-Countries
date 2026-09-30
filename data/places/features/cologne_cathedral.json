@@ -1,0 +1,33 @@
+{
+  "key": "Q4176",
+  "qid": "Q4176",
+  "name": "Cologne Cathedral",
+  "kind": "Landmark",
+  "countries": [
+    "Germany"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "Cologne",
+  "height_m": 157.0,
+  "elevation_m": null,
+  "length_km": 0.1445,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/cologne_cathedral.png",
+  "photo": {
+    "file": "places/photos/cologne_cathedral.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/K%C3%B6lner%20Dom%20von%20Osten.jpg",
+    "credit": "Photo: Thomas Wolf, www.foto-tw.de · CC BY-SA 3.0 de · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Cologne_Cathedral",
+  "fame": 86
+}

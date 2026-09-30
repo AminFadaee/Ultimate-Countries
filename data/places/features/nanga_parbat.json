@@ -1,0 +1,32 @@
+{
+  "key": "Q130736",
+  "qid": "Q130736",
+  "name": "Nanga Parbat",
+  "kind": "Mountain",
+  "countries": [
+    "Pakistan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 8126.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/nanga_parbat.png",
+  "photo": {
+    "file": "places/photos/nanga_parbat.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Nanga%20parbat%2C%20fairy%20medow%2C%20Pak%20by%20gul791.jpg",
+    "credit": "Photo: Atif Gulzar · Copyrighted free use · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Nanga_Parbat",
+  "fame": 90
+}

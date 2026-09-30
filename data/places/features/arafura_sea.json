@@ -1,0 +1,32 @@
+{
+  "key": "Q128880",
+  "qid": "Q128880",
+  "name": "Arafura Sea",
+  "kind": "Sea",
+  "countries": [
+    "Australia",
+    "Indonesia",
+    "Papua New Guinea"
+  ],
+  "continents": [
+    "Asia",
+    "Oceania"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 650000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia",
+    "Oceania"
+  ],
+  "map": "places/maps/arafura_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Arafura_Sea",
+  "fame": 93
+}

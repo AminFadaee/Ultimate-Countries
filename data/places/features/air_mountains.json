@@ -1,0 +1,28 @@
+{
+  "key": "Q170383",
+  "qid": "Q170383",
+  "name": "Aïr Mountains",
+  "kind": "Mountain range",
+  "countries": [
+    "Niger"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2022.0,
+  "length_km": 300.0,
+  "area_km2": 84000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Africa"
+  ],
+  "map": "places/maps/air_mountains.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/A%C3%AFr_Mountains",
+  "fame": 57
+}

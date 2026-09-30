@@ -1,0 +1,31 @@
+{
+  "key": "Q131217",
+  "qid": "Q131217",
+  "name": "Gulf of Thailand",
+  "kind": "Sea",
+  "countries": [
+    "Cambodia",
+    "Malaysia",
+    "Thailand",
+    "Vietnam"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 320000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia"
+  ],
+  "map": "places/maps/gulf_of_thailand.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Gulf_of_Thailand",
+  "fame": 98
+}

@@ -1,0 +1,28 @@
+{
+  "key": "Q660304",
+  "qid": "Q660304",
+  "name": "Pacific Coast Ranges",
+  "kind": "Mountain range",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 5959.0,
+  "length_km": 3800.0,
+  "area_km2": 977500.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Americas"
+  ],
+  "map": "places/maps/pacific_coast_ranges.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Pacific_Coast_Ranges",
+  "fame": 44
+}

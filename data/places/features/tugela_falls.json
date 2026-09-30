@@ -1,0 +1,33 @@
+{
+  "key": "Q223649",
+  "qid": "Q223649",
+  "name": "Tugela Falls",
+  "kind": "Waterfall",
+  "countries": [
+    "Lesotho",
+    "South Africa"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": 948.0,
+  "elevation_m": 2925.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Waterfall",
+    "Africa"
+  ],
+  "map": "places/maps/tugela_falls.png",
+  "photo": {
+    "file": "places/photos/tugela_falls.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tugela%20falls.jpg",
+    "credit": "Photo: Juniper339 · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Tugela_Falls",
+  "fame": 42
+}

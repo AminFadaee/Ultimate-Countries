@@ -1,0 +1,29 @@
+{
+  "key": "Q4527",
+  "qid": "Q4527",
+  "name": "Western Ghats",
+  "kind": "Mountain range",
+  "countries": [
+    "India"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2695.0,
+  "length_km": 1600.0,
+  "area_km2": 160000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Mountain_range",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/western_ghats.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Western_Ghats",
+  "fame": 83
+}

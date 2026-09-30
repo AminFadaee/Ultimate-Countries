@@ -1,0 +1,32 @@
+{
+  "key": "Q41837",
+  "qid": "Q41837",
+  "name": "Gulf of Aden",
+  "kind": "Sea",
+  "countries": [
+    "Djibouti",
+    "Somalia",
+    "Yemen"
+  ],
+  "continents": [
+    "Africa",
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Africa",
+    "Asia"
+  ],
+  "map": "places/maps/gulf_of_aden.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Gulf_of_Aden",
+  "fame": 106
+}

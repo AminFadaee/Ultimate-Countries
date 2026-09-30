@@ -1,0 +1,36 @@
+{
+  "key": "Q6583",
+  "qid": "Q6583",
+  "name": "Sahara",
+  "kind": "Desert",
+  "countries": [
+    "Algeria",
+    "Sudan",
+    "Libya",
+    "Niger",
+    "Chad",
+    "Mauritania",
+    "Mali",
+    "Egypt",
+    "Morocco"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 4800.0,
+  "area_km2": 9200000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Desert",
+    "Africa"
+  ],
+  "map": "places/maps/sahara.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Sahara",
+  "fame": 225
+}

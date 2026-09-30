@@ -1,0 +1,29 @@
+{
+  "key": "Q172702",
+  "qid": "Q172702",
+  "name": "Karakum Desert",
+  "kind": "Desert",
+  "countries": [
+    "Turkmenistan",
+    "Uzbekistan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 400000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Desert",
+    "Asia"
+  ],
+  "map": "places/maps/karakum_desert.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Karakum_Desert",
+  "fame": 91
+}

@@ -1,0 +1,33 @@
+{
+  "key": "Q1286",
+  "qid": "Q1286",
+  "name": "Alps",
+  "kind": "Mountain range",
+  "countries": [
+    "Austria",
+    "Italy",
+    "France",
+    "Switzerland",
+    "Germany",
+    "Slovenia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4810.9,
+  "length_km": 1200.0,
+  "area_km2": 190000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Europe"
+  ],
+  "map": "places/maps/alps.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Alps",
+  "fame": 214
+}

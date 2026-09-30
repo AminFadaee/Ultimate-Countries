@@ -1,0 +1,33 @@
+{
+  "key": "Q233836",
+  "qid": "Q233836",
+  "name": "Ojos del Salado",
+  "kind": "Mountain",
+  "countries": [
+    "Argentina",
+    "Chile"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 6893.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Americas"
+  ],
+  "map": "places/maps/ojos_del_salado.png",
+  "photo": {
+    "file": "places/photos/ojos_del_salado.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ojos%20del%20Salado%20summit.jpg",
+    "credit": "Photo: Janne Corax · CC BY-SA 2.5 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Ojos_del_Salado",
+  "fame": 72
+}

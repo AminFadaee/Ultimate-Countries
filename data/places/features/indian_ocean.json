@@ -1,0 +1,23 @@
+{
+  "key": "Q1239",
+  "qid": "Q1239",
+  "name": "Indian Ocean",
+  "kind": "Ocean",
+  "countries": [],
+  "continents": [],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 0.0,
+  "length_km": null,
+  "area_km2": 76174000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Ocean"
+  ],
+  "map": "places/maps/indian_ocean.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Indian_Ocean",
+  "fame": 251
+}

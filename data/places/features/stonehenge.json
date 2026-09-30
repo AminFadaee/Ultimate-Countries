@@ -1,0 +1,33 @@
+{
+  "key": "Q39671",
+  "qid": "Q39671",
+  "name": "Stonehenge",
+  "kind": "Landmark",
+  "countries": [
+    "United Kingdom"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/stonehenge.png",
+  "photo": {
+    "file": "places/photos/stonehenge.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge%20Total.jpg",
+    "credit": "Photo: Stefan Kühn · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Stonehenge",
+  "fame": 135
+}

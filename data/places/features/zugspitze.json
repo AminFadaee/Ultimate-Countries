@@ -1,0 +1,33 @@
+{
+  "key": "Q3375",
+  "qid": "Q3375",
+  "name": "Zugspitze",
+  "kind": "Mountain",
+  "countries": [
+    "Austria",
+    "Germany"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2962.06,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Europe"
+  ],
+  "map": "places/maps/zugspitze.png",
+  "photo": {
+    "file": "places/photos/zugspitze.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Zugspitzmassiv-von-Almkopf-2024.jpg",
+    "credit": "Photo: Tuxyso · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Zugspitze",
+  "fame": 75
+}

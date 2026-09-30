@@ -1,0 +1,37 @@
+{
+  "key": "Q23406",
+  "qid": "Q23406",
+  "name": "Red Sea",
+  "kind": "Sea",
+  "countries": [
+    "Djibouti",
+    "Egypt",
+    "Eritrea",
+    "Israel",
+    "Jordan",
+    "Saudi Arabia",
+    "Sudan",
+    "Yemen"
+  ],
+  "continents": [
+    "Africa",
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 0.0,
+  "length_km": null,
+  "area_km2": 445816.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Africa",
+    "Asia"
+  ],
+  "map": "places/maps/red_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Red_Sea",
+  "fame": 192
+}

@@ -1,0 +1,52 @@
+{
+  "key": "Q131389",
+  "qid": "Q131389",
+  "name": "International Date Line",
+  "kind": "Line",
+  "countries": [
+    "Russia",
+    "Canada",
+    "Greenland",
+    "Kazakhstan",
+    "United States",
+    "Mongolia",
+    "Brazil",
+    "China",
+    "Indonesia",
+    "Ukraine",
+    "France",
+    "Democratic Republic of the Congo",
+    "Kenya",
+    "Ecuador",
+    "Gabon",
+    "Germany",
+    "Colombia",
+    "Austria",
+    "Hungary"
+  ],
+  "continents": [
+    "Africa",
+    "Americas",
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Line",
+    "Africa",
+    "Americas",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/international_date_line.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/International_Date_Line",
+  "fame": 74
+}

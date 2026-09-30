@@ -1,0 +1,32 @@
+{
+  "key": "Q179842",
+  "qid": "Q179842",
+  "name": "Tibetan Plateau",
+  "kind": "Plateau",
+  "countries": [
+    "China",
+    "India",
+    "Nepal",
+    "Pakistan",
+    "Bhutan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4500.0,
+  "length_km": 2500.0,
+  "area_km2": 2500000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Plateau",
+    "Asia"
+  ],
+  "map": "places/maps/tibetan_plateau.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Tibetan_Plateau",
+  "fame": 86
+}

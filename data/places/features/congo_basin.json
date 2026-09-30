@@ -1,0 +1,33 @@
+{
+  "key": "Q932289",
+  "qid": "Q932289",
+  "name": "Congo Basin",
+  "kind": "Basin",
+  "countries": [
+    "Democratic Republic of the Congo",
+    "Central African Republic",
+    "Angola",
+    "Republic of the Congo",
+    "Cameroon",
+    "South Sudan"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 1000000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Basin",
+    "Africa"
+  ],
+  "map": "places/maps/congo_basin.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Congo_Basin",
+  "fame": 46
+}

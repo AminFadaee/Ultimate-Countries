@@ -1,0 +1,33 @@
+{
+  "key": "Q43512",
+  "qid": "Q43512",
+  "name": "K2",
+  "kind": "Mountain",
+  "countries": [
+    "China",
+    "Pakistan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 8611.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/k2.png",
+  "photo": {
+    "file": "places/photos/k2.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chogori.jpg",
+    "credit": "Photo: Zacharie Grossen · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/K2",
+  "fame": 112
+}

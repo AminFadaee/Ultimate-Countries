@@ -1,0 +1,30 @@
+{
+  "key": "Q7348",
+  "qid": "Q7348",
+  "name": "Indus River",
+  "kind": "River",
+  "countries": [
+    "Pakistan",
+    "India",
+    "China"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 3180.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Asia"
+  ],
+  "map": "places/maps/indus_river.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Indus_River",
+  "fame": 159
+}

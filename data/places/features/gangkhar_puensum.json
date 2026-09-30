@@ -1,0 +1,33 @@
+{
+  "key": "Q219986",
+  "qid": "Q219986",
+  "name": "Gangkhar Puensum",
+  "kind": "Mountain",
+  "countries": [
+    "Bhutan",
+    "China"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 7570.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/gangkhar_puensum.png",
+  "photo": {
+    "file": "places/photos/gangkhar_puensum.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Himalayan%20peak%20from%20Bumthang.jpg",
+    "credit": "Photo: Christopher J. Fynn · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Gangkhar_Puensum",
+  "fame": 64
+}

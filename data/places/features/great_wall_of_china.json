@@ -1,0 +1,32 @@
+{
+  "key": "Q12501",
+  "qid": "Q12501",
+  "name": "Great Wall of China",
+  "kind": "Landmark",
+  "countries": [
+    "China"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": 8.0,
+  "elevation_m": null,
+  "length_km": 21195.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/great_wall_of_china.png",
+  "photo": {
+    "file": "places/photos/great_wall_of_china.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Wall%20of%20China%20at%20Jinshanling-edit.jpg",
+    "credit": "Photo: Severin.stalder · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+  "fame": 194
+}

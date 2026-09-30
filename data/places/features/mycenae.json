@@ -1,0 +1,32 @@
+{
+  "key": "Q132564",
+  "qid": "Q132564",
+  "name": "Mycenae",
+  "kind": "Landmark",
+  "countries": [
+    "Greece"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.32,
+  "built": "c. 2100 BC",
+  "culture": "Mycenaean Greece Archaic Greece Classical Greece",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/mycenae.png",
+  "photo": {
+    "file": "places/photos/mycenae.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Lions-Gate-Mycenae.jpg",
+    "credit": "Photo: Andreas Trepte · CC BY-SA 2.5 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mycenae",
+  "fame": 91
+}

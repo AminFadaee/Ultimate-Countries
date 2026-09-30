@@ -1,0 +1,31 @@
+{
+  "key": "Q45341",
+  "qid": "Q45341",
+  "name": "East China Sea",
+  "kind": "Sea",
+  "countries": [
+    "China",
+    "Japan",
+    "South Korea",
+    "Taiwan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 1249000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia"
+  ],
+  "map": "places/maps/east_china_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/East_China_Sea",
+  "fame": 107
+}

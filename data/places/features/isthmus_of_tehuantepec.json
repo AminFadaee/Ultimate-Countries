@@ -1,0 +1,28 @@
+{
+  "key": "Q392250",
+  "qid": "Q392250",
+  "name": "Isthmus of Tehuantepec",
+  "kind": "Isthmus",
+  "countries": [
+    "Mexico"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 90.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Isthmus",
+    "Americas"
+  ],
+  "map": "places/maps/isthmus_of_tehuantepec.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Isthmus_of_Tehuantepec",
+  "fame": 43
+}

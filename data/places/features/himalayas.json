@@ -1,0 +1,31 @@
+{
+  "key": "Q5451",
+  "qid": "Q5451",
+  "name": "Himalayas",
+  "kind": "Mountain range",
+  "countries": [
+    "China",
+    "India",
+    "Nepal",
+    "Bhutan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 8848.86,
+  "length_km": 2400.0,
+  "area_km2": 600000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia"
+  ],
+  "map": "places/maps/himalayas.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Himalayas",
+  "fame": 213
+}

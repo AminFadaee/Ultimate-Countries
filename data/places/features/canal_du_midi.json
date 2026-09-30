@@ -1,0 +1,33 @@
+{
+  "key": "Q202494",
+  "qid": "Q202494",
+  "name": "Canal du Midi",
+  "kind": "Canal",
+  "countries": [
+    "France"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 193.0,
+  "length_km": 241.0,
+  "area_km2": 20.14,
+  "built": "1667–1681",
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Canal",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/canal_du_midi.png",
+  "photo": {
+    "file": "places/photos/canal_du_midi.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Canal%20du%20Midi%2C%20Carcassonne%2C%20Languedoc-Roussillon%2C%20France%20-%20panoramio%20%2825%29.jpg",
+    "credit": "Photo: M.Strīķis · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Canal_du_Midi",
+  "fame": 57
+}

@@ -1,0 +1,33 @@
+{
+  "key": "Q5725",
+  "qid": "Q5725",
+  "name": "Mohenjo-daro",
+  "kind": "Landmark",
+  "countries": [
+    "Pakistan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 2.4,
+  "built": "c. 2500 BC",
+  "culture": "Indus Valley Civilisation",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/mohenjo_daro.png",
+  "photo": {
+    "file": "places/photos/mohenjo_daro.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mohenjodaro%20Sindh.jpeg",
+    "credit": "Photo: The original uploader was M.Imran at English Wikipedia. · CC SA 1.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mohenjo-daro",
+  "fame": 98
+}

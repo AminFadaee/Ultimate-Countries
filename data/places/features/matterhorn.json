@@ -1,0 +1,33 @@
+{
+  "key": "Q1374",
+  "qid": "Q1374",
+  "name": "Matterhorn",
+  "kind": "Mountain",
+  "countries": [
+    "Italy",
+    "Switzerland"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4477.54,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Europe"
+  ],
+  "map": "places/maps/matterhorn.png",
+  "photo": {
+    "file": "places/photos/matterhorn.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Cervino%20cloud.jpg",
+    "credit": "Photo: Gianluca Miscione · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Matterhorn",
+  "fame": 92
+}

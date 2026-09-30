@@ -1,0 +1,32 @@
+{
+  "key": "Q163607",
+  "qid": "Q163607",
+  "name": "Angkor",
+  "kind": "Landmark",
+  "countries": [
+    "Cambodia"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 351.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/angkor.png",
+  "photo": {
+    "file": "places/photos/angkor.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat%20W-Seite.jpg",
+    "credit": "Photo: Manfred Werner talk · contribs) · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Angkor",
+  "fame": 91
+}

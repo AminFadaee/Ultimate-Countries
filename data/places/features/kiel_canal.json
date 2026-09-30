@@ -1,0 +1,32 @@
+{
+  "key": "Q144825",
+  "qid": "Q144825",
+  "name": "Kiel Canal",
+  "kind": "Canal",
+  "countries": [
+    "Germany"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 98.26,
+  "area_km2": null,
+  "built": "1887–1895",
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Canal",
+    "Europe"
+  ],
+  "map": "places/maps/kiel_canal.png",
+  "photo": {
+    "file": "places/photos/kiel_canal.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/13-09-23-Fotoflug-Nordsee-RalfR-N3S%200008.jpg",
+    "credit": "Photo: Ralf Roletschek · GFDL 1.2 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Kiel_Canal",
+  "fame": 67
+}

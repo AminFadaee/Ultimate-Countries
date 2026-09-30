@@ -1,0 +1,29 @@
+{
+  "key": "Q35342",
+  "qid": "Q35342",
+  "name": "Titicaca",
+  "kind": "Lake",
+  "countries": [
+    "Bolivia",
+    "Peru"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 3812.0,
+  "length_km": 204.0,
+  "area_km2": 8562.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Americas"
+  ],
+  "map": "places/maps/titicaca.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Titicaca",
+  "fame": 132
+}

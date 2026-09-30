@@ -1,0 +1,32 @@
+{
+  "key": "Q5690",
+  "qid": "Q5690",
+  "name": "Sparta",
+  "kind": "Landmark",
+  "countries": [
+    "Greece"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 1.182,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/sparta.png",
+  "photo": {
+    "file": "places/photos/sparta.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sparta.jpg",
+    "credit": "Photo: Napoleon Vier at Dutch Wikipedia · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Sparta",
+  "fame": 108
+}

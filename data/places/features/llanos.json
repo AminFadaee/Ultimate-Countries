@@ -1,0 +1,29 @@
+{
+  "key": "Q141501",
+  "qid": "Q141501",
+  "name": "Llanos",
+  "kind": "Plain",
+  "countries": [
+    "Venezuela",
+    "Colombia"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 375787.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Plain",
+    "Americas"
+  ],
+  "map": "places/maps/llanos.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Llanos",
+  "fame": 49
+}

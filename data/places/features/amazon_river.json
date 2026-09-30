@@ -1,0 +1,30 @@
+{
+  "key": "Q3783",
+  "qid": "Q3783",
+  "name": "Amazon River",
+  "kind": "River",
+  "countries": [
+    "Brazil",
+    "Peru",
+    "Colombia"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 6992.15,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Americas"
+  ],
+  "map": "places/maps/amazon_river.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Amazon_River",
+  "fame": 216
+}

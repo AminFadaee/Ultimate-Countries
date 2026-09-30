@@ -1,0 +1,30 @@
+{
+  "key": "Q45403",
+  "qid": "Q45403",
+  "name": "Brahmaputra River",
+  "kind": "River",
+  "countries": [
+    "India",
+    "Bangladesh",
+    "China"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 2900.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Asia"
+  ],
+  "map": "places/maps/brahmaputra_river.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Brahmaputra_River",
+  "fame": 113
+}

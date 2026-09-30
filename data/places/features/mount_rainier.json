@@ -1,0 +1,32 @@
+{
+  "key": "Q194057",
+  "qid": "Q194057",
+  "name": "Mount Rainier",
+  "kind": "Volcano",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4389.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Americas"
+  ],
+  "map": "places/maps/mount_rainier.png",
+  "photo": {
+    "file": "places/photos/mount_rainier.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Rainier%205917s.JPG",
+    "credit": "Photo: Walter Siegmund · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Rainier",
+  "fame": 69
+}

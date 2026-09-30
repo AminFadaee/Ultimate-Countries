@@ -1,0 +1,35 @@
+{
+  "key": "Q34675",
+  "qid": "Q34675",
+  "name": "Persian Gulf",
+  "kind": "Sea",
+  "countries": [
+    "Bahrain",
+    "Iran",
+    "Iraq",
+    "Kuwait",
+    "Oman",
+    "Qatar",
+    "Saudi Arabia",
+    "United Arab Emirates"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 989.0,
+  "area_km2": 251000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia"
+  ],
+  "map": "places/maps/persian_gulf.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Persian_Gulf",
+  "fame": 160
+}

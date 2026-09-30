@@ -1,0 +1,29 @@
+{
+  "key": "Q186547",
+  "qid": "Q186547",
+  "name": "Scandinavian Mountains",
+  "kind": "Mountain range",
+  "countries": [
+    "Norway",
+    "Sweden"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2469.0,
+  "length_km": 1700.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Europe"
+  ],
+  "map": "places/maps/scandinavian_mountains.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Scandinavian_Mountains",
+  "fame": 74
+}

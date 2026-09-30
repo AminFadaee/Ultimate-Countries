@@ -1,0 +1,38 @@
+{
+  "key": "Q81483",
+  "qid": "Q81483",
+  "name": "Levant",
+  "kind": "Region",
+  "countries": [
+    "Libya",
+    "Egypt",
+    "Turkey",
+    "Iraq",
+    "Syria",
+    "Greece",
+    "Jordan"
+  ],
+  "continents": [
+    "Africa",
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Africa",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/levant.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Levant",
+  "fame": 106
+}

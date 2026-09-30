@@ -1,0 +1,33 @@
+{
+  "key": "Q1288",
+  "qid": "Q1288",
+  "name": "Carpathians",
+  "kind": "Mountain range",
+  "countries": [
+    "Romania",
+    "Slovakia",
+    "Ukraine",
+    "Poland",
+    "Czechia",
+    "Hungary"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2655.0,
+  "length_km": 1700.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Europe"
+  ],
+  "map": "places/maps/carpathians.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Carpathian_Mountains",
+  "fame": 128
+}

@@ -1,0 +1,32 @@
+{
+  "key": "Q181476",
+  "qid": "Q181476",
+  "name": "Cotopaxi volcano",
+  "kind": "Volcano",
+  "countries": [
+    "Ecuador"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 5897.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Americas"
+  ],
+  "map": "places/maps/cotopaxi_volcano.png",
+  "photo": {
+    "file": "places/photos/cotopaxi_volcano.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/V%C3%B3lcan%20Cotopaxi.jpg",
+    "credit": "Photo: camilogaleano.com · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Cotopaxi",
+  "fame": 65
+}

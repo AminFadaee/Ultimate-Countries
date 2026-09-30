@@ -1,0 +1,30 @@
+{
+  "key": "Q37394",
+  "qid": "Q37394",
+  "name": "Melanesia",
+  "kind": "Region",
+  "countries": [
+    "Solomon Islands",
+    "Fiji",
+    "Vanuatu"
+  ],
+  "continents": [
+    "Oceania"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Oceania"
+  ],
+  "map": "places/maps/melanesia.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Melanesia",
+  "fame": 145
+}

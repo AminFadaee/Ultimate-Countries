@@ -1,0 +1,33 @@
+{
+  "key": "Q9141",
+  "qid": "Q9141",
+  "name": "Taj Mahal",
+  "kind": "Landmark",
+  "countries": [
+    "India"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Agra",
+  "height_m": 73.0,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.17,
+  "built": "1631–1653",
+  "culture": "Mughal architecture",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/taj_mahal.png",
+  "photo": {
+    "file": "places/photos/taj_mahal.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Taj%20Mahal%2C%20Agra%2C%20India%20edit3.jpg",
+    "credit": "Photo: Yann; edited by King of Hearts, Jbarta · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Taj_Mahal",
+  "fame": 184
+}

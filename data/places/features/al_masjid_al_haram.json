@@ -1,0 +1,32 @@
+{
+  "key": "Q428858",
+  "qid": "Q428858",
+  "name": "Al-Masjid Al-Haram",
+  "kind": "Landmark",
+  "countries": [
+    "Saudi Arabia"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": 137.5,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/al_masjid_al_haram.png",
+  "photo": {
+    "file": "places/photos/al_masjid_al_haram.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Khalili%20Collection%20Hajj%20and%20Arts%20of%20Pilgrimage%20arc.pp%200211.04%20CROP.jpg",
+    "credit": "Photo: Khalili Collections · Public domain · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Masjid_al-Haram",
+  "fame": 109
+}

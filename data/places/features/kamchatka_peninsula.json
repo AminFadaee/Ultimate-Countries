@@ -1,0 +1,28 @@
+{
+  "key": "Q993",
+  "qid": "Q993",
+  "name": "Kamchatka Peninsula",
+  "kind": "Peninsula",
+  "countries": [
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 270000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Peninsula",
+    "Europe"
+  ],
+  "map": "places/maps/kamchatka_peninsula.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Kamchatka_Peninsula",
+  "fame": 105
+}

@@ -1,0 +1,29 @@
+{
+  "key": "Q33254",
+  "qid": "Q33254",
+  "name": "Tasman Sea",
+  "kind": "Sea",
+  "countries": [
+    "Australia",
+    "New Zealand"
+  ],
+  "continents": [
+    "Oceania"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 2300000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Oceania"
+  ],
+  "map": "places/maps/tasman_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Tasman_Sea",
+  "fame": 94
+}

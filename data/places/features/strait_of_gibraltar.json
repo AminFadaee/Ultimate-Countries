@@ -1,0 +1,32 @@
+{
+  "key": "Q36124",
+  "qid": "Q36124",
+  "name": "Strait of Gibraltar",
+  "kind": "Sea",
+  "countries": [
+    "Gibraltar",
+    "Morocco",
+    "Spain"
+  ],
+  "continents": [
+    "Africa",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 59.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Africa",
+    "Europe"
+  ],
+  "map": "places/maps/strait_of_gibraltar.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Strait_of_Gibraltar",
+  "fame": 125
+}

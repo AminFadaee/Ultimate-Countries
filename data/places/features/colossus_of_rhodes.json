@@ -1,0 +1,32 @@
+{
+  "key": "Q41553",
+  "qid": "Q41553",
+  "name": "Colossus of Rhodes",
+  "kind": "Landmark",
+  "countries": [
+    "Greece"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "Rhodes",
+  "height_m": 33.0,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "c. 292–280 BC",
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/colossus_of_rhodes.png",
+  "photo": {
+    "file": "places/photos/colossus_of_rhodes.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Colosse%20de%20Rhodes%20%28Barclay%29.jpg",
+    "credit": "Photo: gravure sur bois de Sidney Barclay numérisée Google · Public domain · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Colossus_of_Rhodes",
+  "fame": 94
+}

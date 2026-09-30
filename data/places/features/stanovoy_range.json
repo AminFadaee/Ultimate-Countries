@@ -1,0 +1,28 @@
+{
+  "key": "Q214284",
+  "qid": "Q214284",
+  "name": "Stanovoy Range",
+  "kind": "Mountain range",
+  "countries": [
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2412.0,
+  "length_km": 720.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Europe"
+  ],
+  "map": "places/maps/stanovoy_range.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Stanovoy_Range",
+  "fame": 47
+}

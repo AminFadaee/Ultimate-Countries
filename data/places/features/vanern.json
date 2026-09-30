@@ -1,0 +1,28 @@
+{
+  "key": "Q173596",
+  "qid": "Q173596",
+  "name": "Vänern",
+  "kind": "Lake",
+  "countries": [
+    "Sweden"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 44.4,
+  "length_km": 140.0,
+  "area_km2": 5650.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Europe"
+  ],
+  "map": "places/maps/vanern.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/V%C3%A4nern",
+  "fame": 79
+}

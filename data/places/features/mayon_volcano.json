@@ -1,0 +1,32 @@
+{
+  "key": "Q1484",
+  "qid": "Q1484",
+  "name": "Mayon Volcano",
+  "kind": "Volcano",
+  "countries": [
+    "Philippines"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2462.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Asia"
+  ],
+  "map": "places/maps/mayon_volcano.png",
+  "photo": {
+    "file": "places/photos/mayon_volcano.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mayon%20Volcano%20as%20of%20March%202020.jpg",
+    "credit": "Photo: Marisa Mercado · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mayon",
+  "fame": 69
+}

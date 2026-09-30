@@ -1,0 +1,36 @@
+{
+  "key": "Q560549",
+  "qid": "Q560549",
+  "name": "North European Plain",
+  "kind": "Plain",
+  "countries": [
+    "Russia",
+    "France",
+    "Poland",
+    "Germany",
+    "Belarus",
+    "Lithuania",
+    "Latvia",
+    "Estonia",
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Plain",
+    "Europe"
+  ],
+  "map": "places/maps/north_european_plain.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/North_European_Plain",
+  "fame": 53
+}

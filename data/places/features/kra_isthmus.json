@@ -1,0 +1,29 @@
+{
+  "key": "Q322356",
+  "qid": "Q322356",
+  "name": "Kra Isthmus",
+  "kind": "Isthmus",
+  "countries": [
+    "Thailand",
+    "Myanmar"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 74.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Isthmus",
+    "Asia"
+  ],
+  "map": "places/maps/kra_isthmus.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Kra_Isthmus",
+  "fame": 40
+}

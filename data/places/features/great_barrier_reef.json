@@ -1,0 +1,28 @@
+{
+  "key": "Q7343",
+  "qid": "Q7343",
+  "name": "Great Barrier Reef",
+  "kind": "Reef",
+  "countries": [],
+  "continents": [],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 2300.0,
+  "area_km2": 348000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Reef",
+    "World_Heritage"
+  ],
+  "map": "places/maps/great_barrier_reef.png",
+  "photo": {
+    "file": "places/photos/great_barrier_reef.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/GreatBarrierReef-EO.JPG",
+    "credit": "Photo: NASA, by MISR · Public domain · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Great_Barrier_Reef",
+  "fame": 158
+}

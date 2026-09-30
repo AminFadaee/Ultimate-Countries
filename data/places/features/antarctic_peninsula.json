@@ -1,0 +1,23 @@
+{
+  "key": "Q185605",
+  "qid": "Q185605",
+  "name": "Antarctic Peninsula",
+  "kind": "Peninsula",
+  "countries": [],
+  "continents": [],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Peninsula"
+  ],
+  "map": "places/maps/antarctic_peninsula.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Antarctic_Peninsula",
+  "fame": 79
+}

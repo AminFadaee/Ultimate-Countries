@@ -1,0 +1,40 @@
+{
+  "key": "Q66065",
+  "qid": "Q66065",
+  "name": "Sahel",
+  "kind": "Region",
+  "countries": [
+    "Algeria",
+    "Sudan",
+    "Chad",
+    "Mali",
+    "Niger",
+    "Mauritania",
+    "Nigeria",
+    "South Sudan",
+    "Central African Republic",
+    "Cameroon",
+    "Burkina Faso",
+    "Senegal",
+    "Eritrea"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Africa"
+  ],
+  "map": "places/maps/sahel.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Sahel",
+  "fame": 115
+}

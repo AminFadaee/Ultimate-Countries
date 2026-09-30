@@ -1,0 +1,29 @@
+{
+  "key": "Q37040",
+  "qid": "Q37040",
+  "name": "Baffin Bay",
+  "kind": "Sea",
+  "countries": [
+    "Canada",
+    "Greenland"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 1130.0,
+  "area_km2": 689000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Americas"
+  ],
+  "map": "places/maps/baffin_bay.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Baffin_Bay",
+  "fame": 95
+}

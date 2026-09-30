@@ -1,0 +1,29 @@
+{
+  "key": "Q125888",
+  "qid": "Q125888",
+  "name": "Lake Albert",
+  "kind": "Lake",
+  "countries": [
+    "Democratic Republic of the Congo",
+    "Uganda"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 619.0,
+  "length_km": 160.0,
+  "area_km2": 5270.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Africa"
+  ],
+  "map": "places/maps/lake_albert.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Albert_(Africa)",
+  "fame": 88
+}

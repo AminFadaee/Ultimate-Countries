@@ -1,0 +1,29 @@
+{
+  "key": "Q1383",
+  "qid": "Q1383",
+  "name": "Lake Huron",
+  "kind": "Lake",
+  "countries": [
+    "Canada",
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 176.0,
+  "length_km": 332.0,
+  "area_km2": 59600.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Americas"
+  ],
+  "map": "places/maps/lake_huron.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Huron",
+  "fame": 100
+}

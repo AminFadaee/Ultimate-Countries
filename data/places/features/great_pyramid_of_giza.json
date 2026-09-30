@@ -1,0 +1,32 @@
+{
+  "key": "Q37200",
+  "qid": "Q37200",
+  "name": "Great Pyramid of Giza",
+  "kind": "Landmark",
+  "countries": [
+    "Egypt"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": 146.7,
+  "elevation_m": 95.0,
+  "length_km": null,
+  "area_km2": 0.05306112,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Africa"
+  ],
+  "map": "places/maps/great_pyramid_of_giza.png",
+  "photo": {
+    "file": "places/photos/great_pyramid_of_giza.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kheops-Pyramid.jpg",
+    "credit": "Photo: Nina · CC BY 2.5 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+  "fame": 126
+}

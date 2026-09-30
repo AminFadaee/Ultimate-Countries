@@ -1,0 +1,28 @@
+{
+  "key": "Q215917",
+  "qid": "Q215917",
+  "name": "Verkhoyansk Range",
+  "kind": "Mountain range",
+  "countries": [
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2409.0,
+  "length_km": 1200.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Europe"
+  ],
+  "map": "places/maps/verkhoyansk_range.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Verkhoyansk_Range",
+  "fame": 54
+}

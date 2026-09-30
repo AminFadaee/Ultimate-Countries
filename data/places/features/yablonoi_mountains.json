@@ -1,0 +1,31 @@
+{
+  "key": "Q201678",
+  "qid": "Q201678",
+  "name": "Yablonoi Mountains",
+  "kind": "Mountain range",
+  "countries": [
+    "Russia",
+    "Mongolia"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2450.0,
+  "length_km": 1600.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/yablonoi_mountains.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Yablonovy_Mountains",
+  "fame": 43
+}

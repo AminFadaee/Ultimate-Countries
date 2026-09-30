@@ -1,0 +1,28 @@
+{
+  "key": "Q973",
+  "qid": "Q973",
+  "name": "Ob",
+  "kind": "River",
+  "countries": [
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 3650.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Europe"
+  ],
+  "map": "places/maps/ob.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Ob",
+  "fame": 112
+}

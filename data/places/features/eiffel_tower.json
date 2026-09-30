@@ -1,0 +1,32 @@
+{
+  "key": "Q243",
+  "qid": "Q243",
+  "name": "Eiffel Tower",
+  "kind": "Landmark",
+  "countries": [
+    "France"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "Paris",
+  "height_m": 330.0,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1887–1889",
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/eiffel_tower.png",
+  "photo": {
+    "file": "places/photos/eiffel_tower.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tour%20Eiffel%20Wikimedia%20Commons.jpg",
+    "credit": "Photo: Benh LIEU SONG · Public domain · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Eiffel_Tower",
+  "fame": 191
+}

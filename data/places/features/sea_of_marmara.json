@@ -1,0 +1,28 @@
+{
+  "key": "Q35367",
+  "qid": "Q35367",
+  "name": "Sea of Marmara",
+  "kind": "Sea",
+  "countries": [
+    "Turkey"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 11350.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia"
+  ],
+  "map": "places/maps/sea_of_marmara.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Sea_of_Marmara",
+  "fame": 126
+}

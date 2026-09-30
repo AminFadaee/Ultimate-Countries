@@ -1,0 +1,37 @@
+{
+  "key": "Q81591",
+  "qid": "Q81591",
+  "name": "Great Rift Valley",
+  "kind": "Valley",
+  "countries": [
+    "Ethiopia",
+    "Tanzania",
+    "Kenya",
+    "Uganda",
+    "Eritrea",
+    "Djibouti",
+    "Malawi",
+    "Burundi",
+    "Rwanda",
+    "Democratic Republic of the Congo"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 4830.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Valley",
+    "Africa"
+  ],
+  "map": "places/maps/great_rift_valley.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Great_Rift_Valley",
+  "fame": 88
+}

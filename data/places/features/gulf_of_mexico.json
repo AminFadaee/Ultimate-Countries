@@ -1,0 +1,30 @@
+{
+  "key": "Q12630",
+  "qid": "Q12630",
+  "name": "Gulf of Mexico",
+  "kind": "Sea",
+  "countries": [
+    "Cuba",
+    "Mexico",
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 0.0,
+  "length_km": null,
+  "area_km2": 1550000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Americas"
+  ],
+  "map": "places/maps/gulf_of_mexico.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Gulf_of_Mexico",
+  "fame": 135
+}

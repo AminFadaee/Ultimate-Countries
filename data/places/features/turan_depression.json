@@ -1,0 +1,30 @@
+{
+  "key": "Q575516",
+  "qid": "Q575516",
+  "name": "Turan Depression",
+  "kind": "Plain",
+  "countries": [
+    "Turkmenistan",
+    "Uzbekistan",
+    "Kazakhstan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Plain",
+    "Asia"
+  ],
+  "map": "places/maps/turan_depression.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Turan_Depression",
+  "fame": 47
+}

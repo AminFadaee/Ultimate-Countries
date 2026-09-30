@@ -1,0 +1,31 @@
+{
+  "key": "Q47700",
+  "qid": "Q47700",
+  "name": "Kalahari Desert",
+  "kind": "Desert",
+  "countries": [
+    "Namibia",
+    "Botswana",
+    "South Africa",
+    "Angola"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1168.0,
+  "length_km": 4000.0,
+  "area_km2": 930000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Desert",
+    "Africa"
+  ],
+  "map": "places/maps/kalahari_desert.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Kalahari_Desert",
+  "fame": 105
+}

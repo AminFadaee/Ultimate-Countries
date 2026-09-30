@@ -1,0 +1,32 @@
+{
+  "key": "Q1024",
+  "qid": "Q1024",
+  "name": "Triglav",
+  "kind": "Mountain",
+  "countries": [
+    "Slovenia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2864.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Europe"
+  ],
+  "map": "places/maps/triglav.png",
+  "photo": {
+    "file": "places/photos/triglav.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Triglav.jpg",
+    "credit": "Photo: Andrej Jakobčič · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Triglav",
+  "fame": 65
+}

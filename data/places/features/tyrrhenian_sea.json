@@ -1,0 +1,29 @@
+{
+  "key": "Q38882",
+  "qid": "Q38882",
+  "name": "Tyrrhenian Sea",
+  "kind": "Sea",
+  "countries": [
+    "France",
+    "Italy"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 275000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Europe"
+  ],
+  "map": "places/maps/tyrrhenian_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Tyrrhenian_Sea",
+  "fame": 111
+}

@@ -1,0 +1,29 @@
+{
+  "key": "rainforest:Borneo rainforest",
+  "qid": null,
+  "name": "Borneo rainforest",
+  "kind": "Rainforest",
+  "countries": [
+    "Indonesia",
+    "Malaysia"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Rainforest",
+    "Asia"
+  ],
+  "map": "places/maps/borneo_rainforest.png",
+  "photo": null,
+  "wikipedia": null,
+  "fame": 0
+}

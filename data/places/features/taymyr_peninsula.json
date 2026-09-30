@@ -1,0 +1,28 @@
+{
+  "key": "Q37056",
+  "qid": "Q37056",
+  "name": "Taymyr Peninsula",
+  "kind": "Peninsula",
+  "countries": [
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 400000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Peninsula",
+    "Europe"
+  ],
+  "map": "places/maps/taymyr_peninsula.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Taymyr_Peninsula",
+  "fame": 75
+}

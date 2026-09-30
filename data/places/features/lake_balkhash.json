@@ -1,0 +1,28 @@
+{
+  "key": "Q134485",
+  "qid": "Q134485",
+  "name": "Lake Balkhash",
+  "kind": "Lake",
+  "countries": [
+    "Kazakhstan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 342.0,
+  "length_km": 620.0,
+  "area_km2": 18740.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Asia"
+  ],
+  "map": "places/maps/lake_balkhash.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Balkhash",
+  "fame": 89
+}

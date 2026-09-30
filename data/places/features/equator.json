@@ -1,0 +1,41 @@
+{
+  "key": "Q23538",
+  "qid": "Q23538",
+  "name": "Equator",
+  "kind": "Line",
+  "countries": [
+    "Brazil",
+    "Indonesia",
+    "Democratic Republic of the Congo",
+    "Kenya",
+    "Colombia",
+    "Ecuador",
+    "Gabon",
+    "Republic of the Congo",
+    "Uganda",
+    "Somalia"
+  ],
+  "continents": [
+    "Africa",
+    "Americas",
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 40075.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Line",
+    "Africa",
+    "Americas",
+    "Asia"
+  ],
+  "map": "places/maps/equator.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Equator",
+  "fame": 164
+}

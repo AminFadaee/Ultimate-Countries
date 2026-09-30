@@ -1,0 +1,32 @@
+{
+  "key": "Q1451",
+  "qid": "Q1451",
+  "name": "Pinatubo",
+  "kind": "Volcano",
+  "countries": [
+    "Philippines"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1486.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Asia"
+  ],
+  "map": "places/maps/pinatubo.png",
+  "photo": {
+    "file": "places/photos/pinatubo.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pinatubo%20Crater%20Lake%20%28052005%29.jpg",
+    "credit": "Photo: Wildfire2383 · Public domain · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Pinatubo",
+  "fame": 70
+}

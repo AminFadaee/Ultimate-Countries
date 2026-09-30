@@ -1,0 +1,34 @@
+{
+  "key": "Q13924",
+  "qid": "Q13924",
+  "name": "Adriatic Sea",
+  "kind": "Sea",
+  "countries": [
+    "Albania",
+    "Bosnia and Herzegovina",
+    "Croatia",
+    "Greece",
+    "Italy",
+    "Montenegro",
+    "Slovenia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 0.0,
+  "length_km": null,
+  "area_km2": 138595.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Europe"
+  ],
+  "map": "places/maps/adriatic_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Adriatic_Sea",
+  "fame": 156
+}

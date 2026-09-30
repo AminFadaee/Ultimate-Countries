@@ -1,0 +1,32 @@
+{
+  "key": "Q560198",
+  "qid": "Q560198",
+  "name": "Mongolian Plateau",
+  "kind": "Plateau",
+  "countries": [
+    "Mongolia",
+    "China",
+    "Russia"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Plateau",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/mongolian_plateau.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Mongolian_Plateau",
+  "fame": 48
+}

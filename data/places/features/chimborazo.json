@@ -1,0 +1,32 @@
+{
+  "key": "Q14081",
+  "qid": "Q14081",
+  "name": "Chimborazo",
+  "kind": "Volcano",
+  "countries": [
+    "Ecuador"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 6263.47,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Americas"
+  ],
+  "map": "places/maps/chimborazo.png",
+  "photo": {
+    "file": "places/photos/chimborazo.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Volc%C3%A1n%20Chimborazo%20desde%20Riobamba.jpg",
+    "credit": "Photo: Eduardo Navas · CC BY-SA 2.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Chimborazo",
+  "fame": 84
+}

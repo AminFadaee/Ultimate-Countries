@@ -1,0 +1,29 @@
+{
+  "key": "Q1052867",
+  "qid": "Q1052867",
+  "name": "Mekong Delta",
+  "kind": "Delta",
+  "countries": [
+    "Vietnam",
+    "Cambodia"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2.0,
+  "length_km": null,
+  "area_km2": 40576.6,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Delta",
+    "Asia"
+  ],
+  "map": "places/maps/mekong_delta.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Mekong_Delta",
+  "fame": 47
+}

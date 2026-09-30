@@ -1,0 +1,33 @@
+{
+  "key": "Q28061",
+  "qid": "Q28061",
+  "name": "Quebrada de Humahuaca",
+  "kind": "Canyon",
+  "countries": [
+    "Argentina"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 3224.0,
+  "length_km": null,
+  "area_km2": 3696.488125,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Canyon",
+    "Americas",
+    "World_Heritage"
+  ],
+  "map": "places/maps/quebrada_de_humahuaca.png",
+  "photo": {
+    "file": "places/photos/quebrada_de_humahuaca.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Jujuy-Purmamarca-P3120033.JPG",
+    "credit": "Photo: Unknown author · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Quebrada_de_Humahuaca",
+  "fame": 50
+}

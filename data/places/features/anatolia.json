@@ -1,0 +1,28 @@
+{
+  "key": "Q51614",
+  "qid": "Q51614",
+  "name": "Anatolia",
+  "kind": "Peninsula",
+  "countries": [
+    "Turkey"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 756000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Peninsula",
+    "Asia"
+  ],
+  "map": "places/maps/anatolia.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Anatolia",
+  "fame": 146
+}

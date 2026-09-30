@@ -1,0 +1,29 @@
+{
+  "key": "Q1062",
+  "qid": "Q1062",
+  "name": "Lake Ontario",
+  "kind": "Lake",
+  "countries": [
+    "Canada",
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 74.1,
+  "length_km": 311.0,
+  "area_km2": 18529.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Americas"
+  ],
+  "map": "places/maps/lake_ontario.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Ontario",
+  "fame": 108
+}

@@ -1,0 +1,37 @@
+{
+  "key": "Q159183",
+  "qid": "Q159183",
+  "name": "Philippine Sea",
+  "kind": "Sea",
+  "countries": [
+    "Federated States of Micronesia",
+    "Guam",
+    "Indonesia",
+    "Japan",
+    "Northern Mariana Islands",
+    "Palau",
+    "Philippines",
+    "Taiwan"
+  ],
+  "continents": [
+    "Asia",
+    "Oceania"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 5000000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia",
+    "Oceania"
+  ],
+  "map": "places/maps/philippine_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Philippine_Sea",
+  "fame": 91
+}

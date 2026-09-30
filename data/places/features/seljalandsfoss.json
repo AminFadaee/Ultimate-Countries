@@ -1,0 +1,32 @@
+{
+  "key": "Q777882",
+  "qid": "Q777882",
+  "name": "Seljalandsfoss",
+  "kind": "Waterfall",
+  "countries": [
+    "Iceland"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": 65.0,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Waterfall",
+    "Europe"
+  ],
+  "map": "places/maps/seljalandsfoss.png",
+  "photo": {
+    "file": "places/photos/seljalandsfoss.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Seljalandsfoss%20-%20panoramio%20%287%29.jpg",
+    "credit": "Photo: Zoran Kurelić Rabko · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Seljalandsfoss",
+  "fame": 40
+}

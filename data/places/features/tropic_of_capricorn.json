@@ -1,0 +1,41 @@
+{
+  "key": "Q177440",
+  "qid": "Q177440",
+  "name": "Tropic of Capricorn",
+  "kind": "Line",
+  "countries": [
+    "Australia",
+    "Brazil",
+    "Botswana",
+    "Argentina",
+    "Paraguay",
+    "Namibia",
+    "South Africa",
+    "Madagascar",
+    "Mozambique",
+    "Chile"
+  ],
+  "continents": [
+    "Africa",
+    "Americas",
+    "Oceania"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Line",
+    "Africa",
+    "Americas",
+    "Oceania"
+  ],
+  "map": "places/maps/tropic_of_capricorn.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn",
+  "fame": 92
+}

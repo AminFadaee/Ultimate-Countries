@@ -1,0 +1,32 @@
+{
+  "key": "Q203568",
+  "qid": "Q203568",
+  "name": "Mount Aragats",
+  "kind": "Mountain",
+  "countries": [
+    "Armenia"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4090.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/mount_aragats.png",
+  "photo": {
+    "file": "places/photos/mount_aragats.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Aragats%202020-05-11.jpg",
+    "credit": "Photo: Armenak Margarian · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Aragats",
+  "fame": 68
+}

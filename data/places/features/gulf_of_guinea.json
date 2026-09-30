@@ -1,0 +1,37 @@
+{
+  "key": "Q41430",
+  "qid": "Q41430",
+  "name": "Gulf of Guinea",
+  "kind": "Sea",
+  "countries": [
+    "Benin",
+    "Cameroon",
+    "Equatorial Guinea",
+    "Gabon",
+    "Ghana",
+    "Ivory Coast",
+    "Liberia",
+    "Nigeria",
+    "São Tomé and Príncipe",
+    "Togo"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 0.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Africa"
+  ],
+  "map": "places/maps/gulf_of_guinea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Gulf_of_Guinea",
+  "fame": 112
+}

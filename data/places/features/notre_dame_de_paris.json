@@ -1,0 +1,32 @@
+{
+  "key": "Q2981",
+  "qid": "Q2981",
+  "name": "Notre-Dame de Paris",
+  "kind": "Landmark",
+  "countries": [
+    "France"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": 90.0,
+  "elevation_m": null,
+  "length_km": 0.127,
+  "area_km2": 0.0055,
+  "built": "1163–1345",
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/notre_dame_de_paris.png",
+  "photo": {
+    "file": "places/photos/notre_dame_de_paris.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Notre-Dame%20de%20Paris%202013-07-24.jpg",
+    "credit": "Photo: P e z i · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris",
+  "fame": 125
+}

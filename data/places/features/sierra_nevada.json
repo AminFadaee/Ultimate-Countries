@@ -1,0 +1,28 @@
+{
+  "key": "Q26777",
+  "qid": "Q26777",
+  "name": "Sierra Nevada",
+  "kind": "Mountain range",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4421.132703,
+  "length_km": 644.0,
+  "area_km2": 63118.01024888832,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Americas"
+  ],
+  "map": "places/maps/sierra_nevada.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Sierra_Nevada",
+  "fame": 81
+}

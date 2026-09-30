@@ -1,0 +1,29 @@
+{
+  "key": "Q464909",
+  "qid": "Q464909",
+  "name": "Nubian Desert",
+  "kind": "Desert",
+  "countries": [
+    "Sudan",
+    "Egypt"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 400000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Desert",
+    "Africa"
+  ],
+  "map": "places/maps/nubian_desert.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Nubian_Desert",
+  "fame": 51
+}

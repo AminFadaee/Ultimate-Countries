@@ -1,0 +1,23 @@
+{
+  "key": "Q46",
+  "qid": "Q46",
+  "name": "Europe",
+  "kind": "Continent",
+  "countries": [],
+  "continents": [],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 10186000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Continent"
+  ],
+  "map": "places/maps/europe.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Europe",
+  "fame": 406
+}

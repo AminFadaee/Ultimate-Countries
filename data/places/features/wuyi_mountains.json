@@ -1,0 +1,29 @@
+{
+  "key": "Q207692",
+  "qid": "Q207692",
+  "name": "Wuyi Mountains",
+  "kind": "Mountain range",
+  "countries": [
+    "China"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2158.0,
+  "length_km": null,
+  "area_km2": 1070.44,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Mountain_range",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/wuyi_mountains.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Wuyi_Mountains",
+  "fame": 54
+}

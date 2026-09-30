@@ -1,0 +1,32 @@
+{
+  "key": "Q33910",
+  "qid": "Q33910",
+  "name": "Uluru",
+  "kind": "Mountain",
+  "countries": [
+    "Australia"
+  ],
+  "continents": [
+    "Oceania"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 900.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Oceania"
+  ],
+  "map": "places/maps/uluru.png",
+  "photo": {
+    "file": "places/photos/uluru.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20at%20Uluru%20on%20July%2030%2C%202005.jpg",
+    "credit": "Photo: Thomas Schoch · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Uluru",
+  "fame": 94
+}

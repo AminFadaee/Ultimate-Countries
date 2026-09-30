@@ -1,0 +1,32 @@
+{
+  "key": "Q47672",
+  "qid": "Q47672",
+  "name": "Terracotta Army",
+  "kind": "Landmark",
+  "countries": [
+    "China"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/terracotta_army.png",
+  "photo": {
+    "file": "places/photos/terracotta_army.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/51714-Terracota-Army.jpg",
+    "credit": "Photo: xiquinhosilva · CC BY 2.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Terracotta_Army",
+  "fame": 90
+}

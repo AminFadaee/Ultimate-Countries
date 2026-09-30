@@ -1,0 +1,32 @@
+{
+  "key": "Q43332",
+  "qid": "Q43332",
+  "name": "Pompeii",
+  "kind": "Landmark",
+  "countries": [
+    "Italy"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.9805,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/pompeii.png",
+  "photo": {
+    "file": "places/photos/pompeii.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pompeii%20%284873744179%29.jpg",
+    "credit": "Photo: Glen Scarborough from The Central Coast, Australia · CC BY 2.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Pompeii",
+  "fame": 122
+}

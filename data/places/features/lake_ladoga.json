@@ -1,0 +1,28 @@
+{
+  "key": "Q15288",
+  "qid": "Q15288",
+  "name": "Lake Ladoga",
+  "kind": "Lake",
+  "countries": [
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4.84,
+  "length_km": 219.0,
+  "area_km2": 17700.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Europe"
+  ],
+  "map": "places/maps/lake_ladoga.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Ladoga",
+  "fame": 98
+}

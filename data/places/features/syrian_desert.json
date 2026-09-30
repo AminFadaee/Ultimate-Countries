@@ -1,0 +1,31 @@
+{
+  "key": "Q339162",
+  "qid": "Q339162",
+  "name": "Syrian Desert",
+  "kind": "Desert",
+  "countries": [
+    "Iraq",
+    "Saudi Arabia",
+    "Jordan",
+    "Syria"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 518000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Desert",
+    "Asia"
+  ],
+  "map": "places/maps/syrian_desert.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Syrian_desert",
+  "fame": 71
+}

@@ -1,0 +1,32 @@
+{
+  "key": "Q83497",
+  "qid": "Q83497",
+  "name": "Mount Rushmore",
+  "kind": "Mountain",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1745.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Americas"
+  ],
+  "map": "places/maps/mount_rushmore.png",
+  "photo": {
+    "file": "places/photos/mount_rushmore.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Rushmore%20detail%20view%20%28100MP%29.jpg",
+    "credit": "Photo: Thomas Wolf, www.foto-tw.de · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Rushmore",
+  "fame": 96
+}

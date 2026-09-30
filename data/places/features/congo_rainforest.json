@@ -1,0 +1,34 @@
+{
+  "key": "rainforest:Congo rainforest",
+  "qid": null,
+  "name": "Congo rainforest",
+  "kind": "Rainforest",
+  "countries": [
+    "Democratic Republic of the Congo",
+    "Cameroon",
+    "Republic of the Congo",
+    "Gabon",
+    "Nigeria",
+    "Central African Republic",
+    "Equatorial Guinea"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Rainforest",
+    "Africa"
+  ],
+  "map": "places/maps/congo_rainforest.png",
+  "photo": null,
+  "wikipedia": null,
+  "fame": 0
+}

@@ -1,0 +1,29 @@
+{
+  "key": "Q12707",
+  "qid": "Q12707",
+  "name": "Great Plains",
+  "kind": "Plain",
+  "countries": [
+    "United States",
+    "Canada"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Plain",
+    "Americas"
+  ],
+  "map": "places/maps/great_plains.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Great_Plains",
+  "fame": 93
+}

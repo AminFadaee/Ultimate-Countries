@@ -1,0 +1,34 @@
+{
+  "key": "Q599529",
+  "qid": "Q599529",
+  "name": "Pontic-Caspian steppe",
+  "kind": "Plain",
+  "countries": [
+    "Russia",
+    "Ukraine",
+    "Kazakhstan",
+    "Romania",
+    "Moldova"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 994000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Plain",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/pontic_caspian_steppe.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Pontic%E2%80%93Caspian_steppe",
+  "fame": 40
+}

@@ -1,0 +1,34 @@
+{
+  "key": "Q172077",
+  "qid": "Q172077",
+  "name": "Dome of the Rock",
+  "kind": "Landmark",
+  "countries": [
+    "Israel",
+    "Palestine"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Jerusalem",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/dome_of_the_rock.png",
+  "photo": {
+    "file": "places/photos/dome_of_the_rock.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%D8%AE%D8%B1%D9%8A%D9%81..%D9%82%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B5%D8%AE%D8%B1%D8%A9.jpg",
+    "credit": "Photo: Abdallah Khader · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Dome_of_the_Rock",
+  "fame": 87
+}

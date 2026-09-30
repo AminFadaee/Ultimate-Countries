@@ -1,0 +1,30 @@
+{
+  "key": "Q5505",
+  "qid": "Q5505",
+  "name": "Lake Victoria",
+  "kind": "Lake",
+  "countries": [
+    "Kenya",
+    "Tanzania",
+    "Uganda"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1133.0,
+  "length_km": 337.0,
+  "area_km2": 68100.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Africa"
+  ],
+  "map": "places/maps/lake_victoria.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Victoria",
+  "fame": 162
+}

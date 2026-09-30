@@ -1,0 +1,32 @@
+{
+  "key": "Q459578",
+  "qid": "Q459578",
+  "name": "Erie Canal",
+  "kind": "Canal",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 113.0,
+  "length_km": 843.0,
+  "area_km2": null,
+  "built": "1817–1825",
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Canal",
+    "Americas"
+  ],
+  "map": "places/maps/erie_canal.png",
+  "photo": {
+    "file": "places/photos/erie_canal.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20over%20the%20Erie%20Canal%20in%20North%20Tonawanda%2C%20NY..jpg",
+    "credit": "Photo: Joshua Karn · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Erie_Canal",
+  "fame": 65
+}

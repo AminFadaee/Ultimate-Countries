@@ -1,0 +1,32 @@
+{
+  "key": "Q39231",
+  "qid": "Q39231",
+  "name": "Mount Fuji",
+  "kind": "Volcano",
+  "countries": [
+    "Japan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 3777.24,
+  "length_km": null,
+  "area_km2": 193.119,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Asia"
+  ],
+  "map": "places/maps/mount_fuji.png",
+  "photo": {
+    "file": "places/photos/mount_fuji.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kodaki%20fuji%20frm%20shojinko%20refurb.jpg",
+    "credit": "Photo: 名古屋太郎, (edited by Hannes_24) · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Fuji",
+  "fame": 146
+}

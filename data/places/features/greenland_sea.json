@@ -1,0 +1,32 @@
+{
+  "key": "Q132868",
+  "qid": "Q132868",
+  "name": "Greenland Sea",
+  "kind": "Sea",
+  "countries": [
+    "Greenland",
+    "Iceland",
+    "Norway"
+  ],
+  "continents": [
+    "Americas",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 0.0,
+  "length_km": null,
+  "area_km2": 1205000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Americas",
+    "Europe"
+  ],
+  "map": "places/maps/greenland_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Greenland_Sea",
+  "fame": 93
+}

@@ -1,0 +1,29 @@
+{
+  "key": "Q60140",
+  "qid": "Q60140",
+  "name": "Indian subcontinent",
+  "kind": "Region",
+  "countries": [
+    "Bangladesh",
+    "Bhutan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 4480000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Asia"
+  ],
+  "map": "places/maps/indian_subcontinent.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Indian_subcontinent",
+  "fame": 112
+}

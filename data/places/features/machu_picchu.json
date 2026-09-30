@@ -1,0 +1,32 @@
+{
+  "key": "Q676203",
+  "qid": "Q676203",
+  "name": "Machu Picchu",
+  "kind": "Landmark",
+  "countries": [
+    "Peru"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2430.0,
+  "length_km": null,
+  "area_km2": 325.0,
+  "built": "c. 1450 – c. 1470",
+  "culture": "Inca civilization",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Americas"
+  ],
+  "map": "places/maps/machu_picchu.png",
+  "photo": {
+    "file": "places/photos/machu_picchu.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Machu%20Picchu%2C%202023%20%28012%29.jpg",
+    "credit": "Photo: Draceane · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Machu_Picchu",
+  "fame": 150
+}

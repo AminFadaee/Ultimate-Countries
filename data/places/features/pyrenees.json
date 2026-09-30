@@ -1,0 +1,30 @@
+{
+  "key": "Q12431",
+  "qid": "Q12431",
+  "name": "Pyrenees",
+  "kind": "Mountain range",
+  "countries": [
+    "France",
+    "Spain",
+    "Andorra"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 3404.0,
+  "length_km": 491.0,
+  "area_km2": 19000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Europe"
+  ],
+  "map": "places/maps/pyrenees.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Pyrenees",
+  "fame": 132
+}

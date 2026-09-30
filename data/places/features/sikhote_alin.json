@@ -1,0 +1,28 @@
+{
+  "key": "Q155322",
+  "qid": "Q155322",
+  "name": "Sikhote-Alin",
+  "kind": "Mountain range",
+  "countries": [
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2090.0,
+  "length_km": 1350.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Europe"
+  ],
+  "map": "places/maps/sikhote_alin.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Sikhote-Alin",
+  "fame": 55
+}

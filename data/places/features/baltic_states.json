@@ -1,0 +1,30 @@
+{
+  "key": "Q39731",
+  "qid": "Q39731",
+  "name": "Baltic states",
+  "kind": "Region",
+  "countries": [
+    "Lithuania",
+    "Latvia",
+    "Estonia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Europe"
+  ],
+  "map": "places/maps/baltic_states.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Baltic_states",
+  "fame": 127
+}

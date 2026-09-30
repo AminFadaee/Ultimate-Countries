@@ -1,0 +1,40 @@
+{
+  "key": "Q23522",
+  "qid": "Q23522",
+  "name": "Balkans",
+  "kind": "Peninsula",
+  "countries": [
+    "Bulgaria",
+    "Greece",
+    "Serbia",
+    "Bosnia and Herzegovina",
+    "Croatia",
+    "Albania",
+    "North Macedonia",
+    "Turkey",
+    "Romania",
+    "Montenegro",
+    "Slovenia"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 470000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Peninsula",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/balkans.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Balkans",
+  "fame": 192
+}

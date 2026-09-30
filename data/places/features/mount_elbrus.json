@@ -1,0 +1,32 @@
+{
+  "key": "Q43105",
+  "qid": "Q43105",
+  "name": "Mount Elbrus",
+  "kind": "Mountain",
+  "countries": [
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 5642.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Europe"
+  ],
+  "map": "places/maps/mount_elbrus.png",
+  "photo": {
+    "file": "places/photos/mount_elbrus.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt.%20Elbrus%20in%20Russia.jpg",
+    "credit": "Photo: Jason Blue-Smith · CC BY-SA 2.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Elbrus",
+  "fame": 113
+}

@@ -1,0 +1,29 @@
+{
+  "key": "Q3392",
+  "qid": "Q3392",
+  "name": "Nile",
+  "kind": "River",
+  "countries": [
+    "Sudan",
+    "Egypt"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2700.0,
+  "length_km": 6650.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Africa"
+  ],
+  "map": "places/maps/nile.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Nile",
+  "fame": 247
+}

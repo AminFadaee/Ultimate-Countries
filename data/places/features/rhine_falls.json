@@ -1,0 +1,33 @@
+{
+  "key": "Q214924",
+  "qid": "Q214924",
+  "name": "Rhine Falls",
+  "kind": "Waterfall",
+  "countries": [
+    "Germany",
+    "Switzerland"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": 23.0,
+  "elevation_m": 369.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Waterfall",
+    "Europe"
+  ],
+  "map": "places/maps/rhine_falls.png",
+  "photo": {
+    "file": "places/photos/rhine_falls.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chutes%20du%20Rhin%20-%20Octobre%202021.jpg",
+    "credit": "Photo: Christian David · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Rhine_Falls",
+  "fame": 48
+}

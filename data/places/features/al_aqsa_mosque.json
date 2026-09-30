@@ -1,0 +1,34 @@
+{
+  "key": "Q12192963",
+  "qid": "Q12192963",
+  "name": "Al-Aqsa Mosque",
+  "kind": "Landmark",
+  "countries": [
+    "Israel",
+    "Palestine"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Jerusalem",
+  "height_m": 37.0,
+  "elevation_m": null,
+  "length_km": 0.08,
+  "area_km2": 0.0045,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/al_aqsa_mosque.png",
+  "photo": {
+    "file": "places/photos/al_aqsa_mosque.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem-2013-Temple%20Mount-Al-Aqsa%20Mosque%20%28NE%20exposure%29.jpg",
+    "credit": "Photo: Godot13 · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Al-Aqsa_Mosque",
+  "fame": 103
+}

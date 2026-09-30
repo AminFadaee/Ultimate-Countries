@@ -1,0 +1,31 @@
+{
+  "key": "Q80240",
+  "qid": "Q80240",
+  "name": "Ural River",
+  "kind": "River",
+  "countries": [
+    "Russia",
+    "Kazakhstan"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 2428.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/ural_river.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Ural_(river)",
+  "fame": 111
+}

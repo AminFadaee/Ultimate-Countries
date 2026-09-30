@@ -1,0 +1,28 @@
+{
+  "key": "Q156684",
+  "qid": "Q156684",
+  "name": "Alaska Range",
+  "kind": "Mountain range",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 1000.0,
+  "area_km2": 144752.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Americas"
+  ],
+  "map": "places/maps/alaska_range.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Alaska_Range",
+  "fame": 47
+}

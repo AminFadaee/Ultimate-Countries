@@ -1,0 +1,32 @@
+{
+  "key": "Q1143049",
+  "qid": "Q1143049",
+  "name": "Château de Montsoreau",
+  "kind": "Landmark",
+  "countries": [
+    "France"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1443–1515",
+  "culture": "Flamboyant Gothic French Renaissance",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/chateau_de_montsoreau.png",
+  "photo": {
+    "file": "places/photos/chateau_de_montsoreau.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chateau%20de%20Montsoreau%20Museum%20of%20contemporary%20art%20Loire%20Valley%20France.jpg",
+    "credit": "Photo: Suavemarimagno · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Ch%C3%A2teau_de_Montsoreau",
+  "fame": 100
+}

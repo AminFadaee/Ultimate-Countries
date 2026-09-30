@@ -1,0 +1,36 @@
+{
+  "key": "Q176609",
+  "qid": "Q176609",
+  "name": "Arctic Circle",
+  "kind": "Line",
+  "countries": [
+    "Russia",
+    "Canada",
+    "United States",
+    "Greenland",
+    "Sweden",
+    "Finland",
+    "Norway"
+  ],
+  "continents": [
+    "Americas",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 15984.36,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Line",
+    "Americas",
+    "Europe"
+  ],
+  "map": "places/maps/arctic_circle.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Arctic_Circle",
+  "fame": 96
+}

@@ -1,0 +1,32 @@
+{
+  "key": "Q38417",
+  "qid": "Q38417",
+  "name": "Boyoma Falls",
+  "kind": "Waterfall",
+  "countries": [
+    "Democratic Republic of the Congo"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Waterfall",
+    "Africa"
+  ],
+  "map": "places/maps/boyoma_falls.png",
+  "photo": {
+    "file": "places/photos/boyoma_falls.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Zaire%20kisangani%20stroom%2011%20copy.jpg",
+    "credit": "Photo: Ad Meskens · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Boyoma_Falls",
+  "fame": 44
+}

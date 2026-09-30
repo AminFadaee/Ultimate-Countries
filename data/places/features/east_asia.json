@@ -1,0 +1,32 @@
+{
+  "key": "Q27231",
+  "qid": "Q27231",
+  "name": "East Asia",
+  "kind": "Region",
+  "countries": [
+    "Mongolia",
+    "Japan",
+    "North Korea",
+    "South Korea",
+    "Taiwan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 11839074.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Asia"
+  ],
+  "map": "places/maps/east_asia.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/East_Asia",
+  "fame": 181
+}

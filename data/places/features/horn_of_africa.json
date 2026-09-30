@@ -1,0 +1,30 @@
+{
+  "key": "Q40556",
+  "qid": "Q40556",
+  "name": "Horn of Africa",
+  "kind": "Peninsula",
+  "countries": [
+    "Somalia",
+    "Ethiopia",
+    "Kenya"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 2000000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Peninsula",
+    "Africa"
+  ],
+  "map": "places/maps/horn_of_africa.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Horn_of_Africa",
+  "fame": 116
+}

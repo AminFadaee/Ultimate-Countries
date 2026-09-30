@@ -1,0 +1,32 @@
+{
+  "key": "Q5684",
+  "qid": "Q5684",
+  "name": "Babylon",
+  "kind": "Landmark",
+  "countries": [
+    "Iraq"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "c. 2200 BC",
+  "culture": "Sumerian",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/babylon.png",
+  "photo": {
+    "file": "places/photos/babylon.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/DSC%200658-Recovered.jpg",
+    "credit": "Photo: Mohamm3dfadil · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Babylon",
+  "fame": 127
+}

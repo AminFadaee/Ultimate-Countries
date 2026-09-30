@@ -1,0 +1,23 @@
+{
+  "key": "Q51",
+  "qid": "Q51",
+  "name": "Antarctica",
+  "kind": "Continent",
+  "countries": [],
+  "continents": [],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 14200000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Continent"
+  ],
+  "map": "places/maps/antarctica.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Antarctica",
+  "fame": 316
+}

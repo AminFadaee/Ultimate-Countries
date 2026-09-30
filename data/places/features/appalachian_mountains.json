@@ -1,0 +1,29 @@
+{
+  "key": "Q93332",
+  "qid": "Q93332",
+  "name": "Appalachian Mountains",
+  "kind": "Mountain range",
+  "countries": [
+    "United States",
+    "Canada"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2037.0,
+  "length_km": 2400.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Americas"
+  ],
+  "map": "places/maps/appalachian_mountains.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Appalachian_Mountains",
+  "fame": 98
+}

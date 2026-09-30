@@ -1,0 +1,31 @@
+{
+  "key": "Q181528",
+  "qid": "Q181528",
+  "name": "Libyan Desert",
+  "kind": "Desert",
+  "countries": [
+    "Sudan",
+    "Libya",
+    "Egypt",
+    "Chad"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1024.0,
+  "length_km": null,
+  "area_km2": 1100000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Desert",
+    "Africa"
+  ],
+  "map": "places/maps/libyan_desert.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Libyan_Desert",
+  "fame": 65
+}

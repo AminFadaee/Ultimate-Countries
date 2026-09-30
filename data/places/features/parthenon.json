@@ -1,0 +1,32 @@
+{
+  "key": "Q10288",
+  "qid": "Q10288",
+  "name": "Parthenon",
+  "kind": "Landmark",
+  "countries": [
+    "Greece"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": 13.72,
+  "elevation_m": null,
+  "length_km": 0.06961,
+  "area_km2": null,
+  "built": "447–432 BC",
+  "culture": "Classical",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/parthenon.png",
+  "photo": {
+    "file": "places/photos/parthenon.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Parthenon%20in%20Athens.jpg",
+    "credit": "Photo: Steve Swayne · CC BY 2.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Parthenon",
+  "fame": 137
+}

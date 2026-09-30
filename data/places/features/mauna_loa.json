@@ -1,0 +1,32 @@
+{
+  "key": "Q159762",
+  "qid": "Q159762",
+  "name": "Mauna Loa",
+  "kind": "Volcano",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4169.4,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Americas"
+  ],
+  "map": "places/maps/mauna_loa.png",
+  "photo": {
+    "file": "places/photos/mauna_loa.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mauna%20Loa.jpg",
+    "credit": "Photo: Gordon Joly · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mauna_Loa",
+  "fame": 78
+}

@@ -1,0 +1,32 @@
+{
+  "key": "Q7350",
+  "qid": "Q7350",
+  "name": "Panama Canal",
+  "kind": "Canal",
+  "countries": [
+    "Panama"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 26.0,
+  "length_km": 82.0,
+  "area_km2": null,
+  "built": "1881–1914",
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Canal",
+    "Americas"
+  ],
+  "map": "places/maps/panama_canal.png",
+  "photo": {
+    "file": "places/photos/panama_canal.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Panama%20Canal%20Gatun%20Locks.jpg",
+    "credit": "Photo: User:Stan Shebs · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Panama_Canal",
+  "fame": 162
+}

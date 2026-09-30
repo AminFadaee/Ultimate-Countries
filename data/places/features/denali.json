@@ -1,0 +1,32 @@
+{
+  "key": "Q130018",
+  "qid": "Q130018",
+  "name": "Denali",
+  "kind": "Mountain",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 6190.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Americas"
+  ],
+  "map": "places/maps/denali.png",
+  "photo": {
+    "file": "places/photos/denali.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Wonder%20Lake%20and%20Denali.jpg",
+    "credit": "Photo: Denali National Park and Preserve · Public domain · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Denali",
+  "fame": 100
+}

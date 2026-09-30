@@ -1,0 +1,33 @@
+{
+  "key": "Q5955",
+  "qid": "Q5955",
+  "name": "Altai Mountains",
+  "kind": "Mountain range",
+  "countries": [
+    "Mongolia",
+    "Russia",
+    "China",
+    "Kazakhstan"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4506.0,
+  "length_km": 2000.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/altai_mountains.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Altai_Mountains",
+  "fame": 96
+}

@@ -1,0 +1,37 @@
+{
+  "key": "Q3401774",
+  "qid": "Q3401774",
+  "name": "Prime Meridian",
+  "kind": "Line",
+  "countries": [
+    "Algeria",
+    "Mali",
+    "Ghana",
+    "France",
+    "Burkina Faso",
+    "Spain",
+    "United Kingdom",
+    "Togo"
+  ],
+  "continents": [
+    "Africa",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Line",
+    "Africa",
+    "Europe"
+  ],
+  "map": "places/maps/prime_meridian.png",
+  "photo": null,
+  "wikipedia": null,
+  "fame": 0
+}

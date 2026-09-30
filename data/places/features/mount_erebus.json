@@ -1,0 +1,27 @@
+{
+  "key": "Q188982",
+  "qid": "Q188982",
+  "name": "Mount Erebus",
+  "kind": "Volcano",
+  "countries": [],
+  "continents": [],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 3794.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano"
+  ],
+  "map": "places/maps/mount_erebus.png",
+  "photo": {
+    "file": "places/photos/mount_erebus.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt%20erebus.jpg",
+    "credit": "Photo: Richard Waitt, U.S. Geological Survey · Public domain · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Erebus",
+  "fame": 69
+}

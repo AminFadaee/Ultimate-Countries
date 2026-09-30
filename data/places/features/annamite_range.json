@@ -1,0 +1,30 @@
+{
+  "key": "Q842139",
+  "qid": "Q842139",
+  "name": "Annamite Range",
+  "kind": "Mountain range",
+  "countries": [
+    "Vietnam",
+    "Laos",
+    "Cambodia"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2819.0,
+  "length_km": 1100.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia"
+  ],
+  "map": "places/maps/annamite_range.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Annamite_Range",
+  "fame": 45
+}

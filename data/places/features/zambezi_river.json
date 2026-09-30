@@ -1,0 +1,32 @@
+{
+  "key": "Q43106",
+  "qid": "Q43106",
+  "name": "Zambezi River",
+  "kind": "River",
+  "countries": [
+    "Zambia",
+    "Mozambique",
+    "Angola",
+    "Zimbabwe",
+    "Namibia"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 329.0,
+  "length_km": 2574.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Africa"
+  ],
+  "map": "places/maps/zambezi_river.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Zambezi",
+  "fame": 111
+}

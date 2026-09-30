@@ -1,0 +1,33 @@
+{
+  "key": "Q583",
+  "qid": "Q583",
+  "name": "Mont Blanc",
+  "kind": "Mountain",
+  "countries": [
+    "France",
+    "Italy"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4810.02,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Europe"
+  ],
+  "map": "places/maps/mont_blanc.png",
+  "photo": {
+    "file": "places/photos/mont_blanc.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20of%20Mont%20Blanc%20du%20Tacul%2C%20Mont%20Maudit%20and%20Mont%20Blanc%20from%20Aiguille%20du%20Midi%2C%20Chamonix%2C%20Haute-Savoie.jpg",
+    "credit": "Photo: Christian David · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mont_Blanc",
+  "fame": 127
+}

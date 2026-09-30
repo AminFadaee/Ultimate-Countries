@@ -1,0 +1,32 @@
+{
+  "key": "Q524",
+  "qid": "Q524",
+  "name": "Mount Vesuvius",
+  "kind": "Volcano",
+  "countries": [
+    "Italy"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1297.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Europe"
+  ],
+  "map": "places/maps/mount_vesuvius.png",
+  "photo": {
+    "file": "places/photos/mount_vesuvius.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Il%20cratere%20del%20Vulcano%20-%20panoramio.jpg",
+    "credit": "Photo: pietro scerrato · CC BY 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Vesuvius",
+  "fame": 136
+}

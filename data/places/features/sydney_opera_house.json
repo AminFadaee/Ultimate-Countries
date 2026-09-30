@@ -1,0 +1,33 @@
+{
+  "key": "Q45178",
+  "qid": "Q45178",
+  "name": "Sydney Opera House",
+  "kind": "Landmark",
+  "countries": [
+    "Australia"
+  ],
+  "continents": [
+    "Oceania"
+  ],
+  "city": null,
+  "height_m": 67.0,
+  "elevation_m": 15.0,
+  "length_km": null,
+  "area_km2": 4.381,
+  "built": "1959–1973",
+  "culture": "Expressionist",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Oceania",
+    "World_Heritage"
+  ],
+  "map": "places/maps/sydney_opera_house.png",
+  "photo": {
+    "file": "places/photos/sydney_opera_house.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sydney%20Opera%20House%20Sails.jpg",
+    "credit": "Photo: No machine-readable author provided. Roybb95~commonswiki assumed based on copyright claim · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Sydney_Opera_House",
+  "fame": 99
+}

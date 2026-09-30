@@ -1,0 +1,32 @@
+{
+  "key": "Q238147",
+  "qid": "Q238147",
+  "name": "Citlaltepetl",
+  "kind": "Mountain",
+  "countries": [
+    "Mexico"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 5636.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Americas"
+  ],
+  "map": "places/maps/citlaltepetl.png",
+  "photo": {
+    "file": "places/photos/citlaltepetl.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pico%20de%20Orizaba%20desde%20Hidalgo%2C%20Puebla.jpg",
+    "credit": "Photo: México en Fotos · CC BY-SA 2.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Pico_de_Orizaba",
+  "fame": 65
+}

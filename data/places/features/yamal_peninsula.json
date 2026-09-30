@@ -1,0 +1,28 @@
+{
+  "key": "Q488266",
+  "qid": "Q488266",
+  "name": "Yamal Peninsula",
+  "kind": "Peninsula",
+  "countries": [
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Peninsula",
+    "Europe"
+  ],
+  "map": "places/maps/yamal_peninsula.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Yamal_Peninsula",
+  "fame": 56
+}

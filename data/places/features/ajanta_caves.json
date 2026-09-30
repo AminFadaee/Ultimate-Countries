@@ -1,0 +1,33 @@
+{
+  "key": "Q184427",
+  "qid": "Q184427",
+  "name": "Ajanta Caves",
+  "kind": "Landmark",
+  "countries": [
+    "India"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 786.76,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/ajanta_caves.png",
+  "photo": {
+    "file": "places/photos/ajanta_caves.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ajanta%20%2863%29.jpg",
+    "credit": "Photo: No machine-readable author provided. Soman assumed (based on copyright claims). · CC BY 2.5 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Ajanta_Caves",
+  "fame": 83
+}

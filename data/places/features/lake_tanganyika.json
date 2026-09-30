@@ -1,0 +1,31 @@
+{
+  "key": "Q5511",
+  "qid": "Q5511",
+  "name": "Lake Tanganyika",
+  "kind": "Lake",
+  "countries": [
+    "Burundi",
+    "Democratic Republic of the Congo",
+    "Tanzania",
+    "Zambia"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 773.0,
+  "length_km": 673.0,
+  "area_km2": 32900.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Africa"
+  ],
+  "map": "places/maps/lake_tanganyika.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Tanganyika",
+  "fame": 151
+}

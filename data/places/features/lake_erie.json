@@ -1,0 +1,29 @@
+{
+  "key": "Q5492",
+  "qid": "Q5492",
+  "name": "Lake Erie",
+  "kind": "Lake",
+  "countries": [
+    "Canada",
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 173.0,
+  "length_km": 388.0,
+  "area_km2": 25744.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Americas"
+  ],
+  "map": "places/maps/lake_erie.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Erie",
+  "fame": 102
+}

@@ -1,0 +1,32 @@
+{
+  "key": "Q60967",
+  "qid": "Q60967",
+  "name": "Mount Kinabalu",
+  "kind": "Mountain",
+  "countries": [
+    "Malaysia"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4095.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/mount_kinabalu.png",
+  "photo": {
+    "file": "places/photos/mount_kinabalu.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kinabalu%20Sabah%20Borneo%20Kampong%20Kundasang%202.jpg",
+    "credit": "Photo: kallerna · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Kinabalu",
+  "fame": 70
+}

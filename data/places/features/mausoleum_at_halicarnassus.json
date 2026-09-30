@@ -1,0 +1,32 @@
+{
+  "key": "Q45368",
+  "qid": "Q45368",
+  "name": "Mausoleum at Halicarnassus",
+  "kind": "Landmark",
+  "countries": [
+    "Turkey"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "351 BC",
+  "culture": "Classical",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/mausoleum_at_halicarnassus.png",
+  "photo": {
+    "file": "places/photos/mausoleum_at_halicarnassus.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20ruins%20of%20the%20Mausoleum%20at%20Halicarnassus.jpg",
+    "credit": "Photo: FollowingHadrian · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus",
+  "fame": 90
+}

@@ -1,0 +1,33 @@
+{
+  "key": "Q82019",
+  "qid": "Q82019",
+  "name": "Kanchenjunga",
+  "kind": "Mountain",
+  "countries": [
+    "India",
+    "Nepal"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 8586.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/kanchenjunga.png",
+  "photo": {
+    "file": "places/photos/kanchenjunga.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kangchenjunga%2C%20India.jpg",
+    "credit": "Photo: My Discovery · CC BY 2.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Kangchenjunga",
+  "fame": 102
+}

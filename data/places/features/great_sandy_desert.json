@@ -1,0 +1,28 @@
+{
+  "key": "Q326896",
+  "qid": "Q326896",
+  "name": "Great Sandy Desert",
+  "kind": "Desert",
+  "countries": [
+    "Australia"
+  ],
+  "continents": [
+    "Oceania"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 289.0,
+  "length_km": null,
+  "area_km2": 284993.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Desert",
+    "Oceania"
+  ],
+  "map": "places/maps/great_sandy_desert.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Great_Sandy_Desert",
+  "fame": 55
+}

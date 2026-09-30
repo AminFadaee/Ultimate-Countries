@@ -1,0 +1,28 @@
+{
+  "key": "Q191566",
+  "qid": "Q191566",
+  "name": "West Siberian Plain",
+  "kind": "Plain",
+  "countries": [
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Plain",
+    "Europe"
+  ],
+  "map": "places/maps/west_siberian_plain.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/West_Siberian_Plain",
+  "fame": 62
+}

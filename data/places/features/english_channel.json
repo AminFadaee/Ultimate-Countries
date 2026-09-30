@@ -1,0 +1,31 @@
+{
+  "key": "Q34640",
+  "qid": "Q34640",
+  "name": "English Channel",
+  "kind": "Sea",
+  "countries": [
+    "France",
+    "Guernsey",
+    "Jersey",
+    "United Kingdom"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 560.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Europe"
+  ],
+  "map": "places/maps/english_channel.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/English_Channel",
+  "fame": 129
+}

@@ -1,0 +1,35 @@
+{
+  "key": "Q11708",
+  "qid": "Q11708",
+  "name": "Southeast Asia",
+  "kind": "Region",
+  "countries": [
+    "Indonesia",
+    "Myanmar",
+    "Thailand",
+    "Vietnam",
+    "Laos",
+    "Malaysia",
+    "Philippines",
+    "Cambodia"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 4500000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Asia"
+  ],
+  "map": "places/maps/southeast_asia.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Southeast_Asia",
+  "fame": 183
+}

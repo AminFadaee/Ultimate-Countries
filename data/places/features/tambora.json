@@ -1,0 +1,32 @@
+{
+  "key": "Q168714",
+  "qid": "Q168714",
+  "name": "Tambora",
+  "kind": "Volcano",
+  "countries": [
+    "Indonesia"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2850.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Asia"
+  ],
+  "map": "places/maps/tambora.png",
+  "photo": {
+    "file": "places/photos/tambora.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Caldera%20Mt%20Tambora%20Sumbawa%20Indonesia.jpg",
+    "credit": "Photo: Jialiang Gao (peace-on-earth.org) · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Tambora",
+  "fame": 73
+}

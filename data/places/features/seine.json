@@ -1,0 +1,28 @@
+{
+  "key": "Q1471",
+  "qid": "Q1471",
+  "name": "Seine",
+  "kind": "River",
+  "countries": [
+    "France"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 776.67,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Europe"
+  ],
+  "map": "places/maps/seine.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Seine",
+  "fame": 131
+}

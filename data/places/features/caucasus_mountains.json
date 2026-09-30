@@ -1,0 +1,32 @@
+{
+  "key": "Q5477",
+  "qid": "Q5477",
+  "name": "Caucasus Mountains",
+  "kind": "Mountain range",
+  "countries": [
+    "Russia",
+    "Georgia",
+    "Azerbaijan"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 5642.0,
+  "length_km": 1200.0,
+  "area_km2": 477165.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/caucasus_mountains.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Caucasus_Mountains",
+  "fame": 116
+}

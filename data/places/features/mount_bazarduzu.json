@@ -1,0 +1,35 @@
+{
+  "key": "Q725591",
+  "qid": "Q725591",
+  "name": "Mount Bazardüzü",
+  "kind": "Mountain",
+  "countries": [
+    "Azerbaijan",
+    "Russia"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4466.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/mount_bazarduzu.png",
+  "photo": {
+    "file": "places/photos/mount_bazarduzu.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Bazarduzu%20detail.JPG",
+    "credit": "Photo: Freieck · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Bazard%C3%BCz%C3%BC",
+  "fame": 107
+}

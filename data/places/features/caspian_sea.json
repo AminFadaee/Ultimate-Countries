@@ -1,0 +1,34 @@
+{
+  "key": "Q5484",
+  "qid": "Q5484",
+  "name": "Caspian Sea",
+  "kind": "Sea",
+  "countries": [
+    "Azerbaijan",
+    "Iran",
+    "Kazakhstan",
+    "Russia",
+    "Turkmenistan"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": -28.0,
+  "length_km": 1200.0,
+  "area_km2": 386400.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/caspian_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Caspian_Sea",
+  "fame": 207
+}

@@ -1,0 +1,32 @@
+{
+  "key": "Q43473",
+  "qid": "Q43473",
+  "name": "Angkor Wat",
+  "kind": "Landmark",
+  "countries": [
+    "Cambodia"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 65.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/angkor_wat.png",
+  "photo": {
+    "file": "places/photos/angkor_wat.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20wat%20temple.jpg",
+    "credit": "Photo: The original uploader was Fuzheado at English Wikipedia. · CC BY-SA 2.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Angkor_Wat",
+  "fame": 137
+}

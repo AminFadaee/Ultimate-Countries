@@ -1,0 +1,32 @@
+{
+  "key": "Q664609",
+  "qid": "Q664609",
+  "name": "Caribbean",
+  "kind": "Region",
+  "countries": [
+    "Cuba",
+    "Dominican Republic",
+    "Haiti",
+    "Jamaica",
+    "Trinidad and Tobago"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Americas"
+  ],
+  "map": "places/maps/caribbean.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Caribbean",
+  "fame": 172
+}

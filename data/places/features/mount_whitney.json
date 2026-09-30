@@ -1,0 +1,32 @@
+{
+  "key": "Q235539",
+  "qid": "Q235539",
+  "name": "Mount Whitney",
+  "kind": "Mountain",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4421.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Americas"
+  ],
+  "map": "places/maps/mount_whitney.png",
+  "photo": {
+    "file": "places/photos/mount_whitney.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Whitney%202003-03-25.jpg",
+    "credit": "Photo: Geographer talk · contribs) · CC BY 1.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Whitney",
+  "fame": 61
+}

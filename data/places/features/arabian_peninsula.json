@@ -1,0 +1,32 @@
+{
+  "key": "Q31945",
+  "qid": "Q31945",
+  "name": "Arabian Peninsula",
+  "kind": "Peninsula",
+  "countries": [
+    "Saudi Arabia",
+    "Yemen",
+    "Oman",
+    "United Arab Emirates",
+    "Iraq"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 3200000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Peninsula",
+    "Asia"
+  ],
+  "map": "places/maps/arabian_peninsula.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Arabian_Peninsula",
+  "fame": 147
+}

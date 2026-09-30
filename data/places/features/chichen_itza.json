@@ -1,0 +1,33 @@
+{
+  "key": "Q5859",
+  "qid": "Q5859",
+  "name": "Chichen Itza",
+  "kind": "Landmark",
+  "countries": [
+    "Mexico"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": "Maya civilization",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Americas",
+    "World_Heritage"
+  ],
+  "map": "places/maps/chichen_itza.png",
+  "photo": {
+    "file": "places/photos/chichen_itza.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chichen%20Itza%203.jpg",
+    "credit": "Photo: Daniel Schwen · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Chichen_Itza",
+  "fame": 110
+}

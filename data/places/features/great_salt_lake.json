@@ -1,0 +1,28 @@
+{
+  "key": "Q178741",
+  "qid": "Q178741",
+  "name": "Great Salt Lake",
+  "kind": "Lake",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1283.0,
+  "length_km": 120.0,
+  "area_km2": 4400.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Americas"
+  ],
+  "map": "places/maps/great_salt_lake.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Great_Salt_Lake",
+  "fame": 71
+}

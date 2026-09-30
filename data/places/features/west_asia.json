@@ -1,0 +1,39 @@
+{
+  "key": "Q27293",
+  "qid": "Q27293",
+  "name": "West Asia",
+  "kind": "Region",
+  "countries": [
+    "Saudi Arabia",
+    "Iran",
+    "Egypt",
+    "Turkey",
+    "Yemen",
+    "Iraq",
+    "Oman",
+    "Syria",
+    "Jordan",
+    "Azerbaijan"
+  ],
+  "continents": [
+    "Africa",
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 5994935.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Africa",
+    "Asia"
+  ],
+  "map": "places/maps/west_asia.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/West_Asia",
+  "fame": 140
+}

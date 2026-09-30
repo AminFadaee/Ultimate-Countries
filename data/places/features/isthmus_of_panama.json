@@ -1,0 +1,28 @@
+{
+  "key": "Q182139",
+  "qid": "Q182139",
+  "name": "Isthmus of Panama",
+  "kind": "Isthmus",
+  "countries": [
+    "Panama"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Isthmus",
+    "Americas"
+  ],
+  "map": "places/maps/isthmus_of_panama.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Isthmus_of_Panama",
+  "fame": 69
+}

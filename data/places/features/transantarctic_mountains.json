@@ -1,0 +1,23 @@
+{
+  "key": "Q319671",
+  "qid": "Q319671",
+  "name": "Transantarctic Mountains",
+  "kind": "Mountain range",
+  "countries": [],
+  "continents": [],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4528.0,
+  "length_km": 3500.0,
+  "area_km2": 584000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range"
+  ],
+  "map": "places/maps/transantarctic_mountains.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Transantarctic_Mountains",
+  "fame": 62
+}

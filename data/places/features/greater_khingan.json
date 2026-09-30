@@ -1,0 +1,29 @@
+{
+  "key": "Q293713",
+  "qid": "Q293713",
+  "name": "Greater Khingan",
+  "kind": "Mountain range",
+  "countries": [
+    "China",
+    "Mongolia"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2035.0,
+  "length_km": 1200.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia"
+  ],
+  "map": "places/maps/greater_khingan.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Greater_Khingan",
+  "fame": 46
+}

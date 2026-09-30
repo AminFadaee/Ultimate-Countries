@@ -1,0 +1,32 @@
+{
+  "key": "Q3388",
+  "qid": "Q3388",
+  "name": "Grossglockner",
+  "kind": "Mountain",
+  "countries": [
+    "Austria"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 3798.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Europe"
+  ],
+  "map": "places/maps/grossglockner.png",
+  "photo": {
+    "file": "places/photos/grossglockner.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Gro%C3%9Fglockner1.jpg",
+    "credit": "Photo: DennisPeeters · Public domain · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Grossglockner",
+  "fame": 63
+}

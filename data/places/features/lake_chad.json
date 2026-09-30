@@ -1,0 +1,29 @@
+{
+  "key": "Q125309",
+  "qid": "Q125309",
+  "name": "Lake Chad",
+  "kind": "Lake",
+  "countries": [
+    "Cameroon",
+    "Chad"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 100.0,
+  "length_km": null,
+  "area_km2": 1540.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Africa"
+  ],
+  "map": "places/maps/lake_chad.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Chad",
+  "fame": 105
+}

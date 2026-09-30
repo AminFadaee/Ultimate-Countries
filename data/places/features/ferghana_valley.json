@@ -1,0 +1,30 @@
+{
+  "key": "Q486324",
+  "qid": "Q486324",
+  "name": "Ferghana Valley",
+  "kind": "Valley",
+  "countries": [
+    "Uzbekistan",
+    "Kyrgyzstan",
+    "Tajikistan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Valley",
+    "Asia"
+  ],
+  "map": "places/maps/ferghana_valley.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Fergana_Valley",
+  "fame": 75
+}

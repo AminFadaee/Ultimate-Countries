@@ -1,0 +1,28 @@
+{
+  "key": "Q484725",
+  "qid": "Q484725",
+  "name": "Alborz",
+  "kind": "Mountain range",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 5610.0,
+  "length_km": 600.0,
+  "area_km2": 155970.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia"
+  ],
+  "map": "places/maps/alborz.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Alborz",
+  "fame": 81
+}

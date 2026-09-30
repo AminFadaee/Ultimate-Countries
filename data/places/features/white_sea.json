@@ -1,0 +1,28 @@
+{
+  "key": "Q44133",
+  "qid": "Q44133",
+  "name": "White Sea",
+  "kind": "Sea",
+  "countries": [
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 90800.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Europe"
+  ],
+  "map": "places/maps/white_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/White_Sea",
+  "fame": 112
+}

@@ -1,0 +1,32 @@
+{
+  "key": "Q38954",
+  "qid": "Q38954",
+  "name": "Teide",
+  "kind": "Volcano",
+  "countries": [
+    "Spain"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 3715.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Europe"
+  ],
+  "map": "places/maps/teide.png",
+  "photo": {
+    "file": "places/photos/teide.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Teide%20von%20Nordosten%20%28Zuschnitt%202%29.jpg",
+    "credit": "Photo: Thomas Wolf, www.foto-tw.de · CC BY-SA 3.0 de · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Teide",
+  "fame": 105
+}

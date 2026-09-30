@@ -1,0 +1,29 @@
+{
+  "key": "Q118899",
+  "qid": "Q118899",
+  "name": "Brazilian Highlands",
+  "kind": "Plateau",
+  "countries": [
+    "Brazil",
+    "Paraguay"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 4500000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Plateau",
+    "Americas"
+  ],
+  "map": "places/maps/brazilian_highlands.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Brazilian_Highlands",
+  "fame": 54
+}

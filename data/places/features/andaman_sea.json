@@ -1,0 +1,31 @@
+{
+  "key": "Q47632",
+  "qid": "Q47632",
+  "name": "Andaman Sea",
+  "kind": "Sea",
+  "countries": [
+    "India",
+    "Indonesia",
+    "Myanmar",
+    "Thailand"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 798000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia"
+  ],
+  "map": "places/maps/andaman_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Andaman_Sea",
+  "fame": 109
+}

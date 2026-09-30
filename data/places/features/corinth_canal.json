@@ -1,0 +1,32 @@
+{
+  "key": "Q182873",
+  "qid": "Q182873",
+  "name": "Corinth Canal",
+  "kind": "Canal",
+  "countries": [
+    "Greece"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 6.343,
+  "area_km2": null,
+  "built": "67 AD–1893",
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Canal",
+    "Europe"
+  ],
+  "map": "places/maps/corinth_canal.png",
+  "photo": {
+    "file": "places/photos/corinth_canal.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Canal%20of%20korinth%20greece.jpg",
+    "credit": "Photo: Vancouverquadra at en.wikipedia · Public domain · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Corinth_Canal",
+  "fame": 62
+}

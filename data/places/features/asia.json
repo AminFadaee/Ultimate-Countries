@@ -1,0 +1,23 @@
+{
+  "key": "Q48",
+  "qid": "Q48",
+  "name": "Asia",
+  "kind": "Continent",
+  "countries": [],
+  "continents": [],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 44614500.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Continent"
+  ],
+  "map": "places/maps/asia.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Asia",
+  "fame": 363
+}

@@ -1,0 +1,31 @@
+{
+  "key": "rainforest:New Guinea rainforest",
+  "qid": null,
+  "name": "New Guinea rainforest",
+  "kind": "Rainforest",
+  "countries": [
+    "Indonesia",
+    "Papua New Guinea"
+  ],
+  "continents": [
+    "Asia",
+    "Oceania"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Rainforest",
+    "Asia",
+    "Oceania"
+  ],
+  "map": "places/maps/new_guinea_rainforest.png",
+  "photo": null,
+  "wikipedia": null,
+  "fame": 0
+}

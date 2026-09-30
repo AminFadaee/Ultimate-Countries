@@ -1,0 +1,32 @@
+{
+  "key": "Q76309",
+  "qid": "Q76309",
+  "name": "Mount Pelée",
+  "kind": "Volcano",
+  "countries": [
+    "France"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1397.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Europe"
+  ],
+  "map": "places/maps/mount_pelee.png",
+  "photo": {
+    "file": "places/photos/mount_pelee.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Pel%C3%A9e%20vue%20du%20Carbet.jpg",
+    "credit": "Photo: Unknown author · Public domain · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Pel%C3%A9e",
+  "fame": 62
+}

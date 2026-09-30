@@ -1,0 +1,36 @@
+{
+  "key": "Q166",
+  "qid": "Q166",
+  "name": "Black Sea",
+  "kind": "Sea",
+  "countries": [
+    "Bulgaria",
+    "Georgia",
+    "Moldova",
+    "Romania",
+    "Russia",
+    "Turkey",
+    "Ukraine"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 1175.0,
+  "area_km2": 436402.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/black_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Black_Sea",
+  "fame": 240
+}

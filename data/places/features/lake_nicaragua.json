@@ -1,0 +1,29 @@
+{
+  "key": "Q173862",
+  "qid": "Q173862",
+  "name": "Lake Nicaragua",
+  "kind": "Lake",
+  "countries": [
+    "Costa Rica",
+    "Nicaragua"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 32.0,
+  "length_km": 148.0,
+  "area_km2": 8264.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Americas"
+  ],
+  "map": "places/maps/lake_nicaragua.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Nicaragua",
+  "fame": 78
+}

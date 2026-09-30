@@ -1,0 +1,30 @@
+{
+  "key": "Q48359",
+  "qid": "Q48359",
+  "name": "Strait of Malacca",
+  "kind": "Sea",
+  "countries": [
+    "Indonesia",
+    "Malaysia",
+    "Thailand"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 930.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia"
+  ],
+  "map": "places/maps/strait_of_malacca.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Strait_of_Malacca",
+  "fame": 106
+}

@@ -1,0 +1,28 @@
+{
+  "key": "Q1497",
+  "qid": "Q1497",
+  "name": "Mississippi River",
+  "kind": "River",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 3766.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Americas"
+  ],
+  "map": "places/maps/mississippi_river.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Mississippi_River",
+  "fame": 180
+}

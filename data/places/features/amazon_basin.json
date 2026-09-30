@@ -1,0 +1,32 @@
+{
+  "key": "Q244451",
+  "qid": "Q244451",
+  "name": "Amazon basin",
+  "kind": "Basin",
+  "countries": [
+    "Brazil",
+    "Peru",
+    "Bolivia",
+    "Colombia",
+    "Ecuador"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 6300000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Basin",
+    "Americas"
+  ],
+  "map": "places/maps/amazon_basin.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Amazon_basin",
+  "fame": 51
+}

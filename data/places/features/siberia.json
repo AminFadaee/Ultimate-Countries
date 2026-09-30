@@ -1,0 +1,31 @@
+{
+  "key": "Q5428",
+  "qid": "Q5428",
+  "name": "Siberia",
+  "kind": "Region",
+  "countries": [
+    "Russia",
+    "China"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 13488500.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/siberia.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Siberia",
+  "fame": 184
+}

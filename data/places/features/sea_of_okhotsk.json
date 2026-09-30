@@ -1,0 +1,31 @@
+{
+  "key": "Q41602",
+  "qid": "Q41602",
+  "name": "Sea of Okhotsk",
+  "kind": "Sea",
+  "countries": [
+    "Japan",
+    "Russia"
+  ],
+  "continents": [
+    "Asia",
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 1583000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia",
+    "Europe"
+  ],
+  "map": "places/maps/sea_of_okhotsk.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Sea_of_Okhotsk",
+  "fame": 108
+}

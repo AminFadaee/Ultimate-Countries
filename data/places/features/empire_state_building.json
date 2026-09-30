@@ -1,0 +1,32 @@
+{
+  "key": "Q9188",
+  "qid": "Q9188",
+  "name": "Empire State Building",
+  "kind": "Landmark",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": 457.2009,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.20887901449920002,
+  "built": "1930–1931",
+  "culture": "Art Deco",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Americas"
+  ],
+  "map": "places/maps/empire_state_building.png",
+  "photo": {
+    "file": "places/photos/empire_state_building.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Empire%20State%20Building%20%28aerial%20view%29.jpg",
+    "credit": "Photo: Sam Valadi · Public domain · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Empire_State_Building",
+  "fame": 125
+}

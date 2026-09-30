@@ -1,0 +1,28 @@
+{
+  "key": "Q465055",
+  "qid": "Q465055",
+  "name": "Eastern Ghats",
+  "kind": "Mountain range",
+  "countries": [
+    "India"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1680.0,
+  "length_km": 1500.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia"
+  ],
+  "map": "places/maps/eastern_ghats.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Eastern_Ghats",
+  "fame": 56
+}

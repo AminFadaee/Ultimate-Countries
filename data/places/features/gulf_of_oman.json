@@ -1,0 +1,31 @@
+{
+  "key": "Q79948",
+  "qid": "Q79948",
+  "name": "Gulf of Oman",
+  "kind": "Sea",
+  "countries": [
+    "Iran",
+    "Oman",
+    "Pakistan",
+    "United Arab Emirates"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia"
+  ],
+  "map": "places/maps/gulf_of_oman.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Gulf_of_Oman",
+  "fame": 104
+}

@@ -1,0 +1,33 @@
+{
+  "key": "Q80344",
+  "qid": "Q80344",
+  "name": "Mount Olympus",
+  "kind": "Mountain",
+  "countries": [
+    "Greece"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": 2917.727,
+  "elevation_m": 2917.727,
+  "length_km": null,
+  "area_km2": 191.3959,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Mountain",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/mount_olympus.png",
+  "photo": {
+    "file": "places/photos/mount_olympus.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt%20Olympus%20aerial%202.jpg",
+    "credit": "Photo: kallerna · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Olympus",
+  "fame": 109
+}

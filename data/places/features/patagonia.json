@@ -1,0 +1,29 @@
+{
+  "key": "Q1507",
+  "qid": "Q1507",
+  "name": "Patagonia",
+  "kind": "Region",
+  "countries": [
+    "Argentina",
+    "Chile"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Americas"
+  ],
+  "map": "places/maps/patagonia.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Patagonia",
+  "fame": 104
+}

@@ -1,0 +1,33 @@
+{
+  "key": "Q771405",
+  "qid": "Q771405",
+  "name": "South Asia",
+  "kind": "Region",
+  "countries": [
+    "India",
+    "Pakistan",
+    "Afghanistan",
+    "Nepal",
+    "Bangladesh",
+    "Sri Lanka"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Asia"
+  ],
+  "map": "places/maps/south_asia.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/South_Asia",
+  "fame": 174
+}

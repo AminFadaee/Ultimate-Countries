@@ -1,0 +1,30 @@
+{
+  "key": "Q208347",
+  "qid": "Q208347",
+  "name": "Gran Chaco",
+  "kind": "Plain",
+  "countries": [
+    "Argentina",
+    "Paraguay",
+    "Bolivia"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 310.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Plain",
+    "Americas"
+  ],
+  "map": "places/maps/gran_chaco.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Gran_Chaco",
+  "fame": 55
+}

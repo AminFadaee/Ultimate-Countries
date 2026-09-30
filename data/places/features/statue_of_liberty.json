@@ -1,0 +1,33 @@
+{
+  "key": "Q9202",
+  "qid": "Q9202",
+  "name": "Statue of Liberty",
+  "kind": "Landmark",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": "New York City",
+  "height_m": 47.0,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Americas",
+    "World_Heritage"
+  ],
+  "map": "places/maps/statue_of_liberty.png",
+  "photo": {
+    "file": "places/photos/statue_of_liberty.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Statue%20of%20Liberty%20and%20a%20sightseeing%20boat%2C%20Liberty%20Island%2C%20New%20York.jpg",
+    "credit": "Photo: Christian David · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Statue_of_Liberty",
+  "fame": 158
+}

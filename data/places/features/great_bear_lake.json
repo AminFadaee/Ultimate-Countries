@@ -1,0 +1,28 @@
+{
+  "key": "Q5525",
+  "qid": "Q5525",
+  "name": "Great Bear Lake",
+  "kind": "Lake",
+  "countries": [
+    "Canada"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 155.0,
+  "length_km": 400.0,
+  "area_km2": 31153.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Americas"
+  ],
+  "map": "places/maps/great_bear_lake.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Great_Bear_Lake",
+  "fame": 74
+}

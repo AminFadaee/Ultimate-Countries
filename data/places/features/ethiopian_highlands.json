@@ -1,0 +1,30 @@
+{
+  "key": "Q319288",
+  "qid": "Q319288",
+  "name": "Ethiopian Highlands",
+  "kind": "Mountain range",
+  "countries": [
+    "Ethiopia",
+    "Eritrea",
+    "Sudan"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4550.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Africa"
+  ],
+  "map": "places/maps/ethiopian_highlands.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Ethiopian_Highlands",
+  "fame": 66
+}

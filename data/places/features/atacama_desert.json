@@ -1,0 +1,28 @@
+{
+  "key": "Q47141",
+  "qid": "Q47141",
+  "name": "Atacama Desert",
+  "kind": "Desert",
+  "countries": [
+    "Chile"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2657.0,
+  "length_km": null,
+  "area_km2": 181300.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Desert",
+    "Americas"
+  ],
+  "map": "places/maps/atacama_desert.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Atacama_Desert",
+  "fame": 104
+}

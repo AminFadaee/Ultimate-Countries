@@ -1,0 +1,28 @@
+{
+  "key": "Q5539",
+  "qid": "Q5539",
+  "name": "Great Slave Lake",
+  "kind": "Lake",
+  "countries": [
+    "Canada"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 156.0,
+  "length_km": 480.0,
+  "area_km2": 27209.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Americas"
+  ],
+  "map": "places/maps/great_slave_lake.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Great_Slave_Lake",
+  "fame": 75
+}

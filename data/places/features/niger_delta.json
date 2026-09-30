@@ -1,0 +1,28 @@
+{
+  "key": "Q29412",
+  "qid": "Q29412",
+  "name": "Niger Delta",
+  "kind": "Delta",
+  "countries": [
+    "Nigeria"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Delta",
+    "Africa"
+  ],
+  "map": "places/maps/niger_delta.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Niger_Delta",
+  "fame": 41
+}

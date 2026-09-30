@@ -1,0 +1,30 @@
+{
+  "key": "Q40855",
+  "qid": "Q40855",
+  "name": "Dnieper",
+  "kind": "River",
+  "countries": [
+    "Belarus",
+    "Ukraine",
+    "Russia"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 2285.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Europe"
+  ],
+  "map": "places/maps/dnieper.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Dnieper",
+  "fame": 126
+}

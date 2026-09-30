@@ -1,0 +1,29 @@
+{
+  "key": "Q5089",
+  "qid": "Q5089",
+  "name": "Ganges",
+  "kind": "River",
+  "countries": [
+    "India",
+    "Bangladesh"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 9.0,
+  "length_km": 2525.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Asia"
+  ],
+  "map": "places/maps/ganges.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Ganges",
+  "fame": 179
+}

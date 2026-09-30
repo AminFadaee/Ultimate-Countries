@@ -1,0 +1,47 @@
+{
+  "key": "Q176635",
+  "qid": "Q176635",
+  "name": "Tropic of Cancer",
+  "kind": "Line",
+  "countries": [
+    "India",
+    "China",
+    "Algeria",
+    "Saudi Arabia",
+    "Libya",
+    "Egypt",
+    "Mexico",
+    "Mauritania",
+    "Myanmar",
+    "Mali",
+    "Oman",
+    "United Arab Emirates",
+    "Bangladesh",
+    "Morocco",
+    "Western Sahara",
+    "Taiwan"
+  ],
+  "continents": [
+    "Africa",
+    "Americas",
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Line",
+    "Africa",
+    "Americas",
+    "Asia"
+  ],
+  "map": "places/maps/tropic_of_cancer.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Tropic_of_Cancer",
+  "fame": 95
+}

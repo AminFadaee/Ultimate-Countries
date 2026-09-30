@@ -1,0 +1,29 @@
+{
+  "key": "Q4558",
+  "qid": "Q4558",
+  "name": "Cascade Range",
+  "kind": "Mountain range",
+  "countries": [
+    "United States",
+    "Canada"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4392.4814466,
+  "length_km": 1100.0,
+  "area_km2": 150000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Americas"
+  ],
+  "map": "places/maps/cascade_range.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Cascade_Range",
+  "fame": 72
+}

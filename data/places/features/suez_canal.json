@@ -1,0 +1,32 @@
+{
+  "key": "Q899",
+  "qid": "Q899",
+  "name": "Suez Canal",
+  "kind": "Canal",
+  "countries": [
+    "Egypt"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 0.0,
+  "length_km": 193.3,
+  "area_km2": null,
+  "built": "1859–1869",
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Canal",
+    "Africa"
+  ],
+  "map": "places/maps/suez_canal.png",
+  "photo": {
+    "file": "places/photos/suez_canal.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Suez%20Canal%2C%20Egypt%20%2831596166706%29.jpg",
+    "credit": "Photo: Pierre Markuse from Hamm, Germany · CC BY 2.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Suez_Canal",
+  "fame": 177
+}

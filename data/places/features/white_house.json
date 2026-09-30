@@ -1,0 +1,32 @@
+{
+  "key": "Q35525",
+  "qid": "Q35525",
+  "name": "White House",
+  "kind": "Landmark",
+  "countries": [
+    "United States"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": "Washington, D.C.",
+  "height_m": 21.33,
+  "elevation_m": null,
+  "length_km": 0.0512,
+  "area_km2": null,
+  "built": "1792–1800",
+  "culture": "Neoclassical Palladian",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Americas"
+  ],
+  "map": "places/maps/white_house.png",
+  "photo": {
+    "file": "places/photos/white_house.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/WhiteHouseSouthFacade.JPG",
+    "credit": "Photo: This image or media was taken or created by Matt H. Wade. To see his entire portfolio, cli · CC BY-SA 3.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/White_House",
+  "fame": 143
+}

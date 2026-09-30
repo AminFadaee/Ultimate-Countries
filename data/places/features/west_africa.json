@@ -1,0 +1,39 @@
+{
+  "key": "Q4412",
+  "qid": "Q4412",
+  "name": "West Africa",
+  "kind": "Region",
+  "countries": [
+    "Mali",
+    "Niger",
+    "Mauritania",
+    "Nigeria",
+    "Ivory Coast",
+    "Burkina Faso",
+    "Guinea",
+    "Ghana",
+    "Senegal",
+    "Benin",
+    "Liberia",
+    "Sierra Leone"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Africa"
+  ],
+  "map": "places/maps/west_africa.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/West_Africa",
+  "fame": 162
+}

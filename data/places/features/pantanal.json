@@ -1,0 +1,31 @@
+{
+  "key": "Q157603",
+  "qid": "Q157603",
+  "name": "Pantanal",
+  "kind": "Wetland",
+  "countries": [
+    "Brazil",
+    "Bolivia",
+    "Paraguay"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 1878.18,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Wetland",
+    "Americas",
+    "World_Heritage"
+  ],
+  "map": "places/maps/pantanal.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Pantanal",
+  "fame": 71
+}

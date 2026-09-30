@@ -1,0 +1,29 @@
+{
+  "key": "Q35000",
+  "qid": "Q35000",
+  "name": "Sea of Azov",
+  "kind": "Sea",
+  "countries": [
+    "Russia",
+    "Ukraine"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 340.0,
+  "area_km2": 37600.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Europe"
+  ],
+  "map": "places/maps/sea_of_azov.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Sea_of_Azov",
+  "fame": 133
+}

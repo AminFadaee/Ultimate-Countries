@@ -1,0 +1,32 @@
+{
+  "key": "Q72303",
+  "qid": "Q72303",
+  "name": "Mount Ararat",
+  "kind": "Volcano",
+  "countries": [
+    "Turkey"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 5137.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Asia"
+  ],
+  "map": "places/maps/mount_ararat.png",
+  "photo": {
+    "file": "places/photos/mount_ararat.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/NEO%20ararat%20big.jpg",
+    "credit": "Photo: NASA/JSC · Public domain · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mount_Ararat",
+  "fame": 111
+}

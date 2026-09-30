@@ -1,0 +1,32 @@
+{
+  "key": "Q10285",
+  "qid": "Q10285",
+  "name": "Colosseum",
+  "kind": "Landmark",
+  "countries": [
+    "Italy"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": 48.0,
+  "elevation_m": null,
+  "length_km": 0.187,
+  "area_km2": 0.03,
+  "built": "AD 70–80",
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/colosseum.png",
+  "photo": {
+    "file": "places/photos/colosseum.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Colosseo%202020.jpg",
+    "credit": "Photo: FeaturedPics · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Colosseum",
+  "fame": 148
+}

@@ -1,0 +1,31 @@
+{
+  "key": "Q229269",
+  "qid": "Q229269",
+  "name": "Rub' al Khali",
+  "kind": "Desert",
+  "countries": [
+    "Saudi Arabia",
+    "Yemen",
+    "Oman",
+    "United Arab Emirates"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 999.9996906240001,
+  "area_km2": 680000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Desert",
+    "Asia"
+  ],
+  "map": "places/maps/rub__al_khali.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Rub%27_al_Khali",
+  "fame": 69
+}

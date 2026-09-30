@@ -1,0 +1,30 @@
+{
+  "key": "Q192305",
+  "qid": "Q192305",
+  "name": "Indo-Gangetic Plain",
+  "kind": "Plain",
+  "countries": [
+    "India",
+    "Bangladesh",
+    "Nepal"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Plain",
+    "Asia"
+  ],
+  "map": "places/maps/indo_gangetic_plain.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Indo-Gangetic_Plain",
+  "fame": 68
+}

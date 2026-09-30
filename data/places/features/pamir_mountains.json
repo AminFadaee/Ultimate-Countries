@@ -1,0 +1,31 @@
+{
+  "key": "Q161750",
+  "qid": "Q161750",
+  "name": "Pamir Mountains",
+  "kind": "Mountain range",
+  "countries": [
+    "Tajikistan",
+    "China",
+    "Kyrgyzstan",
+    "Afghanistan"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 7649.0,
+  "length_km": 500.0,
+  "area_km2": 120000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia"
+  ],
+  "map": "places/maps/pamir_mountains.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Pamir_Mountains",
+  "fame": 97
+}

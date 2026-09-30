@@ -1,0 +1,32 @@
+{
+  "key": "Q165440",
+  "qid": "Q165440",
+  "name": "Dhaulagiri",
+  "kind": "Mountain",
+  "countries": [
+    "Nepal"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 8167.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/dhaulagiri.png",
+  "photo": {
+    "file": "places/photos/dhaulagiri.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Dhaulagiri%2C%20Himalaya%2C%20Nepal.jpg",
+    "credit": "Photo: Vyacheslav Argenberg · CC BY 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Dhaulagiri",
+  "fame": 90
+}

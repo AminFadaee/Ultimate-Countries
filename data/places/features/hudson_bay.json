@@ -1,0 +1,28 @@
+{
+  "key": "Q3040",
+  "qid": "Q3040",
+  "name": "Hudson Bay",
+  "kind": "Sea",
+  "countries": [
+    "Canada"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 1243000.0,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Americas"
+  ],
+  "map": "places/maps/hudson_bay.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Hudson_Bay",
+  "fame": 104
+}

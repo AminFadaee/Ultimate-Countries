@@ -1,0 +1,34 @@
+{
+  "key": "Q43278",
+  "qid": "Q43278",
+  "name": "Victoria Falls",
+  "kind": "Waterfall",
+  "countries": [
+    "Zambia",
+    "Zimbabwe"
+  ],
+  "continents": [
+    "Africa"
+  ],
+  "city": null,
+  "height_m": 108.0,
+  "elevation_m": 892.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": true,
+  "tags": [
+    "Waterfall",
+    "Africa",
+    "World_Heritage"
+  ],
+  "map": "places/maps/victoria_falls.png",
+  "photo": {
+    "file": "places/photos/victoria_falls.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Cataratas%20Victoria%2C%20Zambia-Zimbabue%2C%202018-07-27%2C%20DD%2005.jpg",
+    "credit": "Photo: Diego Delso · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Victoria_Falls",
+  "fame": 111
+}

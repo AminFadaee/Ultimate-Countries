@@ -1,0 +1,27 @@
+{
+  "key": "Q163758",
+  "qid": "Q163758",
+  "name": "Vinson Massif",
+  "kind": "Mountain",
+  "countries": [],
+  "continents": [],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4892.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Mountain"
+  ],
+  "map": "places/maps/vinson_massif.png",
+  "photo": {
+    "file": "places/photos/vinson_massif.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Vinson%20from%20NW%20at%20Vinson%20Plateau%20by%20Christian%20Stangl%20%28flickr%29.jpg",
+    "credit": "Photo: Christian Stangl · CC BY-SA 2.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Vinson_Massif",
+  "fame": 76
+}

@@ -1,0 +1,32 @@
+{
+  "key": "Q309243",
+  "qid": "Q309243",
+  "name": "Grand Canal",
+  "kind": "Canal",
+  "countries": [
+    "Italy"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 0.0,
+  "length_km": 3.8,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Canal",
+    "Europe"
+  ],
+  "map": "places/maps/grand_canal.png",
+  "photo": {
+    "file": "places/photos/grand_canal.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20of%20Canal%20Grande%20and%20Ponte%20di%20Rialto%2C%20Venice%20-%20September%202017.jpg",
+    "credit": "Photo: Martin Falbisoner · CC BY-SA 4.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Grand_Canal_(Venice)",
+  "fame": 54
+}

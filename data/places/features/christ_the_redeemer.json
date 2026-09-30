@@ -1,0 +1,32 @@
+{
+  "key": "Q79961",
+  "qid": "Q79961",
+  "name": "Christ the Redeemer",
+  "kind": "Landmark",
+  "countries": [
+    "Brazil"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": 30.1,
+  "elevation_m": 710.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Americas"
+  ],
+  "map": "places/maps/christ_the_redeemer.png",
+  "photo": {
+    "file": "places/photos/christ_the_redeemer.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Christ%20the%20Redeemer%20-%20Cristo%20Redentor.jpg",
+    "credit": "Photo: Arne Müseler · CC BY-SA 3.0 de · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)",
+  "fame": 94
+}

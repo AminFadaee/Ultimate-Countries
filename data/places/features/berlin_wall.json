@@ -1,0 +1,32 @@
+{
+  "key": "Q5086",
+  "qid": "Q5086",
+  "name": "Berlin Wall",
+  "kind": "Landmark",
+  "countries": [
+    "Germany"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "East Berlin",
+  "height_m": 3.6,
+  "elevation_m": null,
+  "length_km": 155.0,
+  "area_km2": null,
+  "built": "1961",
+  "culture": null,
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/berlin_wall.png",
+  "photo": {
+    "file": "places/photos/berlin_wall.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Berlin%20Wall%20Potsdamer%20Platz%20November%201975%20looking%20east%20crop.jpg",
+    "credit": "Photo: Edward Valachovic https://www.flickr.com/people/fauxaddress/ · CC BY-SA 2.0 · Wikimedia Commons"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Berlin_Wall",
+  "fame": 140
+}
