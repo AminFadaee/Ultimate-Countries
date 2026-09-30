@@ -7,10 +7,10 @@ import requests
 
 from geography.data import NaturalEarth
 from geography.features.catalog import Catalog, article_title
-from geography.features.kinds import Kind, Shape
+from geography.features.kinds import WATER_KINDS, Kind
 from geography.features.maps import map_job, render_feature_maps
 from geography.features.model import Feature, Photo
-from geography.features.spatial import CountryLocator, load_our_countries
+from geography.features.spatial import POINT_M, CountryLocator, load_our_countries
 from geography.naming import slugify
 from geography.sources import commons
 from geography.sources.wikidata import Wikidata
@@ -18,7 +18,6 @@ from geography.sources.wikipedia import Wikipedia
 
 BORDER_RADIUS_M = {Kind.WATERFALL: 6_000, Kind.MOUNTAIN: 8_000, Kind.VOLCANO: 8_000}
 INFOBOX_KINDS = {Kind.LANDMARK, Kind.CANAL}
-WATER_KINDS = {Kind.SEA, Kind.LAKE}
 WITHOUT_COUNTRIES = {Kind.CONTINENT, Kind.OCEAN}
 
 logger = logging.getLogger(__name__)
@@ -98,9 +97,8 @@ class PlacesCollector:
                 continue
             if feature.geometry.geom_type.iloc[0] == "Point":
                 location = feature.geometry.iloc[0]
-                radius = BORDER_RADIUS_M.get(feature.kind)
-                feature.countries = locator.at_point(location.x, location.y, *([radius] if radius else []))
-            elif shape in (Shape.LINE, Shape.WORLD_LINE):
+                feature.countries = locator.at_point(location.x, location.y, BORDER_RADIUS_M.get(feature.kind, POINT_M))
+            elif shape.is_line:
                 feature.countries = locator.by_line(feature.geometry)
             elif feature.kind in WATER_KINDS:
                 feature.countries = locator.by_coast(feature.geometry)
@@ -144,7 +142,7 @@ class PlacesCollector:
             document = json.loads(path.read_text())
             if document.get("photo"):
                 photo = document["photo"]
-                found[document["key"]] = Photo(photo["file"], photo["source"], commons.tidy_credit(photo["credit"]))
+                found[document["key"]] = Photo(photo["file"], photo["source"], photo["credit"])
         return found
 
     def _render_maps(self, features: list[Feature], slugs: dict[str, str], options: PlacesOptions) -> None:

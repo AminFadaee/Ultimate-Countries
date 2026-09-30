@@ -11,6 +11,14 @@ class Shape(StrEnum):
     WORLD_AREA = "world area"
     WORLD_LINE = "world line"
 
+    @property
+    def is_line(self) -> bool:
+        return self in (Shape.LINE, Shape.WORLD_LINE)
+
+    @property
+    def is_area(self) -> bool:
+        return self in (Shape.AREA, Shape.WORLD_AREA)
+
 
 @dataclass(frozen=True)
 class Palette:
@@ -81,6 +89,8 @@ class Kind(StrEnum):
     def tag(self) -> str:
         return self.value.replace(" ", "_")
 
+
+WATER_KINDS = frozenset({Kind.SEA, Kind.LAKE})
 
 SPECS = {
     Kind.CONTINENT: KindSpec(CONTINENTAL, Shape.AREA),

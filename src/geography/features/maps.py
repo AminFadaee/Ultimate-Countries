@@ -17,7 +17,7 @@ from shapely.geometry import MultiPolygon, Polygon, box
 
 from geography.data import NaturalEarth
 from geography.detail import DetailLayers
-from geography.features.kinds import Kind, Shape
+from geography.features.kinds import WATER_KINDS, Kind, Shape
 from geography.features.model import Feature
 from geography.features.spatial import CRS
 from geography.render import (
@@ -42,7 +42,6 @@ LINE_BAND_SHARE = 0.004
 POINT_RADIUS_M = 3_000
 POINT_LENS_SPAN_M = 60_000
 BORDER_FRAME_M = 350_000
-WATER_KINDS = {Kind.SEA, Kind.LAKE}
 FRAME_SEGMENTS = 32
 MAX_FRAME_WIDTH_M = 15_000_000
 MIN_CONTEXT = 1.05
@@ -65,6 +64,10 @@ class FeatureMapJob:
     output: pathlib.Path
     host_country: str | None
     on_border: bool
+
+
+def is_line(job: FeatureMapJob) -> bool:
+    return job.kind.spec.shape.is_line
 
 
 def empty() -> gpd.GeoSeries:
@@ -97,11 +100,19 @@ def without_specks(shape, min_area: float):
     return MultiPolygon(kept) if kept else shape
 
 
-def outline(geometry: gpd.GeoSeries, share: float) -> gpd.GeoSeries:
+def without_small_parts(projected: gpd.GeoSeries, size: float) -> gpd.GeoSeries:
+    return projected.apply(lambda shape: without_specks(shape, (size * SPECK_SHARE) ** 2))
+
+
+def outline_band(projected: gpd.GeoSeries, size: float, kind: Kind) -> gpd.GeoSeries:
+    share = WATER_OUTLINE_SHARE if kind in WATER_KINDS else OUTLINE_SHARE
+    return projected.simplify(size * SIMPLIFY_SHARE).boundary.buffer(size * share)
+
+
+def outline(geometry: gpd.GeoSeries, kind: Kind) -> gpd.GeoSeries:
     size = size_of(geometry)
-    local = local_projection(geometry)
-    projected = geometry.to_crs(local).apply(lambda shape: without_specks(shape, (size * SPECK_SHARE) ** 2))
-    return projected.simplify(size * SIMPLIFY_SHARE).boundary.buffer(size * share).to_crs(CRS)
+    projected = without_small_parts(geometry.to_crs(local_projection(geometry)), size)
+    return outline_band(projected, size, kind).to_crs(CRS)
 
 
 @functools.cache
@@ -110,14 +121,18 @@ def land():
     return NaturalEarth.load().countries.union_all().union(lakes.union_all())
 
 
+def drawn_shape(job: FeatureMapJob):
+    shape = job.geometry.union_all()
+    if is_line(job):
+        return shape
+    shape = shape.buffer(0)
+    return shape.difference(land()) if job.kind is Kind.SEA else shape
+
+
 def area_scene(job: FeatureMapJob) -> Scene:
-    shape = job.geometry.union_all().buffer(0)
-    if job.kind is Kind.SEA:
-        shape = shape.difference(land())
-    shape = gpd.GeoSeries([shape], crs=CRS)
-    share = WATER_OUTLINE_SHARE if job.kind in WATER_KINDS else OUTLINE_SHARE
+    shape = gpd.GeoSeries([drawn_shape(job)], crs=CRS)
     return Scene(
-        highlight=outline(shape, share),
+        highlight=outline(shape, job.kind),
         frame=frame_around(shape),
         disputed=empty(),
         host=shape,
@@ -255,22 +270,18 @@ def fitted_extent(projected: gpd.GeoSeries, aspect_ratio: float, polar: bool) ->
 def centred_scene(job: FeatureMapJob, data: NaturalEarth, aspect_ratio: float) -> CentredScene | None:
     latitude, longitude = centre_of(job.geometry)
     projection = ccrs.LambertAzimuthalEqualArea(central_longitude=longitude, central_latitude=latitude)
-    shape = job.geometry.union_all()
-    if job.kind is Kind.SEA:
-        shape = shape.buffer(0).difference(land())
-    projected = gpd.GeoSeries([shape], crs=CRS).to_crs(projection.proj4_init)
+    projected = gpd.GeoSeries([drawn_shape(job)], crs=CRS).to_crs(projection.proj4_init)
     polar = pole_of(job.geometry) is not None
     extent = fitted_extent(projected, aspect_ratio, polar)
     if extent is None:
         return None
     size = max(extent.width, extent.height) / CONTEXT
     style = job.kind.spec.palette.style(job.kind.spec.shape)
-    if job.kind.spec.shape in (Shape.LINE, Shape.WORLD_LINE):
+    if is_line(job):
         host, highlight = empty(), projected.buffer(size * LINE_BAND_SHARE)
     else:
-        host = closed_seams(projected).apply(lambda part: without_specks(part, (size * SPECK_SHARE) ** 2))
-        share = WATER_OUTLINE_SHARE if job.kind in WATER_KINDS else OUTLINE_SHARE
-        highlight = host.simplify(size * SIMPLIFY_SHARE).boundary.buffer(size * share)
+        host = without_small_parts(closed_seams(projected), size)
+        highlight = outline_band(host, size, job.kind)
     countries = closed_seams(facing(data.countries.geometry, latitude, longitude).to_crs(projection.proj4_init))
     return CentredScene(projection, extent, host, highlight, countries, style, inset_shape=job.geometry if polar else None)
 
@@ -292,15 +303,11 @@ class FeatureMapWorker:
     def render(cls, job: FeatureMapJob) -> str:
         shape = job.kind.spec.shape
         job.output.parent.mkdir(parents=True, exist_ok=True)
-        style = job.kind.spec.palette.style(shape)
         view = view_for(job, cls.renderer.aspect_ratio)
         if view is View.CENTRED and (scene := centred_scene(job, cls.renderer.data, cls.renderer.aspect_ratio)):
             cls.renderer.render_centred(scene, job.output)
-        elif view is not View.REGIONAL and shape is Shape.WORLD_LINE:
-            cls.renderer.render_world(job.output, style, line_centre(job.geometry), lines=job.geometry)
         elif view is not View.REGIONAL:
-            centre = job.geometry.to_crs(EQUAL_AREA).centroid.to_crs(CRS).iloc[0].x
-            cls.renderer.render_world(job.output, style, centre, areas=job.geometry)
+            cls._render_world(job)
         elif shape is Shape.POINT or job.geometry.geom_type.iloc[0] == "Point":
             try:
                 cls.renderer.render(point_scene(job, cls.renderer.data), job.output)
@@ -313,9 +320,17 @@ class FeatureMapWorker:
                 cls.renderer.render(area_scene(job), job.output)
             except (ValueError, TypeError, GEOSException) as error:
                 logger.warning("World view for %s: %s", job.key, error)
-                centre = job.geometry.to_crs(EQUAL_AREA).centroid.to_crs(CRS).iloc[0].x
-                cls.renderer.render_world(job.output, style, centre, areas=job.geometry)
+                cls._render_world(job)
         return job.key
+
+    @classmethod
+    def _render_world(cls, job: FeatureMapJob) -> None:
+        style = job.kind.spec.palette.style(job.kind.spec.shape)
+        if is_line(job):
+            cls.renderer.render_world(job.output, style, line_centre(job.geometry), lines=job.geometry)
+        else:
+            centre = job.geometry.to_crs(EQUAL_AREA).centroid.to_crs(CRS).iloc[0].x
+            cls.renderer.render_world(job.output, style, centre, areas=job.geometry)
 
 
 def map_job(feature: Feature, output: pathlib.Path) -> FeatureMapJob:

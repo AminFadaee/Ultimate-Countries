@@ -21,7 +21,7 @@ from geography.deck import (
     placeholder,
     stable_id,
 )
-from geography.features.kinds import Kind, Shape
+from geography.features.kinds import Kind
 
 DECK_NAME = "Ultimate Places"
 PLACE_MODEL_ID = 1_730_418_564
@@ -97,7 +97,7 @@ def fact(document: dict) -> str | None:
         return f"{document['height_m']:,.0f} m tall"
     if kind is Kind.LANDMARK and document["length_km"]:
         return long(document["length_km"])
-    if kind.spec.shape in (Shape.AREA, Shape.WORLD_AREA) and document["area_km2"]:
+    if kind.spec.shape.is_area and document["area_km2"]:
         area = document["area_km2"]
         return f"{area / 1e6:.1f} million km²" if area >= 1e6 else f"{area:,.0f} km²"
     return None
