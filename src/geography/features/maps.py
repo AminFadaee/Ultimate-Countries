@@ -189,11 +189,11 @@ def longitude_span(geometry: gpd.GeoSeries) -> tuple[float, float]:
 def pole_of(geometry: gpd.GeoSeries) -> float | None:
     _, miny, _, maxy = geometry.total_bounds
     around_pole = min(longitude_span(geometry)) > 180
-    if maxy > PROJECTABLE_LATITUDE or (around_pole and miny > POLAR_RING_LATITUDE):
-        return 90.0
-    if miny < -PROJECTABLE_LATITUDE or (around_pole and maxy < -POLAR_RING_LATITUDE):
-        return -90.0
-    return None
+    north = maxy > PROJECTABLE_LATITUDE or (around_pole and miny > POLAR_RING_LATITUDE)
+    south = miny < -PROJECTABLE_LATITUDE or (around_pole and maxy < -POLAR_RING_LATITUDE)
+    if north == south:
+        return None
+    return 90.0 if north else -90.0
 
 
 def crosses_date_line(geometry: gpd.GeoSeries) -> bool:
