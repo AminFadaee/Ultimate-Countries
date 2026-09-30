@@ -34,8 +34,7 @@
   "map": "places/maps/amazon_rainforest.png",
   "photo": {
     "file": "places/photos/amazon_rainforest.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Amazon%20Manaus%20forest.jpg",
-    "credit": "Photo: Phil P Harris. · CC BY-SA 2.5 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Amazon%20Manaus%20forest.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Amazon_rainforest",
   "fame": 101

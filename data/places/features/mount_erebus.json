@@ -19,8 +19,7 @@
   "map": "places/maps/mount_erebus.png",
   "photo": {
     "file": "places/photos/mount_erebus.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt%20erebus.jpg",
-    "credit": "Photo: Richard Waitt, U.S. Geological Survey · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt%20erebus.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Erebus",
   "fame": 69

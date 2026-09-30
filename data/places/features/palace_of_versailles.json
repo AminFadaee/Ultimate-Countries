@@ -25,8 +25,7 @@
   "map": "places/maps/palace_of_versailles.png",
   "photo": {
     "file": "places/photos/palace_of_versailles.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Vue%20a%C3%A9rienne%20du%20domaine%20de%20Versailles%20par%20ToucanWings%20-%20Creative%20Commons%20By%20Sa%203.0%20-%20083.jpg",
-    "credit": "Photo: ToucanWings · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Vue%20a%C3%A9rienne%20du%20domaine%20de%20Versailles%20par%20ToucanWings%20-%20Creative%20Commons%20By%20Sa%203.0%20-%20083.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Palace_of_Versailles",
   "fame": 109

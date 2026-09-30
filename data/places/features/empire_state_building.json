@@ -24,8 +24,7 @@
   "map": "places/maps/empire_state_building.png",
   "photo": {
     "file": "places/photos/empire_state_building.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Empire%20State%20Building%20%28aerial%20view%29.jpg",
-    "credit": "Photo: Sam Valadi · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Empire%20State%20Building%20%28aerial%20view%29.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Empire_State_Building",
   "fame": 125

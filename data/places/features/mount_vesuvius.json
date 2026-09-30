@@ -24,8 +24,7 @@
   "map": "places/maps/mount_vesuvius.png",
   "photo": {
     "file": "places/photos/mount_vesuvius.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Il%20cratere%20del%20Vulcano%20-%20panoramio.jpg",
-    "credit": "Photo: pietro scerrato · CC BY 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Il%20cratere%20del%20Vulcano%20-%20panoramio.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Vesuvius",
   "fame": 136

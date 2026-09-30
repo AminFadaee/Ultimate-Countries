@@ -24,8 +24,7 @@
   "map": "places/maps/chateau_de_montsoreau.png",
   "photo": {
     "file": "places/photos/chateau_de_montsoreau.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chateau%20de%20Montsoreau%20Museum%20of%20contemporary%20art%20Loire%20Valley%20France.jpg",
-    "credit": "Photo: Suavemarimagno · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chateau%20de%20Montsoreau%20Museum%20of%20contemporary%20art%20Loire%20Valley%20France.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Ch%C3%A2teau_de_Montsoreau",
   "fame": 100

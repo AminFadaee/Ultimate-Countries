@@ -24,8 +24,7 @@
   "map": "places/maps/antelope_canyon.png",
   "photo": {
     "file": "places/photos/antelope_canyon.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/USA%20Antelope-Canyon.jpg",
-    "credit": "Photo: Lucas Löffler · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/USA%20Antelope-Canyon.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Antelope_Canyon",
   "fame": 44

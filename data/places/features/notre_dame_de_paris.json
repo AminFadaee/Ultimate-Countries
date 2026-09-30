@@ -24,8 +24,7 @@
   "map": "places/maps/notre_dame_de_paris.png",
   "photo": {
     "file": "places/photos/notre_dame_de_paris.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Notre-Dame%20de%20Paris%202013-07-24.jpg",
-    "credit": "Photo: P e z i · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Notre-Dame%20de%20Paris%202013-07-24.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris",
   "fame": 125

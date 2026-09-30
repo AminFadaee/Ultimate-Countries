@@ -25,8 +25,7 @@
   "map": "places/maps/tugela_falls.png",
   "photo": {
     "file": "places/photos/tugela_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tugela%20falls.jpg",
-    "credit": "Photo: Juniper339 · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tugela%20falls.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Tugela_Falls",
   "fame": 42

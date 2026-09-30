@@ -24,8 +24,7 @@
   "map": "places/maps/eiffel_tower.png",
   "photo": {
     "file": "places/photos/eiffel_tower.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tour%20Eiffel%20Wikimedia%20Commons.jpg",
-    "credit": "Photo: Benh LIEU SONG · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tour%20Eiffel%20Wikimedia%20Commons.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Eiffel_Tower",
   "fame": 191

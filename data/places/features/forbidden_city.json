@@ -24,8 +24,7 @@
   "map": "places/maps/forbidden_city.png",
   "photo": {
     "file": "places/photos/forbidden_city.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Hall%20of%20Supreme%20Harmony%20%2820241127120000%29.jpg",
-    "credit": "Photo: N509FZ · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Hall%20of%20Supreme%20Harmony%20%2820241127120000%29.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Forbidden_City",
   "fame": 104

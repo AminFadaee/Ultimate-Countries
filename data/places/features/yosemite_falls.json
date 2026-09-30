@@ -24,8 +24,7 @@
   "map": "places/maps/yosemite_falls.png",
   "photo": {
     "file": "places/photos/yosemite_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Yosemite%20Falls%20Trail%20May%202011%20003.jpg",
-    "credit": "Photo: King of Hearts · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Yosemite%20Falls%20Trail%20May%202011%20003.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Yosemite_Falls",
   "fame": 40

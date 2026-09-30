@@ -24,8 +24,7 @@
   "map": "places/maps/mount_elbrus.png",
   "photo": {
     "file": "places/photos/mount_elbrus.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt.%20Elbrus%20in%20Russia.jpg",
-    "credit": "Photo: Jason Blue-Smith · CC BY-SA 2.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt.%20Elbrus%20in%20Russia.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Elbrus",
   "fame": 113

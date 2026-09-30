@@ -24,8 +24,7 @@
   "map": "places/maps/mount_etna.png",
   "photo": {
     "file": "places/photos/mount_etna.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/View%20of%20Mount%20Etna%20from%20Reggio%20Calabria%20-%20Italy%20-%2010%20Feb.%202017%20-%20%281%29.jpg",
-    "credit": "Photo: Jacopo Werther · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/View%20of%20Mount%20Etna%20from%20Reggio%20Calabria%20-%20Italy%20-%2010%20Feb.%202017%20-%20%281%29.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Etna",
   "fame": 125

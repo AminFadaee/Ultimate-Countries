@@ -25,8 +25,7 @@
   "map": "places/maps/petra.png",
   "photo": {
     "file": "places/photos/petra.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Treasury%2C%20Petra%2C%20Jordan5.jpg",
-    "credit": "Photo: Diego Delso · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Treasury%2C%20Petra%2C%20Jordan5.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Petra",
   "fame": 117

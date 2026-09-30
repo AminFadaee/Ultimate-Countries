@@ -24,8 +24,7 @@
   "map": "places/maps/babylon.png",
   "photo": {
     "file": "places/photos/babylon.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/DSC%200658-Recovered.jpg",
-    "credit": "Photo: Mohamm3dfadil · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/DSC%200658-Recovered.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Babylon",
   "fame": 127

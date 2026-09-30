@@ -24,8 +24,7 @@
   "map": "places/maps/alhambra.png",
   "photo": {
     "file": "places/photos/alhambra.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Alhambra%20detail.jpg",
-    "credit": "Photo: Jebulon · CC0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Alhambra%20detail.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Alhambra",
   "fame": 96

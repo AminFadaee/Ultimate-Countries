@@ -25,8 +25,7 @@
   "map": "places/maps/gangkhar_puensum.png",
   "photo": {
     "file": "places/photos/gangkhar_puensum.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Himalayan%20peak%20from%20Bumthang.jpg",
-    "credit": "Photo: Christopher J. Fynn · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Himalayan%20peak%20from%20Bumthang.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Gangkhar_Puensum",
   "fame": 64

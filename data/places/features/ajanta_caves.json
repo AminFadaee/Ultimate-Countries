@@ -25,8 +25,7 @@
   "map": "places/maps/ajanta_caves.png",
   "photo": {
     "file": "places/photos/ajanta_caves.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ajanta%20%2863%29.jpg",
-    "credit": "Photo: No machine-readable author provided. Soman assumed (based on copyright claims). · CC BY 2.5 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ajanta%20%2863%29.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Ajanta_Caves",
   "fame": 83

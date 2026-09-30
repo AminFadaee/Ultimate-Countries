@@ -24,8 +24,7 @@
   "map": "places/maps/mount_kosciuszko.png",
   "photo": {
     "file": "places/photos/mount_kosciuszko.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kosciuszko%20Townsend.jpg",
-    "credit": "Photo: John Wormell · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kosciuszko%20Townsend.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Kosciuszko",
   "fame": 86

@@ -24,8 +24,7 @@
   "map": "places/maps/terracotta_army.png",
   "photo": {
     "file": "places/photos/terracotta_army.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/51714-Terracota-Army.jpg",
-    "credit": "Photo: xiquinhosilva · CC BY 2.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/51714-Terracota-Army.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Terracotta_Army",
   "fame": 90

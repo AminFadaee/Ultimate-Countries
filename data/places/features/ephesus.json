@@ -24,8 +24,7 @@
   "map": "places/maps/ephesus.png",
   "photo": {
     "file": "places/photos/ephesus.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ephesus%20Celsus%20Library%20Fa%C3%A7ade.jpg",
-    "credit": "Photo: Benh LIEU SONG · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ephesus%20Celsus%20Library%20Fa%C3%A7ade.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Ephesus",
   "fame": 96

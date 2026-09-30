@@ -24,8 +24,7 @@
   "map": "places/maps/borobudur_temple.png",
   "photo": {
     "file": "places/photos/borobudur_temple.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Borobudur-Nothwest-view.jpg",
-    "credit": "Photo: Gunawan Kartapranata · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Borobudur-Nothwest-view.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Borobudur",
   "fame": 99

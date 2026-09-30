@@ -25,8 +25,7 @@
   "map": "places/maps/quebrada_de_humahuaca.png",
   "photo": {
     "file": "places/photos/quebrada_de_humahuaca.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Jujuy-Purmamarca-P3120033.JPG",
-    "credit": "Photo: Unknown author · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Jujuy-Purmamarca-P3120033.JPG"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Quebrada_de_Humahuaca",
   "fame": 50

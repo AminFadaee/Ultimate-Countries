@@ -25,8 +25,7 @@
   "map": "places/maps/iguacu_falls.png",
   "photo": {
     "file": "places/photos/iguacu_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20Foz%20de%20Igua%C3%A7u%2026%20Nov%202005.jpg",
-    "credit": "Photo: Mariordo (Mario Roberto Durán Ortiz) · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20Foz%20de%20Igua%C3%A7u%2026%20Nov%202005.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Iguazu_Falls",
   "fame": 99

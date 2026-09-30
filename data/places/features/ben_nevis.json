@@ -24,8 +24,7 @@
   "map": "places/maps/ben_nevis.png",
   "photo": {
     "file": "places/photos/ben_nevis.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ben%20nevis.jpg",
-    "credit": "Photo: Loek037 at Dutch Wikipedia · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ben%20nevis.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Ben_Nevis",
   "fame": 78

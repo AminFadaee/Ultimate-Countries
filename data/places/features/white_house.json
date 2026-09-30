@@ -24,8 +24,7 @@
   "map": "places/maps/white_house.png",
   "photo": {
     "file": "places/photos/white_house.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/WhiteHouseSouthFacade.JPG",
-    "credit": "Photo: This image or media was taken or created by Matt H. Wade. To see his entire portfolio, cli · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/WhiteHouseSouthFacade.JPG"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/White_House",
   "fame": 143

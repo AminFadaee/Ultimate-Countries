@@ -24,8 +24,7 @@
   "map": "places/maps/seljalandsfoss.png",
   "photo": {
     "file": "places/photos/seljalandsfoss.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Seljalandsfoss%20-%20panoramio%20%287%29.jpg",
-    "credit": "Photo: Zoran Kurelić Rabko · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Seljalandsfoss%20-%20panoramio%20%287%29.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Seljalandsfoss",
   "fame": 40

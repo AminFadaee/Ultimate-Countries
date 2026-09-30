@@ -25,8 +25,7 @@
   "map": "places/maps/acropolis_of_athens.png",
   "photo": {
     "file": "places/photos/acropolis_of_athens.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Attica%2006-13%20Athens%2050%20View%20from%20Philopappos%20-%20Acropolis%20Hill.jpg",
-    "credit": "Photo: A.Savin · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Attica%2006-13%20Athens%2050%20View%20from%20Philopappos%20-%20Acropolis%20Hill.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Acropolis_of_Athens",
   "fame": 97

@@ -24,8 +24,7 @@
   "map": "places/maps/nanga_parbat.png",
   "photo": {
     "file": "places/photos/nanga_parbat.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Nanga%20parbat%2C%20fairy%20medow%2C%20Pak%20by%20gul791.jpg",
-    "credit": "Photo: Atif Gulzar · Copyrighted free use · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Nanga%20parbat%2C%20fairy%20medow%2C%20Pak%20by%20gul791.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Nanga_Parbat",
   "fame": 90

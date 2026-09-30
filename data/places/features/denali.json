@@ -24,8 +24,7 @@
   "map": "places/maps/denali.png",
   "photo": {
     "file": "places/photos/denali.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Wonder%20Lake%20and%20Denali.jpg",
-    "credit": "Photo: Denali National Park and Preserve · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Wonder%20Lake%20and%20Denali.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Denali",
   "fame": 100

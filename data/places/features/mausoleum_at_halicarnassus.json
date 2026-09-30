@@ -24,8 +24,7 @@
   "map": "places/maps/mausoleum_at_halicarnassus.png",
   "photo": {
     "file": "places/photos/mausoleum_at_halicarnassus.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20ruins%20of%20the%20Mausoleum%20at%20Halicarnassus.jpg",
-    "credit": "Photo: FollowingHadrian · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20ruins%20of%20the%20Mausoleum%20at%20Halicarnassus.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus",
   "fame": 90

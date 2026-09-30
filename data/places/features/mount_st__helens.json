@@ -24,8 +24,7 @@
   "map": "places/maps/mount_st__helens.png",
   "photo": {
     "file": "places/photos/mount_st__helens.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/MSH82%20st%20helens%20plume%20from%20harrys%20ridge%2005-19-82.jpg",
-    "credit": "Photo: Lyn Topinka · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/MSH82%20st%20helens%20plume%20from%20harrys%20ridge%2005-19-82.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_St._Helens",
   "fame": 82

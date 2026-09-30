@@ -24,8 +24,7 @@
   "map": "places/maps/chimborazo.png",
   "photo": {
     "file": "places/photos/chimborazo.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Volc%C3%A1n%20Chimborazo%20desde%20Riobamba.jpg",
-    "credit": "Photo: Eduardo Navas · CC BY-SA 2.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Volc%C3%A1n%20Chimborazo%20desde%20Riobamba.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Chimborazo",
   "fame": 84

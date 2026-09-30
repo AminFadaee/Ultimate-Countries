@@ -24,8 +24,7 @@
   "map": "places/maps/kilauea.png",
   "photo": {
     "file": "places/photos/kilauea.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kilauea%20-%20Landsat%20mosaic.jpg",
-    "credit": "Photo: Hawaii Land Cover Analysis project, NOAA Coastal Services Center · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kilauea%20-%20Landsat%20mosaic.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/K%C4%ABlauea",
   "fame": 65

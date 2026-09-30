@@ -24,8 +24,7 @@
   "map": "places/maps/tambora.png",
   "photo": {
     "file": "places/photos/tambora.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Caldera%20Mt%20Tambora%20Sumbawa%20Indonesia.jpg",
-    "credit": "Photo: Jialiang Gao (peace-on-earth.org) · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Caldera%20Mt%20Tambora%20Sumbawa%20Indonesia.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Tambora",
   "fame": 73

@@ -24,8 +24,7 @@
   "map": "places/maps/triglav.png",
   "photo": {
     "file": "places/photos/triglav.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Triglav.jpg",
-    "credit": "Photo: Andrej Jakobčič · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Triglav.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Triglav",
   "fame": 65

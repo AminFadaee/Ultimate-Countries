@@ -25,8 +25,7 @@
   "map": "places/maps/sydney_opera_house.png",
   "photo": {
     "file": "places/photos/sydney_opera_house.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sydney%20Opera%20House%20Sails.jpg",
-    "credit": "Photo: No machine-readable author provided. Roybb95~commonswiki assumed based on copyright claim · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sydney%20Opera%20House%20Sails.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Sydney_Opera_House",
   "fame": 99

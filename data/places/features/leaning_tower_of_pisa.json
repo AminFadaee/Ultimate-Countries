@@ -24,8 +24,7 @@
   "map": "places/maps/leaning_tower_of_pisa.png",
   "photo": {
     "file": "places/photos/leaning_tower_of_pisa.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Campanile%20D%C3%B4me%20-%20Pise%20%28IT52%29%20-%202022-08-31%20-%2020.jpg",
-    "credit": "Photo: Chabe01 · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Campanile%20D%C3%B4me%20-%20Pise%20%28IT52%29%20-%202022-08-31%20-%2020.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa",
   "fame": 119

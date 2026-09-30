@@ -24,8 +24,7 @@
   "map": "places/maps/mount_rainier.png",
   "photo": {
     "file": "places/photos/mount_rainier.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Rainier%205917s.JPG",
-    "credit": "Photo: Walter Siegmund · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Rainier%205917s.JPG"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Rainier",
   "fame": 69

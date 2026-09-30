@@ -27,8 +27,7 @@
   "map": "places/maps/mount_bazarduzu.png",
   "photo": {
     "file": "places/photos/mount_bazarduzu.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Bazarduzu%20detail.JPG",
-    "credit": "Photo: Freieck · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Bazarduzu%20detail.JPG"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Bazard%C3%BCz%C3%BC",
   "fame": 107

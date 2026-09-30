@@ -24,8 +24,7 @@
   "map": "places/maps/baekdu_mountain.png",
   "photo": {
     "file": "places/photos/baekdu_mountain.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Baitou%20Mountain%20Tianchi.jpg",
-    "credit": "Photo: Bdpmax · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Baitou%20Mountain%20Tianchi.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Paektu",
   "fame": 77

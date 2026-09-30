@@ -24,8 +24,7 @@
   "map": "places/maps/boyoma_falls.png",
   "photo": {
     "file": "places/photos/boyoma_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Zaire%20kisangani%20stroom%2011%20copy.jpg",
-    "credit": "Photo: Ad Meskens · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Zaire%20kisangani%20stroom%2011%20copy.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Boyoma_Falls",
   "fame": 44

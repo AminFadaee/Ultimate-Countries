@@ -25,8 +25,7 @@
   "map": "places/maps/hadrian_s_wall.png",
   "photo": {
     "file": "places/photos/hadrian_s_wall.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Section%20of%20Hadrian%27s%20Wall%201.jpg",
-    "credit": "Photo: quisnovus from Gloucester, England · CC BY 2.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Section%20of%20Hadrian%27s%20Wall%201.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Hadrian%27s_Wall",
   "fame": 82

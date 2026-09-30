@@ -24,8 +24,7 @@
   "map": "places/maps/parthenon.png",
   "photo": {
     "file": "places/photos/parthenon.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Parthenon%20in%20Athens.jpg",
-    "credit": "Photo: Steve Swayne · CC BY 2.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Parthenon%20in%20Athens.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Parthenon",
   "fame": 137

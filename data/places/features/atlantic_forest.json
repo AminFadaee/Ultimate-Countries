@@ -26,8 +26,7 @@
   "map": "places/maps/atlantic_forest.png",
   "photo": {
     "file": "places/photos/atlantic_forest.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Atlantic%20Forest%20WWF.jpg",
-    "credit": "Photo: NASA and Miguelrangeljr · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Atlantic%20Forest%20WWF.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Atlantic_Forest",
   "fame": 48

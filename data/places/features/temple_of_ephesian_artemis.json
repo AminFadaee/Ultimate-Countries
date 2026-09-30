@@ -24,8 +24,7 @@
   "map": "places/maps/temple_of_ephesian_artemis.png",
   "photo": {
     "file": "places/photos/temple_of_ephesian_artemis.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ephesos.jpg",
-    "credit": "Photo: Arkiyolok · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ephesos.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Temple_of_Artemis",
   "fame": 94

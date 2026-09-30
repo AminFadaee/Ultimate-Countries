@@ -24,8 +24,7 @@
   "map": "places/maps/carthage.png",
   "photo": {
     "file": "places/photos/carthage.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tunisie%20Carthage%20Ruines%2008.JPG",
-    "credit": "Photo: Calips · CC BY 2.5 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tunisie%20Carthage%20Ruines%2008.JPG"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Carthage",
   "fame": 121

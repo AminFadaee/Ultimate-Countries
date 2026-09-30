@@ -24,8 +24,7 @@
   "map": "places/maps/machu_picchu.png",
   "photo": {
     "file": "places/photos/machu_picchu.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Machu%20Picchu%2C%202023%20%28012%29.jpg",
-    "credit": "Photo: Draceane · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Machu%20Picchu%2C%202023%20%28012%29.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Machu_Picchu",
   "fame": 150

@@ -24,8 +24,7 @@
   "map": "places/maps/kiel_canal.png",
   "photo": {
     "file": "places/photos/kiel_canal.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/13-09-23-Fotoflug-Nordsee-RalfR-N3S%200008.jpg",
-    "credit": "Photo: Ralf Roletschek · GFDL 1.2 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/13-09-23-Fotoflug-Nordsee-RalfR-N3S%200008.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Kiel_Canal",
   "fame": 67

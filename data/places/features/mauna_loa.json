@@ -24,8 +24,7 @@
   "map": "places/maps/mauna_loa.png",
   "photo": {
     "file": "places/photos/mauna_loa.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mauna%20Loa.jpg",
-    "credit": "Photo: Gordon Joly · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mauna%20Loa.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mauna_Loa",
   "fame": 78

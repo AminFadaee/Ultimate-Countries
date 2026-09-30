@@ -24,8 +24,7 @@
   "map": "places/maps/mauna_kea.png",
   "photo": {
     "file": "places/photos/mauna_kea.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mauna%20Kea10.jpg",
-    "credit": "Photo: Unknown author · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mauna%20Kea10.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mauna_Kea",
   "fame": 87

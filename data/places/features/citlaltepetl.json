@@ -24,8 +24,7 @@
   "map": "places/maps/citlaltepetl.png",
   "photo": {
     "file": "places/photos/citlaltepetl.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pico%20de%20Orizaba%20desde%20Hidalgo%2C%20Puebla.jpg",
-    "credit": "Photo: México en Fotos · CC BY-SA 2.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pico%20de%20Orizaba%20desde%20Hidalgo%2C%20Puebla.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Pico_de_Orizaba",
   "fame": 65

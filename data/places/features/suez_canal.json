@@ -24,8 +24,7 @@
   "map": "places/maps/suez_canal.png",
   "photo": {
     "file": "places/photos/suez_canal.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Suez%20Canal%2C%20Egypt%20%2831596166706%29.jpg",
-    "credit": "Photo: Pierre Markuse from Hamm, Germany · CC BY 2.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Suez%20Canal%2C%20Egypt%20%2831596166706%29.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Suez_Canal",
   "fame": 177

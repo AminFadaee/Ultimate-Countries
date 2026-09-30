@@ -24,8 +24,7 @@
   "map": "places/maps/jog_falls.png",
   "photo": {
     "file": "places/photos/jog_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Jog%20Falls%20at%20Shimoga.jpg",
-    "credit": "Photo: Arkadeep Meta · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Jog%20Falls%20at%20Shimoga.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Jog_Falls",
   "fame": 41

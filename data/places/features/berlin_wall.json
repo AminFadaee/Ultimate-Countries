@@ -24,8 +24,7 @@
   "map": "places/maps/berlin_wall.png",
   "photo": {
     "file": "places/photos/berlin_wall.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Berlin%20Wall%20Potsdamer%20Platz%20November%201975%20looking%20east%20crop.jpg",
-    "credit": "Photo: Edward Valachovic https://www.flickr.com/people/fauxaddress/ · CC BY-SA 2.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Berlin%20Wall%20Potsdamer%20Platz%20November%201975%20looking%20east%20crop.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Berlin_Wall",
   "fame": 140

@@ -25,8 +25,7 @@
   "map": "places/maps/niagara_falls.png",
   "photo": {
     "file": "places/photos/niagara_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Niagara%20Falls%20USA%20Canada%20from%20Skylon%20Tower%20on%202002-05-28%2C%20full%20size.jpg",
-    "credit": "Photo: Robert F. Tobler · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Niagara%20Falls%20USA%20Canada%20from%20Skylon%20Tower%20on%202002-05-28%2C%20full%20size.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Niagara_Falls",
   "fame": 135

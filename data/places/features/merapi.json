@@ -24,8 +24,7 @@
   "map": "places/maps/merapi.png",
   "photo": {
     "file": "places/photos/merapi.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Merapi%20Not%20Just%20a%20Legend%20and%20Mythology.jpg",
-    "credit": "Photo: Rosalia.silaban · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Merapi%20Not%20Just%20a%20Legend%20and%20Mythology.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Merapi",
   "fame": 79

@@ -26,8 +26,7 @@
   "map": "places/maps/al_aqsa_mosque.png",
   "photo": {
     "file": "places/photos/al_aqsa_mosque.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem-2013-Temple%20Mount-Al-Aqsa%20Mosque%20%28NE%20exposure%29.jpg",
-    "credit": "Photo: Godot13 · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem-2013-Temple%20Mount-Al-Aqsa%20Mosque%20%28NE%20exposure%29.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Al-Aqsa_Mosque",
   "fame": 103

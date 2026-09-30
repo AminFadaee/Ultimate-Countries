@@ -24,8 +24,7 @@
   "map": "places/maps/teide.png",
   "photo": {
     "file": "places/photos/teide.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Teide%20von%20Nordosten%20%28Zuschnitt%202%29.jpg",
-    "credit": "Photo: Thomas Wolf, www.foto-tw.de · CC BY-SA 3.0 de · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Teide%20von%20Nordosten%20%28Zuschnitt%202%29.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Teide",
   "fame": 105

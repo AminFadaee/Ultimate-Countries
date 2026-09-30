@@ -25,8 +25,7 @@
   "map": "places/maps/statue_of_liberty.png",
   "photo": {
     "file": "places/photos/statue_of_liberty.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Statue%20of%20Liberty%20and%20a%20sightseeing%20boat%2C%20Liberty%20Island%2C%20New%20York.jpg",
-    "credit": "Photo: Christian David · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Statue%20of%20Liberty%20and%20a%20sightseeing%20boat%2C%20Liberty%20Island%2C%20New%20York.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Statue_of_Liberty",
   "fame": 158

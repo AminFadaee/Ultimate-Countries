@@ -24,8 +24,7 @@
   "map": "places/maps/popocatepetl.png",
   "photo": {
     "file": "places/photos/popocatepetl.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mexico-Popocatepetl.jpg",
-    "credit": "Photo: Jakub Hejtmánek · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mexico-Popocatepetl.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Popocat%C3%A9petl",
   "fame": 72

@@ -24,8 +24,7 @@
   "map": "places/maps/abu_simbel.png",
   "photo": {
     "file": "places/photos/abu_simbel.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Gro%C3%9Fer%20Tempel%20%28Abu%20Simbel%29%2031.jpg",
-    "credit": "Photo: Olaf Tausch · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Gro%C3%9Fer%20Tempel%20%28Abu%20Simbel%29%2031.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Abu_Simbel",
   "fame": 93

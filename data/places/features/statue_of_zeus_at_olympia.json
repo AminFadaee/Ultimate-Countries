@@ -24,8 +24,7 @@
   "map": "places/maps/statue_of_zeus_at_olympia.png",
   "photo": {
     "file": "places/photos/statue_of_zeus_at_olympia.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Jupiter%20Olympien%20ou%20l%27art%20de%20la%20sculpture%20antique.jpg",
-    "credit": "Photo: Quatremère de Quincy · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Jupiter%20Olympien%20ou%20l%27art%20de%20la%20sculpture%20antique.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Statue_of_Zeus_at_Olympia",
   "fame": 93

@@ -24,8 +24,7 @@
   "map": "places/maps/angkor_wat.png",
   "photo": {
     "file": "places/photos/angkor_wat.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20wat%20temple.jpg",
-    "credit": "Photo: The original uploader was Fuzheado at English Wikipedia. · CC BY-SA 2.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20wat%20temple.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Angkor_Wat",
   "fame": 137

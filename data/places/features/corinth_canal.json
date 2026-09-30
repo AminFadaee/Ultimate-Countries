@@ -24,8 +24,7 @@
   "map": "places/maps/corinth_canal.png",
   "photo": {
     "file": "places/photos/corinth_canal.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Canal%20of%20korinth%20greece.jpg",
-    "credit": "Photo: Vancouverquadra at en.wikipedia · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Canal%20of%20korinth%20greece.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Corinth_Canal",
   "fame": 62

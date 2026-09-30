@@ -24,8 +24,7 @@
   "map": "places/maps/aoraki___mount_cook.png",
   "photo": {
     "file": "places/photos/aoraki___mount_cook.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/00%200985%20Mount%20Cook%20-%20New%20Zealand%20Alps.jpg",
-    "credit": "Photo: W. Bulach · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/00%200985%20Mount%20Cook%20-%20New%20Zealand%20Alps.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Aoraki_/_Mount_Cook",
   "fame": 69

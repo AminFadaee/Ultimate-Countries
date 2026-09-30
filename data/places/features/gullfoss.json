@@ -24,8 +24,7 @@
   "map": "places/maps/gullfoss.png",
   "photo": {
     "file": "places/photos/gullfoss.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/GullfossOverview.jpg",
-    "credit": "Photo: Andreas Tille · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/GullfossOverview.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Gullfoss",
   "fame": 47

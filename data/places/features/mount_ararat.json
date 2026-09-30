@@ -24,8 +24,7 @@
   "map": "places/maps/mount_ararat.png",
   "photo": {
     "file": "places/photos/mount_ararat.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/NEO%20ararat%20big.jpg",
-    "credit": "Photo: NASA/JSC · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/NEO%20ararat%20big.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Ararat",
   "fame": 111

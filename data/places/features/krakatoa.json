@@ -19,8 +19,7 @@
   "map": "places/maps/krakatoa.png",
   "photo": {
     "file": "places/photos/krakatoa.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Krakatoa%20NasaWorldWind%202000.jpg",
-    "credit": "Photo: Sémhur · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Krakatoa%20NasaWorldWind%202000.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Krakatoa",
   "fame": 92

@@ -24,8 +24,7 @@
   "map": "places/maps/mount_cameroon.png",
   "photo": {
     "file": "places/photos/mount_cameroon.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Char%20des%20Dieux%20-%20Fako%20Mountain%20-%20Mount%20Cameroon%20National%20Park%20-%20R%C3%A9gion%20du%20Sud-ouest.jpg",
-    "credit": "Photo: Eric Joel MAMA NKE · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Char%20des%20Dieux%20-%20Fako%20Mountain%20-%20Mount%20Cameroon%20National%20Park%20-%20R%C3%A9gion%20du%20Sud-ouest.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Cameroon",
   "fame": 60

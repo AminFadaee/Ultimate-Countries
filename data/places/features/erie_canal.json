@@ -24,8 +24,7 @@
   "map": "places/maps/erie_canal.png",
   "photo": {
     "file": "places/photos/erie_canal.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20over%20the%20Erie%20Canal%20in%20North%20Tonawanda%2C%20NY..jpg",
-    "credit": "Photo: Joshua Karn · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20over%20the%20Erie%20Canal%20in%20North%20Tonawanda%2C%20NY..jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Erie_Canal",
   "fame": 65

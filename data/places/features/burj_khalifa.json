@@ -24,8 +24,7 @@
   "map": "places/maps/burj_khalifa.png",
   "photo": {
     "file": "places/photos/burj_khalifa.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Dubai%20skyline%202015%20%28crop%29.jpg",
-    "credit": "Photo: Tim.Reckmann · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Dubai%20skyline%202015%20%28crop%29.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Burj_Khalifa",
   "fame": 140

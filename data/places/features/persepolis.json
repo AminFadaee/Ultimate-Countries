@@ -25,8 +25,7 @@
   "map": "places/maps/persepolis.png",
   "photo": {
     "file": "places/photos/persepolis.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Gate%20of%20All%20Nations%2C%20Persepolis.jpg",
-    "credit": "Photo: Alborzagros · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Gate%20of%20All%20Nations%2C%20Persepolis.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Persepolis",
   "fame": 103

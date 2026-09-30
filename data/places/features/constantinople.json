@@ -24,8 +24,7 @@
   "map": "places/maps/constantinople.png",
   "photo": {
     "file": "places/photos/constantinople.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Byzantine%20Constantinople-en.png",
-    "credit": "Photo: Cplakidas · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Byzantine%20Constantinople-en.png"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Constantinople",
   "fame": 128

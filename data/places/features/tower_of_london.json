@@ -25,8 +25,7 @@
   "map": "places/maps/tower_of_london.png",
   "photo": {
     "file": "places/photos/tower_of_london.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tower%20of%20London%20viewed%20from%20the%20River%20Thames.jpg",
-    "credit": "Photo: Bob Collowan · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tower%20of%20London%20viewed%20from%20the%20River%20Thames.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Tower_of_London",
   "fame": 88

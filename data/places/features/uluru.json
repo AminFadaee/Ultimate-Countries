@@ -24,8 +24,7 @@
   "map": "places/maps/uluru.png",
   "photo": {
     "file": "places/photos/uluru.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20at%20Uluru%20on%20July%2030%2C%202005.jpg",
-    "credit": "Photo: Thomas Schoch · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20at%20Uluru%20on%20July%2030%2C%202005.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Uluru",
   "fame": 94

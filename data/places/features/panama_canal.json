@@ -24,8 +24,7 @@
   "map": "places/maps/panama_canal.png",
   "photo": {
     "file": "places/photos/panama_canal.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Panama%20Canal%20Gatun%20Locks.jpg",
-    "credit": "Photo: User:Stan Shebs · CC BY-SA 3.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Panama%20Canal%20Gatun%20Locks.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Panama_Canal",
   "fame": 162

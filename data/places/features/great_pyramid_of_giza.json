@@ -24,8 +24,7 @@
   "map": "places/maps/great_pyramid_of_giza.png",
   "photo": {
     "file": "places/photos/great_pyramid_of_giza.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kheops-Pyramid.jpg",
-    "credit": "Photo: Nina · CC BY 2.5 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kheops-Pyramid.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
   "fame": 126

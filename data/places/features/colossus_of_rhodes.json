@@ -24,8 +24,7 @@
   "map": "places/maps/colossus_of_rhodes.png",
   "photo": {
     "file": "places/photos/colossus_of_rhodes.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Colosse%20de%20Rhodes%20%28Barclay%29.jpg",
-    "credit": "Photo: gravure sur bois de Sidney Barclay numérisée Google · Public domain · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Colosse%20de%20Rhodes%20%28Barclay%29.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Colossus_of_Rhodes",
   "fame": 94

@@ -25,8 +25,7 @@
   "map": "places/maps/byblos.png",
   "photo": {
     "file": "places/photos/byblos.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Byblos%20Libanon%202003.JPG",
-    "credit": "Photo: Orient at de.wikipedia · CC BY-SA 2.0 de · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Byblos%20Libanon%202003.JPG"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Byblos",
   "fame": 83

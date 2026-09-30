@@ -24,8 +24,7 @@
   "map": "places/maps/cotopaxi_volcano.png",
   "photo": {
     "file": "places/photos/cotopaxi_volcano.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/V%C3%B3lcan%20Cotopaxi.jpg",
-    "credit": "Photo: camilogaleano.com · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/V%C3%B3lcan%20Cotopaxi.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Cotopaxi",
   "fame": 65

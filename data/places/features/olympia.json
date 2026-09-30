@@ -25,8 +25,7 @@
   "map": "places/maps/olympia.png",
   "photo": {
     "file": "places/photos/olympia.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Olympic%20Flame%2C%20the%20Start%20of%20the%20Olympic%20Torch%20Relay%20%2851224124860%29.jpg",
-    "credit": "Photo: dronepicr · CC BY 2.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Olympic%20Flame%2C%20the%20Start%20of%20the%20Olympic%20Torch%20Relay%20%2851224124860%29.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Olympia,_Greece",
   "fame": 89

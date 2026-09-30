@@ -25,8 +25,7 @@
   "map": "places/maps/mount_olympus.png",
   "photo": {
     "file": "places/photos/mount_olympus.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt%20Olympus%20aerial%202.jpg",
-    "credit": "Photo: kallerna · CC BY-SA 4.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt%20Olympus%20aerial%202.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Olympus",
   "fame": 109

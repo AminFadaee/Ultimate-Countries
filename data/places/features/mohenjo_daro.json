@@ -25,8 +25,7 @@
   "map": "places/maps/mohenjo_daro.png",
   "photo": {
     "file": "places/photos/mohenjo_daro.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mohenjodaro%20Sindh.jpeg",
-    "credit": "Photo: The original uploader was M.Imran at English Wikipedia. · CC SA 1.0 · Wikimedia Commons"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mohenjodaro%20Sindh.jpeg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mohenjo-daro",
   "fame": 98
