@@ -1,12 +1,11 @@
 import itertools
 from collections import defaultdict
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 from geography.sources.wikidata import POINT, Wikidata, display_name, qid_of, values_clause
 
 BATCH = 200
 CITY = "Q515"
-HUMAN_SETTLEMENT = "Q486972"
 WORLD_HERITAGE_SITE = "Q9259"
 METRES_PER_KILOMETRE = 1000
 SQUARE_METRES_PER_SQUARE_KILOMETRE = 1_000_000
@@ -24,7 +23,6 @@ class ItemFacts:
     length_km: float | None = None
     area_km2: float | None = None
     world_heritage: bool = False
-    types: set[str] = field(default_factory=set)
 
 
 @dataclass(frozen=True)
@@ -75,7 +73,7 @@ class FeatureQueries:
         found: dict[str, ItemFacts] = {}
         for batch in itertools.batched(sorted(qids), BATCH):
             rows = self.wikidata._select(f"""
-                SELECT ?item ?itemLabel ?links ?image ?coordinates ?article ?height ?elevation ?length ?area ?heritage ?type WHERE {{
+                SELECT ?item ?itemLabel ?links ?image ?coordinates ?article ?height ?elevation ?length ?area ?heritage WHERE {{
                   VALUES ?item {{ {values_clause(batch)} }}
                   ?item wikibase:sitelinks ?links .
                   OPTIONAL {{ ?item wdt:P18 ?image }}
@@ -86,7 +84,6 @@ class FeatureQueries:
                   OPTIONAL {{ ?item p:P2043/psn:P2043/wikibase:quantityAmount ?length }}
                   OPTIONAL {{ ?item p:P2046/psn:P2046/wikibase:quantityAmount ?area }}
                   OPTIONAL {{ ?item wdt:P1435 ?heritage . FILTER(?heritage = wd:{WORLD_HERITAGE_SITE}) }}
-                  OPTIONAL {{ ?item wdt:P31 ?type }}
                   SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,mul" }}
                 }}""")
             for row in rows:
@@ -109,29 +106,20 @@ class FeatureQueries:
         if "area" in row:
             facts.area_km2 = largest(facts.area_km2, float(row["area"]) / SQUARE_METRES_PER_SQUARE_KILOMETRE)
         facts.world_heritage = facts.world_heritage or "heritage" in row
-        if "type" in row:
-            facts.types.add(qid_of(row["type"]))
 
     def instances_of(self, qids: set[str], cls: str) -> set[str]:
-        found = set()
-        for batch in itertools.batched(sorted(qids), BATCH):
-            rows = self.wikidata._select(f"""
-                SELECT DISTINCT ?item WHERE {{
-                  VALUES ?item {{ {values_clause(batch)} }}
-                  ?item wdt:P31 ?type . ?type wdt:P279* wd:{cls} .
-                }}""")
-            found.update(qid_of(row["item"]) for row in rows)
-        return found
+        return self._matching(qids, f"?item wdt:P31 ?type . ?type wdt:P279* wd:{cls} .")
 
     def inhabited(self, qids: set[str]) -> set[str]:
+        return self._matching(qids, "?item wdt:P1082 ?population . FILTER(?population > 0) FILTER NOT EXISTS { ?item wdt:P576 ?dissolved }")
+
+    def _matching(self, qids: set[str], condition: str) -> set[str]:
         found = set()
         for batch in itertools.batched(sorted(qids), BATCH):
             rows = self.wikidata._select(f"""
                 SELECT DISTINCT ?item WHERE {{
                   VALUES ?item {{ {values_clause(batch)} }}
-                  ?item wdt:P1082 ?population .
-                  FILTER(?population > 0)
-                  FILTER NOT EXISTS {{ ?item wdt:P576 ?dissolved }}
+                  {condition}
                 }}""")
             found.update(qid_of(row["item"]) for row in rows)
         return found
