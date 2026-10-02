@@ -55,8 +55,8 @@ class Template:
     front: str
     back: str
 
-    def as_genanki(self) -> dict:
-        return {"name": self.name, "qfmt": self.front, "afmt": self.back}
+    def as_genanki(self, script: str = "") -> dict:
+        return {"name": self.name, "qfmt": self.front + script, "afmt": self.back + script}
 
 
 @dataclass(frozen=True)
@@ -237,6 +237,77 @@ CSS = f"""
 .context {{ font-size: 14px; line-height: 1.5; color: var(--muted); margin-top: 22px; }}
 """
 
+MAP_ZOOM_CSS = """
+.map img { cursor: zoom-in; }
+.zoom-overlay { position: fixed; inset: 0; z-index: 1000; overflow: auto; background: rgba(0, 0, 0, .88); cursor: grab;
+  -webkit-overflow-scrolling: touch; }
+.zoom-overlay.dragging { cursor: grabbing; }
+.zoom-stage { display: flex; min-width: 100%; min-height: 100%; width: max-content; height: max-content; }
+.zoom-stage img { margin: auto; max-width: none; max-height: none; }
+"""
+
+MAP_ZOOM_SCRIPT = """
+<script>
+(function () {
+  var ZOOM = 1.25;
+  var root = document.getElementById("qa") || document.body;
+
+  function open(image, event) {
+    var bounds = image.getBoundingClientRect();
+    var focusX = (event.clientX - bounds.left) / bounds.width;
+    var focusY = (event.clientY - bounds.top) / bounds.height;
+    var fit = Math.min(window.innerWidth / image.naturalWidth, window.innerHeight / image.naturalHeight);
+    var overlay = document.createElement("div");
+    var stage = document.createElement("div");
+    var large = document.createElement("img");
+    overlay.className = "zoom-overlay";
+    stage.className = "zoom-stage";
+    large.src = image.src;
+    large.style.width = image.naturalWidth * fit * ZOOM + "px";
+    large.style.height = image.naturalHeight * fit * ZOOM + "px";
+    stage.appendChild(large);
+    overlay.appendChild(stage);
+    root.appendChild(overlay);
+    overlay.scrollLeft = large.offsetLeft + focusX * large.offsetWidth - overlay.clientWidth / 2;
+    overlay.scrollTop = large.offsetTop + focusY * large.offsetHeight - overlay.clientHeight / 2;
+    pannable(overlay);
+  }
+
+  function pannable(overlay) {
+    var drag = null;
+    overlay.addEventListener("pointerdown", function (event) {
+      if (event.pointerType !== "mouse") return;
+      drag = { x: event.clientX, y: event.clientY, left: overlay.scrollLeft, top: overlay.scrollTop, moved: false };
+      overlay.classList.add("dragging");
+    });
+    overlay.addEventListener("pointermove", function (event) {
+      if (!drag) return;
+      var dx = event.clientX - drag.x;
+      var dy = event.clientY - drag.y;
+      drag.moved = drag.moved || Math.abs(dx) + Math.abs(dy) > 4;
+      overlay.scrollLeft = drag.left - dx;
+      overlay.scrollTop = drag.top - dy;
+    });
+    overlay.addEventListener("pointerup", function () {
+      overlay.classList.remove("dragging");
+      setTimeout(function () { drag = null; }, 0);
+    });
+    overlay.addEventListener("click", function (event) {
+      event.stopPropagation();
+      if (!(drag && drag.moved)) overlay.remove();
+    });
+  }
+
+  root.querySelectorAll(".map img").forEach(function (image) {
+    image.addEventListener("click", function (event) {
+      event.stopPropagation();
+      open(image, event);
+    });
+  });
+})();
+</script>
+"""
+
 
 def description() -> str:
     return f"""
@@ -318,7 +389,9 @@ class MediaLibrary:
 class DeckBuilder:
     def __init__(self, data_dir: pathlib.Path, build_dir: pathlib.Path):
         self.media = MediaLibrary(data_dir, build_dir / "media")
-        self.country_model = self._model(COUNTRY_MODEL_ID, f"{DECK_NAME} country", COUNTRY_FIELDS, COUNTRY_TEMPLATES)
+        self.country_model = self._model(
+            COUNTRY_MODEL_ID, f"{DECK_NAME} country", COUNTRY_FIELDS, COUNTRY_TEMPLATES, CSS + MAP_ZOOM_CSS, MAP_ZOOM_SCRIPT
+        )
         self.city_model = self._model(CITY_MODEL_ID, f"{DECK_NAME} city", CITY_FIELDS, CITY_TEMPLATES)
         self.root = genanki.Deck(stable_id(DECK_NAME), DECK_NAME, description())
         self.subdecks = [genanki.Deck(subdeck.deck_id, subdeck.full_name) for subdeck in Subdeck]
@@ -392,13 +465,15 @@ class DeckBuilder:
         self.notes += 1
 
     @staticmethod
-    def _model(model_id: int, name: str, fields: tuple[str, ...], templates: tuple[Template, ...]) -> genanki.Model:
+    def _model(
+        model_id: int, name: str, fields: tuple[str, ...], templates: tuple[Template, ...], css: str = CSS, script: str = ""
+    ) -> genanki.Model:
         return genanki.Model(
             model_id,
             name,
             fields=[{"name": field} for field in fields],
-            templates=[template.as_genanki() for template in templates],
-            css=CSS,
+            templates=[template.as_genanki(script) for template in templates],
+            css=css,
             sort_field_index=1,
         )
 
