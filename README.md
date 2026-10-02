@@ -170,7 +170,7 @@ uv run geography places-deck  # build build/ultimate_places.apkg
 uv run geography samples      # render the sample cards in docs/samples/ from the built decks
 ```
 
-The first `collect` downloads several hundred MB of source data and renders about 1,150 maps, which takes a few hours.
+The first `collect` downloads several hundred MB of source data and renders about 1,170 maps, which takes a few hours.
 Later runs reuse the caches.
 
 Useful options:
