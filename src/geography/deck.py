@@ -19,6 +19,8 @@ TAG_PREFIX = "UC"
 MEDIA_PREFIX = "uc"
 ULTIMATE_GEOGRAPHY_URL = "https://github.com/anki-geo/ultimate-geography"
 REPOSITORY_URL = "https://github.com/AminFadaee/Ultimate-Countries"
+COUNTRIES_ANKIWEB_URL = "https://ankiweb.net/shared/info/164142051"
+PLACES_ANKIWEB_URL = "https://ankiweb.net/shared/info/216393289"
 TAG_UNSAFE = re.compile(r"[^\w-]+")
 COUNTRY_CONTEXT = "{{Region}}{{#NotableCities}}<br>{{NotableCities}}{{/NotableCities}}"
 CITY_CONTEXT = "{{Region}}"
@@ -316,7 +318,10 @@ def description() -> str:
 Ultimate Countries covers every country and territory with a permanent population, with demonyms, languages, currencies,
 religions, population, government and city maps on top of flags, maps and capitals.</p>
 <p>Each question type lives in its own subdeck. To skip a type, <b>suspend</b> its subdeck rather than deleting it,
-because deleted cards come back when you import an update.</p>
+because deleted cards come back when you import an update. Tap a country map to zoom in on that spot; drag to look
+around and tap again to close.</p>
+<p>Companion deck: <a href="{PLACES_ANKIWEB_URL}">Ultimate Places</a>, with continents, seas, mountains, rivers, deserts,
+rainforests, regions and landmarks.</p>
 <p>Data is collected automatically from Wikidata (CC0), Wikipedia (CC BY-SA), restcountries, the World Bank,
 the Pew Research Center, Unicode CLDR, GeoNames (CC BY), ISO 3166, ISO 4217 and Natural Earth (public domain);
 maps use OpenStreetMap data (ODbL).</p>

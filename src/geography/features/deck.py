@@ -7,6 +7,7 @@ from datetime import date
 import genanki
 
 from geography.deck import (
+    COUNTRIES_ANKIWEB_URL,
     CSS,
     REPOSITORY_URL,
     TAG_UNSAFE,
@@ -134,7 +135,8 @@ def description() -> str:
     return f"""
 <p><b>{DECK_NAME}</b>: the world's continents, oceans and seas, mountains and volcanoes, deserts, rivers and lakes,
 rainforests, regions and famous landmarks, each shown on a map. Places with a recognisable look also have a photo card.</p>
-<p>A companion to Ultimate Countries, inspired by <a href="{ULTIMATE_GEOGRAPHY_URL}">Ultimate Geography</a>.</p>
+<p>A companion to <a href="{COUNTRIES_ANKIWEB_URL}">Ultimate Countries</a>, inspired by
+<a href="{ULTIMATE_GEOGRAPHY_URL}">Ultimate Geography</a>.</p>
 <p>Everything is in one deck. Every note is tagged with its kind and continent (for example <code>UP::Volcano</code> or
 <code>UP::Africa</code>), so you can study one kind at a time with a filtered deck: Tools → Create Filtered Deck,
 then search for <code>deck:"Ultimate Places" tag:UP::Volcano</code>.</p>
