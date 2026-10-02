@@ -40,6 +40,8 @@ Every card also shows the region and the country's notable cities.
 
 A card is only created when its data exists: Antarctica has no language card and territories have no government card.
 
+Tap or click a country map to zoom in on that spot; drag to look around, and tap again to close.
+
 <p>
   <img src="docs/samples/countries-capital.webp" width="49%" alt="Capital card for France">
   <img src="docs/samples/countries-capital-of.webp" width="49%" alt="Capital of card for Paris">
