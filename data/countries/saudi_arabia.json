@@ -74,7 +74,7 @@
     {
       "role": "notable",
       "id": "Q182640",
-      "name": "Ta'if",
+      "name": "Taif",
       "latitude": 21.266666666,
       "longitude": 40.416666666,
       "population": 579970
@@ -162,7 +162,7 @@
     }
   ],
   "government": {
-    "label": "Absolute monarchy",
+    "label": "Unitary Islamic absolute monarchy",
     "form": "Absolute monarchy"
   },
   "economy": {
@@ -171,7 +171,7 @@
     "disputed_with": null,
     "income_group": "High income",
     "government_spending_pct_gdp": 32.4,
-    "military_spending_pct_gdp": 7.3
+    "military_spending_pct_gdp": 6.5
   },
   "established": null,
   "independence": null,
@@ -191,11 +191,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-24"
+      "as_of": "2026-10-06"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-24"
+      "as_of": "2026-10-06"
     },
     "economic_system": {
       "source": "derived",
@@ -215,7 +215,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-24"
+      "as_of": "2026-10-06"
     },
     "government_form": {
       "source": "derived",
@@ -227,7 +227,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-24"
+      "as_of": "2026-10-06"
     },
     "income_group": {
       "source": "world_bank",
@@ -243,11 +243,11 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-24"
+      "as_of": "2026-10-06"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",
@@ -271,7 +271,7 @@
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-24"
+      "as_of": "2026-10-06"
     },
     "religions": {
       "source": "pew",

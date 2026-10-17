@@ -74,7 +74,7 @@
     {
       "role": "notable",
       "id": "Q154835",
-      "name": "Mahilyow",
+      "name": "Mogilev",
       "latitude": 53.90894,
       "longitude": 30.34296,
       "population": 352891
@@ -155,7 +155,7 @@
     "disputed_with": null,
     "income_group": "Upper middle income",
     "government_spending_pct_gdp": 41.4,
-    "military_spending_pct_gdp": 2.1
+    "military_spending_pct_gdp": 2.4
   },
   "established": null,
   "independence": null,
@@ -227,7 +227,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

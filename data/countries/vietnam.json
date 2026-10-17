@@ -16,7 +16,7 @@
     "parent_alpha_3": null
   },
   "region": "Asia",
-  "subregion": "South-Eastern Asia",
+  "subregion": "Southeast Asia",
   "continents": [
     "Asia"
   ],
@@ -49,27 +49,27 @@
     },
     {
       "role": "notable",
-      "id": "Q25282",
-      "name": "Da Nang",
-      "latitude": 16.069444444,
-      "longitude": 108.209722222,
-      "population": 2819900
-    },
-    {
-      "role": "notable",
-      "id": "Q36399",
-      "name": "Huế",
-      "latitude": 16.463888888,
-      "longitude": 107.586666666,
-      "population": 1178600
-    },
-    {
-      "role": "notable",
       "id": "Q19491",
       "name": "Nha Trang",
       "latitude": 12.245,
       "longitude": 109.191666666,
       "population": 392279
+    },
+    {
+      "role": "notable",
+      "id": "Q19316",
+      "name": "Biên Hòa",
+      "latitude": 10.950764,
+      "longitude": 106.822136,
+      "population": 1104000
+    },
+    {
+      "role": "notable",
+      "id": "Q25281",
+      "name": "Đà Lạt",
+      "latitude": 11.94,
+      "longitude": 108.4375,
+      "population": 406105
     },
     {
       "role": "notable",
@@ -110,16 +110,6 @@
       "map": "maps/cities/vietnam__da_nang.png",
       "answer_map": "maps/cities/vietnam__da_nang-answer.png",
       "most_visited": true
-    },
-    {
-      "id": "Q1877",
-      "name": "Đồng Hới",
-      "latitude": 17.483333333,
-      "longitude": 106.6,
-      "population": 133672,
-      "map": "maps/cities/vietnam__ong_hoi.png",
-      "answer_map": "maps/cities/vietnam__ong_hoi-answer.png",
-      "most_visited": false
     }
   ],
   "currencies": [
@@ -203,7 +193,7 @@
     "disputed_with": "Market economy",
     "income_group": "Upper middle income",
     "government_spending_pct_gdp": 21.5,
-    "military_spending_pct_gdp": null
+    "military_spending_pct_gdp": 2.2
   },
   "established": null,
   "independence": {
@@ -280,7 +270,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": null
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

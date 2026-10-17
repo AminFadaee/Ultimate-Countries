@@ -16,7 +16,7 @@
     "parent_alpha_3": null
   },
   "region": "Oceania",
-  "subregion": "Micronesia",
+  "subregion": "Micronesian Region",
   "continents": [
     "Oceania"
   ],
@@ -67,7 +67,7 @@
   "religions": [],
   "government": {
     "label": "Unitary parliamentary republic with an executive president",
-    "form": "Parliamentary republic"
+    "form": "Parliamentary republic with an executive president"
   },
   "economy": {
     "system": null,

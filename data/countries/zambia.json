@@ -70,14 +70,6 @@
       "latitude": -17.85,
       "longitude": 25.866666666,
       "population": 177393
-    },
-    {
-      "role": "notable",
-      "id": "Q431533",
-      "name": "Chingola",
-      "latitude": -12.544722222,
-      "longitude": 27.870833333,
-      "population": 255000
     }
   ],
   "famous_cities": [],
@@ -278,7 +270,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

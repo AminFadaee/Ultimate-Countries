@@ -51,14 +51,6 @@
     },
     {
       "role": "notable",
-      "id": "Q37801",
-      "name": "Bălți",
-      "latitude": 47.761666666,
-      "longitude": 27.928888888,
-      "population": 90954
-    },
-    {
-      "role": "notable",
       "id": "Q216363",
       "name": "Rîbnița",
       "latitude": 47.76638889,
@@ -80,6 +72,14 @@
       "latitude": 46.300277777,
       "longitude": 28.657222222,
       "population": 19120
+    },
+    {
+      "role": "notable",
+      "id": "Q853785",
+      "name": "Soroca",
+      "latitude": 48.155833333,
+      "longitude": 28.2975,
+      "population": 21135
     }
   ],
   "famous_cities": [
@@ -246,7 +246,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

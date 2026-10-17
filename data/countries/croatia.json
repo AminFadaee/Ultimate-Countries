@@ -16,7 +16,7 @@
     "parent_alpha_3": null
   },
   "region": "Europe",
-  "subregion": "Southeast Europe",
+  "subregion": "Southern Europe",
   "continents": [
     "Europe"
   ],
@@ -167,7 +167,7 @@
     "disputed_with": null,
     "income_group": "High income",
     "government_spending_pct_gdp": 48.4,
-    "military_spending_pct_gdp": 1.8
+    "military_spending_pct_gdp": 2.0
   },
   "established": "1991-10-08",
   "independence": null,
@@ -244,7 +244,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

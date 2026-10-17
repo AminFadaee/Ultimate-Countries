@@ -49,22 +49,6 @@
     },
     {
       "role": "notable",
-      "id": "Q20934",
-      "name": "Incheon",
-      "latitude": 37.463888888,
-      "longitude": 126.648611111,
-      "population": 3049315
-    },
-    {
-      "role": "notable",
-      "id": "Q20927",
-      "name": "Daegu",
-      "latitude": 35.871666666,
-      "longitude": 128.601666666,
-      "population": 2376044
-    },
-    {
-      "role": "notable",
       "id": "Q41283",
       "name": "Gwangju",
       "latitude": 35.166666666,
@@ -73,11 +57,11 @@
     },
     {
       "role": "notable",
-      "id": "Q20921",
-      "name": "Daejeon",
-      "latitude": 36.35,
-      "longitude": 127.385,
-      "population": 1475221
+      "id": "Q20714",
+      "name": "Suwon",
+      "latitude": 37.285833333,
+      "longitude": 127.01,
+      "population": 1234300
     }
   ],
   "famous_cities": [
@@ -230,7 +214,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

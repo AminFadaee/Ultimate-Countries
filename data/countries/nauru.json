@@ -1,7 +1,7 @@
 {
   "id": "Q697",
   "name": "Nauru",
-  "official_name": "Republic of Nauru",
+  "official_name": "Republic of Naoero",
   "codes": {
     "alpha_2": "NR",
     "alpha_3": "NRU",
@@ -16,7 +16,7 @@
     "parent_alpha_3": null
   },
   "region": "Oceania",
-  "subregion": "Micronesia",
+  "subregion": "Micronesian Region",
   "continents": [
     "Oceania"
   ],
@@ -28,13 +28,13 @@
     "others": []
   },
   "capitals": [
-    "Yaren District"
+    "Yaren"
   ],
   "cities": [
     {
       "role": "capital",
       "id": "Q31026",
-      "name": "Yaren District",
+      "name": "Yaren",
       "latitude": -0.5477,
       "longitude": 166.920867,
       "population": 747
@@ -67,7 +67,7 @@
   "religions": [],
   "government": {
     "label": "Unitary parliamentary republic with an executive presidency under a non-partisan democracy",
-    "form": "Parliamentary republic"
+    "form": "Parliamentary republic with an executive president"
   },
   "economy": {
     "system": null,
@@ -96,11 +96,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-12"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-12"
     },
     "economic_system": {
       "source": "derived",
@@ -120,7 +120,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-12"
     },
     "government_form": {
       "source": "derived",
@@ -132,7 +132,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-12"
     },
     "income_group": {
       "source": "world_bank",
@@ -148,7 +148,7 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-12"
     },
     "military_spending": {
       "source": "world_bank",
@@ -176,7 +176,7 @@
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-12"
     },
     "religions": {
       "source": "pew",

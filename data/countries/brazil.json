@@ -65,19 +65,19 @@
     },
     {
       "role": "notable",
-      "id": "Q42800",
-      "name": "Belo Horizonte",
-      "latitude": -19.928055555,
-      "longitude": -43.941944444,
-      "population": 2315560
-    },
-    {
-      "role": "notable",
       "id": "Q36947",
       "name": "Salvador",
       "latitude": -12.983055555,
       "longitude": -38.492777777,
       "population": 2417678
+    },
+    {
+      "role": "notable",
+      "id": "Q42800",
+      "name": "Belo Horizonte",
+      "latitude": -19.928055555,
+      "longitude": -43.941944444,
+      "population": 2315560
     }
   ],
   "famous_cities": [
@@ -215,7 +215,7 @@
     "disputed_with": null,
     "income_group": "Upper middle income",
     "government_spending_pct_gdp": 46.9,
-    "military_spending_pct_gdp": 1.0
+    "military_spending_pct_gdp": 1.1
   },
   "established": "1822-09-07",
   "independence": {
@@ -293,7 +293,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

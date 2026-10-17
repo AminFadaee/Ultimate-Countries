@@ -16,7 +16,7 @@
     "parent_alpha_3": null
   },
   "region": "Asia",
-  "subregion": "South-Eastern Asia",
+  "subregion": "Southeast Asia",
   "continents": [
     "Asia"
   ],
@@ -128,7 +128,7 @@
     "disputed_with": null,
     "income_group": "High income",
     "government_spending_pct_gdp": 16.8,
-    "military_spending_pct_gdp": 2.8
+    "military_spending_pct_gdp": 3.0
   },
   "established": "1965-08-09",
   "independence": {
@@ -206,7 +206,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

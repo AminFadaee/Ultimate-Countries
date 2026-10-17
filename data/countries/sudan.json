@@ -65,19 +65,19 @@
     },
     {
       "role": "notable",
-      "id": "Q311204",
-      "name": "Al-Fashir",
-      "latitude": 13.626983333,
-      "longitude": 25.349583333,
-      "population": 286277
-    },
-    {
-      "role": "notable",
       "id": "Q851576",
       "name": "Nyala",
       "latitude": 12.05,
       "longitude": 24.883333333,
       "population": 492984
+    },
+    {
+      "role": "notable",
+      "id": "Q311204",
+      "name": "Al-Fashir",
+      "latitude": 13.626983333,
+      "longitude": 25.349583333,
+      "population": 286277
     }
   ],
   "famous_cities": [

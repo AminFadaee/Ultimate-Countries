@@ -16,7 +16,7 @@
     "parent_alpha_3": null
   },
   "region": "Asia",
-  "subregion": "South-Eastern Asia",
+  "subregion": "Southeast Asia",
   "continents": [
     "Asia"
   ],
@@ -161,7 +161,7 @@
     "disputed_with": null,
     "income_group": "Upper middle income",
     "government_spending_pct_gdp": 23.8,
-    "military_spending_pct_gdp": 1.1
+    "military_spending_pct_gdp": 1.0
   },
   "established": null,
   "independence": null,
@@ -235,7 +235,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

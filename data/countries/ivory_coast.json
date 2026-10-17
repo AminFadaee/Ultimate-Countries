@@ -57,14 +57,6 @@
     },
     {
       "role": "notable",
-      "id": "Q985627",
-      "name": "Korhogo",
-      "latitude": 9.457777777,
-      "longitude": -5.629444444,
-      "population": 440926
-    },
-    {
-      "role": "notable",
       "id": "Q609831",
       "name": "San-Pédro",
       "latitude": 4.733333333,
@@ -78,6 +70,14 @@
       "latitude": 6.866666666,
       "longitude": -6.45,
       "population": 421879
+    },
+    {
+      "role": "notable",
+      "id": "Q985627",
+      "name": "Korhogo",
+      "latitude": 9.457777777,
+      "longitude": -5.629444444,
+      "population": 440926
     }
   ],
   "famous_cities": [],
@@ -233,7 +233,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

@@ -73,11 +73,11 @@
     },
     {
       "role": "notable",
-      "id": "Q25412",
-      "name": "Västerås",
-      "latitude": 59.61731938,
-      "longitude": 16.542157497,
-      "population": 131643
+      "id": "Q2167",
+      "name": "Lund",
+      "latitude": 55.708313018,
+      "longitude": 13.199164196,
+      "population": 98308
     }
   ],
   "famous_cities": [
@@ -191,7 +191,7 @@
     "disputed_with": null,
     "income_group": "High income",
     "government_spending_pct_gdp": 48.2,
-    "military_spending_pct_gdp": 2.0
+    "military_spending_pct_gdp": 2.5
   },
   "established": null,
   "independence": {
@@ -215,11 +215,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-18"
+      "as_of": "2026-10-08"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-18"
+      "as_of": "2026-10-08"
     },
     "economic_system": {
       "source": "derived",
@@ -239,7 +239,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-18"
+      "as_of": "2026-10-08"
     },
     "government_form": {
       "source": "derived",
@@ -251,7 +251,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-18"
+      "as_of": "2026-10-08"
     },
     "income_group": {
       "source": "world_bank",
@@ -267,11 +267,11 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-18"
+      "as_of": "2026-10-08"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",
@@ -295,7 +295,7 @@
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-18"
+      "as_of": "2026-10-08"
     },
     "religions": {
       "source": "pew",

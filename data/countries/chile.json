@@ -65,19 +65,19 @@
     },
     {
       "role": "notable",
-      "id": "Q14467",
-      "name": "La Serena",
-      "latitude": -29.9027,
-      "longitude": -71.252,
-      "population": 195382
-    },
-    {
-      "role": "notable",
       "id": "Q82128",
       "name": "Temuco",
       "latitude": -38.7399,
       "longitude": -72.5901,
       "population": 282415
+    },
+    {
+      "role": "notable",
+      "id": "Q14467",
+      "name": "La Serena",
+      "latitude": -29.9027,
+      "longitude": -71.252,
+      "population": 195382
     }
   ],
   "famous_cities": [
@@ -181,7 +181,7 @@
     "disputed_with": null,
     "income_group": "High income",
     "government_spending_pct_gdp": 26.2,
-    "military_spending_pct_gdp": 1.6
+    "military_spending_pct_gdp": 1.5
   },
   "established": null,
   "independence": {
@@ -258,7 +258,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

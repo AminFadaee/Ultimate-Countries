@@ -42,7 +42,7 @@
     {
       "role": "notable",
       "id": "Q12825018",
-      "name": "Colón City",
+      "name": "Colón",
       "latitude": 9.359752777,
       "longitude": -79.900419444,
       "population": 241817
@@ -54,14 +54,6 @@
       "latitude": 8.438180555,
       "longitude": -82.424263888,
       "population": 82907
-    },
-    {
-      "role": "notable",
-      "id": "Q919017",
-      "name": "Guna Yala",
-      "latitude": 9.296111111,
-      "longitude": -78.344166666,
-      "population": 33109
     }
   ],
   "famous_cities": [],
@@ -140,7 +132,7 @@
     "disputed_with": null,
     "income_group": "High income",
     "government_spending_pct_gdp": 21.6,
-    "military_spending_pct_gdp": null
+    "military_spending_pct_gdp": 0.0
   },
   "established": "1903-11-03",
   "independence": {
@@ -215,7 +207,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": null
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

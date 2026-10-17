@@ -16,7 +16,7 @@
     "parent_alpha_3": null
   },
   "region": "Europe",
-  "subregion": "Southeast Europe",
+  "subregion": "Southern Europe",
   "continents": [
     "Europe"
   ],
@@ -73,11 +73,11 @@
     },
     {
       "role": "notable",
-      "id": "Q115276",
-      "name": "Bar",
-      "latitude": 42.1,
-      "longitude": 19.1,
-      "population": 13719
+      "id": "Q211343",
+      "name": "Pljevlja",
+      "latitude": 43.356616666,
+      "longitude": 19.350208333,
+      "population": 19136
     }
   ],
   "famous_cities": [
@@ -149,7 +149,7 @@
     "disputed_with": null,
     "income_group": "Upper middle income",
     "government_spending_pct_gdp": 44.0,
-    "military_spending_pct_gdp": 1.8
+    "military_spending_pct_gdp": 1.9
   },
   "established": null,
   "independence": {
@@ -226,7 +226,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

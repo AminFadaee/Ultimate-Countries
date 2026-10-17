@@ -66,7 +66,7 @@
   "official_religions": [],
   "religions": [],
   "government": {
-    "label": "Self-governing and dependent parliamentary constitutional monarchy",
+    "label": "Self-governing dependent territory",
     "form": null
   },
   "economy": {
@@ -91,11 +91,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-04"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-04"
     },
     "economic_system": {
       "source": "derived",
@@ -115,7 +115,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-04"
     },
     "government_form": {
       "source": "derived",
@@ -127,7 +127,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-04"
     },
     "income_group": {
       "source": "world_bank",
@@ -143,7 +143,7 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-04"
     },
     "military_spending": {
       "source": "world_bank",
@@ -171,7 +171,7 @@
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-04"
     },
     "religions": {
       "source": "pew",

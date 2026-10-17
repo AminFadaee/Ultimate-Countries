@@ -116,7 +116,7 @@
     "disputed_with": null,
     "income_group": "Low income",
     "government_spending_pct_gdp": 15.4,
-    "military_spending_pct_gdp": 0.5
+    "military_spending_pct_gdp": 0.4
   },
   "established": null,
   "independence": {
@@ -194,7 +194,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

@@ -73,11 +73,11 @@
     },
     {
       "role": "notable",
-      "id": "Q949746",
-      "name": "Cox's Bazar",
-      "latitude": 21.583333333,
-      "longitude": 92.016666666,
-      "population": 196374
+      "id": "Q747840",
+      "name": "Barisal",
+      "latitude": 22.7,
+      "longitude": 90.366666666,
+      "population": 328278
     }
   ],
   "famous_cities": [
@@ -185,7 +185,7 @@
     "disputed_with": null,
     "income_group": "Lower middle income",
     "government_spending_pct_gdp": 14.0,
-    "military_spending_pct_gdp": 0.9
+    "military_spending_pct_gdp": 0.8
   },
   "established": "1971-12-16",
   "independence": {
@@ -262,7 +262,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

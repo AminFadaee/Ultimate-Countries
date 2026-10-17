@@ -65,19 +65,19 @@
     },
     {
       "role": "notable",
-      "id": "Q680596",
-      "name": "San Pedro de Macorís",
-      "latitude": 18.457222,
-      "longitude": -69.306111,
-      "population": 217141
-    },
-    {
-      "role": "notable",
       "id": "Q40508",
       "name": "La Romana",
       "latitude": 18.43,
       "longitude": -68.97,
       "population": 139238
+    },
+    {
+      "role": "notable",
+      "id": "Q680596",
+      "name": "San Pedro de Macorís",
+      "latitude": 18.457222,
+      "longitude": -69.306111,
+      "population": 217141
     }
   ],
   "famous_cities": [],
@@ -213,7 +213,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

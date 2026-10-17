@@ -41,19 +41,19 @@
     },
     {
       "role": "notable",
-      "id": "Q316887",
-      "name": "Saint-Paul",
-      "latitude": -21.009722222,
-      "longitude": 55.269722222,
-      "population": 108088
-    },
-    {
-      "role": "notable",
       "id": "Q249884",
       "name": "Saint-Pierre",
       "latitude": -21.341944444,
       "longitude": 55.477777777,
       "population": 85038
+    },
+    {
+      "role": "notable",
+      "id": "Q316887",
+      "name": "Saint-Paul",
+      "latitude": -21.009722222,
+      "longitude": 55.269722222,
+      "population": 108088
     }
   ],
   "famous_cities": [],

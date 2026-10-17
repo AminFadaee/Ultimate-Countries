@@ -70,6 +70,14 @@
       "latitude": -0.688333333,
       "longitude": 10.231944444,
       "population": 38775
+    },
+    {
+      "role": "notable",
+      "id": "Q1015100",
+      "name": "Moanda",
+      "latitude": -1.566666666,
+      "longitude": 13.2,
+      "population": 59154
     }
   ],
   "famous_cities": [],
@@ -124,7 +132,7 @@
     "disputed_with": null,
     "income_group": "Upper middle income",
     "government_spending_pct_gdp": 25.5,
-    "military_spending_pct_gdp": 1.5
+    "military_spending_pct_gdp": 1.7
   },
   "established": "1960-08-17",
   "independence": {
@@ -203,7 +211,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

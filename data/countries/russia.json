@@ -58,19 +58,19 @@
     },
     {
       "role": "notable",
-      "id": "Q3646",
-      "name": "Krasnodar",
-      "latitude": 45.033333333,
-      "longitude": 38.983333333,
-      "population": 1154885
-    },
-    {
-      "role": "notable",
       "id": "Q883",
       "name": "Novosibirsk",
       "latitude": 55.033333333,
       "longitude": 82.916666666,
       "population": 1637266
+    },
+    {
+      "role": "notable",
+      "id": "Q3646",
+      "name": "Krasnodar",
+      "latitude": 45.033333333,
+      "longitude": 38.983333333,
+      "population": 1154885
     },
     {
       "role": "notable",
@@ -396,7 +396,7 @@
     "disputed_with": null,
     "income_group": "High income",
     "government_spending_pct_gdp": 38.1,
-    "military_spending_pct_gdp": 7.1
+    "military_spending_pct_gdp": 7.5
   },
   "established": null,
   "independence": null,
@@ -471,7 +471,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

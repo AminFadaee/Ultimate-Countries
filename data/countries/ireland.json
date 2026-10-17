@@ -152,8 +152,8 @@
     }
   ],
   "government": {
-    "label": "Republic, unitary state",
-    "form": "Republic"
+    "label": "Parliamentary republic, unitary state",
+    "form": "Parliamentary republic"
   },
   "economy": {
     "system": "Market economy",
@@ -237,7 +237,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

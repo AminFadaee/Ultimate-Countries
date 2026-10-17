@@ -49,14 +49,6 @@
     },
     {
       "role": "notable",
-      "id": "Q319660",
-      "name": "Mbuji-Mayi",
-      "latitude": -6.126111111,
-      "longitude": 23.599722222,
-      "population": 2892000
-    },
-    {
-      "role": "notable",
       "id": "Q146723",
       "name": "Kisangani",
       "latitude": 0.515277777,
@@ -65,19 +57,27 @@
     },
     {
       "role": "notable",
-      "id": "Q204381",
-      "name": "Goma",
-      "latitude": -1.6641,
-      "longitude": 29.22286,
-      "population": 781875
-    },
-    {
-      "role": "notable",
       "id": "Q205327",
       "name": "Kananga",
       "latitude": -5.896111111,
       "longitude": 22.416666666,
       "population": 1971704
+    },
+    {
+      "role": "notable",
+      "id": "Q319660",
+      "name": "Mbuji-Mayi",
+      "latitude": -6.126111111,
+      "longitude": 23.599722222,
+      "population": 2892000
+    },
+    {
+      "role": "notable",
+      "id": "Q204381",
+      "name": "Goma",
+      "latitude": -1.6641,
+      "longitude": 29.22286,
+      "population": 781875
     }
   ],
   "famous_cities": [
@@ -191,7 +191,7 @@
     "disputed_with": null,
     "income_group": "Low income",
     "government_spending_pct_gdp": 16.5,
-    "military_spending_pct_gdp": 1.2
+    "military_spending_pct_gdp": 1.4
   },
   "established": "1960-06-30",
   "independence": {
@@ -268,7 +268,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

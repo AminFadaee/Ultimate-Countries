@@ -76,7 +76,7 @@
     {
       "role": "notable",
       "id": "Q467501",
-      "name": "Khorugh",
+      "name": "Khorog",
       "latitude": 37.491666666,
       "longitude": 71.5575,
       "population": 31100
@@ -148,7 +148,7 @@
     "disputed_with": null,
     "income_group": "Lower middle income",
     "government_spending_pct_gdp": 30.4,
-    "military_spending_pct_gdp": 1.8
+    "military_spending_pct_gdp": 1.5
   },
   "established": "1991-09-09",
   "independence": {
@@ -223,7 +223,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

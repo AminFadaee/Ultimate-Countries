@@ -319,9 +319,9 @@
     "disputed_with": "Market economy with extensive welfare state",
     "income_group": "High income",
     "government_spending_pct_gdp": 44.0,
-    "military_spending_pct_gdp": 2.3
+    "military_spending_pct_gdp": 2.4
   },
-  "established": "1801-01-01",
+  "established": null,
   "independence": null,
   "recognition": null,
   "memberships": [
@@ -397,7 +397,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

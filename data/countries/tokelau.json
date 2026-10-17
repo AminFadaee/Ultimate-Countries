@@ -97,11 +97,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-17"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-17"
     },
     "economic_system": {
       "source": "derived",
@@ -121,7 +121,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-17"
     },
     "government_form": {
       "source": "derived",
@@ -133,7 +133,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-17"
     },
     "income_group": {
       "source": "world_bank",
@@ -149,7 +149,7 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-17"
     },
     "military_spending": {
       "source": "world_bank",
@@ -173,11 +173,11 @@
     },
     "population": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-17"
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-06"
+      "as_of": "2026-10-17"
     },
     "religions": {
       "source": "pew",

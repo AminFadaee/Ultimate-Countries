@@ -16,7 +16,7 @@
     "parent_alpha_3": "DNK"
   },
   "region": "Americas",
-  "subregion": "North America",
+  "subregion": "Northern America",
   "continents": [
     "North America"
   ],
@@ -38,14 +38,6 @@
       "latitude": 64.175,
       "longitude": -51.733333333,
       "population": 18326
-    },
-    {
-      "role": "notable",
-      "id": "Q695387",
-      "name": "Sermersooq",
-      "latitude": 66.0,
-      "longitude": -40.0,
-      "population": 24643
     }
   ],
   "famous_cities": [],

@@ -50,10 +50,18 @@
     {
       "role": "notable",
       "id": "Q35784",
-      "name": "Al Bayda",
+      "name": "Bayda",
       "latitude": 32.762777777,
       "longitude": 21.755,
       "population": 250000
+    },
+    {
+      "role": "notable",
+      "id": "Q131323",
+      "name": "Misrata",
+      "latitude": 32.377777777,
+      "longitude": 15.090138888,
+      "population": 259056
     },
     {
       "role": "notable",
@@ -70,14 +78,6 @@
       "latitude": 32.083333333,
       "longitude": 23.95,
       "population": 135832
-    },
-    {
-      "role": "notable",
-      "id": "Q162413",
-      "name": "Sirte",
-      "latitude": 31.2,
-      "longitude": 16.6,
-      "population": 76788
     }
   ],
   "famous_cities": [
@@ -151,7 +151,7 @@
     "disputed_with": null,
     "income_group": "Upper middle income",
     "government_spending_pct_gdp": 60.8,
-    "military_spending_pct_gdp": 5.3
+    "military_spending_pct_gdp": 3.6
   },
   "established": null,
   "independence": {
@@ -174,11 +174,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-12"
+      "as_of": "2026-10-10"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-12"
+      "as_of": "2026-10-10"
     },
     "economic_system": {
       "source": "derived",
@@ -198,7 +198,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-12"
+      "as_of": "2026-10-10"
     },
     "government_form": {
       "source": "derived",
@@ -210,7 +210,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-12"
+      "as_of": "2026-10-10"
     },
     "income_group": {
       "source": "world_bank",
@@ -226,7 +226,7 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-12"
+      "as_of": "2026-10-10"
     },
     "military_spending": {
       "source": "world_bank",
@@ -254,7 +254,7 @@
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-12"
+      "as_of": "2026-10-10"
     },
     "religions": {
       "source": "pew",

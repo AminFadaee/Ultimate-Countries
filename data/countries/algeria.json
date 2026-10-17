@@ -57,19 +57,19 @@
     },
     {
       "role": "notable",
-      "id": "Q45942",
-      "name": "Annaba",
-      "latitude": 36.9,
-      "longitude": 7.766666666,
-      "population": 257359
-    },
-    {
-      "role": "notable",
       "id": "Q244004",
       "name": "Sétif",
       "latitude": 36.19,
       "longitude": 5.41,
       "population": 288461
+    },
+    {
+      "role": "notable",
+      "id": "Q45942",
+      "name": "Annaba",
+      "latitude": 36.9,
+      "longitude": 7.766666666,
+      "population": 257359
     },
     {
       "role": "notable",
@@ -183,7 +183,7 @@
     "disputed_with": null,
     "income_group": "Upper middle income",
     "government_spending_pct_gdp": 37.2,
-    "military_spending_pct_gdp": 8.0
+    "military_spending_pct_gdp": 8.8
   },
   "established": "1962-07-03",
   "independence": {
@@ -262,7 +262,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

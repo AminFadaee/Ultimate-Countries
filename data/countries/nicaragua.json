@@ -33,11 +33,11 @@
   "cities": [
     {
       "role": "capital",
-      "id": "Q3274",
+      "id": "Q131546626",
       "name": "Managua",
       "latitude": 12.154680555,
       "longitude": -86.273725,
-      "population": 937489
+      "population": null
     },
     {
       "role": "notable",
@@ -134,7 +134,7 @@
     "disputed_with": null,
     "income_group": "Lower middle income",
     "government_spending_pct_gdp": 27.2,
-    "military_spending_pct_gdp": 0.5
+    "military_spending_pct_gdp": 0.6
   },
   "established": null,
   "independence": {
@@ -209,7 +209,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

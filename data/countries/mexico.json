@@ -16,7 +16,7 @@
     "parent_alpha_3": null
   },
   "region": "Americas",
-  "subregion": "North America",
+  "subregion": "Central America",
   "continents": [
     "North America"
   ],
@@ -66,7 +66,7 @@
     {
       "role": "notable",
       "id": "Q125293",
-      "name": "Heroica Puebla de Zaragoza",
+      "name": "Puebla",
       "latitude": 19.051388888,
       "longitude": -98.217777777,
       "population": 1542232
@@ -193,7 +193,7 @@
     "disputed_with": null,
     "income_group": "Upper middle income",
     "government_spending_pct_gdp": 27.6,
-    "military_spending_pct_gdp": 0.9
+    "military_spending_pct_gdp": 0.7
   },
   "established": "1810-09-16",
   "independence": {
@@ -271,7 +271,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

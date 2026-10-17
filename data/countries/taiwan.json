@@ -49,14 +49,6 @@
     },
     {
       "role": "notable",
-      "id": "Q245023",
-      "name": "Taichung",
-      "latitude": 24.143888888,
-      "longitude": 120.679444444,
-      "population": 2868452
-    },
-    {
-      "role": "notable",
       "id": "Q140631",
       "name": "Tainan",
       "latitude": 22.99,
@@ -65,16 +57,8 @@
     },
     {
       "role": "notable",
-      "id": "Q115256",
-      "name": "Taoyuan",
-      "latitude": 24.991278,
-      "longitude": 121.314328,
-      "population": 2356795
-    },
-    {
-      "role": "notable",
       "id": "Q249994",
-      "name": "Hsinchu City",
+      "name": "Hsinchu",
       "latitude": 24.804722222,
       "longitude": 120.971388888,
       "population": 455871

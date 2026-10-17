@@ -16,7 +16,7 @@
     "parent_alpha_3": null
   },
   "region": "Europe",
-  "subregion": "Central Europe",
+  "subregion": "Eastern Europe",
   "continents": [
     "Europe"
   ],
@@ -173,7 +173,7 @@
     "disputed_with": "Market economy with extensive welfare state",
     "income_group": "High income",
     "government_spending_pct_gdp": 42.7,
-    "military_spending_pct_gdp": 1.9
+    "military_spending_pct_gdp": 1.8
   },
   "established": "1993-01-01",
   "independence": {
@@ -253,7 +253,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

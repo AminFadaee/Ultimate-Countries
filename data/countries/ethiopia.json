@@ -41,14 +41,6 @@
     },
     {
       "role": "notable",
-      "id": "Q193486",
-      "name": "Dire Dawa",
-      "latitude": 9.583333333,
-      "longitude": 41.866666666,
-      "population": 277000
-    },
-    {
-      "role": "notable",
       "id": "Q332319",
       "name": "Mekele",
       "latitude": 13.496944444,
@@ -78,6 +70,14 @@
       "latitude": 11.585,
       "longitude": 37.39,
       "population": 243300
+    },
+    {
+      "role": "notable",
+      "id": "Q190184",
+      "name": "Harar",
+      "latitude": 9.311111111,
+      "longitude": 42.127777777,
+      "population": 157000
     }
   ],
   "famous_cities": [
@@ -191,7 +191,7 @@
     "disputed_with": null,
     "income_group": "Low income",
     "government_spending_pct_gdp": 12.3,
-    "military_spending_pct_gdp": 0.7
+    "military_spending_pct_gdp": 0.5
   },
   "established": null,
   "independence": null,
@@ -266,7 +266,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

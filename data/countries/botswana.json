@@ -80,13 +80,13 @@
     {
       "name": "English",
       "code": "eng",
-      "official": "national",
+      "official": null,
       "percent": 81.0
     },
     {
       "name": "Tswana",
       "code": "tsn",
-      "official": null,
+      "official": "national",
       "percent": 62.0
     },
     {
@@ -129,7 +129,7 @@
   ],
   "government": {
     "label": "Unitary parliamentary republic with an executive presidency",
-    "form": "Parliamentary republic"
+    "form": "Parliamentary republic with an executive president"
   },
   "economy": {
     "system": "Market economy",
@@ -137,7 +137,7 @@
     "disputed_with": null,
     "income_group": "Upper middle income",
     "government_spending_pct_gdp": 32.7,
-    "military_spending_pct_gdp": 2.8
+    "military_spending_pct_gdp": 3.1
   },
   "established": "1966-09-30",
   "independence": {
@@ -159,11 +159,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-03"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-03"
     },
     "economic_system": {
       "source": "derived",
@@ -183,7 +183,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-03"
     },
     "government_form": {
       "source": "derived",
@@ -195,7 +195,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-03"
     },
     "income_group": {
       "source": "world_bank",
@@ -211,11 +211,11 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-03"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",
@@ -239,7 +239,7 @@
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-03"
     },
     "religions": {
       "source": "pew",

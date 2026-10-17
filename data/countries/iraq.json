@@ -73,11 +73,11 @@
     },
     {
       "role": "notable",
-      "id": "Q5684",
-      "name": "Babylon",
-      "latitude": 32.522907,
-      "longitude": 44.42415,
-      "population": 150000
+      "id": "Q199909",
+      "name": "Karbala",
+      "latitude": 32.616666666,
+      "longitude": 44.033333333,
+      "population": 690100
     }
   ],
   "famous_cities": [
@@ -176,7 +176,7 @@
     }
   ],
   "government": {
-    "label": "Federal parliamentary republic",
+    "label": "Federal parliamentary republic under confessionalism",
     "form": "Federal parliamentary republic"
   },
   "economy": {
@@ -207,11 +207,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-09"
+      "as_of": "2026-10-06"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-09"
+      "as_of": "2026-10-06"
     },
     "economic_system": {
       "source": "derived",
@@ -231,7 +231,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-09"
+      "as_of": "2026-10-06"
     },
     "government_form": {
       "source": "derived",
@@ -243,7 +243,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-09"
+      "as_of": "2026-10-06"
     },
     "income_group": {
       "source": "world_bank",
@@ -259,11 +259,11 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-09"
+      "as_of": "2026-10-06"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",
@@ -287,7 +287,7 @@
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-09"
+      "as_of": "2026-10-06"
     },
     "religions": {
       "source": "pew",

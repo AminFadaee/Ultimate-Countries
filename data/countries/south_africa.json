@@ -261,7 +261,7 @@
   ],
   "government": {
     "label": "Unitary parliamentary republic with an executive presidency",
-    "form": "Parliamentary republic"
+    "form": "Parliamentary republic with an executive president"
   },
   "economy": {
     "system": "Market economy",
@@ -346,7 +346,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

@@ -41,19 +41,19 @@
     },
     {
       "role": "notable",
-      "id": "Q273779",
-      "name": "Saint-Louis",
-      "latitude": 16.033333333,
-      "longitude": -16.5,
-      "population": 258592
-    },
-    {
-      "role": "notable",
       "id": "Q600693",
       "name": "Thiès",
       "latitude": 14.791638888,
       "longitude": -16.924944444,
       "population": 391253
+    },
+    {
+      "role": "notable",
+      "id": "Q273779",
+      "name": "Saint-Louis",
+      "latitude": 16.033333333,
+      "longitude": -16.5,
+      "population": 258592
     },
     {
       "role": "notable",
@@ -269,7 +269,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

@@ -9,7 +9,7 @@
   },
   "status": {
     "sovereign": true,
-    "disputed": false,
+    "disputed": true,
     "un_member": false,
     "un_observer": true,
     "dependency_type": null,

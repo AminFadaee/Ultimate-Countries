@@ -16,7 +16,7 @@
     "parent_alpha_3": null
   },
   "region": "Asia",
-  "subregion": "South-Eastern Asia",
+  "subregion": "Southeast Asia",
   "continents": [
     "Asia"
   ],
@@ -73,6 +73,14 @@
       "latitude": 16.411944444,
       "longitude": 120.593333333,
       "population": 368426
+    },
+    {
+      "role": "notable",
+      "id": "Q5217",
+      "name": "Bacolod",
+      "latitude": 10.676458333,
+      "longitude": 122.950916666,
+      "population": 624787
     }
   ],
   "famous_cities": [
@@ -311,7 +319,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

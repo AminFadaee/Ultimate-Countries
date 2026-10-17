@@ -16,7 +16,7 @@
     "parent_alpha_3": null
   },
   "region": "Europe",
-  "subregion": "Central Europe",
+  "subregion": "Eastern Europe",
   "continents": [
     "Europe"
   ],
@@ -45,7 +45,7 @@
       "name": "Debrecen",
       "latitude": 47.53,
       "longitude": 21.639166666,
-      "population": 202130
+      "population": 202331
     },
     {
       "role": "notable",
@@ -53,7 +53,7 @@
       "name": "Szeged",
       "latitude": 46.25,
       "longitude": 20.166666666,
-      "population": 157282
+      "population": 157596
     },
     {
       "role": "notable",
@@ -61,7 +61,7 @@
       "name": "Pécs",
       "latitude": 46.070833333,
       "longitude": 18.233055555,
-      "population": 139412
+      "population": 137976
     },
     {
       "role": "notable",
@@ -69,7 +69,7 @@
       "name": "Miskolc",
       "latitude": 48.1,
       "longitude": 20.783333333,
-      "population": 141440
+      "population": 139246
     },
     {
       "role": "notable",
@@ -77,7 +77,7 @@
       "name": "Győr",
       "latitude": 47.684166666,
       "longitude": 17.634444444,
-      "population": 129373
+      "population": 128225
     }
   ],
   "famous_cities": [
@@ -185,7 +185,7 @@
     "disputed_with": null,
     "income_group": "High income",
     "government_spending_pct_gdp": 47.1,
-    "military_spending_pct_gdp": 2.2
+    "military_spending_pct_gdp": 2.0
   },
   "established": null,
   "independence": null,
@@ -262,7 +262,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

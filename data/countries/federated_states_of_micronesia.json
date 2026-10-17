@@ -16,7 +16,7 @@
     "parent_alpha_3": null
   },
   "region": "Oceania",
-  "subregion": "Micronesia",
+  "subregion": "Micronesian Region",
   "continents": [
     "Oceania"
   ],
@@ -115,8 +115,8 @@
     }
   ],
   "government": {
-    "label": "Federal assembly-independent presidential republic under a non-partisan democracy",
-    "form": "Federal presidential republic"
+    "label": "Federal assembly-independent republic under a non-partisan democracy",
+    "form": "Federal republic"
   },
   "economy": {
     "system": "Market economy",
@@ -143,11 +143,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-03"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-03"
     },
     "economic_system": {
       "source": "derived",
@@ -167,7 +167,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-03"
     },
     "government_form": {
       "source": "derived",
@@ -179,7 +179,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-03"
     },
     "income_group": {
       "source": "world_bank",
@@ -195,7 +195,7 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-03"
     },
     "military_spending": {
       "source": "world_bank",
@@ -223,7 +223,7 @@
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-03"
     },
     "religions": {
       "source": "pew",

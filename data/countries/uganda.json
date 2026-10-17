@@ -50,7 +50,7 @@
     {
       "role": "notable",
       "id": "Q581379",
-      "name": "Gulu City",
+      "name": "Gulu",
       "latitude": 2.766666666,
       "longitude": 32.305555555,
       "population": 177400
@@ -191,7 +191,7 @@
     "disputed_with": null,
     "income_group": "Low income",
     "government_spending_pct_gdp": 21.1,
-    "military_spending_pct_gdp": 1.9
+    "military_spending_pct_gdp": 2.0
   },
   "established": "1962-10-09",
   "independence": {
@@ -213,11 +213,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-22"
+      "as_of": "2026-10-17"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-22"
+      "as_of": "2026-10-17"
     },
     "economic_system": {
       "source": "derived",
@@ -237,7 +237,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-22"
+      "as_of": "2026-10-17"
     },
     "government_form": {
       "source": "derived",
@@ -249,7 +249,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-22"
+      "as_of": "2026-10-17"
     },
     "income_group": {
       "source": "world_bank",
@@ -265,11 +265,11 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-22"
+      "as_of": "2026-10-17"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",
@@ -293,7 +293,7 @@
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-22"
+      "as_of": "2026-10-17"
     },
     "religions": {
       "source": "pew",

@@ -151,7 +151,7 @@
     "disputed_with": null,
     "income_group": "Lower middle income",
     "government_spending_pct_gdp": 17.6,
-    "military_spending_pct_gdp": 0.5
+    "military_spending_pct_gdp": null
   },
   "established": null,
   "independence": {
@@ -172,11 +172,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-12"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-12"
     },
     "economic_system": {
       "source": "derived",
@@ -196,7 +196,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-12"
     },
     "government_form": {
       "source": "derived",
@@ -208,7 +208,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-12"
     },
     "income_group": {
       "source": "world_bank",
@@ -224,11 +224,11 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-12"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2023"
+      "as_of": null
     },
     "most_visited_cities": {
       "source": "wikidata",
@@ -252,7 +252,7 @@
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-12"
     },
     "religions": {
       "source": "pew",

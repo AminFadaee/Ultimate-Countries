@@ -76,11 +76,11 @@
     },
     {
       "role": "notable",
-      "id": "Q129352",
-      "name": "Khankendi",
-      "latitude": 39.815277777,
-      "longitude": 46.751944444,
-      "population": 49848
+      "id": "Q234783",
+      "name": "Shaki",
+      "latitude": 41.191944444,
+      "longitude": 47.170555555,
+      "population": 68360
     }
   ],
   "famous_cities": [
@@ -172,7 +172,7 @@
     "disputed_with": null,
     "income_group": "Upper middle income",
     "government_spending_pct_gdp": 34.5,
-    "military_spending_pct_gdp": 5.0
+    "military_spending_pct_gdp": 6.5
   },
   "established": "1991-08-30",
   "independence": {
@@ -247,7 +247,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

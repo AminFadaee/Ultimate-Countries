@@ -49,14 +49,6 @@
     },
     {
       "role": "notable",
-      "id": "Q11725",
-      "name": "Chongqing",
-      "latitude": 29.55,
-      "longitude": 106.506944444,
-      "population": 32054159
-    },
-    {
-      "role": "notable",
       "id": "Q16572",
       "name": "Guangzhou",
       "latitude": 23.13,
@@ -65,19 +57,27 @@
     },
     {
       "role": "notable",
-      "id": "Q11736",
-      "name": "Tianjin",
-      "latitude": 39.146666666,
-      "longitude": 117.205555555,
-      "population": 13866009
-    },
-    {
-      "role": "notable",
       "id": "Q11746",
       "name": "Wuhan",
       "latitude": 30.595,
       "longitude": 114.2975,
       "population": 12326518
+    },
+    {
+      "role": "notable",
+      "id": "Q5826",
+      "name": "Xi'an",
+      "latitude": 34.261111111,
+      "longitude": 108.942222222,
+      "population": 12952907
+    },
+    {
+      "role": "notable",
+      "id": "Q30340",
+      "name": "Zhengzhou",
+      "latitude": 34.74919,
+      "longitude": 113.66051,
+      "population": 12600574
     }
   ],
   "famous_cities": [
@@ -274,11 +274,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-13"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-13"
     },
     "economic_system": {
       "source": "derived",
@@ -298,7 +298,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-13"
     },
     "government_form": {
       "source": "derived",
@@ -310,7 +310,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-13"
     },
     "income_group": {
       "source": "world_bank",
@@ -326,11 +326,11 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-13"
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",
@@ -354,7 +354,7 @@
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-09-04"
+      "as_of": "2026-10-13"
     },
     "religions": {
       "source": "pew",

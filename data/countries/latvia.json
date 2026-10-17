@@ -73,11 +73,11 @@
     },
     {
       "role": "notable",
-      "id": "Q104036",
-      "name": "Ventspils",
-      "latitude": 57.389722222,
-      "longitude": 21.564444444,
-      "population": 32479
+      "id": "Q180379",
+      "name": "Rēzekne",
+      "latitude": 56.506666666,
+      "longitude": 27.330833333,
+      "population": 25978
     }
   ],
   "famous_cities": [
@@ -161,7 +161,7 @@
     "disputed_with": "Market economy with extensive welfare state",
     "income_group": "High income",
     "government_spending_pct_gdp": 44.0,
-    "military_spending_pct_gdp": 3.3
+    "military_spending_pct_gdp": 3.6
   },
   "established": "1918-11-18",
   "independence": {
@@ -242,7 +242,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",

@@ -33,13 +33,13 @@
     ]
   },
   "capitals": [
-    "Saint Helier"
+    "St Helier"
   ],
   "cities": [
     {
       "role": "capital",
       "id": "Q147738",
-      "name": "Saint Helier",
+      "name": "St Helier",
       "latitude": 49.185833333,
       "longitude": -2.11,
       "population": 35822

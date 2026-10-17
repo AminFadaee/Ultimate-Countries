@@ -41,14 +41,6 @@
     },
     {
       "role": "notable",
-      "id": "Q1444575",
-      "name": "Chaguanas",
-      "latitude": 10.514444444,
-      "longitude": -61.4075,
-      "population": 83489
-    },
-    {
-      "role": "notable",
       "id": "Q1023712",
       "name": "San Fernando",
       "latitude": 10.283333333,
@@ -197,7 +189,7 @@
     },
     "military_spending": {
       "source": "world_bank",
-      "as_of": "SIPRI via World Bank, 2024"
+      "as_of": "SIPRI via World Bank, 2025"
     },
     "most_visited_cities": {
       "source": "wikidata",
