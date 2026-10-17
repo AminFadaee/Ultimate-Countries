@@ -39,8 +39,7 @@
       "name": "Mogadishu",
       "latitude": 2.039166666,
       "longitude": 45.341944444,
-      "population": 2120000,
-      "map": "maps/cities/somalia__mogadishu.png"
+      "population": 2120000
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Bosaso",
       "latitude": 11.283333333,
       "longitude": 49.183333333,
-      "population": 1067000,
-      "map": "maps/cities/somalia__bosaso.png"
+      "population": 1067000
     },
     {
       "role": "notable",
@@ -57,10 +55,10 @@
       "name": "Kismayo",
       "latitude": -0.360277777,
       "longitude": 42.548888888,
-      "population": 166667,
-      "map": "maps/cities/somalia__kismayo.png"
+      "population": 166667
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "SOS",
@@ -164,6 +162,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

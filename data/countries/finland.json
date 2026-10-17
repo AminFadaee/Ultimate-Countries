@@ -39,8 +39,7 @@
       "name": "Helsinki",
       "latitude": 60.170833333,
       "longitude": 24.9375,
-      "population": 694392,
-      "map": "maps/cities/finland__helsinki.png"
+      "population": 694392
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Tampere",
       "latitude": 61.498055555,
       "longitude": 23.76,
-      "population": 255333,
-      "map": "maps/cities/finland__tampere.png"
+      "population": 255333
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Turku",
       "latitude": 60.451666666,
       "longitude": 22.266944444,
-      "population": 209633,
-      "map": "maps/cities/finland__turku.png"
+      "population": 209633
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Espoo",
       "latitude": 60.205555555,
       "longitude": 24.655555555,
-      "population": 325716,
-      "map": "maps/cities/finland__espoo.png"
+      "population": 325716
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Oulu",
       "latitude": 65.014166666,
       "longitude": 25.471944444,
-      "population": 217469,
-      "map": "maps/cities/finland__oulu.png"
+      "population": 217469
     },
     {
       "role": "notable",
@@ -84,8 +79,18 @@
       "name": "Kuopio",
       "latitude": 62.8925,
       "longitude": 27.678333333,
-      "population": 126572,
-      "map": "maps/cities/finland__kuopio.png"
+      "population": 126572
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1757",
+      "name": "Helsinki",
+      "latitude": 60.170833333,
+      "longitude": 24.9375,
+      "population": 694392,
+      "map": "maps/cities/finland__helsinki.png",
+      "answer_map": "maps/cities/finland__helsinki-answer.png"
     }
   ],
   "currencies": [
@@ -212,6 +217,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

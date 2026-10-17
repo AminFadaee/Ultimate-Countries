@@ -37,8 +37,7 @@
       "name": "Windhoek",
       "latitude": -22.57,
       "longitude": 17.083611111,
-      "population": 486169,
-      "map": "maps/cities/namibia__windhoek.png"
+      "population": 486169
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Walvis Bay",
       "latitude": -22.949444444,
       "longitude": 14.506944444,
-      "population": 102704,
-      "map": "maps/cities/namibia__walvis_bay.png"
+      "population": 102704
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Swakopmund",
       "latitude": -22.666666666,
       "longitude": 14.533333333,
-      "population": 75921,
-      "map": "maps/cities/namibia__swakopmund.png"
+      "population": 75921
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Keetmanshoop",
       "latitude": -26.583333333,
       "longitude": 18.133333333,
-      "population": 18900,
-      "map": "maps/cities/namibia__keetmanshoop.png"
+      "population": 18900
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "NAD",
@@ -207,6 +204,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

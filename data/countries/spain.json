@@ -39,8 +39,7 @@
       "name": "Madrid",
       "latitude": 40.416944444,
       "longitude": -3.703333333,
-      "population": 3506730,
-      "map": "maps/cities/spain__madrid.png"
+      "population": 3506730
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Barcelona",
       "latitude": 41.3825,
       "longitude": 2.176944444,
-      "population": 1731649,
-      "map": "maps/cities/spain__barcelona.png"
+      "population": 1731649
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Valencia",
       "latitude": 39.47,
       "longitude": -0.376388888,
-      "population": 840792,
-      "map": "maps/cities/spain__valencia.png"
+      "population": 840792
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Seville",
       "latitude": 37.388611111,
       "longitude": -5.995,
-      "population": 689423,
-      "map": "maps/cities/spain__seville.png"
+      "population": 689423
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Zaragoza",
       "latitude": 41.65,
       "longitude": -0.883333333,
-      "population": 693091,
-      "map": "maps/cities/spain__zaragoza.png"
+      "population": 693091
     },
     {
       "role": "notable",
@@ -84,8 +79,36 @@
       "name": "Málaga",
       "latitude": 36.716666666,
       "longitude": -4.416666666,
-      "population": 599063,
-      "map": "maps/cities/spain__malaga.png"
+      "population": 599063
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q2807",
+      "name": "Madrid",
+      "latitude": 40.416944444,
+      "longitude": -3.703333333,
+      "population": 3506730,
+      "map": "maps/cities/spain__madrid.png",
+      "answer_map": "maps/cities/spain__madrid-answer.png"
+    },
+    {
+      "id": "Q1492",
+      "name": "Barcelona",
+      "latitude": 41.3825,
+      "longitude": 2.176944444,
+      "population": 1731649,
+      "map": "maps/cities/spain__barcelona.png",
+      "answer_map": "maps/cities/spain__barcelona-answer.png"
+    },
+    {
+      "id": "Q8717",
+      "name": "Seville",
+      "latitude": 37.388611111,
+      "longitude": -5.995,
+      "population": 689423,
+      "map": "maps/cities/spain__seville.png",
+      "answer_map": "maps/cities/spain__seville-answer.png"
     }
   ],
   "currencies": [
@@ -221,6 +244,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

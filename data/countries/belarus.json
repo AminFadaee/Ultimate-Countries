@@ -37,8 +37,7 @@
       "name": "Minsk",
       "latitude": 53.902246,
       "longitude": 27.561837,
-      "population": 1995091,
-      "map": "maps/cities/belarus__minsk.png"
+      "population": 1995091
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Vitebsk",
       "latitude": 55.183333333,
       "longitude": 30.166666666,
-      "population": 357899,
-      "map": "maps/cities/belarus__vitebsk.png"
+      "population": 357899
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Hrodna",
       "latitude": 53.666666666,
       "longitude": 23.816666666,
-      "population": 364902,
-      "map": "maps/cities/belarus__hrodna.png"
+      "population": 364902
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Gomel",
       "latitude": 52.441666666,
       "longitude": 30.983333333,
-      "population": 499853,
-      "map": "maps/cities/belarus__gomel.png"
+      "population": 499853
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Brest",
       "latitude": 52.084722222,
       "longitude": 23.656944444,
-      "population": 347138,
-      "map": "maps/cities/belarus__brest.png"
+      "population": 347138
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Mahilyow",
       "latitude": 53.90894,
       "longitude": 30.34296,
-      "population": 352891,
-      "map": "maps/cities/belarus__mahilyow.png"
+      "population": 352891
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q2280",
+      "name": "Minsk",
+      "latitude": 53.902246,
+      "longitude": 27.561837,
+      "population": 1995091,
+      "map": "maps/cities/belarus__minsk.png",
+      "answer_map": "maps/cities/belarus__minsk-answer.png"
     }
   ],
   "currencies": [
@@ -177,6 +182,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

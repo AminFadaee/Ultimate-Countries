@@ -37,8 +37,7 @@
       "name": "Bogotá",
       "latitude": 4.60971,
       "longitude": -74.08175,
-      "population": 8034649,
-      "map": "maps/cities/colombia__bogota.png"
+      "population": 8034649
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Medellín",
       "latitude": 6.250200154,
       "longitude": -75.5675845,
-      "population": 2529403,
-      "map": "maps/cities/colombia__medellin.png"
+      "population": 2529403
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Cali",
       "latitude": 3.44,
       "longitude": -76.519722222,
-      "population": 2471474,
-      "map": "maps/cities/colombia__cali.png"
+      "population": 2471474
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Cartagena",
       "latitude": 10.423611111,
       "longitude": -75.525277777,
-      "population": 914552,
-      "map": "maps/cities/colombia__cartagena.png"
+      "population": 914552
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Barranquilla",
       "latitude": 10.983333333,
       "longitude": -74.801944444,
-      "population": 1326588,
-      "map": "maps/cities/colombia__barranquilla.png"
+      "population": 1326588
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Cúcuta",
       "latitude": 7.9075,
       "longitude": -72.504722222,
-      "population": 806378,
-      "map": "maps/cities/colombia__cucuta.png"
+      "population": 806378
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q2841",
+      "name": "Bogotá",
+      "latitude": 4.60971,
+      "longitude": -74.08175,
+      "population": 8034649,
+      "map": "maps/cities/colombia__bogota.png",
+      "answer_map": "maps/cities/colombia__bogota-answer.png"
     }
   ],
   "currencies": [
@@ -182,6 +187,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Moroni",
       "latitude": -11.703611111,
       "longitude": 43.253611111,
-      "population": 85400,
-      "map": "maps/cities/comoros__moroni.png"
+      "population": 85400
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Mutsamudu",
       "latitude": -12.1675,
       "longitude": 44.393888888,
-      "population": 30000,
-      "map": "maps/cities/comoros__mutsamudu.png"
+      "population": 30000
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "KMF",
@@ -145,6 +144,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

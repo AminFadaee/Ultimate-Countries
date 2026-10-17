@@ -39,8 +39,7 @@
       "name": "Naypyidaw",
       "latitude": 19.7475,
       "longitude": 96.115,
-      "population": 1160242,
-      "map": "maps/cities/myanmar__naypyidaw.png"
+      "population": 1160242
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Yangon",
       "latitude": 16.795,
       "longitude": 96.16,
-      "population": 6874000,
-      "map": "maps/cities/myanmar__yangon.png"
+      "population": 6874000
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Mandalay",
       "latitude": 21.97473,
       "longitude": 96.08359,
-      "population": 1225546,
-      "map": "maps/cities/myanmar__mandalay.png"
+      "population": 1225546
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Mawlamyine",
       "latitude": 16.484722222,
       "longitude": 97.625833333,
-      "population": 289388,
-      "map": "maps/cities/myanmar__mawlamyine.png"
+      "population": 289388
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Bago",
       "latitude": 17.343333333,
       "longitude": 96.498055555,
-      "population": 284179,
-      "map": "maps/cities/myanmar__bago.png"
+      "population": 284179
     },
     {
       "role": "notable",
@@ -84,10 +79,10 @@
       "name": "Pathein",
       "latitude": 16.766666666,
       "longitude": 94.733333333,
-      "population": 287071,
-      "map": "maps/cities/myanmar__pathein.png"
+      "population": 287071
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "MMK",
@@ -202,6 +197,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

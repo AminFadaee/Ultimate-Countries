@@ -39,8 +39,7 @@
       "name": "Praia",
       "latitude": 14.917719444,
       "longitude": -23.509155555,
-      "population": 159050,
-      "map": "maps/cities/cape_verde__praia.png"
+      "population": 159050
     },
     {
       "role": "notable",
@@ -48,10 +47,10 @@
       "name": "Mindelo",
       "latitude": 16.891352777,
       "longitude": -24.987983333,
-      "population": 70468,
-      "map": "maps/cities/cape_verde__mindelo.png"
+      "population": 70468
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "CVE",
@@ -148,6 +147,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Saint-Pierre",
       "latitude": 46.777777777,
       "longitude": -56.177777777,
-      "population": 5282,
-      "map": "maps/cities/saint_pierre_and_miquelon__saint_pierre.png"
+      "population": 5282
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -103,6 +103,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Doha",
       "latitude": 25.286111111,
       "longitude": 51.529444444,
-      "population": 1186023,
-      "map": "maps/cities/qatar__doha.png"
+      "population": 1186023
     },
     {
       "role": "notable",
@@ -46,8 +45,18 @@
       "name": "Al Khor",
       "latitude": 25.68389,
       "longitude": 51.50583,
-      "population": 31547,
-      "map": "maps/cities/qatar__al_khor.png"
+      "population": 31547
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3861",
+      "name": "Doha",
+      "latitude": 25.286111111,
+      "longitude": 51.529444444,
+      "population": 1186023,
+      "map": "maps/cities/qatar__doha.png",
+      "answer_map": "maps/cities/qatar__doha-answer.png"
     }
   ],
   "currencies": [
@@ -151,6 +160,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

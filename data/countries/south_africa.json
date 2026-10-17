@@ -39,8 +39,7 @@
       "name": "Pretoria",
       "latitude": -25.746388888,
       "longitude": 28.188055555,
-      "population": 741651,
-      "map": "maps/cities/south_africa__pretoria.png"
+      "population": 741651
     },
     {
       "role": "capital",
@@ -48,8 +47,7 @@
       "name": "Cape Town",
       "latitude": -33.925277777,
       "longitude": 18.423888888,
-      "population": 3776313,
-      "map": "maps/cities/south_africa__cape_town.png"
+      "population": 3776313
     },
     {
       "role": "capital",
@@ -57,8 +55,7 @@
       "name": "Bloemfontein",
       "latitude": -29.1,
       "longitude": 26.216666666,
-      "population": 256185,
-      "map": "maps/cities/south_africa__bloemfontein.png"
+      "population": 256185
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Johannesburg",
       "latitude": -26.204361111,
       "longitude": 28.041638888,
-      "population": 4803262,
-      "map": "maps/cities/south_africa__johannesburg.png"
+      "population": 4803262
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Durban",
       "latitude": -29.858333333,
       "longitude": 31.025,
-      "population": 595061,
-      "map": "maps/cities/south_africa__durban.png"
+      "population": 595061
     },
     {
       "role": "notable",
@@ -84,8 +79,7 @@
       "name": "Gqeberha",
       "latitude": -33.958055555,
       "longitude": 25.6,
-      "population": 312392,
-      "map": "maps/cities/south_africa__gqeberha.png"
+      "population": 312392
     },
     {
       "role": "notable",
@@ -93,8 +87,7 @@
       "name": "East London",
       "latitude": -33.0175,
       "longitude": 27.904722222,
-      "population": 478676,
-      "map": "maps/cities/south_africa__east_london.png"
+      "population": 478676
     },
     {
       "role": "notable",
@@ -102,8 +95,45 @@
       "name": "Kimberley",
       "latitude": -28.738333333,
       "longitude": 24.763888888,
-      "population": 225160,
-      "map": "maps/cities/south_africa__kimberley.png"
+      "population": 225160
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q5465",
+      "name": "Cape Town",
+      "latitude": -33.925277777,
+      "longitude": 18.423888888,
+      "population": 3776313,
+      "map": "maps/cities/south_africa__cape_town.png",
+      "answer_map": "maps/cities/south_africa__cape_town-answer.png"
+    },
+    {
+      "id": "Q34647",
+      "name": "Johannesburg",
+      "latitude": -26.204361111,
+      "longitude": 28.041638888,
+      "population": 4803262,
+      "map": "maps/cities/south_africa__johannesburg.png",
+      "answer_map": "maps/cities/south_africa__johannesburg-answer.png"
+    },
+    {
+      "id": "Q5468",
+      "name": "Durban",
+      "latitude": -29.858333333,
+      "longitude": 31.025,
+      "population": 595061,
+      "map": "maps/cities/south_africa__durban.png",
+      "answer_map": "maps/cities/south_africa__durban-answer.png"
+    },
+    {
+      "id": "Q3926",
+      "name": "Pretoria",
+      "latitude": -25.746388888,
+      "longitude": 28.188055555,
+      "population": 741651,
+      "map": "maps/cities/south_africa__pretoria.png",
+      "answer_map": "maps/cities/south_africa__pretoria-answer.png"
     }
   ],
   "currencies": [
@@ -268,6 +298,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

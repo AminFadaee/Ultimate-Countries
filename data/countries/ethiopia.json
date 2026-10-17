@@ -37,8 +37,7 @@
       "name": "Addis Ababa",
       "latitude": 9.035833333,
       "longitude": 38.7525,
-      "population": 5704000,
-      "map": "maps/cities/ethiopia__addis_ababa.png"
+      "population": 5704000
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Dire Dawa",
       "latitude": 9.583333333,
       "longitude": 41.866666666,
-      "population": 277000,
-      "map": "maps/cities/ethiopia__dire_dawa.png"
+      "population": 277000
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Mekele",
       "latitude": 13.496944444,
       "longitude": 39.476944444,
-      "population": 323700,
-      "map": "maps/cities/ethiopia__mekele.png"
+      "population": 323700
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Gondar",
       "latitude": 12.6,
       "longitude": 37.466666666,
-      "population": 323900,
-      "map": "maps/cities/ethiopia__gondar.png"
+      "population": 323900
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Adama",
       "latitude": 8.55,
       "longitude": 39.266666666,
-      "population": 324000,
-      "map": "maps/cities/ethiopia__adama.png"
+      "population": 324000
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Bahir Dar",
       "latitude": 11.585,
       "longitude": 37.39,
-      "population": 243300,
-      "map": "maps/cities/ethiopia__bahir_dar.png"
+      "population": 243300
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3624",
+      "name": "Addis Ababa",
+      "latitude": 9.035833333,
+      "longitude": 38.7525,
+      "population": 5704000,
+      "map": "maps/cities/ethiopia__addis_ababa.png",
+      "answer_map": "maps/cities/ethiopia__addis_ababa-answer.png"
     }
   ],
   "currencies": [
@@ -216,6 +221,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

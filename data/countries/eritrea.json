@@ -37,8 +37,7 @@
       "name": "Asmara",
       "latitude": 15.333333333,
       "longitude": 38.916666666,
-      "population": 963000,
-      "map": "maps/cities/eritrea__asmara.png"
+      "population": 963000
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Keren",
       "latitude": 15.783333333,
       "longitude": 38.45,
-      "population": 146500,
-      "map": "maps/cities/eritrea__keren.png"
+      "population": 146500
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Massawa",
       "latitude": 15.6,
       "longitude": 39.433333333,
-      "population": 39758,
-      "map": "maps/cities/eritrea__massawa.png"
+      "population": 39758
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Assab",
       "latitude": 13.007777777,
       "longitude": 42.741111111,
-      "population": 74405,
-      "map": "maps/cities/eritrea__assab.png"
+      "population": 74405
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "ERN",
@@ -191,6 +188,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

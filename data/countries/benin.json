@@ -37,8 +37,7 @@
       "name": "Porto-Novo",
       "latitude": 6.483333333,
       "longitude": 2.616666666,
-      "population": 234168,
-      "map": "maps/cities/benin__porto_novo.png"
+      "population": 234168
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Cotonou",
       "latitude": 6.366666666,
       "longitude": 2.416666666,
-      "population": 780000,
-      "map": "maps/cities/benin__cotonou.png"
+      "population": 780000
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Djougou",
       "latitude": 9.7,
       "longitude": 1.666666666,
-      "population": 237040,
-      "map": "maps/cities/benin__djougou.png"
+      "population": 237040
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Ouidah",
       "latitude": 6.366666666,
       "longitude": 2.083333333,
-      "population": 162034,
-      "map": "maps/cities/benin__ouidah.png"
+      "population": 162034
     },
     {
       "role": "notable",
@@ -73,10 +69,10 @@
       "name": "Parakou",
       "latitude": 9.35,
       "longitude": 2.616666666,
-      "population": null,
-      "map": "maps/cities/benin__parakou.png"
+      "population": null
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XOF",
@@ -185,6 +181,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

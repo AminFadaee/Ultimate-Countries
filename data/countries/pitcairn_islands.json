@@ -37,10 +37,10 @@
       "name": "Adamstown",
       "latitude": -25.066666666,
       "longitude": -130.1,
-      "population": 50,
-      "map": "maps/cities/pitcairn_islands__adamstown.png"
+      "population": 50
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "NZD",
@@ -103,6 +103,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

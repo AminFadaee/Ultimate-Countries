@@ -37,8 +37,7 @@
       "name": "Havana",
       "latitude": 23.136666666,
       "longitude": -82.358888888,
-      "population": 2492618,
-      "map": "maps/cities/cuba__havana.png"
+      "population": 2492618
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Santiago de Cuba",
       "latitude": 20.021666666,
       "longitude": -75.829444444,
-      "population": 506037,
-      "map": "maps/cities/cuba__santiago_de_cuba.png"
+      "population": 506037
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Camagüey",
       "latitude": 21.378611111,
       "longitude": -77.918611111,
-      "population": 321992,
-      "map": "maps/cities/cuba__camaguey.png"
+      "population": 321992
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Guantánamo",
       "latitude": 20.138333,
       "longitude": -75.206111,
-      "population": 228436,
-      "map": "maps/cities/cuba__guantanamo.png"
+      "population": 228436
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Santa Clara",
       "latitude": 22.406666666,
       "longitude": -79.953055555,
-      "population": 247436,
-      "map": "maps/cities/cuba__santa_clara.png"
+      "population": 247436
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Holguin",
       "latitude": 20.887222222,
       "longitude": -76.263055555,
-      "population": 350191,
-      "map": "maps/cities/cuba__holguin.png"
+      "population": 350191
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1563",
+      "name": "Havana",
+      "latitude": 23.136666666,
+      "longitude": -82.358888888,
+      "population": 2492618,
+      "map": "maps/cities/cuba__havana.png",
+      "answer_map": "maps/cities/cuba__havana-answer.png"
     }
   ],
   "currencies": [
@@ -174,6 +179,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Prague",
       "latitude": 50.0875,
       "longitude": 14.421388888,
-      "population": 1397880,
-      "map": "maps/cities/czechia__prague.png"
+      "population": 1397880
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Brno",
       "latitude": 49.195277777,
       "longitude": 16.608333333,
-      "population": 402739,
-      "map": "maps/cities/czechia__brno.png"
+      "population": 402739
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Plzeň",
       "latitude": 49.741388888,
       "longitude": 13.3825,
-      "population": 187928,
-      "map": "maps/cities/czechia__plzen.png"
+      "population": 187928
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Ostrava",
       "latitude": 49.835555555,
       "longitude": 18.2925,
-      "population": 283187,
-      "map": "maps/cities/czechia__ostrava.png"
+      "population": 283187
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Olomouc",
       "latitude": 49.593888888,
       "longitude": 17.250833333,
-      "population": 103063,
-      "map": "maps/cities/czechia__olomouc.png"
+      "population": 103063
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Liberec",
       "latitude": 50.766666666,
       "longitude": 15.05,
-      "population": 108090,
-      "map": "maps/cities/czechia__liberec.png"
+      "population": 108090
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1085",
+      "name": "Prague",
+      "latitude": 50.0875,
+      "longitude": 14.421388888,
+      "population": 1397880,
+      "map": "maps/cities/czechia__prague.png",
+      "answer_map": "maps/cities/czechia__prague-answer.png"
     }
   ],
   "currencies": [
@@ -203,6 +208,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

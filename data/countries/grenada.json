@@ -37,10 +37,10 @@
       "name": "St. George's",
       "latitude": 12.0525,
       "longitude": -61.753055555,
-      "population": 33734,
-      "map": "maps/cities/grenada__st__george_s.png"
+      "population": 33734
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XCD",
@@ -129,6 +129,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

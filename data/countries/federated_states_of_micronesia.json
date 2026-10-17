@@ -37,10 +37,10 @@
       "name": "Palikir",
       "latitude": 6.917777777,
       "longitude": 158.185,
-      "population": 6227,
-      "map": "maps/cities/federated_states_of_micronesia__palikir.png"
+      "population": 6227
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -155,6 +155,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

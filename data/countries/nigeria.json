@@ -37,8 +37,7 @@
       "name": "Abuja",
       "latitude": 9.055555555,
       "longitude": 7.491388888,
-      "population": 1693400,
-      "map": "maps/cities/nigeria__abuja.png"
+      "population": 1693400
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Lagos",
       "latitude": 6.456111111,
       "longitude": 3.393611111,
-      "population": 15070000,
-      "map": "maps/cities/nigeria__lagos.png"
+      "population": 15070000
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Kano",
       "latitude": 12.0,
       "longitude": 8.516666666,
-      "population": 4348000,
-      "map": "maps/cities/nigeria__kano.png"
+      "population": 4348000
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Ibadan",
       "latitude": 7.3775,
       "longitude": 3.905833333,
-      "population": 2559853,
-      "map": "maps/cities/nigeria__ibadan.png"
+      "population": 2559853
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Port Harcourt",
       "latitude": 4.765466,
       "longitude": 7.016316,
-      "population": 3325000,
-      "map": "maps/cities/nigeria__port_harcourt.png"
+      "population": 3325000
     },
     {
       "role": "notable",
@@ -82,8 +77,27 @@
       "name": "Benin City",
       "latitude": 6.3176,
       "longitude": 5.6145,
-      "population": 1780000,
-      "map": "maps/cities/nigeria__benin_city.png"
+      "population": 1780000
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q8673",
+      "name": "Lagos",
+      "latitude": 6.456111111,
+      "longitude": 3.393611111,
+      "population": 15070000,
+      "map": "maps/cities/nigeria__lagos.png",
+      "answer_map": "maps/cities/nigeria__lagos-answer.png"
+    },
+    {
+      "id": "Q3787",
+      "name": "Abuja",
+      "latitude": 9.055555555,
+      "longitude": 7.491388888,
+      "population": 1693400,
+      "map": "maps/cities/nigeria__abuja.png",
+      "answer_map": "maps/cities/nigeria__abuja-answer.png"
     }
   ],
   "currencies": [
@@ -238,6 +252,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

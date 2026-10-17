@@ -37,10 +37,10 @@
       "name": "Hagåtña",
       "latitude": 13.483333333,
       "longitude": 144.75,
-      "population": 943,
-      "map": "maps/cities/guam__hagatna.png"
+      "population": 943
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -124,6 +124,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

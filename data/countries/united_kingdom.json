@@ -39,8 +39,7 @@
       "name": "London",
       "latitude": 51.507222222,
       "longitude": -0.1275,
-      "population": 8799728,
-      "map": "maps/cities/united_kingdom__london.png"
+      "population": 8799728
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Manchester",
       "latitude": 53.479444444,
       "longitude": -2.245277777,
-      "population": 547627,
-      "map": "maps/cities/united_kingdom__manchester.png"
+      "population": 547627
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Glasgow",
       "latitude": 55.861111111,
       "longitude": -4.25,
-      "population": 626410,
-      "map": "maps/cities/united_kingdom__glasgow.png"
+      "population": 626410
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Birmingham",
       "latitude": 52.48,
       "longitude": -1.9025,
-      "population": 1137100,
-      "map": "maps/cities/united_kingdom__birmingham.png"
+      "population": 1137100
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Edinburgh",
       "latitude": 55.953333333,
       "longitude": -3.189166666,
-      "population": 488050,
-      "map": "maps/cities/united_kingdom__edinburgh.png"
+      "population": 488050
     },
     {
       "role": "notable",
@@ -84,8 +79,45 @@
       "name": "Liverpool",
       "latitude": 53.407222222,
       "longitude": -2.991666666,
+      "population": 513441
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q84",
+      "name": "London",
+      "latitude": 51.507222222,
+      "longitude": -0.1275,
+      "population": 8799728,
+      "map": "maps/cities/united_kingdom__london.png",
+      "answer_map": "maps/cities/united_kingdom__london-answer.png"
+    },
+    {
+      "id": "Q23436",
+      "name": "Edinburgh",
+      "latitude": 55.953333333,
+      "longitude": -3.189166666,
+      "population": 488050,
+      "map": "maps/cities/united_kingdom__edinburgh.png",
+      "answer_map": "maps/cities/united_kingdom__edinburgh-answer.png"
+    },
+    {
+      "id": "Q18125",
+      "name": "Manchester",
+      "latitude": 53.479444444,
+      "longitude": -2.245277777,
+      "population": 547627,
+      "map": "maps/cities/united_kingdom__manchester.png",
+      "answer_map": "maps/cities/united_kingdom__manchester-answer.png"
+    },
+    {
+      "id": "Q24826",
+      "name": "Liverpool",
+      "latitude": 53.407222222,
+      "longitude": -2.991666666,
       "population": 513441,
-      "map": "maps/cities/united_kingdom__liverpool.png"
+      "map": "maps/cities/united_kingdom__liverpool.png",
+      "answer_map": "maps/cities/united_kingdom__liverpool-answer.png"
     }
   ],
   "currencies": [
@@ -317,6 +349,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

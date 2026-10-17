@@ -37,8 +37,7 @@
       "name": "Lomé",
       "latitude": 6.13,
       "longitude": 1.215833333,
-      "population": 2188376,
-      "map": "maps/cities/togo__lome.png"
+      "population": 2188376
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Sokodé",
       "latitude": 8.983333333,
       "longitude": 1.133333333,
-      "population": 115442,
-      "map": "maps/cities/togo__sokode.png"
+      "population": 115442
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XOF",
@@ -159,6 +158,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

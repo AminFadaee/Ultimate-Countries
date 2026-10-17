@@ -37,8 +37,7 @@
       "name": "Hanoi",
       "latitude": 21.0245,
       "longitude": 105.84117,
-      "population": 8717600,
-      "map": "maps/cities/vietnam__hanoi.png"
+      "population": 8717600
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Ho Chi Minh City",
       "latitude": 10.775555555,
       "longitude": 106.701944444,
-      "population": 14002598,
-      "map": "maps/cities/vietnam__ho_chi_minh_city.png"
+      "population": 14002598
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Da Nang",
       "latitude": 16.069444444,
       "longitude": 108.209722222,
-      "population": 2819900,
-      "map": "maps/cities/vietnam__da_nang.png"
+      "population": 2819900
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Huế",
       "latitude": 16.463888888,
       "longitude": 107.586666666,
-      "population": 1178600,
-      "map": "maps/cities/vietnam__hue.png"
+      "population": 1178600
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Nha Trang",
       "latitude": 12.245,
       "longitude": 109.191666666,
-      "population": 392279,
-      "map": "maps/cities/vietnam__nha_trang.png"
+      "population": 392279
     },
     {
       "role": "notable",
@@ -82,8 +77,45 @@
       "name": "Đồng Hới",
       "latitude": 17.483333333,
       "longitude": 106.6,
+      "population": 133672
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1854",
+      "name": "Ho Chi Minh City",
+      "latitude": 10.775555555,
+      "longitude": 106.701944444,
+      "population": 14002598,
+      "map": "maps/cities/vietnam__ho_chi_minh_city.png",
+      "answer_map": "maps/cities/vietnam__ho_chi_minh_city-answer.png"
+    },
+    {
+      "id": "Q1858",
+      "name": "Hanoi",
+      "latitude": 21.0245,
+      "longitude": 105.84117,
+      "population": 8717600,
+      "map": "maps/cities/vietnam__hanoi.png",
+      "answer_map": "maps/cities/vietnam__hanoi-answer.png"
+    },
+    {
+      "id": "Q25282",
+      "name": "Da Nang",
+      "latitude": 16.069444444,
+      "longitude": 108.209722222,
+      "population": 2819900,
+      "map": "maps/cities/vietnam__da_nang.png",
+      "answer_map": "maps/cities/vietnam__da_nang-answer.png"
+    },
+    {
+      "id": "Q1877",
+      "name": "Đồng Hới",
+      "latitude": 17.483333333,
+      "longitude": 106.6,
       "population": 133672,
-      "map": "maps/cities/vietnam__ong_hoi.png"
+      "map": "maps/cities/vietnam__ong_hoi.png",
+      "answer_map": "maps/cities/vietnam__ong_hoi-answer.png"
     }
   ],
   "currencies": [
@@ -200,6 +232,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

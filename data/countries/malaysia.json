@@ -37,8 +37,7 @@
       "name": "Kuala Lumpur",
       "latitude": 3.147777777,
       "longitude": 101.695277777,
-      "population": 9000280,
-      "map": "maps/cities/malaysia__kuala_lumpur.png"
+      "population": 9000280
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Johor Bahru",
       "latitude": 1.455555555,
       "longitude": 103.761111111,
-      "population": 797882,
-      "map": "maps/cities/malaysia__johor_bahru.png"
+      "population": 797882
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Ipoh",
       "latitude": 4.6,
       "longitude": 101.07,
-      "population": 866772,
-      "map": "maps/cities/malaysia__ipoh.png"
+      "population": 866772
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "George Town",
       "latitude": 5.4145,
       "longitude": 100.3292,
-      "population": 794313,
-      "map": "maps/cities/malaysia__george_town.png"
+      "population": 794313
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Malacca",
       "latitude": 2.188888888,
       "longitude": 102.251111111,
-      "population": 455300,
-      "map": "maps/cities/malaysia__malacca.png"
+      "population": 455300
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Putrajaya",
       "latitude": 2.93,
       "longitude": 101.69,
-      "population": 109202,
-      "map": "maps/cities/malaysia__putrajaya.png"
+      "population": 109202
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1865",
+      "name": "Kuala Lumpur",
+      "latitude": 3.147777777,
+      "longitude": 101.695277777,
+      "population": 9000280,
+      "map": "maps/cities/malaysia__kuala_lumpur.png",
+      "answer_map": "maps/cities/malaysia__kuala_lumpur-answer.png"
     }
   ],
   "currencies": [
@@ -217,6 +222,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

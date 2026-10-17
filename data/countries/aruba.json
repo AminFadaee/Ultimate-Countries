@@ -37,10 +37,10 @@
       "name": "Oranjestad",
       "latitude": 12.518611111,
       "longitude": -70.035833333,
-      "population": 28658,
-      "map": "maps/cities/aruba__oranjestad.png"
+      "population": 28658
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "AWG",
@@ -138,6 +138,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

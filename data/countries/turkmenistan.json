@@ -39,8 +39,7 @@
       "name": "Ashgabat",
       "latitude": 37.95,
       "longitude": 58.383333333,
-      "population": 1030063,
-      "map": "maps/cities/turkmenistan__ashgabat.png"
+      "population": 1030063
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Türkmenabat",
       "latitude": 39.1,
       "longitude": 63.566666666,
-      "population": 230861,
-      "map": "maps/cities/turkmenistan__turkmenabat.png"
+      "population": 230861
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Mary",
       "latitude": 37.6,
       "longitude": 61.833333333,
-      "population": 167027,
-      "map": "maps/cities/turkmenistan__mary.png"
+      "population": 167027
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Daşoguz",
       "latitude": 41.816666666,
       "longitude": 59.983055555,
-      "population": 201142,
-      "map": "maps/cities/turkmenistan__dasoguz.png"
+      "population": 201142
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Türkmenbaşy",
       "latitude": 40.0055388,
       "longitude": 52.9932834,
-      "population": 91745,
-      "map": "maps/cities/turkmenistan__turkmenbasy.png"
+      "population": 91745
     },
     {
       "role": "notable",
@@ -84,8 +79,18 @@
       "name": "Balkanabat",
       "latitude": 39.511944444,
       "longitude": 54.365,
-      "population": 123190,
-      "map": "maps/cities/turkmenistan__balkanabat.png"
+      "population": 123190
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q23438",
+      "name": "Ashgabat",
+      "latitude": 37.95,
+      "longitude": 58.383333333,
+      "population": 1030063,
+      "map": "maps/cities/turkmenistan__ashgabat.png",
+      "answer_map": "maps/cities/turkmenistan__ashgabat-answer.png"
     }
   ],
   "currencies": [
@@ -200,6 +205,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

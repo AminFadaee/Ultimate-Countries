@@ -37,10 +37,10 @@
       "name": "Ngerulmud",
       "latitude": 7.500556,
       "longitude": 134.624167,
-      "population": 0,
-      "map": "maps/cities/palau__ngerulmud.png"
+      "population": 0
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -112,6 +112,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Libreville",
       "latitude": 0.407777777,
       "longitude": 9.440277777,
-      "population": 899000,
-      "map": "maps/cities/gabon__libreville.png"
+      "population": 899000
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Port-Gentil",
       "latitude": -0.716666666,
       "longitude": 8.783333333,
-      "population": 154632,
-      "map": "maps/cities/gabon__port_gentil.png"
+      "population": 154632
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Franceville",
       "latitude": -1.633333333,
       "longitude": 13.583333333,
-      "population": 110568,
-      "map": "maps/cities/gabon__franceville.png"
+      "population": 110568
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Oyem",
       "latitude": 1.599972222,
       "longitude": 11.573583333,
-      "population": 60685,
-      "map": "maps/cities/gabon__oyem.png"
+      "population": 60685
     },
     {
       "role": "notable",
@@ -73,10 +69,10 @@
       "name": "Lambaréné",
       "latitude": -0.688333333,
       "longitude": 10.231944444,
-      "population": 38775,
-      "map": "maps/cities/gabon__lambarene.png"
+      "population": 38775
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XAF",
@@ -163,6 +159,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Sofia",
       "latitude": 42.697886,
       "longitude": 23.321726,
-      "population": 1213134,
-      "map": "maps/cities/bulgaria__sofia.png"
+      "population": 1213134
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Varna",
       "latitude": 43.211375,
       "longitude": 27.91108,
-      "population": 322683,
-      "map": "maps/cities/bulgaria__varna.png"
+      "population": 322683
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Plovdiv",
       "latitude": 42.142086,
       "longitude": 24.741454,
-      "population": 333994,
-      "map": "maps/cities/bulgaria__plovdiv.png"
+      "population": 333994
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Burgas",
       "latitude": 42.502965,
       "longitude": 27.470179,
-      "population": 189086,
-      "map": "maps/cities/bulgaria__burgas.png"
+      "population": 189086
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Ruse",
       "latitude": 43.844532,
       "longitude": 25.953907,
-      "population": 120282,
-      "map": "maps/cities/bulgaria__ruse.png"
+      "population": 120282
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Stara Zagora",
       "latitude": 42.425668,
       "longitude": 25.634595,
-      "population": 120976,
-      "map": "maps/cities/bulgaria__stara_zagora.png"
+      "population": 120976
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q472",
+      "name": "Sofia",
+      "latitude": 42.697886,
+      "longitude": 23.321726,
+      "population": 1213134,
+      "map": "maps/cities/bulgaria__sofia.png",
+      "answer_map": "maps/cities/bulgaria__sofia-answer.png"
     }
   ],
   "currencies": [
@@ -203,6 +208,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

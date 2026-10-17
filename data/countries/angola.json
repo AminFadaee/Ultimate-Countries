@@ -37,8 +37,7 @@
       "name": "Luanda",
       "latitude": -8.838333333,
       "longitude": 13.234444444,
-      "population": 2487444,
-      "map": "maps/cities/angola__luanda.png"
+      "population": 2487444
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Huambo",
       "latitude": -12.766666666,
       "longitude": 15.733333333,
-      "population": 844000,
-      "map": "maps/cities/angola__huambo.png"
+      "population": 844000
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Lubango",
       "latitude": -14.916666666,
       "longitude": 13.5,
-      "population": 903564,
-      "map": "maps/cities/angola__lubango.png"
+      "population": 903564
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Cabinda",
       "latitude": -5.566667,
       "longitude": 12.2,
-      "population": 739182,
-      "map": "maps/cities/angola__cabinda.png"
+      "population": 739182
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Benguela",
       "latitude": -12.55,
       "longitude": 13.416666666,
-      "population": 561775,
-      "map": "maps/cities/angola__benguela.png"
+      "population": 561775
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Malanje",
       "latitude": -9.54015,
       "longitude": 16.34096,
-      "population": 604215,
-      "map": "maps/cities/angola__malanje.png"
+      "population": 604215
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3897",
+      "name": "Luanda",
+      "latitude": -8.838333333,
+      "longitude": 13.234444444,
+      "population": 2487444,
+      "map": "maps/cities/angola__luanda.png",
+      "answer_map": "maps/cities/angola__luanda-answer.png"
     }
   ],
   "currencies": [
@@ -194,6 +199,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

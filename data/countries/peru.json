@@ -37,8 +37,7 @@
       "name": "Lima",
       "latitude": -12.06,
       "longitude": -77.0375,
-      "population": 9943800,
-      "map": "maps/cities/peru__lima.png"
+      "population": 9943800
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Arequipa",
       "latitude": -16.398888888,
       "longitude": -71.536944444,
-      "population": 1008290,
-      "map": "maps/cities/peru__arequipa.png"
+      "population": 1008290
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Trujillo",
       "latitude": -8.111944444,
       "longitude": -79.028888888,
-      "population": 919899,
-      "map": "maps/cities/peru__trujillo.png"
+      "population": 919899
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Cusco",
       "latitude": -13.516944444,
       "longitude": -71.978611111,
-      "population": 428450,
-      "map": "maps/cities/peru__cusco.png"
+      "population": 428450
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Chiclayo",
       "latitude": -6.771666666,
       "longitude": -79.838333333,
-      "population": 552508,
-      "map": "maps/cities/peru__chiclayo.png"
+      "population": 552508
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Piura",
       "latitude": -5.200833333,
       "longitude": -80.625277777,
-      "population": 473025,
-      "map": "maps/cities/peru__piura.png"
+      "population": 473025
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q2868",
+      "name": "Lima",
+      "latitude": -12.06,
+      "longitude": -77.0375,
+      "population": 9943800,
+      "map": "maps/cities/peru__lima.png",
+      "answer_map": "maps/cities/peru__lima-answer.png"
     }
   ],
   "currencies": [
@@ -186,6 +191,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

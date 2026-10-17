@@ -37,8 +37,7 @@
       "name": "Panama City",
       "latitude": 8.971111111,
       "longitude": -79.534722222,
-      "population": 1540000,
-      "map": "maps/cities/panama__panama_city.png"
+      "population": 1540000
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Colón City",
       "latitude": 9.359752777,
       "longitude": -79.900419444,
-      "population": 241817,
-      "map": "maps/cities/panama__colon_city.png"
+      "population": 241817
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "David",
       "latitude": 8.438180555,
       "longitude": -82.424263888,
-      "population": 82907,
-      "map": "maps/cities/panama__david.png"
+      "population": 82907
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Guna Yala",
       "latitude": 9.296111111,
       "longitude": -78.344166666,
-      "population": 33109,
-      "map": "maps/cities/panama__guna_yala.png"
+      "population": 33109
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "PAB",
@@ -174,6 +171,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

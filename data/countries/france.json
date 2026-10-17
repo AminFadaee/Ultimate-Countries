@@ -37,8 +37,7 @@
       "name": "Paris",
       "latitude": 48.856666666,
       "longitude": 2.352222222,
-      "population": 2103778,
-      "map": "maps/cities/france__paris.png"
+      "population": 2103778
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Lyon",
       "latitude": 45.7675,
       "longitude": 4.835,
-      "population": 519127,
-      "map": "maps/cities/france__lyon.png"
+      "population": 519127
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Marseille",
       "latitude": 43.296666666,
       "longitude": 5.376388888,
-      "population": 886040,
-      "map": "maps/cities/france__marseille.png"
+      "population": 886040
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Strasbourg",
       "latitude": 48.573333333,
       "longitude": 7.752222222,
-      "population": 293771,
-      "map": "maps/cities/france__strasbourg.png"
+      "population": 293771
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Nice",
       "latitude": 43.701944444,
       "longitude": 7.268333333,
-      "population": 357737,
-      "map": "maps/cities/france__nice.png"
+      "population": 357737
     },
     {
       "role": "notable",
@@ -82,8 +77,63 @@
       "name": "Toulouse",
       "latitude": 43.604444444,
       "longitude": 1.443333333,
-      "population": 514819,
-      "map": "maps/cities/france__toulouse.png"
+      "population": 514819
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q90",
+      "name": "Paris",
+      "latitude": 48.856666666,
+      "longitude": 2.352222222,
+      "population": 2103778,
+      "map": "maps/cities/france__paris.png",
+      "answer_map": "maps/cities/france__paris-answer.png"
+    },
+    {
+      "id": "Q33959",
+      "name": "Nice",
+      "latitude": 43.701944444,
+      "longitude": 7.268333333,
+      "population": 357737,
+      "map": "maps/cities/france__nice.png",
+      "answer_map": "maps/cities/france__nice-answer.png"
+    },
+    {
+      "id": "Q23482",
+      "name": "Marseille",
+      "latitude": 43.296666666,
+      "longitude": 5.376388888,
+      "population": 886040,
+      "map": "maps/cities/france__marseille.png",
+      "answer_map": "maps/cities/france__marseille-answer.png"
+    },
+    {
+      "id": "Q456",
+      "name": "Lyon",
+      "latitude": 45.7675,
+      "longitude": 4.835,
+      "population": 519127,
+      "map": "maps/cities/france__lyon.png",
+      "answer_map": "maps/cities/france__lyon-answer.png"
+    },
+    {
+      "id": "Q6602",
+      "name": "Strasbourg",
+      "latitude": 48.573333333,
+      "longitude": 7.752222222,
+      "population": 293771,
+      "map": "maps/cities/france__strasbourg.png",
+      "answer_map": "maps/cities/france__strasbourg-answer.png"
+    },
+    {
+      "id": "Q1479",
+      "name": "Bordeaux",
+      "latitude": 44.837777777,
+      "longitude": -0.579444444,
+      "population": 267991,
+      "map": "maps/cities/france__bordeaux.png",
+      "answer_map": "maps/cities/france__bordeaux-answer.png"
     }
   ],
   "currencies": [
@@ -257,6 +307,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

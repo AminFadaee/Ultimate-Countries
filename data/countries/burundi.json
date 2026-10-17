@@ -37,8 +37,7 @@
       "name": "Gitega",
       "latitude": -3.428333333,
       "longitude": 29.925,
-      "population": 135467,
-      "map": "maps/cities/burundi__gitega.png"
+      "population": 135467
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Bujumbura",
       "latitude": -3.3825,
       "longitude": 29.361111111,
-      "population": 658859,
-      "map": "maps/cities/burundi__bujumbura.png"
+      "population": 658859
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "BIF",
@@ -152,6 +151,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -39,8 +39,7 @@
       "name": "Ljubljana",
       "latitude": 46.051388888,
       "longitude": 14.506111111,
-      "population": 284293,
-      "map": "maps/cities/slovenia__ljubljana.png"
+      "population": 284293
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Maribor",
       "latitude": 46.55,
       "longitude": 15.633333333,
-      "population": 114301,
-      "map": "maps/cities/slovenia__maribor.png"
+      "population": 114301
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Koper",
       "latitude": 45.547542728,
       "longitude": 13.7306571,
-      "population": 25753,
-      "map": "maps/cities/slovenia__koper.png"
+      "population": 25753
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Celje",
       "latitude": 46.22909194,
       "longitude": 15.264128741,
-      "population": 37122,
-      "map": "maps/cities/slovenia__celje.png"
+      "population": 37122
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Kranj",
       "latitude": 46.23887,
       "longitude": 14.35561,
-      "population": 37605,
-      "map": "maps/cities/slovenia__kranj.png"
+      "population": 37605
     },
     {
       "role": "notable",
@@ -84,8 +79,18 @@
       "name": "Novo Mesto",
       "latitude": 45.798055555,
       "longitude": 15.162777777,
-      "population": 24183,
-      "map": "maps/cities/slovenia__novo_mesto.png"
+      "population": 24183
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q437",
+      "name": "Ljubljana",
+      "latitude": 46.051388888,
+      "longitude": 14.506111111,
+      "population": 284293,
+      "map": "maps/cities/slovenia__ljubljana.png",
+      "answer_map": "maps/cities/slovenia__ljubljana-answer.png"
     }
   ],
   "currencies": [
@@ -218,6 +223,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

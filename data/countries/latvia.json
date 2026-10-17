@@ -37,8 +37,7 @@
       "name": "Riga",
       "latitude": 56.9475,
       "longitude": 24.106944444,
-      "population": 588911,
-      "map": "maps/cities/latvia__riga.png"
+      "population": 588911
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Daugavpils",
       "latitude": 55.871388888,
       "longitude": 26.516111111,
-      "population": 77486,
-      "map": "maps/cities/latvia__daugavpils.png"
+      "population": 77486
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Liepāja",
       "latitude": 56.508333333,
       "longitude": 21.011111111,
-      "population": 66746,
-      "map": "maps/cities/latvia__liepaja.png"
+      "population": 66746
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Jūrmala",
       "latitude": 56.9665,
       "longitude": 23.722111111,
-      "population": 52926,
-      "map": "maps/cities/latvia__jurmala.png"
+      "population": 52926
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Jelgava",
       "latitude": 56.652222222,
       "longitude": 23.724444444,
-      "population": 54408,
-      "map": "maps/cities/latvia__jelgava.png"
+      "population": 54408
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Ventspils",
       "latitude": 57.389722222,
       "longitude": 21.564444444,
-      "population": 32479,
-      "map": "maps/cities/latvia__ventspils.png"
+      "population": 32479
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1773",
+      "name": "Riga",
+      "latitude": 56.9475,
+      "longitude": 24.106944444,
+      "population": 588911,
+      "map": "maps/cities/latvia__riga.png",
+      "answer_map": "maps/cities/latvia__riga-answer.png"
     }
   ],
   "currencies": [
@@ -192,6 +197,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

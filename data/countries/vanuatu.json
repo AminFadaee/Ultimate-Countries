@@ -39,8 +39,7 @@
       "name": "Port Vila",
       "latitude": -17.73333,
       "longitude": 168.316667,
-      "population": 49034,
-      "map": "maps/cities/vanuatu__port_vila.png"
+      "population": 49034
     },
     {
       "role": "notable",
@@ -48,10 +47,10 @@
       "name": "Luganville",
       "latitude": -15.5128,
       "longitude": 167.1735,
-      "population": 17719,
-      "map": "maps/cities/vanuatu__luganville.png"
+      "population": 17719
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "VUV",
@@ -154,6 +153,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

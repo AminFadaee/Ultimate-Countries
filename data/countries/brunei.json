@@ -37,10 +37,10 @@
       "name": "Bandar Seri Begawan",
       "latitude": 4.916666666,
       "longitude": 114.916666666,
-      "population": 50000,
-      "map": "maps/cities/brunei__bandar_seri_begawan.png"
+      "population": 50000
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "BND",
@@ -148,6 +148,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

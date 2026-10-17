@@ -37,8 +37,7 @@
       "name": "Sanaa",
       "latitude": 15.35,
       "longitude": 44.2,
-      "population": 2957000,
-      "map": "maps/cities/yemen__sanaa.png"
+      "population": 2957000
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Aden",
       "latitude": 12.8,
       "longitude": 45.033333333,
-      "population": 1154410,
-      "map": "maps/cities/yemen__aden.png"
+      "population": 1154410
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Ta'izz",
       "latitude": 13.578888888,
       "longitude": 44.021944444,
-      "population": 615000,
-      "map": "maps/cities/yemen__ta_izz.png"
+      "population": 615000
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Al Hudaydah",
       "latitude": 14.802222222,
       "longitude": 42.951111111,
-      "population": 617871,
-      "map": "maps/cities/yemen__al_hudaydah.png"
+      "population": 617871
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Mukalla",
       "latitude": 14.533333333,
       "longitude": 49.133333333,
-      "population": 144137,
-      "map": "maps/cities/yemen__mukalla.png"
+      "population": 144137
     },
     {
       "role": "notable",
@@ -82,10 +77,10 @@
       "name": "Ibb",
       "latitude": 13.966666666,
       "longitude": 44.166666666,
-      "population": 350864,
-      "map": "maps/cities/yemen__ibb.png"
+      "population": 350864
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "YER",
@@ -181,6 +176,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

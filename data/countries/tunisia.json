@@ -37,8 +37,7 @@
       "name": "Tunis",
       "latitude": 36.800833333,
       "longitude": 10.18,
-      "population": 602560,
-      "map": "maps/cities/tunisia__tunis.png"
+      "population": 602560
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Sousse",
       "latitude": 35.833333333,
       "longitude": 10.633333333,
-      "population": 221530,
-      "map": "maps/cities/tunisia__sousse.png"
+      "population": 221530
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Sfax",
       "latitude": 34.74,
       "longitude": 10.76,
-      "population": 272801,
-      "map": "maps/cities/tunisia__sfax.png"
+      "population": 272801
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Kairouan",
       "latitude": 35.683333333,
       "longitude": 10.1,
-      "population": 186653,
-      "map": "maps/cities/tunisia__kairouan.png"
+      "population": 186653
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Bizerte",
       "latitude": 37.276147,
       "longitude": 9.873108,
-      "population": 136917,
-      "map": "maps/cities/tunisia__bizerte.png"
+      "population": 136917
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Gabès",
       "latitude": 33.881388888,
       "longitude": 10.098333333,
-      "population": 116323,
-      "map": "maps/cities/tunisia__gabes.png"
+      "population": 116323
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3572",
+      "name": "Tunis",
+      "latitude": 36.800833333,
+      "longitude": 10.18,
+      "population": 602560,
+      "map": "maps/cities/tunisia__tunis.png",
+      "answer_map": "maps/cities/tunisia__tunis-answer.png"
     }
   ],
   "currencies": [
@@ -171,6 +176,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

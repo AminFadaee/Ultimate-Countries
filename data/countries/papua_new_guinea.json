@@ -37,8 +37,7 @@
       "name": "Port Moresby",
       "latitude": -9.478888888,
       "longitude": 147.149444444,
-      "population": 317374,
-      "map": "maps/cities/papua_new_guinea__port_moresby.png"
+      "population": 317374
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Lae",
       "latitude": -6.730277777,
       "longitude": 147.000833333,
-      "population": 100677,
-      "map": "maps/cities/papua_new_guinea__lae.png"
+      "population": 100677
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "PGK",
@@ -160,6 +159,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

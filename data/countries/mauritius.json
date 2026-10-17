@@ -37,10 +37,10 @@
       "name": "Port Louis",
       "latitude": -20.161944444,
       "longitude": 57.498888888,
-      "population": 149194,
-      "map": "maps/cities/mauritius__port_louis.png"
+      "population": 149194
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "MUR",
@@ -162,6 +162,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -40,8 +40,7 @@
       "name": "Bishkek",
       "latitude": 42.866666666,
       "longitude": 74.566666666,
-      "population": 1191000,
-      "map": "maps/cities/kyrgyzstan__bishkek.png"
+      "population": 1191000
     },
     {
       "role": "notable",
@@ -49,8 +48,7 @@
       "name": "Osh",
       "latitude": 40.533333333,
       "longitude": 72.783333333,
-      "population": 375400,
-      "map": "maps/cities/kyrgyzstan__osh.png"
+      "population": 375400
     },
     {
       "role": "notable",
@@ -58,8 +56,7 @@
       "name": "Karakol",
       "latitude": 42.490555555,
       "longitude": 78.393611111,
-      "population": 85588,
-      "map": "maps/cities/kyrgyzstan__karakol.png"
+      "population": 85588
     },
     {
       "role": "notable",
@@ -67,8 +64,7 @@
       "name": "Manas",
       "latitude": 40.9375,
       "longitude": 72.98611111,
-      "population": 89004,
-      "map": "maps/cities/kyrgyzstan__manas.png"
+      "population": 89004
     },
     {
       "role": "notable",
@@ -76,8 +72,7 @@
       "name": "Tokmok",
       "latitude": 42.839,
       "longitude": 75.291,
-      "population": 53231,
-      "map": "maps/cities/kyrgyzstan__tokmok.png"
+      "population": 53231
     },
     {
       "role": "notable",
@@ -85,8 +80,18 @@
       "name": "Balykchy",
       "latitude": 42.460277777,
       "longitude": 76.187222222,
-      "population": 54132,
-      "map": "maps/cities/kyrgyzstan__balykchy.png"
+      "population": 54132
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q9361",
+      "name": "Bishkek",
+      "latitude": 42.866666666,
+      "longitude": 74.566666666,
+      "population": 1191000,
+      "map": "maps/cities/kyrgyzstan__bishkek.png",
+      "answer_map": "maps/cities/kyrgyzstan__bishkek-answer.png"
     }
   ],
   "currencies": [
@@ -183,6 +188,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

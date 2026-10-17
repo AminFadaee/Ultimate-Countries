@@ -37,8 +37,7 @@
       "name": "Tallinn",
       "latitude": 59.437222222,
       "longitude": 24.745,
-      "population": 457572,
-      "map": "maps/cities/estonia__tallinn.png"
+      "population": 457572
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Tartu",
       "latitude": 58.38,
       "longitude": 26.7225,
-      "population": 97759,
-      "map": "maps/cities/estonia__tartu.png"
+      "population": 97759
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Narva",
       "latitude": 59.379166666,
       "longitude": 28.200555555,
-      "population": 53360,
-      "map": "maps/cities/estonia__narva.png"
+      "population": 53360
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Pärnu",
       "latitude": 58.384444444,
       "longitude": 24.498888888,
-      "population": 41520,
-      "map": "maps/cities/estonia__parnu.png"
+      "population": 41520
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Viljandi",
       "latitude": 58.363333333,
       "longitude": 25.595555555,
-      "population": 17255,
-      "map": "maps/cities/estonia__viljandi.png"
+      "population": 17255
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Kuressaare",
       "latitude": 58.253333333,
       "longitude": 22.486111111,
-      "population": 13185,
-      "map": "maps/cities/estonia__kuressaare.png"
+      "population": 13185
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1770",
+      "name": "Tallinn",
+      "latitude": 59.437222222,
+      "longitude": 24.745,
+      "population": 457572,
+      "map": "maps/cities/estonia__tallinn.png",
+      "answer_map": "maps/cities/estonia__tallinn-answer.png"
     }
   ],
   "currencies": [
@@ -198,6 +203,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

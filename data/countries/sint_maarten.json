@@ -37,10 +37,10 @@
       "name": "Philipsburg",
       "latitude": 18.024166666,
       "longitude": -63.043333333,
-      "population": 1338,
-      "map": "maps/cities/sint_maarten__philipsburg.png"
+      "population": 1338
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XCG",
@@ -109,6 +109,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

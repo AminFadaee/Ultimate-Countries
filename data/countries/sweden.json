@@ -37,8 +37,7 @@
       "name": "Stockholm",
       "latitude": 59.329444444,
       "longitude": 18.068611111,
-      "population": 984748,
-      "map": "maps/cities/sweden__stockholm.png"
+      "population": 984748
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Gothenburg",
       "latitude": 57.7075,
       "longitude": 11.9675,
-      "population": 674529,
-      "map": "maps/cities/sweden__gothenburg.png"
+      "population": 674529
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Malmö",
       "latitude": 55.583333333,
       "longitude": 13.0,
-      "population": 339316,
-      "map": "maps/cities/sweden__malmo.png"
+      "population": 339316
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Uppsala",
       "latitude": 59.849760548,
       "longitude": 17.638946597,
-      "population": 174982,
-      "map": "maps/cities/sweden__uppsala.png"
+      "population": 174982
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Örebro",
       "latitude": 59.266926001,
       "longitude": 15.196522467,
-      "population": 128658,
-      "map": "maps/cities/sweden__orebro.png"
+      "population": 128658
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Västerås",
       "latitude": 59.61731938,
       "longitude": 16.542157497,
-      "population": 131643,
-      "map": "maps/cities/sweden__vasteras.png"
+      "population": 131643
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1754",
+      "name": "Stockholm",
+      "latitude": 59.329444444,
+      "longitude": 18.068611111,
+      "population": 984748,
+      "map": "maps/cities/sweden__stockholm.png",
+      "answer_map": "maps/cities/sweden__stockholm-answer.png"
     }
   ],
   "currencies": [
@@ -221,6 +226,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

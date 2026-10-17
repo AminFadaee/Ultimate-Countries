@@ -40,10 +40,10 @@
       "name": "Kingstown",
       "latitude": 13.15527,
       "longitude": -61.22742,
-      "population": 24518,
-      "map": "maps/cities/saint_vincent_and_the_grenadines__kingstown.png"
+      "population": 24518
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XCD",
@@ -126,6 +126,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Tirana",
       "latitude": 41.328333333,
       "longitude": 19.818055555,
-      "population": 389323,
-      "map": "maps/cities/albania__tirana.png"
+      "population": 389323
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Durrës",
       "latitude": 41.313333333,
       "longitude": 19.445833333,
-      "population": 101728,
-      "map": "maps/cities/albania__durres.png"
+      "population": 101728
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Vlorë",
       "latitude": 40.45,
       "longitude": 19.483333333,
-      "population": 66320,
-      "map": "maps/cities/albania__vlore.png"
+      "population": 66320
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Elbasan",
       "latitude": 41.113059,
       "longitude": 20.08178,
-      "population": 66834,
-      "map": "maps/cities/albania__elbasan.png"
+      "population": 66834
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Fier",
       "latitude": 40.716666666,
       "longitude": 19.55,
-      "population": 52926,
-      "map": "maps/cities/albania__fier.png"
+      "population": 52926
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Berat",
       "latitude": 40.704939,
       "longitude": 19.949673,
-      "population": 40665,
-      "map": "maps/cities/albania__berat.png"
+      "population": 40665
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q19689",
+      "name": "Tirana",
+      "latitude": 41.328333333,
+      "longitude": 19.818055555,
+      "population": 389323,
+      "map": "maps/cities/albania__tirana.png",
+      "answer_map": "maps/cities/albania__tirana-answer.png"
     }
   ],
   "currencies": [
@@ -188,6 +193,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

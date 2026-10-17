@@ -37,10 +37,10 @@
       "name": "Tskhinval",
       "latitude": 42.225661,
       "longitude": 43.970072,
-      "population": 32699,
-      "map": "maps/cities/south_ossetia__tskhinval.png"
+      "population": 32699
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "RUB",
@@ -121,6 +121,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

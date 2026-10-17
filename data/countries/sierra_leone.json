@@ -37,8 +37,7 @@
       "name": "Freetown",
       "latitude": 8.487222222,
       "longitude": -13.235555555,
-      "population": 951000,
-      "map": "maps/cities/sierra_leone__freetown.png"
+      "population": 951000
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Kenema",
       "latitude": 7.883333333,
       "longitude": -11.183333333,
-      "population": 188463,
-      "map": "maps/cities/sierra_leone__kenema.png"
+      "population": 188463
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "SLE",
@@ -151,6 +150,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

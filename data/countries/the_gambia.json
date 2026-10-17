@@ -37,10 +37,10 @@
       "name": "Banjul",
       "latitude": 13.453055555,
       "longitude": -16.5775,
-      "population": 31356,
-      "map": "maps/cities/the_gambia__banjul.png"
+      "population": 31356
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "GMD",
@@ -130,6 +130,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

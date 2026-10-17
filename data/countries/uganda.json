@@ -37,8 +37,7 @@
       "name": "Kampala",
       "latitude": 0.313611111,
       "longitude": 32.581111111,
-      "population": 1680600,
-      "map": "maps/cities/uganda__kampala.png"
+      "population": 1680600
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Jinja",
       "latitude": 0.4353036,
       "longitude": 33.2055568,
-      "population": 279184,
-      "map": "maps/cities/uganda__jinja.png"
+      "population": 279184
     },
     {
       "role": "notable",
@@ -55,8 +53,18 @@
       "name": "Gulu City",
       "latitude": 2.766666666,
       "longitude": 32.305555555,
-      "population": 177400,
-      "map": "maps/cities/uganda__gulu_city.png"
+      "population": 177400
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3894",
+      "name": "Kampala",
+      "latitude": 0.313611111,
+      "longitude": 32.581111111,
+      "population": 1680600,
+      "map": "maps/cities/uganda__kampala.png",
+      "answer_map": "maps/cities/uganda__kampala-answer.png"
     }
   ],
   "currencies": [
@@ -216,6 +224,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

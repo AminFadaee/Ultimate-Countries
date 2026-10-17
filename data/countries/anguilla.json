@@ -37,10 +37,10 @@
       "name": "The Valley",
       "latitude": 18.220833333,
       "longitude": -63.051666666,
-      "population": 1067,
-      "map": "maps/cities/anguilla__the_valley.png"
+      "population": 1067
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XCD",
@@ -97,6 +97,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

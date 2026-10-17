@@ -37,8 +37,7 @@
       "name": "Vienna",
       "latitude": 48.208333333,
       "longitude": 16.3725,
-      "population": 2028289,
-      "map": "maps/cities/austria__vienna.png"
+      "population": 2028289
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Graz",
       "latitude": 47.070833333,
       "longitude": 15.438611111,
-      "population": 306971,
-      "map": "maps/cities/austria__graz.png"
+      "population": 306971
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Salzburg",
       "latitude": 47.8,
       "longitude": 13.045,
-      "population": 155021,
-      "map": "maps/cities/austria__salzburg.png"
+      "population": 155021
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Linz",
       "latitude": 48.305833333,
       "longitude": 14.286388888,
-      "population": 211944,
-      "map": "maps/cities/austria__linz.png"
+      "population": 211944
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Innsbruck",
       "latitude": 47.268333333,
       "longitude": 11.393333333,
-      "population": 132499,
-      "map": "maps/cities/austria__innsbruck.png"
+      "population": 132499
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Klagenfurt am Wörthersee",
       "latitude": 46.616666666,
       "longitude": 14.3,
-      "population": 101403,
-      "map": "maps/cities/austria__klagenfurt_am_worthersee.png"
+      "population": 101403
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1741",
+      "name": "Vienna",
+      "latitude": 48.208333333,
+      "longitude": 16.3725,
+      "population": 2028289,
+      "map": "maps/cities/austria__vienna.png",
+      "answer_map": "maps/cities/austria__vienna-answer.png"
     }
   ],
   "currencies": [
@@ -224,6 +229,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

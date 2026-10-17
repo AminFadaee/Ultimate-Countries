@@ -37,10 +37,10 @@
       "name": "Vaduz",
       "latitude": 47.140555555,
       "longitude": 9.522222222,
-      "population": 5668,
-      "map": "maps/cities/liechtenstein__vaduz.png"
+      "population": 5668
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "CHF",
@@ -107,6 +107,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Suva",
       "latitude": -18.133333333,
       "longitude": 178.433333333,
-      "population": 88271,
-      "map": "maps/cities/fiji__suva.png"
+      "population": 88271
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Nadi",
       "latitude": -17.8,
       "longitude": 177.416666666,
-      "population": 71048,
-      "map": "maps/cities/fiji__nadi.png"
+      "population": 71048
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "FJD",
@@ -164,6 +163,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

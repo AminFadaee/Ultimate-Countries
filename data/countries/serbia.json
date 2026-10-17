@@ -37,8 +37,7 @@
       "name": "Belgrade",
       "latitude": 44.817777777,
       "longitude": 20.456944444,
-      "population": 1197714,
-      "map": "maps/cities/serbia__belgrade.png"
+      "population": 1197714
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Novi Sad",
       "latitude": 45.264444444,
       "longitude": 19.831666666,
-      "population": 260438,
-      "map": "maps/cities/serbia__novi_sad.png"
+      "population": 260438
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Niš",
       "latitude": 43.319166666,
       "longitude": 21.896111111,
-      "population": 183164,
-      "map": "maps/cities/serbia__nis.png"
+      "population": 183164
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Kragujevac",
       "latitude": 44.010111111,
       "longitude": 20.917222222,
-      "population": 150623,
-      "map": "maps/cities/serbia__kragujevac.png"
+      "population": 150623
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Subotica",
       "latitude": 46.1002058,
       "longitude": 19.6653273,
-      "population": 105681,
-      "map": "maps/cities/serbia__subotica.png"
+      "population": 105681
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Kraljevo",
       "latitude": 43.72342,
       "longitude": 20.686975,
-      "population": 66688,
-      "map": "maps/cities/serbia__kraljevo.png"
+      "population": 66688
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3711",
+      "name": "Belgrade",
+      "latitude": 44.817777777,
+      "longitude": 20.456944444,
+      "population": 1197714,
+      "map": "maps/cities/serbia__belgrade.png",
+      "answer_map": "maps/cities/serbia__belgrade-answer.png"
     }
   ],
   "currencies": [
@@ -195,6 +200,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

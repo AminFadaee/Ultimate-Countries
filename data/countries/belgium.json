@@ -37,8 +37,7 @@
       "name": "Brussels",
       "latitude": 50.846666666,
       "longitude": 4.351666666,
-      "population": 195546,
-      "map": "maps/cities/belgium__brussels.png"
+      "population": 195546
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Antwerp",
       "latitude": 51.221111111,
       "longitude": 4.399722222,
-      "population": 529247,
-      "map": "maps/cities/belgium__antwerp.png"
+      "population": 529247
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Ghent",
       "latitude": 51.053611111,
       "longitude": 3.725277777,
-      "population": 272657,
-      "map": "maps/cities/belgium__ghent.png"
+      "population": 272657
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Liège",
       "latitude": 50.639722222,
       "longitude": 5.570555555,
-      "population": 195278,
-      "map": "maps/cities/belgium__liege.png"
+      "population": 195278
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Charleroi",
       "latitude": 50.416666666,
       "longitude": 4.444166666,
-      "population": 204322,
-      "map": "maps/cities/belgium__charleroi.png"
+      "population": 204322
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Bruges",
       "latitude": 51.208888888,
       "longitude": 3.224166666,
-      "population": 118509,
-      "map": "maps/cities/belgium__bruges.png"
+      "population": 118509
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q239",
+      "name": "Brussels",
+      "latitude": 50.846666666,
+      "longitude": 4.351666666,
+      "population": 195546,
+      "map": "maps/cities/belgium__brussels.png",
+      "answer_map": "maps/cities/belgium__brussels-answer.png"
     }
   ],
   "currencies": [
@@ -207,6 +212,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

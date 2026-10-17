@@ -37,8 +37,7 @@
       "name": "Kabul",
       "latitude": 34.532777777,
       "longitude": 69.165833333,
-      "population": 5333284,
-      "map": "maps/cities/afghanistan__kabul.png"
+      "population": 5333284
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Kandahar",
       "latitude": 31.62068,
       "longitude": 65.71588,
-      "population": 614254,
-      "map": "maps/cities/afghanistan__kandahar.png"
+      "population": 614254
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Herat",
       "latitude": 34.341944,
       "longitude": 62.203056,
-      "population": 556205,
-      "map": "maps/cities/afghanistan__herat.png"
+      "population": 556205
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Mazar-i-Sharif",
       "latitude": 36.7,
       "longitude": 67.116666666,
-      "population": 469247,
-      "map": "maps/cities/afghanistan__mazar_i_sharif.png"
+      "population": 469247
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Kunduz",
       "latitude": 36.728888888,
       "longitude": 68.856944444,
-      "population": 356536,
-      "map": "maps/cities/afghanistan__kunduz.png"
+      "population": 356536
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Ghazni",
       "latitude": 33.549166666,
       "longitude": 68.423333333,
-      "population": 143379,
-      "map": "maps/cities/afghanistan__ghazni.png"
+      "population": 143379
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q5838",
+      "name": "Kabul",
+      "latitude": 34.532777777,
+      "longitude": 69.165833333,
+      "population": 5333284,
+      "map": "maps/cities/afghanistan__kabul.png",
+      "answer_map": "maps/cities/afghanistan__kabul-answer.png"
     }
   ],
   "currencies": [
@@ -233,6 +238,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

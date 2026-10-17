@@ -37,10 +37,10 @@
       "name": "Vatican City",
       "latitude": 41.904,
       "longitude": 12.453,
-      "population": 882,
-      "map": "maps/cities/vatican_city__vatican_city.png"
+      "population": 882
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -113,6 +113,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

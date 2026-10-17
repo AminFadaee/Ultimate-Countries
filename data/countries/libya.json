@@ -37,8 +37,7 @@
       "name": "Tripoli",
       "latitude": 32.8875,
       "longitude": 13.1875,
-      "population": 1293016,
-      "map": "maps/cities/libya__tripoli.png"
+      "population": 1293016
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Benghazi",
       "latitude": 32.116666666,
       "longitude": 20.066666666,
-      "population": 631555,
-      "map": "maps/cities/libya__benghazi.png"
+      "population": 631555
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Al Bayda",
       "latitude": 32.762777777,
       "longitude": 21.755,
-      "population": 250000,
-      "map": "maps/cities/libya__al_bayda.png"
+      "population": 250000
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Ajdabiya",
       "latitude": 30.755555555,
       "longitude": 20.225277777,
-      "population": 416000,
-      "map": "maps/cities/libya__ajdabiya.png"
+      "population": 416000
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Tobruk",
       "latitude": 32.083333333,
       "longitude": 23.95,
-      "population": 135832,
-      "map": "maps/cities/libya__tobruk.png"
+      "population": 135832
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Sirte",
       "latitude": 31.2,
       "longitude": 16.6,
-      "population": 76788,
-      "map": "maps/cities/libya__sirte.png"
+      "population": 76788
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3579",
+      "name": "Tripoli",
+      "latitude": 32.8875,
+      "longitude": 13.1875,
+      "population": 1293016,
+      "map": "maps/cities/libya__tripoli.png",
+      "answer_map": "maps/cities/libya__tripoli-answer.png"
     }
   ],
   "currencies": [
@@ -180,6 +185,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

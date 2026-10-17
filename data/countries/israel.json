@@ -37,8 +37,7 @@
       "name": "Jerusalem",
       "latitude": 31.776679,
       "longitude": 35.234156,
-      "population": 1050151,
-      "map": "maps/cities/israel__jerusalem.png"
+      "population": 1050151
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Tel Aviv",
       "latitude": 32.08,
       "longitude": 34.78,
-      "population": 467875,
-      "map": "maps/cities/israel__tel_aviv.png"
+      "population": 467875
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Haifa",
       "latitude": 32.819166666,
       "longitude": 34.999166666,
-      "population": 282831,
-      "map": "maps/cities/israel__haifa.png"
+      "population": 282831
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Ashdod",
       "latitude": 31.797777777,
       "longitude": 34.650277777,
-      "population": 220174,
-      "map": "maps/cities/israel__ashdod.png"
+      "population": 220174
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Beersheba",
       "latitude": 31.252222222,
       "longitude": 34.786666666,
-      "population": 209000,
-      "map": "maps/cities/israel__beersheba.png"
+      "population": 209000
     },
     {
       "role": "notable",
@@ -82,8 +77,27 @@
       "name": "Netanya",
       "latitude": 32.328611111,
       "longitude": 34.856666666,
-      "population": 217200,
-      "map": "maps/cities/israel__netanya.png"
+      "population": 217200
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1218",
+      "name": "Jerusalem",
+      "latitude": 31.776679,
+      "longitude": 35.234156,
+      "population": 1050151,
+      "map": "maps/cities/israel__jerusalem.png",
+      "answer_map": "maps/cities/israel__jerusalem-answer.png"
+    },
+    {
+      "id": "Q33935",
+      "name": "Tel Aviv",
+      "latitude": 32.08,
+      "longitude": 34.78,
+      "population": 467875,
+      "map": "maps/cities/israel__tel_aviv.png",
+      "answer_map": "maps/cities/israel__tel_aviv-answer.png"
     }
   ],
   "currencies": [
@@ -238,6 +252,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

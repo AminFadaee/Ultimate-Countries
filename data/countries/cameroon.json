@@ -37,8 +37,7 @@
       "name": "Yaoundé",
       "latitude": 3.857777777,
       "longitude": 11.518055555,
-      "population": 2440462,
-      "map": "maps/cities/cameroon__yaounde.png"
+      "population": 2440462
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Douala",
       "latitude": 4.05,
       "longitude": 9.7,
-      "population": 2768436,
-      "map": "maps/cities/cameroon__douala.png"
+      "population": 2768436
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Garoua",
       "latitude": 9.3,
       "longitude": 13.4,
-      "population": 1750000,
-      "map": "maps/cities/cameroon__garoua.png"
+      "population": 1750000
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Bamenda",
       "latitude": 5.961388888,
       "longitude": 10.151666666,
-      "population": 348766,
-      "map": "maps/cities/cameroon__bamenda.png"
+      "population": 348766
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Bafoussam",
       "latitude": 5.466666666,
       "longitude": 10.416666666,
-      "population": 480000,
-      "map": "maps/cities/cameroon__bafoussam.png"
+      "population": 480000
     },
     {
       "role": "notable",
@@ -82,10 +77,10 @@
       "name": "Maroua",
       "latitude": 10.590946,
       "longitude": 14.315925,
-      "population": 201371,
-      "map": "maps/cities/cameroon__maroua.png"
+      "population": 201371
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XAF",
@@ -318,6 +313,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Dakar",
       "latitude": 14.672555555,
       "longitude": -17.432,
-      "population": 1438725,
-      "map": "maps/cities/senegal__dakar.png"
+      "population": 1438725
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Saint-Louis",
       "latitude": 16.033333333,
       "longitude": -16.5,
-      "population": 258592,
-      "map": "maps/cities/senegal__saint_louis.png"
+      "population": 258592
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Thiès",
       "latitude": 14.791638888,
       "longitude": -16.924944444,
-      "population": 391253,
-      "map": "maps/cities/senegal__thies.png"
+      "population": 391253
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Ziguinchor",
       "latitude": 12.586111111,
       "longitude": -16.27075,
-      "population": 214874,
-      "map": "maps/cities/senegal__ziguinchor.png"
+      "population": 214874
     },
     {
       "role": "notable",
@@ -73,10 +69,10 @@
       "name": "Kaolack",
       "latitude": 14.138888888,
       "longitude": -16.076388888,
-      "population": 172305,
-      "map": "maps/cities/senegal__kaolack.png"
+      "population": 172305
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XOF",
@@ -229,6 +225,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

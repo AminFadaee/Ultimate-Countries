@@ -37,10 +37,10 @@
       "name": "Fort-de-France",
       "latitude": 14.6,
       "longitude": -61.066666666,
-      "population": 75506,
-      "map": "maps/cities/martinique__fort_de_france.png"
+      "population": 75506
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -122,6 +122,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

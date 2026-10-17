@@ -38,8 +38,7 @@
       "name": "Ankara",
       "latitude": 39.93576,
       "longitude": 32.83869,
-      "population": 5803482,
-      "map": "maps/cities/turkey__ankara.png"
+      "population": 5803482
     },
     {
       "role": "notable",
@@ -47,8 +46,7 @@
       "name": "Istanbul",
       "latitude": 41.01,
       "longitude": 28.960277777,
-      "population": 15655924,
-      "map": "maps/cities/turkey__istanbul.png"
+      "population": 15655924
     },
     {
       "role": "notable",
@@ -56,8 +54,7 @@
       "name": "İzmir",
       "latitude": 38.41273,
       "longitude": 27.13838,
-      "population": 4493242,
-      "map": "maps/cities/turkey__izmir.png"
+      "population": 4493242
     },
     {
       "role": "notable",
@@ -65,8 +62,7 @@
       "name": "Bursa",
       "latitude": 40.191330555,
       "longitude": 29.080538888,
-      "population": 2901396,
-      "map": "maps/cities/turkey__bursa.png"
+      "population": 2901396
     },
     {
       "role": "notable",
@@ -74,8 +70,7 @@
       "name": "Antalya",
       "latitude": 36.90812,
       "longitude": 30.69556,
-      "population": 2426356,
-      "map": "maps/cities/turkey__antalya.png"
+      "population": 2426356
     },
     {
       "role": "notable",
@@ -83,8 +78,45 @@
       "name": "Adana",
       "latitude": 36.9863599,
       "longitude": 35.3252861,
-      "population": 1765981,
-      "map": "maps/cities/turkey__adana.png"
+      "population": 1765981
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q406",
+      "name": "Istanbul",
+      "latitude": 41.01,
+      "longitude": 28.960277777,
+      "population": 15655924,
+      "map": "maps/cities/turkey__istanbul.png",
+      "answer_map": "maps/cities/turkey__istanbul-answer.png"
+    },
+    {
+      "id": "Q6487",
+      "name": "Antalya",
+      "latitude": 36.90812,
+      "longitude": 30.69556,
+      "population": 2426356,
+      "map": "maps/cities/turkey__antalya.png",
+      "answer_map": "maps/cities/turkey__antalya-answer.png"
+    },
+    {
+      "id": "Q3640",
+      "name": "Ankara",
+      "latitude": 39.93576,
+      "longitude": 32.83869,
+      "population": 5803482,
+      "map": "maps/cities/turkey__ankara.png",
+      "answer_map": "maps/cities/turkey__ankara-answer.png"
+    },
+    {
+      "id": "Q43387",
+      "name": "Edirne",
+      "latitude": 41.67304,
+      "longitude": 26.57361,
+      "population": 180327,
+      "map": "maps/cities/turkey__edirne.png",
+      "answer_map": "maps/cities/turkey__edirne-answer.png"
     }
   ],
   "currencies": [
@@ -230,6 +262,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

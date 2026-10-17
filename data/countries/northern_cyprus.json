@@ -37,8 +37,7 @@
       "name": "North Nicosia",
       "latitude": 35.19,
       "longitude": 33.363611111,
-      "population": 61378,
-      "map": "maps/cities/northern_cyprus__north_nicosia.png"
+      "population": 61378
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Famagusta",
       "latitude": 35.116666666,
       "longitude": 33.95,
-      "population": 40920,
-      "map": "maps/cities/northern_cyprus__famagusta.png"
+      "population": 40920
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "TRY",
@@ -115,6 +114,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

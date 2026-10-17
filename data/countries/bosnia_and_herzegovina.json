@@ -37,8 +37,7 @@
       "name": "Sarajevo",
       "latitude": 43.856388888,
       "longitude": 18.413055555,
-      "population": 275524,
-      "map": "maps/cities/bosnia_and_herzegovina__sarajevo.png"
+      "population": 275524
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Banja Luka",
       "latitude": 44.7725,
       "longitude": 17.1925,
-      "population": 185042,
-      "map": "maps/cities/bosnia_and_herzegovina__banja_luka.png"
+      "population": 185042
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Mostar",
       "latitude": 43.343611111,
       "longitude": 17.8075,
-      "population": 105448,
-      "map": "maps/cities/bosnia_and_herzegovina__mostar.png"
+      "population": 105448
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Tuzla",
       "latitude": 44.5391105,
       "longitude": 18.675193,
-      "population": 110979,
-      "map": "maps/cities/bosnia_and_herzegovina__tuzla.png"
+      "population": 110979
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Zenica",
       "latitude": 44.201666666,
       "longitude": 17.903888888,
-      "population": 70553,
-      "map": "maps/cities/bosnia_and_herzegovina__zenica.png"
+      "population": 70553
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Bihać",
       "latitude": 44.814722222,
       "longitude": 15.869166666,
-      "population": 56261,
-      "map": "maps/cities/bosnia_and_herzegovina__bihac.png"
+      "population": 56261
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q11194",
+      "name": "Sarajevo",
+      "latitude": 43.856388888,
+      "longitude": 18.413055555,
+      "population": 275524,
+      "map": "maps/cities/bosnia_and_herzegovina__sarajevo.png",
+      "answer_map": "maps/cities/bosnia_and_herzegovina__sarajevo-answer.png"
     }
   ],
   "currencies": [
@@ -188,6 +193,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

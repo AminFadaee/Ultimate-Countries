@@ -37,10 +37,10 @@
       "name": "Kralendijk",
       "latitude": 12.150833333,
       "longitude": -68.276666666,
-      "population": 12531,
-      "map": "maps/cities/caribbean_netherlands__kralendijk.png"
+      "population": 12531
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -109,6 +109,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

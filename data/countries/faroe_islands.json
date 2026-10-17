@@ -37,10 +37,10 @@
       "name": "Tórshavn",
       "latitude": 62.00981,
       "longitude": -6.77135,
-      "population": 14038,
-      "map": "maps/cities/faroe_islands__torshavn.png"
+      "population": 14038
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "DKK",
@@ -109,6 +109,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -39,8 +39,7 @@
       "name": "Buenos Aires",
       "latitude": -34.599722222,
       "longitude": -58.381944444,
-      "population": 3121707,
-      "map": "maps/cities/argentina__buenos_aires.png"
+      "population": 3121707
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Rosario",
       "latitude": -32.9575,
       "longitude": -60.639444444,
-      "population": 1037710,
-      "map": "maps/cities/argentina__rosario.png"
+      "population": 1037710
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Córdoba",
       "latitude": -31.416666666,
       "longitude": -64.183333333,
-      "population": 1505250,
-      "map": "maps/cities/argentina__cordoba.png"
+      "population": 1505250
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Mar del Plata",
       "latitude": -38.0,
       "longitude": -57.55,
-      "population": 593337,
-      "map": "maps/cities/argentina__mar_del_plata.png"
+      "population": 593337
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Salta",
       "latitude": -24.788333333,
       "longitude": -65.410555555,
-      "population": 594772,
-      "map": "maps/cities/argentina__salta.png"
+      "population": 594772
     },
     {
       "role": "notable",
@@ -84,8 +79,18 @@
       "name": "San Miguel de Tucumán",
       "latitude": -26.816666666,
       "longitude": -65.216666666,
-      "population": 601888,
-      "map": "maps/cities/argentina__san_miguel_de_tucuman.png"
+      "population": 601888
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1486",
+      "name": "Buenos Aires",
+      "latitude": -34.599722222,
+      "longitude": -58.381944444,
+      "population": 3121707,
+      "map": "maps/cities/argentina__buenos_aires.png",
+      "answer_map": "maps/cities/argentina__buenos_aires-answer.png"
     }
   ],
   "currencies": [
@@ -190,6 +195,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

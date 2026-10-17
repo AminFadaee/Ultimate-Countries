@@ -37,8 +37,7 @@
       "name": "Baghdad",
       "latitude": 33.315277777,
       "longitude": 44.366111111,
-      "population": 8126755,
-      "map": "maps/cities/iraq__baghdad.png"
+      "population": 8126755
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Mosul",
       "latitude": 36.341666666,
       "longitude": 43.129166666,
-      "population": 1792000,
-      "map": "maps/cities/iraq__mosul.png"
+      "population": 1792000
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Basra",
       "latitude": 30.515,
       "longitude": 47.81,
-      "population": 1326564,
-      "map": "maps/cities/iraq__basra.png"
+      "population": 1326564
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Erbil",
       "latitude": 36.191111111,
       "longitude": 44.009444444,
-      "population": 846000,
-      "map": "maps/cities/iraq__erbil.png"
+      "population": 846000
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Kirkuk",
       "latitude": 35.466666666,
       "longitude": 44.4,
-      "population": 975000,
-      "map": "maps/cities/iraq__kirkuk.png"
+      "population": 975000
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Babylon",
       "latitude": 32.522907,
       "longitude": 44.42415,
-      "population": 150000,
-      "map": "maps/cities/iraq__babylon.png"
+      "population": 150000
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1530",
+      "name": "Baghdad",
+      "latitude": 33.315277777,
+      "longitude": 44.366111111,
+      "population": 8126755,
+      "map": "maps/cities/iraq__baghdad.png",
+      "answer_map": "maps/cities/iraq__baghdad-answer.png"
     }
   ],
   "currencies": [
@@ -213,6 +218,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

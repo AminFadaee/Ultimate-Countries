@@ -37,8 +37,7 @@
       "name": "Brasília",
       "latitude": -15.793888888,
       "longitude": -47.882777777,
-      "population": 2996899,
-      "map": "maps/cities/brazil__brasilia.png"
+      "population": 2996899
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Rio de Janeiro",
       "latitude": -22.911111111,
       "longitude": -43.205555555,
-      "population": 6211223,
-      "map": "maps/cities/brazil__rio_de_janeiro.png"
+      "population": 6211223
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "São Paulo",
       "latitude": -23.550394444,
       "longitude": -46.633947222,
-      "population": 11451999,
-      "map": "maps/cities/brazil__sao_paulo.png"
+      "population": 11451999
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Curitiba",
       "latitude": -25.429722222,
       "longitude": -49.271944444,
-      "population": 1773718,
-      "map": "maps/cities/brazil__curitiba.png"
+      "population": 1773718
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Belo Horizonte",
       "latitude": -19.928055555,
       "longitude": -43.941944444,
-      "population": 2315560,
-      "map": "maps/cities/brazil__belo_horizonte.png"
+      "population": 2315560
     },
     {
       "role": "notable",
@@ -82,8 +77,45 @@
       "name": "Salvador",
       "latitude": -12.983055555,
       "longitude": -38.492777777,
-      "population": 2417678,
-      "map": "maps/cities/brazil__salvador.png"
+      "population": 2417678
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q8678",
+      "name": "Rio de Janeiro",
+      "latitude": -22.911111111,
+      "longitude": -43.205555555,
+      "population": 6211223,
+      "map": "maps/cities/brazil__rio_de_janeiro.png",
+      "answer_map": "maps/cities/brazil__rio_de_janeiro-answer.png"
+    },
+    {
+      "id": "Q174",
+      "name": "São Paulo",
+      "latitude": -23.550394444,
+      "longitude": -46.633947222,
+      "population": 11451999,
+      "map": "maps/cities/brazil__sao_paulo.png",
+      "answer_map": "maps/cities/brazil__sao_paulo-answer.png"
+    },
+    {
+      "id": "Q4361",
+      "name": "Curitiba",
+      "latitude": -25.429722222,
+      "longitude": -49.271944444,
+      "population": 1773718,
+      "map": "maps/cities/brazil__curitiba.png",
+      "answer_map": "maps/cities/brazil__curitiba-answer.png"
+    },
+    {
+      "id": "Q2844",
+      "name": "Brasília",
+      "latitude": -15.793888888,
+      "longitude": -47.882777777,
+      "population": 2996899,
+      "map": "maps/cities/brazil__brasilia.png",
+      "answer_map": "maps/cities/brazil__brasilia-answer.png"
     }
   ],
   "currencies": [
@@ -213,6 +245,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

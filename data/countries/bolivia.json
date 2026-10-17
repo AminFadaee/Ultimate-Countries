@@ -38,8 +38,7 @@
       "name": "Sucre",
       "latitude": -19.0475,
       "longitude": -65.26,
-      "population": 360544,
-      "map": "maps/cities/bolivia__sucre.png"
+      "population": 360544
     },
     {
       "role": "capital",
@@ -47,8 +46,7 @@
       "name": "La Paz",
       "latitude": -16.495833333,
       "longitude": -68.133333333,
-      "population": 755732,
-      "map": "maps/cities/bolivia__la_paz.png"
+      "population": 755732
     },
     {
       "role": "notable",
@@ -56,8 +54,7 @@
       "name": "Santa Cruz de la Sierra",
       "latitude": -17.789166666,
       "longitude": -63.1975,
-      "population": 3122605,
-      "map": "maps/cities/bolivia__santa_cruz_de_la_sierra.png"
+      "population": 3122605
     },
     {
       "role": "notable",
@@ -65,8 +62,7 @@
       "name": "Cochabamba",
       "latitude": -17.3935419,
       "longitude": -66.1570139,
-      "population": 632013,
-      "map": "maps/cities/bolivia__cochabamba.png"
+      "population": 632013
     },
     {
       "role": "notable",
@@ -74,8 +70,7 @@
       "name": "Potosí",
       "latitude": -19.589166666,
       "longitude": -65.753333333,
-      "population": 189652,
-      "map": "maps/cities/bolivia__potosi.png"
+      "population": 189652
     },
     {
       "role": "notable",
@@ -83,8 +78,7 @@
       "name": "Oruro",
       "latitude": -17.966666666,
       "longitude": -67.116666666,
-      "population": 297497,
-      "map": "maps/cities/bolivia__oruro.png"
+      "population": 297497
     },
     {
       "role": "notable",
@@ -92,10 +86,10 @@
       "name": "Tarija",
       "latitude": -21.533888888,
       "longitude": -64.734166666,
-      "population": 179528,
-      "map": "maps/cities/bolivia__tarija.png"
+      "population": 179528
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "BOB",
@@ -400,6 +394,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -39,10 +39,10 @@
       "name": "Marigot",
       "latitude": 18.066666666,
       "longitude": -63.084722222,
-      "population": 5700,
-      "map": "maps/cities/saint_martin__marigot.png"
+      "population": 5700
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -99,6 +99,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

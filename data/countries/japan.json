@@ -37,8 +37,7 @@
       "name": "Tokyo",
       "latitude": 35.689444444,
       "longitude": 139.691666666,
-      "population": 14264798,
-      "map": "maps/cities/japan__tokyo.png"
+      "population": 14264798
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Osaka",
       "latitude": 34.69375,
       "longitude": 135.502111111,
-      "population": 2751862,
-      "map": "maps/cities/japan__osaka.png"
+      "population": 2751862
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Yokohama",
       "latitude": 35.450333333,
       "longitude": 139.634222222,
-      "population": 3757630,
-      "map": "maps/cities/japan__yokohama.png"
+      "population": 3757630
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Kyoto",
       "latitude": 35.011611111,
       "longitude": 135.768111111,
-      "population": 1463723,
-      "map": "maps/cities/japan__kyoto.png"
+      "population": 1463723
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Sapporo",
       "latitude": 43.061944444,
       "longitude": 141.354444444,
-      "population": 1959313,
-      "map": "maps/cities/japan__sapporo.png"
+      "population": 1959313
     },
     {
       "role": "notable",
@@ -82,8 +77,45 @@
       "name": "Nagoya",
       "latitude": 35.181388888,
       "longitude": 136.906388888,
-      "population": 2326844,
-      "map": "maps/cities/japan__nagoya.png"
+      "population": 2326844
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1490",
+      "name": "Tokyo",
+      "latitude": 35.689444444,
+      "longitude": 139.691666666,
+      "population": 14264798,
+      "map": "maps/cities/japan__tokyo.png",
+      "answer_map": "maps/cities/japan__tokyo-answer.png"
+    },
+    {
+      "id": "Q34600",
+      "name": "Kyoto",
+      "latitude": 35.011611111,
+      "longitude": 135.768111111,
+      "population": 1463723,
+      "map": "maps/cities/japan__kyoto.png",
+      "answer_map": "maps/cities/japan__kyoto-answer.png"
+    },
+    {
+      "id": "Q35765",
+      "name": "Osaka",
+      "latitude": 34.69375,
+      "longitude": 135.502111111,
+      "population": 2751862,
+      "map": "maps/cities/japan__osaka.png",
+      "answer_map": "maps/cities/japan__osaka-answer.png"
+    },
+    {
+      "id": "Q26600",
+      "name": "Fukuoka",
+      "latitude": 33.590138888,
+      "longitude": 130.401722222,
+      "population": 1603043,
+      "map": "maps/cities/japan__fukuoka.png",
+      "answer_map": "maps/cities/japan__fukuoka-answer.png"
     }
   ],
   "currencies": [
@@ -187,6 +219,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

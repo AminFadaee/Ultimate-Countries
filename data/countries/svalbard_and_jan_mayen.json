@@ -37,10 +37,10 @@
       "name": "Longyearbyen",
       "latitude": 78.216666666,
       "longitude": 15.633333333,
-      "population": 2417,
-      "map": "maps/cities/svalbard_and_jan_mayen__longyearbyen.png"
+      "population": 2417
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "NOK",
@@ -103,6 +103,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

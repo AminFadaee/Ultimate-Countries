@@ -37,8 +37,7 @@
       "name": "Accra",
       "latitude": 5.55602,
       "longitude": -0.1969,
-      "population": 1782150,
-      "map": "maps/cities/ghana__accra.png"
+      "population": 1782150
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Kumasi",
       "latitude": 6.7,
       "longitude": -1.625,
-      "population": 3903480,
-      "map": "maps/cities/ghana__kumasi.png"
+      "population": 3903480
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Tamale",
       "latitude": 9.4075,
       "longitude": -0.853333333,
-      "population": 729768,
-      "map": "maps/cities/ghana__tamale.png"
+      "population": 729768
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Sekondi-Takoradi",
       "latitude": 4.916666666,
       "longitude": -1.766666666,
-      "population": 539548,
-      "map": "maps/cities/ghana__sekondi_takoradi.png"
+      "population": 539548
     },
     {
       "role": "notable",
@@ -73,8 +69,18 @@
       "name": "Cape Coast",
       "latitude": 5.1,
       "longitude": -1.25,
-      "population": 189925,
-      "map": "maps/cities/ghana__cape_coast.png"
+      "population": 189925
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3761",
+      "name": "Accra",
+      "latitude": 5.55602,
+      "longitude": -0.1969,
+      "population": 1782150,
+      "map": "maps/cities/ghana__accra.png",
+      "answer_map": "maps/cities/ghana__accra-answer.png"
     }
   ],
   "currencies": [
@@ -204,6 +210,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

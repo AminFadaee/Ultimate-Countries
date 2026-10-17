@@ -37,10 +37,10 @@
       "name": "Douglas",
       "latitude": 54.15,
       "longitude": -4.4775,
-      "population": 26677,
-      "map": "maps/cities/isle_of_man__douglas.png"
+      "population": 26677
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "GBP",
@@ -111,6 +111,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

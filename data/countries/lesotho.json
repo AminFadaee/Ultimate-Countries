@@ -39,8 +39,7 @@
       "name": "Maseru",
       "latitude": -29.31,
       "longitude": 27.48,
-      "population": 343541,
-      "map": "maps/cities/lesotho__maseru.png"
+      "population": 343541
     },
     {
       "role": "notable",
@@ -48,10 +47,10 @@
       "name": "Teyateyaneng",
       "latitude": -29.15,
       "longitude": 27.733333333,
-      "population": 75115,
-      "map": "maps/cities/lesotho__teyateyaneng.png"
+      "population": 75115
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "LSL",
@@ -173,6 +172,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

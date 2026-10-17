@@ -37,8 +37,7 @@
       "name": "Nassau",
       "latitude": 25.078055555,
       "longitude": -77.338611111,
-      "population": 227940,
-      "map": "maps/cities/the_bahamas__nassau.png"
+      "population": 227940
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Freeport",
       "latitude": 26.52,
       "longitude": -78.66,
-      "population": 45945,
-      "map": "maps/cities/the_bahamas__freeport.png"
+      "population": 45945
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "BSD",
@@ -142,6 +141,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Maputo",
       "latitude": -25.968888888,
       "longitude": 32.573333333,
-      "population": 1133200,
-      "map": "maps/cities/mozambique__maputo.png"
+      "population": 1133200
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Beira",
       "latitude": -19.833333333,
       "longitude": 34.85,
-      "population": 530604,
-      "map": "maps/cities/mozambique__beira.png"
+      "population": 530604
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Nampula",
       "latitude": -15.116666666,
       "longitude": 39.266666666,
-      "population": 743000,
-      "map": "maps/cities/mozambique__nampula.png"
+      "population": 743000
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Quelimane",
       "latitude": -17.876388888,
       "longitude": 36.887222222,
-      "population": 349842,
-      "map": "maps/cities/mozambique__quelimane.png"
+      "population": 349842
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Tete",
       "latitude": -16.157916666,
       "longitude": 33.589805555,
-      "population": 152909,
-      "map": "maps/cities/mozambique__tete.png"
+      "population": 152909
     },
     {
       "role": "notable",
@@ -82,10 +77,10 @@
       "name": "Chimoio",
       "latitude": -19.116666666,
       "longitude": 33.45,
-      "population": 238976,
-      "map": "maps/cities/mozambique__chimoio.png"
+      "population": 238976
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "MZN",
@@ -227,6 +222,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

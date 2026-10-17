@@ -39,8 +39,7 @@
       "name": "Chișinău",
       "latitude": 47.022777777,
       "longitude": 28.835277777,
-      "population": 567038,
-      "map": "maps/cities/moldova__chisinau.png"
+      "population": 567038
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Tiraspol",
       "latitude": 46.85,
       "longitude": 29.63333333,
-      "population": 133807,
-      "map": "maps/cities/moldova__tiraspol.png"
+      "population": 133807
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Bălți",
       "latitude": 47.761666666,
       "longitude": 27.928888888,
-      "population": 90954,
-      "map": "maps/cities/moldova__balti.png"
+      "population": 90954
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Rîbnița",
       "latitude": 47.76638889,
       "longitude": 29.00055556,
-      "population": 47900,
-      "map": "maps/cities/moldova__ribnita.png"
+      "population": 47900
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Cahul",
       "latitude": 45.9075,
       "longitude": 28.194444444,
-      "population": 22223,
-      "map": "maps/cities/moldova__cahul.png"
+      "population": 22223
     },
     {
       "role": "notable",
@@ -84,8 +79,18 @@
       "name": "Comrat",
       "latitude": 46.300277777,
       "longitude": 28.657222222,
-      "population": 19120,
-      "map": "maps/cities/moldova__comrat.png"
+      "population": 19120
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q21197",
+      "name": "Chișinău",
+      "latitude": 47.022777777,
+      "longitude": 28.835277777,
+      "population": 567038,
+      "map": "maps/cities/moldova__chisinau.png",
+      "answer_map": "maps/cities/moldova__chisinau-answer.png"
     }
   ],
   "currencies": [
@@ -196,6 +201,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

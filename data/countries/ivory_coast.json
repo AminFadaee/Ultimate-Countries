@@ -37,8 +37,7 @@
       "name": "Yamoussoukro",
       "latitude": 6.816111111,
       "longitude": -5.274166666,
-      "population": 340234,
-      "map": "maps/cities/ivory_coast__yamoussoukro.png"
+      "population": 340234
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Abidjan",
       "latitude": 5.336388888,
       "longitude": -4.026666666,
-      "population": 5616633,
-      "map": "maps/cities/ivory_coast__abidjan.png"
+      "population": 5616633
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Bouaké",
       "latitude": 7.68333,
       "longitude": -5.03306,
-      "population": 740000,
-      "map": "maps/cities/ivory_coast__bouake.png"
+      "population": 740000
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Korhogo",
       "latitude": 9.457777777,
       "longitude": -5.629444444,
-      "population": 440926,
-      "map": "maps/cities/ivory_coast__korhogo.png"
+      "population": 440926
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "San-Pédro",
       "latitude": 4.733333333,
       "longitude": -6.633333333,
-      "population": 390654,
-      "map": "maps/cities/ivory_coast__san_pedro.png"
+      "population": 390654
     },
     {
       "role": "notable",
@@ -82,10 +77,10 @@
       "name": "Daloa",
       "latitude": 6.866666666,
       "longitude": -6.45,
-      "population": 421879,
-      "map": "maps/cities/ivory_coast__daloa.png"
+      "population": 421879
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XOF",
@@ -194,6 +189,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

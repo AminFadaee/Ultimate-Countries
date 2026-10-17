@@ -37,8 +37,7 @@
       "name": "Taipei",
       "latitude": 25.0375,
       "longitude": 121.5625,
-      "population": 2429429,
-      "map": "maps/cities/taiwan__taipei.png"
+      "population": 2429429
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Kaohsiung",
       "latitude": 22.615,
       "longitude": 120.2975,
-      "population": 2713032,
-      "map": "maps/cities/taiwan__kaohsiung.png"
+      "population": 2713032
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Taichung",
       "latitude": 24.143888888,
       "longitude": 120.679444444,
-      "population": 2868452,
-      "map": "maps/cities/taiwan__taichung.png"
+      "population": 2868452
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Tainan",
       "latitude": 22.99,
       "longitude": 120.185,
-      "population": 1849762,
-      "map": "maps/cities/taiwan__tainan.png"
+      "population": 1849762
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Taoyuan",
       "latitude": 24.991278,
       "longitude": 121.314328,
-      "population": 2356795,
-      "map": "maps/cities/taiwan__taoyuan.png"
+      "population": 2356795
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Hsinchu City",
       "latitude": 24.804722222,
       "longitude": 120.971388888,
-      "population": 455871,
-      "map": "maps/cities/taiwan__hsinchu_city.png"
+      "population": 455871
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1867",
+      "name": "Taipei",
+      "latitude": 25.0375,
+      "longitude": 121.5625,
+      "population": 2429429,
+      "map": "maps/cities/taiwan__taipei.png",
+      "answer_map": "maps/cities/taiwan__taipei-answer.png"
     }
   ],
   "currencies": [
@@ -302,6 +307,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

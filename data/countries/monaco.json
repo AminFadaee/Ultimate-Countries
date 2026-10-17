@@ -39,10 +39,10 @@
       "name": "Monaco",
       "latitude": 43.731111111,
       "longitude": 7.42,
-      "population": 38857,
-      "map": "maps/cities/monaco__monaco.png"
+      "population": 38857
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -101,6 +101,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

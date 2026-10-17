@@ -37,8 +37,7 @@
       "name": "Rabat",
       "latitude": 34.021111111,
       "longitude": -6.841388888,
-      "population": 515619,
-      "map": "maps/cities/morocco__rabat.png"
+      "population": 515619
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Casablanca",
       "latitude": 33.599166666,
       "longitude": -7.62,
-      "population": 3215935,
-      "map": "maps/cities/morocco__casablanca.png"
+      "population": 3215935
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Tangier",
       "latitude": 35.7696302,
       "longitude": -5.8033522,
-      "population": 1275428,
-      "map": "maps/cities/morocco__tangier.png"
+      "population": 1275428
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Marrakech",
       "latitude": 31.62947,
       "longitude": -7.98108,
-      "population": 1002697,
-      "map": "maps/cities/morocco__marrakech.png"
+      "population": 1002697
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Fez",
       "latitude": 34.043333333,
       "longitude": -5.003333333,
-      "population": 1167842,
-      "map": "maps/cities/morocco__fez.png"
+      "population": 1167842
     },
     {
       "role": "notable",
@@ -82,8 +77,36 @@
       "name": "Agadir",
       "latitude": 30.421388888,
       "longitude": -9.583055555,
-      "population": 538000,
-      "map": "maps/cities/morocco__agadir.png"
+      "population": 538000
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q7903",
+      "name": "Casablanca",
+      "latitude": 33.599166666,
+      "longitude": -7.62,
+      "population": 3215935,
+      "map": "maps/cities/morocco__casablanca.png",
+      "answer_map": "maps/cities/morocco__casablanca-answer.png"
+    },
+    {
+      "id": "Q101625",
+      "name": "Marrakech",
+      "latitude": 31.62947,
+      "longitude": -7.98108,
+      "population": 1002697,
+      "map": "maps/cities/morocco__marrakech.png",
+      "answer_map": "maps/cities/morocco__marrakech-answer.png"
+    },
+    {
+      "id": "Q3551",
+      "name": "Rabat",
+      "latitude": 34.021111111,
+      "longitude": -6.841388888,
+      "population": 515619,
+      "map": "maps/cities/morocco__rabat.png",
+      "answer_map": "maps/cities/morocco__rabat-answer.png"
     }
   ],
   "currencies": [
@@ -216,6 +239,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Manama",
       "latitude": 26.216666666,
       "longitude": 50.583333333,
-      "population": 297502,
-      "map": "maps/cities/bahrain__manama.png"
+      "population": 297502
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "BHD",
@@ -139,6 +139,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

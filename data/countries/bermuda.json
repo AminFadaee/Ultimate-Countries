@@ -37,10 +37,10 @@
       "name": "Hamilton",
       "latitude": 32.295,
       "longitude": -64.783055555,
-      "population": 3686,
-      "map": "maps/cities/bermuda__hamilton.png"
+      "population": 3686
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "BMD",
@@ -97,6 +97,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

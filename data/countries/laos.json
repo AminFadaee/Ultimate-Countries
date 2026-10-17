@@ -39,8 +39,7 @@
       "name": "Vientiane",
       "latitude": 17.98,
       "longitude": 102.63,
-      "population": 948487,
-      "map": "maps/cities/laos__vientiane.png"
+      "population": 948487
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Pāksē",
       "latitude": 15.116666666,
       "longitude": 105.783333333,
-      "population": 119848,
-      "map": "maps/cities/laos__pakse.png"
+      "population": 119848
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Savannakhet",
       "latitude": 16.55,
       "longitude": 104.75,
-      "population": 124000,
-      "map": "maps/cities/laos__savannakhet.png"
+      "population": 124000
     },
     {
       "role": "notable",
@@ -66,10 +63,10 @@
       "name": "Luang Prabang",
       "latitude": 19.89,
       "longitude": 102.134722222,
-      "population": 53792,
-      "map": "maps/cities/laos__luang_prabang.png"
+      "population": 53792
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "LAK",
@@ -173,6 +170,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

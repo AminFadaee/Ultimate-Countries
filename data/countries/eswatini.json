@@ -41,8 +41,7 @@
       "name": "Mbabane",
       "latitude": -26.316666666,
       "longitude": 31.133333333,
-      "population": 76218,
-      "map": "maps/cities/eswatini__mbabane.png"
+      "population": 76218
     },
     {
       "role": "capital",
@@ -50,10 +49,10 @@
       "name": "Lobamba",
       "latitude": -26.44648,
       "longitude": 31.206411,
-      "population": 114585,
-      "map": "maps/cities/eswatini__lobamba.png"
+      "population": 114585
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "SZL",
@@ -169,6 +168,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

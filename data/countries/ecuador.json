@@ -37,8 +37,7 @@
       "name": "Quito",
       "latitude": -0.22,
       "longitude": -78.5125,
-      "population": 1763275,
-      "map": "maps/cities/ecuador__quito.png"
+      "population": 1763275
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Guayaquil",
       "latitude": -2.19,
       "longitude": -79.8875,
-      "population": 2650288,
-      "map": "maps/cities/ecuador__guayaquil.png"
+      "population": 2650288
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Cuenca",
       "latitude": -2.897413888,
       "longitude": -79.004480555,
-      "population": 361524,
-      "map": "maps/cities/ecuador__cuenca.png"
+      "population": 361524
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Machala",
       "latitude": -3.266666666,
       "longitude": -79.966666666,
-      "population": 288072,
-      "map": "maps/cities/ecuador__machala.png"
+      "population": 288072
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Manta",
       "latitude": -0.950022222,
       "longitude": -80.7162,
-      "population": 258697,
-      "map": "maps/cities/ecuador__manta.png"
+      "population": 258697
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Riobamba",
       "latitude": -1.673055555,
       "longitude": -78.648333333,
-      "population": 177213,
-      "map": "maps/cities/ecuador__riobamba.png"
+      "population": 177213
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q2900",
+      "name": "Quito",
+      "latitude": -0.22,
+      "longitude": -78.5125,
+      "population": 1763275,
+      "map": "maps/cities/ecuador__quito.png",
+      "answer_map": "maps/cities/ecuador__quito-answer.png"
     }
   ],
   "currencies": [
@@ -186,6 +191,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

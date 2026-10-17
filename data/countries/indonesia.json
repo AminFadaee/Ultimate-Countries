@@ -37,8 +37,7 @@
       "name": "Jakarta",
       "latitude": -6.175277777,
       "longitude": 106.826944444,
-      "population": 11135191,
-      "map": "maps/cities/indonesia__jakarta.png"
+      "population": 11135191
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Surabaya",
       "latitude": -7.246283611,
       "longitude": 112.737767222,
-      "population": 3009286,
-      "map": "maps/cities/indonesia__surabaya.png"
+      "population": 3009286
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Bandung",
       "latitude": -6.921944444,
       "longitude": 107.606944444,
-      "population": 2875673,
-      "map": "maps/cities/indonesia__bandung.png"
+      "population": 2875673
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Medan",
       "latitude": 3.589444444,
       "longitude": 98.673888888,
-      "population": 2109330,
-      "map": "maps/cities/indonesia__medan.png"
+      "population": 2109330
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Bekasi",
       "latitude": -6.233333333,
       "longitude": 107.0,
-      "population": 2381053,
-      "map": "maps/cities/indonesia__bekasi.png"
+      "population": 2381053
     },
     {
       "role": "notable",
@@ -82,8 +77,27 @@
       "name": "Palembang",
       "latitude": -2.983333333,
       "longitude": 104.764444444,
-      "population": 1535952,
-      "map": "maps/cities/indonesia__palembang.png"
+      "population": 1535952
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3630",
+      "name": "Jakarta",
+      "latitude": -6.175277777,
+      "longitude": 106.826944444,
+      "population": 11135191,
+      "map": "maps/cities/indonesia__jakarta.png",
+      "answer_map": "maps/cities/indonesia__jakarta-answer.png"
+    },
+    {
+      "id": "Q11506",
+      "name": "Denpasar",
+      "latitude": -8.671666666,
+      "longitude": 115.233888888,
+      "population": 670210,
+      "map": "maps/cities/indonesia__denpasar.png",
+      "answer_map": "maps/cities/indonesia__denpasar-answer.png"
     }
   ],
   "currencies": [
@@ -298,6 +312,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

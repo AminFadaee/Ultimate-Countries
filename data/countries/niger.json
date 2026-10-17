@@ -37,8 +37,7 @@
       "name": "Niamey",
       "latitude": 13.515,
       "longitude": 2.1175,
-      "population": 1496260,
-      "map": "maps/cities/niger__niamey.png"
+      "population": 1496260
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Zinder",
       "latitude": 13.801705555,
       "longitude": 8.98535246,
-      "population": 235605,
-      "map": "maps/cities/niger__zinder.png"
+      "population": 235605
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Maradi",
       "latitude": 13.5,
       "longitude": 7.1,
-      "population": 267249,
-      "map": "maps/cities/niger__maradi.png"
+      "population": 267249
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Agadez",
       "latitude": 16.9742,
       "longitude": 7.9865,
-      "population": 110497,
-      "map": "maps/cities/niger__agadez.png"
+      "population": 110497
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XOF",
@@ -176,6 +173,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

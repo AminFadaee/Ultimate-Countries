@@ -37,10 +37,10 @@
       "name": "Yaren District",
       "latitude": -0.5477,
       "longitude": 166.920867,
-      "population": 747,
-      "map": "maps/cities/nauru__yaren_district.png"
+      "population": 747
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "AUD",
@@ -108,6 +108,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

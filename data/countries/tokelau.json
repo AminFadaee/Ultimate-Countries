@@ -37,10 +37,10 @@
       "name": "Fakaofo",
       "latitude": -9.373944,
       "longitude": -171.264616,
-      "population": null,
-      "map": "maps/cities/tokelau__fakaofo.png"
+      "population": null
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "NZD",
@@ -109,6 +109,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

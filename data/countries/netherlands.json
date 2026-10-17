@@ -37,8 +37,7 @@
       "name": "Amsterdam",
       "latitude": 52.366666666,
       "longitude": 4.883333333,
-      "population": 921468,
-      "map": "maps/cities/netherlands__amsterdam.png"
+      "population": 921468
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "The Hague",
       "latitude": 52.08,
       "longitude": 4.31,
-      "population": 548320,
-      "map": "maps/cities/netherlands__the_hague.png"
+      "population": 548320
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Rotterdam",
       "latitude": 51.92,
       "longitude": 4.48,
-      "population": 664311,
-      "map": "maps/cities/netherlands__rotterdam.png"
+      "population": 664311
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Utrecht",
       "latitude": 52.090833333,
       "longitude": 5.121666666,
-      "population": 359370,
-      "map": "maps/cities/netherlands__utrecht.png"
+      "population": 359370
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Eindhoven",
       "latitude": 51.434444444,
       "longitude": 5.484166666,
-      "population": 243730,
-      "map": "maps/cities/netherlands__eindhoven.png"
+      "population": 243730
     },
     {
       "role": "notable",
@@ -82,8 +77,27 @@
       "name": "Groningen",
       "latitude": 53.218888888,
       "longitude": 6.5675,
-      "population": 238147,
-      "map": "maps/cities/netherlands__groningen.png"
+      "population": 238147
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q727",
+      "name": "Amsterdam",
+      "latitude": 52.366666666,
+      "longitude": 4.883333333,
+      "population": 921468,
+      "map": "maps/cities/netherlands__amsterdam.png",
+      "answer_map": "maps/cities/netherlands__amsterdam-answer.png"
+    },
+    {
+      "id": "Q36600",
+      "name": "The Hague",
+      "latitude": 52.08,
+      "longitude": 4.31,
+      "population": 548320,
+      "map": "maps/cities/netherlands__the_hague.png",
+      "answer_map": "maps/cities/netherlands__the_hague-answer.png"
     }
   ],
   "currencies": [
@@ -249,6 +263,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

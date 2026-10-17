@@ -39,10 +39,10 @@
       "name": "Paramaribo",
       "latitude": 5.866666666,
       "longitude": -55.166666666,
-      "population": 223757,
-      "map": "maps/cities/suriname__paramaribo.png"
+      "population": 223757
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "SRD",
@@ -149,6 +149,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

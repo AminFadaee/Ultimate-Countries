@@ -37,10 +37,10 @@
       "name": "Kingston",
       "latitude": -29.05,
       "longitude": 167.966666666,
-      "population": null,
-      "map": "maps/cities/norfolk_island__kingston.png"
+      "population": null
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "AUD",
@@ -103,6 +103,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

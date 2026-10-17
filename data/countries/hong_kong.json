@@ -39,8 +39,7 @@
       "name": "Victoria",
       "latitude": 22.278333333,
       "longitude": 114.174444444,
-      "population": null,
-      "map": "maps/cities/hong_kong__victoria.png"
+      "population": null
     },
     {
       "role": "notable",
@@ -48,10 +47,10 @@
       "name": "Tuen Mun",
       "latitude": 22.3916,
       "longitude": 113.971,
-      "population": null,
-      "map": "maps/cities/hong_kong__tuen_mun.png"
+      "population": null
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "HKD",
@@ -149,6 +148,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

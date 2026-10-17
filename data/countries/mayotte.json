@@ -37,10 +37,10 @@
       "name": "Mamoudzou",
       "latitude": -12.781388888,
       "longitude": 45.231666666,
-      "population": 71437,
-      "map": "maps/cities/mayotte__mamoudzou.png"
+      "population": 71437
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -132,6 +132,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

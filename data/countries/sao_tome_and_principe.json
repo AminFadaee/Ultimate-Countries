@@ -40,10 +40,10 @@
       "name": "São Tomé",
       "latitude": 0.3375,
       "longitude": 6.728333333,
-      "population": 65468,
-      "map": "maps/cities/sao_tome_and_principe__sao_tome.png"
+      "population": 65468
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "STN",
@@ -128,6 +128,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

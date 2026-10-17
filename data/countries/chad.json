@@ -37,8 +37,7 @@
       "name": "N'Djamena",
       "latitude": 12.11,
       "longitude": 15.05,
-      "population": 1092066,
-      "map": "maps/cities/chad__n_djamena.png"
+      "population": 1092066
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Moundou",
       "latitude": 8.566666666,
       "longitude": 16.083333333,
-      "population": 142462,
-      "map": "maps/cities/chad__moundou.png"
+      "population": 142462
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Abéché",
       "latitude": 13.833055555,
       "longitude": 20.834722222,
-      "population": 76492,
-      "map": "maps/cities/chad__abeche.png"
+      "population": 76492
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Sarh",
       "latitude": 9.15,
       "longitude": 18.383333333,
-      "population": 108061,
-      "map": "maps/cities/chad__sarh.png"
+      "population": 108061
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XAF",
@@ -160,6 +157,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

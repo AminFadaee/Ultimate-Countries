@@ -37,8 +37,7 @@
       "name": "Muscat",
       "latitude": 23.613888888,
       "longitude": 58.592222222,
-      "population": 1421409,
-      "map": "maps/cities/oman__muscat.png"
+      "population": 1421409
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Salalah",
       "latitude": 17.019722222,
       "longitude": 54.089722222,
-      "population": 331949,
-      "map": "maps/cities/oman__salalah.png"
+      "population": 331949
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Nizwa",
       "latitude": 22.933333333,
       "longitude": 57.533333333,
-      "population": 83544,
-      "map": "maps/cities/oman__nizwa.png"
+      "population": 83544
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Sohar",
       "latitude": 24.342,
       "longitude": 56.729888888,
-      "population": 219264,
-      "map": "maps/cities/oman__sohar.png"
+      "population": 219264
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Sur",
       "latitude": 22.566666666,
       "longitude": 59.528888888,
-      "population": 120000,
-      "map": "maps/cities/oman__sur.png"
+      "population": 120000
     },
     {
       "role": "notable",
@@ -82,10 +77,10 @@
       "name": "Khasab",
       "latitude": 26.183333333,
       "longitude": 56.25,
-      "population": 17777,
-      "map": "maps/cities/oman__khasab.png"
+      "population": 17777
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "OMR",
@@ -187,6 +182,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

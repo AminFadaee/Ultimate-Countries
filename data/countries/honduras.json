@@ -37,8 +37,7 @@
       "name": "Tegucigalpa",
       "latitude": 14.105783333,
       "longitude": -87.204705555,
-      "population": 1055729,
-      "map": "maps/cities/honduras__tegucigalpa.png"
+      "population": 1055729
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "San Pedro Sula",
       "latitude": 15.505322222,
       "longitude": -88.025083333,
-      "population": 719064,
-      "map": "maps/cities/honduras__san_pedro_sula.png"
+      "population": 719064
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "La Ceiba",
       "latitude": 15.783344444,
       "longitude": -86.791777777,
-      "population": 197267,
-      "map": "maps/cities/honduras__la_ceiba.png"
+      "population": 197267
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Comayagua",
       "latitude": 14.452766666,
       "longitude": -87.637925,
-      "population": 144785,
-      "map": "maps/cities/honduras__comayagua.png"
+      "population": 144785
     },
     {
       "role": "notable",
@@ -73,10 +69,10 @@
       "name": "Choluteca",
       "latitude": 13.3061,
       "longitude": -87.195563888,
-      "population": 152519,
-      "map": "maps/cities/honduras__choluteca.png"
+      "population": 152519
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "HNL",
@@ -177,6 +173,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

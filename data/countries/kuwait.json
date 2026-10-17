@@ -37,10 +37,10 @@
       "name": "Kuwait City",
       "latitude": 29.375,
       "longitude": 47.98,
-      "population": 2989000,
-      "map": "maps/cities/kuwait__kuwait_city.png"
+      "population": 2989000
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "KWD",
@@ -134,6 +134,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

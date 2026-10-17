@@ -37,8 +37,7 @@
       "name": "Laayoune",
       "latitude": 27.15,
       "longitude": -13.2,
-      "population": 262791,
-      "map": "maps/cities/western_sahara__laayoune.png"
+      "population": 262791
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Dakhla",
       "latitude": 23.716666666,
       "longitude": -15.95,
-      "population": 165463,
-      "map": "maps/cities/western_sahara__dakhla.png"
+      "population": 165463
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Smara",
       "latitude": 26.739444444,
       "longitude": -11.670277777,
-      "population": 56607,
-      "map": "maps/cities/western_sahara__smara.png"
+      "population": 56607
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Boujdour",
       "latitude": 26.13333333,
       "longitude": -14.46666667,
-      "population": 57360,
-      "map": "maps/cities/western_sahara__boujdour.png"
+      "population": 57360
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "DZD",
@@ -161,6 +158,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

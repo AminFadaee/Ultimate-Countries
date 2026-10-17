@@ -37,8 +37,7 @@
       "name": "Charlotte Amalie",
       "latitude": 18.35,
       "longitude": -64.95,
-      "population": 14477,
-      "map": "maps/cities/united_states_virgin_islands__charlotte_amalie.png"
+      "population": 14477
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Saint Croix",
       "latitude": 17.732,
       "longitude": -64.748,
-      "population": 41004,
-      "map": "maps/cities/united_states_virgin_islands__saint_croix.png"
+      "population": 41004
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -131,6 +130,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

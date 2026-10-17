@@ -35,10 +35,10 @@
       "name": "Macau",
       "latitude": 22.19,
       "longitude": 113.538055555,
-      "population": 682100,
-      "map": "maps/cities/macau__macau.png"
+      "population": 682100
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "MOP",
@@ -140,6 +140,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Willemstad",
       "latitude": 12.108,
       "longitude": -68.935,
-      "population": 136660,
-      "map": "maps/cities/curacao__willemstad.png"
+      "population": 136660
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XCG",
@@ -144,6 +144,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

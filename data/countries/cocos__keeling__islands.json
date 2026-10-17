@@ -37,10 +37,10 @@
       "name": "West Island",
       "latitude": -12.186944444,
       "longitude": 96.828333333,
-      "population": 147,
-      "map": "maps/cities/cocos__keeling__islands__west_island.png"
+      "population": 147
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "AUD",
@@ -103,6 +103,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

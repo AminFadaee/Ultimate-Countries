@@ -37,8 +37,7 @@
       "name": "Algiers",
       "latitude": 36.776388888,
       "longitude": 3.058611111,
-      "population": 2364230,
-      "map": "maps/cities/algeria__algiers.png"
+      "population": 2364230
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Oran",
       "latitude": 35.696944444,
       "longitude": -0.633055555,
-      "population": 803329,
-      "map": "maps/cities/algeria__oran.png"
+      "population": 803329
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Constantine",
       "latitude": 36.365,
       "longitude": 6.614722222,
-      "population": 465138,
-      "map": "maps/cities/algeria__constantine.png"
+      "population": 465138
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Annaba",
       "latitude": 36.9,
       "longitude": 7.766666666,
-      "population": 257359,
-      "map": "maps/cities/algeria__annaba.png"
+      "population": 257359
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Sétif",
       "latitude": 36.19,
       "longitude": 5.41,
-      "population": 288461,
-      "map": "maps/cities/algeria__setif.png"
+      "population": 288461
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Batna",
       "latitude": 35.55,
       "longitude": 6.166666666,
-      "population": 290645,
-      "map": "maps/cities/algeria__batna.png"
+      "population": 290645
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3561",
+      "name": "Algiers",
+      "latitude": 36.776388888,
+      "longitude": 3.058611111,
+      "population": 2364230,
+      "map": "maps/cities/algeria__algiers.png",
+      "answer_map": "maps/cities/algeria__algiers-answer.png"
     }
   ],
   "currencies": [
@@ -212,6 +217,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

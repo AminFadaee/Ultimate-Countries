@@ -37,8 +37,7 @@
       "name": "San Salvador",
       "latitude": 13.697597222,
       "longitude": -89.191155555,
-      "population": 330543,
-      "map": "maps/cities/el_salvador__san_salvador.png"
+      "population": 330543
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Santa Ana",
       "latitude": 13.994744444,
       "longitude": -89.556608333,
-      "population": 250760,
-      "map": "maps/cities/el_salvador__santa_ana.png"
+      "population": 250760
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "San Miguel",
       "latitude": 13.480358333,
       "longitude": -88.177222222,
-      "population": 232887,
-      "map": "maps/cities/el_salvador__san_miguel.png"
+      "population": 232887
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Ahuachapán",
       "latitude": 13.923388888,
       "longitude": -89.846294444,
-      "population": 127301,
-      "map": "maps/cities/el_salvador__ahuachapan.png"
+      "population": 127301
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -153,6 +150,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

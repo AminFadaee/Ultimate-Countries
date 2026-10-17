@@ -37,8 +37,7 @@
       "name": "Santo Domingo",
       "latitude": 18.4625,
       "longitude": -69.936111111,
-      "population": 2201941,
-      "map": "maps/cities/dominican_republic__santo_domingo.png"
+      "population": 2201941
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Santiago de los Caballeros",
       "latitude": 19.45,
       "longitude": -70.7,
-      "population": 1343423,
-      "map": "maps/cities/dominican_republic__santiago_de_los_caballeros.png"
+      "population": 1343423
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Puerto Plata",
       "latitude": 19.795833,
       "longitude": -70.694444,
-      "population": 338339,
-      "map": "maps/cities/dominican_republic__puerto_plata.png"
+      "population": 338339
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Punta Cana",
       "latitude": 18.533333333,
       "longitude": -68.366666666,
-      "population": 138919,
-      "map": "maps/cities/dominican_republic__punta_cana.png"
+      "population": 138919
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "San Pedro de Macorís",
       "latitude": 18.457222,
       "longitude": -69.306111,
-      "population": 217141,
-      "map": "maps/cities/dominican_republic__san_pedro_de_macoris.png"
+      "population": 217141
     },
     {
       "role": "notable",
@@ -82,10 +77,10 @@
       "name": "La Romana",
       "latitude": 18.43,
       "longitude": -68.97,
-      "population": 139238,
-      "map": "maps/cities/dominican_republic__la_romana.png"
+      "population": 139238
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "DOP",
@@ -174,6 +169,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -40,8 +40,7 @@
       "name": "Gaborone",
       "latitude": -24.656944444,
       "longitude": 25.908611111,
-      "population": 235884,
-      "map": "maps/cities/botswana__gaborone.png"
+      "population": 235884
     },
     {
       "role": "notable",
@@ -49,8 +48,7 @@
       "name": "Maun",
       "latitude": -19.983333333,
       "longitude": 23.416666666,
-      "population": 85293,
-      "map": "maps/cities/botswana__maun.png"
+      "population": 85293
     },
     {
       "role": "notable",
@@ -58,8 +56,7 @@
       "name": "Molepolole",
       "latitude": -24.4066,
       "longitude": 25.4951,
-      "population": 67598,
-      "map": "maps/cities/botswana__molepolole.png"
+      "population": 67598
     },
     {
       "role": "notable",
@@ -67,10 +64,10 @@
       "name": "Francistown",
       "latitude": -21.173611111,
       "longitude": 27.5125,
-      "population": null,
-      "map": "maps/cities/botswana__francistown.png"
+      "population": null
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "BWP",
@@ -174,6 +171,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

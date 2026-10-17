@@ -37,10 +37,10 @@
       "name": "Castries",
       "latitude": 14.010833333,
       "longitude": -60.989444444,
-      "population": 20000,
-      "map": "maps/cities/saint_lucia__castries.png"
+      "population": 20000
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XCD",
@@ -123,6 +123,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

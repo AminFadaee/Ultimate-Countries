@@ -37,8 +37,7 @@
       "name": "Skopje",
       "latitude": 41.996111111,
       "longitude": 21.431666666,
-      "population": 422540,
-      "map": "maps/cities/north_macedonia__skopje.png"
+      "population": 422540
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Bitola",
       "latitude": 41.031944444,
       "longitude": 21.334722222,
-      "population": 69287,
-      "map": "maps/cities/north_macedonia__bitola.png"
+      "population": 69287
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Kumanovo",
       "latitude": 42.132222222,
       "longitude": 21.714444444,
-      "population": 70842,
-      "map": "maps/cities/north_macedonia__kumanovo.png"
+      "population": 70842
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Tetovo",
       "latitude": 42.010277777,
       "longitude": 20.971388888,
-      "population": 63176,
-      "map": "maps/cities/north_macedonia__tetovo.png"
+      "population": 63176
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Prilep",
       "latitude": 41.346388888,
       "longitude": 21.554166666,
-      "population": 63308,
-      "map": "maps/cities/north_macedonia__prilep.png"
+      "population": 63308
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Ohrid",
       "latitude": 41.116944444,
       "longitude": 20.801944444,
-      "population": 38818,
-      "map": "maps/cities/north_macedonia__ohrid.png"
+      "population": 38818
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q384",
+      "name": "Skopje",
+      "latitude": 41.996111111,
+      "longitude": 21.431666666,
+      "population": 422540,
+      "map": "maps/cities/north_macedonia__skopje.png",
+      "answer_map": "maps/cities/north_macedonia__skopje-answer.png"
     }
   ],
   "currencies": [
@@ -184,6 +189,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

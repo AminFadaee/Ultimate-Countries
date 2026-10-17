@@ -37,8 +37,7 @@
       "name": "Nicosia",
       "latitude": 35.1725,
       "longitude": 33.365,
-      "population": 56848,
-      "map": "maps/cities/cyprus__nicosia.png"
+      "population": 56848
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Limassol",
       "latitude": 34.674997,
       "longitude": 33.044286,
-      "population": 107970,
-      "map": "maps/cities/cyprus__limassol.png"
+      "population": 107970
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Larnaca",
       "latitude": 34.916666666,
       "longitude": 33.633333333,
-      "population": 59200,
-      "map": "maps/cities/cyprus__larnaca.png"
+      "population": 59200
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Paphos",
       "latitude": 34.77612852,
       "longitude": 32.42651039,
-      "population": 35961,
-      "map": "maps/cities/cyprus__paphos.png"
+      "population": 35961
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -184,6 +181,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -40,8 +40,7 @@
       "name": "Luxembourg",
       "latitude": 49.611388888,
       "longitude": 6.13,
-      "population": 137678,
-      "map": "maps/cities/luxembourg__luxembourg.png"
+      "population": 137678
     },
     {
       "role": "notable",
@@ -49,10 +48,10 @@
       "name": "Ettelbruck",
       "latitude": 49.846388888,
       "longitude": 6.099166666,
-      "population": 10212,
-      "map": "maps/cities/luxembourg__ettelbruck.png"
+      "population": 10212
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -168,6 +167,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

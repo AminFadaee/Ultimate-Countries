@@ -37,8 +37,7 @@
       "name": "Basse-Terre",
       "latitude": 15.996944444,
       "longitude": -61.732777777,
-      "population": 9417,
-      "map": "maps/cities/guadeloupe__basse_terre.png"
+      "population": 9417
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Les Abymes",
       "latitude": 16.270555555,
       "longitude": -61.504722222,
-      "population": 51055,
-      "map": "maps/cities/guadeloupe__les_abymes.png"
+      "population": 51055
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -135,6 +134,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

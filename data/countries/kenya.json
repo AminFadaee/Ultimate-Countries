@@ -37,8 +37,7 @@
       "name": "Nairobi",
       "latitude": -1.286388888,
       "longitude": 36.817222222,
-      "population": 5545000,
-      "map": "maps/cities/kenya__nairobi.png"
+      "population": 5545000
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Mombasa",
       "latitude": -4.05,
       "longitude": 39.666666666,
-      "population": 1208333,
-      "map": "maps/cities/kenya__mombasa.png"
+      "population": 1208333
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Kisumu",
       "latitude": -0.1,
       "longitude": 34.75,
-      "population": 397957,
-      "map": "maps/cities/kenya__kisumu.png"
+      "population": 397957
     },
     {
       "role": "notable",
@@ -64,8 +61,18 @@
       "name": "Nakuru",
       "latitude": -0.283333333,
       "longitude": 36.066666666,
-      "population": 307990,
-      "map": "maps/cities/kenya__nakuru.png"
+      "population": 307990
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3870",
+      "name": "Nairobi",
+      "latitude": -1.286388888,
+      "longitude": 36.817222222,
+      "population": 5545000,
+      "map": "maps/cities/kenya__nairobi.png",
+      "answer_map": "maps/cities/kenya__nairobi-answer.png"
     }
   ],
   "currencies": [
@@ -249,6 +256,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

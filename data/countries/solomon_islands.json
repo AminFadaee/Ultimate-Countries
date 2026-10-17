@@ -37,10 +37,10 @@
       "name": "Honiara",
       "latitude": -9.433333,
       "longitude": 159.95,
-      "population": 84520,
-      "map": "maps/cities/solomon_islands__honiara.png"
+      "population": 84520
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "SBD",
@@ -139,6 +139,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -35,10 +35,9 @@
       "role": "capital",
       "id": "Q3692",
       "name": "Riyadh",
-      "latitude": 24.65,
-      "longitude": 46.71,
-      "population": 7009100,
-      "map": "maps/cities/saudi_arabia__riyadh.png"
+      "latitude": 24.638333333,
+      "longitude": 46.715,
+      "population": 7009100
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Mecca",
       "latitude": 21.4225,
       "longitude": 39.826111111,
-      "population": 2427924,
-      "map": "maps/cities/saudi_arabia__mecca.png"
+      "population": 2427924
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Jeddah",
       "latitude": 21.529166666,
       "longitude": 39.161111111,
-      "population": 4697000,
-      "map": "maps/cities/saudi_arabia__jeddah.png"
+      "population": 4697000
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Medina",
       "latitude": 24.47,
       "longitude": 39.61,
-      "population": 1411599,
-      "map": "maps/cities/saudi_arabia__medina.png"
+      "population": 1411599
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Dammam",
       "latitude": 26.433333333,
       "longitude": 50.1,
-      "population": 903312,
-      "map": "maps/cities/saudi_arabia__dammam.png"
+      "population": 903312
     },
     {
       "role": "notable",
@@ -82,8 +77,36 @@
       "name": "Ta'if",
       "latitude": 21.266666666,
       "longitude": 40.416666666,
-      "population": 579970,
-      "map": "maps/cities/saudi_arabia__ta_if.png"
+      "population": 579970
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q5806",
+      "name": "Mecca",
+      "latitude": 21.4225,
+      "longitude": 39.826111111,
+      "population": 2427924,
+      "map": "maps/cities/saudi_arabia__mecca.png",
+      "answer_map": "maps/cities/saudi_arabia__mecca-answer.png"
+    },
+    {
+      "id": "Q3692",
+      "name": "Riyadh",
+      "latitude": 24.638333333,
+      "longitude": 46.715,
+      "population": 7009100,
+      "map": "maps/cities/saudi_arabia__riyadh.png",
+      "answer_map": "maps/cities/saudi_arabia__riyadh-answer.png"
+    },
+    {
+      "id": "Q35484",
+      "name": "Medina",
+      "latitude": 24.47,
+      "longitude": 39.61,
+      "population": 1411599,
+      "map": "maps/cities/saudi_arabia__medina.png",
+      "answer_map": "maps/cities/saudi_arabia__medina-answer.png"
     }
   ],
   "currencies": [
@@ -177,6 +200,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Valletta",
       "latitude": 35.897777777,
       "longitude": 14.5125,
-      "population": 6444,
-      "map": "maps/cities/malta__valletta.png"
+      "population": 6444
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -154,6 +154,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

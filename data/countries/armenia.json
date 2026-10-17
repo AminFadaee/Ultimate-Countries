@@ -37,8 +37,7 @@
       "name": "Yerevan",
       "latitude": 40.181388888,
       "longitude": 44.514444444,
-      "population": 1106300,
-      "map": "maps/cities/armenia__yerevan.png"
+      "population": 1106300
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Gyumri",
       "latitude": 40.783333333,
       "longitude": 43.833333333,
-      "population": 121976,
-      "map": "maps/cities/armenia__gyumri.png"
+      "population": 121976
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Vanadzor",
       "latitude": 40.812777777,
       "longitude": 44.488333333,
-      "population": 90525,
-      "map": "maps/cities/armenia__vanadzor.png"
+      "population": 90525
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Kapan",
       "latitude": 39.201111111,
       "longitude": 46.415,
-      "population": 32780,
-      "map": "maps/cities/armenia__kapan.png"
+      "population": 32780
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Hrazdan",
       "latitude": 40.5,
       "longitude": 44.766666666,
-      "population": 52283,
-      "map": "maps/cities/armenia__hrazdan.png"
+      "population": 52283
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Artashat",
       "latitude": 39.953925,
       "longitude": 44.550556,
-      "population": 21300,
-      "map": "maps/cities/armenia__artashat.png"
+      "population": 21300
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1953",
+      "name": "Yerevan",
+      "latitude": 40.181388888,
+      "longitude": 44.514444444,
+      "population": 1106300,
+      "map": "maps/cities/armenia__yerevan.png",
+      "answer_map": "maps/cities/armenia__yerevan-answer.png"
     }
   ],
   "currencies": [
@@ -186,6 +191,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

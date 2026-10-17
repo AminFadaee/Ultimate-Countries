@@ -37,10 +37,10 @@
       "name": "Pago Pago",
       "latitude": -14.279444444,
       "longitude": -170.700555555,
-      "population": 3656,
-      "map": "maps/cities/american_samoa__pago_pago.png"
+      "population": 3656
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -103,6 +103,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

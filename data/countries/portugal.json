@@ -37,8 +37,7 @@
       "name": "Lisbon",
       "latitude": 38.708042,
       "longitude": -9.139016,
-      "population": 545796,
-      "map": "maps/cities/portugal__lisbon.png"
+      "population": 545796
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Porto",
       "latitude": 41.15,
       "longitude": -8.610833333,
-      "population": 273476,
-      "map": "maps/cities/portugal__porto.png"
+      "population": 273476
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Braga",
       "latitude": 41.533333333,
       "longitude": -8.416666666,
-      "population": 193324,
-      "map": "maps/cities/portugal__braga.png"
+      "population": 193324
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Sintra",
       "latitude": 38.797361111,
       "longitude": -9.390416666,
-      "population": 385606,
-      "map": "maps/cities/portugal__sintra.png"
+      "population": 385606
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Coimbra",
       "latitude": 40.211111111,
       "longitude": -8.428888888,
-      "population": 140816,
-      "map": "maps/cities/portugal__coimbra.png"
+      "population": 140816
     },
     {
       "role": "notable",
@@ -82,8 +77,27 @@
       "name": "Funchal",
       "latitude": 32.65,
       "longitude": -16.916666666,
-      "population": 112290,
-      "map": "maps/cities/portugal__funchal.png"
+      "population": 112290
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q597",
+      "name": "Lisbon",
+      "latitude": 38.708042,
+      "longitude": -9.139016,
+      "population": 545796,
+      "map": "maps/cities/portugal__lisbon.png",
+      "answer_map": "maps/cities/portugal__lisbon-answer.png"
+    },
+    {
+      "id": "Q36433",
+      "name": "Porto",
+      "latitude": 41.15,
+      "longitude": -8.610833333,
+      "population": 273476,
+      "map": "maps/cities/portugal__porto.png",
+      "answer_map": "maps/cities/portugal__porto-answer.png"
     }
   ],
   "currencies": [
@@ -201,6 +215,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

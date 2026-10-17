@@ -37,8 +37,7 @@
       "name": "Wellington",
       "latitude": -41.288888888,
       "longitude": 174.777222222,
-      "population": 216200,
-      "map": "maps/cities/new_zealand__wellington.png"
+      "population": 216200
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Auckland",
       "latitude": -36.849166666,
       "longitude": 174.765277777,
-      "population": 1470100,
-      "map": "maps/cities/new_zealand__auckland.png"
+      "population": 1470100
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Christchurch",
       "latitude": -43.531111111,
       "longitude": 172.636111111,
-      "population": 383200,
-      "map": "maps/cities/new_zealand__christchurch.png"
+      "population": 383200
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Hamilton",
       "latitude": -37.783333333,
       "longitude": 175.283333333,
-      "population": 176500,
-      "map": "maps/cities/new_zealand__hamilton.png"
+      "population": 176500
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Dunedin",
       "latitude": -45.874166666,
       "longitude": 170.503611111,
-      "population": 106200,
-      "map": "maps/cities/new_zealand__dunedin.png"
+      "population": 106200
     },
     {
       "role": "notable",
@@ -82,8 +77,27 @@
       "name": "Tauranga",
       "latitude": -37.685833333,
       "longitude": 176.166666666,
-      "population": 151300,
-      "map": "maps/cities/new_zealand__tauranga.png"
+      "population": 151300
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q37100",
+      "name": "Auckland",
+      "latitude": -36.849166666,
+      "longitude": 174.765277777,
+      "population": 1470100,
+      "map": "maps/cities/new_zealand__auckland.png",
+      "answer_map": "maps/cities/new_zealand__auckland-answer.png"
+    },
+    {
+      "id": "Q23661",
+      "name": "Wellington",
+      "latitude": -41.288888888,
+      "longitude": 174.777222222,
+      "population": 216200,
+      "map": "maps/cities/new_zealand__wellington.png",
+      "answer_map": "maps/cities/new_zealand__wellington-answer.png"
     }
   ],
   "currencies": [
@@ -186,6 +200,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

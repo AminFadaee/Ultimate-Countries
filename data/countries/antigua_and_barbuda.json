@@ -37,10 +37,10 @@
       "name": "St. John's",
       "latitude": 17.121111111,
       "longitude": -61.844722222,
-      "population": 21394,
-      "map": "maps/cities/antigua_and_barbuda__st__john_s.png"
+      "population": 21394
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XCD",
@@ -114,6 +114,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

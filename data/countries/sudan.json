@@ -37,8 +37,7 @@
       "name": "Khartoum",
       "latitude": 15.60308,
       "longitude": 32.52654,
-      "population": 5345000,
-      "map": "maps/cities/sudan__khartoum.png"
+      "population": 5345000
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Port Sudan",
       "latitude": 19.615833333,
       "longitude": 37.216388888,
-      "population": 579942,
-      "map": "maps/cities/sudan__port_sudan.png"
+      "population": 579942
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "El-Obeid",
       "latitude": 13.183333333,
       "longitude": 30.216666666,
-      "population": 560471,
-      "map": "maps/cities/sudan__el_obeid.png"
+      "population": 560471
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Kassala",
       "latitude": 15.45,
       "longitude": 36.4,
-      "population": 536009,
-      "map": "maps/cities/sudan__kassala.png"
+      "population": 536009
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Al-Fashir",
       "latitude": 13.626983333,
       "longitude": 25.349583333,
-      "population": 286277,
-      "map": "maps/cities/sudan__al_fashir.png"
+      "population": 286277
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Nyala",
       "latitude": 12.05,
       "longitude": 24.883333333,
-      "population": 492984,
-      "map": "maps/cities/sudan__nyala.png"
+      "population": 492984
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1963",
+      "name": "Khartoum",
+      "latitude": 15.60308,
+      "longitude": 32.52654,
+      "population": 5345000,
+      "map": "maps/cities/sudan__khartoum.png",
+      "answer_map": "maps/cities/sudan__khartoum-answer.png"
     }
   ],
   "currencies": [
@@ -211,6 +216,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

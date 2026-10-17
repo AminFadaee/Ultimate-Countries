@@ -39,8 +39,7 @@
       "name": "Tehran",
       "latitude": 35.688888888,
       "longitude": 51.389722222,
-      "population": 8693706,
-      "map": "maps/cities/iran__tehran.png"
+      "population": 8693706
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Isfahan",
       "latitude": 32.6525,
       "longitude": 51.674722222,
-      "population": 1961260,
-      "map": "maps/cities/iran__isfahan.png"
+      "population": 1961260
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Mashhad",
       "latitude": 36.297494444,
       "longitude": 59.605923055,
-      "population": 3001184,
-      "map": "maps/cities/iran__mashhad.png"
+      "population": 3001184
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Tabriz",
       "latitude": 38.073888888,
       "longitude": 46.296111111,
-      "population": 1558693,
-      "map": "maps/cities/iran__tabriz.png"
+      "population": 1558693
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Shiraz",
       "latitude": 29.610277777,
       "longitude": 52.531111111,
-      "population": 1565572,
-      "map": "maps/cities/iran__shiraz.png"
+      "population": 1565572
     },
     {
       "role": "notable",
@@ -84,8 +79,18 @@
       "name": "Karaj",
       "latitude": 35.832777777,
       "longitude": 50.991666666,
-      "population": 1592492,
-      "map": "maps/cities/iran__karaj.png"
+      "population": 1592492
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3616",
+      "name": "Tehran",
+      "latitude": 35.688888888,
+      "longitude": 51.389722222,
+      "population": 8693706,
+      "map": "maps/cities/iran__tehran.png",
+      "answer_map": "maps/cities/iran__tehran-answer.png"
     }
   ],
   "currencies": [
@@ -274,6 +279,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

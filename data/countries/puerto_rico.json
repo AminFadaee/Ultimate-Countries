@@ -37,10 +37,10 @@
       "name": "San Juan",
       "latitude": 18.465277777,
       "longitude": -66.116666666,
-      "population": 342259,
-      "map": "maps/cities/puerto_rico__san_juan.png"
+      "population": 342259
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -132,6 +132,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

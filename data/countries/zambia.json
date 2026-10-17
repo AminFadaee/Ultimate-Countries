@@ -37,8 +37,7 @@
       "name": "Lusaka",
       "latitude": -15.416666666,
       "longitude": 28.283333333,
-      "population": 2467563,
-      "map": "maps/cities/zambia__lusaka.png"
+      "population": 2467563
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Ndola",
       "latitude": -12.968888888,
       "longitude": 28.6325,
-      "population": 528330,
-      "map": "maps/cities/zambia__ndola.png"
+      "population": 528330
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Kitwe",
       "latitude": -12.820833333,
       "longitude": 28.211944444,
-      "population": 625000,
-      "map": "maps/cities/zambia__kitwe.png"
+      "population": 625000
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Kabwe",
       "latitude": -14.433333333,
       "longitude": 28.45,
-      "population": 299206,
-      "map": "maps/cities/zambia__kabwe.png"
+      "population": 299206
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Livingstone",
       "latitude": -17.85,
       "longitude": 25.866666666,
-      "population": 177393,
-      "map": "maps/cities/zambia__livingstone.png"
+      "population": 177393
     },
     {
       "role": "notable",
@@ -82,10 +77,10 @@
       "name": "Chingola",
       "latitude": -12.544722222,
       "longitude": 27.870833333,
-      "population": 255000,
-      "map": "maps/cities/zambia__chingola.png"
+      "population": 255000
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "ZMW",
@@ -239,6 +234,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

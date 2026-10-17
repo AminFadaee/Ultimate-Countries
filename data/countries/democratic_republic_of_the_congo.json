@@ -37,8 +37,7 @@
       "name": "Kinshasa",
       "latitude": -4.321944444,
       "longitude": 15.311944444,
-      "population": 14565700,
-      "map": "maps/cities/democratic_republic_of_the_congo__kinshasa.png"
+      "population": 14565700
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Lubumbashi",
       "latitude": -11.664166666,
       "longitude": 27.482777777,
-      "population": 1786397,
-      "map": "maps/cities/democratic_republic_of_the_congo__lubumbashi.png"
+      "population": 1786397
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Mbuji-Mayi",
       "latitude": -6.126111111,
       "longitude": 23.599722222,
-      "population": 2892000,
-      "map": "maps/cities/democratic_republic_of_the_congo__mbuji_mayi.png"
+      "population": 2892000
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Kisangani",
       "latitude": 0.515277777,
       "longitude": 25.191111111,
-      "population": 1366000,
-      "map": "maps/cities/democratic_republic_of_the_congo__kisangani.png"
+      "population": 1366000
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Goma",
       "latitude": -1.6641,
       "longitude": 29.22286,
-      "population": 781875,
-      "map": "maps/cities/democratic_republic_of_the_congo__goma.png"
+      "population": 781875
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Kananga",
       "latitude": -5.896111111,
       "longitude": 22.416666666,
-      "population": 1971704,
-      "map": "maps/cities/democratic_republic_of_the_congo__kananga.png"
+      "population": 1971704
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3838",
+      "name": "Kinshasa",
+      "latitude": -4.321944444,
+      "longitude": 15.311944444,
+      "population": 14565700,
+      "map": "maps/cities/democratic_republic_of_the_congo__kinshasa.png",
+      "answer_map": "maps/cities/democratic_republic_of_the_congo__kinshasa-answer.png"
     }
   ],
   "currencies": [
@@ -218,6 +223,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Andorra la Vella",
       "latitude": 42.507222222,
       "longitude": 1.522222222,
-      "population": 24042,
-      "map": "maps/cities/andorra__andorra_la_vella.png"
+      "population": 24042
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -109,6 +109,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Gibraltar",
       "latitude": 36.14,
       "longitude": -5.35,
-      "population": 34003,
-      "map": "maps/cities/gibraltar__gibraltar.png"
+      "population": 34003
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "GIP",
@@ -103,6 +103,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -39,8 +39,7 @@
       "name": "Kathmandu",
       "latitude": 27.71,
       "longitude": 85.32,
-      "population": 845767,
-      "map": "maps/cities/nepal__kathmandu.png"
+      "population": 845767
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Pokhara",
       "latitude": 28.209722222,
       "longitude": 83.985277777,
-      "population": 353841,
-      "map": "maps/cities/nepal__pokhara.png"
+      "population": 353841
     },
     {
       "role": "notable",
@@ -57,8 +55,18 @@
       "name": "Biratnagar",
       "latitude": 26.483333333,
       "longitude": 87.283333333,
-      "population": 242548,
-      "map": "maps/cities/nepal__biratnagar.png"
+      "population": 242548
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3037",
+      "name": "Kathmandu",
+      "latitude": 27.71,
+      "longitude": 85.32,
+      "population": 845767,
+      "map": "maps/cities/nepal__kathmandu.png",
+      "answer_map": "maps/cities/nepal__kathmandu-answer.png"
     }
   ],
   "currencies": [
@@ -280,6 +288,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

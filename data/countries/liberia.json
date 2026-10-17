@@ -37,10 +37,10 @@
       "name": "Monrovia",
       "latitude": 6.310555555,
       "longitude": -10.804722222,
-      "population": 1761032,
-      "map": "maps/cities/liberia__monrovia.png"
+      "population": 1761032
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "LRD",
@@ -177,6 +177,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

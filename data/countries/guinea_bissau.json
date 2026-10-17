@@ -39,8 +39,7 @@
       "name": "Bissau",
       "latitude": 11.86,
       "longitude": -15.583333333,
-      "population": 492004,
-      "map": "maps/cities/guinea_bissau__bissau.png"
+      "population": 492004
     },
     {
       "role": "notable",
@@ -48,10 +47,10 @@
       "name": "Bafatá",
       "latitude": 12.171944444,
       "longitude": -14.6575,
-      "population": 29556,
-      "map": "maps/cities/guinea_bissau__bafata.png"
+      "population": 29556
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XOF",
@@ -142,6 +141,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

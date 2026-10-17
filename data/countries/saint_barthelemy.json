@@ -37,10 +37,10 @@
       "name": "Gustavia",
       "latitude": 17.898611111,
       "longitude": -62.849166666,
-      "population": 9131,
-      "map": "maps/cities/saint_barthelemy__gustavia.png"
+      "population": 9131
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -97,6 +97,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

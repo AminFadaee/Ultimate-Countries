@@ -37,8 +37,7 @@
       "name": "Managua",
       "latitude": 12.154680555,
       "longitude": -86.273725,
-      "population": 937489,
-      "map": "maps/cities/nicaragua__managua.png"
+      "population": 937489
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "León",
       "latitude": 12.434825,
       "longitude": -86.878833333,
-      "population": 174051,
-      "map": "maps/cities/nicaragua__leon.png"
+      "population": 174051
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Masaya",
       "latitude": 11.973616666,
       "longitude": -86.096058333,
-      "population": 139582,
-      "map": "maps/cities/nicaragua__masaya.png"
+      "population": 139582
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Chinandega",
       "latitude": 12.631052777,
       "longitude": -87.134738888,
-      "population": 121793,
-      "map": "maps/cities/nicaragua__chinandega.png"
+      "population": 121793
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Estelí",
       "latitude": 13.092930555,
       "longitude": -86.356158333,
-      "population": 112084,
-      "map": "maps/cities/nicaragua__esteli.png"
+      "population": 112084
     },
     {
       "role": "notable",
@@ -82,10 +77,10 @@
       "name": "Bluefields",
       "latitude": 12.013125,
       "longitude": -83.764911111,
-      "population": 45547,
-      "map": "maps/cities/nicaragua__bluefields.png"
+      "population": 45547
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "NIO",
@@ -170,6 +165,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Stanley",
       "latitude": -51.693861,
       "longitude": -57.849556,
-      "population": 2121,
-      "map": "maps/cities/falkland_islands__stanley.png"
+      "population": 2121
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "FKP",
@@ -97,6 +97,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

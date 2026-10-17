@@ -37,8 +37,7 @@
       "name": "Dublin",
       "latitude": 53.349722222,
       "longitude": -6.260277777,
-      "population": 592713,
-      "map": "maps/cities/ireland__dublin.png"
+      "population": 592713
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Cork",
       "latitude": 51.9,
       "longitude": -8.473055555,
-      "population": 222333,
-      "map": "maps/cities/ireland__cork.png"
+      "population": 222333
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Limerick",
       "latitude": 52.6653,
       "longitude": -8.6238,
-      "population": 62702,
-      "map": "maps/cities/ireland__limerick.png"
+      "population": 62702
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Galway",
       "latitude": 53.2719,
       "longitude": -9.0488,
-      "population": 83456,
-      "map": "maps/cities/ireland__galway.png"
+      "population": 83456
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Waterford",
       "latitude": 52.2583,
       "longitude": -7.119,
-      "population": 48369,
-      "map": "maps/cities/ireland__waterford.png"
+      "population": 48369
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Dundalk",
       "latitude": 54.004444444,
       "longitude": -6.400277777,
-      "population": 39004,
-      "map": "maps/cities/ireland__dundalk.png"
+      "population": 39004
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1761",
+      "name": "Dublin",
+      "latitude": 53.349722222,
+      "longitude": -6.260277777,
+      "population": 592713,
+      "map": "maps/cities/ireland__dublin.png",
+      "answer_map": "maps/cities/ireland__dublin-answer.png"
     }
   ],
   "currencies": [
@@ -187,6 +192,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

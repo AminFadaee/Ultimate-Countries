@@ -37,10 +37,10 @@
       "name": "Mariehamn",
       "latitude": 60.09861111,
       "longitude": 19.94444444,
-      "population": 11957,
-      "map": "maps/cities/aland_islands__mariehamn.png"
+      "population": 11957
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -97,6 +97,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

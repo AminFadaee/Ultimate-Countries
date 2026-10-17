@@ -37,8 +37,7 @@
       "name": "Sri Jayawardenepura Kotte",
       "latitude": 6.9,
       "longitude": 79.916388888,
-      "population": 115826,
-      "map": "maps/cities/sri_lanka__sri_jayawardenepura_kotte.png"
+      "population": 115826
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Colombo",
       "latitude": 6.926666666,
       "longitude": 79.860555555,
-      "population": 647557,
-      "map": "maps/cities/sri_lanka__colombo.png"
+      "population": 647557
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Kandy",
       "latitude": 7.293055555,
       "longitude": 80.635,
-      "population": 120087,
-      "map": "maps/cities/sri_lanka__kandy.png"
+      "population": 120087
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Negombo",
       "latitude": 7.211111111,
       "longitude": 79.838611111,
-      "population": 142136,
-      "map": "maps/cities/sri_lanka__negombo.png"
+      "population": 142136
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Galle",
       "latitude": 6.032777777,
       "longitude": 80.215555555,
-      "population": 93118,
-      "map": "maps/cities/sri_lanka__galle.png"
+      "population": 93118
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Trincomalee",
       "latitude": 8.566666666,
       "longitude": 81.233333333,
-      "population": 99135,
-      "map": "maps/cities/sri_lanka__trincomalee.png"
+      "population": 99135
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q35381",
+      "name": "Colombo",
+      "latitude": 6.926666666,
+      "longitude": 79.860555555,
+      "population": 647557,
+      "map": "maps/cities/sri_lanka__colombo.png",
+      "answer_map": "maps/cities/sri_lanka__colombo-answer.png"
     }
   ],
   "currencies": [
@@ -190,6 +195,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

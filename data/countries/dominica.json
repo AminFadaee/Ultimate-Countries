@@ -37,10 +37,10 @@
       "name": "Roseau",
       "latitude": 15.3,
       "longitude": -61.383333333,
-      "population": 16571,
-      "map": "maps/cities/dominica__roseau.png"
+      "population": 16571
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XCD",
@@ -102,6 +102,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

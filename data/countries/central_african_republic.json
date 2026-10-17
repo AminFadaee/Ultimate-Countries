@@ -37,10 +37,10 @@
       "name": "Bangui",
       "latitude": 4.37325,
       "longitude": 18.562833333,
-      "population": 889231,
-      "map": "maps/cities/central_african_republic__bangui.png"
+      "population": 889231
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XAF",
@@ -143,6 +143,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

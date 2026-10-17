@@ -37,8 +37,7 @@
       "name": "Kyiv",
       "latitude": 50.45,
       "longitude": 30.523611111,
-      "population": 2952301,
-      "map": "maps/cities/ukraine__kyiv.png"
+      "population": 2952301
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Odesa",
       "latitude": 46.47747,
       "longitude": 30.73262,
-      "population": 1010537,
-      "map": "maps/cities/ukraine__odesa.png"
+      "population": 1010537
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Kharkiv",
       "latitude": 49.9925,
       "longitude": 36.231111111,
-      "population": 1421125,
-      "map": "maps/cities/ukraine__kharkiv.png"
+      "population": 1421125
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Lviv",
       "latitude": 49.841952,
       "longitude": 24.0315921,
-      "population": 717273,
-      "map": "maps/cities/ukraine__lviv.png"
+      "population": 717273
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Donetsk",
       "latitude": 48.015833333,
       "longitude": 37.802777777,
-      "population": 901645,
-      "map": "maps/cities/ukraine__donetsk.png"
+      "population": 901645
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Dnipro",
       "latitude": 48.4675,
       "longitude": 35.04,
-      "population": 968502,
-      "map": "maps/cities/ukraine__dnipro.png"
+      "population": 968502
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1899",
+      "name": "Kyiv",
+      "latitude": 50.45,
+      "longitude": 30.523611111,
+      "population": 2952301,
+      "map": "maps/cities/ukraine__kyiv.png",
+      "answer_map": "maps/cities/ukraine__kyiv-answer.png"
     }
   ],
   "currencies": [
@@ -234,6 +239,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

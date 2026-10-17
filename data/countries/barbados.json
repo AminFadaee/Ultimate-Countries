@@ -37,10 +37,10 @@
       "name": "Bridgetown",
       "latitude": 13.0975,
       "longitude": -59.616666666,
-      "population": 98511,
-      "map": "maps/cities/barbados__bridgetown.png"
+      "population": 98511
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "BBD",
@@ -137,6 +137,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

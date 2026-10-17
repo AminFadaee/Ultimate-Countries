@@ -37,8 +37,7 @@
       "name": "Harare",
       "latitude": -17.829166666,
       "longitude": 31.052222222,
-      "population": 2150000,
-      "map": "maps/cities/zimbabwe__harare.png"
+      "population": 2150000
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Bulawayo",
       "latitude": -20.166666666,
       "longitude": 28.566666666,
-      "population": 665940,
-      "map": "maps/cities/zimbabwe__bulawayo.png"
+      "population": 665940
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Mutare",
       "latitude": -18.972777777,
       "longitude": 32.669444444,
-      "population": 224804,
-      "map": "maps/cities/zimbabwe__mutare.png"
+      "population": 224804
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Gweru",
       "latitude": -19.453333333,
       "longitude": 29.815277777,
-      "population": 141260,
-      "map": "maps/cities/zimbabwe__gweru.png"
+      "population": 141260
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "ZWG",
@@ -275,6 +272,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

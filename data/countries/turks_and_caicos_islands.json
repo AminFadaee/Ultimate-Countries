@@ -37,10 +37,10 @@
       "name": "Cockburn Town",
       "latitude": 21.460277777,
       "longitude": -71.141388888,
-      "population": 4100,
-      "map": "maps/cities/turks_and_caicos_islands__cockburn_town.png"
+      "population": 4100
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -97,6 +97,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

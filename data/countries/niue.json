@@ -37,10 +37,10 @@
       "name": "Alofi",
       "latitude": -19.056,
       "longitude": -169.921,
-      "population": 575,
-      "map": "maps/cities/niue__alofi.png"
+      "population": 575
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "NZD",
@@ -103,6 +103,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

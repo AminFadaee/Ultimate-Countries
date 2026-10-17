@@ -37,8 +37,7 @@
       "name": "Nuuk",
       "latitude": 64.175,
       "longitude": -51.733333333,
-      "population": 18326,
-      "map": "maps/cities/greenland__nuuk.png"
+      "population": 18326
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Sermersooq",
       "latitude": 66.0,
       "longitude": -40.0,
-      "population": 24643,
-      "map": "maps/cities/greenland__sermersooq.png"
+      "population": 24643
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "DKK",
@@ -112,6 +111,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Islamabad",
       "latitude": 33.698888888,
       "longitude": 73.036944444,
-      "population": 1014825,
-      "map": "maps/cities/pakistan__islamabad.png"
+      "population": 1014825
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Karachi",
       "latitude": 24.86,
       "longitude": 67.01,
-      "population": 14910352,
-      "map": "maps/cities/pakistan__karachi.png"
+      "population": 14910352
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Lahore",
       "latitude": 31.549722222,
       "longitude": 74.343611111,
-      "population": 11126285,
-      "map": "maps/cities/pakistan__lahore.png"
+      "population": 11126285
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Faisalabad",
       "latitude": 31.418,
       "longitude": 73.079,
-      "population": 3203846,
-      "map": "maps/cities/pakistan__faisalabad.png"
+      "population": 3203846
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Peshawar",
       "latitude": 34.014444444,
       "longitude": 71.5675,
-      "population": 1970042,
-      "map": "maps/cities/pakistan__peshawar.png"
+      "population": 1970042
     },
     {
       "role": "notable",
@@ -82,8 +77,27 @@
       "name": "Multan",
       "latitude": 30.197777777,
       "longitude": 71.471111111,
-      "population": 1871843,
-      "map": "maps/cities/pakistan__multan.png"
+      "population": 1871843
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q8660",
+      "name": "Karachi",
+      "latitude": 24.86,
+      "longitude": 67.01,
+      "population": 14910352,
+      "map": "maps/cities/pakistan__karachi.png",
+      "answer_map": "maps/cities/pakistan__karachi-answer.png"
+    },
+    {
+      "id": "Q1362",
+      "name": "Islamabad",
+      "latitude": 33.698888888,
+      "longitude": 73.036944444,
+      "population": 1014825,
+      "map": "maps/cities/pakistan__islamabad.png",
+      "answer_map": "maps/cities/pakistan__islamabad-answer.png"
     }
   ],
   "currencies": [
@@ -274,6 +288,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

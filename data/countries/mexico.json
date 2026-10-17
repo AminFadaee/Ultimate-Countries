@@ -37,8 +37,7 @@
       "name": "Mexico City",
       "latitude": 19.353773,
       "longitude": -99.13589,
-      "population": 9209944,
-      "map": "maps/cities/mexico__mexico_city.png"
+      "population": 9209944
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Tijuana",
       "latitude": 32.536447,
       "longitude": -117.037155,
-      "population": 1810645,
-      "map": "maps/cities/mexico__tijuana.png"
+      "population": 1810645
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Guadalajara",
       "latitude": 20.676388888,
       "longitude": -103.342222222,
-      "population": 1385621,
-      "map": "maps/cities/mexico__guadalajara.png"
+      "population": 1385621
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Monterrey",
       "latitude": 25.684444444,
       "longitude": -100.318055555,
-      "population": 1142952,
-      "map": "maps/cities/mexico__monterrey.png"
+      "population": 1142952
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Heroica Puebla de Zaragoza",
       "latitude": 19.051388888,
       "longitude": -98.217777777,
-      "population": 1542232,
-      "map": "maps/cities/mexico__heroica_puebla_de_zaragoza.png"
+      "population": 1542232
     },
     {
       "role": "notable",
@@ -82,8 +77,36 @@
       "name": "Ciudad Juárez",
       "latitude": 31.6685,
       "longitude": -106.42,
-      "population": 1501551,
-      "map": "maps/cities/mexico__ciudad_juarez.png"
+      "population": 1501551
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1489",
+      "name": "Mexico City",
+      "latitude": 19.353773,
+      "longitude": -99.13589,
+      "population": 9209944,
+      "map": "maps/cities/mexico__mexico_city.png",
+      "answer_map": "maps/cities/mexico__mexico_city-answer.png"
+    },
+    {
+      "id": "Q8969",
+      "name": "Cancun",
+      "latitude": 21.161416111,
+      "longitude": -86.824811111,
+      "population": 888797,
+      "map": "maps/cities/mexico__cancun.png",
+      "answer_map": "maps/cities/mexico__cancun-answer.png"
+    },
+    {
+      "id": "Q9022",
+      "name": "Guadalajara",
+      "latitude": 20.676388888,
+      "longitude": -103.342222222,
+      "population": 1385621,
+      "map": "maps/cities/mexico__guadalajara.png",
+      "answer_map": "maps/cities/mexico__guadalajara-answer.png"
     }
   ],
   "currencies": [
@@ -201,6 +224,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

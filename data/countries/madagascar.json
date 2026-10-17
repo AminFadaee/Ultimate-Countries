@@ -37,8 +37,7 @@
       "name": "Antananarivo",
       "latitude": -18.91,
       "longitude": 47.525,
-      "population": 1275207,
-      "map": "maps/cities/madagascar__antananarivo.png"
+      "population": 1275207
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Toamasina",
       "latitude": -18.155,
       "longitude": 49.41,
-      "population": 225116,
-      "map": "maps/cities/madagascar__toamasina.png"
+      "population": 225116
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Antsirabe",
       "latitude": -19.866666666,
       "longitude": 47.033333333,
-      "population": 265018,
-      "map": "maps/cities/madagascar__antsirabe.png"
+      "population": 265018
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Mahajanga",
       "latitude": -15.716666666,
       "longitude": 46.316666666,
-      "population": 166384,
-      "map": "maps/cities/madagascar__mahajanga.png"
+      "population": 166384
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Antsiranana",
       "latitude": -12.322444444,
       "longitude": 49.295,
-      "population": null,
-      "map": "maps/cities/madagascar__antsiranana.png"
+      "population": null
     },
     {
       "role": "notable",
@@ -82,10 +77,10 @@
       "name": "Toliara",
       "latitude": -23.35,
       "longitude": 43.666666666,
-      "population": null,
-      "map": "maps/cities/madagascar__toliara.png"
+      "population": null
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "MGA",
@@ -188,6 +183,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

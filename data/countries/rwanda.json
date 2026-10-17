@@ -39,8 +39,7 @@
       "name": "Kigali",
       "latitude": -1.9525,
       "longitude": 30.115,
-      "population": 1745555,
-      "map": "maps/cities/rwanda__kigali.png"
+      "population": 1745555
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Gisenyi",
       "latitude": -1.692777777,
       "longitude": 29.25,
-      "population": 53603,
-      "map": "maps/cities/rwanda__gisenyi.png"
+      "population": 53603
     },
     {
       "role": "notable",
@@ -57,10 +55,10 @@
       "name": "Butare",
       "latitude": -2.6,
       "longitude": 29.75,
-      "population": 19937,
-      "map": "maps/cities/rwanda__butare.png"
+      "population": 19937
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "RWF",
@@ -162,6 +160,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

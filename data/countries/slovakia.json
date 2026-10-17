@@ -37,8 +37,7 @@
       "name": "Bratislava",
       "latitude": 48.1516988,
       "longitude": 17.1093063,
-      "population": 480902,
-      "map": "maps/cities/slovakia__bratislava.png"
+      "population": 480902
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Košice",
       "latitude": 48.716666666,
       "longitude": 21.25,
-      "population": 222286,
-      "map": "maps/cities/slovakia__kosice.png"
+      "population": 222286
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Prešov",
       "latitude": 49.0,
       "longitude": 21.233333333,
-      "population": 81223,
-      "map": "maps/cities/slovakia__presov.png"
+      "population": 81223
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Banská Bystrica",
       "latitude": 48.735277777,
       "longitude": 19.145277777,
-      "population": 73054,
-      "map": "maps/cities/slovakia__banska_bystrica.png"
+      "population": 73054
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Žilina",
       "latitude": 49.216666666,
       "longitude": 18.733333333,
-      "population": 79873,
-      "map": "maps/cities/slovakia__zilina.png"
+      "population": 79873
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Trnava",
       "latitude": 48.37775,
       "longitude": 17.586211111,
-      "population": 63184,
-      "map": "maps/cities/slovakia__trnava.png"
+      "population": 63184
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1780",
+      "name": "Bratislava",
+      "latitude": 48.1516988,
+      "longitude": 17.1093063,
+      "population": 480902,
+      "map": "maps/cities/slovakia__bratislava.png",
+      "answer_map": "maps/cities/slovakia__bratislava-answer.png"
     }
   ],
   "currencies": [
@@ -216,6 +221,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

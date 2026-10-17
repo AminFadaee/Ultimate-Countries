@@ -37,10 +37,10 @@
       "name": "Majuro",
       "latitude": 7.0918,
       "longitude": 171.3802,
-      "population": 30000,
-      "map": "maps/cities/marshall_islands__majuro.png"
+      "population": 30000
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -106,6 +106,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

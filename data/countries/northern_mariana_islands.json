@@ -41,10 +41,10 @@
       "name": "Saipan",
       "latitude": 15.21233,
       "longitude": 145.7545,
-      "population": 43385,
-      "map": "maps/cities/northern_mariana_islands__saipan.png"
+      "population": 43385
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -113,6 +113,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

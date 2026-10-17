@@ -37,8 +37,7 @@
       "name": "Bangkok",
       "latitude": 13.75,
       "longitude": 100.516666666,
-      "population": 5676648,
-      "map": "maps/cities/thailand__bangkok.png"
+      "population": 5676648
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Chiang Mai",
       "latitude": 18.788888888,
       "longitude": 98.983333333,
-      "population": 1198000,
-      "map": "maps/cities/thailand__chiang_mai.png"
+      "population": 1198000
     },
     {
       "role": "notable",
@@ -55,8 +53,18 @@
       "name": "Pattaya",
       "latitude": 12.949565,
       "longitude": 100.893004,
-      "population": 119532,
-      "map": "maps/cities/thailand__pattaya.png"
+      "population": 119532
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1861",
+      "name": "Bangkok",
+      "latitude": 13.75,
+      "longitude": 100.516666666,
+      "population": 5676648,
+      "map": "maps/cities/thailand__bangkok.png",
+      "answer_map": "maps/cities/thailand__bangkok-answer.png"
     }
   ],
   "currencies": [
@@ -182,6 +190,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

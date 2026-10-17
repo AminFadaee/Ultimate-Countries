@@ -37,8 +37,7 @@
       "name": "Port of Spain",
       "latitude": 10.666666666,
       "longitude": -61.516666666,
-      "population": 49031,
-      "map": "maps/cities/trinidad_and_tobago__port_of_spain.png"
+      "population": 49031
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Chaguanas",
       "latitude": 10.514444444,
       "longitude": -61.4075,
-      "population": 83489,
-      "map": "maps/cities/trinidad_and_tobago__chaguanas.png"
+      "population": 83489
     },
     {
       "role": "notable",
@@ -55,10 +53,10 @@
       "name": "San Fernando",
       "latitude": 10.283333333,
       "longitude": -61.466666666,
-      "population": 55419,
-      "map": "maps/cities/trinidad_and_tobago__san_fernando.png"
+      "population": 55419
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "TTD",
@@ -155,6 +153,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

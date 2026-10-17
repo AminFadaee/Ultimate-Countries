@@ -37,8 +37,7 @@
       "name": "Zagreb",
       "latitude": 45.813055555,
       "longitude": 15.977222222,
-      "population": 767131,
-      "map": "maps/cities/croatia__zagreb.png"
+      "population": 767131
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Split",
       "latitude": 43.51,
       "longitude": 16.44,
-      "population": 160577,
-      "map": "maps/cities/croatia__split.png"
+      "population": 160577
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Rijeka",
       "latitude": 45.333333333,
       "longitude": 14.433333333,
-      "population": 107964,
-      "map": "maps/cities/croatia__rijeka.png"
+      "population": 107964
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Zadar",
       "latitude": 44.114166666,
       "longitude": 15.2275,
-      "population": 70779,
-      "map": "maps/cities/croatia__zadar.png"
+      "population": 70779
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Dubrovnik",
       "latitude": 42.640277777,
       "longitude": 18.108333333,
-      "population": 41562,
-      "map": "maps/cities/croatia__dubrovnik.png"
+      "population": 41562
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Osijek",
       "latitude": 45.560277777,
       "longitude": 18.670277777,
-      "population": 96313,
-      "map": "maps/cities/croatia__osijek.png"
+      "population": 96313
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1435",
+      "name": "Zagreb",
+      "latitude": 45.813055555,
+      "longitude": 15.977222222,
+      "population": 767131,
+      "map": "maps/cities/croatia__zagreb.png",
+      "answer_map": "maps/cities/croatia__zagreb-answer.png"
     }
   ],
   "currencies": [
@@ -194,6 +199,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Beirut",
       "latitude": 33.886944444,
       "longitude": 35.513055555,
-      "population": 2421354,
-      "map": "maps/cities/lebanon__beirut.png"
+      "population": 2421354
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Tripoli",
       "latitude": 34.436666666,
       "longitude": 35.834444444,
-      "population": 227857,
-      "map": "maps/cities/lebanon__tripoli.png"
+      "population": 227857
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Tyre",
       "latitude": 33.266666666,
       "longitude": 35.2,
-      "population": 160000,
-      "map": "maps/cities/lebanon__tyre.png"
+      "population": 160000
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Sidon",
       "latitude": 33.560413,
       "longitude": 35.375272,
-      "population": 163554,
-      "map": "maps/cities/lebanon__sidon.png"
+      "population": 163554
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Baalbek",
       "latitude": 34.015363,
       "longitude": 36.200556,
-      "population": 81052,
-      "map": "maps/cities/lebanon__baalbek.png"
+      "population": 81052
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Zahlé",
       "latitude": 33.843888888,
       "longitude": 35.907222222,
-      "population": 100000,
-      "map": "maps/cities/lebanon__zahle.png"
+      "population": 100000
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3820",
+      "name": "Beirut",
+      "latitude": 33.886944444,
+      "longitude": 35.513055555,
+      "population": 2421354,
+      "map": "maps/cities/lebanon__beirut.png",
+      "answer_map": "maps/cities/lebanon__beirut-answer.png"
     }
   ],
   "currencies": [
@@ -200,6 +205,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

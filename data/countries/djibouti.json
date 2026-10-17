@@ -37,8 +37,7 @@
       "name": "Djibouti",
       "latitude": 11.595,
       "longitude": 43.148055555,
-      "population": 603900,
-      "map": "maps/cities/djibouti__djibouti.png"
+      "population": 603900
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Ali Sabieh",
       "latitude": 11.155833333,
       "longitude": 42.7125,
-      "population": 71230,
-      "map": "maps/cities/djibouti__ali_sabieh.png"
+      "population": 71230
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Tadjoura",
       "latitude": 11.783333333,
       "longitude": 42.883333333,
-      "population": 14820,
-      "map": "maps/cities/djibouti__tadjoura.png"
+      "population": 14820
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Obock",
       "latitude": 11.966666666,
       "longitude": 43.283333333,
-      "population": 21200,
-      "map": "maps/cities/djibouti__obock.png"
+      "population": 21200
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "DJF",
@@ -171,6 +168,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

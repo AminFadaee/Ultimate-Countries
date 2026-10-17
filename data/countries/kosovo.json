@@ -39,8 +39,7 @@
       "name": "Pristina",
       "latitude": 42.666666666,
       "longitude": 21.166666666,
-      "population": 227466,
-      "map": "maps/cities/kosovo__pristina.png"
+      "population": 227466
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Prizren",
       "latitude": 42.23,
       "longitude": 20.74,
-      "population": 186986,
-      "map": "maps/cities/kosovo__prizren.png"
+      "population": 186986
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Mitrovica",
       "latitude": 42.883333333,
       "longitude": 20.866666666,
-      "population": 71601,
-      "map": "maps/cities/kosovo__mitrovica.png"
+      "population": 71601
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Peja",
       "latitude": 42.65913,
       "longitude": 20.28828,
-      "population": 82661,
-      "map": "maps/cities/kosovo__peja.png"
+      "population": 82661
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Gjilan",
       "latitude": 42.466666666,
       "longitude": 21.466666666,
-      "population": 82980,
-      "map": "maps/cities/kosovo__gjilan.png"
+      "population": 82980
     },
     {
       "role": "notable",
@@ -84,10 +79,10 @@
       "name": "Ferizaj",
       "latitude": 42.37,
       "longitude": 21.155,
-      "population": 180583,
-      "map": "maps/cities/kosovo__ferizaj.png"
+      "population": 180583
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -177,6 +172,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Santiago",
       "latitude": -33.4375,
       "longitude": -70.65,
-      "population": 6257516,
-      "map": "maps/cities/chile__santiago.png"
+      "population": 6257516
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Valparaíso",
       "latitude": -33.046111111,
       "longitude": -71.619722222,
-      "population": 296655,
-      "map": "maps/cities/chile__valparaiso.png"
+      "population": 296655
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Antofagasta",
       "latitude": -23.646388888,
       "longitude": -70.398055555,
-      "population": 348517,
-      "map": "maps/cities/chile__antofagasta.png"
+      "population": 348517
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Concepción",
       "latitude": -36.826944444,
       "longitude": -73.050277777,
-      "population": 217537,
-      "map": "maps/cities/chile__concepcion.png"
+      "population": 217537
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "La Serena",
       "latitude": -29.9027,
       "longitude": -71.252,
-      "population": 195382,
-      "map": "maps/cities/chile__la_serena.png"
+      "population": 195382
     },
     {
       "role": "notable",
@@ -82,8 +77,36 @@
       "name": "Temuco",
       "latitude": -38.7399,
       "longitude": -72.5901,
-      "population": 282415,
-      "map": "maps/cities/chile__temuco.png"
+      "population": 282415
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q2887",
+      "name": "Santiago",
+      "latitude": -33.4375,
+      "longitude": -70.65,
+      "population": 6257516,
+      "map": "maps/cities/chile__santiago.png",
+      "answer_map": "maps/cities/chile__santiago-answer.png"
+    },
+    {
+      "id": "Q33986",
+      "name": "Valparaíso",
+      "latitude": -33.046111111,
+      "longitude": -71.619722222,
+      "population": 296655,
+      "map": "maps/cities/chile__valparaiso.png",
+      "answer_map": "maps/cities/chile__valparaiso-answer.png"
+    },
+    {
+      "id": "Q1880",
+      "name": "Concepción",
+      "latitude": -36.826944444,
+      "longitude": -73.050277777,
+      "population": 217537,
+      "map": "maps/cities/chile__concepcion.png",
+      "answer_map": "maps/cities/chile__concepcion-answer.png"
     }
   ],
   "currencies": [
@@ -188,6 +211,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

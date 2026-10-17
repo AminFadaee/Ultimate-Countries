@@ -37,8 +37,7 @@
       "name": "Rome",
       "latitude": 41.893055555,
       "longitude": 12.482777777,
-      "population": 2748109,
-      "map": "maps/cities/italy__rome.png"
+      "population": 2748109
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Milan",
       "latitude": 45.466944444,
       "longitude": 9.19,
-      "population": 1354196,
-      "map": "maps/cities/italy__milan.png"
+      "population": 1354196
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Naples",
       "latitude": 40.835833333,
       "longitude": 14.248611111,
-      "population": 913462,
-      "map": "maps/cities/italy__naples.png"
+      "population": 913462
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Turin",
       "latitude": 45.079166666,
       "longitude": 7.676111111,
-      "population": 841600,
-      "map": "maps/cities/italy__turin.png"
+      "population": 841600
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Venice",
       "latitude": 45.439722222,
       "longitude": 12.331944444,
-      "population": 250369,
-      "map": "maps/cities/italy__venice.png"
+      "population": 250369
     },
     {
       "role": "notable",
@@ -82,8 +77,63 @@
       "name": "Florence",
       "latitude": 43.771388888,
       "longitude": 11.254166666,
+      "population": 360930
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q220",
+      "name": "Rome",
+      "latitude": 41.893055555,
+      "longitude": 12.482777777,
+      "population": 2748109,
+      "map": "maps/cities/italy__rome.png",
+      "answer_map": "maps/cities/italy__rome-answer.png"
+    },
+    {
+      "id": "Q490",
+      "name": "Milan",
+      "latitude": 45.466944444,
+      "longitude": 9.19,
+      "population": 1354196,
+      "map": "maps/cities/italy__milan.png",
+      "answer_map": "maps/cities/italy__milan-answer.png"
+    },
+    {
+      "id": "Q641",
+      "name": "Venice",
+      "latitude": 45.439722222,
+      "longitude": 12.331944444,
+      "population": 250369,
+      "map": "maps/cities/italy__venice.png",
+      "answer_map": "maps/cities/italy__venice-answer.png"
+    },
+    {
+      "id": "Q2044",
+      "name": "Florence",
+      "latitude": 43.771388888,
+      "longitude": 11.254166666,
       "population": 360930,
-      "map": "maps/cities/italy__florence.png"
+      "map": "maps/cities/italy__florence.png",
+      "answer_map": "maps/cities/italy__florence-answer.png"
+    },
+    {
+      "id": "Q2634",
+      "name": "Naples",
+      "latitude": 40.835833333,
+      "longitude": 14.248611111,
+      "population": 913462,
+      "map": "maps/cities/italy__naples.png",
+      "answer_map": "maps/cities/italy__naples-answer.png"
+    },
+    {
+      "id": "Q495",
+      "name": "Turin",
+      "latitude": 45.079166666,
+      "longitude": 7.676111111,
+      "population": 841600,
+      "map": "maps/cities/italy__turin.png",
+      "answer_map": "maps/cities/italy__turin-answer.png"
     }
   ],
   "currencies": [
@@ -248,6 +298,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

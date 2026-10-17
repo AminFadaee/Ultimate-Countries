@@ -37,10 +37,10 @@
       "name": "Saint Peter Port",
       "latitude": 49.46,
       "longitude": -2.55194,
-      "population": null,
-      "map": "maps/cities/guernsey__saint_peter_port.png"
+      "population": null
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "GBP",
@@ -105,6 +105,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

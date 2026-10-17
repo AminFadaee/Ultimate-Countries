@@ -37,8 +37,7 @@
       "name": "Asunción",
       "latitude": -25.28,
       "longitude": -57.634444444,
-      "population": 462241,
-      "map": "maps/cities/paraguay__asuncion.png"
+      "population": 462241
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Ciudad del Este",
       "latitude": -25.516666666,
       "longitude": -54.616666666,
-      "population": 350000,
-      "map": "maps/cities/paraguay__ciudad_del_este.png"
+      "population": 350000
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Pedro Juan Caballero",
       "latitude": -22.566666666,
       "longitude": -55.716666666,
-      "population": 127437,
-      "map": "maps/cities/paraguay__pedro_juan_caballero.png"
+      "population": 127437
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Encarnación",
       "latitude": -27.333333333,
       "longitude": -55.866666666,
-      "population": 106842,
-      "map": "maps/cities/paraguay__encarnacion.png"
+      "population": 106842
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "PYG",
@@ -164,6 +161,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

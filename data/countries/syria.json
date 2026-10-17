@@ -37,8 +37,7 @@
       "name": "Damascus",
       "latitude": 33.513,
       "longitude": 36.292,
-      "population": 2685360,
-      "map": "maps/cities/syria__damascus.png"
+      "population": 2685360
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Aleppo",
       "latitude": 36.2,
       "longitude": 37.16,
-      "population": 2003671,
-      "map": "maps/cities/syria__aleppo.png"
+      "population": 2003671
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Homs",
       "latitude": 34.733333333,
       "longitude": 36.716666666,
-      "population": 775404,
-      "map": "maps/cities/syria__homs.png"
+      "population": 775404
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Hama",
       "latitude": 35.135,
       "longitude": 36.75,
-      "population": 696863,
-      "map": "maps/cities/syria__hama.png"
+      "population": 696863
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Latakia",
       "latitude": 35.52,
       "longitude": 35.778055555,
-      "population": 709000,
-      "map": "maps/cities/syria__latakia.png"
+      "population": 709000
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Raqqa",
       "latitude": 35.95,
       "longitude": 39.01,
-      "population": 299824,
-      "map": "maps/cities/syria__raqqa.png"
+      "population": 299824
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3766",
+      "name": "Damascus",
+      "latitude": 33.513,
+      "longitude": 36.292,
+      "population": 2685360,
+      "map": "maps/cities/syria__damascus.png",
+      "answer_map": "maps/cities/syria__damascus-answer.png"
     }
   ],
   "currencies": [
@@ -187,6 +192,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

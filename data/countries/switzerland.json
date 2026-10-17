@@ -37,8 +37,7 @@
       "name": "Bern",
       "latitude": 46.94798,
       "longitude": 7.44743,
-      "population": 136988,
-      "map": "maps/cities/switzerland__bern.png"
+      "population": 136988
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Geneva",
       "latitude": 46.2,
       "longitude": 6.15,
-      "population": 209061,
-      "map": "maps/cities/switzerland__geneva.png"
+      "population": 209061
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Zurich",
       "latitude": 47.374444444,
       "longitude": 8.541111111,
-      "population": 452421,
-      "map": "maps/cities/switzerland__zurich.png"
+      "population": 452421
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Basel",
       "latitude": 47.560555555,
       "longitude": 7.590555555,
-      "population": 176329,
-      "map": "maps/cities/switzerland__basel.png"
+      "population": 176329
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Lausanne",
       "latitude": 46.533333333,
       "longitude": 6.633333333,
-      "population": 144873,
-      "map": "maps/cities/switzerland__lausanne.png"
+      "population": 144873
     },
     {
       "role": "notable",
@@ -82,8 +77,36 @@
       "name": "Lucerne",
       "latitude": 47.0523,
       "longitude": 8.3059,
-      "population": 86234,
-      "map": "maps/cities/switzerland__lucerne.png"
+      "population": 86234
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q72",
+      "name": "Zurich",
+      "latitude": 47.374444444,
+      "longitude": 8.541111111,
+      "population": 452421,
+      "map": "maps/cities/switzerland__zurich.png",
+      "answer_map": "maps/cities/switzerland__zurich-answer.png"
+    },
+    {
+      "id": "Q71",
+      "name": "Geneva",
+      "latitude": 46.2,
+      "longitude": 6.15,
+      "population": 209061,
+      "map": "maps/cities/switzerland__geneva.png",
+      "answer_map": "maps/cities/switzerland__geneva-answer.png"
+    },
+    {
+      "id": "Q70",
+      "name": "Bern",
+      "latitude": 46.94798,
+      "longitude": 7.44743,
+      "population": 136988,
+      "map": "maps/cities/switzerland__bern.png",
+      "answer_map": "maps/cities/switzerland__bern-answer.png"
     }
   ],
   "currencies": [
@@ -225,6 +248,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

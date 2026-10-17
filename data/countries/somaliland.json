@@ -37,8 +37,7 @@
       "name": "Hargeisa",
       "latitude": 9.565556,
       "longitude": 44.060556,
-      "population": 1227620,
-      "map": "maps/cities/somaliland__hargeisa.png"
+      "population": 1227620
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Berbera",
       "latitude": 10.43953,
       "longitude": 45.01305,
-      "population": 263000,
-      "map": "maps/cities/somaliland__berbera.png"
+      "population": 263000
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Burao",
       "latitude": 9.527889,
       "longitude": 45.5345,
-      "population": 350211,
-      "map": "maps/cities/somaliland__burao.png"
+      "population": 350211
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Erigavo",
       "latitude": 10.618055555,
       "longitude": 47.37,
-      "population": 41000,
-      "map": "maps/cities/somaliland__erigavo.png"
+      "population": 41000
     },
     {
       "role": "notable",
@@ -73,10 +69,10 @@
       "name": "Borama",
       "latitude": 9.933055555,
       "longitude": 43.181666666,
-      "population": 68074,
-      "map": "maps/cities/somaliland__borama.png"
+      "population": 68074
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "SLSH",
@@ -154,6 +150,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

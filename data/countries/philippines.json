@@ -40,8 +40,7 @@
       "name": "Manila",
       "latitude": 14.595833333,
       "longitude": 120.977222222,
-      "population": 1902590,
-      "map": "maps/cities/philippines__manila.png"
+      "population": 1902590
     },
     {
       "role": "notable",
@@ -49,8 +48,7 @@
       "name": "Davao City",
       "latitude": 7.066233333,
       "longitude": 125.609441666,
-      "population": 1848947,
-      "map": "maps/cities/philippines__davao_city.png"
+      "population": 1848947
     },
     {
       "role": "notable",
@@ -58,8 +56,7 @@
       "name": "Cebu City",
       "latitude": 10.293,
       "longitude": 123.902,
-      "population": 965332,
-      "map": "maps/cities/philippines__cebu_city.png"
+      "population": 965332
     },
     {
       "role": "notable",
@@ -67,8 +64,7 @@
       "name": "Zamboanga",
       "latitude": 6.904166666,
       "longitude": 122.076111111,
-      "population": 1018849,
-      "map": "maps/cities/philippines__zamboanga.png"
+      "population": 1018849
     },
     {
       "role": "notable",
@@ -76,8 +72,18 @@
       "name": "Baguio",
       "latitude": 16.411944444,
       "longitude": 120.593333333,
-      "population": 368426,
-      "map": "maps/cities/philippines__baguio.png"
+      "population": 368426
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1461",
+      "name": "Manila",
+      "latitude": 14.595833333,
+      "longitude": 120.977222222,
+      "population": 1902590,
+      "map": "maps/cities/philippines__manila.png",
+      "answer_map": "maps/cities/philippines__manila-answer.png"
     }
   ],
   "currencies": [
@@ -260,6 +266,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

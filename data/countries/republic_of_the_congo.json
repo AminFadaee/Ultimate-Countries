@@ -37,8 +37,7 @@
       "name": "Brazzaville",
       "latitude": -4.269444444,
       "longitude": 15.271111111,
-      "population": 2145783,
-      "map": "maps/cities/republic_of_the_congo__brazzaville.png"
+      "population": 2145783
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Pointe-Noire",
       "latitude": -4.7975,
       "longitude": 11.850277777,
-      "population": 1420612,
-      "map": "maps/cities/republic_of_the_congo__pointe_noire.png"
+      "population": 1420612
     },
     {
       "role": "notable",
@@ -55,10 +53,10 @@
       "name": "Etoumbi",
       "latitude": 0.020833333,
       "longitude": 14.893333333,
-      "population": 10862,
-      "map": "maps/cities/republic_of_the_congo__etoumbi.png"
+      "population": 10862
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XAF",
@@ -156,6 +154,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

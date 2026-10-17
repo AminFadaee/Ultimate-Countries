@@ -37,8 +37,7 @@
       "name": "Thimphu",
       "latitude": 27.47135,
       "longitude": 89.63367,
-      "population": 114551,
-      "map": "maps/cities/bhutan__thimphu.png"
+      "population": 114551
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Punakha",
       "latitude": 27.616666666,
       "longitude": 89.866666666,
-      "population": null,
-      "map": "maps/cities/bhutan__punakha.png"
+      "population": null
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "BTN",
@@ -167,6 +166,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Caracas",
       "latitude": 10.506111111,
       "longitude": -66.914444444,
-      "population": 2245744,
-      "map": "maps/cities/venezuela__caracas.png"
+      "population": 2245744
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Maracaibo",
       "latitude": 10.633333333,
       "longitude": -71.633333333,
-      "population": 1551539,
-      "map": "maps/cities/venezuela__maracaibo.png"
+      "population": 1551539
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Valencia",
       "latitude": 10.166666666,
       "longitude": -68.0,
-      "population": 1484430,
-      "map": "maps/cities/venezuela__valencia.png"
+      "population": 1484430
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Barquisimeto",
       "latitude": 10.067777777,
       "longitude": -69.346694444,
-      "population": 1059092,
-      "map": "maps/cities/venezuela__barquisimeto.png"
+      "population": 1059092
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Maracay",
       "latitude": 10.246944444,
       "longitude": -67.595833333,
-      "population": 1102088,
-      "map": "maps/cities/venezuela__maracay.png"
+      "population": 1102088
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Ciudad Bolívar",
       "latitude": 8.1028532,
       "longitude": -63.5469562,
-      "population": 567953,
-      "map": "maps/cities/venezuela__ciudad_bolivar.png"
+      "population": 567953
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1533",
+      "name": "Caracas",
+      "latitude": 10.506111111,
+      "longitude": -66.914444444,
+      "population": 2245744,
+      "map": "maps/cities/venezuela__caracas.png",
+      "answer_map": "maps/cities/venezuela__caracas-answer.png"
     }
   ],
   "currencies": [
@@ -178,6 +183,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Phnom Penh",
       "latitude": 11.569583333,
       "longitude": 104.921027777,
-      "population": 2129371,
-      "map": "maps/cities/cambodia__phnom_penh.png"
+      "population": 2129371
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Siem Reap",
       "latitude": 13.362222222,
       "longitude": 103.859722222,
-      "population": 147866,
-      "map": "maps/cities/cambodia__siem_reap.png"
+      "population": 147866
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Battambang",
       "latitude": 13.102777777,
       "longitude": 103.198333333,
-      "population": 130000,
-      "map": "maps/cities/cambodia__battambang.png"
+      "population": 130000
     },
     {
       "role": "notable",
@@ -64,8 +61,18 @@
       "name": "Sihanoukville",
       "latitude": 10.6333,
       "longitude": 103.5,
-      "population": 71082,
-      "map": "maps/cities/cambodia__sihanoukville.png"
+      "population": 71082
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1850",
+      "name": "Phnom Penh",
+      "latitude": 11.569583333,
+      "longitude": 104.921027777,
+      "population": 2129371,
+      "map": "maps/cities/cambodia__phnom_penh.png",
+      "answer_map": "maps/cities/cambodia__phnom_penh-answer.png"
     }
   ],
   "currencies": [
@@ -174,6 +181,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

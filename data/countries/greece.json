@@ -37,8 +37,7 @@
       "name": "Athens",
       "latitude": 37.984166666,
       "longitude": 23.728055555,
-      "population": 643452,
-      "map": "maps/cities/greece__athens.png"
+      "population": 643452
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Thessaloniki",
       "latitude": 40.640277777,
       "longitude": 22.935555555,
-      "population": 309617,
-      "map": "maps/cities/greece__thessaloniki.png"
+      "population": 309617
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Patras",
       "latitude": 38.246383,
       "longitude": 21.734911,
-      "population": 173600,
-      "map": "maps/cities/greece__patras.png"
+      "population": 173600
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Heraklion",
       "latitude": 35.340277777,
       "longitude": 25.134444444,
-      "population": 145440,
-      "map": "maps/cities/greece__heraklion.png"
+      "population": 145440
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Rhodes",
       "latitude": 36.17,
       "longitude": 27.92,
-      "population": 127613,
-      "map": "maps/cities/greece__rhodes.png"
+      "population": 127613
     },
     {
       "role": "notable",
@@ -82,8 +77,27 @@
       "name": "Larissa",
       "latitude": 39.638493,
       "longitude": 22.413061,
-      "population": 146377,
-      "map": "maps/cities/greece__larissa.png"
+      "population": 146377
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1524",
+      "name": "Athens",
+      "latitude": 37.984166666,
+      "longitude": 23.728055555,
+      "population": 643452,
+      "map": "maps/cities/greece__athens.png",
+      "answer_map": "maps/cities/greece__athens-answer.png"
+    },
+    {
+      "id": "Q160544",
+      "name": "Heraklion",
+      "latitude": 35.340277777,
+      "longitude": 25.134444444,
+      "population": 145440,
+      "map": "maps/cities/greece__heraklion.png",
+      "answer_map": "maps/cities/greece__heraklion-answer.png"
     }
   ],
   "currencies": [
@@ -224,6 +238,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

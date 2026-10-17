@@ -37,8 +37,7 @@
       "name": "Guatemala City",
       "latitude": 14.641666666,
       "longitude": -90.513333333,
-      "population": 994938,
-      "map": "maps/cities/guatemala__guatemala_city.png"
+      "population": 994938
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Quetzaltenango",
       "latitude": 14.833333333,
       "longitude": -91.516666666,
-      "population": 207620,
-      "map": "maps/cities/guatemala__quetzaltenango.png"
+      "population": 207620
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Antigua Guatemala",
       "latitude": 14.5575,
       "longitude": -90.733333333,
-      "population": 59091,
-      "map": "maps/cities/guatemala__antigua_guatemala.png"
+      "population": 59091
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Puerto Barrios",
       "latitude": 15.73,
       "longitude": -88.6,
-      "population": 110846,
-      "map": "maps/cities/guatemala__puerto_barrios.png"
+      "population": 110846
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Cobán",
       "latitude": 15.483333333,
       "longitude": -90.366666666,
-      "population": 228664,
-      "map": "maps/cities/guatemala__coban.png"
+      "population": 228664
     },
     {
       "role": "notable",
@@ -82,10 +77,10 @@
       "name": "Flores",
       "latitude": 16.933333333,
       "longitude": -89.883333333,
-      "population": 44706,
-      "map": "maps/cities/guatemala__flores.png"
+      "population": 44706
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "GTQ",
@@ -264,6 +259,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

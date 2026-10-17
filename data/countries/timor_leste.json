@@ -37,8 +37,7 @@
       "name": "Dili",
       "latitude": -8.553611111,
       "longitude": 125.578333333,
-      "population": 222323,
-      "map": "maps/cities/timor_leste__dili.png"
+      "population": 222323
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Baucau",
       "latitude": -8.466666666,
       "longitude": 126.45,
-      "population": 14961,
-      "map": "maps/cities/timor_leste__baucau.png"
+      "population": 14961
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -142,6 +141,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

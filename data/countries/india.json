@@ -37,8 +37,7 @@
       "name": "New Delhi",
       "latitude": 28.613888888,
       "longitude": 77.208888888,
-      "population": 249998,
-      "map": "maps/cities/india__new_delhi.png"
+      "population": 249998
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Mumbai",
       "latitude": 19.075833333,
       "longitude": 72.8775,
-      "population": 15414288,
-      "map": "maps/cities/india__mumbai.png"
+      "population": 15414288
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Delhi",
       "latitude": 28.666666666,
       "longitude": 77.216666666,
-      "population": 26495000,
-      "map": "maps/cities/india__delhi.png"
+      "population": 26495000
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Bengaluru",
       "latitude": 12.9791198,
       "longitude": 77.5912997,
-      "population": 12327000,
-      "map": "maps/cities/india__bengaluru.png"
+      "population": 12327000
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Hyderabad",
       "latitude": 17.361666666,
       "longitude": 78.474722222,
-      "population": 9191000,
-      "map": "maps/cities/india__hyderabad.png"
+      "population": 9191000
     },
     {
       "role": "notable",
@@ -82,8 +77,81 @@
       "name": "Chennai",
       "latitude": 13.0825,
       "longitude": 80.275,
+      "population": 6599000
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1156",
+      "name": "Mumbai",
+      "latitude": 19.075833333,
+      "longitude": 72.8775,
+      "population": 15414288,
+      "map": "maps/cities/india__mumbai.png",
+      "answer_map": "maps/cities/india__mumbai-answer.png"
+    },
+    {
+      "id": "Q1353",
+      "name": "Delhi",
+      "latitude": 28.666666666,
+      "longitude": 77.216666666,
+      "population": 26495000,
+      "map": "maps/cities/india__delhi.png",
+      "answer_map": "maps/cities/india__delhi-answer.png"
+    },
+    {
+      "id": "Q1348",
+      "name": "Kolkata",
+      "latitude": 22.5675,
+      "longitude": 88.37,
+      "population": 4496694,
+      "map": "maps/cities/india__kolkata.png",
+      "answer_map": "maps/cities/india__kolkata-answer.png"
+    },
+    {
+      "id": "Q1355",
+      "name": "Bengaluru",
+      "latitude": 12.9791198,
+      "longitude": 77.5912997,
+      "population": 12327000,
+      "map": "maps/cities/india__bengaluru.png",
+      "answer_map": "maps/cities/india__bengaluru-answer.png"
+    },
+    {
+      "id": "Q1352",
+      "name": "Chennai",
+      "latitude": 13.0825,
+      "longitude": 80.275,
       "population": 6599000,
-      "map": "maps/cities/india__chennai.png"
+      "map": "maps/cities/india__chennai.png",
+      "answer_map": "maps/cities/india__chennai-answer.png"
+    },
+    {
+      "id": "Q66485",
+      "name": "Jaipur",
+      "latitude": 26.915,
+      "longitude": 75.82,
+      "population": 3073350,
+      "map": "maps/cities/india__jaipur.png",
+      "answer_map": "maps/cities/india__jaipur-answer.png"
+    },
+    {
+      "id": "Q1538",
+      "name": "Pune",
+      "latitude": 18.521111111,
+      "longitude": 73.855277777,
+      "population": 6200000,
+      "map": "maps/cities/india__pune.png",
+      "answer_map": "maps/cities/india__pune-answer.png"
+    },
+    {
+      "id": "Q42941",
+      "name": "Agra",
+      "latitude": 27.18,
+      "longitude": 78.02,
+      "population": 1585705,
+      "map": "maps/cities/india__agra.png",
+      "answer_map": "maps/cities/india__agra-answer.png"
     }
   ],
   "currencies": [
@@ -436,6 +504,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

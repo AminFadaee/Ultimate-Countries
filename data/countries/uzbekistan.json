@@ -39,8 +39,7 @@
       "name": "Tashkent",
       "latitude": 41.311111111,
       "longitude": 69.279722222,
-      "population": 2956384,
-      "map": "maps/cities/uzbekistan__tashkent.png"
+      "population": 2956384
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Samarkand",
       "latitude": 39.654722222,
       "longitude": 66.975833333,
-      "population": 546303,
-      "map": "maps/cities/uzbekistan__samarkand.png"
+      "population": 546303
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Nukus",
       "latitude": 42.464722222,
       "longitude": 59.602222222,
-      "population": 319583,
-      "map": "maps/cities/uzbekistan__nukus.png"
+      "population": 319583
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Bukhara",
       "latitude": 39.774722222,
       "longitude": 64.428611111,
-      "population": 280187,
-      "map": "maps/cities/uzbekistan__bukhara.png"
+      "population": 280187
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Fergana",
       "latitude": 40.386388888,
       "longitude": 71.786388888,
-      "population": 288850,
-      "map": "maps/cities/uzbekistan__fergana.png"
+      "population": 288850
     },
     {
       "role": "notable",
@@ -84,8 +79,18 @@
       "name": "Andijan",
       "latitude": 40.783333333,
       "longitude": 72.350555555,
-      "population": 547800,
-      "map": "maps/cities/uzbekistan__andijan.png"
+      "population": 547800
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q269",
+      "name": "Tashkent",
+      "latitude": 41.311111111,
+      "longitude": 69.279722222,
+      "population": 2956384,
+      "map": "maps/cities/uzbekistan__tashkent.png",
+      "answer_map": "maps/cities/uzbekistan__tashkent-answer.png"
     }
   ],
   "currencies": [
@@ -194,6 +199,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Reykjavík",
       "latitude": 64.1475,
       "longitude": -21.935,
-      "population": 138772,
-      "map": "maps/cities/iceland__reykjavik.png"
+      "population": 138772
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Akureyri",
       "latitude": 65.68353,
       "longitude": -18.0878,
-      "population": 20050,
-      "map": "maps/cities/iceland__akureyri.png"
+      "population": 20050
     },
     {
       "role": "notable",
@@ -55,8 +53,18 @@
       "name": "Keflavík",
       "latitude": 64.001143,
       "longitude": -22.553322,
-      "population": 23329,
-      "map": "maps/cities/iceland__keflavik.png"
+      "population": 23329
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1764",
+      "name": "Reykjavík",
+      "latitude": 64.1475,
+      "longitude": -21.935,
+      "population": 138772,
+      "map": "maps/cities/iceland__reykjavik.png",
+      "answer_map": "maps/cities/iceland__reykjavik-answer.png"
     }
   ],
   "currencies": [
@@ -159,6 +167,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

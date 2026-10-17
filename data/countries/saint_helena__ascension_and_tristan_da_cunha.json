@@ -37,10 +37,10 @@
       "name": "Jamestown",
       "latitude": -15.925138888,
       "longitude": -5.717916666,
-      "population": 714,
-      "map": "maps/cities/saint_helena__ascension_and_tristan_da_cunha__jamestown.png"
+      "population": 714
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "SHP",
@@ -103,6 +103,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

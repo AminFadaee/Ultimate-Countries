@@ -37,10 +37,10 @@
       "name": "Basseterre",
       "latitude": 17.298333333,
       "longitude": -62.734166666,
-      "population": 12920,
-      "map": "maps/cities/saint_kitts_and_nevis__basseterre.png"
+      "population": 12920
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XCD",
@@ -102,6 +102,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

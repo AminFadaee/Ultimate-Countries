@@ -37,8 +37,7 @@
       "name": "Conakry",
       "latitude": 9.509166666,
       "longitude": -13.712222222,
-      "population": 1667864,
-      "map": "maps/cities/guinea__conakry.png"
+      "population": 1667864
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Nzérékoré",
       "latitude": 7.752222222,
       "longitude": -8.821666666,
-      "population": 316065,
-      "map": "maps/cities/guinea__nzerekore.png"
+      "population": 316065
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Kankan",
       "latitude": 10.383333333,
       "longitude": -9.3,
-      "population": 190772,
-      "map": "maps/cities/guinea__kankan.png"
+      "population": 190772
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Kindia",
       "latitude": 10.05692,
       "longitude": -12.86576,
-      "population": null,
-      "map": "maps/cities/guinea__kindia.png"
+      "population": null
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "GNF",
@@ -180,6 +177,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Victoria",
       "latitude": -4.623611111,
       "longitude": 55.454444444,
-      "population": 24701,
-      "map": "maps/cities/seychelles__victoria.png"
+      "population": 24701
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "SCR",
@@ -140,6 +140,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Malé",
       "latitude": 4.175,
       "longitude": 73.508333333,
-      "population": 133019,
-      "map": "maps/cities/maldives__male.png"
+      "population": 133019
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "MVR",
@@ -141,6 +141,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

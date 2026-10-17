@@ -37,8 +37,7 @@
       "name": "Berlin",
       "latitude": 52.516666666,
       "longitude": 13.383333333,
-      "population": 3700577,
-      "map": "maps/cities/germany__berlin.png"
+      "population": 3700577
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Munich",
       "latitude": 48.1375,
       "longitude": 11.575,
-      "population": 1505036,
-      "map": "maps/cities/germany__munich.png"
+      "population": 1505036
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Hamburg",
       "latitude": 53.55,
       "longitude": 10.0,
-      "population": 1869473,
-      "map": "maps/cities/germany__hamburg.png"
+      "population": 1869473
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Frankfurt",
       "latitude": 50.110555555,
       "longitude": 8.682222222,
-      "population": 760656,
-      "map": "maps/cities/germany__frankfurt.png"
+      "population": 760656
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Cologne",
       "latitude": 50.942222222,
       "longitude": 6.957777777,
-      "population": 1025523,
-      "map": "maps/cities/germany__cologne.png"
+      "population": 1025523
     },
     {
       "role": "notable",
@@ -82,8 +77,81 @@
       "name": "Düsseldorf",
       "latitude": 51.225555555,
       "longitude": 6.776666666,
+      "population": 619444
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q64",
+      "name": "Berlin",
+      "latitude": 52.516666666,
+      "longitude": 13.383333333,
+      "population": 3700577,
+      "map": "maps/cities/germany__berlin.png",
+      "answer_map": "maps/cities/germany__berlin-answer.png"
+    },
+    {
+      "id": "Q1726",
+      "name": "Munich",
+      "latitude": 48.1375,
+      "longitude": 11.575,
+      "population": 1505036,
+      "map": "maps/cities/germany__munich.png",
+      "answer_map": "maps/cities/germany__munich-answer.png"
+    },
+    {
+      "id": "Q1055",
+      "name": "Hamburg",
+      "latitude": 53.55,
+      "longitude": 10.0,
+      "population": 1869473,
+      "map": "maps/cities/germany__hamburg.png",
+      "answer_map": "maps/cities/germany__hamburg-answer.png"
+    },
+    {
+      "id": "Q1794",
+      "name": "Frankfurt",
+      "latitude": 50.110555555,
+      "longitude": 8.682222222,
+      "population": 760656,
+      "map": "maps/cities/germany__frankfurt.png",
+      "answer_map": "maps/cities/germany__frankfurt-answer.png"
+    },
+    {
+      "id": "Q1718",
+      "name": "Düsseldorf",
+      "latitude": 51.225555555,
+      "longitude": 6.776666666,
       "population": 619444,
-      "map": "maps/cities/germany__dusseldorf.png"
+      "map": "maps/cities/germany__dusseldorf.png",
+      "answer_map": "maps/cities/germany__dusseldorf-answer.png"
+    },
+    {
+      "id": "Q365",
+      "name": "Cologne",
+      "latitude": 50.942222222,
+      "longitude": 6.957777777,
+      "population": 1025523,
+      "map": "maps/cities/germany__cologne.png",
+      "answer_map": "maps/cities/germany__cologne-answer.png"
+    },
+    {
+      "id": "Q1022",
+      "name": "Stuttgart",
+      "latitude": 48.7775,
+      "longitude": 9.18,
+      "population": 609365,
+      "map": "maps/cities/germany__stuttgart.png",
+      "answer_map": "maps/cities/germany__stuttgart-answer.png"
+    },
+    {
+      "id": "Q1731",
+      "name": "Dresden",
+      "latitude": 51.0493286,
+      "longitude": 13.7381437,
+      "population": 562764,
+      "map": "maps/cities/germany__dresden.png",
+      "answer_map": "maps/cities/germany__dresden-answer.png"
     }
   ],
   "currencies": [
@@ -275,6 +343,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

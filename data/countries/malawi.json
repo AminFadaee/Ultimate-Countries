@@ -37,8 +37,7 @@
       "name": "Lilongwe",
       "latitude": -13.986388888,
       "longitude": 33.768055555,
-      "population": 989318,
-      "map": "maps/cities/malawi__lilongwe.png"
+      "population": 989318
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Blantyre",
       "latitude": -15.786111111,
       "longitude": 35.005833333,
-      "population": 800264,
-      "map": "maps/cities/malawi__blantyre.png"
+      "population": 800264
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Zomba",
       "latitude": -15.385957,
       "longitude": 35.318801,
-      "population": 101140,
-      "map": "maps/cities/malawi__zomba.png"
+      "population": 101140
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Mzuzu",
       "latitude": -11.45,
       "longitude": 34.033333333,
-      "population": 150100,
-      "map": "maps/cities/malawi__mzuzu.png"
+      "population": 150100
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "MWK",
@@ -183,6 +180,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

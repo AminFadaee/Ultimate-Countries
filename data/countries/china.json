@@ -37,8 +37,7 @@
       "name": "Beijing",
       "latitude": 39.90403,
       "longitude": 116.407526,
-      "population": 21893095,
-      "map": "maps/cities/china__beijing.png"
+      "population": 21893095
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Shanghai",
       "latitude": 31.2325,
       "longitude": 121.469166666,
-      "population": 24870895,
-      "map": "maps/cities/china__shanghai.png"
+      "population": 24870895
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Chongqing",
       "latitude": 29.55,
       "longitude": 106.506944444,
-      "population": 32054159,
-      "map": "maps/cities/china__chongqing.png"
+      "population": 32054159
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Guangzhou",
       "latitude": 23.13,
       "longitude": 113.26,
-      "population": 18676605,
-      "map": "maps/cities/china__guangzhou.png"
+      "population": 18676605
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Tianjin",
       "latitude": 39.146666666,
       "longitude": 117.205555555,
-      "population": 13866009,
-      "map": "maps/cities/china__tianjin.png"
+      "population": 13866009
     },
     {
       "role": "notable",
@@ -82,8 +77,81 @@
       "name": "Wuhan",
       "latitude": 30.595,
       "longitude": 114.2975,
-      "population": 12326518,
-      "map": "maps/cities/china__wuhan.png"
+      "population": 12326518
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q956",
+      "name": "Beijing",
+      "latitude": 39.90403,
+      "longitude": 116.407526,
+      "population": 21893095,
+      "map": "maps/cities/china__beijing.png",
+      "answer_map": "maps/cities/china__beijing-answer.png"
+    },
+    {
+      "id": "Q8686",
+      "name": "Shanghai",
+      "latitude": 31.2325,
+      "longitude": 121.469166666,
+      "population": 24870895,
+      "map": "maps/cities/china__shanghai.png",
+      "answer_map": "maps/cities/china__shanghai-answer.png"
+    },
+    {
+      "id": "Q16572",
+      "name": "Guangzhou",
+      "latitude": 23.13,
+      "longitude": 113.26,
+      "population": 18676605,
+      "map": "maps/cities/china__guangzhou.png",
+      "answer_map": "maps/cities/china__guangzhou-answer.png"
+    },
+    {
+      "id": "Q11736",
+      "name": "Tianjin",
+      "latitude": 39.146666666,
+      "longitude": 117.205555555,
+      "population": 13866009,
+      "map": "maps/cities/china__tianjin.png",
+      "answer_map": "maps/cities/china__tianjin-answer.png"
+    },
+    {
+      "id": "Q30002",
+      "name": "Chengdu",
+      "latitude": 30.66,
+      "longitude": 104.063333333,
+      "population": 20937757,
+      "map": "maps/cities/china__chengdu.png",
+      "answer_map": "maps/cities/china__chengdu-answer.png"
+    },
+    {
+      "id": "Q15174",
+      "name": "Shenzhen",
+      "latitude": 22.546666666,
+      "longitude": 114.054444444,
+      "population": 17494398,
+      "map": "maps/cities/china__shenzhen.png",
+      "answer_map": "maps/cities/china__shenzhen-answer.png"
+    },
+    {
+      "id": "Q5826",
+      "name": "Xi'an",
+      "latitude": 34.261111111,
+      "longitude": 108.942222222,
+      "population": 12952907,
+      "map": "maps/cities/china__xi_an.png",
+      "answer_map": "maps/cities/china__xi_an-answer.png"
+    },
+    {
+      "id": "Q4970",
+      "name": "Hangzhou",
+      "latitude": 30.25,
+      "longitude": 120.1675,
+      "population": 11936010,
+      "map": "maps/cities/china__hangzhou.png",
+      "answer_map": "maps/cities/china__hangzhou-answer.png"
     }
   ],
   "currencies": [
@@ -210,6 +278,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

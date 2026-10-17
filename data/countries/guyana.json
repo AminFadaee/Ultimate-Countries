@@ -37,8 +37,7 @@
       "name": "Georgetown",
       "latitude": 6.805833333,
       "longitude": -58.150833333,
-      "population": 235017,
-      "map": "maps/cities/guyana__georgetown.png"
+      "population": 235017
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Linden",
       "latitude": 6.0,
       "longitude": -58.3,
-      "population": 28674,
-      "map": "maps/cities/guyana__linden.png"
+      "population": 28674
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "GYD",
@@ -140,6 +139,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

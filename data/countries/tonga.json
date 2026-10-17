@@ -37,10 +37,10 @@
       "name": "Nukuʻalofa",
       "latitude": -21.1343401,
       "longitude": -175.201808,
-      "population": 23221,
-      "map": "maps/cities/tonga__nukualofa.png"
+      "population": 23221
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "TOP",
@@ -133,6 +133,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

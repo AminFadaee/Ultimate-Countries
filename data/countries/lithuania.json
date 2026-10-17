@@ -37,8 +37,7 @@
       "name": "Vilnius",
       "latitude": 54.687222222,
       "longitude": 25.28,
-      "population": 581475,
-      "map": "maps/cities/lithuania__vilnius.png"
+      "population": 619405
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Kaunas",
       "latitude": 54.9,
       "longitude": 23.933333333,
-      "population": 305120,
-      "map": "maps/cities/lithuania__kaunas.png"
+      "population": 305120
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Klaipėda",
       "latitude": 55.7125,
       "longitude": 21.135,
-      "population": 158420,
-      "map": "maps/cities/lithuania__klaipeda.png"
+      "population": 158420
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Šiauliai",
       "latitude": 55.928055555,
       "longitude": 23.316666666,
-      "population": 104300,
-      "map": "maps/cities/lithuania__siauliai.png"
+      "population": 104300
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Panevėžys",
       "latitude": 55.725,
       "longitude": 24.363888888,
-      "population": 87913,
-      "map": "maps/cities/lithuania__panevezys.png"
+      "population": 87913
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Alytus",
       "latitude": 54.4,
       "longitude": 24.05,
-      "population": 51856,
-      "map": "maps/cities/lithuania__alytus.png"
+      "population": 51856
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q216",
+      "name": "Vilnius",
+      "latitude": 54.687222222,
+      "longitude": 25.28,
+      "population": 619405,
+      "map": "maps/cities/lithuania__vilnius.png",
+      "answer_map": "maps/cities/lithuania__vilnius-answer.png"
     }
   ],
   "currencies": [
@@ -198,6 +203,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -40,8 +40,7 @@
       "name": "Baku",
       "latitude": 40.366655555,
       "longitude": 49.835183333,
-      "population": 2300500,
-      "map": "maps/cities/azerbaijan__baku.png"
+      "population": 2300500
     },
     {
       "role": "notable",
@@ -49,8 +48,7 @@
       "name": "Ganja",
       "latitude": 40.682777777,
       "longitude": 46.360555555,
-      "population": 328800,
-      "map": "maps/cities/azerbaijan__ganja.png"
+      "population": 328800
     },
     {
       "role": "notable",
@@ -58,8 +56,7 @@
       "name": "Sumgait",
       "latitude": 40.596111111,
       "longitude": 49.67,
-      "population": 422600,
-      "map": "maps/cities/azerbaijan__sumgait.png"
+      "population": 422600
     },
     {
       "role": "notable",
@@ -67,8 +64,7 @@
       "name": "Nakhchivan",
       "latitude": 39.208888888,
       "longitude": 45.412222222,
-      "population": 94400,
-      "map": "maps/cities/azerbaijan__nakhchivan.png"
+      "population": 94400
     },
     {
       "role": "notable",
@@ -76,8 +72,7 @@
       "name": "Mingachevir",
       "latitude": 40.76395,
       "longitude": 47.05953,
-      "population": 101200,
-      "map": "maps/cities/azerbaijan__mingachevir.png"
+      "population": 101200
     },
     {
       "role": "notable",
@@ -85,8 +80,18 @@
       "name": "Khankendi",
       "latitude": 39.815277777,
       "longitude": 46.751944444,
-      "population": 49848,
-      "map": "maps/cities/azerbaijan__khankendi.png"
+      "population": 49848
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q9248",
+      "name": "Baku",
+      "latitude": 40.366655555,
+      "longitude": 49.835183333,
+      "population": 2300500,
+      "map": "maps/cities/azerbaijan__baku.png",
+      "answer_map": "maps/cities/azerbaijan__baku-answer.png"
     }
   ],
   "currencies": [
@@ -197,6 +202,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

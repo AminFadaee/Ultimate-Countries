@@ -37,8 +37,7 @@
       "name": "Warsaw",
       "latitude": 52.23,
       "longitude": 21.011111111,
-      "population": 1862402,
-      "map": "maps/cities/poland__warsaw.png"
+      "population": 1862402
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Kraków",
       "latitude": 50.061388888,
       "longitude": 19.937222222,
-      "population": 804237,
-      "map": "maps/cities/poland__krakow.png"
+      "population": 804237
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Wrocław",
       "latitude": 51.11,
       "longitude": 17.0325,
-      "population": 673531,
-      "map": "maps/cities/poland__wrocaw.png"
+      "population": 673531
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Gdańsk",
       "latitude": 54.3482907,
       "longitude": 18.6540233,
-      "population": 487834,
-      "map": "maps/cities/poland__gdansk.png"
+      "population": 487834
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Poznań",
       "latitude": 52.408333333,
       "longitude": 16.933611111,
-      "population": 546859,
-      "map": "maps/cities/poland__poznan.png"
+      "population": 546859
     },
     {
       "role": "notable",
@@ -82,8 +77,27 @@
       "name": "Łódź",
       "latitude": 51.75,
       "longitude": 19.466666666,
-      "population": 648711,
-      "map": "maps/cities/poland__odz.png"
+      "population": 648711
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q270",
+      "name": "Warsaw",
+      "latitude": 52.23,
+      "longitude": 21.011111111,
+      "population": 1862402,
+      "map": "maps/cities/poland__warsaw.png",
+      "answer_map": "maps/cities/poland__warsaw-answer.png"
+    },
+    {
+      "id": "Q31487",
+      "name": "Kraków",
+      "latitude": 50.061388888,
+      "longitude": 19.937222222,
+      "population": 804237,
+      "map": "maps/cities/poland__krakow.png",
+      "answer_map": "maps/cities/poland__krakow-answer.png"
     }
   ],
   "currencies": [
@@ -221,6 +235,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Nouakchott",
       "latitude": 18.08581,
       "longitude": -15.9785,
-      "population": 1446761,
-      "map": "maps/cities/mauritania__nouakchott.png"
+      "population": 1446761
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Nouadhibou",
       "latitude": 20.91475,
       "longitude": -17.050166666,
-      "population": 173525,
-      "map": "maps/cities/mauritania__nouadhibou.png"
+      "population": 173525
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Kiffa",
       "latitude": 16.622888888,
       "longitude": -11.399111111,
-      "population": 84101,
-      "map": "maps/cities/mauritania__kiffa.png"
+      "population": 84101
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Atar",
       "latitude": 20.518555555,
       "longitude": -13.053888888,
-      "population": 35170,
-      "map": "maps/cities/mauritania__atar.png"
+      "population": 35170
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "MRU",
@@ -177,6 +174,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

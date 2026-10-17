@@ -37,10 +37,10 @@
       "name": "Road Town",
       "latitude": 18.433333333,
       "longitude": -64.616666666,
-      "population": 12603,
-      "map": "maps/cities/british_virgin_islands__road_town.png"
+      "population": 12603
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "USD",
@@ -97,6 +97,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Apia",
       "latitude": -13.833333333,
       "longitude": -171.833333333,
-      "population": 37708,
-      "map": "maps/cities/samoa__apia.png"
+      "population": 37708
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "WST",
@@ -139,6 +139,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

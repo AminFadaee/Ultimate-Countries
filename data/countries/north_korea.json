@@ -37,8 +37,7 @@
       "name": "Pyongyang",
       "latitude": 39.016666666,
       "longitude": 125.7475,
-      "population": 2863000,
-      "map": "maps/cities/north_korea__pyongyang.png"
+      "population": 2863000
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Hamhung",
       "latitude": 39.965555555,
       "longitude": 127.488611111,
-      "population": 768551,
-      "map": "maps/cities/north_korea__hamhung.png"
+      "population": 768551
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Nampo",
       "latitude": 38.733333333,
       "longitude": 125.4,
-      "population": 366815,
-      "map": "maps/cities/north_korea__nampo.png"
+      "population": 366815
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Chongjin",
       "latitude": 41.783333333,
       "longitude": 129.783333333,
-      "population": 667929,
-      "map": "maps/cities/north_korea__chongjin.png"
+      "population": 667929
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Kaesong",
       "latitude": 37.971666666,
       "longitude": 126.552777777,
-      "population": 308440,
-      "map": "maps/cities/north_korea__kaesong.png"
+      "population": 308440
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Wonsan",
       "latitude": 39.171444,
       "longitude": 127.433509,
-      "population": 363127,
-      "map": "maps/cities/north_korea__wonsan.png"
+      "population": 363127
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q18808",
+      "name": "Pyongyang",
+      "latitude": 39.016666666,
+      "longitude": 125.7475,
+      "population": 2863000,
+      "map": "maps/cities/north_korea__pyongyang.png",
+      "answer_map": "maps/cities/north_korea__pyongyang-answer.png"
     }
   ],
   "currencies": [
@@ -167,6 +172,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

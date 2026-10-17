@@ -39,8 +39,7 @@
       "name": "Ulaanbaatar",
       "latitude": 47.921357,
       "longitude": 106.905515,
-      "population": 1396288,
-      "map": "maps/cities/mongolia__ulaanbaatar.png"
+      "population": 1396288
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Erdenet",
       "latitude": 49.027777777,
       "longitude": 104.044444444,
-      "population": 106810,
-      "map": "maps/cities/mongolia__erdenet.png"
+      "population": 106810
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Darkhan",
       "latitude": 49.486666666,
       "longitude": 105.922777777,
-      "population": 74738,
-      "map": "maps/cities/mongolia__darkhan.png"
+      "population": 74738
     },
     {
       "role": "notable",
@@ -66,8 +63,18 @@
       "name": "Choibalsan",
       "latitude": 48.070555555,
       "longitude": 114.522777777,
-      "population": 38150,
-      "map": "maps/cities/mongolia__choibalsan.png"
+      "population": 38150
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q23430",
+      "name": "Ulaanbaatar",
+      "latitude": 47.921357,
+      "longitude": 106.905515,
+      "population": 1396288,
+      "map": "maps/cities/mongolia__ulaanbaatar.png",
+      "answer_map": "maps/cities/mongolia__ulaanbaatar-answer.png"
     }
   ],
   "currencies": [
@@ -172,6 +179,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

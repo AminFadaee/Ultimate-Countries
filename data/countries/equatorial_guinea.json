@@ -39,8 +39,7 @@
       "name": "Malabo",
       "latitude": 3.752063888,
       "longitude": 8.7737,
-      "population": 297000,
-      "map": "maps/cities/equatorial_guinea__malabo.png"
+      "population": 297000
     },
     {
       "role": "notable",
@@ -48,10 +47,10 @@
       "name": "Bata",
       "latitude": 1.865,
       "longitude": 9.77,
-      "population": 290000,
-      "map": "maps/cities/equatorial_guinea__bata.png"
+      "population": 290000
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XAF",
@@ -167,6 +166,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

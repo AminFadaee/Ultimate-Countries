@@ -37,8 +37,7 @@
       "name": "Bucharest",
       "latitude": 44.413361111,
       "longitude": 26.097777777,
-      "population": 1716961,
-      "map": "maps/cities/romania__bucharest.png"
+      "population": 1716961
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Cluj-Napoca",
       "latitude": 46.76891,
       "longitude": 23.59066,
-      "population": 286598,
-      "map": "maps/cities/romania__cluj_napoca.png"
+      "population": 286598
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Constanța",
       "latitude": 44.1767161,
       "longitude": 28.6507598,
-      "population": 263707,
-      "map": "maps/cities/romania__constanta.png"
+      "population": 263707
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Iași",
       "latitude": 47.162222222,
       "longitude": 27.588888888,
-      "population": 271692,
-      "map": "maps/cities/romania__iasi.png"
+      "population": 271692
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Timișoara",
       "latitude": 45.759722222,
       "longitude": 21.23,
-      "population": 250849,
-      "map": "maps/cities/romania__timisoara.png"
+      "population": 250849
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Brașov",
       "latitude": 45.652222222,
       "longitude": 25.610555555,
-      "population": 237589,
-      "map": "maps/cities/romania__brasov.png"
+      "population": 237589
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q19660",
+      "name": "Bucharest",
+      "latitude": 44.413361111,
+      "longitude": 26.097777777,
+      "population": 1716961,
+      "map": "maps/cities/romania__bucharest.png",
+      "answer_map": "maps/cities/romania__bucharest-answer.png"
     }
   ],
   "currencies": [
@@ -220,6 +225,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -40,8 +40,7 @@
       "name": "Abu Dhabi",
       "latitude": 24.451111111,
       "longitude": 54.396944444,
-      "population": 1570000,
-      "map": "maps/cities/united_arab_emirates__abu_dhabi.png"
+      "population": 1570000
     },
     {
       "role": "notable",
@@ -49,8 +48,7 @@
       "name": "Dubai",
       "latitude": 25.269722222,
       "longitude": 55.309444444,
-      "population": 3944751,
-      "map": "maps/cities/united_arab_emirates__dubai.png"
+      "population": 3944751
     },
     {
       "role": "notable",
@@ -58,8 +56,7 @@
       "name": "Al Ain",
       "latitude": 24.2075,
       "longitude": 55.744722222,
-      "population": 766936,
-      "map": "maps/cities/united_arab_emirates__al_ain.png"
+      "population": 766936
     },
     {
       "role": "notable",
@@ -67,8 +64,27 @@
       "name": "Ajman",
       "latitude": 25.399444444,
       "longitude": 55.479722222,
-      "population": 490035,
-      "map": "maps/cities/united_arab_emirates__ajman.png"
+      "population": 490035
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q612",
+      "name": "Dubai",
+      "latitude": 25.269722222,
+      "longitude": 55.309444444,
+      "population": 3944751,
+      "map": "maps/cities/united_arab_emirates__dubai.png",
+      "answer_map": "maps/cities/united_arab_emirates__dubai-answer.png"
+    },
+    {
+      "id": "Q1519",
+      "name": "Abu Dhabi",
+      "latitude": 24.451111111,
+      "longitude": 54.396944444,
+      "population": 1570000,
+      "map": "maps/cities/united_arab_emirates__abu_dhabi.png",
+      "answer_map": "maps/cities/united_arab_emirates__abu_dhabi-answer.png"
     }
   ],
   "currencies": [
@@ -195,6 +211,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

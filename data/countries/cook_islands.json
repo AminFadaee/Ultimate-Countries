@@ -37,10 +37,10 @@
       "name": "Avarua",
       "latitude": -21.207,
       "longitude": -159.771,
-      "population": 4798,
-      "map": "maps/cities/cook_islands__avarua.png"
+      "population": 4798
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "NZD",
@@ -109,6 +109,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "San José",
       "latitude": 9.932738888,
       "longitude": -84.079613888,
-      "population": 335007,
-      "map": "maps/cities/costa_rica__san_jose.png"
+      "population": 335007
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Limón",
       "latitude": 10.0022155,
       "longitude": -83.0840367,
-      "population": 71514,
-      "map": "maps/cities/costa_rica__limon.png"
+      "population": 71514
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Liberia",
       "latitude": 10.629638888,
       "longitude": -85.438252777,
-      "population": 65922,
-      "map": "maps/cities/costa_rica__liberia.png"
+      "population": 65922
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Puntarenas",
       "latitude": 9.977302777,
       "longitude": -84.834641666,
-      "population": 41528,
-      "map": "maps/cities/costa_rica__puntarenas.png"
+      "population": 41528
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "CRC",
@@ -160,6 +157,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

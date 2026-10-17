@@ -37,8 +37,7 @@
       "name": "Budapest",
       "latitude": 47.498333333,
       "longitude": 19.040833333,
-      "population": 1685209,
-      "map": "maps/cities/hungary__budapest.png"
+      "population": 1675777
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Debrecen",
       "latitude": 47.53,
       "longitude": 21.639166666,
-      "population": 202130,
-      "map": "maps/cities/hungary__debrecen.png"
+      "population": 202130
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Szeged",
       "latitude": 46.25,
       "longitude": 20.166666666,
-      "population": 157282,
-      "map": "maps/cities/hungary__szeged.png"
+      "population": 157282
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Pécs",
       "latitude": 46.070833333,
       "longitude": 18.233055555,
-      "population": 139412,
-      "map": "maps/cities/hungary__pecs.png"
+      "population": 139412
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Miskolc",
       "latitude": 48.1,
       "longitude": 20.783333333,
-      "population": 141440,
-      "map": "maps/cities/hungary__miskolc.png"
+      "population": 141440
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Győr",
       "latitude": 47.684166666,
       "longitude": 17.634444444,
-      "population": 129373,
-      "map": "maps/cities/hungary__gyor.png"
+      "population": 129373
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1781",
+      "name": "Budapest",
+      "latitude": 47.498333333,
+      "longitude": 19.040833333,
+      "population": 1675777,
+      "map": "maps/cities/hungary__budapest.png",
+      "answer_map": "maps/cities/hungary__budapest-answer.png"
     }
   ],
   "currencies": [
@@ -212,6 +217,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

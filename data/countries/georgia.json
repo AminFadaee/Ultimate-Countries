@@ -37,8 +37,7 @@
       "name": "Tbilisi",
       "latitude": 41.7225,
       "longitude": 44.7925,
-      "population": 1331485,
-      "map": "maps/cities/georgia__tbilisi.png"
+      "population": 1331485
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Batumi",
       "latitude": 41.645833333,
       "longitude": 41.641666666,
-      "population": 235668,
-      "map": "maps/cities/georgia__batumi.png"
+      "population": 235668
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Kutaisi",
       "latitude": 42.271666666,
       "longitude": 42.705555555,
-      "population": 160971,
-      "map": "maps/cities/georgia__kutaisi.png"
+      "population": 160971
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Gori",
       "latitude": 41.981686111,
       "longitude": 44.112416666,
-      "population": 44524,
-      "map": "maps/cities/georgia__gori.png"
+      "population": 44524
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Rustavi",
       "latitude": 41.543611111,
       "longitude": 45.011666666,
-      "population": 132047,
-      "map": "maps/cities/georgia__rustavi.png"
+      "population": 132047
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Poti",
       "latitude": 42.14194,
       "longitude": 41.67639,
-      "population": 38845,
-      "map": "maps/cities/georgia__poti.png"
+      "population": 38845
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q994",
+      "name": "Tbilisi",
+      "latitude": 41.7225,
+      "longitude": 44.7925,
+      "population": 1331485,
+      "map": "maps/cities/georgia__tbilisi.png",
+      "answer_map": "maps/cities/georgia__tbilisi-answer.png"
     }
   ],
   "currencies": [
@@ -210,6 +215,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

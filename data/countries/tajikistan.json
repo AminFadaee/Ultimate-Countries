@@ -39,8 +39,7 @@
       "name": "Dushanbe",
       "latitude": 38.573055555,
       "longitude": 68.786388888,
-      "population": 948251,
-      "map": "maps/cities/tajikistan__dushanbe.png"
+      "population": 948251
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Khujand",
       "latitude": 40.279444444,
       "longitude": 69.631944444,
-      "population": 198700,
-      "map": "maps/cities/tajikistan__khujand.png"
+      "population": 198700
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Bokhtar",
       "latitude": 37.836388888,
       "longitude": 68.780277777,
-      "population": 126700,
-      "map": "maps/cities/tajikistan__bokhtar.png"
+      "population": 126700
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Kulob",
       "latitude": 37.911944444,
       "longitude": 69.780833333,
-      "population": 106300,
-      "map": "maps/cities/tajikistan__kulob.png"
+      "population": 106300
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Istaravshan",
       "latitude": 39.910833333,
       "longitude": 69.006388888,
-      "population": 64300,
-      "map": "maps/cities/tajikistan__istaravshan.png"
+      "population": 64300
     },
     {
       "role": "notable",
@@ -84,10 +79,10 @@
       "name": "Khorugh",
       "latitude": 37.491666666,
       "longitude": 71.5575,
-      "population": 31100,
-      "map": "maps/cities/tajikistan__khorugh.png"
+      "population": 31100
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "TJS",
@@ -184,6 +179,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

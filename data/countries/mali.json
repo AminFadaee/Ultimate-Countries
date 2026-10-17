@@ -37,8 +37,7 @@
       "name": "Bamako",
       "latitude": 12.645833333,
       "longitude": -7.992222222,
-      "population": 4227569,
-      "map": "maps/cities/mali__bamako.png"
+      "population": 4227569
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Ségou",
       "latitude": 13.45,
       "longitude": -6.266666666,
-      "population": 133501,
-      "map": "maps/cities/mali__segou.png"
+      "population": 133501
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Sikasso",
       "latitude": 11.316666666,
       "longitude": -5.666666666,
-      "population": 213977,
-      "map": "maps/cities/mali__sikasso.png"
+      "population": 213977
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Gao",
       "latitude": 16.266666666,
       "longitude": -0.05,
-      "population": 49483,
-      "map": "maps/cities/mali__gao.png"
+      "population": 49483
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Timbuktu",
       "latitude": 16.77348,
       "longitude": -3.00742,
-      "population": 35330,
-      "map": "maps/cities/mali__timbuktu.png"
+      "population": 35330
     },
     {
       "role": "notable",
@@ -82,10 +77,10 @@
       "name": "Mopti",
       "latitude": 14.4873,
       "longitude": -4.1896,
-      "population": 120786,
-      "map": "maps/cities/mali__mopti.png"
+      "population": 120786
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XOF",
@@ -278,6 +273,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

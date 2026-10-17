@@ -37,8 +37,7 @@
       "name": "Juba",
       "latitude": 4.853888888,
       "longitude": 31.5825,
-      "population": 500088,
-      "map": "maps/cities/south_sudan__juba.png"
+      "population": 500088
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Wau",
       "latitude": 7.7,
       "longitude": 27.983333333,
-      "population": 320752,
-      "map": "maps/cities/south_sudan__wau.png"
+      "population": 320752
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Malakal",
       "latitude": 9.533333333,
       "longitude": 31.65,
-      "population": 147450,
-      "map": "maps/cities/south_sudan__malakal.png"
+      "population": 147450
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Aweil",
       "latitude": 8.766666666,
       "longitude": 27.4,
-      "population": 40054,
-      "map": "maps/cities/south_sudan__aweil.png"
+      "population": 40054
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "SSP",
@@ -166,6 +163,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

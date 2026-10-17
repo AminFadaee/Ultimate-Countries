@@ -37,10 +37,10 @@
       "name": "San Marino",
       "latitude": 43.932011111,
       "longitude": 12.44845,
-      "population": 4040,
-      "map": "maps/cities/san_marino__san_marino.png"
+      "population": 4040
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -97,6 +97,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

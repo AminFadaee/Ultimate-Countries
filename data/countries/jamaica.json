@@ -37,8 +37,7 @@
       "name": "Kingston",
       "latitude": 17.971388888,
       "longitude": -76.793055555,
-      "population": 937700,
-      "map": "maps/cities/jamaica__kingston.png"
+      "population": 937700
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Montego Bay",
       "latitude": 18.466666666,
       "longitude": -77.916666666,
-      "population": 123994,
-      "map": "maps/cities/jamaica__montego_bay.png"
+      "population": 123994
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "JMD",
@@ -146,6 +145,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

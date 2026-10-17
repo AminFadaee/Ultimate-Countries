@@ -37,10 +37,10 @@
       "name": "Funafuti",
       "latitude": -8.504777777,
       "longitude": 179.117361111,
-      "population": 6025,
-      "map": "maps/cities/tuvalu__funafuti.png"
+      "population": 6025
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "AUD",
@@ -116,6 +116,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Papeete",
       "latitude": -17.539722222,
       "longitude": -149.568888888,
-      "population": 26654,
-      "map": "maps/cities/french_polynesia__papeete.png"
+      "population": 26654
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XPF",
@@ -138,6 +138,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Port-au-Prince",
       "latitude": 18.546944444,
       "longitude": -72.340277777,
-      "population": 987310,
-      "map": "maps/cities/haiti__port_au_prince.png"
+      "population": 987310
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Cap-Haïtien",
       "latitude": 19.75,
       "longitude": -72.2,
-      "population": 190289,
-      "map": "maps/cities/haiti__cap_haitien.png"
+      "population": 190289
     },
     {
       "role": "notable",
@@ -55,10 +53,10 @@
       "name": "Jacmel",
       "latitude": 18.234166666,
       "longitude": -72.534722222,
-      "population": 221965,
-      "map": "maps/cities/haiti__jacmel.png"
+      "population": 221965
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "HTG",
@@ -149,6 +147,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

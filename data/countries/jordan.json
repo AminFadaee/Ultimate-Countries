@@ -37,8 +37,7 @@
       "name": "Amman",
       "latitude": 31.930983,
       "longitude": 35.926084,
-      "population": 4007526,
-      "map": "maps/cities/jordan__amman.png"
+      "population": 4007526
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Zarqa",
       "latitude": 32.083333333,
       "longitude": 36.1,
-      "population": 481300,
-      "map": "maps/cities/jordan__zarqa.png"
+      "population": 481300
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Irbid",
       "latitude": 32.555555555,
       "longitude": 35.85,
-      "population": 1911600,
-      "map": "maps/cities/jordan__irbid.png"
+      "population": 1911600
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Aqaba",
       "latitude": 29.532222222,
       "longitude": 35.006111111,
-      "population": 140000,
-      "map": "maps/cities/jordan__aqaba.png"
+      "population": 140000
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Jerash",
       "latitude": 32.272280555,
       "longitude": 35.891397222,
-      "population": 50745,
-      "map": "maps/cities/jordan__jerash.png"
+      "population": 50745
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Salt",
       "latitude": 32.039166666,
       "longitude": 35.727222222,
-      "population": 88900,
-      "map": "maps/cities/jordan__salt.png"
+      "population": 88900
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3805",
+      "name": "Amman",
+      "latitude": 31.930983,
+      "longitude": 35.926084,
+      "population": 4007526,
+      "map": "maps/cities/jordan__amman.png",
+      "answer_map": "maps/cities/jordan__amman-answer.png"
     }
   ],
   "currencies": [
@@ -180,6 +185,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

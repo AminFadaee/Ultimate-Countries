@@ -38,8 +38,7 @@
       "name": "Moscow",
       "latitude": 55.750555555,
       "longitude": 37.6175,
-      "population": 13274285,
-      "map": "maps/cities/russia__moscow.png"
+      "population": 13274285
     },
     {
       "role": "notable",
@@ -47,8 +46,7 @@
       "name": "Saint Petersburg",
       "latitude": 59.95,
       "longitude": 30.316666666,
-      "population": 5652922,
-      "map": "maps/cities/russia__saint_petersburg.png"
+      "population": 5652922
     },
     {
       "role": "notable",
@@ -56,8 +54,7 @@
       "name": "Kazan",
       "latitude": 55.790833333,
       "longitude": 49.114444444,
-      "population": 1329825,
-      "map": "maps/cities/russia__kazan.png"
+      "population": 1329825
     },
     {
       "role": "notable",
@@ -65,8 +62,7 @@
       "name": "Krasnodar",
       "latitude": 45.033333333,
       "longitude": 38.983333333,
-      "population": 1154885,
-      "map": "maps/cities/russia__krasnodar.png"
+      "population": 1154885
     },
     {
       "role": "notable",
@@ -74,8 +70,7 @@
       "name": "Novosibirsk",
       "latitude": 55.033333333,
       "longitude": 82.916666666,
-      "population": 1637266,
-      "map": "maps/cities/russia__novosibirsk.png"
+      "population": 1637266
     },
     {
       "role": "notable",
@@ -83,8 +78,45 @@
       "name": "Yekaterinburg",
       "latitude": 56.835555555,
       "longitude": 60.612777777,
-      "population": 1468833,
-      "map": "maps/cities/russia__yekaterinburg.png"
+      "population": 1468833
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q649",
+      "name": "Moscow",
+      "latitude": 55.750555555,
+      "longitude": 37.6175,
+      "population": 13274285,
+      "map": "maps/cities/russia__moscow.png",
+      "answer_map": "maps/cities/russia__moscow-answer.png"
+    },
+    {
+      "id": "Q656",
+      "name": "Saint Petersburg",
+      "latitude": 59.95,
+      "longitude": 30.316666666,
+      "population": 5652922,
+      "map": "maps/cities/russia__saint_petersburg.png",
+      "answer_map": "maps/cities/russia__saint_petersburg-answer.png"
+    },
+    {
+      "id": "Q3646",
+      "name": "Krasnodar",
+      "latitude": 45.033333333,
+      "longitude": 38.983333333,
+      "population": 1154885,
+      "map": "maps/cities/russia__krasnodar.png",
+      "answer_map": "maps/cities/russia__krasnodar-answer.png"
+    },
+    {
+      "id": "Q39420",
+      "name": "Sochi",
+      "latitude": 43.585277777,
+      "longitude": 39.720277777,
+      "population": 445149,
+      "map": "maps/cities/russia__sochi.png",
+      "answer_map": "maps/cities/russia__sochi-answer.png"
     }
   ],
   "currencies": [
@@ -391,6 +423,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

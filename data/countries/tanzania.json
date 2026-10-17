@@ -37,8 +37,7 @@
       "name": "Dodoma",
       "latitude": -6.1835,
       "longitude": 35.746,
-      "population": 213636,
-      "map": "maps/cities/tanzania__dodoma.png"
+      "population": 213636
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Dar es Salaam",
       "latitude": -6.816111111,
       "longitude": 39.280277777,
-      "population": 4715000,
-      "map": "maps/cities/tanzania__dar_es_salaam.png"
+      "population": 4715000
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Mwanza",
       "latitude": -2.516666666,
       "longitude": 32.9,
-      "population": 706453,
-      "map": "maps/cities/tanzania__mwanza.png"
+      "population": 706453
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Zanzibar City",
       "latitude": -6.166666666,
       "longitude": 39.2,
-      "population": 709809,
-      "map": "maps/cities/tanzania__zanzibar_city.png"
+      "population": 709809
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Arusha",
       "latitude": -3.366666666,
       "longitude": 36.683333333,
-      "population": 416442,
-      "map": "maps/cities/tanzania__arusha.png"
+      "population": 416442
     },
     {
       "role": "notable",
@@ -82,10 +77,10 @@
       "name": "Morogoro",
       "latitude": -6.824166666,
       "longitude": 37.663333333,
-      "population": 471409,
-      "map": "maps/cities/tanzania__morogoro.png"
+      "population": 471409
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "TZS",
@@ -264,6 +259,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

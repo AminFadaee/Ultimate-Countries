@@ -37,8 +37,7 @@
       "name": "Podgorica",
       "latitude": 42.441388888,
       "longitude": 19.262777777,
-      "population": 150977,
-      "map": "maps/cities/montenegro__podgorica.png"
+      "population": 150977
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Nikšić",
       "latitude": 42.7731,
       "longitude": 18.94446,
-      "population": 58212,
-      "map": "maps/cities/montenegro__niksic.png"
+      "population": 58212
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Cetinje",
       "latitude": 42.389444444,
       "longitude": 18.924722222,
-      "population": 13991,
-      "map": "maps/cities/montenegro__cetinje.png"
+      "population": 13991
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Herceg Novi",
       "latitude": 42.453055555,
       "longitude": 18.5375,
-      "population": 19536,
-      "map": "maps/cities/montenegro__herceg_novi.png"
+      "population": 19536
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Bijelo Polje",
       "latitude": 43.029166666,
       "longitude": 19.745555555,
-      "population": 15883,
-      "map": "maps/cities/montenegro__bijelo_polje.png"
+      "population": 15883
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Bar",
       "latitude": 42.1,
       "longitude": 19.1,
-      "population": 13719,
-      "map": "maps/cities/montenegro__bar.png"
+      "population": 13719
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q23564",
+      "name": "Podgorica",
+      "latitude": 42.441388888,
+      "longitude": 19.262777777,
+      "population": 150977,
+      "map": "maps/cities/montenegro__podgorica.png",
+      "answer_map": "maps/cities/montenegro__podgorica-answer.png"
     }
   ],
   "currencies": [
@@ -176,6 +181,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -38,8 +38,7 @@
       "name": "Ramallah",
       "latitude": 31.896944444,
       "longitude": 35.201666666,
-      "population": 43880,
-      "map": "maps/cities/palestine__ramallah.png"
+      "population": 43880
     },
     {
       "role": "capital",
@@ -47,8 +46,7 @@
       "name": "Jerusalem",
       "latitude": 31.776679,
       "longitude": 35.234156,
-      "population": 1050151,
-      "map": "maps/cities/israel__jerusalem.png"
+      "population": 1050151
     },
     {
       "role": "notable",
@@ -56,8 +54,7 @@
       "name": "Gaza City",
       "latitude": 31.5075,
       "longitude": 34.459722222,
-      "population": 590481,
-      "map": "maps/cities/palestine__gaza_city.png"
+      "population": 590481
     },
     {
       "role": "notable",
@@ -65,8 +62,7 @@
       "name": "Hebron",
       "latitude": 31.535,
       "longitude": 35.098611111,
-      "population": 215452,
-      "map": "maps/cities/palestine__hebron.png"
+      "population": 215452
     },
     {
       "role": "notable",
@@ -74,8 +70,7 @@
       "name": "Nablus",
       "latitude": 32.220833333,
       "longitude": 35.262777777,
-      "population": 177638,
-      "map": "maps/cities/palestine__nablus.png"
+      "population": 177638
     },
     {
       "role": "notable",
@@ -83,10 +78,10 @@
       "name": "Bethlehem",
       "latitude": 31.704444444,
       "longitude": 35.206111111,
-      "population": 36000,
-      "map": "maps/cities/palestine__bethlehem.png"
+      "population": 36000
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EGP",
@@ -182,6 +177,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

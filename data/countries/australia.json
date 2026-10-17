@@ -39,8 +39,7 @@
       "name": "Canberra",
       "latitude": -35.293055555,
       "longitude": 149.126944444,
-      "population": 381488,
-      "map": "maps/cities/australia__canberra.png"
+      "population": 381488
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Sydney",
       "latitude": -33.867777777,
       "longitude": 151.21,
-      "population": 5450496,
-      "map": "maps/cities/australia__sydney.png"
+      "population": 5450496
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Melbourne",
       "latitude": -37.814166666,
       "longitude": 144.963055555,
-      "population": 5350705,
-      "map": "maps/cities/australia__melbourne.png"
+      "population": 5350705
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Perth",
       "latitude": -31.955833333,
       "longitude": 115.859722222,
-      "population": 2141834,
-      "map": "maps/cities/australia__perth.png"
+      "population": 2141834
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Brisbane",
       "latitude": -27.467777777,
       "longitude": 153.027777777,
-      "population": 2706966,
-      "map": "maps/cities/australia__brisbane.png"
+      "population": 2706966
     },
     {
       "role": "notable",
@@ -84,8 +79,36 @@
       "name": "Adelaide",
       "latitude": -34.9275,
       "longitude": 138.6,
-      "population": 1387290,
-      "map": "maps/cities/australia__adelaide.png"
+      "population": 1387290
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q3130",
+      "name": "Sydney",
+      "latitude": -33.867777777,
+      "longitude": 151.21,
+      "population": 5450496,
+      "map": "maps/cities/australia__sydney.png",
+      "answer_map": "maps/cities/australia__sydney-answer.png"
+    },
+    {
+      "id": "Q3141",
+      "name": "Melbourne",
+      "latitude": -37.814166666,
+      "longitude": 144.963055555,
+      "population": 5350705,
+      "map": "maps/cities/australia__melbourne.png",
+      "answer_map": "maps/cities/australia__melbourne-answer.png"
+    },
+    {
+      "id": "Q3114",
+      "name": "Canberra",
+      "latitude": -35.293055555,
+      "longitude": 149.126944444,
+      "population": 381488,
+      "map": "maps/cities/australia__canberra.png",
+      "answer_map": "maps/cities/australia__canberra-answer.png"
     }
   ],
   "currencies": [
@@ -195,6 +218,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

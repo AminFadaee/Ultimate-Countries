@@ -37,8 +37,7 @@
       "name": "Ouagadougou",
       "latitude": 12.368611111,
       "longitude": -1.5275,
-      "population": 2453496,
-      "map": "maps/cities/burkina_faso__ouagadougou.png"
+      "population": 2453496
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Bobo-Dioulasso",
       "latitude": 11.183333333,
       "longitude": -4.283333333,
-      "population": 903887,
-      "map": "maps/cities/burkina_faso__bobo_dioulasso.png"
+      "population": 903887
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Koudougou",
       "latitude": 12.25,
       "longitude": -2.366666666,
-      "population": 160207,
-      "map": "maps/cities/burkina_faso__koudougou.png"
+      "population": 160207
     },
     {
       "role": "notable",
@@ -64,10 +61,10 @@
       "name": "Banfora",
       "latitude": 10.630833333,
       "longitude": -4.758888888,
-      "population": 117200,
-      "map": "maps/cities/burkina_faso__banfora.png"
+      "population": 117200
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XOF",
@@ -184,6 +181,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

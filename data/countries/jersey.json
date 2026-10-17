@@ -42,10 +42,10 @@
       "name": "Saint Helier",
       "latitude": 49.185833333,
       "longitude": -2.11,
-      "population": 35822,
-      "map": "maps/cities/jersey__saint_helier.png"
+      "population": 35822
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "GBP",
@@ -122,6 +122,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

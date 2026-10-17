@@ -40,10 +40,10 @@
       "name": "Mata-Utu",
       "latitude": -13.2827,
       "longitude": -176.1737,
-      "population": 1029,
-      "map": "maps/cities/wallis_and_futuna__mata_utu.png"
+      "population": 1029
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XPF",
@@ -112,6 +112,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

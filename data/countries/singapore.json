@@ -37,10 +37,10 @@
       "name": "Singapore",
       "latitude": 1.3,
       "longitude": 103.8,
-      "population": 5866139,
-      "map": "maps/cities/singapore__singapore.png"
+      "population": 5866139
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "SGD",
@@ -162,6 +162,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Oslo",
       "latitude": 59.913333333,
       "longitude": 10.738888888,
-      "population": 717710,
-      "map": "maps/cities/norway__oslo.png"
+      "population": 717710
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Bergen",
       "latitude": 60.3925,
       "longitude": 5.323333333,
-      "population": 291189,
-      "map": "maps/cities/norway__bergen.png"
+      "population": 291189
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Trondheim",
       "latitude": 63.44,
       "longitude": 10.4,
-      "population": 198777,
-      "map": "maps/cities/norway__trondheim.png"
+      "population": 198777
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Stavanger",
       "latitude": 58.97,
       "longitude": 5.731388888,
-      "population": 151669,
-      "map": "maps/cities/norway__stavanger.png"
+      "population": 151669
     },
     {
       "role": "notable",
@@ -73,8 +69,18 @@
       "name": "Drammen",
       "latitude": 59.745361111,
       "longitude": 10.205969444,
-      "population": 106013,
-      "map": "maps/cities/norway__drammen.png"
+      "population": 106013
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q585",
+      "name": "Oslo",
+      "latitude": 59.913333333,
+      "longitude": 10.738888888,
+      "population": 717710,
+      "map": "maps/cities/norway__oslo.png",
+      "answer_map": "maps/cities/norway__oslo-answer.png"
     }
   ],
   "currencies": [
@@ -181,6 +187,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

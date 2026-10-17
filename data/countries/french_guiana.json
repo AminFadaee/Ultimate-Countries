@@ -40,8 +40,7 @@
       "name": "Cayenne",
       "latitude": 4.938611111,
       "longitude": -52.335,
-      "population": 62675,
-      "map": "maps/cities/french_guiana__cayenne.png"
+      "population": 62675
     },
     {
       "role": "notable",
@@ -49,8 +48,7 @@
       "name": "Saint-Laurent-du-Maroni",
       "latitude": 5.503888888,
       "longitude": -54.028888888,
-      "population": 54429,
-      "map": "maps/cities/french_guiana__saint_laurent_du_maroni.png"
+      "population": 54429
     },
     {
       "role": "notable",
@@ -58,10 +56,10 @@
       "name": "Kourou",
       "latitude": 5.158333333,
       "longitude": -52.642777777,
-      "population": 24824,
-      "map": "maps/cities/french_guiana__kourou.png"
+      "population": 24824
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "EUR",
@@ -165,6 +163,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Plymouth",
       "latitude": 16.706416666,
       "longitude": -62.215838888,
-      "population": 0,
-      "map": "maps/cities/montserrat__plymouth.png"
+      "population": 0
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "XCD",
@@ -97,6 +97,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

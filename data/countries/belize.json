@@ -37,8 +37,7 @@
       "name": "Belmopan",
       "latitude": 17.25,
       "longitude": -88.7675,
-      "population": 20754,
-      "map": "maps/cities/belize__belmopan.png"
+      "population": 20754
     },
     {
       "role": "notable",
@@ -46,10 +45,10 @@
       "name": "Belize City",
       "latitude": 17.498611111,
       "longitude": -88.188611111,
-      "population": 63999,
-      "map": "maps/cities/belize__belize_city.png"
+      "population": 63999
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "BZD",
@@ -164,6 +163,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

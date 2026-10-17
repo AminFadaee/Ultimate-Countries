@@ -39,8 +39,7 @@
       "name": "Copenhagen",
       "latitude": 55.676111111,
       "longitude": 12.568888888,
-      "population": 667099,
-      "map": "maps/cities/denmark__copenhagen.png"
+      "population": 667099
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Aarhus",
       "latitude": 56.156388888,
       "longitude": 10.209722222,
-      "population": 290598,
-      "map": "maps/cities/denmark__aarhus.png"
+      "population": 290598
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Odense",
       "latitude": 55.4,
       "longitude": 10.383333333,
-      "population": 185480,
-      "map": "maps/cities/denmark__odense.png"
+      "population": 185480
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Aalborg",
       "latitude": 57.05,
       "longitude": 9.916666666,
-      "population": 121878,
-      "map": "maps/cities/denmark__aalborg.png"
+      "population": 121878
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Esbjerg",
       "latitude": 55.470833333,
       "longitude": 8.451388888,
-      "population": 71554,
-      "map": "maps/cities/denmark__esbjerg.png"
+      "population": 71554
     },
     {
       "role": "notable",
@@ -84,8 +79,18 @@
       "name": "Horsens",
       "latitude": 55.861944444,
       "longitude": 9.851944444,
-      "population": 64418,
-      "map": "maps/cities/denmark__horsens.png"
+      "population": 64418
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1748",
+      "name": "Copenhagen",
+      "latitude": 55.676111111,
+      "longitude": 12.568888888,
+      "population": 667099,
+      "map": "maps/cities/denmark__copenhagen.png",
+      "answer_map": "maps/cities/denmark__copenhagen-answer.png"
     }
   ],
   "currencies": [
@@ -210,6 +215,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,8 +37,7 @@
       "name": "Cairo",
       "latitude": 30.044444444,
       "longitude": 31.235833333,
-      "population": 9801536,
-      "map": "maps/cities/egypt__cairo.png"
+      "population": 9801536
     },
     {
       "role": "notable",
@@ -46,8 +45,7 @@
       "name": "Alexandria",
       "latitude": 31.1975,
       "longitude": 29.8925,
-      "population": 5362517,
-      "map": "maps/cities/egypt__alexandria.png"
+      "population": 5362517
     },
     {
       "role": "notable",
@@ -55,8 +53,7 @@
       "name": "Giza",
       "latitude": 29.987,
       "longitude": 31.2118,
-      "population": 4458135,
-      "map": "maps/cities/egypt__giza.png"
+      "population": 4458135
     },
     {
       "role": "notable",
@@ -64,8 +61,7 @@
       "name": "Port Said",
       "latitude": 31.2625,
       "longitude": 32.306111111,
-      "population": 791749,
-      "map": "maps/cities/egypt__port_said.png"
+      "population": 791749
     },
     {
       "role": "notable",
@@ -73,8 +69,7 @@
       "name": "Suez",
       "latitude": 29.966666666,
       "longitude": 32.533333333,
-      "population": 716458,
-      "map": "maps/cities/egypt__suez.png"
+      "population": 716458
     },
     {
       "role": "notable",
@@ -82,8 +77,18 @@
       "name": "Asyut",
       "latitude": 27.186944444,
       "longitude": 31.171388888,
-      "population": 562061,
-      "map": "maps/cities/egypt__asyut.png"
+      "population": 562061
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q85",
+      "name": "Cairo",
+      "latitude": 30.044444444,
+      "longitude": 31.235833333,
+      "population": 9801536,
+      "map": "maps/cities/egypt__cairo.png",
+      "answer_map": "maps/cities/egypt__cairo-answer.png"
     }
   ],
   "currencies": [
@@ -189,6 +194,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

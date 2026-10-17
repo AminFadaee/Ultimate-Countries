@@ -39,8 +39,7 @@
       "name": "Astana",
       "latitude": 51.133333333,
       "longitude": 71.433333333,
-      "population": 1078362,
-      "map": "maps/cities/kazakhstan__astana.png"
+      "population": 1078362
     },
     {
       "role": "notable",
@@ -48,8 +47,7 @@
       "name": "Almaty",
       "latitude": 43.24,
       "longitude": 76.915,
-      "population": 2228675,
-      "map": "maps/cities/kazakhstan__almaty.png"
+      "population": 2228675
     },
     {
       "role": "notable",
@@ -57,8 +55,7 @@
       "name": "Shymkent",
       "latitude": 42.3,
       "longitude": 69.6,
-      "population": 1191877,
-      "map": "maps/cities/kazakhstan__shymkent.png"
+      "population": 1191877
     },
     {
       "role": "notable",
@@ -66,8 +63,7 @@
       "name": "Karaganda",
       "latitude": 49.8,
       "longitude": 73.116666666,
-      "population": 515632,
-      "map": "maps/cities/kazakhstan__karaganda.png"
+      "population": 515632
     },
     {
       "role": "notable",
@@ -75,8 +71,7 @@
       "name": "Aktobe",
       "latitude": 50.283611111,
       "longitude": 57.229722222,
-      "population": 387807,
-      "map": "maps/cities/kazakhstan__aktobe.png"
+      "population": 387807
     },
     {
       "role": "notable",
@@ -84,8 +79,18 @@
       "name": "Atyrau",
       "latitude": 47.116666666,
       "longitude": 51.883333333,
-      "population": 323295,
-      "map": "maps/cities/kazakhstan__atyrau.png"
+      "population": 323295
+    }
+  ],
+  "famous_cities": [
+    {
+      "id": "Q1520",
+      "name": "Astana",
+      "latitude": 51.133333333,
+      "longitude": 71.433333333,
+      "population": 1078362,
+      "map": "maps/cities/kazakhstan__astana.png",
+      "answer_map": "maps/cities/kazakhstan__astana-answer.png"
     }
   ],
   "currencies": [
@@ -196,6 +201,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {

@@ -37,10 +37,10 @@
       "name": "Flying Fish Cove",
       "latitude": -10.421666666,
       "longitude": 105.678055555,
-      "population": 1355,
-      "map": "maps/cities/christmas_island__flying_fish_cove.png"
+      "population": 1355
     }
   ],
+  "famous_cities": [],
   "currencies": [
     {
       "code": "AUD",
@@ -97,6 +97,10 @@
     },
     "established": {
       "source": "derived",
+      "as_of": null
+    },
+    "famous_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "flag": {
