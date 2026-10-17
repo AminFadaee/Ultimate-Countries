@@ -24,6 +24,7 @@ class Field(StrEnum):
     ECONOMIC_SYSTEM = "economic_system"
     CAPITALS = "capitals"
     NOTABLE_CITIES = "notable_cities"
+    FAMOUS_CITIES = "famous_cities"
     FLAG = "flag"
     MAP = "map"
 
@@ -55,6 +56,7 @@ class EconomicSystem(StrEnum):
 class CityRole(StrEnum):
     CAPITAL = "capital"
     NOTABLE = "notable"
+    FAMOUS = "famous"
 
 
 @dataclass(frozen=True)

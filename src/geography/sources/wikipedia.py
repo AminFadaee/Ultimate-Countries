@@ -39,6 +39,7 @@ ALIAS = re.compile(r"\(([A-Z][\w'-]*(?: [A-Z][\w'-]*)*)\)")
 SEPARATORS = re.compile(r",| and ")
 
 POPULATION_PAGE = "List of countries and dependencies by population"
+MOST_VISITED_PAGE = "List of cities by international visitors"
 DEMOGRAPHICS_OF = re.compile(r"^Demographics_of_(?:the_)?")
 
 LIMITED_RECOGNITION_PAGE = "List of states with limited recognition"
@@ -362,6 +363,16 @@ class Wikipedia:
                 )
             )
         return required(statuses, LANGUAGES_PAGE)
+
+    def most_visited_cities(self) -> list[str]:
+        document = html.fromstring(self._page_html(MOST_VISITED_PAGE))
+        tables = [table for table in document.xpath("//table[contains(@class, 'wikitable')]") if "Euromonitor" in table.text_content()]
+        urls = []
+        for table in tables:
+            headers = [clean(header.text_content()) for header in table.xpath(".//tr[1]/th")]
+            column = next(index for index, header in enumerate(headers) if header == "City")
+            urls += [url for cells in expanded_rows(table)[1:] if (url := first_link(cells[column]))]
+        return required(urls, MOST_VISITED_PAGE)
 
     def populated_places(self) -> list[str]:
         document = html.fromstring(self._page_html(POPULATION_PAGE))

@@ -342,6 +342,23 @@ class Wikidata:
                 )
         return details
 
+    def sitelink_counts(self, qids: set[str]) -> dict[str, int]:
+        counts = {}
+        for batch in itertools.batched(sorted(qids), DETAIL_BATCH):
+            rows = self._select(f"""
+                SELECT ?item ?links WHERE {{
+                  VALUES ?item {{ {values_clause(batch)} }}
+                  ?item wikibase:sitelinks ?links .
+                }}""")
+            counts.update((qid_of(row["item"]), int(row["links"])) for row in rows)
+        return counts
+
+    def populations(self, qids: set[str]) -> dict[str, int]:
+        found = {}
+        for batch in itertools.batched(sorted(qids), DETAIL_BATCH):
+            found.update(self._populations(batch))
+        return found
+
     def _populations(self, qids) -> dict[str, int]:
         rows = self._select(f"""
             SELECT ?city ?population ?rank ?date WHERE {{
