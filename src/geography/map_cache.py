@@ -16,7 +16,7 @@ from geography.detail import CACHE_DIR
 
 MAP_CACHE_DIR = CACHE_DIR / "maps"
 OUTPUT_FIELDS = ("output", "answer_output")
-MAPS_PER_BATCH = 30
+MAPS_PER_BATCH = 20
 UNUSED_DAYS = 90
 CHUNK = 1 << 20
 RENDERER_FILES = (
@@ -29,7 +29,6 @@ RENDERER_FILES = (
     "places.py",
     "features/maps.py",
     "features/kinds.py",
-    "features/spatial.py",
     "sources/natural_earth_physical.py",
 )
 LIBRARIES = ("matplotlib", "cartopy", "shapely", "geopandas", "pillow", "pyproj", "numpy", "pandas")

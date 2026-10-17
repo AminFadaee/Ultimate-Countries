@@ -255,9 +255,9 @@ def continents_of(shape, continents: gpd.GeoDataFrame) -> set[str]:
 
 
 def nearest_continent(shape, continents: gpd.GeoDataFrame) -> set[str]:
-    distances = {tag: shape.distance(row.geometry) for row in continents.itertuples() if (tag := CONTINENT_TAGS.get(row.name))}
-    tag = min(distances, key=distances.get, default=None)
-    return {tag} if tag and distances[tag] <= NEAREST_CONTINENT_M else set()
+    named = [(shape.distance(row.geometry), tag) for row in continents.itertuples() if (tag := CONTINENT_TAGS.get(row.name))]
+    distance, tag = min(named, default=(float("inf"), None))
+    return {tag} if tag and distance <= NEAREST_CONTINENT_M else set()
 
 
 def plausible_area(feature: Feature, area_km2: float | None) -> bool:

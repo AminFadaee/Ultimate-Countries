@@ -15,6 +15,7 @@ COAST_M = 10_000
 LAKE_SHORE_M = 1_000
 POINT_M = 3_000
 CLAIM_REACH_M = 50_000
+MAX_LONGITUDE = 180
 LINE_TYPES = ("LineString", "MultiLineString")
 CONTESTED_TYPES = ("Disputed", "Indeterminate", "Breakaway")
 OUTLIER_FACTOR = 3
@@ -42,8 +43,9 @@ def load_our_countries(countries_dir: pathlib.Path) -> dict[str, OurCountry]:
 def split_antimeridian(geometry) -> MultiLineString:
     parts = []
     for line in getattr(geometry, "geoms", [geometry]):
-        current = [line.coords[0]]
-        for before, after in zip(line.coords[:-1], line.coords[1:], strict=True):
+        coords = [(min(max(x, -MAX_LONGITUDE), MAX_LONGITUDE), y) for x, y, *_ in line.coords]
+        current = [coords[0]]
+        for before, after in zip(coords[:-1], coords[1:], strict=True):
             if abs(after[0] - before[0]) > 180:
                 parts.append(current)
                 current = []
