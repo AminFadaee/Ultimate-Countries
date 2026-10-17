@@ -1,5 +1,6 @@
 import dataclasses
 import hashlib
+import itertools
 import logging
 import pathlib
 import shutil
@@ -13,6 +14,7 @@ from geography.detail import CACHE_DIR
 
 MAP_CACHE_DIR = CACHE_DIR / "maps"
 OUTPUT_FIELDS = ("output", "answer_output")
+MAPS_PER_BATCH = 30
 RENDERER_FILES = (
     "render.py",
     "images.py",
@@ -95,7 +97,8 @@ def through_cache(jobs: list, render: Callable[[list], Iterable[tuple]]) -> Iter
         else:
             missing.append(job)
     logger.info("Maps: %d reused, %d to draw", len(jobs) - len(missing), len(missing))
-    for job, error in render(missing):
-        if error is None:
-            cache.keep(job)
-        yield job, error
+    for batch in itertools.batched(missing, MAPS_PER_BATCH):
+        for job, error in render(list(batch)):
+            if error is None:
+                cache.keep(job)
+            yield job, error
