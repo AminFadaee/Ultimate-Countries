@@ -11,6 +11,7 @@ from shapely.geometry import Point, shape
 
 from geography.data import Country, NaturalEarth
 from geography.detail import AREA_TYPES, DetailLayers, simplify
+from geography.labels import CityLabel
 from geography.places import Place
 from geography.render import Borders, Framing, LocatorMap, Scene
 
@@ -34,6 +35,8 @@ class MapJob:
     place_name: str | None = None
     place_geometry: dict | None = None
     place_point: tuple[float, float] | None = None
+    answer_output: pathlib.Path | None = None
+    cities: tuple[CityLabel, ...] = ()
 
 
 class MapWorker:
@@ -64,7 +67,8 @@ class MapWorker:
             scene = Scene.for_place(place, Borders.REGIONS, Framing.COUNTRY)
             if detail is not None:
                 scene = replace(scene, lens_host=gpd.GeoSeries([detail], crs=data.crs))
-        cls.renderer.render(scene, job.output)
+            scene = replace(scene, cities=job.cities)
+        cls.renderer.render(scene, job.output, job.answer_output)
         return job.key
 
 

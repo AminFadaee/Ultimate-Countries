@@ -19,6 +19,7 @@ from shapely.ops import transform
 from geography.data import Country, NaturalEarth
 from geography.detail import DetailLayers
 from geography.images import save_compact
+from geography.labels import CityLabel, CityLabels
 from geography.places import Place
 
 GEODETIC = ccrs.PlateCarree()
@@ -114,6 +115,7 @@ class Scene:
     lens_host: gpd.GeoSeries | None = None
     framing: Framing = Framing.REGION
     style: Style = Style()
+    cities: tuple[CityLabel, ...] = ()
 
     @classmethod
     def for_country(cls, country: Country, borders: Borders) -> "Scene":
@@ -288,6 +290,23 @@ def figure_position(geometry: gpd.GeoSeries, projection: ccrs.Projection, extent
     return ((minx + maxx) / 2 - xmin) / extent.width, ((miny + maxy) / 2 - ymin) / extent.height
 
 
+def clearest_corner(cities: tuple[CityLabel, ...], projection: ccrs.Projection, extent: Extent) -> Corner:
+    points = []
+    for city in cities:
+        x, y = projection.transform_point(city.longitude, city.latitude, GEODETIC)
+        points.append(((x - extent.bounds[0]) / extent.width, (y - extent.bounds[2]) / extent.height))
+    aspect = extent.width / extent.height
+
+    def hidden(corner: Corner) -> int:
+        left, bottom, width, height = inset_rect(corner, aspect)
+        return sum(
+            left - INSET_MARGIN <= px <= left + width + INSET_MARGIN and bottom - INSET_MARGIN <= py <= bottom + height + INSET_MARGIN
+            for px, py in points
+        )
+
+    return min(INSET_CORNERS, key=hidden)
+
+
 def local_projection(mainland: gpd.GeoSeries) -> str:
     lat, lng = get_center(mainland)
     return f"+proj=aeqd +lat_0={lat} +lon_0={lng} +units=m"
@@ -368,14 +387,22 @@ class LocatorMap:
     ) -> None:
         self.render(Scene.for_place(place, borders), out_path)
 
-    def render(self, scene: Scene, out_path: pathlib.Path) -> None:
+    def _save(self, fig: Figure, out_path: pathlib.Path) -> None:
+        rendered = io.BytesIO()
+        fig.savefig(rendered, dpi=self.dpi, format="png")
+        rendered.seek(0)
+        save_compact(rendered, out_path)
+
+    def render(self, scene: Scene, out_path: pathlib.Path, answer_path: pathlib.Path | None = None) -> None:
         mainland = get_mainland(scene.frame)
         lat, lng = get_center(mainland)
         projection = ccrs.LambertAzimuthalEqualArea(central_longitude=lng, central_latitude=lat)
         area, framing = get_frame_area(scene, mainland, projection)
         extent = get_frame(area, projection, self.aspect_ratio, framing)
         zoom = get_zoom(scene.lens_subject, projection, extent, scene.min_zoom_span)
-        inset_corner = place_inset(figure_position(scene.lens_subject, projection, extent), extent.width / extent.height)
+        inset_corner = clearest_corner(scene.cities, projection, extent) if scene.cities else place_inset(
+            figure_position(scene.lens_subject, projection, extent), extent.width / extent.height
+        )
 
         fig = plt.figure(figsize=(self.width, self.width * extent.height / extent.width))
         try:
@@ -383,10 +410,14 @@ class LocatorMap:
             self._plot_inset(fig, projection, extent, inset_corner)
             if zoom:
                 self._plot_zoom(fig, scene, projection, extent, zoom, inset_corner)
-            rendered = io.BytesIO()
-            fig.savefig(rendered, dpi=self.dpi, format="png")
-            rendered.seek(0)
-            save_compact(rendered, out_path)
+            if scene.cities:
+                labels = CityLabels(fig, fig.axes[0], projection, extent, scene.cities, scene.style.highlight)
+                labels.show_answer(False)
+                self._save(fig, out_path)
+                labels.show_answer(True)
+                self._save(fig, answer_path)
+            else:
+                self._save(fig, out_path)
         finally:
             plt.close(fig)
 
@@ -417,10 +448,7 @@ class LocatorMap:
                 self._plot_inset(fig, scene.projection, extent, corner)
             else:
                 self._plot_inset_shape(fig, scene.inset_shape, corner)
-            rendered = io.BytesIO()
-            fig.savefig(rendered, dpi=self.dpi, format="png")
-            rendered.seek(0)
-            save_compact(rendered, out_path)
+            self._save(fig, out_path)
         finally:
             plt.close(fig)
 
@@ -455,10 +483,7 @@ class LocatorMap:
                     lines.to_crs(GEODETIC.proj4_init), crs=GEODETIC, facecolor="none", edgecolor=style.highlight,
                     linewidth=WORLD_LINE_WIDTH, zorder=6,
                 )
-            rendered = io.BytesIO()
-            fig.savefig(rendered, dpi=self.dpi, format="png")
-            rendered.seek(0)
-            save_compact(rendered, out_path)
+            self._save(fig, out_path)
         finally:
             plt.close(fig)
 
