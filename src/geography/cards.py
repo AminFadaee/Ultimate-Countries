@@ -26,6 +26,9 @@ class CardType(StrEnum):
     GOVERNMENT = "Government"
 
 
+QUESTION_TYPES = (CardType.CAPITAL, CardType.FLAG, CardType.MAP)
+
+
 @dataclass(frozen=True)
 class Answer:
     text: str
@@ -187,7 +190,7 @@ def status_line(document: dict) -> str | None:
 def shared_context(document: dict) -> Context:
     region = " · ".join(part for part in (document["region"], document["subregion"]) if part)
     notable = [city["name"] for city in document["cities"] if city["role"] == "notable"]
-    return Context(region, status_line(document), f"Notable cities: {joined(notable)}" if notable else None)
+    return Context(region, status_line(document), joined(notable) if notable else None)
 
 
 def coverage(documents: list[dict]) -> dict[CardType, int]:
@@ -196,6 +199,9 @@ def coverage(documents: list[dict]) -> dict[CardType, int]:
 
 
 def format_coverage(documents: list[dict]) -> str:
+    counts = coverage(documents)
     lines = [f"Card coverage ({len(documents)} entries)"]
-    lines.extend(f"  {card_type:12} {count:4}" for card_type, count in coverage(documents).items())
+    lines.extend(f"  {card_type:12} {counts[card_type]:4}" for card_type in QUESTION_TYPES)
+    lines.append("Fact coverage")
+    lines.extend(f"  {card_type:12} {count:4}" for card_type, count in counts.items() if card_type not in QUESTION_TYPES)
     return "\n".join(lines)

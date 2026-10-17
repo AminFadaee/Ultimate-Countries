@@ -22,8 +22,7 @@ REPOSITORY_URL = "https://github.com/AminFadaee/Ultimate-Countries"
 COUNTRIES_ANKIWEB_URL = "https://ankiweb.net/shared/info/164142051"
 PLACES_ANKIWEB_URL = "https://ankiweb.net/shared/info/216393289"
 TAG_UNSAFE = re.compile(r"[^\w-]+")
-COUNTRY_CONTEXT = "{{Region}}{{#NotableCities}}<br>{{NotableCities}}{{/NotableCities}}"
-CITY_CONTEXT = "{{Region}}"
+REGION_CONTEXT = "{{Region}}"
 
 logger = logging.getLogger(__name__)
 
@@ -32,12 +31,6 @@ class Subdeck(StrEnum):
     CAPITALS = "Capitals"
     FLAGS = "Flags"
     MAPS = "Maps"
-    DEMONYMS = "Demonyms"
-    LANGUAGES = "Languages"
-    CURRENCIES = "Currencies"
-    RELIGIONS = "Religions"
-    POPULATION = "Population"
-    GOVERNMENT = "Government"
     CITIES = "Cities"
 
     @property
@@ -62,10 +55,10 @@ class Template:
 
 
 @dataclass(frozen=True)
-class TextCard:
+class Fact:
     card_type: CardType
-    subdeck: Subdeck
     field: str
+    label: str
 
 
 class RoutedCard(genanki.Card):
@@ -122,16 +115,21 @@ def face(entity_html: str, label: str, value_html: str) -> str:
     return f'{entity_html}<hr class="divider"><div class="label">{label}</div>{value_html}'
 
 
-def details(info_field: str | None, context: str, extra: str = "") -> str:
+def details(info_field: str | None, context: str, extra: str = "", facts: str = "") -> str:
     info = conditional(info_field, f'<div class="info">{placeholder(info_field)}</div>') if info_field else ""
-    return f'{info}{extra}<div class="context">{context}</div>'
+    return f'{info}{extra}<div class="context">{context}</div>{facts}'
 
 
 def ask_attribute(
-    label: str, field: str, info_field: str | None = None, subject: str = COUNTRY_NAME, context: str = COUNTRY_CONTEXT
+    label: str,
+    field: str,
+    info_field: str | None = None,
+    subject: str = COUNTRY_NAME,
+    context: str = REGION_CONTEXT,
+    facts: str = "",
 ) -> tuple[str, str]:
     front = face(entity(subject), label, UNKNOWN_VALUE)
-    back = face(entity(subject), label, value(placeholder(field), answered=True)) + details(info_field, context)
+    back = face(entity(subject), label, value(placeholder(field), answered=True)) + details(info_field, context, facts=facts)
     return front, back
 
 
@@ -140,11 +138,12 @@ def ask_entity(
     shown: str,
     answer: str = COUNTRY_NAME,
     info_field: str | None = None,
-    context: str = COUNTRY_CONTEXT,
+    context: str = REGION_CONTEXT,
     extra: str = "",
+    facts: str = "",
 ) -> tuple[str, str]:
     front = face(UNKNOWN_ENTITY, label, shown)
-    back = face(entity(answer, answered=True), label, shown) + details(info_field, context, extra)
+    back = face(entity(answer, answered=True), label, shown) + details(info_field, context, extra, facts)
     return front, back
 
 
@@ -153,39 +152,46 @@ def guarded(field: str, faces: tuple[str, str]) -> tuple[str, str]:
     return conditional(field, front), back
 
 
-TEXT_CARDS = (
-    TextCard(CardType.DEMONYM, Subdeck.DEMONYMS, "Demonym"),
-    TextCard(CardType.LANGUAGE, Subdeck.LANGUAGES, "Language"),
-    TextCard(CardType.CURRENCY, Subdeck.CURRENCIES, "Currency"),
-    TextCard(CardType.RELIGION, Subdeck.RELIGIONS, "Religion"),
-    TextCard(CardType.POPULATION, Subdeck.POPULATION, "Population"),
-    TextCard(CardType.GOVERNMENT, Subdeck.GOVERNMENT, "Government"),
+FACTS = (
+    Fact(CardType.DEMONYM, "Demonym", "Demonym"),
+    Fact(CardType.LANGUAGE, "Language", "Languages"),
+    Fact(CardType.CURRENCY, "Currency", "Currency"),
+    Fact(CardType.RELIGION, "Religion", "Religion"),
+    Fact(CardType.POPULATION, "Population", "Population"),
+    Fact(CardType.GOVERNMENT, "Government", "Government"),
 )
 
+
+def chip(field: str, label: str) -> str:
+    return conditional(field, f'<span class="chip"><i>{label}</i>{placeholder(field)}</span>')
+
+
+FACT_CHIPS = '<div class="facts">' + "".join(chip(fact.field, fact.label) for fact in FACTS) + chip("NotableCities", "Cities") + "</div>"
+
 COUNTRY_TEMPLATES = (
-    Template("Capital", Subdeck.CAPITALS, "Capital", *guarded("Capital", ask_attribute("Capital", "Capital", "CapitalInfo"))),
+    Template(
+        "Capital",
+        Subdeck.CAPITALS,
+        "Capital",
+        *guarded("Capital", ask_attribute("Capital", "Capital", "CapitalInfo", facts=FACT_CHIPS)),
+    ),
     Template(
         "Capital of",
         Subdeck.CAPITALS,
         "Capital",
-        *guarded("Capital", ask_entity("Capital", value(placeholder("Capital")), info_field="CapitalInfo")),
+        *guarded("Capital", ask_entity("Capital", value(placeholder("Capital")), info_field="CapitalInfo", facts=FACT_CHIPS)),
     ),
     Template(
         "Flag",
         Subdeck.FLAGS,
         "Flag",
-        *guarded("Flag", ask_entity("Flag", image("Flag", "flag"), answer="{{Name}}", extra=MAP_THUMBNAIL)),
+        *guarded("Flag", ask_entity("Flag", image("Flag", "flag"), answer="{{Name}}", extra=MAP_THUMBNAIL, facts=FACT_CHIPS)),
     ),
-    Template("Map", Subdeck.MAPS, "Map", *guarded("Map", ask_entity("Map", image("Map", "map")))),
-    *(
-        Template(
-            card.field,
-            card.subdeck,
-            card.field,
-            *guarded(card.field, ask_attribute(card.field, card.field, f"{card.field}Info")),
-        )
-        for card in TEXT_CARDS
-    ),
+    Template("Map", Subdeck.MAPS, "Map", *guarded("Map", ask_entity("Map", image("Map", "map"), facts=FACT_CHIPS))),
+)
+
+RETIRED_TEMPLATES = tuple(
+    {"name": fact.field, "qfmt": "{{^Name}}retired{{/Name}}", "afmt": "{{FrontSide}}"} for fact in FACTS
 )
 
 COUNTRY_FIELDS = (
@@ -195,15 +201,15 @@ COUNTRY_FIELDS = (
     "CapitalInfo",
     "Flag",
     "Map",
-    *(name for card in TEXT_CARDS for name in (card.field, f"{card.field}Info")),
+    *(fact.field for fact in FACTS),
     "Region",
     "NotableCities",
 )
 
 CITY_MAP_FRONT, CITY_MAP_BACK = ask_entity(
-    "Map", image("Map", "map"), answer='{{City}}<div class="subtitle">{{Country}}</div>', context=CITY_CONTEXT
+    "Map", image("Map", "map"), answer='{{City}}<div class="subtitle">{{Country}}</div>'
 )
-CITY_COUNTRY_FRONT, CITY_COUNTRY_BACK = ask_attribute("Country", "Country", subject="{{City}}", context=CITY_CONTEXT)
+CITY_COUNTRY_FRONT, CITY_COUNTRY_BACK = ask_attribute("Country", "Country", subject="{{City}}")
 
 CITY_TEMPLATES = (
     Template("Map", Subdeck.CITIES, "Map", conditional("Map", CITY_MAP_FRONT), CITY_MAP_BACK),
@@ -237,6 +243,12 @@ CSS = f"""
 .thumbnail.map img {{ width: 100%; max-width: 360px; height: auto; }}
 .info {{ font-size: 16px; line-height: 1.45; color: var(--info); margin: 10px auto 0; max-width: 40em; }}
 .context {{ font-size: 14px; line-height: 1.5; color: var(--muted); margin-top: 22px; }}
+"""
+
+FACTS_CSS = """
+.facts { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 420px; margin: 12px auto 0; }
+.chip { border-radius: 16px; padding: 5px 12px; background: rgba(128, 128, 128, .13); font-size: 14px; color: var(--text); }
+.chip i { font-style: normal; color: var(--muted); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; margin-right: 6px; }
 """
 
 MAP_ZOOM_CSS = """
@@ -315,8 +327,9 @@ def description() -> str:
     return f"""
 <p><b>{DECK_NAME}</b>: countries, territories and their major cities.</p>
 <p>Inspired by <a href="{ULTIMATE_GEOGRAPHY_URL}">Ultimate Geography</a>, the deck that got me excited about learning geography.
-Ultimate Countries covers every country and territory with a permanent population, with demonyms, languages, currencies,
-religions, population, government and city maps on top of flags, maps and capitals.</p>
+Ultimate Countries covers every country and territory with a permanent population. You learn capitals, flags and maps, and
+the back of every card also shows the country's demonym, languages, currency, religion, population, government and
+notable cities. City maps are in the deck too.</p>
 <p>Each question type lives in its own subdeck. To skip a type, <b>suspend</b> its subdeck rather than deleting it,
 because deleted cards come back when you import an update. Tap a country map to zoom in on that spot; drag to look
 around and tap again to close.</p>
@@ -395,9 +408,15 @@ class DeckBuilder:
     def __init__(self, data_dir: pathlib.Path, build_dir: pathlib.Path):
         self.media = MediaLibrary(data_dir, build_dir / "media")
         self.country_model = self._model(
-            COUNTRY_MODEL_ID, f"{DECK_NAME} country", COUNTRY_FIELDS, COUNTRY_TEMPLATES, CSS + MAP_ZOOM_CSS, MAP_ZOOM_SCRIPT
+            COUNTRY_MODEL_ID,
+            f"{DECK_NAME} country",
+            COUNTRY_FIELDS,
+            [*(template.as_genanki(MAP_ZOOM_SCRIPT) for template in COUNTRY_TEMPLATES), *RETIRED_TEMPLATES],
+            CSS + FACTS_CSS + MAP_ZOOM_CSS,
         )
-        self.city_model = self._model(CITY_MODEL_ID, f"{DECK_NAME} city", CITY_FIELDS, CITY_TEMPLATES)
+        self.city_model = self._model(
+            CITY_MODEL_ID, f"{DECK_NAME} city", CITY_FIELDS, [template.as_genanki() for template in CITY_TEMPLATES]
+        )
         self.root = genanki.Deck(stable_id(DECK_NAME), DECK_NAME, description())
         self.subdecks = [genanki.Deck(subdeck.deck_id, subdeck.full_name) for subdeck in Subdeck]
         self.notes = 0
@@ -415,10 +434,9 @@ class DeckBuilder:
             "Region": context_html(context),
             "NotableCities": escaped(context.notable_cities),
         }
-        for card in TEXT_CARDS:
-            answer = found.get(card.card_type)
-            values[card.field] = escaped(answer.text) if answer else ""
-            values[f"{card.field}Info"] = info(answer)
+        for fact in FACTS:
+            answer = found.get(fact.card_type)
+            values[fact.field] = escaped(answer.text) if answer else ""
 
         cards = [
             RoutedCard(ord, template.subdeck.deck_id)
@@ -470,14 +488,12 @@ class DeckBuilder:
         self.notes += 1
 
     @staticmethod
-    def _model(
-        model_id: int, name: str, fields: tuple[str, ...], templates: tuple[Template, ...], css: str = CSS, script: str = ""
-    ) -> genanki.Model:
+    def _model(model_id: int, name: str, fields: tuple[str, ...], templates: list[dict], css: str = CSS) -> genanki.Model:
         return genanki.Model(
             model_id,
             name,
             fields=[{"name": field} for field in fields],
-            templates=[template.as_genanki(script) for template in templates],
+            templates=templates,
             css=css,
             sort_field_index=1,
         )
