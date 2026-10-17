@@ -38,12 +38,7 @@ class Feature:
     world_heritage: bool = False
     photo: Photo | None = None
     map: str | None = None
-    continent: str | None = None
-
-    @property
-    def continents(self) -> list[str]:
-        found = {country.continent for country in self.countries if country.continent}
-        return sorted(found or {self.continent} - {None})
+    continents: list[str] = field(default_factory=list)
 
     @property
     def tags(self) -> list[str]:

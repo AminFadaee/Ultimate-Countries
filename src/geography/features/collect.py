@@ -3,6 +3,7 @@ import logging
 import pathlib
 from dataclasses import asdict, dataclass
 
+import geopandas as gpd
 import requests
 
 from geography.data import NaturalEarth
@@ -11,6 +12,7 @@ from geography.features.kinds import WATER_KINDS, Kind, Shape
 from geography.features.maps import map_job, render_feature_maps
 from geography.features.model import Feature, Photo
 from geography.features.spatial import (
+    CLAIM_REACH_M,
     LAKE_SHORE_M,
     POINT_M,
     CountryLocator,
@@ -29,6 +31,7 @@ WITHOUT_COUNTRIES = {Kind.CONTINENT, Kind.OCEAN}
 WITHOUT_CONTINENT = {Kind.OCEAN, Kind.LINE}
 CLAIMED_SHAPES = {Shape.POINT, Shape.LINE}
 AREA_TOLERANCE = 5
+MIN_CONTINENT_SHARE = 0.1
 CONTINENT_TAGS = {
     "AFRICA": "Africa",
     "ANTARCTICA": "Antarctica",
@@ -118,7 +121,11 @@ class PlacesCollector:
             if feature.kind in WITHOUT_COUNTRIES or feature.countries:
                 continue
             named = sorted((by_id[qid] for qid in claimed.get(feature.qid or "", []) if qid in by_id), key=lambda country: country.name)
-            feature.countries = [] if self._contested(feature, locator) else named or self._located(feature, locator)
+            if self._contested(feature, locator):
+                feature.countries = []
+                continue
+            located = self._located(feature, locator)
+            feature.countries = located + [country for country in locator.near(named, feature.geometry, CLAIM_REACH_M) if country not in located]
 
     def _contested(self, feature: Feature, locator: CountryLocator) -> bool:
         location = feature.geometry.iloc[0]
@@ -138,14 +145,12 @@ class PlacesCollector:
 
     def _add_continents(self, features: list[Feature]) -> None:
         regions = load_layer(PhysicalLayer.REGIONS)
-        continents = regions[regions["featurecla"] == "Continent"]
+        continents = regions[regions["featurecla"] == "Continent"].to_crs(EQUAL_AREA)
         for feature in features:
-            if feature.countries or feature.kind in WITHOUT_CONTINENT:
+            if feature.kind in WITHOUT_CONTINENT:
                 continue
-            spot = feature.geometry.union_all().representative_point()
-            found = continents[continents.intersects(spot)]
-            if not found.empty:
-                feature.continent = CONTINENT_TAGS.get(found.iloc[0]["name"])
+            found = continents_of(feature.geometry.to_crs(EQUAL_AREA).union_all(), continents)
+            feature.continents = sorted(found or {country.continent for country in feature.countries if country.continent})
 
     def _add_cities(self, features: list[Feature], catalog: Catalog) -> None:
         landmarks = {feature.qid: feature for feature in features if feature.kind is Kind.LANDMARK and feature.qid}
@@ -196,7 +201,7 @@ class PlacesCollector:
         for path in self.paths.features.glob("*.json"):
             document = json.loads(path.read_text())
             if photo := document.get("photo"):
-                found[document["key"]] = Photo(**photo)
+                found[document["key"]] = Photo(**{**photo, "author": commons.author_of(photo["author"])})
         return found
 
     def _render_maps(self, features: list[Feature], slugs: dict[str, str], options: PlacesOptions) -> None:
@@ -231,6 +236,22 @@ class PlacesCollector:
         return len(documents)
 
 
+def measure(shape) -> float:
+    if shape.geom_type in ("Point", "MultiPoint"):
+        return 0.0 if shape.is_empty else 1.0
+    return shape.length if shape.geom_type in ("LineString", "MultiLineString") else shape.area
+
+
+def continents_of(shape, continents: gpd.GeoDataFrame) -> set[str]:
+    total = measure(shape)
+    found = set()
+    for row in continents.itertuples():
+        tag = CONTINENT_TAGS.get(row.name)
+        if tag and total and measure(shape.intersection(row.geometry)) / total >= MIN_CONTINENT_SHARE:
+            found.add(tag)
+    return found
+
+
 def plausible_area(feature: Feature, area_km2: float | None) -> bool:
     if area_km2 is None or feature.kind.spec.shape is not Shape.AREA:
         return True
@@ -244,7 +265,7 @@ def credits(documents: list[dict]) -> str:
     for content in sorted(documents, key=lambda content: content["name"]):
         if photo := content["photo"]:
             licence = f"[{photo['license']}]({photo['license_url']})" if photo["license_url"] else photo["license"]
-            author = photo["author"].replace("|", "/") or "unknown"
+            author = photo["author"].replace("|", "/")
             rows.append(f"| {content['name']} | {author} | {licence} | [Wikimedia Commons]({photo['page']}) |")
     header = [
         "# Photo credits",

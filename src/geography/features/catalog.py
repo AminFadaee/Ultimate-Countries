@@ -3,6 +3,7 @@ import urllib.parse
 from collections import defaultdict
 
 import geopandas as gpd
+from pyproj import Geod
 from shapely.geometry import LineString, Point, shape
 
 from geography.data import NaturalEarth
@@ -58,6 +59,8 @@ MIN_REEF_LINKS = 40
 MIN_CANAL_LINKS = 50
 MIN_RAINFOREST_KM2 = 500_000
 MIN_REGION_MEMBERS = 2
+MIN_RIVER_COVERAGE = 0.7
+GEOD = Geod(ellps="WGS84")
 DISAMBIGUATED = re.compile(r" \([^)]+\)$")
 MIN_REGION_KM2 = 50_000
 
@@ -93,6 +96,10 @@ BASIN_SUFFIX = re.compile(r"\s+basin$", re.IGNORECASE)
 
 def article_title(article_url: str) -> str:
     return urllib.parse.unquote(article_url.rsplit("/wiki/", 1)[-1]).replace("_", " ")
+
+
+def drawn_km(geometry: gpd.GeoSeries) -> float:
+    return sum(GEOD.geometry_length(line) for line in geometry) / 1000
 
 
 def title_of(facts: ItemFacts) -> str:
@@ -221,7 +228,23 @@ class Catalog:
         by_name = rivers.groupby(rivers["name"].str.casefold())["wikidataid"].transform(lambda ids: ids.dropna().iloc[0] if ids.notna().any() else None)
         rivers["wikidataid"] = rivers["wikidataid"].fillna(by_name)
         chosen = rivers[(rivers["featurecla"] == "River") & (rivers["scalerank"] <= MAX_RIVER_RANK)]["wikidataid"].dropna()
-        return self.famous(dissolved(rivers[rivers["wikidataid"].isin(chosen)], "wikidataid"), Kind.RIVER, MIN_RIVER_LINKS)
+        features = self.famous(dissolved(rivers[rivers["wikidataid"].isin(chosen)], "wikidataid"), Kind.RIVER, MIN_RIVER_LINKS)
+        return self.completed(features)
+
+    def completed(self, rivers: list[Feature]) -> list[Feature]:
+        def coverage(river: Feature) -> float:
+            length = self.facts[river.qid].length_km
+            return drawn_km(river.geometry) / length if length else 1.0
+
+        short = [river for river in rivers if coverage(river) < MIN_RIVER_COVERAGE]
+        relations = self.wikidata.osm_relations({river.qid for river in short})
+        surveyed = Nominatim().relations(list(relations.values()))
+        for river in short:
+            if feature := surveyed.get(relations.get(river.qid, "")):
+                traced = gpd.GeoSeries([shape(feature["geometry"])], crs=CRS)
+                if drawn_km(traced) > drawn_km(river.geometry):
+                    river.geometry = traced
+        return rivers
 
     def mountains(self) -> list[Feature]:
         peaks = load_layer(PhysicalLayer.ELEVATION_POINTS)

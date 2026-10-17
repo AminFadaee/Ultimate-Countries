@@ -60,7 +60,7 @@ class Nominatim:
                 missing.append(relation_id)
 
         self.cache_dir.mkdir(parents=True, exist_ok=True)
-        for batch in itertools.batched(missing, LOOKUP_BATCH):
+        for batch in itertools.batched(missing, LOOKUP_BATCH, strict=False):
             for feature in self._lookup(list(batch)):
                 relation_id = str(feature["properties"]["osm_id"])
                 self._relation_cache(relation_id).write_text(json.dumps(feature))

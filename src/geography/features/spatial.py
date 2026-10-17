@@ -14,6 +14,7 @@ MIN_LINE_SHARE = 0.002
 COAST_M = 10_000
 LAKE_SHORE_M = 1_000
 POINT_M = 3_000
+CLAIM_REACH_M = 50_000
 CONTESTED_TYPES = ("Disputed", "Indeterminate", "Breakaway")
 OUTLIER_FACTOR = 3
 
@@ -62,6 +63,11 @@ class CountryLocator:
         self.ours = ours
         contested = data.disputed_areas[data.disputed_areas["TYPE"].isin(CONTESTED_TYPES)]
         self.contested = contested.union_all()
+
+    def near(self, candidates: list[OurCountry], geometry: gpd.GeoSeries, reach_m: float) -> list[OurCountry]:
+        shape = geometry.to_crs(EQUAL_AREA).union_all()
+        found = {country for row in self.shapes.itertuples() if (country := self._country(row)) in candidates and row.geometry.distance(shape) <= reach_m}
+        return sorted(found, key=lambda country: country.name)
 
     def is_contested(self, longitude: float, latitude: float) -> bool:
         return self.contested.contains(Point(longitude, latitude))

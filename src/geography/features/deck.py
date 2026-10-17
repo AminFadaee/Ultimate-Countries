@@ -136,8 +136,8 @@ def tags(document: dict) -> list[str]:
 
 def description() -> str:
     return f"""
-<p><b>{DECK_NAME}</b>: the world's continents, oceans and seas, mountains and volcanoes, deserts, rivers and lakes,
-rainforests, regions and famous landmarks, each shown on a map. Places with a recognisable look also have a photo card.</p>
+<p><b>{DECK_NAME}</b>: the world's continents, oceans and seas, mountains and volcanoes, deserts, rivers, lakes and canals,
+waterfalls, canyons, rainforests, regions and famous landmarks, each shown on a map. Places with a recognisable look also have a photo card.</p>
 <p>A companion to <a href="{COUNTRIES_ANKIWEB_URL}">Ultimate Countries</a>, inspired by
 <a href="{ULTIMATE_GEOGRAPHY_URL}">Ultimate Geography</a>.</p>
 <p>The back of every card has a one-sentence description from Wikipedia. Everything is in one deck. Every note is tagged with its kind and continent (for example <code>UP::Volcano</code> or

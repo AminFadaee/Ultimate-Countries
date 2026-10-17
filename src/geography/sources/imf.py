@@ -31,7 +31,7 @@ class SpendingData:
 def latest_value(periods: list[str], values: list, last_year: int) -> Spending | None:
     observed = [
         (int(period), float(value))
-        for period, value in zip(periods, values)
+        for period, value in zip(periods, values, strict=False)
         if value not in ("NA", None) and int(period) <= last_year
     ]
     if not observed:

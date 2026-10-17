@@ -16,6 +16,10 @@ NOT_A_PHOTO = re.compile(
     r"\b(maps?|diagrams?|locator|schematics?|satellite|charts?|plans?|drawings?|illustrations?|paintings?|engravings?|lithographs?|posters?)\b",
     re.IGNORECASE,
 )
+FILE_PREFIX = re.compile(r"^\S+\.(?:jpe?g|png|tiff?|webp|gif)\s*:\s*", re.IGNORECASE)
+NO_AUTHOR = re.compile(r"No machine-readable author provided\.?\s*|\s*assumed \(based on copyright claims\)\.?", re.IGNORECASE)
+CREATED_BY = re.compile(r"(?:taken or created by|created by|photographed by)\s+(.+?[a-z]{2})\.(?:\s|$)", re.IGNORECASE)
+MAX_AUTHOR = 120
 TAGS = re.compile(r"<[^>]+>")
 SPACES = re.compile(r"\s+")
 
@@ -44,6 +48,13 @@ class CommonsImage:
     license_url: str
 
 
+def author_of(text: str) -> str:
+    text = NO_AUTHOR.sub("", FILE_PREFIX.sub("", text)).strip()
+    if len(text) > MAX_AUTHOR and (match := CREATED_BY.search(text)):
+        text = match.group(1)
+    return text if len(text) <= MAX_AUTHOR else ""
+
+
 def plain(markup: str) -> str:
     return SPACES.sub(" ", TAGS.sub("", markup)).strip()
 
@@ -61,7 +72,7 @@ def describe_image(session: requests.Session, image_url: str) -> CommonsImage | 
     def field(name: str) -> str:
         return plain(metadata.get(name, {}).get("value", ""))
 
-    return CommonsImage(info["thumburl"], info["descriptionurl"], field("Artist") or field("Attribution"), field("LicenseShortName"), field("LicenseUrl"))
+    return CommonsImage(info["thumburl"], info["descriptionurl"], author_of(field("Artist") or field("Attribution")), field("LicenseShortName"), field("LicenseUrl"))
 
 
 def download_thumbnail(session: requests.Session, url: str) -> bytes:

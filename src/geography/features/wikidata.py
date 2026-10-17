@@ -2,7 +2,13 @@ import itertools
 from collections import defaultdict
 from dataclasses import dataclass, field
 
-from geography.sources.wikidata import POINT, Wikidata, display_name, qid_of, values_clause
+from geography.sources.wikidata import (
+    POINT,
+    Wikidata,
+    display_name,
+    qid_of,
+    values_clause,
+)
 
 BATCH = 200
 CITY = "Q515"
@@ -53,7 +59,7 @@ class FeatureQueries:
 
     def ranked(self, classes: tuple[str, ...], min_sitelinks: int) -> list[str]:
         links: dict[str, int] = {}
-        for batch in itertools.batched(sorted(self.with_subclasses(classes)), BATCH):
+        for batch in itertools.batched(sorted(self.with_subclasses(classes)), BATCH, strict=False):
             rows = self.wikidata._select(f"""
                 SELECT DISTINCT ?item ?links WHERE {{
                   VALUES ?type {{ {values_clause(batch)} }}
@@ -81,7 +87,7 @@ class FeatureQueries:
 
     def facts(self, qids: set[str]) -> dict[str, ItemFacts]:
         found: dict[str, ItemFacts] = {}
-        for batch in itertools.batched(sorted(qids), BATCH):
+        for batch in itertools.batched(sorted(qids), BATCH, strict=False):
             rows = self.wikidata._select(f"""
                 SELECT ?item ?itemLabel ?links ?image ?imageRank ?coordinates ?article ?height ?heightRank ?elevation ?elevationRank
                        ?length ?lengthRank ?area ?areaRank ?heritage WHERE {{
@@ -125,7 +131,7 @@ class FeatureQueries:
 
     def countries(self, qids: set[str]) -> dict[str, list[str]]:
         found: dict[str, list[str]] = defaultdict(list)
-        for batch in itertools.batched(sorted(qids), BATCH):
+        for batch in itertools.batched(sorted(qids), BATCH, strict=False):
             rows = self.wikidata._select(f"""
                 SELECT ?item ?country WHERE {{
                   VALUES ?item {{ {values_clause(batch)} }}
@@ -141,7 +147,7 @@ class FeatureQueries:
 
     def _matching(self, qids: set[str], condition: str) -> set[str]:
         found = set()
-        for batch in itertools.batched(sorted(qids), BATCH):
+        for batch in itertools.batched(sorted(qids), BATCH, strict=False):
             rows = self.wikidata._select(f"""
                 SELECT DISTINCT ?item WHERE {{
                   VALUES ?item {{ {values_clause(batch)} }}
@@ -152,7 +158,7 @@ class FeatureQueries:
 
     def cities(self, qids: set[str]) -> dict[str, list[str]]:
         places: dict[str, dict[str, str]] = defaultdict(dict)
-        for batch in itertools.batched(sorted(qids), BATCH):
+        for batch in itertools.batched(sorted(qids), BATCH, strict=False):
             rows = self.wikidata._select(f"""
                 SELECT ?item ?near ?nearLabel ?far ?farLabel WHERE {{
                   VALUES ?item {{ {values_clause(batch)} }}

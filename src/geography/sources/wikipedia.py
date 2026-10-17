@@ -18,7 +18,10 @@ SUMMARY_URL = "https://en.wikipedia.org/api/rest_v1/page/summary"
 SENTENCE_END = re.compile(r"\.\s+(?=[A-Z])")
 ABBREVIATIONS = {"st", "mt", "mts", "ft", "dr", "mr", "vs", "no", "ca", "c", "approx", "lt", "gen", "col"}
 MIN_SENTENCE = 20
-BEFORE_PUNCTUATION = re.compile(r"\s+([.,;])")
+BEFORE_PUNCTUATION = re.compile(r"\s+([.,;:])")
+PARENTHETICAL = re.compile(r"\s*\(([^()]*)\)")
+ERAS = {"BC", "BCE", "AD", "CE"}
+LATIN_LIMIT = 0x24F
 FORMATION_PAGE = "List of modern sovereign states by date of formation"
 COMMUNIST_STATES_PAGE = "Communist state"
 CURRENT_COMMUNIST_STATES = "Current communist states"
@@ -318,12 +321,19 @@ def first_link(cell) -> str | None:
     return None
 
 
+def worth_keeping(note: re.Match) -> str:
+    inner = note.group(1)
+    foreign = any(character.isalpha() and ord(character) > LATIN_LIMIT for character in inner)
+    return "" if foreign or "§" in inner or inner.casefold().startswith("see ") else note.group()
+
+
 def sentence_of(text: str) -> str | None:
-    text = BEFORE_PUNCTUATION.sub(r"\1", SPACES.sub(" ", FOOTNOTE.sub("", text)).strip())
+    text = PARENTHETICAL.sub(worth_keeping, FOOTNOTE.sub("", text))
+    text = BEFORE_PUNCTUATION.sub(r"\1", SPACES.sub(" ", text).strip())
     end = len(text)
     for match in SENTENCE_END.finditer(text):
         word = text[: match.start()].rsplit(" ", 1)[-1]
-        if word.casefold() not in ABBREVIATIONS and not (len(word) == 1 and word.isupper()) and not word.isupper():
+        if word.casefold() not in ABBREVIATIONS and not (len(word) == 1 and word.isupper()) and (not word.isupper() or word in ERAS):
             end = match.start() + 1
             break
     sentence = text[:end].rstrip()

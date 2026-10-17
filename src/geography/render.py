@@ -111,6 +111,7 @@ class Scene:
     host: gpd.GeoSeries
     regions: gpd.GeoSeries
     min_zoom_span: float = 0.0
+    zoom_threshold: float = ZOOM_THRESHOLD
     lens_highlight: gpd.GeoSeries | None = None
     lens_host: gpd.GeoSeries | None = None
     framing: Framing = Framing.REGION
@@ -341,10 +342,11 @@ def get_zoom(
     projection: ccrs.Projection,
     extent: Extent,
     min_span: float = 0.0,
+    threshold: float = ZOOM_THRESHOLD,
 ) -> Zoom | None:
     minx, miny, maxx, maxy = geometry.to_crs(projection).total_bounds
     size = max(maxx - minx, maxy - miny)
-    if size >= ZOOM_THRESHOLD * extent.width:
+    if size >= threshold * extent.width:
         return None
     span = max(size * LENS_PADDING, min_span)
     return Zoom(Extent(span, span, (minx + maxx) / 2, (miny + maxy) / 2), size)
@@ -399,7 +401,7 @@ class LocatorMap:
         projection = ccrs.LambertAzimuthalEqualArea(central_longitude=lng, central_latitude=lat)
         area, framing = get_frame_area(scene, mainland, projection)
         extent = get_frame(area, projection, self.aspect_ratio, framing)
-        zoom = get_zoom(scene.lens_subject, projection, extent, scene.min_zoom_span)
+        zoom = get_zoom(scene.lens_subject, projection, extent, scene.min_zoom_span, scene.zoom_threshold)
         inset_corner = clearest_corner(scene.cities, projection, extent) if scene.cities else place_inset(
             figure_position(scene.lens_subject, projection, extent), extent.width / extent.height
         )

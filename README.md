@@ -35,7 +35,7 @@ Four question cards per country:
 The back of every card also shows facts about the country: demonym, languages, currency, religion, population, form of
 government and notable cities, under a line with its region. They are there to read, not to be quizzed on.
 
-A card is only created when its data exists, and a fact that is missing is simply left out.
+A card is only created when its data exists, and a fact that is missing is simply left out. When two countries have a capital of the same name (Jerusalem, Victoria, Kingston), the "Capital of" card is left out, because the name alone could not tell them apart.
 
 Tap or click a country or city map to zoom in on that spot; drag to look around, and tap again to close.
 
@@ -100,7 +100,7 @@ coloured by kind (snowy white for mountains, orange for deserts, blue for water,
 
 | Question | Answer |
 |---|---|
-| the map, with the kind of place (MOUNTAIN RANGE, DESERT…) | its name, with countries, one fact and, for landmarks, the city and when it was built |
+| the map, with the kind of place (MOUNTAIN RANGE, DESERT…) and, when the place has one, a small photo of it in the corner | its name, with countries, one fact, a one-sentence description from Wikipedia and, for landmarks, the city and when it was built |
 | a photo (mountains, volcanoes, waterfalls, canyons, reefs, rainforests, canals and landmarks) | its name, kind, map and the same details |
 
 <p>
@@ -134,8 +134,8 @@ To leave a kind out for good, open the Browser, search for its tag and suspend t
 | Landmarks | Wikidata | World Heritage sites and famous structures that are buildings, monuments or archaeological sites; living cities are left out |
 | Lines | Natural Earth | The Equator, the tropics, the polar circles and the International Date Line, plus the Prime Meridian |
 
-Countries are computed from the shapes: the countries that hold a share of an area, border a sea or lake, or are
-crossed by a river. Facts (heights, lengths, areas) come from Wikidata, converted to metric; build dates and cultures
+Countries are computed from the shapes: the countries that hold a share of an area, border a sea or lake, contain a point or are
+crossed by a line or river. A country that Wikidata names for a place is added only if it lies within 50 km of it. Continents come from the Natural Earth continent shapes, so Siberia is in Asia and Martinique in the Americas. Facts (heights, lengths, areas) come from Wikidata, converted to metric; build dates and cultures
 from the Wikipedia infobox; the sentence on the back of each card from the English Wikipedia summary; photos from Wikimedia Commons, with their author and licence recorded in `data/places/CREDITS.md`. A place inside a disputed area is listed with its city only, not a country.
 
 ## How the data is chosen

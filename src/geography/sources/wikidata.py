@@ -105,7 +105,7 @@ class Wikidata:
             for key, url in wikipedia_urls.items()
         }
         qid_by_title = {}
-        for batch in itertools.batched(sorted(set(titles.values())), TITLE_BATCH):
+        for batch in itertools.batched(sorted(set(titles.values())), TITLE_BATCH, strict=False):
             qid_by_title.update(self._resolve_titles(batch))
         return {key: qid_by_title[title] for key, title in titles.items() if title in qid_by_title}
 
@@ -171,7 +171,7 @@ class Wikidata:
 
     def by_geonames_ids(self, geonames_ids: set[str]) -> dict[str, str]:
         found = {}
-        for batch in itertools.batched(sorted(geonames_ids), DETAIL_BATCH):
+        for batch in itertools.batched(sorted(geonames_ids), DETAIL_BATCH, strict=False):
             identifiers = " ".join(f'"{identifier}"' for identifier in batch)
             rows = self._select(f"""
                 SELECT ?id ?city WHERE {{
@@ -325,7 +325,7 @@ class Wikidata:
 
     def city_details(self, city_qids: set[str]) -> dict[str, City]:
         details = {}
-        for batch in itertools.batched(sorted(city_qids), DETAIL_BATCH):
+        for batch in itertools.batched(sorted(city_qids), DETAIL_BATCH, strict=False):
             rows = self._select(f"""
                 SELECT ?city ?cityLabel ?title ?links ?coordinates ?osm WHERE {{
                   VALUES ?city {{ {values_clause(batch)} }}
@@ -354,7 +354,7 @@ class Wikidata:
 
     def article_titles(self, qids: set[str]) -> dict[str, str]:
         titles = {}
-        for batch in itertools.batched(sorted(qids), DETAIL_BATCH):
+        for batch in itertools.batched(sorted(qids), DETAIL_BATCH, strict=False):
             rows = self._select(f"""
                 SELECT ?item ?title WHERE {{
                   VALUES ?item {{ {values_clause(batch)} }}
@@ -365,7 +365,7 @@ class Wikidata:
 
     def sitelink_counts(self, qids: set[str]) -> dict[str, int]:
         counts = {}
-        for batch in itertools.batched(sorted(qids), DETAIL_BATCH):
+        for batch in itertools.batched(sorted(qids), DETAIL_BATCH, strict=False):
             rows = self._select(f"""
                 SELECT ?item ?links WHERE {{
                   VALUES ?item {{ {values_clause(batch)} }}
@@ -376,7 +376,7 @@ class Wikidata:
 
     def populations(self, qids: set[str]) -> dict[str, int]:
         found = {}
-        for batch in itertools.batched(sorted(qids), DETAIL_BATCH):
+        for batch in itertools.batched(sorted(qids), DETAIL_BATCH, strict=False):
             found.update(self._populations(batch))
         return found
 

@@ -46,6 +46,7 @@ BORDER_FRAME_M = 350_000
 FRAME_SEGMENTS = 32
 MAX_FRAME_WIDTH_M = 15_000_000
 MIN_CONTEXT = 1.05
+PLACE_ZOOM_THRESHOLD = 0.07
 CONTEXT_STEP = 0.05
 HEMISPHERE_M = 8_500_000
 POLAR_RING_LATITUDE = 60
@@ -141,6 +142,7 @@ def area_scene(job: FeatureMapJob) -> Scene:
         host=shape,
         regions=NaturalEarth.load().countries.geometry,
         framing=Framing.COUNTRY,
+        zoom_threshold=PLACE_ZOOM_THRESHOLD,
         style=job.kind.spec.palette.style(Shape.AREA),
     )
 
@@ -156,6 +158,7 @@ def line_scene(job: FeatureMapJob) -> Scene:
         host=empty(),
         regions=empty(),
         framing=Framing.COUNTRY,
+        zoom_threshold=PLACE_ZOOM_THRESHOLD,
         style=job.kind.spec.palette.style(Shape.LINE),
     )
 

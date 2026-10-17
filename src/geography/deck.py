@@ -164,10 +164,6 @@ COUNTRY_TEMPLATES = (
     Template("Map", "Map", *guarded("Map", ask_entity("Map", image("Map", "map"), facts=FACT_CHIPS))),
 )
 
-RETIRED_TEMPLATES = tuple(
-    {"name": fact.field, "qfmt": "{{^Name}}retired{{/Name}}", "afmt": "{{FrontSide}}"} for fact in FACTS
-)
-
 CAPITAL_OF_CARD = 1
 
 COUNTRY_FIELDS = (
@@ -391,7 +387,7 @@ class DeckBuilder:
             COUNTRY_MODEL_ID,
             f"{DECK_NAME} country",
             COUNTRY_FIELDS,
-            [*(template.as_genanki(MAP_ZOOM_SCRIPT) for template in COUNTRY_TEMPLATES), *RETIRED_TEMPLATES],
+            [template.as_genanki(MAP_ZOOM_SCRIPT) for template in COUNTRY_TEMPLATES],
             CSS + FACTS_CSS + MAP_ZOOM_CSS,
         )
         self.city_model = self._model(

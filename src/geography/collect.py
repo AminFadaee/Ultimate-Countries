@@ -13,7 +13,10 @@ import requests
 from shapely.geometry import Point
 
 from geography import founding
+from geography.currencies import with_main
 from geography.data import NaturalEarth, is_younger_than
+from geography.db import Database
+from geography.demonyms import corrected_demonym, other_demonyms
 from geography.detail import (
     COUNTRIES_FILE,
     LAKES_FILE,
@@ -22,12 +25,11 @@ from geography.detail import (
     build_country_layer,
     build_lake_layer,
 )
-from geography.db import Database
-from geography.currencies import with_main
-from geography.demonyms import corrected_demonym, other_demonyms
 from geography.economy import classify
+from geography.famous_cities import FamousCities
 from geography.flags import download_flag
 from geography.government import government_form
+from geography.labels import CityLabel
 from geography.languages import merge_languages, with_status
 from geography.maps import (
     DISTRICT_TYPES,
@@ -49,11 +51,17 @@ from geography.models import (
     Recognition,
     Source,
 )
-from geography.famous_cities import FamousCities
-from geography.labels import CityLabel
 from geography.naming import answer_path, slugify
 from geography.places import CITY_ZOOM, DISTRICT_ZOOM, Nominatim
-from geography.sources import cldr, geonames, iso639, iso4217, pew, restcountries, worldbank
+from geography.sources import (
+    cldr,
+    geonames,
+    iso639,
+    iso4217,
+    pew,
+    restcountries,
+    worldbank,
+)
 from geography.sources.http import create_session
 from geography.sources.imf import fetch_government_spending
 from geography.sources.natural_earth_places import load_populated_places

@@ -48,7 +48,7 @@ def parse_args() -> argparse.Namespace:
     collect = commands.add_parser("collect", help="refresh the country database, flags and maps")
     collect.add_argument("--data-dir", type=pathlib.Path, default=DATA_DIR)
     collect.add_argument("--refresh-cities", action="store_true", help="re-rank cities even if recently updated")
-    collect.add_argument("--rerender-maps", action="store_true", help="render maps even if they already exist")
+    collect.add_argument("--rerender-maps", action="store_true", help="redraw maps that already exist, reusing any whose inputs are unchanged")
     collect.add_argument("--skip-maps", action="store_true", help="collect data without rendering maps")
     collect.add_argument(
         "--only-cities", action="store_true", help="select famous cities and render their maps, refreshing no other data"
@@ -66,7 +66,7 @@ def parse_args() -> argparse.Namespace:
 
     places = commands.add_parser("places", help="collect geographic features and landmarks for Ultimate Places")
     places.add_argument("--data-dir", type=pathlib.Path, default=DATA_DIR)
-    places.add_argument("--rerender-maps", action="store_true", help="render maps even if they already exist")
+    places.add_argument("--rerender-maps", action="store_true", help="redraw maps that already exist, reusing any whose inputs are unchanged")
     places.add_argument("--workers", type=int, default=PlacesOptions.workers, help="parallel map renderers")
 
     places_deck = commands.add_parser("places-deck", help="build the Ultimate Places Anki deck")

@@ -2,8 +2,10 @@ import dataclasses
 import hashlib
 import itertools
 import logging
+import os
 import pathlib
 import shutil
+import time
 from collections.abc import Callable, Iterable
 from importlib import metadata
 
@@ -15,6 +17,8 @@ from geography.detail import CACHE_DIR
 MAP_CACHE_DIR = CACHE_DIR / "maps"
 OUTPUT_FIELDS = ("output", "answer_output")
 MAPS_PER_BATCH = 30
+UNUSED_DAYS = 90
+CHUNK = 1 << 20
 RENDERER_FILES = (
     "render.py",
     "images.py",
@@ -25,11 +29,21 @@ RENDERER_FILES = (
     "places.py",
     "features/maps.py",
     "features/kinds.py",
+    "features/spatial.py",
+    "sources/natural_earth_physical.py",
 )
-LIBRARIES = ("matplotlib", "cartopy", "shapely", "geopandas", "pillow", "pyproj")
+LIBRARIES = ("matplotlib", "cartopy", "shapely", "geopandas", "pillow", "pyproj", "numpy", "pandas")
 BASE_DATA = ((DATA_DIR, "*.zip"), (CACHE_DIR, "detail_*.gpkg"), (CACHE_DIR, "ne_10m_*.zip"))
 
 logger = logging.getLogger(__name__)
+
+
+def file_digest(path: pathlib.Path) -> str:
+    content = hashlib.sha256()
+    with path.open("rb") as stream:
+        while chunk := stream.read(CHUNK):
+            content.update(chunk)
+    return content.hexdigest()
 
 
 def setting_digest() -> str:
@@ -40,7 +54,8 @@ def setting_digest() -> str:
         content.update(f"{library}={metadata.version(library)}".encode())
     for directory, pattern in BASE_DATA:
         for path in sorted(directory.glob(pattern)):
-            content.update(f"{path.name}:{path.stat().st_size}".encode())
+            content.update(path.name.encode())
+            content.update(file_digest(path).encode())
     return content.hexdigest()
 
 
@@ -59,6 +74,13 @@ class MapCache:
     def __init__(self, directory: pathlib.Path = MAP_CACHE_DIR):
         self.directory = directory
         self.setting = setting_digest()
+        self._prune()
+
+    def _prune(self) -> None:
+        cutoff = time.time() - UNUSED_DAYS * 24 * 3600
+        for path in self.directory.glob("*.png"):
+            if path.stat().st_mtime < cutoff:
+                path.unlink()
 
     def fingerprint(self, job) -> str:
         content = hashlib.sha256(self.setting.encode())
@@ -79,6 +101,7 @@ class MapCache:
         for cached, output in entries:
             output.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(cached, output)
+            os.utime(cached)
         return True
 
     def keep(self, job) -> None:
@@ -97,7 +120,7 @@ def through_cache(jobs: list, render: Callable[[list], Iterable[tuple]]) -> Iter
         else:
             missing.append(job)
     logger.info("Maps: %d reused, %d to draw", len(jobs) - len(missing), len(missing))
-    for batch in itertools.batched(missing, MAPS_PER_BATCH):
+    for batch in itertools.batched(missing, MAPS_PER_BATCH, strict=False):
         for job, error in render(list(batch)):
             if error is None:
                 cache.keep(job)
