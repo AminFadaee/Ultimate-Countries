@@ -12,7 +12,7 @@ See [Ultimate Places](#ultimate-places) below.
 It is inspired by [Ultimate Geography](https://github.com/anki-geo/ultimate-geography), the deck that got me excited
 about learning geography. Ultimate Countries covers every country and territory with a permanent population: 247 in
 all, each with its flag, map and capital to learn, plus demonym, languages, currency, religion, population and
-government as facts on the back of the cards, and city maps.
+government as facts on the back of the cards, and the best-known cities on the map.
 
 Every value comes from public sources through code. There are no hand-written overrides, so the whole dataset can be
 rebuilt on any day to pick up changes (new currencies, new members of an organisation, updated population figures).
@@ -37,7 +37,7 @@ of government and notable cities, under a line with its region. They are there t
 
 A card is only created when its data exists, and a fact that is missing is simply left out.
 
-Tap or click a country map to zoom in on that spot; drag to look around, and tap again to close.
+Tap or click a country or city map to zoom in on that spot; drag to look around, and tap again to close.
 
 <p>
   <img src="docs/samples/countries-capital.webp" width="49%" alt="Capital card for France">
@@ -48,11 +48,13 @@ Tap or click a country map to zoom in on that spot; drag to look around, and tap
 
 ### City notes
 
-Capitals and notable cities, each with its own locator map:
+The best-known cities of the world, 186 of them in 100 countries, each with its own locator map. The map is drawn like
+an atlas page: the country's other cities are marked and named, the capital with a star, and the city being asked about
+is only outlined and magnified. The back of the card shows the same map with that city's name added:
 
 | Question | Answer |
 |---|---|
-| the city's locator map | City and country |
+| the city's locator map, with the country's other cities named | City and country, with the city named on the map |
 | Country: Lyon | France (not asked for capitals, which the capital cards already cover) |
 
 <p>
@@ -87,14 +89,19 @@ you import an update.
 
 ### Updating from an older version
 
-Older versions also asked demonym, language, currency, religion, population and government questions, and kept the cards
-in subdecks (Capitals, Flags, Maps, Cities and one per old question). Both changed. To update:
+Older versions also asked demonym, language, currency, religion, population and government questions, kept the cards
+in subdecks (Capitals, Flags, Maps, Cities and one per old question), and had a city note for every notable city. All of
+that changed. To update:
 
-1. Import the new version with **Merge note types** ticked in the import options, otherwise Anki skips the country notes
-   ("247 notes could not be imported").
+1. Import the new version with **Merge note types** ticked and **Update notes** set to **Always** in the import options.
+   Without the first, Anki skips the notes whose note type gained or lost fields ("247 notes could not be imported");
+   without the second it skips the city notes it considers unchanged.
 2. Choose Tools → Empty Cards and delete the old question cards. Your progress on capitals, flags and maps is kept.
 3. Importing does not move cards that already sit in subdecks. In the Browser, select all the cards in "Ultimate
    Countries", choose Change Deck and pick "Ultimate Countries" itself, then delete the empty subdecks.
+4. Importing does not remove cities that are no longer in the deck. In the Browser, search for
+   `"note:Ultimate Countries city" MapAnswer:`, which finds the old city notes, select them all and delete them.
+5. Choose Tools → Check Media → Delete Unused to clear the old city maps.
 
 The note type also keeps six unused fields (`DemonymInfo`, `LanguageInfo`, `CurrencyInfo`, `ReligionInfo`,
 `PopulationInfo`, `GovernmentInfo`), which you can delete under Tools → Manage Note Types → Fields.
@@ -156,7 +163,8 @@ from the Wikipedia infobox; photos from Wikimedia Commons.
 | Country list | ISO 3166, restcountries | Every entity with an ISO 3166 code, plus sovereign states without one (Kosovo, Abkhazia…), keeping only places with a permanent population: listed in Wikipedia's population list, or at least 2,250 people |
 | Name | Wikipedia | The title of the country's English Wikipedia article, which follows the most common English name |
 | Demonym, currencies, government label, capitals | restcountries | Demonym spelling cross-checked with Wikidata |
-| Capital cities, notable cities, city populations | Wikidata, GeoNames | Notable cities rank on fame (Wikipedia sitelinks) and size, skipping suburbs and villages |
+| Capital cities, notable cities, city populations | Wikidata, GeoNames | Up to five notable cities per country rank on fame (Wikipedia sitelinks) and size, skipping suburbs and villages. They are the "Cities" chip on the cards and the labels on the city maps |
+| City cards | Natural Earth populated places, Wikidata, Wikipedia | A city that Wikipedia covers in at least 180 languages and that has at least 100,000 people, or one on Wikipedia's most-visited cities lists (Euromonitor, Mastercard) with at least 100 languages. At most eight per country, ranked by fame and size; cities that are countries themselves are left out |
 | Population | World Bank | Latest figure, at most 5 years old; restcountries otherwise |
 | Official languages | Wikipedia, Wikidata | National and regional status from Wikipedia's list of official languages |
 | Spoken languages | Unicode CLDR | Includes second-language speakers |
@@ -187,13 +195,14 @@ uv run geography places-deck  # build build/ultimate_places.apkg
 uv run geography samples      # render the sample cards in docs/samples/ from the built decks
 ```
 
-The first `collect` downloads several hundred MB of source data and renders about 1,170 maps, which takes a few hours.
+The first `collect` downloads several hundred MB of source data and renders about 620 maps, which takes a few hours.
 Later runs reuse the caches.
 
 Useful options:
 
 - `collect --skip-maps` refreshes the data only
-- `collect --refresh-cities` re-ranks notable cities, which are otherwise refreshed every 30 days
+- `collect --refresh-cities` re-ranks notable and famous cities, which are otherwise refreshed every 30 days
+- `collect --only-cities` selects the famous cities and renders their maps without refreshing any other data
 - `collect --rerender-maps` redraws every map
 - `collect --workers N` sets the number of parallel map renderers (default 4)
 - `check --details` lists every failure and anomaly
