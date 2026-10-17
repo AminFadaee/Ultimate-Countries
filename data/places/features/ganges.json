@@ -4,7 +4,8 @@
   "name": "Ganges",
   "kind": "River",
   "countries": [
-    "India"
+    "India",
+    "Bangladesh"
   ],
   "continents": [
     "Asia"

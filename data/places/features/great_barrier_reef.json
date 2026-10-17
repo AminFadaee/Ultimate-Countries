@@ -3,8 +3,12 @@
   "qid": "Q7343",
   "name": "Great Barrier Reef",
   "kind": "Reef",
-  "countries": [],
-  "continents": [],
+  "countries": [
+    "Australia"
+  ],
+  "continents": [
+    "Oceania"
+  ],
   "city": null,
   "height_m": null,
   "elevation_m": null,
@@ -16,6 +20,7 @@
   "world_heritage": true,
   "tags": [
     "Reef",
+    "Oceania",
     "World_Heritage"
   ],
   "map": "places/maps/great_barrier_reef.png",

@@ -10,8 +10,7 @@
     "Saudi Arabia"
   ],
   "continents": [
-    "Africa",
-    "Asia"
+    "Africa"
   ],
   "city": null,
   "height_m": null,
@@ -24,8 +23,7 @@
   "world_heritage": false,
   "tags": [
     "Sea",
-    "Africa",
-    "Asia"
+    "Africa"
   ],
   "map": "places/maps/gulf_of_aqaba.png",
   "photo": null,

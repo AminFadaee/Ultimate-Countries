@@ -11,8 +11,7 @@
     "Turkmenistan"
   ],
   "continents": [
-    "Asia",
-    "Europe"
+    "Asia"
   ],
   "city": null,
   "height_m": null,
@@ -25,8 +24,7 @@
   "world_heritage": false,
   "tags": [
     "Sea",
-    "Asia",
-    "Europe"
+    "Asia"
   ],
   "map": "places/maps/caspian_sea.png",
   "photo": null,

@@ -7,6 +7,7 @@
     "Russia"
   ],
   "continents": [
+    "Asia",
     "Europe"
   ],
   "city": null,
@@ -20,6 +21,7 @@
   "world_heritage": false,
   "tags": [
     "Mountain_range",
+    "Asia",
     "Europe"
   ],
   "map": "places/maps/ural_mountains.png",

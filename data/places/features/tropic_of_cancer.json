@@ -19,13 +19,11 @@
     "Bangladesh",
     "Morocco",
     "Western Sahara",
-    "Taiwan"
+    "Taiwan",
+    "Niger",
+    "The Bahamas"
   ],
-  "continents": [
-    "Africa",
-    "Americas",
-    "Asia"
-  ],
+  "continents": [],
   "city": null,
   "height_m": null,
   "elevation_m": null,
@@ -36,10 +34,7 @@
   "description": "The Tropic of Cancer is the Earth's northernmost circle of latitude where the Sun can be seen directly overhead.",
   "world_heritage": false,
   "tags": [
-    "Line",
-    "Africa",
-    "Americas",
-    "Asia"
+    "Line"
   ],
   "map": "places/maps/tropic_of_cancer.png",
   "photo": null,

@@ -4,11 +4,11 @@
   "name": "Niger River",
   "kind": "River",
   "countries": [
-    "Benin",
-    "Guinea",
     "Mali",
+    "Nigeria",
+    "Guinea",
     "Niger",
-    "Nigeria"
+    "Benin"
   ],
   "continents": [
     "Africa"

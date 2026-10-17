@@ -4,15 +4,16 @@
   "name": "Danube",
   "kind": "River",
   "countries": [
+    "Romania",
+    "Germany",
+    "Serbia",
     "Austria",
+    "Hungary",
+    "Slovakia",
     "Bulgaria",
     "Croatia",
-    "Germany",
-    "Hungary",
-    "Moldova",
-    "Romania",
-    "Serbia",
-    "Slovakia"
+    "Ukraine",
+    "Moldova"
   ],
   "continents": [
     "Europe"

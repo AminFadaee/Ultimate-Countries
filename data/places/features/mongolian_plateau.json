@@ -9,8 +9,7 @@
     "Russia"
   ],
   "continents": [
-    "Asia",
-    "Europe"
+    "Asia"
   ],
   "city": null,
   "height_m": null,
@@ -23,8 +22,7 @@
   "world_heritage": false,
   "tags": [
     "Plateau",
-    "Asia",
-    "Europe"
+    "Asia"
   ],
   "map": "places/maps/mongolian_plateau.png",
   "photo": null,

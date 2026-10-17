@@ -12,7 +12,6 @@
     "Vanuatu"
   ],
   "continents": [
-    "Asia",
     "Oceania"
   ],
   "city": null,
@@ -26,7 +25,6 @@
   "world_heritage": false,
   "tags": [
     "Sea",
-    "Asia",
     "Oceania"
   ],
   "map": "places/maps/coral_sea.png",

@@ -4,12 +4,11 @@
   "name": "Mount Bazardüzü",
   "kind": "Mountain",
   "countries": [
-    "Azerbaijan",
-    "Russia"
+    "Russia",
+    "Azerbaijan"
   ],
   "continents": [
-    "Asia",
-    "Europe"
+    "Asia"
   ],
   "city": null,
   "height_m": null,
@@ -22,8 +21,7 @@
   "world_heritage": false,
   "tags": [
     "Mountain",
-    "Asia",
-    "Europe"
+    "Asia"
   ],
   "map": "places/maps/mount_bazarduzu.png",
   "photo": {

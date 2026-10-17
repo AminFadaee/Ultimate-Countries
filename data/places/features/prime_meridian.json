@@ -13,10 +13,7 @@
     "United Kingdom",
     "Togo"
   ],
-  "continents": [
-    "Africa",
-    "Europe"
-  ],
+  "continents": [],
   "city": null,
   "height_m": null,
   "elevation_m": null,
@@ -27,9 +24,7 @@
   "description": null,
   "world_heritage": false,
   "tags": [
-    "Line",
-    "Africa",
-    "Europe"
+    "Line"
   ],
   "map": "places/maps/prime_meridian.png",
   "photo": null,

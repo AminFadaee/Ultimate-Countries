@@ -5,7 +5,10 @@
   "kind": "Peninsula",
   "countries": [
     "Spain",
-    "Portugal"
+    "Portugal",
+    "Andorra",
+    "France",
+    "Gibraltar"
   ],
   "continents": [
     "Europe"

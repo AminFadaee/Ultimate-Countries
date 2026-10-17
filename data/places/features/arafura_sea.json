@@ -9,7 +9,6 @@
     "Papua New Guinea"
   ],
   "continents": [
-    "Asia",
     "Oceania"
   ],
   "city": null,
@@ -23,7 +22,6 @@
   "world_heritage": false,
   "tags": [
     "Sea",
-    "Asia",
     "Oceania"
   ],
   "map": "places/maps/arafura_sea.png",

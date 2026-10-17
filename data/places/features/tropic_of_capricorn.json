@@ -15,11 +15,7 @@
     "Mozambique",
     "Chile"
   ],
-  "continents": [
-    "Africa",
-    "Americas",
-    "Oceania"
-  ],
+  "continents": [],
   "city": null,
   "height_m": null,
   "elevation_m": null,
@@ -30,10 +26,7 @@
   "description": "The Tropic of Capricorn is the circle of latitude that contains the subsolar point at the December solstice.",
   "world_heritage": false,
   "tags": [
-    "Line",
-    "Africa",
-    "Americas",
-    "Oceania"
+    "Line"
   ],
   "map": "places/maps/tropic_of_capricorn.png",
   "photo": null,

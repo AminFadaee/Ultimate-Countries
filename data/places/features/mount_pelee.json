@@ -7,7 +7,7 @@
     "France"
   ],
   "continents": [
-    "Europe"
+    "Americas"
   ],
   "city": null,
   "height_m": null,
@@ -20,7 +20,7 @@
   "world_heritage": false,
   "tags": [
     "Volcano",
-    "Europe"
+    "Americas"
   ],
   "map": "places/maps/mount_pelee.png",
   "photo": {

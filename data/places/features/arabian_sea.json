@@ -12,8 +12,7 @@
     "Yemen"
   ],
   "continents": [
-    "Africa",
-    "Asia"
+    "Africa"
   ],
   "city": null,
   "height_m": null,
@@ -26,8 +25,7 @@
   "world_heritage": false,
   "tags": [
     "Sea",
-    "Africa",
-    "Asia"
+    "Africa"
   ],
   "map": "places/maps/arabian_sea.png",
   "photo": null,

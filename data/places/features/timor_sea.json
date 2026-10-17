@@ -9,7 +9,6 @@
     "Timor-Leste"
   ],
   "continents": [
-    "Asia",
     "Oceania"
   ],
   "city": null,
@@ -23,7 +22,6 @@
   "world_heritage": false,
   "tags": [
     "Sea",
-    "Asia",
     "Oceania"
   ],
   "map": "places/maps/timor_sea.png",

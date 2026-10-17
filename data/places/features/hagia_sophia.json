@@ -7,7 +7,7 @@
     "Turkey"
   ],
   "continents": [
-    "Asia"
+    "Europe"
   ],
   "city": "Istanbul",
   "height_m": 55.0,
@@ -20,7 +20,7 @@
   "world_heritage": false,
   "tags": [
     "Landmark",
-    "Asia"
+    "Europe"
   ],
   "map": "places/maps/hagia_sophia.png",
   "photo": {

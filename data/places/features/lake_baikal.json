@@ -7,7 +7,7 @@
     "Russia"
   ],
   "continents": [
-    "Europe"
+    "Asia"
   ],
   "city": null,
   "height_m": null,
@@ -20,7 +20,7 @@
   "world_heritage": true,
   "tags": [
     "Lake",
-    "Europe",
+    "Asia",
     "World_Heritage"
   ],
   "map": "places/maps/lake_baikal.png",

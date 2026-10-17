@@ -4,13 +4,8 @@
   "name": "Nile",
   "kind": "River",
   "countries": [
-    "Burundi",
     "Egypt",
-    "Ethiopia",
-    "Rwanda",
-    "South Sudan",
-    "Sudan",
-    "Uganda"
+    "Sudan"
   ],
   "continents": [
     "Africa"

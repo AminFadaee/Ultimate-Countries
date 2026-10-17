@@ -9,8 +9,7 @@
     "Norway"
   ],
   "continents": [
-    "Americas",
-    "Europe"
+    "Americas"
   ],
   "city": null,
   "height_m": null,
@@ -23,8 +22,7 @@
   "world_heritage": false,
   "tags": [
     "Sea",
-    "Americas",
-    "Europe"
+    "Americas"
   ],
   "map": "places/maps/greenland_sea.png",
   "photo": null,

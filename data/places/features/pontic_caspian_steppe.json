@@ -8,10 +8,10 @@
     "Ukraine",
     "Kazakhstan",
     "Romania",
-    "Moldova"
+    "Moldova",
+    "Bulgaria"
   ],
   "continents": [
-    "Asia",
     "Europe"
   ],
   "city": null,
@@ -25,7 +25,6 @@
   "world_heritage": false,
   "tags": [
     "Plain",
-    "Asia",
     "Europe"
   ],
   "map": "places/maps/pontic_caspian_steppe.png",

@@ -7,7 +7,7 @@
     "Iceland"
   ],
   "continents": [
-    "Europe"
+    "Americas"
   ],
   "city": null,
   "height_m": 65.0,
@@ -20,7 +20,7 @@
   "world_heritage": false,
   "tags": [
     "Waterfall",
-    "Europe"
+    "Americas"
   ],
   "map": "places/maps/seljalandsfoss.png",
   "photo": {

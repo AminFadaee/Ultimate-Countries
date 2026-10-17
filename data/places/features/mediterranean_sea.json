@@ -29,9 +29,7 @@
     "Turkey"
   ],
   "continents": [
-    "Africa",
-    "Asia",
-    "Europe"
+    "Africa"
   ],
   "city": null,
   "height_m": null,
@@ -44,9 +42,7 @@
   "world_heritage": false,
   "tags": [
     "Sea",
-    "Africa",
-    "Asia",
-    "Europe"
+    "Africa"
   ],
   "map": "places/maps/mediterranean_sea.png",
   "photo": null,

@@ -9,8 +9,7 @@
     "Spain"
   ],
   "continents": [
-    "Africa",
-    "Europe"
+    "Africa"
   ],
   "city": null,
   "height_m": null,
@@ -23,8 +22,7 @@
   "world_heritage": false,
   "tags": [
     "Sea",
-    "Africa",
-    "Europe"
+    "Africa"
   ],
   "map": "places/maps/strait_of_gibraltar.png",
   "photo": null,

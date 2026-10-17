@@ -15,8 +15,7 @@
     "Ecuador"
   ],
   "continents": [
-    "Americas",
-    "Europe"
+    "Americas"
   ],
   "city": null,
   "height_m": null,
@@ -29,8 +28,7 @@
   "world_heritage": false,
   "tags": [
     "Rainforest",
-    "Americas",
-    "Europe"
+    "Americas"
   ],
   "map": "places/maps/amazon_rainforest.png",
   "photo": {

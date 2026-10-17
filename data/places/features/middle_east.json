@@ -24,8 +24,7 @@
   ],
   "continents": [
     "Africa",
-    "Asia",
-    "Europe"
+    "Asia"
   ],
   "city": null,
   "height_m": null,
@@ -39,8 +38,7 @@
   "tags": [
     "Region",
     "Africa",
-    "Asia",
-    "Europe"
+    "Asia"
   ],
   "map": "places/maps/middle_east.png",
   "photo": null,

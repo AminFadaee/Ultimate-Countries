@@ -15,7 +15,7 @@
   "length_km": 0.0512,
   "area_km2": null,
   "built": "1792–1800",
-  "culture": "Neoclassical Palladian",
+  "culture": "Neoclassical",
   "description": "The White House is the official residence and workplace of the president of the United States.",
   "world_heritage": false,
   "tags": [
@@ -26,7 +26,7 @@
   "photo": {
     "file": "places/photos/white_house.jpg",
     "source": "http://commons.wikimedia.org/wiki/Special:FilePath/WhiteHouseSouthFacade.JPG",
-    "author": "This image or media was taken or created by Matt H. Wade. To see his entire portfolio, click here.@thatmattwade This image is protected by copyright! If you would like to use it, please read this first.",
+    "author": "Matt H. Wade",
     "license": "CC BY-SA 3.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
     "page": "https://commons.wikimedia.org/wiki/File:WhiteHouseSouthFacade.JPG"

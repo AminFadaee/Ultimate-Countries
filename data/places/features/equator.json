@@ -13,13 +13,10 @@
     "Gabon",
     "Republic of the Congo",
     "Uganda",
-    "Somalia"
+    "Somalia",
+    "São Tomé and Príncipe"
   ],
-  "continents": [
-    "Africa",
-    "Americas",
-    "Asia"
-  ],
+  "continents": [],
   "city": null,
   "height_m": null,
   "elevation_m": null,
@@ -30,10 +27,7 @@
   "description": "The equator is the circle of latitude that divides Earth into the Northern and Southern Hemispheres.",
   "world_heritage": false,
   "tags": [
-    "Line",
-    "Africa",
-    "Americas",
-    "Asia"
+    "Line"
   ],
   "map": "places/maps/equator.png",
   "photo": null,

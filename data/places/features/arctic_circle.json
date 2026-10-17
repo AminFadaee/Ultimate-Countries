@@ -10,12 +10,10 @@
     "Greenland",
     "Sweden",
     "Finland",
-    "Norway"
+    "Norway",
+    "Iceland"
   ],
-  "continents": [
-    "Americas",
-    "Europe"
-  ],
+  "continents": [],
   "city": null,
   "height_m": null,
   "elevation_m": null,
@@ -26,9 +24,7 @@
   "description": "The Arctic Circle is one of the two polar circles, and the northernmost of the five major circles of latitude.",
   "world_heritage": false,
   "tags": [
-    "Line",
-    "Americas",
-    "Europe"
+    "Line"
   ],
   "map": "places/maps/arctic_circle.png",
   "photo": null,

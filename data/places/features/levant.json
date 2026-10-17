@@ -12,8 +12,7 @@
     "Syria"
   ],
   "continents": [
-    "Asia",
-    "Europe"
+    "Asia"
   ],
   "city": null,
   "height_m": null,
@@ -26,8 +25,7 @@
   "world_heritage": false,
   "tags": [
     "Region",
-    "Asia",
-    "Europe"
+    "Asia"
   ],
   "map": "places/maps/levant.png",
   "photo": null,

@@ -4,10 +4,9 @@
   "name": "River Congo",
   "kind": "River",
   "countries": [
-    "Angola",
     "Democratic Republic of the Congo",
     "Republic of the Congo",
-    "Zambia"
+    "Angola"
   ],
   "continents": [
     "Africa"

@@ -4,11 +4,11 @@
   "name": "Zambezi River",
   "kind": "River",
   "countries": [
-    "Angola",
-    "Mozambique",
-    "Namibia",
     "Zambia",
-    "Zimbabwe"
+    "Mozambique",
+    "Angola",
+    "Zimbabwe",
+    "Namibia"
   ],
   "continents": [
     "Africa"

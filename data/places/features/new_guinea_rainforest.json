@@ -8,7 +8,6 @@
     "Papua New Guinea"
   ],
   "continents": [
-    "Asia",
     "Oceania"
   ],
   "city": null,
@@ -22,7 +21,6 @@
   "world_heritage": false,
   "tags": [
     "Rainforest",
-    "Asia",
     "Oceania"
   ],
   "map": "places/maps/new_guinea_rainforest.png",

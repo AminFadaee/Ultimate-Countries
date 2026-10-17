@@ -7,7 +7,7 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Abu Simbel | Olaf Tausch | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gro%C3%9Fer_Tempel_(Abu_Simbel)_31.jpg) |
 | Aconcagua | Bjørn Christian Tørrissen | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aconcagua2016.jpg) |
 | Acropolis of Athens | A.Savin | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg) |
-| Ajanta Caves | No machine-readable author provided. Soman assumed (based on copyright claims). | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ajanta_(63).jpg) |
+| Ajanta Caves | Soman | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ajanta_(63).jpg) |
 | Al-Aqsa Mosque | Godot13 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jerusalem-2013-Temple_Mount-Al-Aqsa_Mosque_(NE_exposure).jpg) |
 | Al-Masjid Al-Haram | Khalili Collections | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Khalili_Collection_Hajj_and_Arts_of_Pilgrimage_arc.pp_0211.04_CROP.jpg) |
 | Alhambra | Jebulon | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Alhambra_detail.jpg) |
@@ -69,10 +69,10 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Leaning Tower of Pisa | Chabe01 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Campanile_D%C3%B4me_-_Pise_(IT52)_-_2022-08-31_-_20.jpg) |
 | Machu Picchu | Draceane | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Machu_Picchu,_2023_(012).jpg) |
 | Matterhorn | Gianluca Miscione | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cervino_cloud.jpg) |
-| Mauna Kea | unknown | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mauna_Kea10.jpg) |
+| Mauna Kea |  | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mauna_Kea10.jpg) |
 | Mauna Loa | Gordon Joly | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mauna_Loa.jpg) |
 | Mausoleum at Halicarnassus | FollowingHadrian | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_ruins_of_the_Mausoleum_at_Halicarnassus.jpg) |
-| Mayon Volcano | No machine-readable author provided. Nopira assumed (based on copyright claims). | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:MayonVolcano.jpg) |
+| Mayon Volcano | Nopira | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:MayonVolcano.jpg) |
 | Merapi | Rosalia.silaban | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mount_Merapi_Not_Just_a_Legend_and_Mythology.jpg) |
 | Mohenjo-daro | The original uploader was M.Imran at English Wikipedia. | [CC SA 1.0](http://creativecommons.org/licenses/sa/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mohenjodaro_Sindh.jpeg) |
 | Mont Blanc | Christian David | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Panorama_of_Mont_Blanc_du_Tacul,_Mont_Maudit_and_Mont_Blanc_from_Aiguille_du_Midi,_Chamonix,_Haute-Savoie.jpg) |
@@ -83,7 +83,7 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Mount Elbrus | Jason Blue-Smith | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mt._Elbrus_in_Russia.jpg) |
 | Mount Erebus | Richard Waitt, U.S. Geological Survey | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mt_erebus.jpg) |
 | Mount Etna | Jacopo Werther | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:View_of_Mount_Etna_from_Reggio_Calabria_-_Italy_-_10_Feb._2017_-_(1).jpg) |
-| Mount Everest | Mount_Everest_as_seen_from_Drukair2.jpg: shrimpo1967 derivative work: Papa Lima Whiskey 2 (talk) | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg) |
+| Mount Everest | shrimpo1967 derivative work: Papa Lima Whiskey 2 (talk) | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg) |
 | Mount Fuji | 名古屋太郎, (edited by Hannes_24) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kodaki_fuji_frm_shojinko_refurb.jpg) |
 | Mount Kailash | Jean-Marie Hullot | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kailash-Barkha.jpg) |
 | Mount Kenya | Ruud Zwart | [CC BY-SA 2.5 nl](https://creativecommons.org/licenses/by-sa/2.5/nl/deed.en) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mount_kenya.JPG) |
@@ -92,7 +92,7 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Mount Kosciuszko | John Wormell | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kosciuszko_Townsend.jpg) |
 | Mount Logan | Gerald Holdsworth | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mount_Logan.jpg) |
 | Mount Olympus | kallerna | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mt_Olympus_aerial_2.jpg) |
-| Mount Pelée | unknown | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:La_Pel%C3%A9e_vue_du_Carbet.jpg) |
+| Mount Pelée |  | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:La_Pel%C3%A9e_vue_du_Carbet.jpg) |
 | Mount Rainier | Walter Siegmund (talk) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mount_Rainier_5917s.JPG) |
 | Mount Rushmore | Thomas Wolf, www.foto-tw.de | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mount_Rushmore_detail_view_(100MP).jpg) |
 | Mount St. Helens | Lyn Topinka | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:MSH82_st_helens_plume_from_harrys_ridge_05-19-82.jpg) |
@@ -115,15 +115,15 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Pompeii | Glen Scarborough from The Central Coast, Australia | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pompeii_(4873744179).jpg) |
 | Popocatépetl | Jakub Hejtmánek | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mexico-Popocatepetl.jpg) |
 | Puncak Jaya | Alfindra Primaldhi | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Puncakjaya.jpg) |
-| Quebrada de Humahuaca | unknown | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jujuy-Purmamarca-P3120033.JPG) |
+| Quebrada de Humahuaca |  | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jujuy-Purmamarca-P3120033.JPG) |
 | Rhine Falls | Christian David | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Chutes_du_Rhin_-_Octobre_2021.jpg) |
 | Seljalandsfoss | Zoran Kurelić Rabko | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Seljalandsfoss_-_panoramio_(7).jpg) |
 | Sparta | Napoleon Vier at Dutch Wikipedia | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sparta.jpg) |
 | Statue of Liberty | Christian David | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Statue_of_Liberty_and_a_sightseeing_boat,_Liberty_Island,_New_York.jpg) |
 | Statue of Zeus at Olympia | Quatremère de Quincy | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Le_Jupiter_Olympien_ou_l%27art_de_la_sculpture_antique.jpg) |
 | Stonehenge | Stefan Kühn | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Stonehenge_Total.jpg) |
-| Sydney Opera House | No machine-readable author provided. Roybb95~commonswiki assumed (based on copyright claims). | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_Sails.jpg) |
-| Taj Mahal | Taj_Mahal,_Agra,_India_edit2.jpg: Yann; edited by King of Hearts derivative work: Jbarta (talk) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit3.jpg) |
+| Sydney Opera House | Roybb95~commonswiki | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_Sails.jpg) |
+| Taj Mahal | Yann; edited by King of Hearts derivative work: Jbarta (talk) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit3.jpg) |
 | Tambora | Jialiang Gao (peace-on-earth.org) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Caldera_Mt_Tambora_Sumbawa_Indonesia.jpg) |
 | Teide | Thomas Wolf, www.foto-tw.de | [CC BY-SA 3.0 de](https://creativecommons.org/licenses/by-sa/3.0/de/deed.en) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Teide_von_Nordosten_(Zuschnitt_2).jpg) |
 | Temple of Ephesian Artemis | Arkiyolok | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ephesos.jpg) |
@@ -135,7 +135,7 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Uluru | Thomas Schoch | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sunset_at_Uluru_on_July_30,_2005.jpg) |
 | Victoria Falls | Diego Delso | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_05.jpg) |
 | Vinson Massif | Christian Stangl | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mount_Vinson_from_NW_at_Vinson_Plateau_by_Christian_Stangl_(flickr).jpg) |
-| White House | This image or media was taken or created by Matt H. Wade. To see his entire portfolio, click here.@thatmattwade This image is protected by copyright! If you would like to use it, please read this first. | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WhiteHouseSouthFacade.JPG) |
+| White House | Matt H. Wade | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:WhiteHouseSouthFacade.JPG) |
 | White Sea – Baltic Canal | Alexxx1979 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:White_Sea%E2%80%93Baltic_Canal,_lock_P7120376_2200.jpg) |
 | Willis Tower | Daniel Schwen | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Chicago_Sears_Tower.jpg) |
 | Yosemite Falls | King of Hearts | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Yosemite_Falls_Trail_May_2011_003.jpg) |

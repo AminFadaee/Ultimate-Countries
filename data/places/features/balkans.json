@@ -17,7 +17,6 @@
     "Slovenia"
   ],
   "continents": [
-    "Asia",
     "Europe"
   ],
   "city": null,
@@ -31,7 +30,6 @@
   "world_heritage": false,
   "tags": [
     "Peninsula",
-    "Asia",
     "Europe"
   ],
   "map": "places/maps/balkans.png",

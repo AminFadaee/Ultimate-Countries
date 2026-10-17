@@ -4,32 +4,11 @@
   "name": "International Date Line",
   "kind": "Line",
   "countries": [
+    "Kiribati",
     "Russia",
-    "Canada",
-    "Greenland",
-    "Kazakhstan",
-    "United States",
-    "Mongolia",
-    "Brazil",
-    "China",
-    "Indonesia",
-    "Ukraine",
-    "France",
-    "Democratic Republic of the Congo",
-    "Kenya",
-    "Ecuador",
-    "Gabon",
-    "Germany",
-    "Colombia",
-    "Austria",
-    "Hungary"
+    "United States"
   ],
-  "continents": [
-    "Africa",
-    "Americas",
-    "Asia",
-    "Europe"
-  ],
+  "continents": [],
   "city": null,
   "height_m": null,
   "elevation_m": null,
@@ -40,11 +19,7 @@
   "description": "The International Date Line (IDL) is the line extending between the North and South Poles that is the boundary between one calendar day and the next.",
   "world_heritage": false,
   "tags": [
-    "Line",
-    "Africa",
-    "Americas",
-    "Asia",
-    "Europe"
+    "Line"
   ],
   "map": "places/maps/international_date_line.png",
   "photo": null,

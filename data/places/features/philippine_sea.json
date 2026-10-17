@@ -14,8 +14,7 @@
     "Taiwan"
   ],
   "continents": [
-    "Asia",
-    "Oceania"
+    "Asia"
   ],
   "city": null,
   "height_m": null,
@@ -28,8 +27,7 @@
   "world_heritage": false,
   "tags": [
     "Sea",
-    "Asia",
-    "Oceania"
+    "Asia"
   ],
   "map": "places/maps/philippine_sea.png",
   "photo": null,

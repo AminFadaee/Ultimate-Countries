@@ -4,8 +4,8 @@
   "name": "Baekdu Mountain",
   "kind": "Volcano",
   "countries": [
-    "China",
-    "North Korea"
+    "North Korea",
+    "China"
   ],
   "continents": [
     "Asia"
@@ -17,7 +17,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
-  "description": "Mount Paektu or Mount Baekdu (Korean: 백두산) is an active stratovolcano on the Chinese–North Korean border.",
+  "description": "Mount Paektu or Mount Baekdu is an active stratovolcano on the Chinese–North Korean border.",
   "world_heritage": false,
   "tags": [
     "Volcano",

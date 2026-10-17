@@ -8,8 +8,7 @@
     "Russia"
   ],
   "continents": [
-    "Asia",
-    "Europe"
+    "Asia"
   ],
   "city": null,
   "height_m": null,
@@ -22,8 +21,7 @@
   "world_heritage": false,
   "tags": [
     "Sea",
-    "Asia",
-    "Europe"
+    "Asia"
   ],
   "map": "places/maps/sea_of_okhotsk.png",
   "photo": null,

@@ -4,12 +4,12 @@
   "name": "Rhine",
   "kind": "River",
   "countries": [
-    "Austria",
-    "France",
     "Germany",
-    "Liechtenstein",
+    "Switzerland",
+    "France",
     "Netherlands",
-    "Switzerland"
+    "Austria",
+    "Liechtenstein"
   ],
   "continents": [
     "Europe"

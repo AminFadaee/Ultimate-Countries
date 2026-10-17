@@ -4,9 +4,9 @@
   "name": "Dnieper",
   "kind": "River",
   "countries": [
+    "Ukraine",
     "Belarus",
-    "Russia",
-    "Ukraine"
+    "Russia"
   ],
   "continents": [
     "Europe"

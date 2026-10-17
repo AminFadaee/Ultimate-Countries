@@ -4,9 +4,9 @@
   "name": "Brahmaputra River",
   "kind": "River",
   "countries": [
-    "Bangladesh",
     "China",
     "India",
+    "Bangladesh",
     "Nepal"
   ],
   "continents": [
