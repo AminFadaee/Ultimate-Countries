@@ -39,8 +39,6 @@ INSET_WIDTH = 0.26
 INSET_MARGIN = 0.02
 
 ZOOM_THRESHOLD = 0.02
-SPECK_SHARE = 0.025
-RING_SHARE = 0.016
 LENS_PADDING = 3
 LENS_RADIUS = 1.1
 LENS_MARGIN = 0.25
@@ -408,7 +406,7 @@ class LocatorMap:
 
         fig = plt.figure(figsize=(self.width, self.width * extent.height / extent.width))
         try:
-            self._plot_main(fig, scene, projection, extent, mark_specks=zoom is None)
+            self._plot_main(fig, scene, projection, extent)
             self._plot_inset(fig, projection, extent, inset_corner)
             if zoom:
                 self._plot_zoom(fig, scene, projection, extent, zoom, inset_corner)
@@ -580,24 +578,10 @@ class LocatorMap:
             zorder=5,
         )
 
-    def _plot_main(
-        self, fig: Figure, scene: Scene, projection: ccrs.Projection, extent: Extent, mark_specks: bool = False
-    ) -> None:
+    def _plot_main(self, fig: Figure, scene: Scene, projection: ccrs.Projection, extent: Extent) -> None:
         ax = fig.add_axes([0, 0, 1, 1], projection=projection)
         ax.spines["geo"].set_visible(False)
         self._draw_layers(ax, scene, projection, extent)
-        if mark_specks:
-            self._mark_specks(ax, scene, projection, extent)
-
-    def _mark_specks(self, ax, scene: Scene, projection: ccrs.Projection, extent: Extent) -> None:
-        parts = scene.highlight.explode(index_parts=False).to_crs(projection)
-        sizes = np.maximum(parts.bounds.maxx - parts.bounds.minx, parts.bounds.maxy - parts.bounds.miny)
-        small = (sizes < SPECK_SHARE * extent.width) & ~parts.is_empty
-        if small.empty or not small.all():
-            return
-        specks = parts[small]
-        rings = specks.centroid.buffer(RING_SHARE * extent.width).union_all().boundary
-        ax.add_geometries([rings], crs=projection, facecolor="none", edgecolor=Color.INSET_BOX, linewidth=1.2, zorder=6)
 
     def _plot_inset(self, fig: Figure, projection: ccrs.Projection, extent: Extent, corner: Corner) -> None:
         inset = self._inset_axes(fig, corner)
