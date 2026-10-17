@@ -497,9 +497,12 @@ class Collector:
         selected = FamousCities(self.wikidata, self.wikipedia, load_populated_places(), countries).select()
         provenance = Provenance(Source.WIKIDATA)
         for row in rows:
-            self.database.link_cities(row["id"], CityRole.FAMOUS, selected.get(row["id"], []), provenance)
-        self.database.save_cities(list(self.wikidata.city_details({qid for found in selected.values() for qid in found}).values()))
-        logger.info("Famous cities: %d in %d countries", sum(map(len, selected.values())), len(selected))
+            found = selected.by_country.get(row["id"], [])
+            self.database.link_cities(row["id"], CityRole.FAMOUS, found, provenance)
+            self.database.link_cities(row["id"], CityRole.VISITED, [qid for qid in found if qid in selected.visited], provenance)
+        chosen = {qid for found in selected.by_country.values() for qid in found}
+        self.database.save_cities(list(self.wikidata.city_details(chosen).values()))
+        logger.info("Famous cities: %d in %d countries", len(chosen), len(selected.by_country))
 
     def _largest_cities(self, countries: list[Country]) -> dict[str, list[str]]:
         by_code = geonames.fetch_largest_cities(self.session, LARGEST_CANDIDATES)

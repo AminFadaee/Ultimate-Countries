@@ -25,6 +25,7 @@ class Field(StrEnum):
     CAPITALS = "capitals"
     NOTABLE_CITIES = "notable_cities"
     FAMOUS_CITIES = "famous_cities"
+    MOST_VISITED_CITIES = "most_visited_cities"
     FLAG = "flag"
     MAP = "map"
 
@@ -57,6 +58,7 @@ class CityRole(StrEnum):
     CAPITAL = "capital"
     NOTABLE = "notable"
     FAMOUS = "famous"
+    VISITED = "visited"
 
 
 @dataclass(frozen=True)

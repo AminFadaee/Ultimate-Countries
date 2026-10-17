@@ -25,6 +25,12 @@ class Candidate:
     visited: bool
 
 
+@dataclass(frozen=True)
+class Selection:
+    by_country: dict[str, list[str]]
+    visited: set[str]
+
+
 class FamousCities:
     def __init__(self, wikidata: Wikidata, wikipedia: Wikipedia, places: gpd.GeoDataFrame, countries: dict[str, str]):
         self.wikidata = wikidata
@@ -32,7 +38,7 @@ class FamousCities:
         self.places = places
         self.countries = countries
 
-    def select(self) -> dict[str, list[str]]:
+    def select(self) -> Selection:
         visited = self._visited()
         candidates = self._candidates(visited)
         fame = self.wikidata.sitelink_counts({qid for qid, _ in candidates})
@@ -45,7 +51,7 @@ class FamousCities:
             if qid not in country_ids
         ]
         eligible = [candidate for candidate in pool if self._eligible(candidate)]
-        return self._capped(eligible)
+        return Selection(self._capped(eligible), visited)
 
     def _visited(self) -> set[str]:
         urls = self.wikipedia.most_visited_cities()

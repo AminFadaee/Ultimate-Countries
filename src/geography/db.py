@@ -186,7 +186,7 @@ ECONOMY_COLUMNS = [
 CITY_COLUMNS = [f.name for f in fields(City)]
 BOOLEAN_COLUMNS = ("sovereign", "disputed", "un_member", "un_observer", "economic_system_disputed")
 CHILD_TABLES = ("continent", "currency", "other_demonym", "language", "official_religion", "religion", "membership", "founding", "recognition", "recognising_state", "claimant")
-ROLE_FIELDS = {CityRole.CAPITAL: Field.CAPITALS, CityRole.NOTABLE: Field.NOTABLE_CITIES, CityRole.FAMOUS: Field.FAMOUS_CITIES}
+ROLE_FIELDS = {CityRole.CAPITAL: Field.CAPITALS, CityRole.NOTABLE: Field.NOTABLE_CITIES, CityRole.FAMOUS: Field.FAMOUS_CITIES, CityRole.VISITED: Field.MOST_VISITED_CITIES}
 
 
 def today() -> str:
@@ -420,12 +420,14 @@ class Database:
             """
             SELECT entity_city.role, city.id, city.name, city.latitude, city.longitude, city.population
             FROM entity_city JOIN city ON city.id = entity_city.city_id
-            WHERE entity_city.entity_id = ? AND entity_city.role != ?
+            WHERE entity_city.entity_id = ? AND entity_city.role NOT IN (?, ?)
             ORDER BY entity_city.role, entity_city.rank
             """,
             entity_id,
             CityRole.FAMOUS,
+            CityRole.VISITED,
         )
+        visited = {row["city_id"] for row in self._rows("SELECT city_id FROM entity_city WHERE entity_id = ? AND role = ?", entity_id, CityRole.VISITED)}
         famous = self._rows(
             """
             SELECT city.id, city.name, city.latitude, city.longitude, city.population, city.map
@@ -438,6 +440,7 @@ class Database:
         )
         for city in famous:
             city["answer_map"] = answer_path(city["map"]) if city["map"] else None
+            city["most_visited"] = city["id"] in visited
         founding = next(iter(self._rows("SELECT * FROM founding WHERE entity_id = ?", entity_id)), {})
         return {
             "id": entity_id,
