@@ -9,6 +9,7 @@ from datetime import date
 import genanki
 
 from geography.cards import Answer, CardType, Context, answers, shared_context
+from geography.models import CityRole
 from geography.naming import slugify
 
 DECK_NAME = "Ultimate Countries"
@@ -115,9 +116,10 @@ def ask_entity(
     context: str = REGION_CONTEXT,
     extra: str = "",
     facts: str = "",
+    shown_back: str | None = None,
 ) -> tuple[str, str]:
     front = face(UNKNOWN_ENTITY, label, shown)
-    back = face(entity(answer, answered=True), label, shown) + details(info_field, context, extra, facts)
+    back = face(entity(answer, answered=True), label, shown_back or shown) + details(info_field, context, extra, facts)
     return front, back
 
 
@@ -178,7 +180,7 @@ COUNTRY_FIELDS = (
 )
 
 CITY_MAP_FRONT, CITY_MAP_BACK = ask_entity(
-    "Map", image("Map", "map"), answer='{{City}}<div class="subtitle">{{Country}}</div>'
+    "Map", image("Map", "map"), answer='{{City}}<div class="subtitle">{{Country}}</div>', shown_back=image("MapAnswer", "map")
 )
 CITY_COUNTRY_FRONT, CITY_COUNTRY_BACK = ask_attribute("Country", "Country", subject="{{City}}")
 
@@ -188,7 +190,7 @@ CITY_TEMPLATES = (
 )
 
 CITY_MAP_CARD, CITY_COUNTRY_CARD = range(len(CITY_TEMPLATES))
-CITY_FIELDS = ("Id", "City", "Country", "Map", "IsCapital", "Region")
+CITY_FIELDS = ("Id", "City", "Country", "Map", "IsCapital", "Region", "MapAnswer")
 
 CSS = f"""
 .card {{
@@ -301,13 +303,13 @@ def description() -> str:
 <p>Inspired by <a href="{ULTIMATE_GEOGRAPHY_URL}">Ultimate Geography</a>, the deck that got me excited about learning geography.
 Ultimate Countries covers every country and territory with a permanent population. You learn capitals, flags and maps, and
 the back of every card also shows the country's demonym, languages, currency, religion, population, government and
-notable cities. City maps are in the deck too.</p>
+notable cities. The best-known cities of the world are in the deck too, each on an atlas-style map.</p>
 <p>Everything is in one deck. Notes are tagged by region, status, membership and currency (for example <code>UC::Asia</code>
 or <code>UC::NATO</code>), so you can study one group at a time with a filtered deck: Tools → Create Filtered Deck, then
 search for <code>deck:"Ultimate Countries" tag:UC::Asia</code>. You can filter by card type too, for example
 <code>deck:"Ultimate Countries" "note:Ultimate Countries country" card:Flag</code>. To skip a kind of card, search for it in the
 Browser and suspend the cards rather than deleting them, because deleted cards come back when you import an update.</p>
-<p>Tap a country map to zoom in on that spot; drag to look around and tap again to close.</p>
+<p>Tap a country or city map to zoom in on that spot; drag to look around and tap again to close.</p>
 <p>Companion deck: <a href="{PLACES_ANKIWEB_URL}">Ultimate Places</a>, with continents, seas, mountains, rivers, deserts,
 rainforests, regions and landmarks.</p>
 <p>Data is collected automatically from Wikidata (CC0), Wikipedia (CC BY-SA), restcountries, the World Bank,
@@ -390,7 +392,11 @@ class DeckBuilder:
             CSS + FACTS_CSS + MAP_ZOOM_CSS,
         )
         self.city_model = self._model(
-            CITY_MODEL_ID, f"{DECK_NAME} city", CITY_FIELDS, [template.as_genanki() for template in CITY_TEMPLATES]
+            CITY_MODEL_ID,
+            f"{DECK_NAME} city",
+            CITY_FIELDS,
+            [template.as_genanki(MAP_ZOOM_SCRIPT) for template in CITY_TEMPLATES],
+            CSS + MAP_ZOOM_CSS,
         )
         self.root = genanki.Deck(stable_id(DECK_NAME), DECK_NAME, description())
         self.notes = 0
@@ -414,16 +420,17 @@ class DeckBuilder:
 
         ords = [ord for ord, template in enumerate(COUNTRY_TEMPLATES) if values[template.requires]]
         self._add(self.country_model, COUNTRY_FIELDS, values, ords, country_tags(document), document["id"])
-        for city in document["cities"]:
-            self.add_city(city, document)
+        capitals = {city["id"] for city in document["cities"] if city["role"] == CityRole.CAPITAL}
+        for city in document["famous_cities"]:
+            self.add_city(city, document, city["id"] in capitals)
 
-    def add_city(self, city: dict, country: dict) -> None:
-        is_capital = city["role"] == "capital"
+    def add_city(self, city: dict, country: dict, is_capital: bool) -> None:
         values = {
             "Id": city["id"],
             "City": escaped(city["name"]),
             "Country": escaped(country["name"]),
             "Map": self.media.image(city["map"], "city"),
+            "MapAnswer": self.media.image(city["answer_map"], "city"),
             "IsCapital": "yes" if is_capital else "",
             "Region": context_html(shared_context(country)),
         }
