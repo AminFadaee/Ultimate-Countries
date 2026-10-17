@@ -19,18 +19,18 @@ rebuilt on any day to pick up changes (new currencies, new members of an organis
 
 ## The deck
 
-Two note types, with each kind of question in its own subdeck.
+Two note types, countries and cities, all in one deck.
 
 ### Country notes
 
 Four question cards per country:
 
-| Subdeck | Question | Answer |
-|---|---|---|
-| Capitals | Capital: France | Paris |
-| Capitals | Capital of: Paris | France |
-| Flags | the flag | France |
-| Maps | the locator map | France |
+| Question | Answer |
+|---|---|
+| Capital: France | Paris |
+| Capital of: Paris | France |
+| the flag | France |
+| the locator map | France |
 
 The back of every card also shows facts about the country: demonym, languages, currency, religion, population and form
 of government and notable cities, under a line with its region. They are there to read, not to be quizzed on.
@@ -70,18 +70,34 @@ Notes are tagged so you can filter or suspend groups of them:
 - currency: `UC::Euro`, `UC::West_African_CFA_franc`, …
 - cities: `UC::City`, `UC::Capital`
 
-To skip a kind of question, suspend its subdeck rather than deleting it: deleted cards come back when you import an
-update.
+### Everything in one deck
+
+Ultimate Countries has no subdecks. To study one group or one kind of question at a time, create a filtered deck:
+
+1. Tools → Create Filtered Deck
+2. Search for one of these (or join several with `or`):
+   - `deck:"Ultimate Countries" tag:UC::Asia` for a region, or any other tag
+   - `deck:"Ultimate Countries" "note:Ultimate Countries country" card:Flag` for one kind of question (Capital, Capital of,
+     Flag or Map). Keep the note type in the search, because cities have a card called Map too
+   - `deck:"Ultimate Countries" tag:UC::City` for the cities
+3. Build
+
+To leave a kind of card out for good, search for it in the Browser and suspend the cards: deleted cards come back when
+you import an update.
 
 ### Updating from an older version
 
-Older versions also asked demonym, language, currency, religion, population and government questions. Those are now
-facts on the card backs. When you import the new version, tick **Merge note types** in the import options, otherwise Anki
-skips the country notes ("247 notes could not be imported"). Importing does not delete the old cards by itself. Afterwards,
-choose Tools → Empty Cards and delete them, then delete the empty subdecks (Demonyms, Languages, Currencies, Religions,
-Population and Government). Your progress on capitals, flags and maps is kept. The note type also keeps six unused
-fields (`DemonymInfo`, `LanguageInfo`, `CurrencyInfo`, `ReligionInfo`, `PopulationInfo`, `GovernmentInfo`), which you
-can delete under Tools → Manage Note Types → Fields.
+Older versions also asked demonym, language, currency, religion, population and government questions, and kept the cards
+in subdecks (Capitals, Flags, Maps, Cities and one per old question). Both changed. To update:
+
+1. Import the new version with **Merge note types** ticked in the import options, otherwise Anki skips the country notes
+   ("247 notes could not be imported").
+2. Choose Tools → Empty Cards and delete the old question cards. Your progress on capitals, flags and maps is kept.
+3. Importing does not move cards that already sit in subdecks. In the Browser, select all the cards in "Ultimate
+   Countries", choose Change Deck and pick "Ultimate Countries" itself, then delete the empty subdecks.
+
+The note type also keeps six unused fields (`DemonymInfo`, `LanguageInfo`, `CurrencyInfo`, `ReligionInfo`,
+`PopulationInfo`, `GovernmentInfo`), which you can delete under Tools → Manage Note Types → Fields.
 
 ## Ultimate Places
 
