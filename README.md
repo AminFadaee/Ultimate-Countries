@@ -76,8 +76,9 @@ update.
 ### Updating from an older version
 
 Older versions also asked demonym, language, currency, religion, population and government questions. Those are now
-facts on the card backs. Importing the new version does not delete the old cards by itself. After importing, choose
-Tools → Empty Cards and delete them, then delete the empty subdecks (Demonyms, Languages, Currencies, Religions,
+facts on the card backs. When you import the new version, tick **Merge note types** in the import options, otherwise Anki
+skips the country notes ("247 notes could not be imported"). Importing does not delete the old cards by itself. Afterwards,
+choose Tools → Empty Cards and delete them, then delete the empty subdecks (Demonyms, Languages, Currencies, Religions,
 Population and Government). Your progress on capitals, flags and maps is kept. The note type also keeps six unused
 fields (`DemonymInfo`, `LanguageInfo`, `CurrencyInfo`, `ReligionInfo`, `PopulationInfo`, `GovernmentInfo`), which you
 can delete under Tools → Manage Note Types → Fields.
