@@ -304,8 +304,8 @@ def description() -> str:
 Ultimate Countries covers every country and territory with a permanent population. You learn capitals, flags and maps, and
 the back of every card also shows the country's demonym, languages, currency, religion, population, government and
 notable cities. The best-known cities of the world are in the deck too, each on an atlas-style map.</p>
-<p>Everything is in one deck. Notes are tagged by region, status, membership and currency (for example <code>UC::Asia</code>
-or <code>UC::NATO</code>), so you can study one group at a time with a filtered deck: Tools → Create Filtered Deck, then
+<p>Everything is in one deck. Notes are tagged by kind, region, status and membership (for example <code>UC::City</code>,
+<code>UC::Asia</code> or <code>UC::NATO</code>), so you can study one group at a time with a filtered deck: Tools → Create Filtered Deck, then
 search for <code>deck:"Ultimate Countries" tag:UC::Asia</code>. You can filter by card type too, for example
 <code>deck:"Ultimate Countries" "note:Ultimate Countries country" card:Flag</code>. To skip a kind of card, search for it in the
 Browser and suspend the cards rather than deleting them, because deleted cards come back when you import an update.</p>
@@ -330,12 +330,11 @@ def region_tags(document: dict) -> list[str]:
 
 def country_tags(document: dict) -> list[str]:
     status = document["status"]
-    tags = region_tags(document)
+    tags = [tag("Country"), *region_tags(document)]
     tags.append(tag("Sovereign" if status["sovereign"] else "Territory"))
     if status["disputed"]:
         tags.append(tag("Disputed"))
     tags.extend(tag(organization) for organization in document["memberships"])
-    tags.extend(tag(currency["name"]) for currency in document["currencies"] if currency["main"])
     return sorted(set(tags))
 
 
@@ -437,7 +436,9 @@ class DeckBuilder:
         ords = [CITY_MAP_CARD] if values["Map"] else []
         if not is_capital:
             ords.append(CITY_COUNTRY_CARD)
-        tags = [tag("City"), *region_tags(country)] + ([tag("Capital")] if is_capital else [])
+        tags = [tag("City"), *region_tags(country)]
+        tags += [tag("Capital")] if is_capital else []
+        tags += [tag("Most_visited")] if city["most_visited"] else []
         self._add(self.city_model, CITY_FIELDS, values, ords, tags, city["id"], country["id"])
 
     def write(self, output: pathlib.Path) -> None:
