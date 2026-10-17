@@ -91,6 +91,7 @@ class PlacesCollector:
         self._add_continents(features)
         self._add_cities(features, catalog)
         self._add_construction(features)
+        self._add_descriptions(features)
         slugs = unique_slugs(features)
         self._add_photos(features, slugs)
         self._render_maps(features, slugs, options)
@@ -157,6 +158,11 @@ class PlacesCollector:
             if feature.kind in INFOBOX_KINDS and feature.wikipedia:
                 infobox = self.wikipedia.infobox(article_title(feature.wikipedia))
                 feature.built, feature.culture = infobox.built, infobox.culture
+
+    def _add_descriptions(self, features: list[Feature]) -> None:
+        for feature in features:
+            if feature.wikipedia:
+                feature.description = self.wikipedia.first_sentence(article_title(feature.wikipedia))
 
     def _add_photos(self, features: list[Feature], slugs: dict[str, str]) -> None:
         previous = self._previous_photos()
@@ -277,6 +283,7 @@ def document(feature: Feature) -> dict:
         "area_km2": feature.area_km2,
         "built": feature.built,
         "culture": feature.culture,
+        "description": feature.description,
         "world_heritage": feature.world_heritage,
         "tags": feature.tags,
         "map": feature.map,

@@ -14,6 +14,11 @@ API_URL = "https://en.wikipedia.org/w/api.php"
 ARTICLE_URL = "https://en.wikipedia.org/wiki/"
 PAGEVIEWS_URL = "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user"
 PAGEVIEW_DAYS = 365
+SUMMARY_URL = "https://en.wikipedia.org/api/rest_v1/page/summary"
+SENTENCE_END = re.compile(r"\.\s+(?=[A-Z])")
+ABBREVIATIONS = {"st", "mt", "mts", "ft", "dr", "mr", "vs", "no", "ca", "c", "approx", "lt", "gen", "col"}
+MIN_SENTENCE = 20
+BEFORE_PUNCTUATION = re.compile(r"\s+([.,;])")
 FORMATION_PAGE = "List of modern sovereign states by date of formation"
 COMMUNIST_STATES_PAGE = "Communist state"
 CURRENT_COMMUNIST_STATES = "Current communist states"
@@ -313,9 +318,33 @@ def first_link(cell) -> str | None:
     return None
 
 
+def sentence_of(text: str) -> str | None:
+    text = BEFORE_PUNCTUATION.sub(r"\1", SPACES.sub(" ", FOOTNOTE.sub("", text)).strip())
+    end = len(text)
+    for match in SENTENCE_END.finditer(text):
+        word = text[: match.start()].rsplit(" ", 1)[-1]
+        if word.casefold() not in ABBREVIATIONS and not (len(word) == 1 and word.isupper()) and not word.isupper():
+            end = match.start() + 1
+            break
+    sentence = text[:end].rstrip()
+    if len(sentence) < MIN_SENTENCE:
+        return None
+    return sentence if sentence.endswith(".") else f"{sentence}."
+
+
 class Wikipedia:
     def __init__(self, session: requests.Session):
         self.session = session
+
+    def first_sentence(self, title: str) -> str | None:
+        response = self.session.get(f"{SUMMARY_URL}/{urllib.parse.quote(title.replace(' ', '_'), safe='')}", timeout=TIMEOUT)
+        if response.status_code == 404:
+            return None
+        response.raise_for_status()
+        summary = response.json()
+        if summary.get("type") != "standard":
+            return None
+        return sentence_of(summary.get("extract", ""))
 
     def yearly_views(self, title: str) -> int:
         end = date.today().replace(day=1)

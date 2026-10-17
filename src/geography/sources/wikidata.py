@@ -60,6 +60,13 @@ def display_name(label: str) -> str:
     return DISAMBIGUATION.sub("", label).strip()
 
 
+def shorter_name(label: str, title: str | None) -> str:
+    names = [display_name(label)]
+    if title and "," not in label:
+        names.append(display_name(title.split(",")[0]))
+    return min(names, key=len)
+
+
 def qid_of(uri: str) -> str:
     return uri.rsplit("/", 1)[-1]
 
@@ -336,7 +343,7 @@ class Wikidata:
                 point = POINT.match(row.get("coordinates", ""))
                 details[qid] = City(
                     id=qid,
-                    name=display_name(row.get("title") or row["cityLabel"]),
+                    name=shorter_name(row["cityLabel"], row.get("title")),
                     longitude=float(point.group(1)) if point else None,
                     latitude=float(point.group(2)) if point else None,
                     population=populations.get(qid),

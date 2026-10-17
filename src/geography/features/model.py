@@ -34,6 +34,7 @@ class Feature:
     area_km2: float | None = None
     built: str | None = None
     culture: str | None = None
+    description: str | None = None
     world_heritage: bool = False
     photo: Photo | None = None
     map: str | None = None

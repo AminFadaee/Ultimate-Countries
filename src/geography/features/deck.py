@@ -30,6 +30,7 @@ MEDIA_PREFIX = "up"
 MIN_NOTABLE_HEIGHT_M = 20
 FIELDS = ("Id", "Name", "Kind", "Map", "Photo", "Details")
 PLACES_CSS = CSS + """
+.blurb { margin-top: 12px; font-size: 15px; line-height: 1.45; color: var(--info); }
 .place-map { position: relative; }
 .place-map .photo-badge img { position: absolute; left: 6px; top: 6px; width: 64px; height: 64px !important; max-height: 64px;
   object-fit: cover; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, .35); }
@@ -125,7 +126,8 @@ def details_html(document: dict) -> str:
         built = document["built"]
         phrase = built[:1].upper() + built[1:] if built.startswith("begun") else f"Built {built}"
         lines.append(html.escape(" · ".join(part for part in (phrase, document["culture"]) if part)))
-    return "<br>".join(lines)
+    blurb = f'<div class="blurb">{html.escape(document["description"])}</div>' if document.get("description") else ""
+    return "<br>".join(lines) + blurb
 
 
 def tags(document: dict) -> list[str]:
