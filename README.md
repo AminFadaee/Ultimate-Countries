@@ -1,6 +1,6 @@
 # Ultimate Countries
 
-An Anki deck of the world's countries, territories and major cities, and the pipeline that builds it.
+An Anki deck of the world's countries, territories and best-known cities, and the pipeline that builds it.
 
 **Get the deck:** [on AnkiWeb](https://ankiweb.net/shared/info/164142051), or download `ultimate_countries.apkg` from
 the [latest release](https://github.com/AminFadaee/Ultimate-Countries/releases/latest).
@@ -32,8 +32,8 @@ Four question cards per country:
 | the flag | France |
 | the locator map | France |
 
-The back of every card also shows facts about the country: demonym, languages, currency, religion, population and form
-of government and notable cities, under a line with its region. They are there to read, not to be quizzed on.
+The back of every card also shows facts about the country: demonym, languages, currency, religion, population, form of
+government and notable cities, under a line with its region. They are there to read, not to be quizzed on.
 
 A card is only created when its data exists, and a fact that is missing is simply left out.
 
@@ -87,26 +87,6 @@ Ultimate Countries has no subdecks. To study one group or one kind of question a
 
 To leave a kind of card out for good, search for it in the Browser and suspend the cards: deleted cards come back when
 you import an update.
-
-### Updating from an older version
-
-Older versions also asked demonym, language, currency, religion, population and government questions, kept the cards
-in subdecks (Capitals, Flags, Maps, Cities and one per old question), and had a city note for every notable city. All of
-that changed. To update:
-
-1. Import the new version with **Merge note types** ticked and **Update notes** set to **Always** in the import options.
-   Without the first, Anki skips the notes whose note type gained or lost fields ("247 notes could not be imported");
-   without the second it skips the city notes it considers unchanged.
-2. Choose Tools → Empty Cards and delete the old question cards. Your progress on capitals, flags and maps is kept.
-3. Importing does not move cards that already sit in subdecks. In the Browser, select all the cards in "Ultimate
-   Countries", choose Change Deck and pick "Ultimate Countries" itself, then delete the empty subdecks.
-4. Importing does not remove cities that are no longer in the deck. In the Browser, search for
-   `"note:Ultimate Countries city" MapAnswer:`, which finds the old city notes, select them all and delete them.
-5. Choose Tools → Check Media → Delete Unused to clear the old city maps.
-6. In the Browser sidebar, right-click Tags and choose Clear Unused Tags to drop the old currency and country-name tags.
-
-The note type also keeps six unused fields (`DemonymInfo`, `LanguageInfo`, `CurrencyInfo`, `ReligionInfo`,
-`PopulationInfo`, `GovernmentInfo`), which you can delete under Tools → Manage Note Types → Fields.
 
 ## Ultimate Places
 
