@@ -8,6 +8,9 @@ from geography.sources.iso639 import LanguageCodes
 CLDR_URL = "https://raw.githubusercontent.com/unicode-org/cldr-json/main/cldr-json"
 TERRITORY_INFO_URL = f"{CLDR_URL}/cldr-core/supplemental/territoryInfo.json"
 LANGUAGE_NAMES_URL = f"{CLDR_URL}/cldr-localenames-full/main/en/languages.json"
+TERRITORY_NAMES_URL = f"{CLDR_URL}/cldr-localenames-full/main/en/territories.json"
+TERRITORY_CONTAINMENT_URL = f"{CLDR_URL}/cldr-core/supplemental/territoryContainment.json"
+UN_CONTINENTS = {"001", "002", "009", "019", "142", "150"}
 
 
 @dataclass(frozen=True)
@@ -57,3 +60,15 @@ def fetch_language_use(session: requests.Session, codes: LanguageCodes) -> Langu
             key=lambda language: -language.percent,
         )
     return LanguageUse(supplemental["version"]["_cldrVersion"], territories)
+
+
+def fetch_subregions(session: requests.Session) -> dict[str, str]:
+    containment = fetch_json(session, TERRITORY_CONTAINMENT_URL)["supplemental"]["territoryContainment"]
+    names = fetch_json(session, TERRITORY_NAMES_URL)["main"]["en"]["localeDisplayNames"]["territories"]
+    return {
+        territory: names[group]
+        for group, entry in containment.items()
+        if group.isdigit() and group not in UN_CONTINENTS and group in names
+        for territory in entry["_contains"]
+        if not territory.isdigit()
+    }

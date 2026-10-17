@@ -2,7 +2,7 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-USER_AGENT = "geography-anki/0.1 (country flashcard dataset)"
+USER_AGENT = "geography-anki/0.1 (https://github.com/AminFadaee/Ultimate-Countries; country flashcard dataset)"
 TIMEOUT = 90
 RETRY_STATUSES = (429, 500, 502, 503, 504)
 

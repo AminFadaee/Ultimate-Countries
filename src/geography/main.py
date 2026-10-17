@@ -31,9 +31,12 @@ SAMPLES_DIR = pathlib.Path("docs/samples")
 logger = logging.getLogger(__name__)
 
 
-def configure_logging() -> None:
+COLLECTING = ("collect", "places")
+
+
+def configure_logging(command: str) -> None:
     console = logging.StreamHandler()
-    errors = logging.FileHandler(ERROR_LOG, mode="w")
+    errors = logging.FileHandler(ERROR_LOG, mode="w" if command in COLLECTING else "a")
     errors.setLevel(logging.ERROR)
     logging.basicConfig(level=logging.INFO, format="%(message)s", handlers=[console, errors])
 
@@ -113,7 +116,7 @@ def collect(data_dir: pathlib.Path, options: Options) -> None:
 
 def main() -> None:
     args = parse_args()
-    configure_logging()
+    configure_logging(args.command)
 
     match args.command:
         case "collect":

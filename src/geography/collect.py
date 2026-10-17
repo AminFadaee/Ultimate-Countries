@@ -208,6 +208,7 @@ class Collector:
         if removed:
             logger.info("Removed %d countries no longer in scope", len(removed))
 
+        self._add_subregions(countries)
         self._correct_demonyms(countries)
         self._add_main_currencies(countries)
         self._add_government_forms(countries)
@@ -261,6 +262,11 @@ class Collector:
             if raw["uuid"] not in qids:
                 logger.warning("No Wikidata item for %s", raw["names"]["common"])
         return qids
+
+    def _add_subregions(self, countries: list[Country]) -> None:
+        subregions = cldr.fetch_subregions(self.session)
+        for country in countries:
+            country.subregion = subregions.get(country.alpha_2 or "", country.subregion)
 
     def _correct_demonyms(self, countries: list[Country]) -> None:
         options = self.wikidata.demonyms({country.id for country in countries})
@@ -394,6 +400,8 @@ class Collector:
             claimants = [claimant_name(record.claimant_url, qid_by_url, name_by_qid)] if record.claimant_url else []
             country.recognition = Recognition(True, record.recognised_count, record.recognised_by, claimants)
             country.provenance[Field.RECOGNITION] = Provenance(Source.WIKIPEDIA)
+        for country in candidates:
+            country.disputed = country.disputed or bool(country.recognition and country.recognition.claimants)
 
     def _add_economy(self, countries: list[Country]) -> None:
         income_groups = worldbank.fetch_income_groups(self.session)

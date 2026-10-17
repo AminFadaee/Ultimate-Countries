@@ -29,5 +29,5 @@ jobs:
         run: |
           gh release create "$GITHUB_REF_NAME" build/ultimate_countries.apkg build/ultimate_places.apkg \
             --title "Ultimate Countries and Ultimate Places ${GITHUB_REF_NAME#v}" \
-            --notes "Anki decks built from the data in this commit: ultimate_countries.apkg and ultimate_places.apkg. Importing a newer version keeps your progress." \
+            --notes "Anki decks built from the data in this commit: ultimate_countries.apkg and ultimate_places.apkg." \
             --verify-tag

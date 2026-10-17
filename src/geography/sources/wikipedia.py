@@ -2,6 +2,7 @@ import copy
 import re
 import urllib.parse
 from dataclasses import dataclass
+from datetime import date, timedelta
 
 import requests
 from lxml import html
@@ -11,6 +12,8 @@ from geography.sources.http import TIMEOUT
 
 API_URL = "https://en.wikipedia.org/w/api.php"
 ARTICLE_URL = "https://en.wikipedia.org/wiki/"
+PAGEVIEWS_URL = "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user"
+PAGEVIEW_DAYS = 365
 FORMATION_PAGE = "List of modern sovereign states by date of formation"
 COMMUNIST_STATES_PAGE = "Communist state"
 CURRENT_COMMUNIST_STATES = "Current communist states"
@@ -58,11 +61,14 @@ YEAR_RANGE = re.compile(rf"{NUMBER}(?:\s*[–-]\s*{NUMBER})?(?: ?{ERA}\b)?")
 PLAIN_YEAR = re.compile(r"\d{3,4}")
 HAS_ERA = re.compile(ERA)
 ERA_SUFFIX = re.compile(rf" {ERA}$")
+AD_SUFFIX = re.compile(r"(c\. ?)?(\d{1,4}) ?(?:AD|CE)")
+BEGUN = ("begun", "began", "started")
 START_FIELDS = ("construction start", "construction began", "construction started", "groundbreaking")
 END_FIELDS = ("completed", "date completed", "construction end", "opened", "opening", "built")
 CULTURE_FIELDS = ("culture", "cultures", "architectural style", "civilization")
 MEMBER_FIELDS = ("composition", "countries", "countries and regions", "countries and territories", "member states")
-SENTENCE = re.compile(r"[A-Za-z]{3,}")
+PARTIAL_MEMBER = re.compile(r"\(\s*only\b", re.IGNORECASE)
+SKIPPED_SECTION = re.compile(r"broad|wide|loose|sometimes|often|also|other|not part|include", re.IGNORECASE)
 
 STATE_RELIGION_PAGE = "State religion"
 STATE_RELIGION_SECTION = "Current states with a state religion"
@@ -251,22 +257,35 @@ def first_year(text: str, pattern: re.Pattern = YEAR) -> str | None:
 
 
 def listed_members(cell) -> list[str]:
-    members = []
-    for element in cell.iter():
-        if element.tag == "a" and article_url(element.get("href")):
-            members.append(clean(element.text_content()) or "")
-        elif members and element.tag != "a" and SENTENCE.search(element.tail or ""):
-            break
-    return [member for member in members if member]
+    members, skipping, depth = [], False, 0
+    for node in cell.xpath("descendant::text()|descendant::a"):
+        if isinstance(node, str):
+            if node.is_text and node.getparent().tag in ("a", "style"):
+                continue
+            depth = max(depth + node.count("(") - node.count(")"), 0)
+            if node.strip().endswith(":"):
+                skipping = bool(SKIPPED_SECTION.search(node))
+        elif not skipping and depth == 0 and node.text_content().strip() and (url := article_url(node.get("href"))) and not PARTIAL_MEMBER.match((node.tail or "").lstrip()):
+            members.append(url)
+    return list(dict.fromkeys(members))
+
+
+def era_first(year: str) -> str:
+    match = AD_SUFFIX.fullmatch(year)
+    return f"{match.group(1) or ''}AD {match.group(2)}" if match else year
 
 
 def built_range(started: str | None, finished: str | None) -> str | None:
     if started and finished and started != finished and "–" not in finished:
-        era = ERA_SUFFIX.search(started)
-        if era and finished.endswith(era.group()):
-            started = started.removesuffix(era.group())
-        return f"{started}–{finished}"
-    return finished or started
+        first, last = era_first(started), era_first(finished)
+        if first.startswith("AD ") and last.startswith("AD "):
+            last = last.removeprefix("AD ")
+        elif (era := ERA_SUFFIX.search(first)) and last.endswith(era.group()):
+            first = first.removesuffix(era.group())
+        return f"{first}–{last}"
+    if finished:
+        return era_first(finished)
+    return f"begun {era_first(started)}" if started else None
 
 
 def column_indexes(headers: list[str], names: tuple[str, ...], page: str) -> dict[str, int]:
@@ -297,6 +316,16 @@ def first_link(cell) -> str | None:
 class Wikipedia:
     def __init__(self, session: requests.Session):
         self.session = session
+
+    def yearly_views(self, title: str) -> int:
+        end = date.today().replace(day=1)
+        start = (end - timedelta(days=PAGEVIEW_DAYS)).replace(day=1)
+        article = urllib.parse.quote(title.replace(" ", "_"), safe="")
+        response = self.session.get(f"{PAGEVIEWS_URL}/{article}/monthly/{start:%Y%m%d}00/{end:%Y%m%d}00", timeout=TIMEOUT)
+        if response.status_code == 404:
+            return 0
+        response.raise_for_status()
+        return sum(item["views"] for item in response.json()["items"])
 
     def formation(self) -> list[FormationRecord]:
         document = html.fromstring(self._page_html(FORMATION_PAGE))
@@ -440,7 +469,9 @@ class Wikipedia:
             label, text = (cell_text(header[0]) or "").casefold(), cell_text(value[0]) or ""
             if started is None and label.startswith(START_FIELDS):
                 started = first_year(text)
-            if finished is None and label.startswith(END_FIELDS):
+            if finished is None and label.startswith(END_FIELDS) and text.casefold().startswith(BEGUN):
+                started = started or first_year(text)
+            elif finished is None and label.startswith(END_FIELDS):
                 finished = first_year(text, YEAR_RANGE if label == "built" else YEAR)
             if culture is None and label in CULTURE_FIELDS:
                 culture = text.split(",")[0].strip() or None

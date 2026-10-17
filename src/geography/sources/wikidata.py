@@ -20,6 +20,8 @@ QUERY_ATTEMPTS = 3
 RETRY_DELAY = 10
 
 SETTLEMENT_KINDS = ("Q486972", "Q15284")
+NOT_A_CITY = ("Q23442", "Q839954", "Q15661340", "Q10864048", "Q16423979")
+WIKIPEDIA_SITE = "https://en.wikipedia.org/"
 CITY_POPULATION_FLOORS = (100_000, 10_000, 0)
 CITY_CANDIDATES = 30
 LAKE = "Q23397"
@@ -318,9 +320,10 @@ class Wikidata:
         details = {}
         for batch in itertools.batched(sorted(city_qids), DETAIL_BATCH):
             rows = self._select(f"""
-                SELECT ?city ?cityLabel ?links ?coordinates ?osm WHERE {{
+                SELECT ?city ?cityLabel ?title ?links ?coordinates ?osm WHERE {{
                   VALUES ?city {{ {values_clause(batch)} }}
                   ?city wikibase:sitelinks ?links .
+                  OPTIONAL {{ ?article schema:about ?city ; schema:isPartOf <{WIKIPEDIA_SITE}> ; schema:name ?title }}
                   OPTIONAL {{ ?city wdt:P625 ?coordinates }}
                   OPTIONAL {{ ?city wdt:P402 ?osm }}
                   SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en,mul" }}
@@ -333,7 +336,7 @@ class Wikidata:
                 point = POINT.match(row.get("coordinates", ""))
                 details[qid] = City(
                     id=qid,
-                    name=display_name(row["cityLabel"]),
+                    name=display_name(row.get("title") or row["cityLabel"]),
                     longitude=float(point.group(1)) if point else None,
                     latitude=float(point.group(2)) if point else None,
                     population=populations.get(qid),
@@ -341,6 +344,17 @@ class Wikidata:
                     osm_relation=row.get("osm"),
                 )
         return details
+
+    def article_titles(self, qids: set[str]) -> dict[str, str]:
+        titles = {}
+        for batch in itertools.batched(sorted(qids), DETAIL_BATCH):
+            rows = self._select(f"""
+                SELECT ?item ?title WHERE {{
+                  VALUES ?item {{ {values_clause(batch)} }}
+                  ?article schema:about ?item ; schema:isPartOf <{WIKIPEDIA_SITE}> ; schema:name ?title .
+                }}""")
+            titles.update((qid_of(row["item"]), row["title"]) for row in rows)
+        return titles
 
     def sitelink_counts(self, qids: set[str]) -> dict[str, int]:
         counts = {}
@@ -415,6 +429,10 @@ class Wikidata:
                 }} ORDER BY DESC(?links) LIMIT {CITY_CANDIDATES} }}
               VALUES ?kind {{ {values_clause(SETTLEMENT_KINDS)} }}
               FILTER EXISTS {{ ?city wdt:P31/wdt:P279* ?kind }}
+              FILTER NOT EXISTS {{
+                VALUES ?other {{ {values_clause(NOT_A_CITY)} }}
+                ?city wdt:P31/wdt:P279* ?other
+              }}
             }} ORDER BY DESC(?links)""")
         return list(dict.fromkeys(qid_of(row["city"]) for row in rows))
 

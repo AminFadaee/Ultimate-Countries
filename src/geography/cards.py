@@ -5,11 +5,9 @@ from enum import StrEnum
 WORLD_BANK = "world_bank"
 DISPUTED = "disputed"
 NATIONAL = "national"
-REGIONAL = "regional"
-MAX_CONTEXT_ITEMS = 5
+MAX_LANGUAGES = 4
 SIGNIFICANT_DIGITS = 2
 WHOLE_FROM = 10
-UNAFFILIATED = "Unaffiliated"
 OTHER_RELIGIONS = "Other religions"
 SCALES = ((1_000_000_000, "billion"), (1_000_000, "million"))
 
@@ -39,12 +37,6 @@ def joined(items: list[str]) -> str:
     return ", ".join(items)
 
 
-def with_percent(name: str, percent: float | None, note: str | None = None) -> str:
-    details = [f"{percent:g}%" if percent is not None else None, note]
-    shown = [detail for detail in details if detail]
-    return f"{name} ({', '.join(shown)})" if shown else name
-
-
 def capital(document: dict) -> Answer | None:
     capitals = document["capitals"]
     if not capitals:
@@ -61,56 +53,33 @@ def country_map(document: dict) -> Answer | None:
 
 
 def demonym(document: dict) -> Answer | None:
-    names = document["demonym"]
-    if not names["male"]:
-        return None
-    context = [f"Female: {names['female']}"] if names["female"] != names["male"] else []
-    if names["others"]:
-        context.append(f"Also: {joined(names['others'])}")
-    return Answer(names["male"], context)
+    male = document["demonym"]["male"]
+    return Answer(male) if male else None
 
 
 def language(document: dict) -> Answer | None:
     languages = document["languages"]
-    official = [entry for entry in languages if entry["official"] == NATIONAL]
-    spoken = [entry for entry in languages if entry["percent"] is not None]
+    official = [entry["name"] for entry in languages if entry["official"] == NATIONAL]
+    spoken = [entry["name"] for entry in languages if entry["percent"] is not None]
     if official:
-        answer, note = official, None
-    elif spoken:
-        answer, note = spoken[:1], "No official language; most widely spoken"
-    else:
-        return None
-    rest = [entry for entry in languages if entry not in answer and (entry["percent"] is not None or entry["official"])]
-    context = [note] if note else []
-    if rest:
-        context.append("Also: " + joined([describe_language(entry) for entry in rest[:MAX_CONTEXT_ITEMS]]))
-    return Answer(joined([entry["name"] for entry in answer]), context)
-
-
-def describe_language(entry: dict) -> str:
-    return with_percent(entry["name"], entry["percent"], "regional" if entry["official"] == REGIONAL else None)
+        shown = official[:MAX_LANGUAGES]
+        hidden = len(official) - len(shown)
+        return Answer(joined(shown) + (f" +{hidden} more" if hidden else ""))
+    return Answer(f"{spoken[0]} (most spoken; no official language)") if spoken else None
 
 
 def currency(document: dict) -> Answer | None:
-    currencies = document["currencies"]
-    main = [entry["name"] for entry in currencies if entry["main"]]
-    if not main:
-        return None
-    others = [entry["name"] for entry in currencies if not entry["main"]]
-    return Answer(joined(main), [f"Also used: {joined(others)}"] if others else [])
+    main = [entry["name"] for entry in document["currencies"] if entry["main"]]
+    return Answer(joined(main)) if main else None
 
 
 def religion(document: dict) -> Answer | None:
     religions = [entry for entry in document["religions"] if entry["percent"]]
-    breakdown = joined([with_percent(entry["religion"], entry["percent"]) for entry in religions[:MAX_CONTEXT_ITEMS]])
     if document["official_religions"]:
-        context = ["State religion"] + ([breakdown] if breakdown else [])
-        return Answer(joined(document["official_religions"]), context)
+        return Answer(joined(document["official_religions"]))
     if not religions or religions[0]["religion"] == OTHER_RELIGIONS:
         return None
-    largest = religions[0]
-    name = "Unaffiliated (no religion)" if largest["religion"] == UNAFFILIATED else largest["religion"]
-    return Answer(name, ["Largest religion; no state religion", breakdown])
+    return Answer(f"{religions[0]['religion']} (largest; no state religion)")
 
 
 def rounded(value: int) -> str:
@@ -129,15 +98,14 @@ def population(document: dict) -> Answer | None:
     provenance = document["sources"].get("population", {})
     year = provenance.get("as_of") if provenance.get("source") == WORLD_BANK else None
     text = f"~{rounded(value)}"
-    return Answer(f"{text} ({year})" if year else text, [f"{value:,}"])
+    return Answer(f"{text} ({year})" if year else text)
 
 
 def government(document: dict) -> Answer | None:
     form = document["government"]["form"]
     if not document["status"]["sovereign"] or not form:
         return None
-    label = document["government"]["label"]
-    return Answer(form, [label] if label and label.casefold() != form.casefold() else [])
+    return Answer(form)
 
 
 BUILDERS: dict[CardType, Callable[[dict], Answer | None]] = {

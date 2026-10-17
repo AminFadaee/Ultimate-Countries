@@ -10,6 +10,7 @@ from geography.sources.wikipedia import Wikipedia
 MIN_FAME = 180
 MIN_POPULATION = 100_000
 MIN_VISITED_FAME = 100
+MIN_YEARLY_VIEWS = 25_000
 CITIES_PER_COUNTRY = 8
 VISITED_BONUS = 0.5
 
@@ -50,8 +51,16 @@ class FamousCities:
             for qid, country_id in candidates
             if qid not in country_ids
         ]
-        eligible = [candidate for candidate in pool if self._eligible(candidate)]
+        eligible = self._read(candidate for candidate in pool if self._eligible(candidate))
         return Selection(self._capped(eligible), visited)
+
+    def _read(self, candidates) -> list[Candidate]:
+        shortlisted = list(candidates)
+        titles = self.wikidata.article_titles({candidate.qid for candidate in shortlisted})
+        return [
+            candidate for candidate in shortlisted
+            if candidate.qid in titles and self.wikipedia.yearly_views(titles[candidate.qid]) >= MIN_YEARLY_VIEWS
+        ]
 
     def _visited(self) -> set[str]:
         urls = self.wikipedia.most_visited_cities()

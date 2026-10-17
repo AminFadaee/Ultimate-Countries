@@ -24,6 +24,7 @@ EMIRATE = "emirate"
 CO_PRINCIPALITY = "co-principality"
 MONARCHY = "monarchy"
 REPUBLIC = "republic"
+EXECUTIVE_PRESIDENT = "executive presiden"
 
 
 def words_of(label: str) -> set[str]:
@@ -61,4 +62,6 @@ def government_form(label: str | None) -> str | None:
     if kind is None:
         return None
     form = f"{FEDERAL} {kind}" if FEDERAL in words else kind
+    if EXECUTIVE_PRESIDENT in label.casefold() and kind.endswith(REPUBLIC):
+        form += " with an executive president"
     return form[0].upper() + form[1:]

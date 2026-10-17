@@ -3,6 +3,7 @@ import html
 import logging
 import pathlib
 import re
+from collections import Counter
 from dataclasses import dataclass
 from datetime import date
 
@@ -166,6 +167,8 @@ COUNTRY_TEMPLATES = (
 RETIRED_TEMPLATES = tuple(
     {"name": fact.field, "qfmt": "{{^Name}}retired{{/Name}}", "afmt": "{{FrontSide}}"} for fact in FACTS
 )
+
+CAPITAL_OF_CARD = 1
 
 COUNTRY_FIELDS = (
     "Id",
@@ -381,8 +384,9 @@ class MediaLibrary:
 
 
 class DeckBuilder:
-    def __init__(self, data_dir: pathlib.Path, build_dir: pathlib.Path):
+    def __init__(self, data_dir: pathlib.Path, build_dir: pathlib.Path, shared_capitals: frozenset[str] = frozenset()):
         self.media = MediaLibrary(data_dir, build_dir / "media")
+        self.shared_capitals = shared_capitals
         self.country_model = self._model(
             COUNTRY_MODEL_ID,
             f"{DECK_NAME} country",
@@ -418,6 +422,8 @@ class DeckBuilder:
             values[fact.field] = escaped(answer.text) if answer else ""
 
         ords = [ord for ord, template in enumerate(COUNTRY_TEMPLATES) if values[template.requires]]
+        if self.shared_capitals.intersection(document["capitals"]):
+            ords.remove(CAPITAL_OF_CARD)
         self._add(self.country_model, COUNTRY_FIELDS, values, ords, country_tags(document), document["id"])
         capitals = {city["id"] for city in document["cities"] if city["role"] == CityRole.CAPITAL}
         for city in document["famous_cities"]:
@@ -475,8 +481,13 @@ class DeckBuilder:
         )
 
 
+def shared_capitals(documents: list[dict]) -> frozenset[str]:
+    counts = Counter(capital for document in documents for capital in set(document["capitals"]))
+    return frozenset(capital for capital, count in counts.items() if count > 1)
+
+
 def build_deck(documents: list[dict], data_dir: pathlib.Path, build_dir: pathlib.Path, output: pathlib.Path) -> None:
-    builder = DeckBuilder(data_dir, build_dir)
+    builder = DeckBuilder(data_dir, build_dir, shared_capitals(documents))
     for document in sorted(documents, key=lambda document: document["name"]):
         builder.add_country(document)
     builder.write(output)

@@ -139,7 +139,8 @@ class NaturalEarth:
         core_mask = (group["ADM0_A3"] == code) | (group["ADM0_TLC"] == code)
         disputed = group[~core_mask]
 
-        extra = self.disputed_areas[self.disputed_areas["ADM0_A3_US"] == code]
+        core = group[core_mask]
+        extra = self.disputed_areas[(self.disputed_areas["ADM0_A3_US"] == code) | self._administered_within(core, code)]
         if not extra.empty:
             disputed = gpd.GeoDataFrame(
                 pd.concat([disputed, extra], ignore_index=True),
@@ -147,7 +148,14 @@ class NaturalEarth:
             )
 
         regions = self.regions[self.regions["adm0_a3"] == code]
-        return Country(code, group[core_mask], disputed, regions)
+        return Country(code, core, disputed, regions)
+
+    def _administered_within(self, core: gpd.GeoDataFrame, code: str) -> pd.Series:
+        if core.empty:
+            return pd.Series(False, index=self.disputed_areas.index)
+        territory = core.geometry.union_all()
+        inside = self.disputed_areas.geometry.representative_point().within(territory)
+        return inside & (self.disputed_areas["ADM0_A3_US"] != code)
 
     def _standalone(self, rows: gpd.GeoDataFrame) -> Country:
         empty = rows.iloc[0:0]
