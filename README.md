@@ -186,10 +186,10 @@ Useful options:
 - `collect --skip-maps` refreshes the data only
 - `collect --refresh-cities` re-ranks notable and famous cities, which are otherwise refreshed every 30 days
 - `collect --only-cities` selects the famous cities and renders their maps without refreshing any other data
-- `collect --rerender-maps` redraws every map
+- `collect --rerender-maps` redraws every map that has changed. Maps are kept in `src/geography/cache/maps` under a fingerprint of everything they are drawn from (the shapes, labels, drawing code, base data and library versions), so a map that nothing has changed is copied rather than redrawn, and an interrupted run picks up where it stopped. Delete that folder to redraw everything
 - `collect --workers N` sets the number of parallel map renderers (default 4)
 - `check --details` lists every failure and anomaly
-- `places --rerender-maps` redraws every place map
+- `places --rerender-maps` redraws every place map that has changed, using the same cache
 
 `place` renders a map for any single place, independent of the deck:
 

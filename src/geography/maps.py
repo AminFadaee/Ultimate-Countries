@@ -12,6 +12,7 @@ from shapely.geometry import Point, shape
 from geography.data import Country, NaturalEarth
 from geography.detail import AREA_TYPES, DetailLayers, simplify
 from geography.labels import CityLabel
+from geography.map_cache import through_cache
 from geography.places import Place
 from geography.render import Borders, Framing, LocatorMap, Scene
 
@@ -118,7 +119,10 @@ def place_geometry(job: MapJob, crs) -> gpd.GeoSeries:
 
 
 def render_maps(jobs: Iterable[MapJob], workers: int) -> Iterable[tuple[MapJob, Exception | None]]:
-    jobs = list(jobs)
+    return through_cache(list(jobs), lambda missing: draw_maps(missing, workers))
+
+
+def draw_maps(jobs: list[MapJob], workers: int) -> Iterable[tuple[MapJob, Exception | None]]:
     if not jobs:
         return
     context = multiprocessing.get_context("fork")

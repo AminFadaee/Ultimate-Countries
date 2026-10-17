@@ -20,6 +20,7 @@ from geography.detail import DetailLayers
 from geography.features.kinds import WATER_KINDS, Kind, Shape
 from geography.features.model import Feature
 from geography.features.spatial import CRS
+from geography.map_cache import through_cache
 from geography.render import (
     EQUAL_AREA,
     PROJECTABLE_LATITUDE,
@@ -346,6 +347,10 @@ def map_job(feature: Feature, output: pathlib.Path) -> FeatureMapJob:
 
 
 def render_feature_maps(jobs: list[FeatureMapJob], workers: int) -> Iterable[tuple[FeatureMapJob, Exception | None]]:
+    return through_cache(jobs, lambda missing: draw_feature_maps(missing, workers))
+
+
+def draw_feature_maps(jobs: list[FeatureMapJob], workers: int) -> Iterable[tuple[FeatureMapJob, Exception | None]]:
     if not jobs:
         return
     context = multiprocessing.get_context("fork")
