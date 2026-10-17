@@ -122,7 +122,9 @@ def details_html(document: dict) -> str:
     if place := location(document):
         lines.append(html.escape(place))
     if document["built"]:
-        lines.append(html.escape(" · ".join(part for part in (f"Built {document['built']}", document["culture"]) if part)))
+        built = document["built"]
+        phrase = built[:1].upper() + built[1:] if built.startswith("begun") else f"Built {built}"
+        lines.append(html.escape(" · ".join(part for part in (phrase, document["culture"]) if part)))
     return "<br>".join(lines)
 
 

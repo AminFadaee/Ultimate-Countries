@@ -58,12 +58,14 @@ MIN_REEF_LINKS = 40
 MIN_CANAL_LINKS = 50
 MIN_RAINFOREST_KM2 = 500_000
 MIN_REGION_MEMBERS = 2
+DISAMBIGUATED = re.compile(r" \([^)]+\)$")
 MIN_REGION_KM2 = 50_000
 
 OCEAN = "Q9430"
 SEA_CLASSES = ("Q165", "Q1322134", "Q39594", "Q37901")
 MOUNTAIN = "Q8502"
 VOLCANO = "Q8072"
+CALDERA = "Q159954"
 WATERFALL = "Q34038"
 CANYON = "Q150784"
 CANAL = "Q12284"
@@ -76,6 +78,7 @@ STRUCTURE_CLASSES = (
     "Q839954", "Q12516", "Q54831", "Q16748868", "Q57831", "Q162875", "Q200141", "Q57821",
 )
 ARCHAEOLOGICAL_SITE = "Q839954"
+ANCIENT_CITY = "Q15661340"
 SHIP = "Q11446"
 ADMINISTRATIVE_AREA = "Q56061"
 LANDMARK_CLASSES = ("Q811979", "Q839954")
@@ -90,6 +93,11 @@ BASIN_SUFFIX = re.compile(r"\s+basin$", re.IGNORECASE)
 
 def article_title(article_url: str) -> str:
     return urllib.parse.unquote(article_url.rsplit("/wiki/", 1)[-1]).replace("_", " ")
+
+
+def title_of(facts: ItemFacts) -> str:
+    title = article_title(facts.wikipedia) if facts.wikipedia else ""
+    return title if DISAMBIGUATED.search(title) else facts.label
 
 
 def point(longitude: float, latitude: float) -> gpd.GeoSeries:
@@ -144,7 +152,7 @@ class Catalog:
 
     def feature(self, qid: str, kind: Kind, geometry: gpd.GeoSeries) -> Feature:
         facts = self.facts[qid]
-        return Feature(qid, facts.label, kind, geometry, facts.sitelinks, qid)
+        return Feature(qid, title_of(facts), kind, geometry, facts.sitelinks, qid)
 
     def famous(self, shapes: dict[str, gpd.GeoSeries], kind: Kind, min_links: int) -> list[Feature]:
         facts = self.known(set(shapes))
@@ -210,8 +218,10 @@ class Catalog:
 
     def rivers(self) -> list[Feature]:
         rivers = load_layer(PhysicalLayer.RIVERS)
-        selected = rivers[(rivers["featurecla"] == "River") & (rivers["scalerank"] <= MAX_RIVER_RANK)]
-        return self.famous(dissolved(selected, "wikidataid"), Kind.RIVER, MIN_RIVER_LINKS)
+        by_name = rivers.groupby(rivers["name"].str.casefold())["wikidataid"].transform(lambda ids: ids.dropna().iloc[0] if ids.notna().any() else None)
+        rivers["wikidataid"] = rivers["wikidataid"].fillna(by_name)
+        chosen = rivers[(rivers["featurecla"] == "River") & (rivers["scalerank"] <= MAX_RIVER_RANK)]["wikidataid"].dropna()
+        return self.famous(dissolved(rivers[rivers["wikidataid"].isin(chosen)], "wikidataid"), Kind.RIVER, MIN_RIVER_LINKS)
 
     def mountains(self) -> list[Feature]:
         peaks = load_layer(PhysicalLayer.ELEVATION_POINTS)
@@ -219,7 +229,7 @@ class Catalog:
         famous_points = {qid for qid, facts in self.known(from_points).items() if facts.sitelinks >= MIN_PEAK_LINKS}
         ranked = set(self.queries.ranked((MOUNTAIN,), MIN_MOUNTAIN_LINKS)) | set(self.queries.ranked((VOLCANO,), MIN_VOLCANO_LINKS))
         candidates = famous_points | ranked
-        volcanoes = self.queries.instances_of(candidates, VOLCANO)
+        volcanoes = self.queries.instances_of(candidates, VOLCANO) | self.queries.instances_of(candidates, CALDERA)
         facts = self.known(candidates)
         return [
             self.feature(qid, Kind.VOLCANO if qid in volcanoes else Kind.MOUNTAIN, point(*facts[qid].coordinates))
@@ -263,18 +273,21 @@ class Catalog:
         physical = set().union(*(self.queries.instances_of(set(ranked), cls) for cls in NOT_CULTURAL_REGIONS))
         ranked = [qid for qid in ranked if qid not in physical]
         facts = self.known(set(ranked))
-        our_names = {country.name for country in self.locator.ours.values()}
+        by_url = {country.wikipedia_url: country for country in self.locator.ours.values() if country.wikipedia_url}
+        our_names = {country.name for country in by_url.values()}
         features = []
         for qid in ranked:
             article = facts.get(qid) and facts[qid].wikipedia
             if not article or facts[qid].label in our_names:
                 continue
-            members = [member for member in self._infobox(article).members if member in our_names]
-            if len(set(members)) < MIN_REGION_MEMBERS:
+            members = [by_url[url] for url in self._infobox(article).members if url in by_url]
+            if len(members) < MIN_REGION_MEMBERS:
                 continue
-            shape = self.locator.countries_in(members)
+            shape = self.locator.countries_in([member.name for member in members], facts[qid].area_km2)
             if shape.to_crs(EQUAL_AREA).area.sum() >= MIN_REGION_KM2 * 1e6:
-                features.append(self.feature(qid, Kind.REGION, shape))
+                region = self.feature(qid, Kind.REGION, shape)
+                region.countries = members
+                features.append(region)
         return features
 
     def landmarks(self) -> list[Feature]:
@@ -284,8 +297,10 @@ class Catalog:
         built = set().union(*(self.queries.instances_of(candidates, cls) for cls in LANDMARK_CLASSES))
         settlements = self.queries.instances_of(built, HUMAN_SETTLEMENT)
         living = self.queries.inhabited(settlements) | (settlements - self.queries.instances_of(settlements, ARCHAEOLOGICAL_SITE))
-        excluded = living | self.queries.instances_of(built, SHIP)
         facts = self.known(built)
+        ancient = self.queries.instances_of(built, ANCIENT_CITY)
+        unproven = {qid for qid in ancient - self.queries.typed_as_site(ancient) if not (qid in facts and facts[qid].world_heritage)}
+        excluded = living | unproven | self.queries.instances_of(built, SHIP)
         return [
             self.feature(qid, Kind.LANDMARK, point(*facts[qid].coordinates))
             for qid in built - excluded

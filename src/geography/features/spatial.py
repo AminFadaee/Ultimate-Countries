@@ -3,7 +3,7 @@ import pathlib
 from dataclasses import dataclass
 
 import geopandas as gpd
-from shapely.geometry import Point
+from shapely.geometry import LineString, MultiLineString, Point
 
 from geography.data import NaturalEarth
 from geography.render import EQUAL_AREA, get_mainland, get_nearby_parts
@@ -12,15 +12,19 @@ CRS = "EPSG:4326"
 MIN_AREA_SHARE = 0.01
 MIN_LINE_SHARE = 0.002
 COAST_M = 10_000
+LAKE_SHORE_M = 1_000
 POINT_M = 3_000
+CONTESTED_TYPES = ("Disputed", "Indeterminate", "Breakaway")
 OUTLIER_FACTOR = 3
 
 
 @dataclass(frozen=True)
 class OurCountry:
+    id: str
     alpha_3: str
     name: str
     continent: str | None
+    wikipedia_url: str | None = None
 
 
 def load_our_countries(countries_dir: pathlib.Path) -> dict[str, OurCountry]:
@@ -29,8 +33,21 @@ def load_our_countries(countries_dir: pathlib.Path) -> dict[str, OurCountry]:
         document = json.loads(path.read_text())
         if document["codes"]["alpha_3"]:
             alpha_3 = document["codes"]["alpha_3"]
-            found[alpha_3] = OurCountry(alpha_3, document["name"], document["region"])
+            found[alpha_3] = OurCountry(document["id"], alpha_3, document["name"], document["region"], document["wikipedia_url"])
     return found
+
+
+def split_antimeridian(geometry) -> MultiLineString:
+    parts = []
+    for line in getattr(geometry, "geoms", [geometry]):
+        current = [line.coords[0]]
+        for before, after in zip(line.coords[:-1], line.coords[1:], strict=True):
+            if abs(after[0] - before[0]) > 180:
+                parts.append(current)
+                current = []
+            current.append(after)
+        parts.append(current)
+    return MultiLineString([LineString(part) for part in parts if len(part) > 1])
 
 
 def main_territory(geometry) -> object:
@@ -43,18 +60,23 @@ class CountryLocator:
         self.shapes = data.countries.to_crs(EQUAL_AREA)
         self.geodetic = data.countries
         self.ours = ours
+        contested = data.disputed_areas[data.disputed_areas["TYPE"].isin(CONTESTED_TYPES)]
+        self.contested = contested.union_all()
+
+    def is_contested(self, longitude: float, latitude: float) -> bool:
+        return self.contested.contains(Point(longitude, latitude))
 
     def _country(self, row) -> OurCountry | None:
         return self.ours.get(row.ADM0_A3) or self.ours.get(row.ISO_A3)
 
-    def countries_in(self, names: list[str]) -> gpd.GeoSeries:
+    def countries_in(self, names: list[str], region_km2: float | None = None) -> gpd.GeoSeries:
         wanted = set(names)
         parts = gpd.GeoSeries(
             [main_territory(row.geometry) for row in self.geodetic.itertuples() if (country := self._country(row)) and country.name in wanted],
             crs=CRS,
         )
         areas = parts.to_crs(EQUAL_AREA).area
-        typical = [area <= OUTLIER_FACTOR * (areas.sum() - area) for area in areas]
+        typical = [area <= OUTLIER_FACTOR * (areas.sum() - area) or (region_km2 or 0) * 1e6 >= area for area in areas]
         return gpd.GeoSeries([parts[typical].union_all()], crs=CRS)
 
     def by_area(self, geometry: gpd.GeoSeries) -> list[OurCountry]:
@@ -62,16 +84,19 @@ class CountryLocator:
         return self._ranked(lambda country: country.intersection(shape).area / shape.area, MIN_AREA_SHARE)
 
     def by_line(self, geometry: gpd.GeoSeries) -> list[OurCountry]:
-        line = geometry.to_crs(EQUAL_AREA).union_all()
+        split = gpd.GeoSeries([split_antimeridian(shape) for shape in geometry.geometry], crs=geometry.crs)
+        line = split.to_crs(EQUAL_AREA).union_all()
         return self._ranked(lambda country: country.intersection(line).length / line.length, MIN_LINE_SHARE)
 
-    def by_coast(self, geometry: gpd.GeoSeries) -> list[OurCountry]:
-        shape = geometry.to_crs(EQUAL_AREA).union_all().buffer(COAST_M)
+    def by_coast(self, geometry: gpd.GeoSeries, reach_m: float = COAST_M) -> list[OurCountry]:
+        shape = geometry.to_crs(EQUAL_AREA).union_all().buffer(reach_m)
         return self._ranked(lambda country: 1.0 if country.intersects(shape) else 0.0, 1.0)
 
     def at_point(self, longitude: float, latitude: float, radius_m: float = POINT_M) -> list[OurCountry]:
-        area = gpd.GeoSeries([Point(longitude, latitude)], crs=CRS).to_crs(EQUAL_AREA).buffer(radius_m).iloc[0]
-        return self._ranked(lambda country: 1.0 if country.intersects(area) else 0.0, 1.0)
+        spot = gpd.GeoSeries([Point(longitude, latitude)], crs=CRS).to_crs(EQUAL_AREA)
+        inside = self._ranked(lambda country: 1.0 if country.contains(spot.iloc[0]) else 0.0, 1.0)
+        nearby = spot.buffer(radius_m).iloc[0]
+        return inside or self._ranked(lambda country: 1.0 if country.intersects(nearby) else 0.0, 1.0)
 
     def _ranked(self, share, minimum: float) -> list[OurCountry]:
         shares: dict[OurCountry, float] = {}

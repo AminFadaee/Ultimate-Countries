@@ -10,6 +10,10 @@ from geography.features.spatial import OurCountry
 class Photo:
     file: str
     source: str
+    author: str = ""
+    license: str = ""
+    license_url: str = ""
+    page: str = ""
 
 
 @dataclass
@@ -21,7 +25,7 @@ class Feature:
     sitelinks: int = 0
     qid: str | None = None
     wikipedia: str | None = None
-    image: str | None = None
+    images: list[str] = field(default_factory=list)
     countries: list[OurCountry] = field(default_factory=list)
     city: str | None = None
     height_m: float | None = None
@@ -33,10 +37,12 @@ class Feature:
     world_heritage: bool = False
     photo: Photo | None = None
     map: str | None = None
+    continent: str | None = None
 
     @property
     def continents(self) -> list[str]:
-        return sorted({country.continent for country in self.countries if country.continent})
+        found = {country.continent for country in self.countries if country.continent}
+        return sorted(found or {self.continent} - {None})
 
     @property
     def tags(self) -> list[str]:
