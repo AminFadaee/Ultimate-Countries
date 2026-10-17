@@ -32,8 +32,8 @@ from geography.render import (
 )
 from geography.sources.natural_earth_physical import PhysicalLayer, load_layer
 
-CONTEXT = 1.35
-MIN_FRAME_M = 900_000
+CONTEXT = 2.0
+MIN_FRAME_M = 1_800_000
 OUTLINE_SHARE = 0.0035
 WATER_OUTLINE_SHARE = 0.0018
 SIMPLIFY_SHARE = 0.004
@@ -112,7 +112,9 @@ def outline_band(projected: gpd.GeoSeries, size: float, kind: Kind) -> gpd.GeoSe
 def outline(geometry: gpd.GeoSeries, kind: Kind) -> gpd.GeoSeries:
     size = size_of(geometry)
     projected = without_small_parts(geometry.to_crs(local_projection(geometry)), size)
-    return outline_band(projected, size, kind).to_crs(CRS)
+    band = outline_band(projected, size, kind).to_crs(CRS)
+    minx, _, maxx, _ = band.total_bounds
+    return (band.apply(shifted_east) if maxx - minx > 180 else band).make_valid()
 
 
 @functools.cache
@@ -206,6 +208,11 @@ def too_wide_for_regional(geometry: gpd.GeoSeries, aspect_ratio: float) -> bool:
     return max(maxx - minx, (maxy - miny) * aspect_ratio) * CONTEXT > MAX_FRAME_WIDTH_M
 
 
+def frame_leaves_map(geometry: gpd.GeoSeries) -> bool:
+    minx, miny, maxx, maxy = frame_around(geometry).total_bounds
+    return maxy > PROJECTABLE_LATITUDE or miny < -PROJECTABLE_LATITUDE or maxx - minx > 180
+
+
 def centre_of(geometry: gpd.GeoSeries) -> tuple[float, float]:
     if (pole := pole_of(geometry)) is not None:
         return pole, 0.0
@@ -224,7 +231,7 @@ def view_for(job: FeatureMapJob, aspect_ratio: float) -> View:
         return View.CENTRED
     if shape in (Shape.WORLD_AREA, Shape.WORLD_LINE):
         return View.WORLD
-    if crosses_date_line(job.geometry) or too_wide_for_regional(job.geometry, aspect_ratio):
+    if crosses_date_line(job.geometry) or too_wide_for_regional(job.geometry, aspect_ratio) or frame_leaves_map(job.geometry):
         return View.CENTRED
     return View.REGIONAL
 

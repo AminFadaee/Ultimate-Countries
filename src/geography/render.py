@@ -596,7 +596,7 @@ class LocatorMap:
         if specks.empty:
             return
         rings = specks.centroid.buffer(RING_SHARE * extent.width).union_all().boundary
-        ax.add_geometries([rings], crs=projection, facecolor="none", edgecolor=scene.style.outline, linewidth=1.2, zorder=6)
+        ax.add_geometries([rings], crs=projection, facecolor="none", edgecolor=Color.INSET_BOX, linewidth=1.2, zorder=6)
 
     def _plot_inset(self, fig: Figure, projection: ccrs.Projection, extent: Extent, corner: Corner) -> None:
         inset = self._inset_axes(fig, corner)
