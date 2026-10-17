@@ -90,7 +90,8 @@
       "longitude": -58.381944444,
       "population": 3121707,
       "map": "maps/cities/argentina__buenos_aires.png",
-      "answer_map": "maps/cities/argentina__buenos_aires-answer.png"
+      "answer_map": "maps/cities/argentina__buenos_aires-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -240,6 +241,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

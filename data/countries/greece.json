@@ -88,7 +88,8 @@
       "longitude": 23.728055555,
       "population": 643452,
       "map": "maps/cities/greece__athens.png",
-      "answer_map": "maps/cities/greece__athens-answer.png"
+      "answer_map": "maps/cities/greece__athens-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q160544",
@@ -97,7 +98,8 @@
       "longitude": 25.134444444,
       "population": 145440,
       "map": "maps/cities/greece__heraklion.png",
-      "answer_map": "maps/cities/greece__heraklion-answer.png"
+      "answer_map": "maps/cities/greece__heraklion-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -283,6 +285,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

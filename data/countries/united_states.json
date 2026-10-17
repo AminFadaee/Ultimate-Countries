@@ -88,7 +88,8 @@
       "longitude": -74.006111111,
       "population": 8804190,
       "map": "maps/cities/united_states__new_york_city.png",
-      "answer_map": "maps/cities/united_states__new_york_city-answer.png"
+      "answer_map": "maps/cities/united_states__new_york_city-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q65",
@@ -97,7 +98,8 @@
       "longitude": -118.24368,
       "population": 3898747,
       "map": "maps/cities/united_states__los_angeles.png",
-      "answer_map": "maps/cities/united_states__los_angeles-answer.png"
+      "answer_map": "maps/cities/united_states__los_angeles-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q1297",
@@ -106,7 +108,8 @@
       "longitude": -87.627777777,
       "population": 2746388,
       "map": "maps/cities/united_states__chicago.png",
-      "answer_map": "maps/cities/united_states__chicago-answer.png"
+      "answer_map": "maps/cities/united_states__chicago-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q61",
@@ -115,7 +118,8 @@
       "longitude": -77.036666666,
       "population": 689545,
       "map": "maps/cities/united_states__washington__d_c.png",
-      "answer_map": "maps/cities/united_states__washington__d_c-answer.png"
+      "answer_map": "maps/cities/united_states__washington__d_c-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q62",
@@ -124,7 +128,8 @@
       "longitude": -122.419444444,
       "population": 873965,
       "map": "maps/cities/united_states__san_francisco.png",
-      "answer_map": "maps/cities/united_states__san_francisco-answer.png"
+      "answer_map": "maps/cities/united_states__san_francisco-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q1345",
@@ -133,7 +138,8 @@
       "longitude": -75.163611111,
       "population": 1603797,
       "map": "maps/cities/united_states__philadelphia.png",
-      "answer_map": "maps/cities/united_states__philadelphia-answer.png"
+      "answer_map": "maps/cities/united_states__philadelphia-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q16555",
@@ -142,7 +148,8 @@
       "longitude": -95.383055555,
       "population": 2304580,
       "map": "maps/cities/united_states__houston.png",
-      "answer_map": "maps/cities/united_states__houston-answer.png"
+      "answer_map": "maps/cities/united_states__houston-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q100",
@@ -151,7 +158,8 @@
       "longitude": -71.057777777,
       "population": 675647,
       "map": "maps/cities/united_states__boston.png",
-      "answer_map": "maps/cities/united_states__boston-answer.png"
+      "answer_map": "maps/cities/united_states__boston-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -370,6 +378,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

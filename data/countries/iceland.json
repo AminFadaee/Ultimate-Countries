@@ -64,7 +64,8 @@
       "longitude": -21.935,
       "population": 138772,
       "map": "maps/cities/iceland__reykjavik.png",
-      "answer_map": "maps/cities/iceland__reykjavik-answer.png"
+      "answer_map": "maps/cities/iceland__reykjavik-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -211,6 +212,10 @@
     },
     "military_spending": {
       "source": "world_bank",
+      "as_of": null
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "notable_cities": {

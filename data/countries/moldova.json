@@ -90,7 +90,8 @@
       "longitude": 28.835277777,
       "population": 567038,
       "map": "maps/cities/moldova__chisinau.png",
-      "answer_map": "maps/cities/moldova__chisinau-answer.png"
+      "answer_map": "maps/cities/moldova__chisinau-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -246,6 +247,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

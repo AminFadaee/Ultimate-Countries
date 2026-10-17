@@ -88,7 +88,8 @@
       "longitude": -99.13589,
       "population": 9209944,
       "map": "maps/cities/mexico__mexico_city.png",
-      "answer_map": "maps/cities/mexico__mexico_city-answer.png"
+      "answer_map": "maps/cities/mexico__mexico_city-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q8969",
@@ -97,7 +98,8 @@
       "longitude": -86.824811111,
       "population": 888797,
       "map": "maps/cities/mexico__cancun.png",
-      "answer_map": "maps/cities/mexico__cancun-answer.png"
+      "answer_map": "maps/cities/mexico__cancun-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q9022",
@@ -106,7 +108,8 @@
       "longitude": -103.342222222,
       "population": 1385621,
       "map": "maps/cities/mexico__guadalajara.png",
-      "answer_map": "maps/cities/mexico__guadalajara-answer.png"
+      "answer_map": "maps/cities/mexico__guadalajara-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -269,6 +272,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

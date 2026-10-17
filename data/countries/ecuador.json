@@ -88,7 +88,8 @@
       "longitude": -78.5125,
       "population": 1763275,
       "map": "maps/cities/ecuador__quito.png",
-      "answer_map": "maps/cities/ecuador__quito-answer.png"
+      "answer_map": "maps/cities/ecuador__quito-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -236,6 +237,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

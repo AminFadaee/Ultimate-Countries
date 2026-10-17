@@ -88,7 +88,8 @@
       "longitude": 10.18,
       "population": 602560,
       "map": "maps/cities/tunisia__tunis.png",
-      "answer_map": "maps/cities/tunisia__tunis-answer.png"
+      "answer_map": "maps/cities/tunisia__tunis-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -221,6 +222,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

@@ -88,7 +88,8 @@
       "longitude": 3.393611111,
       "population": 15070000,
       "map": "maps/cities/nigeria__lagos.png",
-      "answer_map": "maps/cities/nigeria__lagos-answer.png"
+      "answer_map": "maps/cities/nigeria__lagos-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q3787",
@@ -97,7 +98,8 @@
       "longitude": 7.491388888,
       "population": 1693400,
       "map": "maps/cities/nigeria__abuja.png",
-      "answer_map": "maps/cities/nigeria__abuja-answer.png"
+      "answer_map": "maps/cities/nigeria__abuja-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -297,6 +299,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

@@ -227,6 +227,10 @@
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
     },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
+    },
     "notable_cities": {
       "source": "wikidata",
       "as_of": null

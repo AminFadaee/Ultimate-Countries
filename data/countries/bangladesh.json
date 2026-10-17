@@ -88,7 +88,8 @@
       "longitude": 90.394444444,
       "population": 16800000,
       "map": "maps/cities/bangladesh__dhaka.png",
-      "answer_map": "maps/cities/bangladesh__dhaka-answer.png"
+      "answer_map": "maps/cities/bangladesh__dhaka-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -262,6 +263,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

@@ -88,7 +88,8 @@
       "longitude": 15.977222222,
       "population": 767131,
       "map": "maps/cities/croatia__zagreb.png",
-      "answer_map": "maps/cities/croatia__zagreb-answer.png"
+      "answer_map": "maps/cities/croatia__zagreb-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -244,6 +245,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

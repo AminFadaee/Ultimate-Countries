@@ -66,7 +66,8 @@
       "longitude": 85.32,
       "population": 845767,
       "map": "maps/cities/nepal__kathmandu.png",
-      "answer_map": "maps/cities/nepal__kathmandu-answer.png"
+      "answer_map": "maps/cities/nepal__kathmandu-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -333,6 +334,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

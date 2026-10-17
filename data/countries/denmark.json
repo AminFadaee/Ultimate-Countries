@@ -90,7 +90,8 @@
       "longitude": 12.568888888,
       "population": 667099,
       "map": "maps/cities/denmark__copenhagen.png",
-      "answer_map": "maps/cities/denmark__copenhagen-answer.png"
+      "answer_map": "maps/cities/denmark__copenhagen-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -260,6 +261,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

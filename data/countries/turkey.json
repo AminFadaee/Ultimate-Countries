@@ -89,7 +89,8 @@
       "longitude": 28.960277777,
       "population": 15655924,
       "map": "maps/cities/turkey__istanbul.png",
-      "answer_map": "maps/cities/turkey__istanbul-answer.png"
+      "answer_map": "maps/cities/turkey__istanbul-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q6487",
@@ -98,7 +99,8 @@
       "longitude": 30.69556,
       "population": 2426356,
       "map": "maps/cities/turkey__antalya.png",
-      "answer_map": "maps/cities/turkey__antalya-answer.png"
+      "answer_map": "maps/cities/turkey__antalya-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q3640",
@@ -107,7 +109,8 @@
       "longitude": 32.83869,
       "population": 5803482,
       "map": "maps/cities/turkey__ankara.png",
-      "answer_map": "maps/cities/turkey__ankara-answer.png"
+      "answer_map": "maps/cities/turkey__ankara-answer.png",
+      "most_visited": false
     },
     {
       "id": "Q43387",
@@ -116,7 +119,8 @@
       "longitude": 26.57361,
       "population": 180327,
       "map": "maps/cities/turkey__edirne.png",
-      "answer_map": "maps/cities/turkey__edirne-answer.png"
+      "answer_map": "maps/cities/turkey__edirne-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -307,6 +311,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

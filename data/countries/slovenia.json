@@ -90,7 +90,8 @@
       "longitude": 14.506111111,
       "population": 284293,
       "map": "maps/cities/slovenia__ljubljana.png",
-      "answer_map": "maps/cities/slovenia__ljubljana-answer.png"
+      "answer_map": "maps/cities/slovenia__ljubljana-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -268,6 +269,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

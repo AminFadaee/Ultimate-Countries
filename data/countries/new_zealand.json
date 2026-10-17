@@ -88,7 +88,8 @@
       "longitude": 174.765277777,
       "population": 1470100,
       "map": "maps/cities/new_zealand__auckland.png",
-      "answer_map": "maps/cities/new_zealand__auckland-answer.png"
+      "answer_map": "maps/cities/new_zealand__auckland-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q23661",
@@ -97,7 +98,8 @@
       "longitude": 174.777222222,
       "population": 216200,
       "map": "maps/cities/new_zealand__wellington.png",
-      "answer_map": "maps/cities/new_zealand__wellington-answer.png"
+      "answer_map": "maps/cities/new_zealand__wellington-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -245,6 +247,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

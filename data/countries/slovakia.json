@@ -88,7 +88,8 @@
       "longitude": 17.1093063,
       "population": 480902,
       "map": "maps/cities/slovakia__bratislava.png",
-      "answer_map": "maps/cities/slovakia__bratislava-answer.png"
+      "answer_map": "maps/cities/slovakia__bratislava-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -266,6 +267,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

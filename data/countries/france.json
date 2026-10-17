@@ -88,7 +88,8 @@
       "longitude": 2.352222222,
       "population": 2103778,
       "map": "maps/cities/france__paris.png",
-      "answer_map": "maps/cities/france__paris-answer.png"
+      "answer_map": "maps/cities/france__paris-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q33959",
@@ -97,7 +98,8 @@
       "longitude": 7.268333333,
       "population": 357737,
       "map": "maps/cities/france__nice.png",
-      "answer_map": "maps/cities/france__nice-answer.png"
+      "answer_map": "maps/cities/france__nice-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q23482",
@@ -106,7 +108,8 @@
       "longitude": 5.376388888,
       "population": 886040,
       "map": "maps/cities/france__marseille.png",
-      "answer_map": "maps/cities/france__marseille-answer.png"
+      "answer_map": "maps/cities/france__marseille-answer.png",
+      "most_visited": false
     },
     {
       "id": "Q456",
@@ -115,7 +118,8 @@
       "longitude": 4.835,
       "population": 519127,
       "map": "maps/cities/france__lyon.png",
-      "answer_map": "maps/cities/france__lyon-answer.png"
+      "answer_map": "maps/cities/france__lyon-answer.png",
+      "most_visited": false
     },
     {
       "id": "Q6602",
@@ -124,7 +128,8 @@
       "longitude": 7.752222222,
       "population": 293771,
       "map": "maps/cities/france__strasbourg.png",
-      "answer_map": "maps/cities/france__strasbourg-answer.png"
+      "answer_map": "maps/cities/france__strasbourg-answer.png",
+      "most_visited": false
     },
     {
       "id": "Q1479",
@@ -133,7 +138,8 @@
       "longitude": -0.579444444,
       "population": 267991,
       "map": "maps/cities/france__bordeaux.png",
-      "answer_map": "maps/cities/france__bordeaux-answer.png"
+      "answer_map": "maps/cities/france__bordeaux-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -352,6 +358,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

@@ -88,7 +88,8 @@
       "longitude": 44.514444444,
       "population": 1106300,
       "map": "maps/cities/armenia__yerevan.png",
-      "answer_map": "maps/cities/armenia__yerevan-answer.png"
+      "answer_map": "maps/cities/armenia__yerevan-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -236,6 +237,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

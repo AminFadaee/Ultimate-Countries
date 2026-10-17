@@ -88,7 +88,8 @@
       "longitude": -66.914444444,
       "population": 2245744,
       "map": "maps/cities/venezuela__caracas.png",
-      "answer_map": "maps/cities/venezuela__caracas-answer.png"
+      "answer_map": "maps/cities/venezuela__caracas-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -228,6 +229,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2023"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

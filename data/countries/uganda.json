@@ -64,7 +64,8 @@
       "longitude": 32.581111111,
       "population": 1680600,
       "map": "maps/cities/uganda__kampala.png",
-      "answer_map": "maps/cities/uganda__kampala-answer.png"
+      "answer_map": "maps/cities/uganda__kampala-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -269,6 +270,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

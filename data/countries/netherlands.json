@@ -88,7 +88,8 @@
       "longitude": 4.883333333,
       "population": 921468,
       "map": "maps/cities/netherlands__amsterdam.png",
-      "answer_map": "maps/cities/netherlands__amsterdam-answer.png"
+      "answer_map": "maps/cities/netherlands__amsterdam-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q36600",
@@ -97,7 +98,8 @@
       "longitude": 4.31,
       "population": 548320,
       "map": "maps/cities/netherlands__the_hague.png",
-      "answer_map": "maps/cities/netherlands__the_hague-answer.png"
+      "answer_map": "maps/cities/netherlands__the_hague-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -308,6 +310,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

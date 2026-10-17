@@ -88,7 +88,8 @@
       "longitude": 72.8775,
       "population": 15414288,
       "map": "maps/cities/india__mumbai.png",
-      "answer_map": "maps/cities/india__mumbai-answer.png"
+      "answer_map": "maps/cities/india__mumbai-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q1353",
@@ -97,7 +98,8 @@
       "longitude": 77.216666666,
       "population": 26495000,
       "map": "maps/cities/india__delhi.png",
-      "answer_map": "maps/cities/india__delhi-answer.png"
+      "answer_map": "maps/cities/india__delhi-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q1348",
@@ -106,7 +108,8 @@
       "longitude": 88.37,
       "population": 4496694,
       "map": "maps/cities/india__kolkata.png",
-      "answer_map": "maps/cities/india__kolkata-answer.png"
+      "answer_map": "maps/cities/india__kolkata-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q1355",
@@ -115,7 +118,8 @@
       "longitude": 77.5912997,
       "population": 12327000,
       "map": "maps/cities/india__bengaluru.png",
-      "answer_map": "maps/cities/india__bengaluru-answer.png"
+      "answer_map": "maps/cities/india__bengaluru-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q1352",
@@ -124,7 +128,8 @@
       "longitude": 80.275,
       "population": 6599000,
       "map": "maps/cities/india__chennai.png",
-      "answer_map": "maps/cities/india__chennai-answer.png"
+      "answer_map": "maps/cities/india__chennai-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q66485",
@@ -133,7 +138,8 @@
       "longitude": 75.82,
       "population": 3073350,
       "map": "maps/cities/india__jaipur.png",
-      "answer_map": "maps/cities/india__jaipur-answer.png"
+      "answer_map": "maps/cities/india__jaipur-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q1538",
@@ -142,7 +148,8 @@
       "longitude": 73.855277777,
       "population": 6200000,
       "map": "maps/cities/india__pune.png",
-      "answer_map": "maps/cities/india__pune-answer.png"
+      "answer_map": "maps/cities/india__pune-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q42941",
@@ -151,7 +158,8 @@
       "longitude": 78.02,
       "population": 1585705,
       "map": "maps/cities/india__agra.png",
-      "answer_map": "maps/cities/india__agra-answer.png"
+      "answer_map": "maps/cities/india__agra-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -549,6 +557,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

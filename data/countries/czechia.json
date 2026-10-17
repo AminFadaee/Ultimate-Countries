@@ -88,7 +88,8 @@
       "longitude": 14.421388888,
       "population": 1397880,
       "map": "maps/cities/czechia__prague.png",
-      "answer_map": "maps/cities/czechia__prague-answer.png"
+      "answer_map": "maps/cities/czechia__prague-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -253,6 +254,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

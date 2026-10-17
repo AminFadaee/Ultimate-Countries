@@ -88,7 +88,8 @@
       "longitude": 21.011111111,
       "population": 1862402,
       "map": "maps/cities/poland__warsaw.png",
-      "answer_map": "maps/cities/poland__warsaw-answer.png"
+      "answer_map": "maps/cities/poland__warsaw-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q31487",
@@ -97,7 +98,8 @@
       "longitude": 19.937222222,
       "population": 804237,
       "map": "maps/cities/poland__krakow.png",
-      "answer_map": "maps/cities/poland__krakow-answer.png"
+      "answer_map": "maps/cities/poland__krakow-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -280,6 +282,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

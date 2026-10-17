@@ -88,7 +88,8 @@
       "longitude": -7.62,
       "population": 3215935,
       "map": "maps/cities/morocco__casablanca.png",
-      "answer_map": "maps/cities/morocco__casablanca-answer.png"
+      "answer_map": "maps/cities/morocco__casablanca-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q101625",
@@ -97,7 +98,8 @@
       "longitude": -7.98108,
       "population": 1002697,
       "map": "maps/cities/morocco__marrakech.png",
-      "answer_map": "maps/cities/morocco__marrakech-answer.png"
+      "answer_map": "maps/cities/morocco__marrakech-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q3551",
@@ -106,7 +108,8 @@
       "longitude": -6.841388888,
       "population": 515619,
       "map": "maps/cities/morocco__rabat.png",
-      "answer_map": "maps/cities/morocco__rabat-answer.png"
+      "answer_map": "maps/cities/morocco__rabat-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -284,6 +287,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

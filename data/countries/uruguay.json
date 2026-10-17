@@ -80,7 +80,8 @@
       "longitude": -56.191311111,
       "population": 1302954,
       "map": "maps/cities/uruguay__montevideo.png",
-      "answer_map": "maps/cities/uruguay__montevideo-answer.png"
+      "answer_map": "maps/cities/uruguay__montevideo-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -214,6 +215,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

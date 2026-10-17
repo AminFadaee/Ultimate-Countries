@@ -72,7 +72,8 @@
       "longitude": 36.817222222,
       "population": 5545000,
       "map": "maps/cities/kenya__nairobi.png",
-      "answer_map": "maps/cities/kenya__nairobi-answer.png"
+      "answer_map": "maps/cities/kenya__nairobi-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -301,6 +302,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

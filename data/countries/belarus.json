@@ -88,7 +88,8 @@
       "longitude": 27.561837,
       "population": 1995091,
       "map": "maps/cities/belarus__minsk.png",
-      "answer_map": "maps/cities/belarus__minsk-answer.png"
+      "answer_map": "maps/cities/belarus__minsk-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -227,6 +228,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

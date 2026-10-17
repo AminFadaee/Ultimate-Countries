@@ -90,7 +90,8 @@
       "longitude": 69.279722222,
       "population": 2956384,
       "map": "maps/cities/uzbekistan__tashkent.png",
-      "answer_map": "maps/cities/uzbekistan__tashkent-answer.png"
+      "answer_map": "maps/cities/uzbekistan__tashkent-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -243,6 +244,10 @@
     },
     "military_spending": {
       "source": "world_bank",
+      "as_of": null
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "notable_cities": {

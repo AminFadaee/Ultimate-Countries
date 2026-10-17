@@ -88,7 +88,8 @@
       "longitude": 25.28,
       "population": 619405,
       "map": "maps/cities/lithuania__vilnius.png",
-      "answer_map": "maps/cities/lithuania__vilnius-answer.png"
+      "answer_map": "maps/cities/lithuania__vilnius-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -248,6 +249,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

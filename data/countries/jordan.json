@@ -88,7 +88,8 @@
       "longitude": 35.926084,
       "population": 4007526,
       "map": "maps/cities/jordan__amman.png",
-      "answer_map": "maps/cities/jordan__amman-answer.png"
+      "answer_map": "maps/cities/jordan__amman-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -230,6 +231,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

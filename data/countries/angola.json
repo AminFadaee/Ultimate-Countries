@@ -88,7 +88,8 @@
       "longitude": 13.234444444,
       "population": 2487444,
       "map": "maps/cities/angola__luanda.png",
-      "answer_map": "maps/cities/angola__luanda-answer.png"
+      "answer_map": "maps/cities/angola__luanda-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -244,6 +245,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

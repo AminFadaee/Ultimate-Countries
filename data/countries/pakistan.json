@@ -88,7 +88,8 @@
       "longitude": 67.01,
       "population": 14910352,
       "map": "maps/cities/pakistan__karachi.png",
-      "answer_map": "maps/cities/pakistan__karachi-answer.png"
+      "answer_map": "maps/cities/pakistan__karachi-answer.png",
+      "most_visited": false
     },
     {
       "id": "Q1362",
@@ -97,7 +98,8 @@
       "longitude": 73.036944444,
       "population": 1014825,
       "map": "maps/cities/pakistan__islamabad.png",
-      "answer_map": "maps/cities/pakistan__islamabad-answer.png"
+      "answer_map": "maps/cities/pakistan__islamabad-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -333,6 +335,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

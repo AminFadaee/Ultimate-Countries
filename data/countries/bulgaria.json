@@ -88,7 +88,8 @@
       "longitude": 23.321726,
       "population": 1213134,
       "map": "maps/cities/bulgaria__sofia.png",
-      "answer_map": "maps/cities/bulgaria__sofia-answer.png"
+      "answer_map": "maps/cities/bulgaria__sofia-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -253,6 +254,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

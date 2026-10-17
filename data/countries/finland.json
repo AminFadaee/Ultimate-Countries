@@ -90,7 +90,8 @@
       "longitude": 24.9375,
       "population": 694392,
       "map": "maps/cities/finland__helsinki.png",
-      "answer_map": "maps/cities/finland__helsinki-answer.png"
+      "answer_map": "maps/cities/finland__helsinki-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -262,6 +263,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

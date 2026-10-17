@@ -88,7 +88,8 @@
       "longitude": 4.351666666,
       "population": 195546,
       "map": "maps/cities/belgium__brussels.png",
-      "answer_map": "maps/cities/belgium__brussels-answer.png"
+      "answer_map": "maps/cities/belgium__brussels-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -257,6 +258,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

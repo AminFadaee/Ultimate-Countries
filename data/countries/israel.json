@@ -88,7 +88,8 @@
       "longitude": 35.234156,
       "population": 1050151,
       "map": "maps/cities/israel__jerusalem.png",
-      "answer_map": "maps/cities/israel__jerusalem-answer.png"
+      "answer_map": "maps/cities/israel__jerusalem-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q33935",
@@ -97,7 +98,8 @@
       "longitude": 34.78,
       "population": 467875,
       "map": "maps/cities/israel__tel_aviv.png",
-      "answer_map": "maps/cities/israel__tel_aviv-answer.png"
+      "answer_map": "maps/cities/israel__tel_aviv-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -297,6 +299,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

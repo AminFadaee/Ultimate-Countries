@@ -88,7 +88,8 @@
       "longitude": -9.139016,
       "population": 545796,
       "map": "maps/cities/portugal__lisbon.png",
-      "answer_map": "maps/cities/portugal__lisbon-answer.png"
+      "answer_map": "maps/cities/portugal__lisbon-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q36433",
@@ -97,7 +98,8 @@
       "longitude": -8.610833333,
       "population": 273476,
       "map": "maps/cities/portugal__porto.png",
-      "answer_map": "maps/cities/portugal__porto-answer.png"
+      "answer_map": "maps/cities/portugal__porto-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -260,6 +262,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

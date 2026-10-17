@@ -88,7 +88,8 @@
       "longitude": 3.058611111,
       "population": 2364230,
       "map": "maps/cities/algeria__algiers.png",
-      "answer_map": "maps/cities/algeria__algiers-answer.png"
+      "answer_map": "maps/cities/algeria__algiers-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -262,6 +263,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

@@ -88,7 +88,8 @@
       "longitude": 139.691666666,
       "population": 14264798,
       "map": "maps/cities/japan__tokyo.png",
-      "answer_map": "maps/cities/japan__tokyo-answer.png"
+      "answer_map": "maps/cities/japan__tokyo-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q34600",
@@ -97,7 +98,8 @@
       "longitude": 135.768111111,
       "population": 1463723,
       "map": "maps/cities/japan__kyoto.png",
-      "answer_map": "maps/cities/japan__kyoto-answer.png"
+      "answer_map": "maps/cities/japan__kyoto-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q35765",
@@ -106,7 +108,8 @@
       "longitude": 135.502111111,
       "population": 2751862,
       "map": "maps/cities/japan__osaka.png",
-      "answer_map": "maps/cities/japan__osaka-answer.png"
+      "answer_map": "maps/cities/japan__osaka-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q26600",
@@ -115,7 +118,8 @@
       "longitude": 130.401722222,
       "population": 1603043,
       "map": "maps/cities/japan__fukuoka.png",
-      "answer_map": "maps/cities/japan__fukuoka-answer.png"
+      "answer_map": "maps/cities/japan__fukuoka-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -264,6 +268,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

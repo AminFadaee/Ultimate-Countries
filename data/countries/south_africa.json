@@ -106,7 +106,8 @@
       "longitude": 18.423888888,
       "population": 3776313,
       "map": "maps/cities/south_africa__cape_town.png",
-      "answer_map": "maps/cities/south_africa__cape_town-answer.png"
+      "answer_map": "maps/cities/south_africa__cape_town-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q34647",
@@ -115,7 +116,8 @@
       "longitude": 28.041638888,
       "population": 4803262,
       "map": "maps/cities/south_africa__johannesburg.png",
-      "answer_map": "maps/cities/south_africa__johannesburg-answer.png"
+      "answer_map": "maps/cities/south_africa__johannesburg-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q5468",
@@ -124,7 +126,8 @@
       "longitude": 31.025,
       "population": 595061,
       "map": "maps/cities/south_africa__durban.png",
-      "answer_map": "maps/cities/south_africa__durban-answer.png"
+      "answer_map": "maps/cities/south_africa__durban-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q3926",
@@ -133,7 +136,8 @@
       "longitude": 28.188055555,
       "population": 741651,
       "map": "maps/cities/south_africa__pretoria.png",
-      "answer_map": "maps/cities/south_africa__pretoria-answer.png"
+      "answer_map": "maps/cities/south_africa__pretoria-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -343,6 +347,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

@@ -89,7 +89,8 @@
       "longitude": 37.6175,
       "population": 13274285,
       "map": "maps/cities/russia__moscow.png",
-      "answer_map": "maps/cities/russia__moscow-answer.png"
+      "answer_map": "maps/cities/russia__moscow-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q656",
@@ -98,7 +99,8 @@
       "longitude": 30.316666666,
       "population": 5652922,
       "map": "maps/cities/russia__saint_petersburg.png",
-      "answer_map": "maps/cities/russia__saint_petersburg-answer.png"
+      "answer_map": "maps/cities/russia__saint_petersburg-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q3646",
@@ -107,7 +109,8 @@
       "longitude": 38.983333333,
       "population": 1154885,
       "map": "maps/cities/russia__krasnodar.png",
-      "answer_map": "maps/cities/russia__krasnodar-answer.png"
+      "answer_map": "maps/cities/russia__krasnodar-answer.png",
+      "most_visited": false
     },
     {
       "id": "Q39420",
@@ -116,7 +119,8 @@
       "longitude": 39.720277777,
       "population": 445149,
       "map": "maps/cities/russia__sochi.png",
-      "answer_map": "maps/cities/russia__sochi-answer.png"
+      "answer_map": "maps/cities/russia__sochi-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -468,6 +472,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

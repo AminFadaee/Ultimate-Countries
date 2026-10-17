@@ -75,7 +75,8 @@
       "longitude": 55.309444444,
       "population": 3944751,
       "map": "maps/cities/united_arab_emirates__dubai.png",
-      "answer_map": "maps/cities/united_arab_emirates__dubai-answer.png"
+      "answer_map": "maps/cities/united_arab_emirates__dubai-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q1519",
@@ -84,7 +85,8 @@
       "longitude": 54.396944444,
       "population": 1570000,
       "map": "maps/cities/united_arab_emirates__abu_dhabi.png",
-      "answer_map": "maps/cities/united_arab_emirates__abu_dhabi-answer.png"
+      "answer_map": "maps/cities/united_arab_emirates__abu_dhabi-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -255,6 +257,10 @@
     },
     "military_spending": {
       "source": "world_bank",
+      "as_of": null
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "notable_cities": {

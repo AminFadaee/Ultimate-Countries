@@ -90,7 +90,8 @@
       "longitude": -0.1275,
       "population": 8799728,
       "map": "maps/cities/united_kingdom__london.png",
-      "answer_map": "maps/cities/united_kingdom__london-answer.png"
+      "answer_map": "maps/cities/united_kingdom__london-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q23436",
@@ -99,7 +100,8 @@
       "longitude": -3.189166666,
       "population": 488050,
       "map": "maps/cities/united_kingdom__edinburgh.png",
-      "answer_map": "maps/cities/united_kingdom__edinburgh-answer.png"
+      "answer_map": "maps/cities/united_kingdom__edinburgh-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q18125",
@@ -108,7 +110,8 @@
       "longitude": -2.245277777,
       "population": 547627,
       "map": "maps/cities/united_kingdom__manchester.png",
-      "answer_map": "maps/cities/united_kingdom__manchester-answer.png"
+      "answer_map": "maps/cities/united_kingdom__manchester-answer.png",
+      "most_visited": false
     },
     {
       "id": "Q24826",
@@ -117,7 +120,8 @@
       "longitude": -2.991666666,
       "population": 513441,
       "map": "maps/cities/united_kingdom__liverpool.png",
-      "answer_map": "maps/cities/united_kingdom__liverpool-answer.png"
+      "answer_map": "maps/cities/united_kingdom__liverpool-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -394,6 +398,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

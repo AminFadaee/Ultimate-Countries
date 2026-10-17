@@ -178,6 +178,10 @@
       "source": "world_bank",
       "as_of": null
     },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
+    },
     "notable_cities": {
       "source": "wikidata",
       "as_of": null

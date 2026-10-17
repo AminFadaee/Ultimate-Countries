@@ -88,7 +88,8 @@
       "longitude": -79.386666666,
       "population": 2794356,
       "map": "maps/cities/canada__toronto.png",
-      "answer_map": "maps/cities/canada__toronto-answer.png"
+      "answer_map": "maps/cities/canada__toronto-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q340",
@@ -97,7 +98,8 @@
       "longitude": -73.5868411,
       "population": 1895211,
       "map": "maps/cities/canada__montreal.png",
-      "answer_map": "maps/cities/canada__montreal-answer.png"
+      "answer_map": "maps/cities/canada__montreal-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q24639",
@@ -106,7 +108,8 @@
       "longitude": -123.113888888,
       "population": 662248,
       "map": "maps/cities/canada__vancouver.png",
-      "answer_map": "maps/cities/canada__vancouver-answer.png"
+      "answer_map": "maps/cities/canada__vancouver-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q1930",
@@ -115,7 +118,8 @@
       "longitude": -75.695,
       "population": 1017449,
       "map": "maps/cities/canada__ottawa.png",
-      "answer_map": "maps/cities/canada__ottawa-answer.png"
+      "answer_map": "maps/cities/canada__ottawa-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -443,6 +447,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

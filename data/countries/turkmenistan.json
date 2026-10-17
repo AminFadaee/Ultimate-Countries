@@ -90,7 +90,8 @@
       "longitude": 58.383333333,
       "population": 1030063,
       "map": "maps/cities/turkmenistan__ashgabat.png",
-      "answer_map": "maps/cities/turkmenistan__ashgabat-answer.png"
+      "answer_map": "maps/cities/turkmenistan__ashgabat-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -249,6 +250,10 @@
     },
     "military_spending": {
       "source": "world_bank",
+      "as_of": null
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "notable_cities": {

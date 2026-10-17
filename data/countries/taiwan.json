@@ -88,7 +88,8 @@
       "longitude": 121.5625,
       "population": 2429429,
       "map": "maps/cities/taiwan__taipei.png",
-      "answer_map": "maps/cities/taiwan__taipei-answer.png"
+      "answer_map": "maps/cities/taiwan__taipei-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -351,6 +352,10 @@
     },
     "military_spending": {
       "source": "world_bank",
+      "as_of": null
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "notable_cities": {

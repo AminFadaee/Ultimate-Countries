@@ -88,7 +88,8 @@
       "longitude": -43.205555555,
       "population": 6211223,
       "map": "maps/cities/brazil__rio_de_janeiro.png",
-      "answer_map": "maps/cities/brazil__rio_de_janeiro-answer.png"
+      "answer_map": "maps/cities/brazil__rio_de_janeiro-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q174",
@@ -97,7 +98,8 @@
       "longitude": -46.633947222,
       "population": 11451999,
       "map": "maps/cities/brazil__sao_paulo.png",
-      "answer_map": "maps/cities/brazil__sao_paulo-answer.png"
+      "answer_map": "maps/cities/brazil__sao_paulo-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q4361",
@@ -106,7 +108,8 @@
       "longitude": -49.271944444,
       "population": 1773718,
       "map": "maps/cities/brazil__curitiba.png",
-      "answer_map": "maps/cities/brazil__curitiba-answer.png"
+      "answer_map": "maps/cities/brazil__curitiba-answer.png",
+      "most_visited": false
     },
     {
       "id": "Q2844",
@@ -115,7 +118,8 @@
       "longitude": -47.882777777,
       "population": 2996899,
       "map": "maps/cities/brazil__brasilia.png",
-      "answer_map": "maps/cities/brazil__brasilia-answer.png"
+      "answer_map": "maps/cities/brazil__brasilia-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -290,6 +294,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

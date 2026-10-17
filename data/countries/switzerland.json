@@ -88,7 +88,8 @@
       "longitude": 8.541111111,
       "population": 452421,
       "map": "maps/cities/switzerland__zurich.png",
-      "answer_map": "maps/cities/switzerland__zurich-answer.png"
+      "answer_map": "maps/cities/switzerland__zurich-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q71",
@@ -97,7 +98,8 @@
       "longitude": 6.15,
       "population": 209061,
       "map": "maps/cities/switzerland__geneva.png",
-      "answer_map": "maps/cities/switzerland__geneva-answer.png"
+      "answer_map": "maps/cities/switzerland__geneva-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q70",
@@ -106,7 +108,8 @@
       "longitude": 7.44743,
       "population": 136988,
       "map": "maps/cities/switzerland__bern.png",
-      "answer_map": "maps/cities/switzerland__bern-answer.png"
+      "answer_map": "maps/cities/switzerland__bern-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -293,6 +296,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

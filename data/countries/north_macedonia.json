@@ -88,7 +88,8 @@
       "longitude": 21.431666666,
       "population": 422540,
       "map": "maps/cities/north_macedonia__skopje.png",
-      "answer_map": "maps/cities/north_macedonia__skopje-answer.png"
+      "answer_map": "maps/cities/north_macedonia__skopje-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -234,6 +235,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

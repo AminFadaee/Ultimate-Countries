@@ -88,7 +88,8 @@
       "longitude": 116.407526,
       "population": 21893095,
       "map": "maps/cities/china__beijing.png",
-      "answer_map": "maps/cities/china__beijing-answer.png"
+      "answer_map": "maps/cities/china__beijing-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q8686",
@@ -97,7 +98,8 @@
       "longitude": 121.469166666,
       "population": 24870895,
       "map": "maps/cities/china__shanghai.png",
-      "answer_map": "maps/cities/china__shanghai-answer.png"
+      "answer_map": "maps/cities/china__shanghai-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q16572",
@@ -106,7 +108,8 @@
       "longitude": 113.26,
       "population": 18676605,
       "map": "maps/cities/china__guangzhou.png",
-      "answer_map": "maps/cities/china__guangzhou-answer.png"
+      "answer_map": "maps/cities/china__guangzhou-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q11736",
@@ -115,7 +118,8 @@
       "longitude": 117.205555555,
       "population": 13866009,
       "map": "maps/cities/china__tianjin.png",
-      "answer_map": "maps/cities/china__tianjin-answer.png"
+      "answer_map": "maps/cities/china__tianjin-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q30002",
@@ -124,7 +128,8 @@
       "longitude": 104.063333333,
       "population": 20937757,
       "map": "maps/cities/china__chengdu.png",
-      "answer_map": "maps/cities/china__chengdu-answer.png"
+      "answer_map": "maps/cities/china__chengdu-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q15174",
@@ -133,7 +138,8 @@
       "longitude": 114.054444444,
       "population": 17494398,
       "map": "maps/cities/china__shenzhen.png",
-      "answer_map": "maps/cities/china__shenzhen-answer.png"
+      "answer_map": "maps/cities/china__shenzhen-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q5826",
@@ -142,7 +148,8 @@
       "longitude": 108.942222222,
       "population": 12952907,
       "map": "maps/cities/china__xi_an.png",
-      "answer_map": "maps/cities/china__xi_an-answer.png"
+      "answer_map": "maps/cities/china__xi_an-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q4970",
@@ -151,7 +158,8 @@
       "longitude": 120.1675,
       "population": 11936010,
       "map": "maps/cities/china__hangzhou.png",
-      "answer_map": "maps/cities/china__hangzhou-answer.png"
+      "answer_map": "maps/cities/china__hangzhou-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -323,6 +331,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

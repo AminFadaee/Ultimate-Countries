@@ -90,7 +90,8 @@
       "longitude": 151.21,
       "population": 5450496,
       "map": "maps/cities/australia__sydney.png",
-      "answer_map": "maps/cities/australia__sydney-answer.png"
+      "answer_map": "maps/cities/australia__sydney-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q3141",
@@ -99,7 +100,8 @@
       "longitude": 144.963055555,
       "population": 5350705,
       "map": "maps/cities/australia__melbourne.png",
-      "answer_map": "maps/cities/australia__melbourne-answer.png"
+      "answer_map": "maps/cities/australia__melbourne-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q3114",
@@ -108,7 +110,8 @@
       "longitude": 149.126944444,
       "population": 381488,
       "map": "maps/cities/australia__canberra.png",
-      "answer_map": "maps/cities/australia__canberra-answer.png"
+      "answer_map": "maps/cities/australia__canberra-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -263,6 +266,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

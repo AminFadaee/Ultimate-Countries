@@ -88,7 +88,8 @@
       "longitude": 12.482777777,
       "population": 2748109,
       "map": "maps/cities/italy__rome.png",
-      "answer_map": "maps/cities/italy__rome-answer.png"
+      "answer_map": "maps/cities/italy__rome-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q490",
@@ -97,7 +98,8 @@
       "longitude": 9.19,
       "population": 1354196,
       "map": "maps/cities/italy__milan.png",
-      "answer_map": "maps/cities/italy__milan-answer.png"
+      "answer_map": "maps/cities/italy__milan-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q641",
@@ -106,7 +108,8 @@
       "longitude": 12.331944444,
       "population": 250369,
       "map": "maps/cities/italy__venice.png",
-      "answer_map": "maps/cities/italy__venice-answer.png"
+      "answer_map": "maps/cities/italy__venice-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q2044",
@@ -115,7 +118,8 @@
       "longitude": 11.254166666,
       "population": 360930,
       "map": "maps/cities/italy__florence.png",
-      "answer_map": "maps/cities/italy__florence-answer.png"
+      "answer_map": "maps/cities/italy__florence-answer.png",
+      "most_visited": true
     },
     {
       "id": "Q2634",
@@ -124,7 +128,8 @@
       "longitude": 14.248611111,
       "population": 913462,
       "map": "maps/cities/italy__naples.png",
-      "answer_map": "maps/cities/italy__naples-answer.png"
+      "answer_map": "maps/cities/italy__naples-answer.png",
+      "most_visited": false
     },
     {
       "id": "Q495",
@@ -133,7 +138,8 @@
       "longitude": 7.676111111,
       "population": 841600,
       "map": "maps/cities/italy__turin.png",
-      "answer_map": "maps/cities/italy__turin-answer.png"
+      "answer_map": "maps/cities/italy__turin-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -343,6 +349,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

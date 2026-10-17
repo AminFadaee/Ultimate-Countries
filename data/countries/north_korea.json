@@ -88,7 +88,8 @@
       "longitude": 125.7475,
       "population": 2863000,
       "map": "maps/cities/north_korea__pyongyang.png",
-      "answer_map": "maps/cities/north_korea__pyongyang-answer.png"
+      "answer_map": "maps/cities/north_korea__pyongyang-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -216,6 +217,10 @@
     },
     "military_spending": {
       "source": "world_bank",
+      "as_of": null
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
       "as_of": null
     },
     "notable_cities": {

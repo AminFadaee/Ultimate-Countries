@@ -88,7 +88,8 @@
       "longitude": 101.695277777,
       "population": 9000280,
       "map": "maps/cities/malaysia__kuala_lumpur.png",
-      "answer_map": "maps/cities/malaysia__kuala_lumpur-answer.png"
+      "answer_map": "maps/cities/malaysia__kuala_lumpur-answer.png",
+      "most_visited": true
     }
   ],
   "currencies": [
@@ -267,6 +268,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",

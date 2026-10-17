@@ -88,7 +88,8 @@
       "longitude": 24.106944444,
       "population": 588911,
       "map": "maps/cities/latvia__riga.png",
-      "answer_map": "maps/cities/latvia__riga-answer.png"
+      "answer_map": "maps/cities/latvia__riga-answer.png",
+      "most_visited": false
     }
   ],
   "currencies": [
@@ -242,6 +243,10 @@
     "military_spending": {
       "source": "world_bank",
       "as_of": "SIPRI via World Bank, 2024"
+    },
+    "most_visited_cities": {
+      "source": "wikidata",
+      "as_of": null
     },
     "notable_cities": {
       "source": "wikidata",
