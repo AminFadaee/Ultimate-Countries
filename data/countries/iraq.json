@@ -114,9 +114,9 @@
       "percent": 35.0
     },
     {
-      "name": "Kurdish language",
+      "name": "Kurdish",
       "code": "kur",
-      "official": null,
+      "official": "national",
       "percent": 12.0
     },
     {
@@ -142,12 +142,6 @@
       "code": "syr",
       "official": null,
       "percent": 0.5
-    },
-    {
-      "name": "Kurdish",
-      "code": null,
-      "official": "national",
-      "percent": null
     }
   ],
   "official_religions": [

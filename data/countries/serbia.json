@@ -126,6 +126,12 @@
       "percent": 2.1
     },
     {
+      "name": "Croatian",
+      "code": "hrv",
+      "official": null,
+      "percent": 0.93
+    },
+    {
       "name": "Slovak",
       "code": "slk",
       "official": null,

@@ -112,9 +112,9 @@
   ],
   "languages": [
     {
-      "name": "Indonesian",
+      "name": "Malay",
       "code": "msa",
-      "official": "national",
+      "official": null,
       "percent": 64.0
     },
     {
@@ -236,6 +236,12 @@
       "code": "rob",
       "official": null,
       "percent": 0.11
+    },
+    {
+      "name": "Indonesian",
+      "code": null,
+      "official": "national",
+      "percent": null
     }
   ],
   "official_religions": [],

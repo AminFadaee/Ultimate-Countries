@@ -75,15 +75,15 @@
   ],
   "languages": [
     {
-      "name": "Mooré",
+      "name": "Mossi",
       "code": "mos",
-      "official": "national",
+      "official": null,
       "percent": 40.0
     },
     {
-      "name": "Dioula",
+      "name": "Dyula",
       "code": "dyu",
-      "official": null,
+      "official": "national",
       "percent": 32.0
     },
     {
@@ -99,7 +99,7 @@
       "percent": null
     },
     {
-      "name": "Dyula",
+      "name": "Mooré",
       "code": null,
       "official": "national",
       "percent": null

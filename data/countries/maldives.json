@@ -51,9 +51,9 @@
   ],
   "languages": [
     {
-      "name": "Maldivian",
+      "name": "Divehi",
       "code": "div",
-      "official": null,
+      "official": "national",
       "percent": 98.0
     },
     {
@@ -61,12 +61,6 @@
       "code": "eng",
       "official": null,
       "percent": 75.0
-    },
-    {
-      "name": "Dhivehi",
-      "code": null,
-      "official": "national",
-      "percent": null
     }
   ],
   "official_religions": [

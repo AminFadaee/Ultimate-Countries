@@ -51,22 +51,22 @@
   ],
   "languages": [
     {
-      "name": "Seychellois Creole",
-      "code": "crs",
-      "official": "national",
-      "percent": 98.0
-    },
-    {
       "name": "French",
       "code": "fra",
       "official": "national",
-      "percent": 53.0
+      "percent": 98.0
     },
     {
       "name": "English",
       "code": "eng",
       "official": "national",
       "percent": 38.0
+    },
+    {
+      "name": "Seychellois Creole",
+      "code": null,
+      "official": "national",
+      "percent": null
     }
   ],
   "official_religions": [],

@@ -15,7 +15,7 @@
     "dependency_type": null,
     "parent_alpha_3": null
   },
-  "region": "Europe",
+  "region": "Asia",
   "subregion": "Western Asia",
   "continents": [
     "Europe"
@@ -75,7 +75,7 @@
   ],
   "languages": [
     {
-      "name": "Modern Greek",
+      "name": "Greek",
       "code": "ell",
       "official": "national",
       "percent": 95.0

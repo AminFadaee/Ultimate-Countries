@@ -104,9 +104,9 @@
   ],
   "languages": [
     {
-      "name": "Slovene",
+      "name": "Slovenian",
       "code": "slv",
-      "official": "national",
+      "official": null,
       "percent": 87.0
     },
     {
@@ -144,6 +144,12 @@
       "code": "ita",
       "official": null,
       "percent": 0.19
+    },
+    {
+      "name": "Slovene",
+      "code": null,
+      "official": "national",
+      "percent": null
     }
   ],
   "official_religions": [],

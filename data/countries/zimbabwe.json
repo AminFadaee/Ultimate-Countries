@@ -93,7 +93,7 @@
       "percent": 42.0
     },
     {
-      "name": "Northern Ndebele",
+      "name": "North Ndebele",
       "code": "nde",
       "official": "national",
       "percent": 12.0
@@ -117,9 +117,9 @@
       "percent": 5.3
     },
     {
-      "name": "Chewa",
+      "name": "Nyanja",
       "code": "nya",
-      "official": "national",
+      "official": null,
       "percent": 1.9
     },
     {
@@ -180,6 +180,12 @@
       "name": "Zimbabwe Sign Language",
       "code": "zib",
       "official": null,
+      "percent": null
+    },
+    {
+      "name": "Chewa",
+      "code": null,
+      "official": "national",
       "percent": null
     },
     {

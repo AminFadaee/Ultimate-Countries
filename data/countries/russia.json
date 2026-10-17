@@ -169,7 +169,7 @@
       "percent": 0.66
     },
     {
-      "name": "Avar",
+      "name": "Avaric",
       "code": "ava",
       "official": null,
       "percent": 0.39
@@ -187,7 +187,7 @@
       "percent": 0.37
     },
     {
-      "name": "Ossetian",
+      "name": "Ossetic",
       "code": "oss",
       "official": "regional",
       "percent": 0.32
@@ -217,7 +217,7 @@
       "percent": 0.26
     },
     {
-      "name": "Buryat",
+      "name": "Buriat",
       "code": "bua",
       "official": "regional",
       "percent": 0.22
@@ -241,7 +241,7 @@
       "percent": 0.18
     },
     {
-      "name": "Lezgian",
+      "name": "Lezghian",
       "code": "lez",
       "official": "regional",
       "percent": 0.18
@@ -259,9 +259,9 @@
       "percent": 0.16
     },
     {
-      "name": "Tuvan",
+      "name": "Tuvinian",
       "code": "tyv",
-      "official": "regional",
+      "official": null,
       "percent": 0.13
     },
     {

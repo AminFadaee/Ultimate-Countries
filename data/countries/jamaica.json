@@ -63,12 +63,6 @@
       "code": "eng",
       "official": "national",
       "percent": 98.0
-    },
-    {
-      "name": "Jamaican Patois",
-      "code": "jam",
-      "official": "regional",
-      "percent": 95.0
     }
   ],
   "official_religions": [],
