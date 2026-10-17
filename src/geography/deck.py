@@ -5,7 +5,6 @@ import pathlib
 import re
 from dataclasses import dataclass
 from datetime import date
-from enum import StrEnum
 
 import genanki
 
@@ -27,25 +26,9 @@ REGION_CONTEXT = "{{Region}}"
 logger = logging.getLogger(__name__)
 
 
-class Subdeck(StrEnum):
-    CAPITALS = "Capitals"
-    FLAGS = "Flags"
-    MAPS = "Maps"
-    CITIES = "Cities"
-
-    @property
-    def full_name(self) -> str:
-        return f"{DECK_NAME}::{self.value}"
-
-    @property
-    def deck_id(self) -> int:
-        return stable_id(self.full_name)
-
-
 @dataclass(frozen=True)
 class Template:
     name: str
-    subdeck: Subdeck
     requires: str
     front: str
     back: str
@@ -61,23 +44,14 @@ class Fact:
     label: str
 
 
-class RoutedCard(genanki.Card):
-    def __init__(self, ord: int, deck_id: int):
-        super().__init__(ord)
-        self.deck_id = deck_id
-
-    def write_to_db(self, cursor, timestamp: float, deck_id, note_id, id_gen, due=0):
-        super().write_to_db(cursor, timestamp, self.deck_id, note_id, id_gen, due)
-
-
-class RoutedNote(genanki.Note):
-    def __init__(self, routed_cards: list[RoutedCard], **kwargs):
+class SelectedNote(genanki.Note):
+    def __init__(self, ords: list[int], **kwargs):
         super().__init__(**kwargs)
-        self.routed_cards = routed_cards
+        self.ords = ords
 
     @property
-    def cards(self) -> list[RoutedCard]:
-        return self.routed_cards
+    def cards(self) -> list[genanki.Card]:
+        return [genanki.Card(ord) for ord in self.ords]
 
 
 def stable_id(name: str) -> int:
@@ -171,23 +145,20 @@ FACT_CHIPS = '<div class="facts">' + "".join(chip(fact.field, fact.label) for fa
 COUNTRY_TEMPLATES = (
     Template(
         "Capital",
-        Subdeck.CAPITALS,
         "Capital",
         *guarded("Capital", ask_attribute("Capital", "Capital", "CapitalInfo", facts=FACT_CHIPS)),
     ),
     Template(
         "Capital of",
-        Subdeck.CAPITALS,
         "Capital",
         *guarded("Capital", ask_entity("Capital", value(placeholder("Capital")), info_field="CapitalInfo", facts=FACT_CHIPS)),
     ),
     Template(
         "Flag",
-        Subdeck.FLAGS,
         "Flag",
         *guarded("Flag", ask_entity("Flag", image("Flag", "flag"), answer="{{Name}}", extra=MAP_THUMBNAIL, facts=FACT_CHIPS)),
     ),
-    Template("Map", Subdeck.MAPS, "Map", *guarded("Map", ask_entity("Map", image("Map", "map"), facts=FACT_CHIPS))),
+    Template("Map", "Map", *guarded("Map", ask_entity("Map", image("Map", "map"), facts=FACT_CHIPS))),
 )
 
 RETIRED_TEMPLATES = tuple(
@@ -212,10 +183,11 @@ CITY_MAP_FRONT, CITY_MAP_BACK = ask_entity(
 CITY_COUNTRY_FRONT, CITY_COUNTRY_BACK = ask_attribute("Country", "Country", subject="{{City}}")
 
 CITY_TEMPLATES = (
-    Template("Map", Subdeck.CITIES, "Map", conditional("Map", CITY_MAP_FRONT), CITY_MAP_BACK),
-    Template("Country", Subdeck.CITIES, "City", f"{{{{^IsCapital}}}}{CITY_COUNTRY_FRONT}{{{{/IsCapital}}}}", CITY_COUNTRY_BACK),
+    Template("Map", "Map", conditional("Map", CITY_MAP_FRONT), CITY_MAP_BACK),
+    Template("Country", "City", f"{{{{^IsCapital}}}}{CITY_COUNTRY_FRONT}{{{{/IsCapital}}}}", CITY_COUNTRY_BACK),
 )
 
+CITY_MAP_CARD, CITY_COUNTRY_CARD = range(len(CITY_TEMPLATES))
 CITY_FIELDS = ("Id", "City", "Country", "Map", "IsCapital", "Region")
 
 CSS = f"""
@@ -330,9 +302,12 @@ def description() -> str:
 Ultimate Countries covers every country and territory with a permanent population. You learn capitals, flags and maps, and
 the back of every card also shows the country's demonym, languages, currency, religion, population, government and
 notable cities. City maps are in the deck too.</p>
-<p>Each question type lives in its own subdeck. To skip a type, <b>suspend</b> its subdeck rather than deleting it,
-because deleted cards come back when you import an update. Tap a country map to zoom in on that spot; drag to look
-around and tap again to close.</p>
+<p>Everything is in one deck. Notes are tagged by region, status, membership and currency (for example <code>UC::Asia</code>
+or <code>UC::NATO</code>), so you can study one group at a time with a filtered deck: Tools → Create Filtered Deck, then
+search for <code>deck:"Ultimate Countries" tag:UC::Asia</code>. You can filter by card type too, for example
+<code>deck:"Ultimate Countries" "note:Ultimate Countries country" card:Flag</code>. To skip a kind of card, search for it in the
+Browser and suspend the cards rather than deleting them, because deleted cards come back when you import an update.</p>
+<p>Tap a country map to zoom in on that spot; drag to look around and tap again to close.</p>
 <p>Companion deck: <a href="{PLACES_ANKIWEB_URL}">Ultimate Places</a>, with continents, seas, mountains, rivers, deserts,
 rainforests, regions and landmarks.</p>
 <p>Data is collected automatically from Wikidata (CC0), Wikipedia (CC BY-SA), restcountries, the World Bank,
@@ -418,7 +393,6 @@ class DeckBuilder:
             CITY_MODEL_ID, f"{DECK_NAME} city", CITY_FIELDS, [template.as_genanki() for template in CITY_TEMPLATES]
         )
         self.root = genanki.Deck(stable_id(DECK_NAME), DECK_NAME, description())
-        self.subdecks = [genanki.Deck(subdeck.deck_id, subdeck.full_name) for subdeck in Subdeck]
         self.notes = 0
 
     def add_country(self, document: dict) -> None:
@@ -438,12 +412,8 @@ class DeckBuilder:
             answer = found.get(fact.card_type)
             values[fact.field] = escaped(answer.text) if answer else ""
 
-        cards = [
-            RoutedCard(ord, template.subdeck.deck_id)
-            for ord, template in enumerate(COUNTRY_TEMPLATES)
-            if values[template.requires]
-        ]
-        self._add(self.country_model, COUNTRY_FIELDS, values, cards, country_tags(document), document["id"])
+        ords = [ord for ord, template in enumerate(COUNTRY_TEMPLATES) if values[template.requires]]
+        self._add(self.country_model, COUNTRY_FIELDS, values, ords, country_tags(document), document["id"])
         for city in document["cities"]:
             self.add_city(city, document)
 
@@ -457,28 +427,26 @@ class DeckBuilder:
             "IsCapital": "yes" if is_capital else "",
             "Region": context_html(shared_context(country)),
         }
-        cards = []
-        if values["Map"]:
-            cards.append(RoutedCard(0, Subdeck.CITIES.deck_id))
+        ords = [CITY_MAP_CARD] if values["Map"] else []
         if not is_capital:
-            cards.append(RoutedCard(1, Subdeck.CITIES.deck_id))
+            ords.append(CITY_COUNTRY_CARD)
         tags = [tag("City"), *region_tags(country)] + ([tag("Capital")] if is_capital else [])
-        self._add(self.city_model, CITY_FIELDS, values, cards, tags, city["id"], country["id"])
+        self._add(self.city_model, CITY_FIELDS, values, ords, tags, city["id"], country["id"])
 
     def write(self, output: pathlib.Path) -> None:
         if self.media.missing:
             examples = ", ".join(str(path) for path in self.media.missing[:3])
             raise MissingMediaError(f"{len(self.media.missing)} media files are missing, e.g. {examples}")
         output.parent.mkdir(parents=True, exist_ok=True)
-        package = genanki.Package([self.root, *self.subdecks], media_files=sorted(set(self.media.files)))
+        package = genanki.Package([self.root], media_files=sorted(set(self.media.files)))
         package.write_to_file(str(output))
         logger.info("Wrote %d notes and %d media files to %s", self.notes, len(set(self.media.files)), output)
 
-    def _add(self, model, fields, values, cards, tags, *identity: str) -> None:
-        if not cards:
+    def _add(self, model, fields, values, ords, tags, *identity: str) -> None:
+        if not ords:
             return
-        note = RoutedNote(
-            cards,
+        note = SelectedNote(
+            ords,
             model=model,
             fields=[values[name] for name in fields],
             tags=sorted(set(tags)),

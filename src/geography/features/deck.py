@@ -15,8 +15,7 @@ from geography.deck import (
     UNKNOWN_ENTITY,
     MediaLibrary,
     MissingMediaError,
-    RoutedCard,
-    RoutedNote,
+    SelectedNote,
     conditional,
     entity,
     placeholder,
@@ -171,11 +170,11 @@ class PlacesDeckBuilder:
             "Photo": self.media.image(document["photo"]["file"], "photo") if document["photo"] else "",
             "Details": details_html(document),
         }
-        cards = [RoutedCard(ord, self.deck.deck_id) for ord, template in enumerate(TEMPLATES) if values[template.requires]]
-        if not cards:
+        ords = [ord for ord, template in enumerate(TEMPLATES) if values[template.requires]]
+        if not ords:
             return
-        self.deck.add_note(RoutedNote(
-            cards,
+        self.deck.add_note(SelectedNote(
+            ords,
             model=self.model,
             fields=[values[name] for name in FIELDS],
             tags=tags(document),
