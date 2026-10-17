@@ -331,7 +331,9 @@ def first_entry(cell) -> str | None:
     entry = copy.deepcopy(cell)
     for separator in entry.xpath(".//br | .//li"):
         separator.tail = f", {separator.tail or ''}"
-    return (cell_text(entry) or "").split(",")[0].strip() or None
+    for note in entry.xpath(".//sup"):
+        note.drop_tree()
+    return (clean(entry.text_content().split(",")[0]) or "").strip() or None
 
 
 def sentence_of(text: str) -> str | None:
