@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Citlaltépetl, otherwise known as Pico de Orizaba, is an active volcano and the highest volcano in North America, as well as the highest mountain in Mexico and third highest peak in North America, after Denali of the United States and Mount Logan of Canada.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/citlaltepetl.png",
   "photo": {
     "file": "places/photos/citlaltepetl.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pico%20de%20Orizaba%20desde%20Hidalgo%2C%20Puebla.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pico%20de%20Orizaba%20desde%20Hidalgo%2C%20Puebla.jpg",
+    "author": "México en Fotos",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pico_de_Orizaba_desde_Hidalgo,_Puebla.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Pico_de_Orizaba",
   "fame": 65

@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Angel Falls is a waterfall in Venezuela.",
   "world_heritage": false,
   "tags": [
     "Waterfall",
@@ -24,7 +25,11 @@
   "map": "places/maps/angel_falls.png",
   "photo": {
     "file": "places/photos/angel_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/SaltoAngel4.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/SaltoAngel4.jpg",
+    "author": "Paulo Capiotti",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:SaltoAngel4.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Angel_Falls",
   "fame": 93

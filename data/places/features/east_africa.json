@@ -4,18 +4,24 @@
   "name": "East Africa",
   "kind": "Region",
   "countries": [
-    "Ethiopia",
-    "Tanzania",
-    "Mozambique",
-    "Zambia",
-    "South Sudan",
-    "Madagascar",
-    "Kenya",
-    "Somalia",
-    "Zimbabwe",
-    "Uganda",
+    "Burundi",
+    "Comoros",
+    "Djibouti",
     "Eritrea",
-    "Malawi"
+    "Ethiopia",
+    "Kenya",
+    "Malawi",
+    "Madagascar",
+    "Mauritius",
+    "Mozambique",
+    "Rwanda",
+    "Seychelles",
+    "Somalia",
+    "South Sudan",
+    "Tanzania",
+    "Uganda",
+    "Zambia",
+    "Zimbabwe"
   ],
   "continents": [
     "Africa"
@@ -27,6 +33,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "East Africa, also known as Eastern Africa or the East of Africa, is a region at the eastern edge of the African continent, distinguished by its unique geographical, historical, and cultural landscape.",
   "world_heritage": false,
   "tags": [
     "Region",

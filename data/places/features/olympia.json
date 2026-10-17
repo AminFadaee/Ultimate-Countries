@@ -16,6 +16,7 @@
   "area_km2": 1.06,
   "built": null,
   "culture": null,
+  "description": "Olympia, officially Archaia Olympia, is a small town in Elis on the Peloponnese peninsula in Greece, famous for the nearby archaeological site of the same name.",
   "world_heritage": true,
   "tags": [
     "Landmark",
@@ -25,7 +26,11 @@
   "map": "places/maps/olympia.png",
   "photo": {
     "file": "places/photos/olympia.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Olympic%20Flame%2C%20the%20Start%20of%20the%20Olympic%20Torch%20Relay%20%2851224124860%29.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Olympic%20Flame%2C%20the%20Start%20of%20the%20Olympic%20Torch%20Relay%20%2851224124860%29.jpg",
+    "author": "dronepicr",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Olympic_Flame,_the_Start_of_the_Olympic_Torch_Relay_(51224124860).jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Olympia,_Greece",
   "fame": 89

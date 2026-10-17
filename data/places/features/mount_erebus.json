@@ -4,7 +4,9 @@
   "name": "Mount Erebus",
   "kind": "Volcano",
   "countries": [],
-  "continents": [],
+  "continents": [
+    "Antarctica"
+  ],
   "city": null,
   "height_m": null,
   "elevation_m": 3794.0,
@@ -12,14 +14,20 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Erebus is the southernmost active volcano on Earth, located on Ross Island in the Ross Dependency in Antarctica.",
   "world_heritage": false,
   "tags": [
-    "Volcano"
+    "Volcano",
+    "Antarctica"
   ],
   "map": "places/maps/mount_erebus.png",
   "photo": {
     "file": "places/photos/mount_erebus.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt%20erebus.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt%20erebus.jpg",
+    "author": "Richard Waitt, U.S. Geological Survey",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Mt_erebus.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Erebus",
   "fame": 69

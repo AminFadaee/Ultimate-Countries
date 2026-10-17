@@ -16,6 +16,7 @@
   "area_km2": 6.1476,
   "built": null,
   "culture": null,
+  "description": "Ephesus was an ancient Greek city on the coast of Ionia, in present-day Selçuk in İzmir Province, Turkey.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/ephesus.png",
   "photo": {
     "file": "places/photos/ephesus.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ephesus%20Celsus%20Library%20Fa%C3%A7ade.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ephesus%20Celsus%20Library%20Fa%C3%A7ade.jpg",
+    "author": "Benh LIEU SONG",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ephesus_Celsus_Library_Fa%C3%A7ade.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Ephesus",
   "fame": 96

@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Mount Rushmore National Memorial is a national memorial featuring a colossal sculpture carved into the granite face of Mount Rushmore in the Black Hills, about 2 mi (3 km) southwest of Keystone, South Dakota, United States.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/mount_rushmore.png",
   "photo": {
     "file": "places/photos/mount_rushmore.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Rushmore%20detail%20view%20%28100MP%29.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Rushmore%20detail%20view%20%28100MP%29.jpg",
+    "author": "Thomas Wolf, www.foto-tw.de",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mount_Rushmore_detail_view_(100MP).jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Rushmore",
   "fame": 96

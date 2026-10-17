@@ -17,6 +17,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Niagara Falls is a group of three waterfalls at the southern end of Niagara Gorge, spanning the border between the Canadian province of Ontario and the U.S. state of New York.",
   "world_heritage": false,
   "tags": [
     "Waterfall",
@@ -25,7 +26,11 @@
   "map": "places/maps/niagara_falls.png",
   "photo": {
     "file": "places/photos/niagara_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Niagara%20Falls%20USA%20Canada%20from%20Skylon%20Tower%20on%202002-05-28%2C%20full%20size.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Niagara%20Falls%20USA%20Canada%20from%20Skylon%20Tower%20on%202002-05-28%2C%20full%20size.jpg",
+    "author": "Robert F. Tobler",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Niagara_Falls_USA_Canada_from_Skylon_Tower_on_2002-05-28,_full_size.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Niagara_Falls",
   "fame": 135

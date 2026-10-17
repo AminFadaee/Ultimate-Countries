@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Pelée or Mont Pelée is an active stratovolcano at the northern end of Martinique, an island and French overseas department in the Lesser Antilles Volcanic Arc of the Caribbean.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/mount_pelee.png",
   "photo": {
     "file": "places/photos/mount_pelee.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Pel%C3%A9e%20vue%20du%20Carbet.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/La%20Pel%C3%A9e%20vue%20du%20Carbet.jpg",
+    "author": "",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:La_Pel%C3%A9e_vue_du_Carbet.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Pel%C3%A9e",
   "fame": 62

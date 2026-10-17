@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Puncak Jaya or Carstensz Pyramid on the island of New Guinea, with an elevation of 4,884 m (16,024 ft), is the highest mountain peak of an island on Earth, and the highest peak in Indonesia and within Oceania.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/puncak_jaya.png",
   "photo": {
     "file": "places/photos/puncak_jaya.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Puncakjaya.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Puncakjaya.jpg",
+    "author": "Alfindra Primaldhi",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Puncakjaya.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Puncak_Jaya",
   "fame": 77

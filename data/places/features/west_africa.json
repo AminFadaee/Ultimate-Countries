@@ -4,18 +4,22 @@
   "name": "West Africa",
   "kind": "Region",
   "countries": [
+    "Benin",
+    "Burkina Faso",
+    "Cape Verde",
+    "The Gambia",
+    "Ghana",
+    "Guinea",
+    "Guinea-Bissau",
+    "Ivory Coast",
+    "Liberia",
+    "Mauritania",
     "Mali",
     "Niger",
-    "Mauritania",
     "Nigeria",
-    "Ivory Coast",
-    "Burkina Faso",
-    "Guinea",
-    "Ghana",
     "Senegal",
-    "Benin",
-    "Liberia",
-    "Sierra Leone"
+    "Sierra Leone",
+    "Togo"
   ],
   "continents": [
     "Africa"
@@ -27,6 +31,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "West Africa, also known as Western Africa, is the westernmost region of Africa.",
   "world_heritage": false,
   "tags": [
     "Region",
@@ -35,5 +40,5 @@
   "map": "places/maps/west_africa.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/West_Africa",
-  "fame": 162
+  "fame": 163
 }

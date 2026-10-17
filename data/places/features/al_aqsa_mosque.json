@@ -3,10 +3,7 @@
   "qid": "Q12192963",
   "name": "Al-Aqsa Mosque",
   "kind": "Landmark",
-  "countries": [
-    "Israel",
-    "Palestine"
-  ],
+  "countries": [],
   "continents": [
     "Asia"
   ],
@@ -17,6 +14,7 @@
   "area_km2": 0.0045,
   "built": null,
   "culture": null,
+  "description": "The Aqsa Mosque, also known as the Qibli Mosque, is the main congregational mosque or prayer hall in the Al-Aqsa mosque compound in the Old City of Jerusalem.",
   "world_heritage": true,
   "tags": [
     "Landmark",
@@ -26,7 +24,11 @@
   "map": "places/maps/al_aqsa_mosque.png",
   "photo": {
     "file": "places/photos/al_aqsa_mosque.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem-2013-Temple%20Mount-Al-Aqsa%20Mosque%20%28NE%20exposure%29.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem-2013-Temple%20Mount-Al-Aqsa%20Mosque%20%28NE%20exposure%29.jpg",
+    "author": "Godot13",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jerusalem-2013-Temple_Mount-Al-Aqsa_Mosque_(NE_exposure).jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Al-Aqsa_Mosque",
   "fame": 103

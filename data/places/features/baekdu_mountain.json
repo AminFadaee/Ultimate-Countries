@@ -4,6 +4,7 @@
   "name": "Baekdu Mountain",
   "kind": "Volcano",
   "countries": [
+    "China",
     "North Korea"
   ],
   "continents": [
@@ -16,6 +17,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Paektu or Mount Baekdu (Korean: 백두산) is an active stratovolcano on the Chinese–North Korean border.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +26,11 @@
   "map": "places/maps/baekdu_mountain.png",
   "photo": {
     "file": "places/photos/baekdu_mountain.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Baitou%20Mountain%20Tianchi.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Baitou%20Mountain%20Tianchi.jpg",
+    "author": "Bdpmax",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Baitou_Mountain_Tianchi.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Paektu",
   "fame": 77

@@ -10,12 +10,13 @@
     "Asia"
   ],
   "city": "Dubai",
-  "height_m": 829.8,
+  "height_m": 828.0,
   "elevation_m": null,
   "length_km": null,
   "area_km2": 0.344,
   "built": "2004–2009",
   "culture": "Neo-futurism",
+  "description": "The Burj Khalifa is a megatall skyscraper in Dubai, United Arab Emirates.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/burj_khalifa.png",
   "photo": {
     "file": "places/photos/burj_khalifa.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Dubai%20skyline%202015%20%28crop%29.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Dubai%20skyline%202015%20%28crop%29.jpg",
+    "author": "Tim.Reckmann",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Dubai_skyline_2015_(crop).jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Burj_Khalifa",
   "fame": 140

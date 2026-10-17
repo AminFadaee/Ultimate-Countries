@@ -4,8 +4,9 @@
   "name": "East Asia",
   "kind": "Region",
   "countries": [
-    "Mongolia",
+    "China",
     "Japan",
+    "Mongolia",
     "North Korea",
     "South Korea",
     "Taiwan"
@@ -20,6 +21,7 @@
   "area_km2": 11839074.0,
   "built": null,
   "culture": null,
+  "description": "East Asia is a geocultural region of Asia.",
   "world_heritage": false,
   "tags": [
     "Region",

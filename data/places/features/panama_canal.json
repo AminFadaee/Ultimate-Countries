@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": "1881–1914",
   "culture": null,
+  "description": "The Panama Canal is an artificial 82-kilometer (51-mile) waterway in Panama that connects the Caribbean Sea in the Atlantic Ocean with the Pacific Ocean.",
   "world_heritage": false,
   "tags": [
     "Canal",
@@ -24,7 +25,11 @@
   "map": "places/maps/panama_canal.png",
   "photo": {
     "file": "places/photos/panama_canal.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Panama%20Canal%20Gatun%20Locks.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Panama%20Canal%20Gatun%20Locks.jpg",
+    "author": "User:Stan Shebs",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Panama_Canal_Gatun_Locks.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Panama_Canal",
   "fame": 162

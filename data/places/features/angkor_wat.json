@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Angkor Wat is a Theravada Buddhist temple complex, originally built as a Vaishnava Hindu temple, in Siem Reap, Cambodia.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/angkor_wat.png",
   "photo": {
     "file": "places/photos/angkor_wat.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20wat%20temple.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20wat%20temple.jpg",
+    "author": "The original uploader was Fuzheado at English Wikipedia.",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Angkor_wat_temple.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Angkor_Wat",
   "fame": 137

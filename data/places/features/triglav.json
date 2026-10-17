@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Triglav, with an elevation of 2,863.65 metres, is the highest mountain in Slovenia and the highest peak of the Julian Alps.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/triglav.png",
   "photo": {
     "file": "places/photos/triglav.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Triglav.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Triglav.jpg",
+    "author": "Andrej Jakobčič",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Triglav.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Triglav",
   "fame": 65

@@ -21,6 +21,7 @@
   "area_km2": 190000.0,
   "built": null,
   "culture": null,
+  "description": "The Alps are some of the highest and most extensive mountain ranges in Europe, stretching approximately 1,200 km (750 mi) across several Alpine countries : Monaco, France, Switzerland, Italy, Liechtenstein, Germany, Austria, and Slovenia.",
   "world_heritage": false,
   "tags": [
     "Mountain_range",
@@ -29,5 +30,5 @@
   "map": "places/maps/alps.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Alps",
-  "fame": 214
+  "fame": 215
 }

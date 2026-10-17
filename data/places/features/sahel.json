@@ -5,18 +5,20 @@
   "kind": "Region",
   "countries": [
     "Algeria",
-    "Sudan",
-    "Chad",
-    "Mali",
-    "Niger",
-    "Mauritania",
-    "Nigeria",
-    "South Sudan",
-    "Central African Republic",
-    "Cameroon",
     "Burkina Faso",
+    "Cameroon",
+    "Cape Verde",
+    "Central African Republic",
+    "Chad",
+    "Eritrea",
+    "The Gambia",
+    "Mali",
+    "Mauritania",
+    "Niger",
+    "Nigeria",
     "Senegal",
-    "Eritrea"
+    "South Sudan",
+    "Sudan"
   ],
   "continents": [
     "Africa"
@@ -28,6 +30,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Sahel region, or Sahelian acacia savanna, is a biogeographical region in Africa.",
   "world_heritage": false,
   "tags": [
     "Region",

@@ -4,17 +4,21 @@
   "name": "North America",
   "kind": "Continent",
   "countries": [],
-  "continents": [],
+  "continents": [
+    "Americas"
+  ],
   "city": null,
   "height_m": null,
   "elevation_m": null,
   "length_km": null,
-  "area_km2": 24930000.0,
+  "area_km2": 21329947.0,
   "built": null,
   "culture": null,
+  "description": "North America is a continent in the Northern and Western hemispheres.",
   "world_heritage": false,
   "tags": [
-    "Continent"
+    "Continent",
+    "Americas"
   ],
   "map": "places/maps/north_america.png",
   "photo": null,

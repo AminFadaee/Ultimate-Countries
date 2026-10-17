@@ -4,7 +4,9 @@
   "name": "Antarctic Peninsula",
   "kind": "Peninsula",
   "countries": [],
-  "continents": [],
+  "continents": [
+    "Antarctica"
+  ],
   "city": null,
   "height_m": null,
   "elevation_m": null,
@@ -12,9 +14,11 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Antarctic Peninsula, known as O'Higgins Land in Chile and Tierra de San Martin in Argentina, and originally as Graham Land in the United Kingdom and the Palmer Peninsula in the United States, is the northernmost part of mainland Antarctica.",
   "world_heritage": false,
   "tags": [
-    "Peninsula"
+    "Peninsula",
+    "Antarctica"
   ],
   "map": "places/maps/antarctic_peninsula.png",
   "photo": null,

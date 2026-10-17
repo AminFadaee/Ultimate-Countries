@@ -16,6 +16,7 @@
   "area_km2": 0.20887901449920002,
   "built": "1930–1931",
   "culture": "Art Deco",
+  "description": "The Empire State Building is a 102-story, supertall skyscraper in the Midtown South neighborhood of Manhattan, New York City, United States.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/empire_state_building.png",
   "photo": {
     "file": "places/photos/empire_state_building.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Empire%20State%20Building%20%28aerial%20view%29.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Empire%20State%20Building%20%28aerial%20view%29.jpg",
+    "author": "Sam Valadi",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Empire_State_Building_(aerial_view).jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Empire_State_Building",
   "fame": 125

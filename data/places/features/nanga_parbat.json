@@ -3,9 +3,7 @@
   "qid": "Q130736",
   "name": "Nanga Parbat",
   "kind": "Mountain",
-  "countries": [
-    "Pakistan"
-  ],
+  "countries": [],
   "continents": [
     "Asia"
   ],
@@ -16,6 +14,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Nanga Parbat, known in Shina as Diamer, is the ninth-highest mountain on Earth with its summit at 8,126 m (26,660 ft) above sea level.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +23,11 @@
   "map": "places/maps/nanga_parbat.png",
   "photo": {
     "file": "places/photos/nanga_parbat.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Nanga%20parbat%2C%20fairy%20medow%2C%20Pak%20by%20gul791.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Nanga%20parbat%2C%20fairy%20medow%2C%20Pak%20by%20gul791.jpg",
+    "author": "Atif Gulzar",
+    "license": "Copyrighted free use",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Nanga_parbat,_fairy_medow,_Pak_by_gul791.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Nanga_Parbat",
   "fame": 90

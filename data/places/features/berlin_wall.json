@@ -14,8 +14,9 @@
   "elevation_m": null,
   "length_km": 155.0,
   "area_km2": null,
-  "built": "1961",
+  "built": "begun 1961",
   "culture": null,
+  "description": "The Berlin Wall was a guarded concrete barrier that encircled West Berlin from 1961 to 1989, separating it from East Berlin and the German Democratic Republic.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/berlin_wall.png",
   "photo": {
     "file": "places/photos/berlin_wall.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Berlin%20Wall%20Potsdamer%20Platz%20November%201975%20looking%20east%20crop.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Berlin%20Wall%20Potsdamer%20Platz%20November%201975%20looking%20east%20crop.jpg",
+    "author": "Edward Valachovic https://www.flickr.com/people/fauxaddress/",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Berlin_Wall_Potsdamer_Platz_November_1975_looking_east_crop.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Berlin_Wall",
   "fame": 140

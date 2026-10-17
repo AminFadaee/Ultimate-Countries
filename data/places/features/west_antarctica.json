@@ -4,7 +4,9 @@
   "name": "West Antarctica",
   "kind": "Region",
   "countries": [],
-  "continents": [],
+  "continents": [
+    "Antarctica"
+  ],
   "city": null,
   "height_m": null,
   "elevation_m": null,
@@ -12,9 +14,11 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "West Antarctica, or Lesser Antarctica, one of the two major regions of Antarctica, is the part of that continent that lies within the Western Hemisphere, and includes the Antarctic Peninsula.",
   "world_heritage": false,
   "tags": [
-    "Region"
+    "Region",
+    "Antarctica"
   ],
   "map": "places/maps/west_antarctica.png",
   "photo": null,

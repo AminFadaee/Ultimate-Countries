@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Yosemite Falls is the highest waterfall in Yosemite National Park, dropping a total of 2,425 feet (739 m) from the top of the upper fall to the base of the lower fall.",
   "world_heritage": false,
   "tags": [
     "Waterfall",
@@ -24,7 +25,11 @@
   "map": "places/maps/yosemite_falls.png",
   "photo": {
     "file": "places/photos/yosemite_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Yosemite%20Falls%20Trail%20May%202011%20003.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Yosemite%20Falls%20Trail%20May%202011%20003.jpg",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Yosemite_Falls_Trail_May_2011_003.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Yosemite_Falls",
   "fame": 40

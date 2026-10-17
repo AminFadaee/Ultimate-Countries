@@ -4,12 +4,12 @@
   "name": "Mekong River",
   "kind": "River",
   "countries": [
+    "Cambodia",
     "China",
     "Laos",
-    "Cambodia",
+    "Myanmar",
     "Thailand",
-    "Vietnam",
-    "Myanmar"
+    "Vietnam"
   ],
   "continents": [
     "Asia"
@@ -21,6 +21,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Mekong or Mekong River is a transboundary river in East Asia and Southeast Asia.",
   "world_heritage": false,
   "tags": [
     "River",

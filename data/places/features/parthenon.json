@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": "447–432 BC",
   "culture": "Classical",
+  "description": "The Parthenon is a former temple on the Athenian Acropolis, Greece, that was dedicated to the goddess Athena.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/parthenon.png",
   "photo": {
     "file": "places/photos/parthenon.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Parthenon%20in%20Athens.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Parthenon%20in%20Athens.jpg",
+    "author": "Steve Swayne",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Parthenon_in_Athens.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Parthenon",
   "fame": 137

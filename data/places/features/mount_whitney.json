@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Whitney is a mountain in California's Sierra Nevada range, and is the highest point in the contiguous United States, with an elevation of 14,505 feet (4,421 m).",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/mount_whitney.png",
   "photo": {
     "file": "places/photos/mount_whitney.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Whitney%202003-03-25.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Whitney%202003-03-25.jpg",
+    "author": "Geographer (talk · contribs)",
+    "license": "CC BY 1.0",
+    "license_url": "https://creativecommons.org/licenses/by/1.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mount_Whitney_2003-03-25.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Whitney",
   "fame": 61

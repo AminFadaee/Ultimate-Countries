@@ -16,6 +16,7 @@
   "area_km2": 0.0005,
   "built": "1173–1372",
   "culture": null,
+  "description": "The Leaning Tower of Pisa, or simply the Tower of Pisa, is the campanile, or freestanding bell tower, of Pisa Cathedral.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/leaning_tower_of_pisa.png",
   "photo": {
     "file": "places/photos/leaning_tower_of_pisa.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Campanile%20D%C3%B4me%20-%20Pise%20%28IT52%29%20-%202022-08-31%20-%2020.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Campanile%20D%C3%B4me%20-%20Pise%20%28IT52%29%20-%202022-08-31%20-%2020.jpg",
+    "author": "Chabe01",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Campanile_D%C3%B4me_-_Pise_(IT52)_-_2022-08-31_-_20.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa",
   "fame": 119

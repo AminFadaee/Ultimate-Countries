@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Denali, federally designated as Mount McKinley, is the highest mountain peak in North America, with a summit elevation of 20,310 feet (6,190 m) above sea level.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/denali.png",
   "photo": {
     "file": "places/photos/denali.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Wonder%20Lake%20and%20Denali.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Wonder%20Lake%20and%20Denali.jpg",
+    "author": "Denali National Park and Preserve",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Wonder_Lake_and_Denali.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Denali",
   "fame": 100

@@ -4,20 +4,28 @@
   "name": "Middle East",
   "kind": "Region",
   "countries": [
-    "Saudi Arabia",
-    "Iran",
+    "Bahrain",
+    "Cyprus",
     "Egypt",
-    "Turkey",
-    "Yemen",
+    "Iran",
     "Iraq",
-    "Oman",
-    "Syria",
+    "Israel",
     "Jordan",
-    "United Arab Emirates"
+    "Kuwait",
+    "Lebanon",
+    "Oman",
+    "Qatar",
+    "Saudi Arabia",
+    "Syria",
+    "Turkey",
+    "United Arab Emirates",
+    "Yemen",
+    "Palestine"
   ],
   "continents": [
     "Africa",
-    "Asia"
+    "Asia",
+    "Europe"
   ],
   "city": null,
   "height_m": null,
@@ -26,11 +34,13 @@
   "area_km2": 7293609.0,
   "built": null,
   "culture": null,
+  "description": "The Middle East or West Asia is a geo-political region that is generally defined as encompassing all of Egypt and all of West Asia except for the Caucasus.",
   "world_heritage": false,
   "tags": [
     "Region",
     "Africa",
-    "Asia"
+    "Asia",
+    "Europe"
   ],
   "map": "places/maps/middle_east.png",
   "photo": null,

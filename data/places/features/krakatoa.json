@@ -2,9 +2,13 @@
   "key": "Q82613",
   "qid": "Q82613",
   "name": "Krakatoa",
-  "kind": "Mountain",
-  "countries": [],
-  "continents": [],
+  "kind": "Volcano",
+  "countries": [
+    "Indonesia"
+  ],
+  "continents": [
+    "Asia"
+  ],
   "city": null,
   "height_m": null,
   "elevation_m": 813.0,
@@ -12,15 +16,14 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Krakatoa, also transcribed Krakatau, is a caldera in the Sunda Strait between the islands of Java and Sumatra in the Indonesian province of Lampung.",
   "world_heritage": false,
   "tags": [
-    "Mountain"
+    "Volcano",
+    "Asia"
   ],
   "map": "places/maps/krakatoa.png",
-  "photo": {
-    "file": "places/photos/krakatoa.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Krakatoa%20NasaWorldWind%202000.jpg"
-  },
+  "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Krakatoa",
   "fame": 92
 }

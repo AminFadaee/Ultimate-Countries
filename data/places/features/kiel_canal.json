@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": "1887–1895",
   "culture": null,
+  "description": "The Kiel Canal is a 98-kilometer-long (61 mi) freshwater canal that links the North Sea to the Baltic Sea.",
   "world_heritage": false,
   "tags": [
     "Canal",
@@ -24,7 +25,11 @@
   "map": "places/maps/kiel_canal.png",
   "photo": {
     "file": "places/photos/kiel_canal.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/13-09-23-Fotoflug-Nordsee-RalfR-N3S%200008.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/13-09-23-Fotoflug-Nordsee-RalfR-N3S%200008.jpg",
+    "author": "Ralf Roletschek",
+    "license": "GFDL 1.2",
+    "license_url": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "page": "https://commons.wikimedia.org/wiki/File:13-09-23-Fotoflug-Nordsee-RalfR-N3S_0008.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Kiel_Canal",
   "fame": 67

@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Kościuszko is the highest mountain of mainland Australia, at 2,228 metres (7,310 ft) above sea level.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/mount_kosciuszko.png",
   "photo": {
     "file": "places/photos/mount_kosciuszko.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kosciuszko%20Townsend.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kosciuszko%20Townsend.jpg",
+    "author": "John Wormell",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kosciuszko_Townsend.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Kosciuszko",
   "fame": 86

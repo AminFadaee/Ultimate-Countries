@@ -16,6 +16,7 @@
   "area_km2": 0.0055,
   "built": "1163–1345",
   "culture": null,
+  "description": "Notre-Dame de Paris, often referred to simply as Notre-Dame, is a medieval Catholic cathedral and basilica on the Île de la Cité, in the 4th arrondissement of Paris, France.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/notre_dame_de_paris.png",
   "photo": {
     "file": "places/photos/notre_dame_de_paris.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Notre-Dame%20de%20Paris%202013-07-24.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Notre-Dame%20de%20Paris%202013-07-24.jpg",
+    "author": "P e z i",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Paris_2013-07-24.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris",
   "fame": 125

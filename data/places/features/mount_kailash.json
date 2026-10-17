@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Kailash is a mountain in Ngari Prefecture, Tibet Autonomous Region of China.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/mount_kailash.png",
   "photo": {
     "file": "places/photos/mount_kailash.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kailash-Barkha.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kailash-Barkha.jpg",
+    "author": "Jean-Marie Hullot",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kailash-Barkha.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Kailash",
   "fame": 91

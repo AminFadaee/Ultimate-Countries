@@ -4,16 +4,14 @@
   "name": "Levant",
   "kind": "Region",
   "countries": [
-    "Libya",
-    "Egypt",
-    "Turkey",
-    "Iraq",
-    "Syria",
-    "Greece",
-    "Jordan"
+    "Cyprus",
+    "Israel",
+    "Jordan",
+    "Lebanon",
+    "Palestine",
+    "Syria"
   ],
   "continents": [
-    "Africa",
     "Asia",
     "Europe"
   ],
@@ -24,10 +22,10 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Levant is a subregion of West Asia along the Eastern Mediterranean that forms part of the Middle East.",
   "world_heritage": false,
   "tags": [
     "Region",
-    "Africa",
     "Asia",
     "Europe"
   ],

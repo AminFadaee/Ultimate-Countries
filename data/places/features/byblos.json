@@ -16,6 +16,7 @@
   "area_km2": 5.0,
   "built": null,
   "culture": null,
+  "description": "Byblos, also known as Jbail, Jebeil, Jbeil or Jubayl, is an ancient city in the Keserwan-Jbeil Governorate of Lebanon.",
   "world_heritage": true,
   "tags": [
     "Landmark",
@@ -25,7 +26,11 @@
   "map": "places/maps/byblos.png",
   "photo": {
     "file": "places/photos/byblos.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Byblos%20Libanon%202003.JPG"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Byblos%20Libanon%202003.JPG",
+    "author": "Orient at de.wikipedia",
+    "license": "CC BY-SA 2.0 de",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Byblos_Libanon_2003.JPG"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Byblos",
   "fame": 83

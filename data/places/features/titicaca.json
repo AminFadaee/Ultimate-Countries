@@ -14,9 +14,10 @@
   "height_m": null,
   "elevation_m": 3812.0,
   "length_km": 204.0,
-  "area_km2": 8562.0,
+  "area_km2": 8372.0,
   "built": null,
   "culture": null,
+  "description": "Lake Titicaca is a large lake in the Andes mountains on the border of Bolivia and Peru.",
   "world_heritage": false,
   "tags": [
     "Lake",

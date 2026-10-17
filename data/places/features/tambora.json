@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Tambora, or Tomboro, is an active stratovolcano in West Nusa Tenggara, Indonesia.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/tambora.png",
   "photo": {
     "file": "places/photos/tambora.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Caldera%20Mt%20Tambora%20Sumbawa%20Indonesia.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Caldera%20Mt%20Tambora%20Sumbawa%20Indonesia.jpg",
+    "author": "Jialiang Gao (peace-on-earth.org)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Caldera_Mt_Tambora_Sumbawa_Indonesia.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Tambora",
   "fame": 73

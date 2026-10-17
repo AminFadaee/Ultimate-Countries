@@ -21,6 +21,7 @@
   "area_km2": 1048950.0,
   "built": null,
   "culture": null,
+  "description": "The Sea of Japan (see § Names for other names) is the marginal sea between the Japanese archipelago, Sakhalin, the Korean Peninsula, and the mainland of the Russian Far East.",
   "world_heritage": false,
   "tags": [
     "Sea",
@@ -30,5 +31,5 @@
   "map": "places/maps/sea_of_japan.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Sea_of_Japan",
-  "fame": 128
+  "fame": 129
 }

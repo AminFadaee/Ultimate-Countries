@@ -4,11 +4,12 @@
   "name": "Rhine",
   "kind": "River",
   "countries": [
-    "Germany",
-    "Switzerland",
+    "Austria",
     "France",
+    "Germany",
+    "Liechtenstein",
     "Netherlands",
-    "Austria"
+    "Switzerland"
   ],
   "continents": [
     "Europe"
@@ -20,6 +21,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Rhine is one of the major rivers of Europe.",
   "world_heritage": false,
   "tags": [
     "River",

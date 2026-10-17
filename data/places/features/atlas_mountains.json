@@ -18,6 +18,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Atlas Mountains are a mountain range in the Maghreb in North Africa.",
   "world_heritage": false,
   "tags": [
     "Mountain_range",
@@ -26,5 +27,5 @@
   "map": "places/maps/atlas_mountains.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Atlas_Mountains",
-  "fame": 98
+  "fame": 99
 }

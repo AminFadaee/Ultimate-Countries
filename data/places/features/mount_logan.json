@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Logan is the highest mountain in Canada, and the second-highest peak in North America after Denali.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/mount_logan.png",
   "photo": {
     "file": "places/photos/mount_logan.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Logan.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Logan.jpg",
+    "author": "Gerald Holdsworth",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Mount_Logan.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Logan",
   "fame": 75

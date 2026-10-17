@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Jog Falls is a series of large, segmented waterfalls on the Sharavati River in Karnataka state of India, created by the river plunging approximately 253 metres (830 ft) and splitting into four distinct cascades.",
   "world_heritage": false,
   "tags": [
     "Waterfall",
@@ -24,7 +25,11 @@
   "map": "places/maps/jog_falls.png",
   "photo": {
     "file": "places/photos/jog_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Jog%20Falls%20at%20Shimoga.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Jog%20Falls%20at%20Shimoga.jpg",
+    "author": "Arkadeep Meta",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jog_Falls_at_Shimoga.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Jog_Falls",
   "fame": 41

@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": "1931–1933",
   "culture": null,
+  "description": "The White Sea–Baltic Canal, often abbreviated to White Sea Canal, is a man-made ship canal in Russia.",
   "world_heritage": false,
   "tags": [
     "Canal",
@@ -24,7 +25,11 @@
   "map": "places/maps/white_sea__baltic_canal.png",
   "photo": {
     "file": "places/photos/white_sea__baltic_canal.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/White%20Sea%E2%80%93Baltic%20Canal%2C%20lock%20P7120376%202200.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/White%20Sea%E2%80%93Baltic%20Canal%2C%20lock%20P7120376%202200.jpg",
+    "author": "Alexxx1979",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:White_Sea%E2%80%93Baltic_Canal,_lock_P7120376_2200.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/White_Sea%E2%80%93Baltic_Canal",
   "fame": 51

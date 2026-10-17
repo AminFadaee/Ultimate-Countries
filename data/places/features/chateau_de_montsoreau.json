@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": "1443–1515",
   "culture": "Flamboyant Gothic French Renaissance",
+  "description": "The Château de Montsoreau is a Flamboyant Gothic castle in the Loire Valley, directly built in the Loire riverbed.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/chateau_de_montsoreau.png",
   "photo": {
     "file": "places/photos/chateau_de_montsoreau.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chateau%20de%20Montsoreau%20Museum%20of%20contemporary%20art%20Loire%20Valley%20France.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chateau%20de%20Montsoreau%20Museum%20of%20contemporary%20art%20Loire%20Valley%20France.jpg",
+    "author": "Suavemarimagno",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chateau_de_Montsoreau_Museum_of_contemporary_art_Loire_Valley_France.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Ch%C3%A2teau_de_Montsoreau",
   "fame": 100

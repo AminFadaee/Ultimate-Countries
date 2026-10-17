@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mauna Kea is a dormant shield volcano on the island of Hawaiʻi.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/mauna_kea.png",
   "photo": {
     "file": "places/photos/mauna_kea.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mauna%20Kea10.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mauna%20Kea10.jpg",
+    "author": "",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Mauna_Kea10.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mauna_Kea",
   "fame": 87

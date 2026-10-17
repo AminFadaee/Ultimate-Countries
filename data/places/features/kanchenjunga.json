@@ -17,6 +17,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Kangchenjunga is the third-highest mountain in the world.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -25,7 +26,11 @@
   "map": "places/maps/kanchenjunga.png",
   "photo": {
     "file": "places/photos/kanchenjunga.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kangchenjunga%2C%20India.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kangchenjunga%2C%20India.jpg",
+    "author": "My Discovery",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kangchenjunga,_India.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Kangchenjunga",
   "fame": 102

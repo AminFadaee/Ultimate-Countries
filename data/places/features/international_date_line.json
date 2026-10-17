@@ -37,6 +37,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The International Date Line (IDL) is the line extending between the North and South Poles that is the boundary between one calendar day and the next.",
   "world_heritage": false,
   "tags": [
     "Line",

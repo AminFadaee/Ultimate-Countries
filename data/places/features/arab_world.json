@@ -5,17 +5,24 @@
   "kind": "Region",
   "countries": [
     "Algeria",
-    "Saudi Arabia",
-    "Sudan",
+    "Bahrain",
+    "Egypt",
+    "Iraq",
+    "Jordan",
+    "Kuwait",
+    "Lebanon",
     "Libya",
     "Mauritania",
-    "Egypt",
     "Morocco",
-    "Yemen",
-    "Iraq",
     "Oman",
+    "Palestine",
+    "Qatar",
+    "Saudi Arabia",
+    "Sudan",
     "Syria",
-    "Tunisia"
+    "Tunisia",
+    "United Arab Emirates",
+    "Yemen"
   ],
   "continents": [
     "Africa",
@@ -28,6 +35,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Arab world comprises a large group of countries, mainly located in West Asia and North Africa.",
   "world_heritage": false,
   "tags": [
     "Region",

@@ -4,10 +4,18 @@
   "name": "Caribbean",
   "kind": "Region",
   "countries": [
+    "Antigua and Barbuda",
+    "The Bahamas",
+    "Barbados",
     "Cuba",
+    "Dominica",
     "Dominican Republic",
+    "Grenada",
     "Haiti",
     "Jamaica",
+    "Saint Kitts and Nevis",
+    "Saint Lucia",
+    "Saint Vincent and the Grenadines",
     "Trinidad and Tobago"
   ],
   "continents": [
@@ -20,6 +28,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Caribbean is a geo-political region in the middle of the Americas centered around the Caribbean Sea in the North Atlantic Ocean, mostly overlapping with the West Indies.",
   "world_heritage": false,
   "tags": [
     "Region",

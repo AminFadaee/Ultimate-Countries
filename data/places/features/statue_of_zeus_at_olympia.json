@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": "c. 435 BC",
   "culture": null,
+  "description": "The Statue of Zeus at Olympia was a giant seated figure, about 12.4 m (41 ft) tall, made by the Greek sculptor Phidias around 435 BC at the sanctuary of Olympia, Greece, and erected in the Temple of Zeus there.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/statue_of_zeus_at_olympia.png",
   "photo": {
     "file": "places/photos/statue_of_zeus_at_olympia.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Jupiter%20Olympien%20ou%20l%27art%20de%20la%20sculpture%20antique.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Jupiter%20Olympien%20ou%20l%27art%20de%20la%20sculpture%20antique.jpg",
+    "author": "Quatremère de Quincy",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Le_Jupiter_Olympien_ou_l%27art_de_la_sculpture_antique.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Statue_of_Zeus_at_Olympia",
   "fame": 93

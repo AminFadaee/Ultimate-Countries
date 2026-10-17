@@ -17,6 +17,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Matterhorn is a mountain of the Alps, straddling the main watershed and border between Switzerland and Italy.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -25,7 +26,11 @@
   "map": "places/maps/matterhorn.png",
   "photo": {
     "file": "places/photos/matterhorn.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Cervino%20cloud.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Cervino%20cloud.jpg",
+    "author": "Gianluca Miscione",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Cervino_cloud.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Matterhorn",
   "fame": 92

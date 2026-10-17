@@ -1,0 +1,36 @@
+{
+  "key": "Q79961",
+  "qid": "Q79961",
+  "name": "Christ the Redeemer (statue)",
+  "kind": "Landmark",
+  "countries": [
+    "Brazil"
+  ],
+  "continents": [
+    "Americas"
+  ],
+  "city": null,
+  "height_m": 30.1,
+  "elevation_m": 710.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Christ the Redeemer is an Art Deco statue of Jesus in Rio de Janeiro, Brazil, created by French-Polish sculptor Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French engineer Albert Caquot and Romanian sculptor Gheorghe Leonida who sculpted the face.",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Americas"
+  ],
+  "map": "places/maps/christ_the_redeemer__statue.png",
+  "photo": {
+    "file": "places/photos/christ_the_redeemer__statue.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Christ%20the%20Redeemer%20-%20Cristo%20Redentor.jpg",
+    "author": "Arne Müseler",
+    "license": "CC BY-SA 3.0 de",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Christ_the_Redeemer_-_Cristo_Redentor.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)",
+  "fame": 94
+}

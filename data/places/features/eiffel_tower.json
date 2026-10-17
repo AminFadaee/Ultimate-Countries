@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": "1887–1889",
   "culture": null,
+  "description": "The Eiffel Tower is a lattice tower on the Champ de Mars in Paris, France.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/eiffel_tower.png",
   "photo": {
     "file": "places/photos/eiffel_tower.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tour%20Eiffel%20Wikimedia%20Commons.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tour%20Eiffel%20Wikimedia%20Commons.jpg",
+    "author": "Benh LIEU SONG",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Eiffel_Tower",
   "fame": 191

@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": "1817–1825",
   "culture": null,
+  "description": "The Erie Canal is a historic canal in upstate New York that runs east–west between the Hudson River and Lake Erie.",
   "world_heritage": false,
   "tags": [
     "Canal",
@@ -24,7 +25,11 @@
   "map": "places/maps/erie_canal.png",
   "photo": {
     "file": "places/photos/erie_canal.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20over%20the%20Erie%20Canal%20in%20North%20Tonawanda%2C%20NY..jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20over%20the%20Erie%20Canal%20in%20North%20Tonawanda%2C%20NY..jpg",
+    "author": "Joshua Karn",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sunset_over_the_Erie_Canal_in_North_Tonawanda,_NY..jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Erie_Canal",
   "fame": 65

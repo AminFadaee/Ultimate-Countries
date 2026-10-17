@@ -4,15 +4,15 @@
   "name": "Danube",
   "kind": "River",
   "countries": [
-    "Romania",
-    "Germany",
-    "Serbia",
     "Austria",
-    "Hungary",
-    "Slovakia",
     "Bulgaria",
     "Croatia",
-    "Ukraine"
+    "Germany",
+    "Hungary",
+    "Moldova",
+    "Romania",
+    "Serbia",
+    "Slovakia"
   ],
   "continents": [
     "Europe"
@@ -24,6 +24,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Danube is a river in Europe, the second-longest after the Volga.",
   "world_heritage": false,
   "tags": [
     "River",

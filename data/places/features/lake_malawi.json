@@ -18,6 +18,7 @@
   "area_km2": 29600.0,
   "built": null,
   "culture": null,
+  "description": "Lake Malawi, also known as Lake Nyasa in Tanzania and Lago Niassa in Mozambique, is an African Great Lake and the southernmost lake in the East African Rift system, located between Malawi, Mozambique and Tanzania.",
   "world_heritage": false,
   "tags": [
     "Lake",
@@ -26,5 +27,5 @@
   "map": "places/maps/lake_malawi.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Lake_Malawi",
-  "fame": 106
+  "fame": 107
 }

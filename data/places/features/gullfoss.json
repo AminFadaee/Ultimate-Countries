@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Gullfoss is a waterfall located in the canyon of the Hvítá river in southwest Iceland, between the municipalities of Bláskógabyggð and Hrunamannahreppur.",
   "world_heritage": false,
   "tags": [
     "Waterfall",
@@ -24,7 +25,11 @@
   "map": "places/maps/gullfoss.png",
   "photo": {
     "file": "places/photos/gullfoss.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/GullfossOverview.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/GullfossOverview.jpg",
+    "author": "Andreas Tille",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:GullfossOverview.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Gullfoss",
   "fame": 47

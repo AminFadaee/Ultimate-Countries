@@ -4,7 +4,6 @@
   "name": "Lake Nicaragua",
   "kind": "Lake",
   "countries": [
-    "Costa Rica",
     "Nicaragua"
   ],
   "continents": [
@@ -17,6 +16,7 @@
   "area_km2": 8264.0,
   "built": null,
   "culture": null,
+  "description": "Lake Nicaragua or Cocibolca or Granada is a freshwater lake in Nicaragua.",
   "world_heritage": false,
   "tags": [
     "Lake",

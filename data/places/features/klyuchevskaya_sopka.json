@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Klyuchevskaya Sopka is an active stratovolcano, the highest mountain of Siberia and the highest active volcano of Eurasia.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/klyuchevskaya_sopka.png",
   "photo": {
     "file": "places/photos/klyuchevskaya_sopka.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Klju%C4%8Devskaja%20za%20v%C3%BDchodu%20slunce.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Klju%C4%8Devskaja%20za%20v%C3%BDchodu%20slunce.jpg",
+    "author": "Tamten at cs.wikipedia",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Klju%C4%8Devskaja_za_v%C3%BDchodu_slunce.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Klyuchevskaya_Sopka",
   "fame": 62

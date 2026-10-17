@@ -16,6 +16,7 @@
   "area_km2": 0.417,
   "built": "1264 BC",
   "culture": null,
+  "description": "Abu Simbel is a historic site comprising two massive rock-cut temples in the village of Abu Simbel, Aswan Governorate, Upper Egypt, near the border with Sudan.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/abu_simbel.png",
   "photo": {
     "file": "places/photos/abu_simbel.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Gro%C3%9Fer%20Tempel%20%28Abu%20Simbel%29%2031.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Gro%C3%9Fer%20Tempel%20%28Abu%20Simbel%29%2031.jpg",
+    "author": "Olaf Tausch",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fer_Tempel_(Abu_Simbel)_31.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Abu_Simbel",
   "fame": 93

@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Kunlun Mountains constitute one of the longest mountain chains in Asia, extending for more than 3,000 kilometres (1,900 mi).",
   "world_heritage": false,
   "tags": [
     "Mountain_range",
@@ -24,5 +25,5 @@
   "map": "places/maps/kunlun_mountains.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Kunlun_Mountains",
-  "fame": 78
+  "fame": 79
 }

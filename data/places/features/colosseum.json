@@ -16,6 +16,7 @@
   "area_km2": 0.03,
   "built": "AD 70–80",
   "culture": null,
+  "description": "The Colosseum is an elliptical amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/colosseum.png",
   "photo": {
     "file": "places/photos/colosseum.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Colosseo%202020.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Colosseo%202020.jpg",
+    "author": "FeaturedPics",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Colosseum",
   "fame": 148

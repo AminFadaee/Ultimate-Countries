@@ -4,12 +4,14 @@
   "name": "Caucasus",
   "kind": "Region",
   "countries": [
+    "Armenia",
     "Azerbaijan",
     "Georgia",
-    "Armenia"
+    "Russia"
   ],
   "continents": [
-    "Asia"
+    "Asia",
+    "Europe"
   ],
   "city": null,
   "height_m": null,
@@ -18,10 +20,12 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Caucasus is a geographical region spanning Eastern Europe and Western Asia.",
   "world_heritage": false,
   "tags": [
     "Region",
-    "Asia"
+    "Asia",
+    "Europe"
   ],
   "map": "places/maps/caucasus.png",
   "photo": null,

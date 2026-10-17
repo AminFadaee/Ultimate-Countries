@@ -24,6 +24,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": null,
   "world_heritage": false,
   "tags": [
     "Line",

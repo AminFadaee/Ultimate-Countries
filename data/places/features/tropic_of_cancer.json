@@ -33,6 +33,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Tropic of Cancer is the Earth's northernmost circle of latitude where the Sun can be seen directly overhead.",
   "world_heritage": false,
   "tags": [
     "Line",

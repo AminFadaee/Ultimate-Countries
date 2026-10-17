@@ -14,8 +14,9 @@
   "elevation_m": null,
   "length_km": 6.343,
   "area_km2": null,
-  "built": "67 AD–1893",
+  "built": "AD 67–1893",
   "culture": null,
+  "description": "The Corinth Canal is a canal in Greece that connects the Gulf of Corinth in the Ionian Sea with the Saronic Gulf in the Aegean Sea.",
   "world_heritage": false,
   "tags": [
     "Canal",
@@ -24,7 +25,11 @@
   "map": "places/maps/corinth_canal.png",
   "photo": {
     "file": "places/photos/corinth_canal.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Canal%20of%20korinth%20greece.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Canal%20of%20korinth%20greece.jpg",
+    "author": "Vancouverquadra at en.wikipedia",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Canal_of_korinth_greece.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Corinth_Canal",
   "fame": 62

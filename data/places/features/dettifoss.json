@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Dettifoss is a waterfall in Vatnajökull National Park in Northeast Iceland, and is reputed to be the second most powerful waterfall in Europe after the Rhine Falls.",
   "world_heritage": false,
   "tags": [
     "Waterfall",
@@ -24,7 +25,11 @@
   "map": "places/maps/dettifoss.png",
   "photo": {
     "file": "places/photos/dettifoss.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Dettifoss%20Panorama%2003.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Dettifoss%20Panorama%2003.jpg",
+    "author": "Spike",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Dettifoss_Panorama_03.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Dettifoss",
   "fame": 47

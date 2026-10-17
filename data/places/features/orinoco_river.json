@@ -4,8 +4,8 @@
   "name": "Orinoco River",
   "kind": "River",
   "countries": [
-    "Venezuela",
-    "Colombia"
+    "Colombia",
+    "Venezuela"
   ],
   "continents": [
     "Americas"
@@ -17,6 +17,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Orinoco is one of the longest rivers in South America at 2,140 km (1,330 mi).",
   "world_heritage": false,
   "tags": [
     "River",

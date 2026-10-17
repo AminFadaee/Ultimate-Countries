@@ -1,0 +1,27 @@
+{
+  "key": "Q3960",
+  "qid": "Q3960",
+  "name": "Australia (continent)",
+  "kind": "Continent",
+  "countries": [],
+  "continents": [
+    "Oceania"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 8213561.0,
+  "built": null,
+  "culture": null,
+  "description": "The continent of Australia, sometimes known in technical contexts as Sahul, Australia-New Guinea, Australinea, or Meganesia to distinguish it from the country of Australia, is located within the Southern and Eastern hemispheres, near the Maritime Southeast Asia.",
+  "world_heritage": false,
+  "tags": [
+    "Continent",
+    "Oceania"
+  ],
+  "map": "places/maps/australia__continent.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Australia_(continent)",
+  "fame": 136
+}

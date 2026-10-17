@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Carthage was an ancient city in northern Africa founded by the legendary Phoenician queen Dido on the eastern side of the Lake of Tunis in what is now Tunisia.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/carthage.png",
   "photo": {
     "file": "places/photos/carthage.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tunisie%20Carthage%20Ruines%2008.JPG"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tunisie%20Carthage%20Ruines%2008.JPG",
+    "author": "Calips",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Tunisie_Carthage_Ruines_08.JPG"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Carthage",
   "fame": 121

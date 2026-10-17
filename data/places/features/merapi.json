@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Merapi is an active stratovolcano located on the border between the province of Central Java and the Special Region of Yogyakarta, Indonesia.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/merapi.png",
   "photo": {
     "file": "places/photos/merapi.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Merapi%20Not%20Just%20a%20Legend%20and%20Mythology.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Merapi%20Not%20Just%20a%20Legend%20and%20Mythology.jpg",
+    "author": "Rosalia.silaban",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mount_Merapi_Not_Just_a_Legend_and_Mythology.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Merapi",
   "fame": 79

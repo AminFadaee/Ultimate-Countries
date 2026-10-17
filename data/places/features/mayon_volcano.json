@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mayon, also known as Mount Mayon and Mayon Volcano, is an active stratovolcano in the province of Albay in Bicol, Philippines.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,8 +25,12 @@
   "map": "places/maps/mayon_volcano.png",
   "photo": {
     "file": "places/photos/mayon_volcano.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mayon%20Volcano%20as%20of%20March%202020.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/MayonVolcano.jpg",
+    "author": "No machine-readable author provided. Nopira assumed (based on copyright claims).",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:MayonVolcano.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mayon",
-  "fame": 69
+  "fame": 70
 }

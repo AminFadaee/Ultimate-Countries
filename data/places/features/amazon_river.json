@@ -5,8 +5,8 @@
   "kind": "River",
   "countries": [
     "Brazil",
-    "Peru",
-    "Colombia"
+    "Colombia",
+    "Peru"
   ],
   "continents": [
     "Americas"
@@ -14,10 +14,11 @@
   "city": null,
   "height_m": null,
   "elevation_m": null,
-  "length_km": 6992.15,
+  "length_km": 6400.0,
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Amazon River in South America is the largest river in the world by discharge volume of water, and the second-longest or longest river system in the world, a title which is disputed with the Nile.",
   "world_heritage": false,
   "tags": [
     "River",
@@ -26,5 +27,5 @@
   "map": "places/maps/amazon_river.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Amazon_River",
-  "fame": 216
+  "fame": 217
 }

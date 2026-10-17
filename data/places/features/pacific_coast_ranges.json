@@ -13,9 +13,10 @@
   "height_m": null,
   "elevation_m": 5959.0,
   "length_km": 3800.0,
-  "area_km2": 977500.0,
+  "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Pacific Coast Ranges are the series of mountain ranges that stretch along the West Coast of North America from Alaska south to northern and central Mexico.",
   "world_heritage": false,
   "tags": [
     "Mountain_range",

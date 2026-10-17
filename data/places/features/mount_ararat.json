@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Ararat, officially Mount Ağrı, also known as Masis, is a snow-capped and dormant compound volcano and a stratovolcano in easternmost Turkey.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,8 +25,12 @@
   "map": "places/maps/mount_ararat.png",
   "photo": {
     "file": "places/photos/mount_ararat.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/NEO%20ararat%20big.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Ararat%20and%20the%20Araratian%20plain%20%28cropped%29.jpg",
+    "author": "Սէրուժ Ուրիշեան (Serouj Ourishian)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mount_Ararat_and_the_Araratian_plain_(cropped).jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Ararat",
-  "fame": 111
+  "fame": 112
 }

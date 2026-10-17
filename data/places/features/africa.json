@@ -4,17 +4,21 @@
   "name": "Africa",
   "kind": "Continent",
   "countries": [],
-  "continents": [],
+  "continents": [
+    "Africa"
+  ],
   "city": null,
   "height_m": null,
   "elevation_m": null,
   "length_km": null,
-  "area_km2": 30271000.0,
+  "area_km2": 29648481.0,
   "built": null,
   "culture": null,
+  "description": "Africa is the world's second-largest and second-most populous continent after Asia.",
   "world_heritage": false,
   "tags": [
-    "Continent"
+    "Continent",
+    "Africa"
   ],
   "map": "places/maps/africa.png",
   "photo": null,

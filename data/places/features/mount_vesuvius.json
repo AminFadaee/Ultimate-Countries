@@ -11,11 +11,12 @@
   ],
   "city": null,
   "height_m": null,
-  "elevation_m": 1297.0,
+  "elevation_m": 1281.0,
   "length_km": null,
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Vesuvius is a somma–stratovolcano located on the Gulf of Naples in Campania, Italy, about 9 km (5.6 mi) east of Naples and a short distance from the shore.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/mount_vesuvius.png",
   "photo": {
     "file": "places/photos/mount_vesuvius.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Il%20cratere%20del%20Vulcano%20-%20panoramio.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Il%20cratere%20del%20Vulcano%20-%20panoramio.jpg",
+    "author": "pietro scerrato",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Il_cratere_del_Vulcano_-_panoramio.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Vesuvius",
   "fame": 136

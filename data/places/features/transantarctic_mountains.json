@@ -4,7 +4,9 @@
   "name": "Transantarctic Mountains",
   "kind": "Mountain range",
   "countries": [],
-  "continents": [],
+  "continents": [
+    "Antarctica"
+  ],
   "city": null,
   "height_m": null,
   "elevation_m": 4528.0,
@@ -12,9 +14,11 @@
   "area_km2": 584000.0,
   "built": null,
   "culture": null,
+  "description": "The Transantarctic Mountains comprise a mountain range of uplifted rock in Antarctica which extends, with some interruptions, across the continent from Cape Adare in northern Victoria Land to Coats Land.",
   "world_heritage": false,
   "tags": [
-    "Mountain_range"
+    "Mountain_range",
+    "Antarctica"
   ],
   "map": "places/maps/transantarctic_mountains.png",
   "photo": null,

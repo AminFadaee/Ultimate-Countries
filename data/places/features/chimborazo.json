@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Chimborazo is a stratovolcano in Ecuador and the Cordillera Occidental range of the Andes.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/chimborazo.png",
   "photo": {
     "file": "places/photos/chimborazo.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Volc%C3%A1n%20Chimborazo%20desde%20Riobamba.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Volc%C3%A1n%20Chimborazo%20desde%20Riobamba.jpg",
+    "author": "Eduardo Navas",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Volc%C3%A1n_Chimborazo_desde_Riobamba.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Chimborazo",
   "fame": 84

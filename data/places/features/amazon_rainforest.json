@@ -25,6 +25,7 @@
   "area_km2": 6900000.0,
   "built": null,
   "culture": null,
+  "description": "The Amazon rainforest, also called the Amazon jungle, Amazonia, or simply the Amazon, is a moist broadleaf tropical rainforest in the Amazon biome that covers most of the Amazon basin of South America.",
   "world_heritage": false,
   "tags": [
     "Rainforest",
@@ -34,7 +35,11 @@
   "map": "places/maps/amazon_rainforest.png",
   "photo": {
     "file": "places/photos/amazon_rainforest.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Amazon%20Manaus%20forest.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Amazon%20Manaus%20forest.jpg",
+    "author": "Phil P Harris.",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Amazon_Manaus_forest.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Amazon_rainforest",
   "fame": 101

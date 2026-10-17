@@ -18,6 +18,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Drakensberg is the eastern portion of the Great Escarpment, which encloses the central Southern African plateau.",
   "world_heritage": false,
   "tags": [
     "Mountain_range",
@@ -26,5 +27,5 @@
   "map": "places/maps/drakensberg.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Drakensberg",
-  "fame": 77
+  "fame": 78
 }

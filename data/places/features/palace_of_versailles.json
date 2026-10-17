@@ -14,8 +14,9 @@
   "elevation_m": null,
   "length_km": null,
   "area_km2": 0.067,
-  "built": "1661",
+  "built": "begun 1661",
   "culture": "French classicism",
+  "description": "The Palace of Versailles is a château and historic monument in Versailles in the Yvelines department of France, southwest of Paris.",
   "world_heritage": true,
   "tags": [
     "Landmark",
@@ -25,7 +26,11 @@
   "map": "places/maps/palace_of_versailles.png",
   "photo": {
     "file": "places/photos/palace_of_versailles.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Vue%20a%C3%A9rienne%20du%20domaine%20de%20Versailles%20par%20ToucanWings%20-%20Creative%20Commons%20By%20Sa%203.0%20-%20083.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Vue%20a%C3%A9rienne%20du%20domaine%20de%20Versailles%20par%20ToucanWings%20-%20Creative%20Commons%20By%20Sa%203.0%20-%20083.jpg",
+    "author": "ToucanWings",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Palace_of_Versailles",
   "fame": 109

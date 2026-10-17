@@ -25,6 +25,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Gulf of Guinea is the northeasternmost part of the tropical Atlantic Ocean from Cape Lopez in Gabon, north and west to Cape Palmas in Liberia.",
   "world_heritage": false,
   "tags": [
     "Sea",
@@ -33,5 +34,5 @@
   "map": "places/maps/gulf_of_guinea.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Gulf_of_Guinea",
-  "fame": 112
+  "fame": 113
 }

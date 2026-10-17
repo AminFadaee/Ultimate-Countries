@@ -4,7 +4,6 @@
   "name": "Tugela Falls",
   "kind": "Waterfall",
   "countries": [
-    "Lesotho",
     "South Africa"
   ],
   "continents": [
@@ -17,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Tugela Falls is a complex of seasonal waterfalls located in the Drakensberg of Royal Natal National Park in KwaZulu-Natal Province, Republic of South Africa.",
   "world_heritage": false,
   "tags": [
     "Waterfall",
@@ -25,7 +25,11 @@
   "map": "places/maps/tugela_falls.png",
   "photo": {
     "file": "places/photos/tugela_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tugela%20falls.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tugela%20falls.jpg",
+    "author": "Juniper339",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tugela_falls.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Tugela_Falls",
   "fame": 42

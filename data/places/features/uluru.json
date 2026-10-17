@@ -11,11 +11,12 @@
   ],
   "city": null,
   "height_m": null,
-  "elevation_m": 900.0,
+  "elevation_m": 863.0,
   "length_km": null,
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Uluru, also known as Ayers Rock and officially gazetted as Uluru / Ayers Rock, is a large sandstone monolith.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/uluru.png",
   "photo": {
     "file": "places/photos/uluru.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20at%20Uluru%20on%20July%2030%2C%202005.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sunset%20at%20Uluru%20on%20July%2030%2C%202005.jpg",
+    "author": "Thomas Schoch",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sunset_at_Uluru_on_July_30,_2005.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Uluru",
   "fame": 94

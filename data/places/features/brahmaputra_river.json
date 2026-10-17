@@ -4,9 +4,10 @@
   "name": "Brahmaputra River",
   "kind": "River",
   "countries": [
-    "India",
     "Bangladesh",
-    "China"
+    "China",
+    "India",
+    "Nepal"
   ],
   "continents": [
     "Asia"
@@ -18,6 +19,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Brahmaputra is a trans-boundary river which flows through Southwestern China, Northeastern India, and Bangladesh.",
   "world_heritage": false,
   "tags": [
     "River",

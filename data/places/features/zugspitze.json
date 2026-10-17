@@ -17,6 +17,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Zugspitze, at 2,962 m (9,718 ft) above sea level, is the highest peak of the Wetterstein Mountains and the highest mountain in Germany.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -25,7 +26,11 @@
   "map": "places/maps/zugspitze.png",
   "photo": {
     "file": "places/photos/zugspitze.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Zugspitzmassiv-von-Almkopf-2024.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Zugspitzmassiv-von-Almkopf-2024.jpg",
+    "author": "Tuxyso",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Zugspitzmassiv-von-Almkopf-2024.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Zugspitze",
   "fame": 75

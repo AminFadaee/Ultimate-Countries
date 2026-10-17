@@ -16,6 +16,7 @@
   "area_km2": 0.6257,
   "built": null,
   "culture": null,
+  "description": "Borobudur, also transcribed Barabudur, is a 9th-century Mahayana Buddhist temple in Magelang Regency, near the town of Muntilan, northwest of the city of Yogyakarta, in Central Java, Indonesia.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/borobudur_temple.png",
   "photo": {
     "file": "places/photos/borobudur_temple.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Borobudur-Nothwest-view.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pradaksina.jpg",
+    "author": "Heri nugroho",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pradaksina.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Borobudur",
   "fame": 99

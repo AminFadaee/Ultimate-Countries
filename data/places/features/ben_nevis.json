@@ -11,11 +11,12 @@
   ],
   "city": null,
   "height_m": null,
-  "elevation_m": 1344.53,
+  "elevation_m": 1344.527,
   "length_km": null,
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Ben Nevis is the highest mountain in Scotland, the United Kingdom, and the British Isles.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/ben_nevis.png",
   "photo": {
     "file": "places/photos/ben_nevis.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ben%20nevis.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ben%20nevis.jpg",
+    "author": "Loek037 at Dutch Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ben_nevis.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Ben_Nevis",
   "fame": 78

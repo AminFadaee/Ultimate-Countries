@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Navajo Upper Antelope Canyon is a slot canyon in the American Southwest, on Navajo land east of Lechee, Arizona.",
   "world_heritage": false,
   "tags": [
     "Canyon",
@@ -24,7 +25,11 @@
   "map": "places/maps/antelope_canyon.png",
   "photo": {
     "file": "places/photos/antelope_canyon.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/USA%20Antelope-Canyon.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/USA%20Antelope-Canyon.jpg",
+    "author": "Lucas Löffler",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:USA_Antelope-Canyon.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Antelope_Canyon",
   "fame": 44

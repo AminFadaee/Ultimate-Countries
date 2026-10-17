@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Popocatépetl is an active stratovolcano located in the states of Puebla, Morelos, and Mexico in central Mexico.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/popocatepetl.png",
   "photo": {
     "file": "places/photos/popocatepetl.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mexico-Popocatepetl.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mexico-Popocatepetl.jpg",
+    "author": "Jakub Hejtmánek",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Mexico-Popocatepetl.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Popocat%C3%A9petl",
   "fame": 72

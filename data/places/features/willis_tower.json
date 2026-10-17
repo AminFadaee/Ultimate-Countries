@@ -16,6 +16,7 @@
   "area_km2": 0.416,
   "built": "1970–1974",
   "culture": "International",
+  "description": "The Willis Tower, formerly known and still commonly referred to as the Sears Tower, is a 110-story, 1,451-foot (442.3 m) skyscraper in the Loop of Chicago, Illinois, United States.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/willis_tower.png",
   "photo": {
     "file": "places/photos/willis_tower.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chicago%20Sears%20Tower.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chicago%20Sears%20Tower.jpg",
+    "author": "Daniel Schwen",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chicago_Sears_Tower.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Willis_Tower",
   "fame": 97

@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Cameroon is an active stratovolcano in the Southwest Region of Cameroon next to the city of Buea near the Gulf of Guinea.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/mount_cameroon.png",
   "photo": {
     "file": "places/photos/mount_cameroon.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Char%20des%20Dieux%20-%20Fako%20Mountain%20-%20Mount%20Cameroon%20National%20Park%20-%20R%C3%A9gion%20du%20Sud-ouest.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Le%20Char%20des%20Dieux%20-%20Fako%20Mountain%20-%20Mount%20Cameroon%20National%20Park%20-%20R%C3%A9gion%20du%20Sud-ouest.jpg",
+    "author": "Eric Joel MAMA NKE",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Le_Char_des_Dieux_-_Fako_Mountain_-_Mount_Cameroon_National_Park_-_R%C3%A9gion_du_Sud-ouest.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Cameroon",
   "fame": 60

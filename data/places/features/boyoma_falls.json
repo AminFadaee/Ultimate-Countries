@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Boyoma Falls, formerly known as Stanley Falls, is a series of seven cataracts, each no more than 5 m (16 ft) high, extending over more than 100 km (62 mi) along a curve of the Lualaba River between the river port towns of Ubundu and Kisangani in the Orientale Province of the Democratic Republic of the Congo.",
   "world_heritage": false,
   "tags": [
     "Waterfall",
@@ -24,8 +25,12 @@
   "map": "places/maps/boyoma_falls.png",
   "photo": {
     "file": "places/photos/boyoma_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Zaire%20kisangani%20stroom%2011%20copy.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Zaire%20kisangani%20stroom%2011%20copy.jpg",
+    "author": "Ad Meskens",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Zaire_kisangani_stroom_11_copy.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Boyoma_Falls",
-  "fame": 44
+  "fame": 45
 }

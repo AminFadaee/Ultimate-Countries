@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount St. Helens is an active stratovolcano located in Skamania County, Washington, in the Pacific Northwest region of the United States.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/mount_st__helens.png",
   "photo": {
     "file": "places/photos/mount_st__helens.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/MSH82%20st%20helens%20plume%20from%20harrys%20ridge%2005-19-82.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/MSH82%20st%20helens%20plume%20from%20harrys%20ridge%2005-19-82.jpg",
+    "author": "Lyn Topinka",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:MSH82_st_helens_plume_from_harrys_ridge_05-19-82.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_St._Helens",
   "fame": 82

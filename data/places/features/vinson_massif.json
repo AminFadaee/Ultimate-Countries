@@ -4,7 +4,9 @@
   "name": "Vinson Massif",
   "kind": "Mountain",
   "countries": [],
-  "continents": [],
+  "continents": [
+    "Antarctica"
+  ],
   "city": null,
   "height_m": null,
   "elevation_m": 4892.0,
@@ -12,14 +14,20 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Vinson Massif is a large mountain massif in Antarctica that is 21 km (13 mi) long and 13 km (8 mi) wide and lies within the Sentinel Range of the Ellsworth Mountains.",
   "world_heritage": false,
   "tags": [
-    "Mountain"
+    "Mountain",
+    "Antarctica"
   ],
   "map": "places/maps/vinson_massif.png",
   "photo": {
     "file": "places/photos/vinson_massif.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Vinson%20from%20NW%20at%20Vinson%20Plateau%20by%20Christian%20Stangl%20%28flickr%29.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Vinson%20from%20NW%20at%20Vinson%20Plateau%20by%20Christian%20Stangl%20%28flickr%29.jpg",
+    "author": "Christian Stangl",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mount_Vinson_from_NW_at_Vinson_Plateau_by_Christian_Stangl_(flickr).jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Vinson_Massif",
   "fame": 76

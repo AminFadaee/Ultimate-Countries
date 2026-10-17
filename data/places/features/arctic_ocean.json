@@ -12,6 +12,7 @@
   "area_km2": 14056000.0,
   "built": null,
   "culture": null,
+  "description": "The Arctic Ocean is the smallest and shallowest of the world's five oceanic divisions.",
   "world_heritage": false,
   "tags": [
     "Ocean"
@@ -19,5 +20,5 @@
   "map": "places/maps/arctic_ocean.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Arctic_Ocean",
-  "fame": 229
+  "fame": 230
 }

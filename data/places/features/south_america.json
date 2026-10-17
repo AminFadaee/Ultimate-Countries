@@ -4,20 +4,24 @@
   "name": "South America",
   "kind": "Continent",
   "countries": [],
-  "continents": [],
+  "continents": [
+    "Americas"
+  ],
   "city": null,
   "height_m": null,
   "elevation_m": null,
   "length_km": null,
-  "area_km2": 17843000.0,
+  "area_km2": 17461112.0,
   "built": null,
   "culture": null,
+  "description": "South America is a continent entirely in the Western Hemisphere and mostly in the Southern Hemisphere, with a considerably smaller portion in the Northern Hemisphere.",
   "world_heritage": false,
   "tags": [
-    "Continent"
+    "Continent",
+    "Americas"
   ],
   "map": "places/maps/south_america.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/South_America",
-  "fame": 342
+  "fame": 343
 }

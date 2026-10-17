@@ -3,10 +3,7 @@
   "qid": "Q43512",
   "name": "K2",
   "kind": "Mountain",
-  "countries": [
-    "China",
-    "Pakistan"
-  ],
+  "countries": [],
   "continents": [
     "Asia"
   ],
@@ -17,6 +14,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "K2, also known as Mount Godwin-Austen, at 8,611 metres (28,251 ft) above sea level, is the second-highest mountain on Earth, after Mount Everest at 8,849 metres (29,032 ft).",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -25,7 +23,11 @@
   "map": "places/maps/k2.png",
   "photo": {
     "file": "places/photos/k2.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chogori.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chogori.jpg",
+    "author": "Zacharie Grossen",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chogori.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/K2",
   "fame": 112

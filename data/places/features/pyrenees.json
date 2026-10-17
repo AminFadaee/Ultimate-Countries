@@ -18,6 +18,7 @@
   "area_km2": 19000.0,
   "built": null,
   "culture": null,
+  "description": "The Pyrenees is a mountain range in southwestern Europe, straddling the France–Spain border.",
   "world_heritage": false,
   "tags": [
     "Mountain_range",
@@ -26,5 +27,5 @@
   "map": "places/maps/pyrenees.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Pyrenees",
-  "fame": 132
+  "fame": 133
 }

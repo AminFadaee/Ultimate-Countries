@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": "1078",
   "culture": null,
+  "description": "The Tower of London, officially His Majesty's Royal Palace and Fortress of the Tower of London, is a historic citadel and castle on the north bank of the River Thames in London, England.",
   "world_heritage": true,
   "tags": [
     "Landmark",
@@ -25,7 +26,11 @@
   "map": "places/maps/tower_of_london.png",
   "photo": {
     "file": "places/photos/tower_of_london.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tower%20of%20London%20viewed%20from%20the%20River%20Thames.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tower%20of%20London%20viewed%20from%20the%20River%20Thames.jpg",
+    "author": "Bob Collowan",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tower_of_London_viewed_from_the_River_Thames.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Tower_of_London",
   "fame": 88

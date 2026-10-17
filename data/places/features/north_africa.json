@@ -5,11 +5,11 @@
   "kind": "Region",
   "countries": [
     "Algeria",
-    "Sudan",
+    "Egypt",
     "Libya",
     "Mauritania",
-    "Egypt",
     "Morocco",
+    "Sudan",
     "Tunisia"
   ],
   "continents": [
@@ -22,6 +22,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "North Africa, also known as Northern Africa, is a region encompassing the northern portion of the African continent.",
   "world_heritage": false,
   "tags": [
     "Region",

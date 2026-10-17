@@ -4,7 +4,6 @@
   "name": "Rhine Falls",
   "kind": "Waterfall",
   "countries": [
-    "Germany",
     "Switzerland"
   ],
   "continents": [
@@ -17,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Rhine Falls is a waterfall on the High Rhine in Switzerland.",
   "world_heritage": false,
   "tags": [
     "Waterfall",
@@ -25,7 +25,11 @@
   "map": "places/maps/rhine_falls.png",
   "photo": {
     "file": "places/photos/rhine_falls.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chutes%20du%20Rhin%20-%20Octobre%202021.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chutes%20du%20Rhin%20-%20Octobre%202021.jpg",
+    "author": "Christian David",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chutes_du_Rhin_-_Octobre_2021.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Rhine_Falls",
   "fame": 48

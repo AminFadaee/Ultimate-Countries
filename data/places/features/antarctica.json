@@ -4,17 +4,21 @@
   "name": "Antarctica",
   "kind": "Continent",
   "countries": [],
-  "continents": [],
+  "continents": [
+    "Antarctica"
+  ],
   "city": null,
   "height_m": null,
   "elevation_m": null,
   "length_km": null,
-  "area_km2": 14200000.0,
+  "area_km2": 13720000.0,
   "built": null,
   "culture": null,
+  "description": "Antarctica is Earth's southernmost and least-populated continent.",
   "world_heritage": false,
   "tags": [
-    "Continent"
+    "Continent",
+    "Antarctica"
   ],
   "map": "places/maps/antarctica.png",
   "photo": null,

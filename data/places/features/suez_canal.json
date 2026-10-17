@@ -16,16 +16,14 @@
   "area_km2": null,
   "built": "1859–1869",
   "culture": null,
+  "description": "The Suez Canal is an artificial sea-level waterway in Egypt, connecting the Mediterranean Sea to the Red Sea through the Isthmus of Suez and dividing Africa and Asia.",
   "world_heritage": false,
   "tags": [
     "Canal",
     "Africa"
   ],
   "map": "places/maps/suez_canal.png",
-  "photo": {
-    "file": "places/photos/suez_canal.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Suez%20Canal%2C%20Egypt%20%2831596166706%29.jpg"
-  },
+  "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Suez_Canal",
   "fame": 177
 }

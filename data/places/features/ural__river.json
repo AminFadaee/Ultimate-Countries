@@ -1,11 +1,11 @@
 {
   "key": "Q80240",
   "qid": "Q80240",
-  "name": "Ural River",
+  "name": "Ural (river)",
   "kind": "River",
   "countries": [
-    "Russia",
-    "Kazakhstan"
+    "Kazakhstan",
+    "Russia"
   ],
   "continents": [
     "Asia",
@@ -18,14 +18,15 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Ural, also known as the Yaik, is a river flowing through Russia and Kazakhstan in the continental border between Europe and Asia.",
   "world_heritage": false,
   "tags": [
     "River",
     "Asia",
     "Europe"
   ],
-  "map": "places/maps/ural_river.png",
+  "map": "places/maps/ural__river.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Ural_(river)",
-  "fame": 111
+  "fame": 112
 }

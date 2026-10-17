@@ -16,6 +16,7 @@
   "area_km2": 163.59,
   "built": null,
   "culture": null,
+  "description": "The Giza pyramid complex in Egypt is home to the Great Pyramid, the pyramid of Khafre, and the pyramid of Menkaure, along with their associated pyramid complexes and the Great Sphinx.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/giza_pyramid_complex.png",
   "photo": {
     "file": "places/photos/giza_pyramid_complex.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pyramids%20of%20the%20Giza%20Necropolis.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pyramids%20of%20the%20Giza%20Necropolis.jpg",
+    "author": "KennyOMG",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pyramids_of_the_Giza_Necropolis.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Giza_pyramid_complex",
   "fame": 92

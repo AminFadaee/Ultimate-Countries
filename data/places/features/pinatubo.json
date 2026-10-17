@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mount Pinatubo is an active stratovolcano in the Zambales Mountains in Luzon in the Philippines.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/pinatubo.png",
   "photo": {
     "file": "places/photos/pinatubo.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pinatubo%20Crater%20Lake%20%28052005%29.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pinatubo%20Crater%20Lake%20%28052005%29.jpg",
+    "author": "Wildfire2383",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Pinatubo_Crater_Lake_(052005).jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Pinatubo",
   "fame": 70

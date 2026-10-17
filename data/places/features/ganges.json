@@ -4,8 +4,7 @@
   "name": "Ganges",
   "kind": "River",
   "countries": [
-    "India",
-    "Bangladesh"
+    "India"
   ],
   "continents": [
     "Asia"
@@ -17,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Ganges is a trans-boundary river of Asia which flows through India and Bangladesh.",
   "world_heritage": false,
   "tags": [
     "River",
@@ -25,5 +25,5 @@
   "map": "places/maps/ganges.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Ganges",
-  "fame": 179
+  "fame": 180
 }

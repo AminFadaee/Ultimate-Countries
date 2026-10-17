@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Alhambra is a palace and fortress complex located in Granada, Spain.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/alhambra.png",
   "photo": {
     "file": "places/photos/alhambra.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Alhambra%20detail.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Alhambra%20detail.jpg",
+    "author": "Jebulon",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Alhambra_detail.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Alhambra",
   "fame": 96

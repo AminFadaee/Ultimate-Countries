@@ -4,13 +4,14 @@
   "name": "Central Africa",
   "kind": "Region",
   "countries": [
-    "Democratic Republic of the Congo",
-    "Chad",
     "Angola",
-    "Central African Republic",
     "Cameroon",
-    "Republic of the Congo",
-    "Gabon"
+    "Central African Republic",
+    "Chad",
+    "Democratic Republic of the Congo",
+    "Equatorial Guinea",
+    "Gabon",
+    "Republic of the Congo"
   ],
   "continents": [
     "Africa"
@@ -22,6 +23,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Central Africa is a subregion of the African continent comprising various countries according to different definitions.",
   "world_heritage": false,
   "tags": [
     "Region",

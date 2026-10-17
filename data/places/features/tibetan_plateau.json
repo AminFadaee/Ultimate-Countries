@@ -20,6 +20,7 @@
   "area_km2": 2500000.0,
   "built": null,
   "culture": null,
+  "description": "The Tibetan Plateau, also known as the Qinghai–Tibet Plateau, Qingzang Plateau, is a vast elevated plateau located at the intersection of Central, South, and East Asia.",
   "world_heritage": false,
   "tags": [
     "Plateau",
@@ -28,5 +29,5 @@
   "map": "places/maps/tibetan_plateau.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Tibetan_Plateau",
-  "fame": 86
+  "fame": 87
 }

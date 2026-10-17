@@ -17,6 +17,7 @@
   "area_km2": 4178.0,
   "built": null,
   "culture": null,
+  "description": "The Danube Delta is the second largest river delta in Europe, after the Volga Delta, and is the best preserved on the continent.",
   "world_heritage": true,
   "tags": [
     "Delta",
@@ -26,5 +27,5 @@
   "map": "places/maps/danube_delta.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Danube_Delta",
-  "fame": 66
+  "fame": 67
 }

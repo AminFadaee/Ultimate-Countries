@@ -4,8 +4,13 @@
   "name": "Nile",
   "kind": "River",
   "countries": [
+    "Burundi",
+    "Egypt",
+    "Ethiopia",
+    "Rwanda",
+    "South Sudan",
     "Sudan",
-    "Egypt"
+    "Uganda"
   ],
   "continents": [
     "Africa"
@@ -17,6 +22,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Nile is a major north-flowing river in northeast Africa which empties into the Mediterranean Sea.",
   "world_heritage": false,
   "tags": [
     "River",

@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The High Atlas, also called the Grand Atlas, is a mountain range in central Morocco, North Africa, the highest part of the Atlas Mountains.",
   "world_heritage": false,
   "tags": [
     "Mountain_range",
@@ -24,5 +25,5 @@
   "map": "places/maps/high_atlas.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/High_Atlas",
-  "fame": 43
+  "fame": 44
 }

@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": "351 BC",
   "culture": "Classical",
+  "description": "The Mausoleum at Halicarnassus or Tomb of Mausolus was a tomb built between 353 and 351 BC in Halicarnassus for Mausolus, an Anatolian from Caria and a satrap in the Achaemenid Persian Empire, and his sister-wife Artemisia II. The structure was designed by the Greek architects Satyros of Paros and Pythius of Priene.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/mausoleum_at_halicarnassus.png",
   "photo": {
     "file": "places/photos/mausoleum_at_halicarnassus.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20ruins%20of%20the%20Mausoleum%20at%20Halicarnassus.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20ruins%20of%20the%20Mausoleum%20at%20Halicarnassus.jpg",
+    "author": "FollowingHadrian",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_ruins_of_the_Mausoleum_at_Halicarnassus.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus",
   "fame": 90

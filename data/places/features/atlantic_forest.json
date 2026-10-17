@@ -18,16 +18,14 @@
   "area_km2": 1234000.0,
   "built": null,
   "culture": null,
+  "description": "The Atlantic Forest is a moist broadleaf forest that extends along the Atlantic coast of Brazil from Rio Grande do Norte state in the northeast to Rio Grande do Sul state in the south and inland as far as Paraguay and the Misiones Province of Argentina, where it is known as the Missionary rainforest.",
   "world_heritage": false,
   "tags": [
     "Rainforest",
     "Americas"
   ],
   "map": "places/maps/atlantic_forest.png",
-  "photo": {
-    "file": "places/photos/atlantic_forest.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Atlantic%20Forest%20WWF.jpg"
-  },
+  "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Atlantic_Forest",
   "fame": 48
 }

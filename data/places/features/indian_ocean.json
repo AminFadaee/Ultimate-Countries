@@ -9,9 +9,10 @@
   "height_m": null,
   "elevation_m": 0.0,
   "length_km": null,
-  "area_km2": 76174000.0,
+  "area_km2": 70560000.0,
   "built": null,
   "culture": null,
+  "description": "The Indian Ocean is the third-largest of the world's five oceanic divisions, covering 70,560,000 km2 (27,240,000 sq mi) or approximately 20% of the water area of Earth's surface.",
   "world_heritage": false,
   "tags": [
     "Ocean"

@@ -24,6 +24,7 @@
   "area_km2": 9200000.0,
   "built": null,
   "culture": null,
+  "description": "The Sahara is a desert spanning North Africa.",
   "world_heritage": false,
   "tags": [
     "Desert",

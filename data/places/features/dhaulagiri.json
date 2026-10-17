@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Dhaulagiri, located in Nepal, is the seventh highest mountain in the world at 8,167 metres (26,795 ft) above sea level, and the highest mountain within the borders of a single country.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/dhaulagiri.png",
   "photo": {
     "file": "places/photos/dhaulagiri.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Dhaulagiri%2C%20Himalaya%2C%20Nepal.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Dhaulagiri%2C%20Himalaya%2C%20Nepal.jpg",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Dhaulagiri,_Himalaya,_Nepal.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Dhaulagiri",
   "fame": 90

@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Grand Canyon is a steep-sided canyon carved by the Colorado River in Arizona, United States.",
   "world_heritage": false,
   "tags": [
     "Canyon",
@@ -24,7 +25,11 @@
   "map": "places/maps/grand_canyon.png",
   "photo": {
     "file": "places/photos/grand_canyon.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Grand%20Canyon%20view%20from%20Pima%20Point%202010.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Grand%20Canyon%20view%20from%20Pima%20Point%202010.jpg",
+    "author": "Chensiyuan",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_view_from_Pima_Point_2010.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Grand_Canyon",
   "fame": 116

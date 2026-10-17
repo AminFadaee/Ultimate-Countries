@@ -23,6 +23,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Arctic Circle is one of the two polar circles, and the northernmost of the five major circles of latitude.",
   "world_heritage": false,
   "tags": [
     "Line",
@@ -32,5 +33,5 @@
   "map": "places/maps/arctic_circle.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Arctic_Circle",
-  "fame": 96
+  "fame": 97
 }

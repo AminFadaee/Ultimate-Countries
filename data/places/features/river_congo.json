@@ -4,9 +4,10 @@
   "name": "River Congo",
   "kind": "River",
   "countries": [
+    "Angola",
     "Democratic Republic of the Congo",
     "Republic of the Congo",
-    "Angola"
+    "Zambia"
   ],
   "continents": [
     "Africa"
@@ -18,6 +19,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Congo River, formerly also known as the Zaire River, is the second-longest river in Africa, shorter only than the Nile, as well as the third largest river in the world by discharge volume, following the Amazon and Ganges–Brahmaputra rivers.",
   "world_heritage": false,
   "tags": [
     "River",

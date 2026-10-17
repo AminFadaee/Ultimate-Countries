@@ -4,13 +4,13 @@
   "name": "Central America",
   "kind": "Region",
   "countries": [
-    "Nicaragua",
-    "Honduras",
-    "Guatemala",
-    "Panama",
-    "Costa Rica",
     "Belize",
-    "El Salvador"
+    "Costa Rica",
+    "El Salvador",
+    "Guatemala",
+    "Honduras",
+    "Nicaragua",
+    "Panama"
   ],
   "continents": [
     "Americas"
@@ -22,6 +22,7 @@
   "area_km2": 560988.0,
   "built": null,
   "culture": null,
+  "description": "Central America is a subregion of North America.",
   "world_heritage": false,
   "tags": [
     "Region",

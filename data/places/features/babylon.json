@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": "c. 2200 BC",
   "culture": "Sumerian",
+  "description": "Babylon was an ancient city located on the lower Euphrates river in southern Mesopotamia, within modern-day Hillah, Iraq, about 85 kilometres south of modern-day Baghdad.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/babylon.png",
   "photo": {
     "file": "places/photos/babylon.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/DSC%200658-Recovered.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/DSC%200658-Recovered.jpg",
+    "author": "Mohamm3dfadil",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:DSC_0658-Recovered.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Babylon",
   "fame": 127

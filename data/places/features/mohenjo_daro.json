@@ -16,6 +16,7 @@
   "area_km2": 2.4,
   "built": "c. 2500 BC",
   "culture": "Indus Valley Civilisation",
+  "description": "Mohenjo-daro is an archaeological site in the Larkana District of Sindh, Pakistan.",
   "world_heritage": true,
   "tags": [
     "Landmark",
@@ -25,8 +26,12 @@
   "map": "places/maps/mohenjo_daro.png",
   "photo": {
     "file": "places/photos/mohenjo_daro.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mohenjodaro%20Sindh.jpeg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mohenjodaro%20Sindh.jpeg",
+    "author": "The original uploader was M.Imran at English Wikipedia.",
+    "license": "CC SA 1.0",
+    "license_url": "http://creativecommons.org/licenses/sa/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Mohenjodaro_Sindh.jpeg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mohenjo-daro",
-  "fame": 98
+  "fame": 99
 }

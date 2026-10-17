@@ -12,6 +12,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Antarctic Circle is the most southerly of the five major circles of latitude that mark maps of Earth.",
   "world_heritage": false,
   "tags": [
     "Line"
@@ -19,5 +20,5 @@
   "map": "places/maps/antarctic_circle.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Antarctic_Circle",
-  "fame": 82
+  "fame": 83
 }

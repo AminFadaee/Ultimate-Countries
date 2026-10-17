@@ -16,6 +16,7 @@
   "area_km2": 325.0,
   "built": "c. 1450 – c. 1470",
   "culture": "Inca civilization",
+  "description": "Machu Picchu is a 15th-century Inca citadel located in the Eastern Cordillera of southern Peru on a mountain ridge at 2,430 meters (7,970 ft).",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/machu_picchu.png",
   "photo": {
     "file": "places/photos/machu_picchu.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Machu%20Picchu%2C%202023%20%28012%29.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Machu%20Picchu%2C%202023%20%28012%29.jpg",
+    "author": "Draceane",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_2023_(012).jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Machu_Picchu",
   "fame": 150

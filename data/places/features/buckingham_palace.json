@@ -16,6 +16,7 @@
   "area_km2": 0.2,
   "built": null,
   "culture": null,
+  "description": "Buckingham Palace is the official residence and administrative headquarters of the monarch of the United Kingdom in London, England.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -24,7 +25,11 @@
   "map": "places/maps/buckingham_palace.png",
   "photo": {
     "file": "places/photos/buckingham_palace.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Buckingham%20Palace%2C%20London%20-%20April%202009.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Buckingham%20Palace%2C%20London%20-%20April%202009.jpg",
+    "author": "Diliff",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace,_London_-_April_2009.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Buckingham_Palace",
   "fame": 95

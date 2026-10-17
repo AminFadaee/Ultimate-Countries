@@ -5,10 +5,10 @@
   "kind": "Region",
   "countries": [
     "Kazakhstan",
-    "Turkmenistan",
-    "Uzbekistan",
     "Kyrgyzstan",
-    "Tajikistan"
+    "Tajikistan",
+    "Turkmenistan",
+    "Uzbekistan"
   ],
   "continents": [
     "Asia"
@@ -20,6 +20,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Central Asia is a region of Asia consisting of Kyrgyzstan, Tajikistan, Turkmenistan, Uzbekistan, and most of Kazakhstan.",
   "world_heritage": false,
   "tags": [
     "Region",

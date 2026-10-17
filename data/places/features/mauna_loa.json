@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Mauna Loa is one of five volcanoes that form the Island of Hawaii in the U.S. state of Hawaii in the Pacific Ocean.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/mauna_loa.png",
   "photo": {
     "file": "places/photos/mauna_loa.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mauna%20Loa.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mauna%20Loa.jpg",
+    "author": "Gordon Joly",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Mauna_Loa.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mauna_Loa",
   "fame": 78

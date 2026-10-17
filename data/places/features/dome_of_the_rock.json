@@ -3,10 +3,7 @@
   "qid": "Q172077",
   "name": "Dome of the Rock",
   "kind": "Landmark",
-  "countries": [
-    "Israel",
-    "Palestine"
-  ],
+  "countries": [],
   "continents": [
     "Asia"
   ],
@@ -17,6 +14,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Dome of the Rock is an octagonal Islamic shrine at the center of the Al-Aqsa mosque compound on the Temple Mount in the Old City of Jerusalem.",
   "world_heritage": true,
   "tags": [
     "Landmark",
@@ -26,7 +24,11 @@
   "map": "places/maps/dome_of_the_rock.png",
   "photo": {
     "file": "places/photos/dome_of_the_rock.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%D8%AE%D8%B1%D9%8A%D9%81..%D9%82%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B5%D8%AE%D8%B1%D8%A9.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%D8%AE%D8%B1%D9%8A%D9%81..%D9%82%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B5%D8%AE%D8%B1%D8%A9.jpg",
+    "author": "Abdallah Khader",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D8%AE%D8%B1%D9%8A%D9%81..%D9%82%D8%A8%D8%A9_%D8%A7%D9%84%D8%B5%D8%AE%D8%B1%D8%A9.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Dome_of_the_Rock",
   "fame": 87

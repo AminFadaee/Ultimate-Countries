@@ -16,16 +16,14 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Kīlauea is an active shield volcano in the Hawaiian Islands, located along the southeastern shore of Hawaii Island.",
   "world_heritage": false,
   "tags": [
     "Volcano",
     "Americas"
   ],
   "map": "places/maps/kilauea.png",
-  "photo": {
-    "file": "places/photos/kilauea.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kilauea%20-%20Landsat%20mosaic.jpg"
-  },
+  "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/K%C4%ABlauea",
   "fame": 65
 }

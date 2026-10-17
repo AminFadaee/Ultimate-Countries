@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Cotopaxi is an active stratovolcano in the Andes Mountains, located in Cotopaxi National Park in Cotopaxi Province, about 50 km (31.1 mi) south of Quito, and 31 km (19 mi) northeast of the city of Latacunga, Ecuador.",
   "world_heritage": false,
   "tags": [
     "Volcano",
@@ -24,7 +25,11 @@
   "map": "places/maps/cotopaxi_volcano.png",
   "photo": {
     "file": "places/photos/cotopaxi_volcano.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/V%C3%B3lcan%20Cotopaxi.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/V%C3%B3lcan%20Cotopaxi.jpg",
+    "author": "camilogaleano.com",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:V%C3%B3lcan_Cotopaxi.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Cotopaxi",
   "fame": 65

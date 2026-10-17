@@ -4,7 +4,6 @@
   "name": "Neuschwanstein Castle",
   "kind": "Landmark",
   "countries": [
-    "Austria",
     "Germany"
   ],
   "continents": [
@@ -17,6 +16,7 @@
   "area_km2": 21.14,
   "built": "1869–c. 1886",
   "culture": "Romanesque Revival",
+  "description": "Neuschwanstein Castle is a 19th-century historicist palace on a rugged hill of the foothills of the Alps in the very south of Germany, near the border with Austria.",
   "world_heritage": false,
   "tags": [
     "Landmark",
@@ -25,7 +25,11 @@
   "map": "places/maps/neuschwanstein_castle.png",
   "photo": {
     "file": "places/photos/neuschwanstein_castle.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Schloss%20Neuschwanstein%202013.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Neuschwanstein%20Castle%202024-02.jpg",
+    "author": "Wilfredor",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Neuschwanstein_Castle_2024-02.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Neuschwanstein_Castle",
   "fame": 93

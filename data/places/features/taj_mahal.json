@@ -16,6 +16,7 @@
   "area_km2": 0.17,
   "built": "1631–1653",
   "culture": "Mughal architecture",
+  "description": "The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India.",
   "world_heritage": true,
   "tags": [
     "Landmark",
@@ -25,7 +26,11 @@
   "map": "places/maps/taj_mahal.png",
   "photo": {
     "file": "places/photos/taj_mahal.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Taj%20Mahal%2C%20Agra%2C%20India%20edit3.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Taj%20Mahal%2C%20Agra%2C%20India%20edit3.jpg",
+    "author": "Taj_Mahal,_Agra,_India_edit2.jpg: Yann; edited by King of Hearts derivative work: Jbarta (talk)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit3.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Taj_Mahal",
   "fame": 184

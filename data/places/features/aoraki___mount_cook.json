@@ -16,6 +16,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "Aoraki / Mount Cook is the highest mountain in New Zealand.",
   "world_heritage": false,
   "tags": [
     "Mountain",
@@ -24,7 +25,11 @@
   "map": "places/maps/aoraki___mount_cook.png",
   "photo": {
     "file": "places/photos/aoraki___mount_cook.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/00%200985%20Mount%20Cook%20-%20New%20Zealand%20Alps.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/00%200985%20Mount%20Cook%20-%20New%20Zealand%20Alps.jpg",
+    "author": "W. Bulach",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:00_0985_Mount_Cook_-_New_Zealand_Alps.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Aoraki_/_Mount_Cook",
   "fame": 69

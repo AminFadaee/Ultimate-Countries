@@ -17,6 +17,7 @@
   "area_km2": 275000.0,
   "built": null,
   "culture": null,
+  "description": "The Tyrrhenian Sea is part of the Mediterranean Sea off the western coast of Italy.",
   "world_heritage": false,
   "tags": [
     "Sea",
@@ -25,5 +26,5 @@
   "map": "places/maps/tyrrhenian_sea.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Tyrrhenian_Sea",
-  "fame": 111
+  "fame": 112
 }

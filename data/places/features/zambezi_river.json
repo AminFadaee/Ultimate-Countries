@@ -4,11 +4,11 @@
   "name": "Zambezi River",
   "kind": "River",
   "countries": [
-    "Zambia",
-    "Mozambique",
     "Angola",
-    "Zimbabwe",
-    "Namibia"
+    "Mozambique",
+    "Namibia",
+    "Zambia",
+    "Zimbabwe"
   ],
   "continents": [
     "Africa"
@@ -20,6 +20,7 @@
   "area_km2": null,
   "built": null,
   "culture": null,
+  "description": "The Zambezi is the fourth-longest river in Africa, the longest east-flowing river in Africa and the largest flowing into the Indian Ocean from Africa.",
   "world_heritage": false,
   "tags": [
     "River",

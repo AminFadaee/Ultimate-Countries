@@ -16,6 +16,7 @@
   "area_km2": 191.3959,
   "built": null,
   "culture": null,
+  "description": "Mount Olympus is an extensive massif near the Thermaic Gulf of the Aegean Sea, in Greece, located on the border between Thessaly and Macedonia, between the regional units of Larissa and Pieria, about 80 km (50 mi) southwest from Thessaloniki.",
   "world_heritage": true,
   "tags": [
     "Mountain",
@@ -25,7 +26,11 @@
   "map": "places/maps/mount_olympus.png",
   "photo": {
     "file": "places/photos/mount_olympus.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt%20Olympus%20aerial%202.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mt%20Olympus%20aerial%202.jpg",
+    "author": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mt_Olympus_aerial_2.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Mount_Olympus",
   "fame": 109
