@@ -49,11 +49,14 @@ from geography.models import (
     Recognition,
     Source,
 )
-from geography.naming import slugify
+from geography.famous_cities import FamousCities
+from geography.labels import CityLabel
+from geography.naming import answer_path, slugify
 from geography.places import CITY_ZOOM, DISTRICT_ZOOM, Nominatim
 from geography.sources import cldr, geonames, iso639, iso4217, pew, restcountries, worldbank
 from geography.sources.http import create_session
 from geography.sources.imf import fetch_government_spending
+from geography.sources.natural_earth_places import load_populated_places
 from geography.sources.restcountries import MEMBERSHIPS, RestCountries
 from geography.sources.wikidata import Wikidata
 from geography.sources.wikipedia import ARTICLE_URL, ListedLanguage, Wikipedia
@@ -122,6 +125,7 @@ class Options:
     refresh_cities: bool = False
     rerender_maps: bool = False
     skip_maps: bool = False
+    only_cities: bool = False
     workers: int = 4
 
 
@@ -189,6 +193,11 @@ class Collector:
         self.nominatim = Nominatim()
 
     def run(self, options: Options) -> None:
+        if options.only_cities:
+            self._collect_famous_cities(options.refresh_cities)
+            self._render_city_maps(options)
+            logger.info("Exported %d countries to %s", self.database.export_json(self.paths.countries), self.paths.countries)
+            return
         raw_countries = [raw for raw in self.restcountries.fetch_all() if restcountries.in_scope(raw)]
         qids = self._resolve_wikidata(raw_countries)
         countries = [restcountries.to_country(raw, qids[raw["uuid"]]) for raw in raw_countries if raw["uuid"] in qids]
@@ -216,6 +225,7 @@ class Collector:
 
         self._build_detail_layer(countries, options.rerender_maps)
         self._collect_cities(countries, options.refresh_cities)
+        self._collect_famous_cities(options.refresh_cities)
         if not options.skip_maps:
             self._render_country_maps(countries, options)
             expected = {self.paths.relative(self._country_map_path(country)) for country in countries}
@@ -477,6 +487,20 @@ class Collector:
         self.database.save_cities([city for city_id, city in details.items() if city_id in linked])
         logger.info("Cities: %d stored", len(linked))
 
+    def _collect_famous_cities(self, refresh: bool) -> None:
+        rows = self.database.country_codes()
+        countries = {code: row["id"] for row in rows for code in (row["alpha_3"], row["alpha_2"]) if code}
+        cutoff = (datetime.now(UTC) - CITY_MAX_AGE).date()
+        retrieved = self.database.retrieved(rows[0]["id"], Field.FAMOUS_CITIES)
+        if not refresh and retrieved and retrieved > cutoff:
+            return
+        selected = FamousCities(self.wikidata, self.wikipedia, load_populated_places(), countries).select()
+        provenance = Provenance(Source.WIKIDATA)
+        for row in rows:
+            self.database.link_cities(row["id"], CityRole.FAMOUS, selected.get(row["id"], []), provenance)
+        self.database.save_cities(list(self.wikidata.city_details({qid for found in selected.values() for qid in found}).values()))
+        logger.info("Famous cities: %d in %d countries", sum(map(len, selected.values())), len(selected))
+
     def _largest_cities(self, countries: list[Country]) -> dict[str, list[str]]:
         by_code = geonames.fetch_largest_cities(self.session, LARGEST_CANDIDATES)
         cities = {country.id: by_code.get(country.alpha_2 or "", []) for country in countries}
@@ -626,12 +650,14 @@ class Collector:
         return self.paths.city_maps / f"{slugify(city['entity_name'])}__{slugify(city['name'])}.png"
 
     def _render_city_maps(self, options: Options) -> None:
+        self.database.clear_unused_city_maps()
         cities = [
             city
             for city in self.database.city_map_targets()
             if options.rerender_maps
             or city["map"] != self.paths.relative(self._city_map_path(city))
             or not (self.paths.root / city["map"]).exists()
+            or not answer_path(self.paths.root / city["map"]).exists()
         ]
         polygons = self.nominatim.relations([city["osm_relation"] for city in cities if city["osm_relation"]])
 
@@ -645,7 +671,18 @@ class Collector:
                 continue
             sources[source] += 1
             jobs.append(
-                MapJob(city["id"], city["entity_id"], output, city["entity_name"], city["alpha_3"], city["name"], geometry, point)
+                MapJob(
+                    city["id"],
+                    city["entity_id"],
+                    output,
+                    city["entity_name"],
+                    city["alpha_3"],
+                    city["name"],
+                    geometry,
+                    point,
+                    answer_path(output),
+                    self._labelled_cities(city),
+                )
             )
         logger.info("City shapes: %s", dict(sources))
 
@@ -655,7 +692,14 @@ class Collector:
             else:
                 self.database.set_city_map(job.key, self.paths.relative(job.output))
         referenced = {row["map"] for row in self.database.city_map_targets() if row["map"]}
-        self._remove_orphans(self.paths.city_maps, referenced, "city maps")
+        self._remove_orphans(self.paths.city_maps, referenced | {answer_path(path) for path in referenced}, "city maps")
+
+    def _labelled_cities(self, target) -> tuple[CityLabel, ...]:
+        cities: dict[str, CityLabel] = {}
+        for row in self.database.entity_cities(target["entity_id"]):
+            capital = row["role"] == CityRole.CAPITAL or (row["id"] in cities and cities[row["id"]].capital)
+            cities[row["id"]] = CityLabel(row["name"], row["longitude"], row["latitude"], capital, row["id"] == target["id"])
+        return tuple(cities.values())
 
     def _remove_orphans(self, directory: pathlib.Path, referenced: set[str], kind: str) -> None:
         orphans = [path for path in directory.glob("*") if path.is_file() and self.paths.relative(path) not in referenced]

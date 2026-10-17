@@ -5,7 +5,7 @@ from dataclasses import asdict, fields
 from datetime import UTC, date, datetime
 
 from geography.models import City, CityRole, Country, Field, Provenance
-from geography.naming import slugify
+from geography.naming import answer_path, slugify
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS entity (
@@ -186,7 +186,7 @@ ECONOMY_COLUMNS = [
 CITY_COLUMNS = [f.name for f in fields(City)]
 BOOLEAN_COLUMNS = ("sovereign", "disputed", "un_member", "un_observer", "economic_system_disputed")
 CHILD_TABLES = ("continent", "currency", "other_demonym", "language", "official_religion", "religion", "membership", "founding", "recognition", "recognising_state", "claimant")
-ROLE_FIELDS = {CityRole.CAPITAL: Field.CAPITALS, CityRole.NOTABLE: Field.NOTABLE_CITIES}
+ROLE_FIELDS = {CityRole.CAPITAL: Field.CAPITALS, CityRole.NOTABLE: Field.NOTABLE_CITIES, CityRole.FAMOUS: Field.FAMOUS_CITIES}
 
 
 def today() -> str:
@@ -269,16 +269,37 @@ class Database:
             )
             self.connection.execute("DELETE FROM city WHERE id NOT IN (SELECT city_id FROM entity_city)")
 
+    def country_codes(self) -> list[sqlite3.Row]:
+        return self.connection.execute("SELECT id, alpha_2, alpha_3 FROM entity").fetchall()
+
     def city_map_targets(self) -> list[sqlite3.Row]:
         return self.connection.execute(
             """
             SELECT city.*, entity.id AS entity_id, entity.name AS entity_name, entity.alpha_3
             FROM city
-            JOIN entity_city ON entity_city.city_id = city.id
+            JOIN entity_city ON entity_city.city_id = city.id AND entity_city.role = ?
             JOIN entity ON entity.id = entity_city.entity_id
             GROUP BY city.id
             ORDER BY entity.name, city.name
+            """,
+            (CityRole.FAMOUS,),
+        ).fetchall()
+
+    def clear_unused_city_maps(self) -> None:
+        with self.connection:
+            self.connection.execute(
+                "UPDATE city SET map = NULL WHERE id NOT IN (SELECT city_id FROM entity_city WHERE role = ?)", (CityRole.FAMOUS,)
+            )
+
+    def entity_cities(self, entity_id: str) -> list[sqlite3.Row]:
+        return self.connection.execute(
             """
+            SELECT city.id, city.name, city.latitude, city.longitude, entity_city.role
+            FROM entity_city JOIN city ON city.id = entity_city.city_id
+            WHERE entity_city.entity_id = ? AND city.latitude IS NOT NULL
+            ORDER BY entity_city.role, entity_city.rank
+            """,
+            (entity_id,),
         ).fetchall()
 
     def set_city_map(self, city_id: str, path: str) -> None:
@@ -387,8 +408,8 @@ class Database:
             "claimants": [r["name"] for r in self._rows("SELECT name FROM claimant WHERE entity_id = ? ORDER BY rank", entity_id)],
         }
 
-    def _rows(self, query: str, entity_id: str) -> list[dict]:
-        return [dict(row) for row in self.connection.execute(query, (entity_id,))]
+    def _rows(self, query: str, *parameters: str) -> list[dict]:
+        return [dict(row) for row in self.connection.execute(query, parameters)]
 
     def _document(self, entity: sqlite3.Row) -> dict:
         entity_id = entity["id"]
@@ -397,13 +418,26 @@ class Database:
             row[column] = bool(row[column])
         cities = self._rows(
             """
-            SELECT entity_city.role, city.id, city.name, city.latitude, city.longitude, city.population, city.map
+            SELECT entity_city.role, city.id, city.name, city.latitude, city.longitude, city.population
             FROM entity_city JOIN city ON city.id = entity_city.city_id
-            WHERE entity_city.entity_id = ?
+            WHERE entity_city.entity_id = ? AND entity_city.role != ?
             ORDER BY entity_city.role, entity_city.rank
             """,
             entity_id,
+            CityRole.FAMOUS,
         )
+        famous = self._rows(
+            """
+            SELECT city.id, city.name, city.latitude, city.longitude, city.population, city.map
+            FROM entity_city JOIN city ON city.id = entity_city.city_id
+            WHERE entity_city.entity_id = ? AND entity_city.role = ?
+            ORDER BY entity_city.rank
+            """,
+            entity_id,
+            CityRole.FAMOUS,
+        )
+        for city in famous:
+            city["answer_map"] = answer_path(city["map"]) if city["map"] else None
         founding = next(iter(self._rows("SELECT * FROM founding WHERE entity_id = ?", entity_id)), {})
         return {
             "id": entity_id,
@@ -426,6 +460,7 @@ class Database:
             },
             "capitals": [city["name"] for city in cities if city["role"] == CityRole.CAPITAL],
             "cities": cities,
+            "famous_cities": famous,
             "currencies": [
                 {**currency, "main": bool(currency["main"])}
                 for currency in self._rows("SELECT code, name, symbol, main FROM currency WHERE entity_id = ? ORDER BY main DESC, code", entity_id)

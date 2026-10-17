@@ -47,6 +47,9 @@ def parse_args() -> argparse.Namespace:
     collect.add_argument("--refresh-cities", action="store_true", help="re-rank cities even if recently updated")
     collect.add_argument("--rerender-maps", action="store_true", help="render maps even if they already exist")
     collect.add_argument("--skip-maps", action="store_true", help="collect data without rendering maps")
+    collect.add_argument(
+        "--only-cities", action="store_true", help="select famous cities and render their maps, refreshing no other data"
+    )
     collect.add_argument("--workers", type=int, default=Options.workers, help="parallel map renderers")
 
     check = commands.add_parser("check", help="score the dataset against the reference set and scan for anomalies")
@@ -114,7 +117,7 @@ def main() -> None:
 
     match args.command:
         case "collect":
-            options = Options(args.refresh_cities, args.rerender_maps, args.skip_maps, args.workers)
+            options = Options(args.refresh_cities, args.rerender_maps, args.skip_maps, args.only_cities, args.workers)
             collect(args.data_dir, options)
         case "check":
             check(args.data_dir, args.reference, args.details)
