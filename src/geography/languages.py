@@ -45,14 +45,13 @@ def merge_languages(
         match = next((language for language in official if use.code in own_codes[id(language)]), None)
         if match is None:
             match = next((language for language in official if covers(matches[id(language)], use.code, codes)), None)
-        by_code = match is not None
         if match is None:
             match = next((language for language in official if not language.codes and same_name(language.name, use.name)), None)
         if match is None:
             languages.append(Language(use.name, use.code, None, use.percent))
             continue
         matched.add(id(match))
-        languages.append(Language(use.name if by_code else match.name, use.code, official_status(match), use.percent))
+        languages.append(Language(use.name, use.code, official_status(match), use.percent))
 
     for language in official:
         if id(language) not in matched:

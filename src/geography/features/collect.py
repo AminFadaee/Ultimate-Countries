@@ -29,9 +29,9 @@ BORDER_RADIUS_M = {Kind.WATERFALL: 6_000, Kind.MOUNTAIN: 8_000, Kind.VOLCANO: 8_
 INFOBOX_KINDS = {Kind.LANDMARK, Kind.CANAL}
 WITHOUT_COUNTRIES = {Kind.CONTINENT, Kind.OCEAN}
 WITHOUT_CONTINENT = {Kind.OCEAN, Kind.LINE}
-CLAIMED_SHAPES = {Shape.POINT, Shape.LINE}
 AREA_TOLERANCE = 5
 MIN_CONTINENT_SHARE = 0.1
+NEAREST_CONTINENT_M = 1_000_000
 CONTINENT_TAGS = {
     "AFRICA": "Africa",
     "ANTARCTICA": "Antarctica",
@@ -115,7 +115,7 @@ class PlacesCollector:
             feature.world_heritage = facts.world_heritage
 
     def _add_countries(self, features: list[Feature], locator: CountryLocator, catalog: Catalog) -> None:
-        claimed = catalog.queries.countries({feature.qid for feature in features if feature.qid and feature.kind.spec.shape in CLAIMED_SHAPES})
+        claimed = catalog.queries.countries({feature.qid for feature in features if feature.qid})
         by_id = {country.id: country for country in locator.ours.values()}
         for feature in features:
             if feature.kind in WITHOUT_COUNTRIES or feature.countries:
@@ -146,10 +146,12 @@ class PlacesCollector:
     def _add_continents(self, features: list[Feature]) -> None:
         regions = load_layer(PhysicalLayer.REGIONS)
         continents = regions[regions["featurecla"] == "Continent"].to_crs(EQUAL_AREA)
+        continents["geometry"] = continents.geometry.make_valid()
         for feature in features:
             if feature.kind in WITHOUT_CONTINENT:
                 continue
-            found = continents_of(feature.geometry.to_crs(EQUAL_AREA).union_all(), continents)
+            shape = feature.geometry.to_crs(EQUAL_AREA).make_valid().union_all()
+            found = continents_of(shape, continents) or nearest_continent(shape, continents)
             feature.continents = sorted(found or {country.continent for country in feature.countries if country.continent})
 
     def _add_cities(self, features: list[Feature], catalog: Catalog) -> None:
@@ -250,6 +252,12 @@ def continents_of(shape, continents: gpd.GeoDataFrame) -> set[str]:
         if tag and total and measure(shape.intersection(row.geometry)) / total >= MIN_CONTINENT_SHARE:
             found.add(tag)
     return found
+
+
+def nearest_continent(shape, continents: gpd.GeoDataFrame) -> set[str]:
+    distances = {tag: shape.distance(row.geometry) for row in continents.itertuples() if (tag := CONTINENT_TAGS.get(row.name))}
+    tag = min(distances, key=distances.get, default=None)
+    return {tag} if tag and distances[tag] <= NEAREST_CONTINENT_M else set()
 
 
 def plausible_area(feature: Feature, area_km2: float | None) -> bool:
