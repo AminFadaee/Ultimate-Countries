@@ -11,8 +11,8 @@ See [Ultimate Places](#ultimate-places) below.
 
 It is inspired by [Ultimate Geography](https://github.com/anki-geo/ultimate-geography), the deck that got me excited
 about learning geography. Ultimate Countries covers every country and territory with a permanent population: 247 in
-all, each with its flag, map and capital, plus demonyms, languages, currencies, religions, population, government and
-city maps.
+all, each with its flag, map and capital to learn, plus demonym, languages, currency, religion, population and
+government as facts on the back of the cards, and city maps.
 
 Every value comes from public sources through code. There are no hand-written overrides, so the whole dataset can be
 rebuilt on any day to pick up changes (new currencies, new members of an organisation, updated population figures).
@@ -23,22 +23,19 @@ Two note types, with each kind of question in its own subdeck.
 
 ### Country notes
 
-| Subdeck | Question | Answer | Also shown |
-|---|---|---|---|
-| Capitals | Capital: France | Paris | Number of capitals, when there are several |
-| Capitals | Capital of: Paris | France | |
-| Flags | the flag | France | |
-| Maps | the locator map | France | |
-| Demonyms | Demonym: France | French | Female form, other demonyms |
-| Languages | Language: Switzerland | German, French, Italian, Romansh | Other languages and the share of people who speak them |
-| Currencies | Currency: Panama | Panamanian balboa | Other currencies in use |
-| Religions | Religion: Malta | Catholicism | Whether it is the state religion or the largest one, and the breakdown |
-| Population | Population: Nigeria | ~238 million (2025) | Exact figure |
-| Government | Government: Germany | Federal parliamentary republic | Full description (sovereign states only) |
+Four question cards per country:
 
-Every card also shows the region and the country's notable cities.
+| Subdeck | Question | Answer |
+|---|---|---|
+| Capitals | Capital: France | Paris |
+| Capitals | Capital of: Paris | France |
+| Flags | the flag | France |
+| Maps | the locator map | France |
 
-A card is only created when its data exists: Antarctica has no language card and territories have no government card.
+The back of every card also shows facts about the country: demonym, languages, currency, religion, population and form
+of government and notable cities, under a line with its region. They are there to read, not to be quizzed on.
+
+A card is only created when its data exists, and a fact that is missing is simply left out.
 
 Tap or click a country map to zoom in on that spot; drag to look around, and tap again to close.
 
@@ -47,12 +44,6 @@ Tap or click a country map to zoom in on that spot; drag to look around, and tap
   <img src="docs/samples/countries-capital-of.webp" width="49%" alt="Capital of card for Paris">
   <img src="docs/samples/countries-flag.webp" width="49%" alt="Flag card for France">
   <img src="docs/samples/countries-map.webp" width="49%" alt="Map card for France">
-  <img src="docs/samples/countries-demonym.webp" width="49%" alt="Demonym card for France">
-  <img src="docs/samples/countries-language.webp" width="49%" alt="Language card for Switzerland">
-  <img src="docs/samples/countries-currency.webp" width="49%" alt="Currency card for Panama">
-  <img src="docs/samples/countries-religion.webp" width="49%" alt="Religion card for Malta">
-  <img src="docs/samples/countries-population.webp" width="49%" alt="Population card for Nigeria">
-  <img src="docs/samples/countries-government.webp" width="49%" alt="Government card for Germany">
 </p>
 
 ### City notes
@@ -81,6 +72,15 @@ Notes are tagged so you can filter or suspend groups of them:
 
 To skip a kind of question, suspend its subdeck rather than deleting it: deleted cards come back when you import an
 update.
+
+### Updating from an older version
+
+Older versions also asked demonym, language, currency, religion, population and government questions. Those are now
+facts on the card backs. Importing the new version does not delete the old cards by itself. After importing, choose
+Tools → Empty Cards and delete them, then delete the empty subdecks (Demonyms, Languages, Currencies, Religions,
+Population and Government). Your progress on capitals, flags and maps is kept. The note type also keeps six unused
+fields (`DemonymInfo`, `LanguageInfo`, `CurrencyInfo`, `ReligionInfo`, `PopulationInfo`, `GovernmentInfo`), which you
+can delete under Tools → Manage Note Types → Fields.
 
 ## Ultimate Places
 
@@ -163,7 +163,7 @@ echo 'RESTCOUNTRIES_API_KEY=your-key' > .env
 
 ```sh
 uv run geography collect      # fetch data, flags, city lists and render maps into data/
-uv run geography check        # accuracy against the reference set, anomalies, card coverage
+uv run geography check        # accuracy against the reference set, anomalies, card and fact coverage
 uv run geography deck         # build build/ultimate_countries.apkg
 uv run geography places       # collect places, photos and maps into data/places/
 uv run geography places-deck  # build build/ultimate_places.apkg
@@ -210,7 +210,7 @@ Versions are dates, so the version says how fresh the data is. Pushing the tag b
 
 `reference/countries.json` holds hand-checked answers for 46 countries. It is only used to measure accuracy and never
 feeds into the data. `geography check` scores every field against it, scans all entries for anomalies (duplicate
-languages, capitals smaller than they should be, contradictory flags) and reports how many cards each field produces.
+languages, capitals smaller than they should be, contradictory flags) and reports how many countries have each card and fact.
 
 ## Repository layout
 
