@@ -62,13 +62,14 @@ def fetch_language_use(session: requests.Session, codes: LanguageCodes) -> Langu
     return LanguageUse(supplemental["version"]["_cldrVersion"], territories)
 
 
-def fetch_subregions(session: requests.Session) -> dict[str, str]:
+def fetch_subregions(session: requests.Session) -> dict[str, tuple[str, str]]:
     containment = fetch_json(session, TERRITORY_CONTAINMENT_URL)["supplemental"]["territoryContainment"]
     names = fetch_json(session, TERRITORY_NAMES_URL)["main"]["en"]["localeDisplayNames"]["territories"]
+    continents = {member: continent for continent in UN_CONTINENTS - {"001"} for member in containment[continent]["_contains"]}
     return {
-        territory: names[group]
+        territory: (names[continents[group]], names[group])
         for group, entry in containment.items()
-        if group.isdigit() and group not in UN_CONTINENTS and group in names
+        if group in continents and group in names
         for territory in entry["_contains"]
         if not territory.isdigit()
     }

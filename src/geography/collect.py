@@ -274,7 +274,7 @@ class Collector:
     def _add_subregions(self, countries: list[Country]) -> None:
         subregions = cldr.fetch_subregions(self.session)
         for country in countries:
-            country.subregion = subregions.get(country.alpha_2 or "", country.subregion)
+            country.region, country.subregion = subregions.get(country.alpha_2 or "", (country.region, country.subregion))
 
     def _correct_demonyms(self, countries: list[Country]) -> None:
         options = self.wikidata.demonyms({country.id for country in countries})

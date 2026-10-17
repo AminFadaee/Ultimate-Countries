@@ -327,6 +327,13 @@ def worth_keeping(note: re.Match) -> str:
     return "" if foreign or "§" in inner or inner.casefold().startswith("see ") else note.group()
 
 
+def first_entry(cell) -> str | None:
+    entry = copy.deepcopy(cell)
+    for separator in entry.xpath(".//br | .//li"):
+        separator.tail = f", {separator.tail or ''}"
+    return (cell_text(entry) or "").split(",")[0].strip() or None
+
+
 def sentence_of(text: str) -> str | None:
     text = PARENTHETICAL.sub(worth_keeping, FOOTNOTE.sub("", text))
     text = BEFORE_PUNCTUATION.sub(r"\1", SPACES.sub(" ", text).strip())
@@ -513,7 +520,7 @@ class Wikipedia:
             elif finished is None and label.startswith(END_FIELDS):
                 finished = first_year(text, YEAR_RANGE if label == "built" else YEAR)
             if culture is None and label in CULTURE_FIELDS:
-                culture = text.split(",")[0].strip() or None
+                culture = first_entry(value[0])
             if not members and label in MEMBER_FIELDS:
                 members = listed_members(value[0])
         return Infobox(built_range(started, finished), culture, members)
