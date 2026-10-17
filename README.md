@@ -64,13 +64,14 @@ is only outlined and magnified. The back of the card shows the same map with tha
 
 ### Tags
 
-Notes are tagged so you can filter or suspend groups of them:
+Notes are tagged so you can filter or suspend groups of them. The tags describe groups worth choosing between, never a
+single country; to study one place, search for its name.
 
+- kind: `UC::Country`, `UC::City`
 - region and subregion: `UC::Asia`, `UC::Western_Europe`
 - status: `UC::Sovereign`, `UC::Territory`, `UC::Disputed`
 - memberships: `UC::European_Union`, `UC::NATO`, `UC::ASEAN`, …
-- currency: `UC::Euro`, `UC::West_African_CFA_franc`, …
-- cities: `UC::City`, `UC::Capital`
+- cities: `UC::Capital`, and `UC::Most_visited` for those on Wikipedia's most-visited cities lists
 
 ### Everything in one deck
 
@@ -102,6 +103,7 @@ that changed. To update:
 4. Importing does not remove cities that are no longer in the deck. In the Browser, search for
    `"note:Ultimate Countries city" MapAnswer:`, which finds the old city notes, select them all and delete them.
 5. Choose Tools → Check Media → Delete Unused to clear the old city maps.
+6. In the Browser sidebar, right-click Tags and choose Clear Unused Tags to drop the old currency and country-name tags.
 
 The note type also keeps six unused fields (`DemonymInfo`, `LanguageInfo`, `CurrencyInfo`, `ReligionInfo`,
 `PopulationInfo`, `GovernmentInfo`), which you can delete under Tools → Manage Note Types → Fields.
