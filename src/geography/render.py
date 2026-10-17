@@ -39,6 +39,8 @@ INSET_WIDTH = 0.26
 INSET_MARGIN = 0.02
 
 ZOOM_THRESHOLD = 0.02
+SPECK_SHARE = 0.025
+RING_SHARE = 0.016
 LENS_PADDING = 3
 LENS_RADIUS = 1.1
 LENS_MARGIN = 0.25
@@ -330,10 +332,10 @@ def get_frame(area: gpd.GeoSeries, projection: ccrs.Projection, aspect_ratio: fl
     if framing is Framing.REGION:
         height = max(pad(maxy - miny, FRAME_MARGIN_Y), MIN_FRAME_HEIGHT)
         width = max(pad(maxx - minx, FRAME_MARGIN_X), aspect_ratio * height)
-        return Extent(width, height)
+        return Extent(width, width / aspect_ratio)
     height = max((maxy - miny) * (1 + 2 * COUNTRY_FRAME_MARGIN), MIN_COUNTRY_FRAME_HEIGHT)
     width = max((maxx - minx) * (1 + 2 * COUNTRY_FRAME_MARGIN), aspect_ratio * height)
-    return Extent(width, height, (minx + maxx) / 2, (miny + maxy) / 2)
+    return Extent(width, width / aspect_ratio, (minx + maxx) / 2, (miny + maxy) / 2)
 
 
 def get_zoom(
@@ -387,11 +389,11 @@ class LocatorMap:
     ) -> None:
         self.render(Scene.for_place(place, borders), out_path)
 
-    def _save(self, fig: Figure, out_path: pathlib.Path) -> None:
+    def _save(self, fig: Figure, out_path: pathlib.Path, style: Style) -> None:
         rendered = io.BytesIO()
         fig.savefig(rendered, dpi=self.dpi, format="png")
         rendered.seek(0)
-        save_compact(rendered, out_path)
+        save_compact(rendered, out_path, (style.highlight, style.host, style.outline, Color.DISPUTED))
 
     def render(self, scene: Scene, out_path: pathlib.Path, answer_path: pathlib.Path | None = None) -> None:
         mainland = get_mainland(scene.frame)
@@ -406,18 +408,18 @@ class LocatorMap:
 
         fig = plt.figure(figsize=(self.width, self.width * extent.height / extent.width))
         try:
-            self._plot_main(fig, scene, projection, extent)
+            self._plot_main(fig, scene, projection, extent, mark_specks=zoom is None)
             self._plot_inset(fig, projection, extent, inset_corner)
             if zoom:
                 self._plot_zoom(fig, scene, projection, extent, zoom, inset_corner)
             if scene.cities:
                 labels = CityLabels(fig, fig.axes[0], projection, extent, scene.cities, scene.style.highlight)
                 labels.show_answer(False)
-                self._save(fig, out_path)
+                self._save(fig, out_path, scene.style)
                 labels.show_answer(True)
-                self._save(fig, answer_path)
+                self._save(fig, answer_path, scene.style)
             else:
-                self._save(fig, out_path)
+                self._save(fig, out_path, scene.style)
         finally:
             plt.close(fig)
 
@@ -448,7 +450,7 @@ class LocatorMap:
                 self._plot_inset(fig, scene.projection, extent, corner)
             else:
                 self._plot_inset_shape(fig, scene.inset_shape, corner)
-            self._save(fig, out_path)
+            self._save(fig, out_path, scene.style)
         finally:
             plt.close(fig)
 
@@ -483,7 +485,7 @@ class LocatorMap:
                     lines.to_crs(GEODETIC.proj4_init), crs=GEODETIC, facecolor="none", edgecolor=style.highlight,
                     linewidth=WORLD_LINE_WIDTH, zorder=6,
                 )
-            self._save(fig, out_path)
+            self._save(fig, out_path, style)
         finally:
             plt.close(fig)
 
@@ -578,10 +580,23 @@ class LocatorMap:
             zorder=5,
         )
 
-    def _plot_main(self, fig: Figure, scene: Scene, projection: ccrs.Projection, extent: Extent) -> None:
+    def _plot_main(
+        self, fig: Figure, scene: Scene, projection: ccrs.Projection, extent: Extent, mark_specks: bool = False
+    ) -> None:
         ax = fig.add_axes([0, 0, 1, 1], projection=projection)
         ax.spines["geo"].set_visible(False)
         self._draw_layers(ax, scene, projection, extent)
+        if mark_specks:
+            self._mark_specks(ax, scene, projection, extent)
+
+    def _mark_specks(self, ax, scene: Scene, projection: ccrs.Projection, extent: Extent) -> None:
+        parts = scene.highlight.explode(index_parts=False).to_crs(projection)
+        sizes = np.maximum(parts.bounds.maxx - parts.bounds.minx, parts.bounds.maxy - parts.bounds.miny)
+        specks = parts[(sizes < SPECK_SHARE * extent.width) & ~parts.is_empty]
+        if specks.empty:
+            return
+        rings = specks.centroid.buffer(RING_SHARE * extent.width).union_all().boundary
+        ax.add_geometries([rings], crs=projection, facecolor="none", edgecolor=scene.style.outline, linewidth=1.2, zorder=6)
 
     def _plot_inset(self, fig: Figure, projection: ccrs.Projection, extent: Extent, corner: Corner) -> None:
         inset = self._inset_axes(fig, corner)
