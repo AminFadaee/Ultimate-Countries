@@ -592,9 +592,10 @@ class LocatorMap:
     def _mark_specks(self, ax, scene: Scene, projection: ccrs.Projection, extent: Extent) -> None:
         parts = scene.highlight.explode(index_parts=False).to_crs(projection)
         sizes = np.maximum(parts.bounds.maxx - parts.bounds.minx, parts.bounds.maxy - parts.bounds.miny)
-        specks = parts[(sizes < SPECK_SHARE * extent.width) & ~parts.is_empty]
-        if specks.empty:
+        small = (sizes < SPECK_SHARE * extent.width) & ~parts.is_empty
+        if small.empty or not small.all():
             return
+        specks = parts[small]
         rings = specks.centroid.buffer(RING_SHARE * extent.width).union_all().boundary
         ax.add_geometries([rings], crs=projection, facecolor="none", edgecolor=Color.INSET_BOX, linewidth=1.2, zorder=6)
 

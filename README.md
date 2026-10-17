@@ -48,7 +48,7 @@ Tap or click a country or city map to zoom in on that spot; drag to look around,
 
 ### City notes
 
-The best-known cities of the world, 186 of them in 100 countries, each with its own locator map. The map is drawn like
+The best-known cities of the world, 185 of them in 100 countries, each with its own locator map. The map is drawn like
 an atlas page: the country's other cities are marked and named, the capital with a star, and the city being asked about
 is only outlined and magnified. The back of the card shows the same map with that city's name added:
 
@@ -130,13 +130,13 @@ To leave a kind out for good, open the Browser, search for its tag and suspend t
 | Mountains and volcanoes | Natural Earth peaks and Wikidata | Well known; volcanoes by their Wikidata type |
 | Waterfalls, canyons, canals | Wikidata, with shapes from Natural Earth and OpenStreetMap | The best known of each kind |
 | Rainforests | RESOLVE Ecoregions 2017 | Large continuous blocks of tropical moist forest, named after the forest or the basin or island they cover |
-| Regions | Wikipedia | Regions whose Wikipedia infobox lists their countries (Scandinavia, the Middle East…), drawn from those countries |
+| Regions | Wikipedia | Regions whose Wikipedia infobox lists their countries (Scandinavia, the Middle East…), drawn from those countries and listed with all of them |
 | Landmarks | Wikidata | World Heritage sites and famous structures that are buildings, monuments or archaeological sites; living cities are left out |
 | Lines | Natural Earth | The Equator, the tropics, the polar circles and the International Date Line, plus the Prime Meridian |
 
 Countries are computed from the shapes: the countries that hold a share of an area, border a sea or lake, or are
 crossed by a river. Facts (heights, lengths, areas) come from Wikidata, converted to metric; build dates and cultures
-from the Wikipedia infobox; photos from Wikimedia Commons.
+from the Wikipedia infobox; the sentence on the back of each card from the English Wikipedia summary; photos from Wikimedia Commons, with their author and licence recorded in `data/places/CREDITS.md`. A place inside a disputed area is listed with its city only, not a country.
 
 ## How the data is chosen
 
@@ -144,9 +144,10 @@ from the Wikipedia infobox; photos from Wikimedia Commons.
 |---|---|---|
 | Country list | ISO 3166, restcountries | Every entity with an ISO 3166 code, plus sovereign states without one (Kosovo, Abkhazia…), keeping only places with a permanent population: listed in Wikipedia's population list, or at least 2,250 people |
 | Name | Wikipedia | The title of the country's English Wikipedia article, which follows the most common English name |
+| Subregion | Unicode CLDR | The UN geoscheme subregion of each country |
 | Demonym, currencies, government label, capitals | restcountries | Demonym spelling cross-checked with Wikidata |
-| Capital cities, notable cities, city populations | Wikidata, GeoNames | Up to five notable cities per country rank on fame (Wikipedia sitelinks) and size, skipping suburbs and villages. They are the "Cities" chip on the cards and the labels on the city maps |
-| City cards | Natural Earth populated places, Wikidata, Wikipedia | A city that Wikipedia covers in at least 180 languages and that has at least 100,000 people, or one on Wikipedia's most-visited cities lists (Euromonitor, Mastercard) with at least 100 languages. At most eight per country, ranked by fame and size; cities that are countries themselves are left out |
+| Capital cities, notable cities, city populations | Wikidata, GeoNames | Up to five notable cities per country rank on fame (Wikipedia sitelinks) and size, skipping suburbs, villages, islands, archaeological sites and administrative divisions. Cities are named by the shorter of their Wikidata label and English Wikipedia title. They are the "Cities" chip on the cards and the labels on the city maps |
+| City cards | Natural Earth populated places, Wikidata, Wikipedia | A city that Wikipedia covers in at least 180 languages, that has at least 100,000 people and that its English article read at least 25,000 times in the past year, or one on Wikipedia's most-visited cities lists (Euromonitor, Mastercard) with at least 100 languages (and the same readership). At most eight per country, ranked by fame and size; cities that are countries themselves are left out |
 | Population | World Bank | Latest figure, at most 5 years old; restcountries otherwise |
 | Official languages | Wikipedia, Wikidata | National and regional status from Wikipedia's list of official languages |
 | Spoken languages | Unicode CLDR | Includes second-language speakers |
@@ -155,7 +156,7 @@ from the Wikipedia infobox; photos from Wikimedia Commons.
 | Main currency | ISO 4217 | A real ISO currency, preferring the country's own |
 | Government form | restcountries, Wikidata | Short form derived from the full label by keyword rules |
 | Memberships | restcountries, Wikidata | Wikidata adds only recent joins that both sides of the membership record |
-| Maps | Natural Earth, OpenStreetMap | Rendered locally |
+| Maps | Natural Earth, OpenStreetMap | Rendered locally. Disputed areas in Natural Earth are shaded on the map of every country that claims or administers them |
 
 When sources disagree and no rule settles it, the field is left empty rather than guessed.
 
