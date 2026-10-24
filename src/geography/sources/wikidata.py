@@ -445,16 +445,16 @@ class Wikidata:
 
     def _select(self, query: str) -> list[dict[str, str]]:
         for attempt in range(1, QUERY_ATTEMPTS + 1):
-            response = self.session.post(
-                SPARQL_URL,
-                data={"query": query},
-                headers={"Accept": "application/sparql-results+json"},
-                timeout=TIMEOUT,
-            )
-            response.raise_for_status()
             try:
+                response = self.session.post(
+                    SPARQL_URL,
+                    data={"query": query},
+                    headers={"Accept": "application/sparql-results+json"},
+                    timeout=TIMEOUT,
+                )
+                response.raise_for_status()
                 bindings = response.json()["results"]["bindings"]
-            except requests.JSONDecodeError:
+            except (requests.JSONDecodeError, requests.exceptions.ChunkedEncodingError, requests.exceptions.ConnectionError):
                 if attempt == QUERY_ATTEMPTS:
                     raise
                 time.sleep(RETRY_DELAY * attempt)

@@ -8,8 +8,9 @@ from dataclasses import dataclass
 
 from geography.data import NaturalEarth
 from geography.detail import DetailLayers
+from geography.labels import CityLabel
 from geography.map_cache import through_cache
-from geography.maps import our_country_names
+from geography.maps import MapJob, our_country_names, render_maps
 from geography.naming import slugify
 from geography.render import Framing, LocatorMap, Naming, Scene
 
@@ -72,6 +73,28 @@ def jobs_for(directory: pathlib.Path) -> list[AreaMapJob]:
         jobs.append(AreaMapJob("neighbour", host, neighbour["alpha_3"], neighbour["name"], output, answer_path(output)))
     logger.info("%d maps for %s", len(jobs), meta["name"])
     return jobs
+
+
+def city_jobs(directory: pathlib.Path, documents: dict[str, dict]) -> list[MapJob]:
+    meta = json.loads((directory / "meta.json").read_text())
+    country = documents[meta["code"]]
+    capitals = {city["id"] for city in country["cities"] if city["role"] == "capital"}
+    cities = sorted(json.loads((directory / "cities.json").read_text()), key=lambda city: -city["population"])
+    maps = directory / "maps"
+    jobs = []
+    for city in cities:
+        labels = tuple(CityLabel(other["name"], other["longitude"], other["latitude"], other["id"] in capitals, other["id"] == city["id"]) for other in cities)
+        output = maps / f"city__{slugify(city['name'])}.png"
+        jobs.append(MapJob(city["id"], country["id"], output, country["name"], meta["code"], city["name"], None, (city["longitude"], city["latitude"]),
+                           answer_path(output), labels))
+    return jobs
+
+
+def draw_city_maps(jobs: list[MapJob], workers: int, rerender: bool) -> None:
+    pending = [job for job in jobs if rerender or not (job.output.exists() and job.answer_output.exists())]
+    for job, error in render_maps(pending, workers):
+        if error:
+            logger.error("Map failed for %s: %s", job.place_name, error)
 
 
 def answer_path(path: pathlib.Path) -> pathlib.Path:

@@ -37,15 +37,18 @@ from geography.naming import slugify
 logger = logging.getLogger(__name__)
 PROVINCE_MODEL_ID = 1_730_418_570
 NEIGHBOUR_MODEL_ID = 1_730_418_571
+CITY_MODEL_ID = 1_730_418_572
 MODEL_FAMILY = "Ultimate Nation"
 TAG_UNSAFE = re.compile(r"[^\w-]+")
 NATIVE_LINE = '{{#Native}}<div class="subtitle">{{Native}}</div>{{/Native}}'
 KIND_CONTEXT = "{{Country}} · {{Kind}}"
 
 PROVINCE_FIELDS = ("Id", "Name", "Native", "Centre", "CentreNative", "Map", "MapAnswer", "Population", "Area", "Country", "Kind")
+CITY_FIELDS = ("Id", "City", "Native", "Province", "ProvinceNative", "Map", "MapAnswer", "Population", "Country", "Kind", "IsCentre")
 NEIGHBOUR_FIELDS = ("Id", "Name", "Flag", "Map", "MapAnswer", "Capital", "Country", "Kind", *(fact.field for fact in FACTS))
 
 PROVINCE_CHIPS = '<div class="facts">' + chip("Centre", "Centre") + chip("Population", "Population") + chip("Area", "Area") + "</div>"
+CITY_CHIPS = '<div class="facts">' + chip("Province", "Province") + chip("Population", "Population") + "</div>"
 NEIGHBOUR_CHIPS = '<div class="facts">' + chip("Capital", "Capital") + "".join(chip(fact.field, fact.label) for fact in FACTS) + "</div>"
 
 
@@ -60,6 +63,17 @@ def province_templates() -> tuple[Template, ...]:
         Template("Map", "Map", conditional("Map", map_front), map_back),
         Template("Centre", "Centre", conditional("Centre", centre[0]), centre[1]),
         Template("Province of", "Centre", conditional("Centre", reverse[0]), reverse[1]),
+    )
+
+
+def city_templates() -> tuple[Template, ...]:
+    subject = "{{City}}" + NATIVE_LINE
+    front = face(UNKNOWN_ENTITY, "City", image("Map", "map"))
+    back = face(entity(subject, answered=True), "City", image("MapAnswer", "map")) + f'<div class="context">{KIND_CONTEXT}</div>{CITY_CHIPS}'
+    province = ask_attribute("Province", "Province", info_field="ProvinceNative", subject=subject, context=KIND_CONTEXT, facts=CITY_CHIPS)
+    return (
+        Template("Map", "Map", conditional("Map", front), back),
+        Template("Province", "City", f"{{{{^IsCentre}}}}{province[0]}{{{{/IsCentre}}}}", province[1]),
     )
 
 
@@ -91,6 +105,7 @@ class CountryDeckBuilder:
         css = CSS + FACTS_CSS + MAP_ZOOM_CSS
         self.province_model = self._model(PROVINCE_MODEL_ID, "province", PROVINCE_FIELDS, province_templates(), css)
         self.neighbour_model = self._model(NEIGHBOUR_MODEL_ID, "neighbour", NEIGHBOUR_FIELDS, neighbour_templates(), css)
+        self.city_model = self._model(CITY_MODEL_ID, "city", CITY_FIELDS, city_templates(), css)
         self.deck = genanki.Deck(stable_id(self.name), self.name, description(meta["name"]))
         self.notes = 0
 
@@ -106,6 +121,18 @@ class CountryDeckBuilder:
         }
         ords = [0] + ([1, 2] if centre else [])
         self._add(self.province_model, PROVINCE_FIELDS, values, ords, [tag(self.prefix, "Province")], province["id"])
+
+    def add_city(self, city: dict, provinces: dict[str, dict]) -> None:
+        province = provinces[city["province"]]
+        stem = f"country_decks/{self.meta['code']}/maps/city__{slugify(city['name'])}"
+        values = {
+            "Id": city["id"], "City": escaped(city["name"]), "Native": escaped(city["native"]), "Province": escaped(province["name"]),
+            "ProvinceNative": escaped(province["native"]), "Map": self.media.image(f"{stem}.png", "map"),
+            "MapAnswer": self.media.image(f"{stem}-answer.png", "map"), "Population": f"{city['population']:,}" if city["population"] else "",
+            "Country": escaped(self.meta["name"]), "Kind": "Provincial centre" if city["centre"] else "City", "IsCentre": "yes" if city["centre"] else "",
+        }
+        ords = [0] if city["centre"] else [0, 1]
+        self._add(self.city_model, CITY_FIELDS, values, ords, [tag(self.prefix, "City")] + ([tag(self.prefix, "Centre")] if city["centre"] else []), city["id"])
 
     def add_neighbour(self, neighbour: dict, document: dict) -> None:
         stem = f"country_decks/{self.meta['code']}/maps/neighbour__{slugify(neighbour['name'])}"
@@ -145,8 +172,12 @@ def build_country_deck(code: str, build_dir: pathlib.Path, output: pathlib.Path 
     meta = json.loads((directory / "meta.json").read_text())
     documents = load_documents(data_dir / "countries")
     builder = CountryDeckBuilder(meta, build_dir, data_dir)
-    for province in json.loads((directory / "provinces.json").read_text()):
+    provinces = json.loads((directory / "provinces.json").read_text())
+    for province in provinces:
         builder.add_province(province)
+    by_id = {province["id"]: province for province in provinces}
+    for city in json.loads((directory / "cities.json").read_text()):
+        builder.add_city(city, by_id)
     for neighbour in json.loads((directory / "neighbours.json").read_text()):
         builder.add_neighbour(neighbour, documents[neighbour["alpha_3"]])
     builder.write(output or build_dir / f"ultimate_{meta['name'].lower().replace(' ', '_')}.apkg")
