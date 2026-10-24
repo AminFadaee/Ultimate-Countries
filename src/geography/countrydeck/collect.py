@@ -2,6 +2,7 @@ import json
 import logging
 import pathlib
 
+from geography.countrydeck.cities import collect_cities
 from geography.countrydeck.maps import jobs_for, render_area_maps
 from geography.countrydeck.names import official_language
 from geography.countrydeck.neighbours import neighbours_of
@@ -34,7 +35,9 @@ def collect_country(code: str, language: str | None = None, include_overseas: bo
     target = output / code
     meta = {"code": code, "id": country["id"], "name": country["name"], "alpha_2": country["codes"]["alpha_2"], "language": language}
     write(target / "meta.json", meta)
-    write(target / "provinces.json", collect_provinces(wikidata, data, code, language, include_overseas))
+    provinces = collect_provinces(wikidata, data, code, language, include_overseas)
+    write(target / "provinces.json", provinces)
+    write(target / "cities.json", collect_cities(wikidata, data, code, country["id"], language, provinces))
     write(target / "neighbours.json", neighbours_of(session, data, code, documents))
     logger.info("Collected %s into %s", country["name"], target)
     return target
