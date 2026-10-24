@@ -135,7 +135,7 @@ class PlacesCollector:
         if feature.geometry.geom_type.iloc[0] == "Point":
             location = feature.geometry.iloc[0]
             return locator.at_point(location.x, location.y, BORDER_RADIUS_M.get(feature.kind, POINT_M))
-        if feature.kind.spec.shape.is_line:
+        if feature.geometry.geom_type.iloc[0] in ("LineString", "MultiLineString"):
             return locator.by_line(feature.geometry)
         if feature.kind is Kind.LAKE:
             return locator.by_coast(feature.geometry, LAKE_SHORE_M)
@@ -212,7 +212,7 @@ class PlacesCollector:
             output = self.paths.maps / f"{slugs[feature.key]}.png"
             feature.map = self.paths.relative(output)
             if options.rerender_maps or not output.exists():
-                jobs.append(map_job(feature, output))
+                jobs.append(map_job(feature, output, self.paths.root / feature.photo.file if feature.photo else None))
         by_key = {feature.key: feature for feature in features}
         for job, error in render_feature_maps(jobs, options.workers):
             if error:

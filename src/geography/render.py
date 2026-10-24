@@ -13,6 +13,7 @@ from matplotlib import patches
 from matplotlib.figure import Figure
 from matplotlib.lines import Line2D
 from matplotlib.path import Path
+from PIL import Image
 from shapely.geometry import box
 from shapely.ops import transform
 
@@ -41,6 +42,8 @@ INSET_MARGIN = 0.02
 ZOOM_THRESHOLD = 0.02
 LENS_PADDING = 3
 LENS_RADIUS = 1.1
+CORNER_PHOTO = 0.14
+CORNER_PHOTO_MARGIN = 0.012
 LENS_MARGIN = 0.25
 MARKER_RADIUS = 0.12
 LENS_CLEARANCE = 0.1
@@ -117,6 +120,7 @@ class Scene:
     framing: Framing = Framing.REGION
     style: Style = Style()
     cities: tuple[CityLabel, ...] = ()
+    photo: pathlib.Path | None = None
 
     @classmethod
     def for_country(cls, country: Country, borders: Borders) -> "Scene":
@@ -412,6 +416,8 @@ class LocatorMap:
             self._plot_inset(fig, projection, extent, inset_corner)
             if zoom:
                 self._plot_zoom(fig, scene, projection, extent, zoom, inset_corner)
+            elif scene.photo:
+                self._plot_corner_photo(fig, scene)
             if scene.cities:
                 labels = CityLabels(fig, fig.axes[0], projection, extent, scene.cities, scene.style.highlight)
                 labels.show_answer(False)
@@ -627,6 +633,25 @@ class LocatorMap:
         )
         return inset
 
+    def _plot_corner_photo(self, fig: Figure, scene: Scene) -> None:
+        fig_w, fig_h = fig.get_size_inches()
+        diameter = CORNER_PHOTO * fig_w
+        margin = CORNER_PHOTO_MARGIN * fig_w
+        self._plot_photo(fig, scene, [margin / fig_w, 1 - (margin + diameter) / fig_h, diameter / fig_w, diameter / fig_h])
+
+    def _plot_photo(self, fig: Figure, scene: Scene, rect: list[float]) -> None:
+        photo = Image.open(scene.photo).convert("RGB")
+        side = min(photo.size)
+        left, top = (photo.width - side) // 2, (photo.height - side) // 2
+        ax = fig.add_axes(rect)
+        ax.axis("off")
+        shown = ax.imshow(photo.crop((left, top, left + side, top + side)))
+        shown.set_clip_path(patches.Circle((0.5, 0.5), 0.5, transform=ax.transAxes))
+        fig.add_artist(patches.Ellipse(
+            (rect[0] + rect[2] / 2, rect[1] + rect[3] / 2), rect[2], rect[3], transform=fig.transFigure,
+            fill=False, edgecolor=scene.style.highlight, linewidth=1.6,
+        ))
+
     def _plot_zoom(
         self,
         fig: Figure,
@@ -648,14 +673,17 @@ class LocatorMap:
         lens = place_lens(marker, fig_w, fig_h, inset_corner)
 
         x, y, w, h = lens.rect
-        ax = fig.add_axes([x / fig_w, y / fig_h, w / fig_w, h / fig_h], projection=projection)
-        ax.set_boundary(flatten(Path.circle((0.5, 0.5), 0.5)), transform=ax.transAxes)
-        ax.spines["geo"].set_edgecolor(scene.style.highlight)
-        ax.spines["geo"].set_linewidth(1.2)
-        if self.detail is None:
-            self._draw_layers(ax, scene, projection, zoom.lens)
+        if scene.photo:
+            self._plot_photo(fig, scene, [x / fig_w, y / fig_h, w / fig_w, h / fig_h])
         else:
-            self._draw_detail(ax, scene, projection, zoom.lens)
+            ax = fig.add_axes([x / fig_w, y / fig_h, w / fig_w, h / fig_h], projection=projection)
+            ax.set_boundary(flatten(Path.circle((0.5, 0.5), 0.5)), transform=ax.transAxes)
+            ax.spines["geo"].set_edgecolor(scene.style.highlight)
+            ax.spines["geo"].set_linewidth(1.2)
+            if self.detail is None:
+                self._draw_layers(ax, scene, projection, zoom.lens)
+            else:
+                self._draw_detail(ax, scene, projection, zoom.lens)
 
         style = {"color": scene.style.highlight, "linewidth": 1.2, "transform": fig.dpi_scale_trans}
         fig.add_artist(patches.Circle((marker.x, marker.y), marker.radius, fill=False, **style))

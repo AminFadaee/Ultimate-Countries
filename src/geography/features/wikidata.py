@@ -129,6 +129,30 @@ class FeatureQueries:
     def typed_as_site(self, qids: set[str]) -> set[str]:
         return self._matching(qids, f"?item wdt:P31 ?type . ?type wdt:P279* wd:{ARCHAEOLOGICAL_SITE} . FILTER(?type != wd:{ANCIENT_CITY})")
 
+    def part_labels(self, qids: set[str]) -> dict[str, list[str]]:
+        found: dict[str, list[str]] = defaultdict(list)
+        for batch in itertools.batched(sorted(qids), BATCH, strict=False):
+            rows = self.wikidata._select(f"""
+                SELECT ?item ?label WHERE {{
+                  VALUES ?item {{ {values_clause(batch)} }}
+                  ?item wdt:P527 ?part . ?part rdfs:label ?label . FILTER(lang(?label) = "en")
+                }}""")
+            for row in rows:
+                found[qid_of(row["item"])].append(row["label"])
+        return dict(found)
+
+    def parts_of(self, qids: set[str]) -> set[tuple[str, str]]:
+        pairs: set[tuple[str, str]] = set()
+        for batch in itertools.batched(sorted(qids), BATCH, strict=False):
+            rows = self.wikidata._select(f"""
+                SELECT ?part ?whole WHERE {{
+                  VALUES ?part {{ {values_clause(batch)} }}
+                  VALUES ?whole {{ {values_clause(sorted(qids))} }}
+                  ?part wdt:P361 ?whole . FILTER(?part != ?whole)
+                }}""")
+            pairs.update((qid_of(row["part"]), qid_of(row["whole"])) for row in rows)
+        return pairs
+
     def countries(self, qids: set[str]) -> dict[str, list[str]]:
         found: dict[str, list[str]] = defaultdict(list)
         for batch in itertools.batched(sorted(qids), BATCH, strict=False):

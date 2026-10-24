@@ -31,9 +31,6 @@ MIN_NOTABLE_HEIGHT_M = 20
 FIELDS = ("Id", "Name", "Kind", "Map", "Photo", "Details")
 PLACES_CSS = CSS + """
 .blurb { margin-top: 12px; font-size: 15px; line-height: 1.45; color: var(--info); }
-.place-map { position: relative; }
-.place-map .photo-badge img { position: absolute; left: 6px; top: 6px; width: 64px; height: 64px !important; max-height: 64px;
-  object-fit: cover; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, .35); }
 .photo img { width: 100%; max-height: 220px; object-fit: cover; border-radius: 6px; }
 .photo-front { display: grid; place-items: center; min-height: 260px; }
 .photo-front .photo img { max-height: 340px; }
@@ -57,11 +54,7 @@ def kind_label() -> str:
     return '<hr class="divider"><div class="label">{{Kind}}</div>'
 
 
-def map_block(with_badge: bool) -> str:
-    badge = '{{#Photo}}<span class="photo-badge">{{Photo}}</span>{{/Photo}}' if with_badge else ""
-    return f'<div class="value image map place-map">{{{{Map}}}}{badge}</div>'
-
-
+MAP_BLOCK = '<div class="value image map place-map">{{Map}}</div>'
 PHOTO_BLOCK = '<div class="value image photo">{{Photo}}</div>'
 DETAILS = '<div class="context">{{Details}}</div>'
 ANSWER = entity(placeholder("Name"), answered=True)
@@ -70,14 +63,14 @@ TEMPLATES = (
     PlaceTemplate(
         "Map",
         "Map",
-        conditional("Map", UNKNOWN_ENTITY + kind_label() + map_block(with_badge=True)),
-        ANSWER + kind_label() + map_block(with_badge=True) + DETAILS,
+        conditional("Map", UNKNOWN_ENTITY + kind_label() + MAP_BLOCK),
+        ANSWER + kind_label() + MAP_BLOCK + DETAILS,
     ),
     PlaceTemplate(
         "Photo",
         "Photo",
         conditional("Photo", f'<div class="photo-front">{PHOTO_BLOCK}</div>'),
-        ANSWER + kind_label() + PHOTO_BLOCK + map_block(with_badge=False) + DETAILS,
+        ANSWER + kind_label() + PHOTO_BLOCK + MAP_BLOCK + DETAILS,
     ),
 )
 

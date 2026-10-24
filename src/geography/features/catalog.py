@@ -16,6 +16,7 @@ from geography.render import EQUAL_AREA
 from geography.sources.ecoregions import rainforest_blocks
 from geography.sources.marine_regions import fetch_sea_areas
 from geography.sources.natural_earth_physical import PhysicalLayer, load_layer
+from geography.sources.overpass import Overpass
 from geography.sources.wikidata import Wikidata
 from geography.sources.wikipedia import Infobox, Wikipedia
 
@@ -34,6 +35,7 @@ NATURAL_EARTH_KINDS = {
     "Peninsula": (Kind.PENINSULA, 3),
     "Isthmus": (Kind.ISTHMUS, 3),
     "Geoarea": (Kind.REGION, 2),
+    "Island group": (Kind.REGION, 0),
     "Gorge": (Kind.CANYON, 5),
 }
 RAINFOREST_NAMERS = ("Basin", "Island")
@@ -60,6 +62,11 @@ MIN_CANAL_LINKS = 50
 MIN_RAINFOREST_KM2 = 500_000
 MIN_REGION_MEMBERS = 2
 MIN_RIVER_COVERAGE = 0.7
+MIN_PROVINCE_COVERAGE = 0.5
+STEM_LENGTH = 4
+MIN_NAME_STEMS = 2
+LINEAR_RELATIONS = ("collection", "site")
+MIN_WALL_KM = 10
 GEOD = Geod(ellps="WGS84")
 DISAMBIGUATED = re.compile(r" \([^)]+\)$")
 MIN_REGION_KM2 = 50_000
@@ -102,6 +109,10 @@ def drawn_km(geometry: gpd.GeoSeries) -> float:
     return sum(GEOD.geometry_length(line) for line in geometry) / 1000
 
 
+def stems(text: str) -> set[str]:
+    return {word[:STEM_LENGTH] for word in re.findall(r"[a-z]+", text.casefold())}
+
+
 def title_of(facts: ItemFacts) -> str:
     title = article_title(facts.wikipedia) if facts.wikipedia else ""
     return title if DISAMBIGUATED.search(title) else facts.label
@@ -127,11 +138,12 @@ class Catalog:
         self.locator = locator
         self.data = data
         self.facts: dict[str, ItemFacts] = {}
+        self.overpass = Overpass(session)
 
     def collect(self) -> list[Feature]:
         features = [
-            *self.cultural_regions(),
             *self.natural_earth_regions(),
+            *self.cultural_regions(),
             *self.reefs(),
             *self.seas(),
             *self.lakes(),
@@ -149,7 +161,15 @@ class Catalog:
             unique.setdefault(feature.key, feature)
         for feature in unique.values():
             feature.name = feature.name[:1].upper() + feature.name[1:]
-        return list(unique.values())
+        return self.without_parts(list(unique.values()))
+
+    def without_parts(self, features: list[Feature]) -> list[Feature]:
+        by_qid = {feature.qid: feature for feature in features if feature.qid}
+        dropped = {
+            min(by_qid[part], by_qid[whole], key=lambda feature: feature.sitelinks).qid
+            for part, whole in self.queries.parts_of(set(by_qid))
+        }
+        return [feature for feature in features if feature.qid not in dropped]
 
     def known(self, qids: set[str]) -> dict[str, ItemFacts]:
         missing = qids - self.facts.keys()
@@ -171,6 +191,7 @@ class Catalog:
         for featurecla, (kind, max_rank) in NATURAL_EARTH_KINDS.items():
             selected = regions[(regions["featurecla"] == featurecla) & (regions["scalerank"] <= max_rank)]
             features.extend(self.famous(dissolved(selected, "wikidataid"), kind, MIN_REGION_LINKS))
+        self.rebuild_from_provinces([feature for feature in features if feature.kind is Kind.REGION])
         qids = {feature.qid for feature in features}
         deserts = self.queries.instances_of(qids, DESERT)
         peninsulas = self.queries.instances_of(qids, PENINSULA)
@@ -184,6 +205,20 @@ class Catalog:
             if (feature.kind is not Kind.DESERT or feature.qid in deserts)
             and (feature.kind is not Kind.REGION or feature.qid not in administrative)
         ]
+
+    def rebuild_from_provinces(self, regions: list[Feature]) -> None:
+        parts = self.queries.part_labels({region.qid for region in regions})
+        provinces = self.data.regions
+        names = provinces["region_sub"].astype(str)
+        for region in regions:
+            wanted = [stems(label) for label in parts.get(region.qid, [])]
+            matched = provinces[[len(stems(name)) >= MIN_NAME_STEMS and any(stems(name) <= part for part in wanted) for name in names]]
+            if matched.empty:
+                continue
+            rebuilt = gpd.GeoSeries([matched.geometry.union_all().union(region.geometry.union_all())], crs=CRS)
+            ratio = rebuilt.to_crs(EQUAL_AREA).area.sum() / region.geometry.to_crs(EQUAL_AREA).area.sum()
+            if MIN_PROVINCE_COVERAGE <= ratio <= 1 / MIN_PROVINCE_COVERAGE:
+                region.geometry = rebuilt
 
     def reefs(self) -> list[Feature]:
         marine = load_layer(PhysicalLayer.MARINE)
@@ -324,11 +359,22 @@ class Catalog:
         ancient = self.queries.instances_of(built, ANCIENT_CITY)
         unproven = {qid for qid in ancient - self.queries.typed_as_site(ancient) if not (qid in facts and facts[qid].world_heritage)}
         excluded = living | unproven | self.queries.instances_of(built, SHIP)
-        return [
+        return self.walls([
             self.feature(qid, Kind.LANDMARK, point(*facts[qid].coordinates))
             for qid in built - excluded
             if qid in facts and facts[qid].coordinates
-        ]
+        ])
+
+    def walls(self, landmarks: list[Feature]) -> list[Feature]:
+        relations = self.wikidata.osm_relations({landmark.qid for landmark in landmarks})
+        types = self.overpass.relation_types(sorted(set(relations.values())))
+        for landmark in landmarks:
+            relation = relations.get(landmark.qid)
+            if types.get(relation) in LINEAR_RELATIONS and (line := self.overpass.line(relation)) is not None:
+                traced = gpd.GeoSeries([line], crs=CRS)
+                if drawn_km(traced) >= MIN_WALL_KM:
+                    landmark.geometry = traced
+        return landmarks
 
     def canals(self) -> list[Feature]:
         ranked = self.queries.ranked((CANAL,), MIN_CANAL_LINKS)

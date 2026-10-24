@@ -61,6 +61,8 @@ def setting_digest() -> str:
 def feed(content, value) -> None:
     if isinstance(value, gpd.GeoSeries):
         content.update(b"".join(geometry.wkb for geometry in value if geometry is not None))
+    elif isinstance(value, pathlib.Path) and value.exists():
+        content.update(file_digest(value).encode())
     else:
         content.update(repr(value).encode())
 

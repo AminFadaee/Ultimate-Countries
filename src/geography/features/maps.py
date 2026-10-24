@@ -46,6 +46,8 @@ BORDER_FRAME_M = 350_000
 FRAME_SEGMENTS = 32
 MAX_FRAME_WIDTH_M = 15_000_000
 MIN_CONTEXT = 1.05
+WALL_BAND_FACTOR = 1.5
+LINE_TYPES = ("LineString", "MultiLineString")
 PLACE_ZOOM_THRESHOLD = 0.07
 CONTEXT_STEP = 0.05
 HEMISPHERE_M = 8_500_000
@@ -66,10 +68,11 @@ class FeatureMapJob:
     output: pathlib.Path
     host_country: str | None
     on_border: bool
+    photo: pathlib.Path | None = None
 
 
 def is_line(job: FeatureMapJob) -> bool:
-    return job.kind.spec.shape.is_line
+    return job.kind.spec.shape.is_line or job.geometry.geom_type.iloc[0] in LINE_TYPES
 
 
 def empty() -> gpd.GeoSeries:
@@ -150,7 +153,8 @@ def area_scene(job: FeatureMapJob) -> Scene:
 def line_scene(job: FeatureMapJob) -> Scene:
     frame = frame_around(job.geometry)
     local = local_projection(job.geometry)
-    band = job.geometry.to_crs(local).buffer(size_of(frame) * LINE_BAND_SHARE).to_crs(CRS)
+    share = LINE_BAND_SHARE * (WALL_BAND_FACTOR if job.kind is Kind.LANDMARK else 1)
+    band = job.geometry.to_crs(local).buffer(size_of(frame) * share).to_crs(CRS)
     return Scene(
         highlight=band,
         frame=frame,
@@ -319,16 +323,16 @@ class FeatureMapWorker:
             cls.renderer.render_centred(scene, job.output)
         elif view is not View.REGIONAL:
             cls._render_world(job)
+        elif is_line(job):
+            cls.renderer.render(replace(line_scene(job), photo=job.photo), job.output)
         elif shape is Shape.POINT or job.geometry.geom_type.iloc[0] == "Point":
             try:
-                cls.renderer.render(point_scene(job, cls.renderer.data), job.output)
+                cls.renderer.render(replace(point_scene(job, cls.renderer.data), photo=job.photo), job.output)
             except (ValueError, TypeError, GEOSException):
-                cls.renderer.render(point_scene(replace(job, on_border=True), cls.renderer.data), job.output)
-        elif shape is Shape.LINE:
-            cls.renderer.render(line_scene(job), job.output)
+                cls.renderer.render(replace(point_scene(replace(job, on_border=True), cls.renderer.data), photo=job.photo), job.output)
         else:
             try:
-                cls.renderer.render(area_scene(job), job.output)
+                cls.renderer.render(replace(area_scene(job), photo=job.photo), job.output)
             except (ValueError, TypeError, GEOSException) as error:
                 logger.warning("World view for %s: %s", job.key, error)
                 cls._render_world(job)
@@ -344,9 +348,9 @@ class FeatureMapWorker:
             cls.renderer.render_world(job.output, style, centre, areas=job.geometry)
 
 
-def map_job(feature: Feature, output: pathlib.Path) -> FeatureMapJob:
+def map_job(feature: Feature, output: pathlib.Path, photo: pathlib.Path | None = None) -> FeatureMapJob:
     host = feature.countries[0].alpha_3 if feature.countries else None
-    return FeatureMapJob(feature.key, feature.kind, feature.geometry, output, host, len(feature.countries) > 1)
+    return FeatureMapJob(feature.key, feature.kind, feature.geometry, output, host, len(feature.countries) > 1, photo)
 
 
 def render_feature_maps(jobs: list[FeatureMapJob], workers: int) -> Iterable[tuple[FeatureMapJob, Exception | None]]:
