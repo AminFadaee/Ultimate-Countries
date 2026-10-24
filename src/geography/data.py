@@ -139,9 +139,12 @@ class NaturalEarth:
             group = self.countries[self.countries["ADM0_A3"] == code]
 
         core_mask = (group["ADM0_A3"] == code) | (group["ADM0_TLC"] == code)
+        leased = group[~core_mask & (group["TYPE"] == LEASE)]
+        core = group[core_mask]
+        if not leased.empty:
+            core = core.iloc[:1].assign(geometry=[pd.concat([core, leased]).geometry.union_all()])
         disputed = group[~core_mask & (group["TYPE"] != LEASE)]
 
-        core = group[core_mask]
         areas = self.disputed_areas[self.disputed_areas["TYPE"] != LEASE]
         extra = areas[(areas["ADM0_A3_US"] == code) | self._administered_within(areas, core, code)]
         if not extra.empty:
