@@ -13,15 +13,16 @@ from matplotlib import patches
 from matplotlib.figure import Figure
 from matplotlib.lines import Line2D
 from matplotlib.path import Path
+from matplotlib.transforms import Bbox
 from PIL import Image
 from shapely.geometry import box
 from shapely.ops import transform
 
-from geography.country_labels import CountryLabels
+from geography.country_labels import AnswerLabel, CountryLabels, Placer, ProvinceLabels
 from geography.data import Country, NaturalEarth
 from geography.detail import DetailLayers
 from geography.images import save_compact
-from geography.labels import CityLabel, CityLabels
+from geography.labels import CityLabel, CityLabels, connector_boxes
 from geography.places import Place
 
 GEODETIC = ccrs.PlateCarree()
@@ -44,6 +45,8 @@ ZOOM_THRESHOLD = 0.02
 LENS_PADDING = 3
 LENS_RADIUS = 1.1
 CORNER_PHOTO = 0.14
+CENTRE_MARKER_AREA = 70
+MARKER_CLEARANCE = 16
 CORNER_PHOTO_MARGIN = 0.012
 LENS_MARGIN = 0.25
 MARKER_RADIUS = 0.12
@@ -93,6 +96,7 @@ LENS_CORNERS = (Corner.TOP_RIGHT, Corner.TOP_LEFT, Corner.BOTTOM_RIGHT, Corner.B
 class Framing(StrEnum):
     REGION = "region"
     COUNTRY = "country"
+    ANCHORED = "anchored"
 
 
 class Borders(StrEnum):
@@ -105,6 +109,12 @@ class Style:
     highlight: str = Color.HIGHLIGHT
     host: str = Color.HOST
     outline: str = Color.OUTLINE
+
+
+@dataclass(frozen=True)
+class Naming:
+    answer: str
+    provinces: gpd.GeoDataFrame | None = None
 
 
 @dataclass(frozen=True)
@@ -122,6 +132,8 @@ class Scene:
     style: Style = Style()
     cities: tuple[CityLabel, ...] = ()
     photo: pathlib.Path | None = None
+    naming: Naming | None = None
+    marker: tuple[float, float] | None = None
 
     @classmethod
     def for_country(cls, country: Country, borders: Borders) -> "Scene":
@@ -280,6 +292,18 @@ def place_inset(subject: tuple[float, float], aspect: float) -> Corner:
     return next((corner for corner in INSET_CORNERS if not covers(corner)), INSET_CORNERS[0])
 
 
+def least_covered_corner(highlight: gpd.GeoSeries, projection: ccrs.Projection, extent: Extent, aspect: float) -> Corner:
+    shape = highlight.to_crs(projection).union_all()
+    xmin, _, ymin, _ = extent.bounds
+
+    def covered(corner: Corner) -> float:
+        x, y, width, height = inset_rect(corner, aspect)
+        rect = box(xmin + x * extent.width, ymin + y * extent.height, xmin + (x + width) * extent.width, ymin + (y + height) * extent.height)
+        return shape.intersection(rect).area
+
+    return min(INSET_CORNERS, key=covered)
+
+
 def get_frame_area(scene: "Scene", mainland: gpd.GeoSeries, projection: ccrs.Projection) -> tuple[gpd.GeoSeries, Framing]:
     if scene.framing is Framing.REGION:
         return mainland, Framing.REGION
@@ -287,12 +311,15 @@ def get_frame_area(scene: "Scene", mainland: gpd.GeoSeries, projection: ccrs.Pro
     minx, miny, maxx, maxy = country.to_crs(projection).total_bounds
     if max(maxx - minx, maxy - miny) < MIN_COUNTRY_FRAME_HEIGHT:
         return mainland, Framing.REGION
+    if scene.framing is Framing.ANCHORED:
+        return country, Framing.COUNTRY
     return pd.concat([country, get_mainland(scene.highlight)]), Framing.COUNTRY
 
 
 def figure_position(geometry: gpd.GeoSeries, projection: ccrs.Projection, extent: Extent) -> tuple[float, float]:
     minx, miny, maxx, maxy = geometry.to_crs(projection).total_bounds
-    xmin, _, ymin, _ = extent.bounds
+    xmin, xmax, ymin, ymax = extent.bounds
+    minx, maxx, miny, maxy = max(minx, xmin), min(maxx, xmax), max(miny, ymin), min(maxy, ymax)
     return ((minx + maxx) / 2 - xmin) / extent.width, ((miny + maxy) / 2 - ymin) / extent.height
 
 
@@ -409,13 +436,19 @@ class LocatorMap:
         area, framing = get_frame_area(scene, mainland, projection)
         extent = get_frame(area, projection, self.aspect_ratio, framing)
         zoom = get_zoom(scene.lens_subject, projection, extent, scene.min_zoom_span, scene.zoom_threshold)
-        inset_corner = clearest_corner(scene.cities, projection, extent) if scene.cities else place_inset(
-            figure_position(scene.lens_subject, projection, extent), extent.width / extent.height
-        )
+        aspect = extent.width / extent.height
+        if scene.cities:
+            inset_corner = clearest_corner(scene.cities, projection, extent)
+        elif scene.framing is Framing.ANCHORED:
+            inset_corner = least_covered_corner(scene.highlight, projection, extent, aspect)
+        else:
+            inset_corner = place_inset(figure_position(scene.lens_subject, projection, extent), aspect)
 
         fig = plt.figure(figsize=(self.width, self.width * extent.height / extent.width))
         try:
             self._plot_main(fig, scene, projection, extent)
+            if scene.marker:
+                self._plot_marker(fig, projection, scene.marker)
             self._plot_inset(fig, projection, extent, inset_corner)
             if zoom:
                 self._plot_zoom(fig, scene, projection, extent, zoom, inset_corner)
@@ -423,22 +456,49 @@ class LocatorMap:
                 self._plot_corner_photo(fig, scene)
             if scene.cities:
                 labels = CityLabels(fig, fig.axes[0], projection, extent, scene.cities, scene.style.highlight)
-                self._label_neighbours(fig, scene, projection, extent, labels.obstacles())
+                self._label_neighbours(Placer(fig, fig.axes[0], labels.obstacles()), scene, projection, extent)
                 labels.show_answer(False)
                 self._save(fig, out_path, scene.style)
                 labels.show_answer(True)
+                self._save(fig, answer_path, scene.style)
+            elif scene.naming:
+                answer = self._name_areas(fig, scene, projection, extent)
+                answer.show(False)
+                self._save(fig, out_path, scene.style)
+                answer.show(True)
                 self._save(fig, answer_path, scene.style)
             else:
                 self._save(fig, out_path, scene.style)
         finally:
             plt.close(fig)
 
-    def _label_neighbours(self, fig: Figure, scene: Scene, projection: ccrs.Projection, extent: Extent, obstacles: list) -> None:
+    @staticmethod
+    def _marker_box(fig: Figure, projection: ccrs.Projection, scene: Scene) -> list[Bbox]:
+        if scene.marker is None:
+            return []
+        x, y = fig.axes[0].transData.transform(projection.transform_point(*scene.marker, GEODETIC))
+        return [Bbox.from_extents(x - MARKER_CLEARANCE, y - MARKER_CLEARANCE, x + MARKER_CLEARANCE, y + MARKER_CLEARANCE)]
+
+    def _label_neighbours(self, placer: Placer, scene: Scene, projection: ccrs.Projection, extent: Extent) -> None:
         countries = get_visible(self.data.countries, projection, extent).to_crs(projection.proj4_init)
         focus = scene.host.to_crs(projection.proj4_init).union_all()
-        neighbours = countries[~countries.geometry.representative_point().within(focus)]
+        target = scene.highlight.to_crs(projection.proj4_init).union_all()
+        spots = countries.geometry.representative_point()
+        neighbours = countries[~spots.within(focus) & ~spots.within(target)]
         labels = [self.country_names.get(code, name) for code, name in zip(neighbours["ADM0_A3"], neighbours["NAME_EN"], strict=True)]
-        CountryLabels(fig, fig.axes[0], extent, neighbours.assign(label=labels), focus, obstacles)
+        CountryLabels(placer, extent, neighbours.assign(label=labels), focus)
+
+    def _name_areas(self, fig: Figure, scene: Scene, projection: ccrs.Projection, extent: Extent) -> AnswerLabel:
+        renderer = fig.canvas.get_renderer()
+        blocked = [other.get_window_extent(renderer) for other in fig.axes[1:]]
+        placer = Placer(fig, fig.axes[0], blocked + connector_boxes(fig) + self._marker_box(fig, projection, scene))
+        target = scene.highlight.to_crs(projection.proj4_init).union_all()
+        answer = AnswerLabel(placer, extent, scene.naming.answer, target)
+        if scene.naming.provinces is not None:
+            provinces = scene.naming.provinces.to_crs(projection.proj4_init)
+            ProvinceLabels(placer, extent, provinces, target)
+        self._label_neighbours(placer, scene, projection, extent)
+        return answer
 
     def render_centred(self, scene: CentredScene, out_path: pathlib.Path) -> None:
         extent = scene.extent
@@ -643,6 +703,10 @@ class LocatorMap:
             linewidth=0,
         )
         return inset
+
+    def _plot_marker(self, fig: Figure, projection: ccrs.Projection, marker: tuple[float, float]) -> None:
+        x, y = projection.transform_point(*marker, GEODETIC)
+        fig.axes[0].scatter([x], [y], s=CENTRE_MARKER_AREA, color="black", edgecolors="white", linewidths=1.3, zorder=7)
 
     def _plot_corner_photo(self, fig: Figure, scene: Scene) -> None:
         fig_w, fig_h = fig.get_size_inches()

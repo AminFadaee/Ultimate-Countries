@@ -30,6 +30,8 @@ RENDERER_FILES = (
     "features/maps.py",
     "features/kinds.py",
     "sources/natural_earth_physical.py",
+    "country_labels.py",
+    "countrydeck/maps.py",
 )
 LIBRARIES = ("matplotlib", "cartopy", "shapely", "geopandas", "pillow", "pyproj", "numpy", "pandas")
 BASE_DATA = ((DATA_DIR, "*.zip"), (CACHE_DIR, "detail_*.gpkg"), (CACHE_DIR, "ne_10m_*.zip"))

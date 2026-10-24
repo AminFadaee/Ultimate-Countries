@@ -2,6 +2,7 @@ import json
 import logging
 import pathlib
 
+from geography.countrydeck.maps import jobs_for, render_area_maps
 from geography.countrydeck.names import official_language
 from geography.countrydeck.neighbours import neighbours_of
 from geography.countrydeck.provinces import collect_provinces
@@ -37,3 +38,11 @@ def collect_country(code: str, language: str | None = None, include_overseas: bo
     write(target / "neighbours.json", neighbours_of(session, data, code, documents))
     logger.info("Collected %s into %s", country["name"], target)
     return target
+
+
+def run_country(code: str, language: str | None = None, include_overseas: bool = False, rerender_maps: bool = False, workers: int = 2) -> None:
+    target = collect_country(code, language, include_overseas)
+    jobs = [job for job in jobs_for(target) if rerender_maps or not (job.output.exists() and job.answer_output.exists())]
+    for job, error in render_area_maps(jobs, workers):
+        if error:
+            logger.error("Map failed for %s: %s", job.label, error)

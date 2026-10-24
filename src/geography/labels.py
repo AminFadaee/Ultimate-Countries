@@ -53,6 +53,19 @@ def overlaps(box: Bbox, others: list[Bbox], padding: float = PADDING) -> bool:
     )
 
 
+def connector_boxes(fig) -> list[Bbox]:
+    boxes = []
+    for line in (artist for artist in fig.artists if isinstance(artist, Line2D)):
+        xs, ys = line.get_data()
+        points = line.get_transform().transform(list(zip(xs, ys, strict=True)))
+        for (x0, y0), (x1, y1) in zip(points[:-1], points[1:], strict=True):
+            steps = max(2, int(max(abs(x1 - x0), abs(y1 - y0)) / LINE_STEP))
+            for step in range(steps + 1):
+                px, py = x0 + (x1 - x0) * step / steps, y0 + (y1 - y0) * step / steps
+                boxes.append(Bbox.from_extents(px - LINE_REACH, py - LINE_REACH, px + LINE_REACH, py + LINE_REACH))
+    return boxes
+
+
 class CityLabels:
     def __init__(self, fig, ax, projection: ccrs.Projection, extent, cities: tuple[CityLabel, ...], answer_color: str):
         self.fig = fig
@@ -64,7 +77,7 @@ class CityLabels:
         self.visible = [(city, x, y) for city, x, y in self.visible if self._inside(extent, x, y)]
         self.dots = {city.name: self._dot(city, x, y) for city, x, y in self.visible if not city.target}
         self.taken = [self._around(x, y, MARKER_REACH) for _, x, y in self.visible]
-        self.lines = self._connector_boxes()
+        self.lines = connector_boxes(fig)
         self.blocked = [other.get_window_extent(self.renderer) for other in fig.axes[1:]]
         self._place()
 
@@ -95,18 +108,6 @@ class CityLabels:
     def _around(self, x: float, y: float, reach: float) -> Bbox:
         px, py = self.ax.transData.transform((x, y))
         return Bbox.from_extents(px - reach, py - reach, px + reach, py + reach)
-
-    def _connector_boxes(self) -> list[Bbox]:
-        boxes = []
-        for line in (artist for artist in self.fig.artists if isinstance(artist, Line2D)):
-            xs, ys = line.get_data()
-            points = line.get_transform().transform(list(zip(xs, ys, strict=True)))
-            for (x0, y0), (x1, y1) in zip(points[:-1], points[1:], strict=True):
-                steps = max(2, int(max(abs(x1 - x0), abs(y1 - y0)) / LINE_STEP))
-                for step in range(steps + 1):
-                    px, py = x0 + (x1 - x0) * step / steps, y0 + (y1 - y0) * step / steps
-                    boxes.append(Bbox.from_extents(px - LINE_REACH, py - LINE_REACH, px + LINE_REACH, py + LINE_REACH))
-        return boxes
 
     def _place(self) -> None:
         ordered = sorted(self.visible, key=lambda item: (not item[0].target, not item[0].capital))
