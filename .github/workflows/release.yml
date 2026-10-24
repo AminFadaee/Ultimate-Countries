@@ -27,7 +27,9 @@ jobs:
 
       - name: Publish release
         run: |
+          notes="docs/releases/${GITHUB_REF_NAME}.md"
+          [ -f "$notes" ] || echo "Anki decks built from the data in this commit: ultimate_countries.apkg and ultimate_places.apkg." > "$notes"
           gh release create "$GITHUB_REF_NAME" build/ultimate_countries.apkg build/ultimate_places.apkg \
             --title "Ultimate Countries and Ultimate Places ${GITHUB_REF_NAME#v}" \
-            --notes "Anki decks built from the data in this commit: ultimate_countries.apkg and ultimate_places.apkg." \
+            --notes-file "$notes" \
             --verify-tag

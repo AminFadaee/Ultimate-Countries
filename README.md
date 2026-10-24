@@ -49,7 +49,7 @@ Tap or click a country or city map to zoom in on that spot; drag to look around,
 ### City notes
 
 The best-known cities of the world, 185 of them in 100 countries, each with its own locator map. The map is drawn like
-an atlas page: the country's other cities are marked and named, the capital with a star, and the city being asked about
+an atlas page: the country's other cities are marked and named, the capital with a star, the neighbouring countries are named around it, and the city being asked about
 is only outlined and magnified. The back of the card shows the same map with that city's name added:
 
 | Question | Answer |
