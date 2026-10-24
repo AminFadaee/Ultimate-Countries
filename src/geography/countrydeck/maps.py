@@ -27,7 +27,14 @@ from geography.labels import CityLabel
 from geography.map_cache import through_cache
 from geography.maps import MapJob, our_country_names, render_maps
 from geography.naming import answer_path, slugify
-from geography.render import Framing, LocatorMap, Naming, Scene, get_mainland, get_nearby_parts
+from geography.render import (
+    Framing,
+    LocatorMap,
+    Naming,
+    Scene,
+    get_mainland,
+    get_nearby_parts,
+)
 
 logger = logging.getLogger(__name__)
 

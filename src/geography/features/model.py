@@ -36,6 +36,7 @@ class Feature:
     culture: str | None = None
     description: str | None = None
     native: str | None = None
+    extras: dict = field(default_factory=dict)
     world_heritage: bool = False
     photo: Photo | None = None
     map: str | None = None

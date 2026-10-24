@@ -315,6 +315,7 @@ def document(feature: Feature) -> dict:
         "culture": feature.culture,
         "description": feature.description,
         "native": feature.native,
+        **feature.extras,
         "world_heritage": feature.world_heritage,
         "tags": feature.tags,
         "map": feature.map,

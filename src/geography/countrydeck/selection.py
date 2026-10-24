@@ -1,9 +1,10 @@
+import itertools
 import re
 from dataclasses import dataclass
 
 from geography.features.kinds import Kind
 from geography.features.wikidata import FeatureQueries
-from geography.sources.wikidata import Wikidata, qid_of
+from geography.sources.wikidata import DETAIL_BATCH, Wikidata, qid_of, values_clause
 
 MIN_LINKS = 12
 UNESCO_MIN_LINKS = 5
@@ -17,6 +18,9 @@ HUMAN_SETTLEMENT = "Q486972"
 VOLCANO_CLASSES = ("Q8072", "Q159954")
 NOT_BUILT_HERITAGE = re.compile(r"ramsar|tentative|world heritage", re.IGNORECASE)
 COMPONENT_ID = re.compile(r"-\d+$")
+CRITERION = re.compile(r"\(([ivx]+)\)")
+NATURAL_CRITERIA = frozenset({"vii", "viii", "ix", "x"})
+PHOTO_CARD_KINDS = frozenset({Kind.LANDMARK, Kind.VOLCANO, Kind.WATERFALL, Kind.CANYON, Kind.CANAL})
 
 NATURAL = (
     (Kind.MOUNTAIN, ("Q8502",), 10),
@@ -37,8 +41,9 @@ NATURAL = (
     (Kind.POLDER, ("Q106259",), 5),
 )
 FUNCTIONAL = (
-    ("Q33506", 4), ("Q1248784", 3), ("Q483110", 3), ("Q15310171", 2), ("Q2416723", 2), ("Q570116", 6),
-    ("Q2630707", 5), ("Q1187968", 2), ("Q12323", 2), ("Q2994840", 2), ("Q756102", 2),
+    ("Q33506", 4, "Museum"), ("Q1248784", 3, "Airport"), ("Q483110", 3, "Stadium"), ("Q15310171", 2, "Port"), ("Q2416723", 2, "Theme_park"),
+    ("Q570116", 6, ""), ("Q2630707", 5, "Water_defence"), ("Q1187968", 2, "Water_defence"), ("Q12323", 2, "Dam"), ("Q2994840", 2, "Garden"),
+    ("Q756102", 2, "Museum"),
 )
 SEAPORT = "Q15310171"
 ADMINISTRATIVE_KINDS = (Kind.ISLAND, Kind.PENINSULA, Kind.PARK)
@@ -50,6 +55,7 @@ class Candidate:
     kind: Kind
     links: int
     tier: str
+    group: str = ""
 
 
 def ranked(wikidata: Wikidata, country_qid: str, classes: tuple[str, ...], floor: int = MIN_LINKS) -> list[tuple[str, int]]:
@@ -111,14 +117,25 @@ def extremes(wikidata: Wikidata, country_qid: str) -> dict[str, list[str]]:
     }
 
 
+def natural_sites(wikidata: Wikidata, qids: set[str]) -> set[str]:
+    criteria: dict[str, set[str]] = {}
+    for batch in itertools.batched(sorted(qids), DETAIL_BATCH, strict=False):
+        rows = wikidata._select(f"""
+            SELECT ?i ?label WHERE {{ VALUES ?i {{ {values_clause(batch)} }} ?i wdt:P2614 ?criterion . ?criterion rdfs:label ?label . FILTER(lang(?label) = "en") }}""")
+        for row in rows:
+            if match := CRITERION.search(row["label"]):
+                criteria.setdefault(qid_of(row["i"]), set()).add(match.group(1))
+    return {qid for qid, found in criteria.items() if found <= NATURAL_CRITERIA}
+
+
 def select_places(wikidata: Wikidata, country_qid: str, excluded: set[str]) -> tuple[list[Candidate], dict[str, list[str]]]:
     queries = FeatureQueries(wikidata)
     chosen: dict[str, Candidate] = {}
 
-    def add(items: list[tuple[str, int]], kind: Kind, tier: str, cap: int | None = None) -> None:
+    def add(items: list[tuple[str, int]], kind: Kind, tier: str, cap: int | None = None, group: str = "") -> None:
         for qid, links in items[:cap]:
             if qid not in excluded and qid not in chosen:
-                chosen[qid] = Candidate(qid, kind, links, tier)
+                chosen[qid] = Candidate(qid, kind, links, tier, group)
 
     add(unesco(wikidata, country_qid), Kind.LANDMARK, "unesco")
     seaports = {qid for qid, _ in ranked(wikidata, country_qid, (SEAPORT,), 8)}
@@ -135,8 +152,8 @@ def select_places(wikidata: Wikidata, country_qid: str, excluded: set[str]) -> t
     built = [item for item in built if item[1] >= max(HERITAGE_MIN_LINKS, FLOOR_SHARE * third)]
     settlements = queries.instances_of({qid for qid, _ in built}, HUMAN_SETTLEMENT)
     add([item for item in built if item[0] not in settlements], Kind.LANDMARK, "heritage", HERITAGE_CAP)
-    for cls, cap in FUNCTIONAL:
-        add(ranked(wikidata, country_qid, (cls,))[:cap], Kind.LANDMARK, "functional")
+    for cls, cap, group in FUNCTIONAL:
+        add(ranked(wikidata, country_qid, (cls,))[:cap], Kind.LANDMARK, "functional", group=group)
     found = extremes(wikidata, country_qid)
     polders = queries.instances_of(set(found["lowest"]), POLDER)
     for qid in found["highest"]:

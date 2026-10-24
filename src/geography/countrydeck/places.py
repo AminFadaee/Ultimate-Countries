@@ -9,8 +9,8 @@ from shapely.geometry import Point, mapping, shape
 from geography.countrydeck.cities import near_mainland_features
 from geography.countrydeck.maps import PlaceMapJob, render_place_maps
 from geography.countrydeck.names import named
-from geography.countrydeck.selection import select_places
-from geography.data import NaturalEarth
+from geography.countrydeck.selection import natural_sites, select_places
+from geography.data import CONTESTED_TYPES, NaturalEarth
 from geography.features.catalog import dissolved
 from geography.features.collect import PlacesCollector, PlacesPaths, unique_slugs
 from geography.features.kinds import Shape
@@ -76,6 +76,7 @@ class CountryPlacesCollector(PlacesCollector):
             geometry = gpd.GeoSeries([Point(*spot)], crs=CRS) if spot else gpd.GeoSeries([], crs=CRS)
             features.append(Feature(candidate.qid, "", candidate.kind, geometry, facts[candidate.qid].sitelinks, candidate.qid))
         tiers = {candidate.qid: candidate.tier for candidate in candidates}
+        groups = {candidate.qid: candidate.group for candidate in candidates}
         resolve_shapes(self.wikidata, features)
         features = [feature for feature in features if not feature.geometry.empty and not feature.geometry.union_all().is_empty]
         features = near_mainland_features(data, code, features)
@@ -86,12 +87,24 @@ class CountryPlacesCollector(PlacesCollector):
             feature.name, feature.native = names[feature.qid].name, names[feature.qid].native
             feature.countries, feature.continents = [host], [country["region"]]
         features = [feature for feature in features if feature.name != feature.qid]
+        self._mark(features, data, tiers, groups)
         catalog = SimpleNamespace(facts=facts, queries=queries)
         self._add_facts(features, catalog)
         self._add_cities(features, catalog)
         self._add_construction(features)
         self._add_descriptions(features)
         return features
+
+    def _mark(self, features: list[Feature], data: NaturalEarth, tiers: dict[str, str], groups: dict[str, str]) -> None:
+        natural = natural_sites(self.wikidata, {feature.qid for feature in features if tiers[feature.qid] == "unesco"})
+        contested = data.disputed_areas[data.disputed_areas["TYPE"].isin(CONTESTED_TYPES)].union_all()
+        for feature in features:
+            if groups.get(feature.qid):
+                feature.extras["group"] = groups[feature.qid]
+            if feature.qid in natural:
+                feature.extras["natural_site"] = True
+            if contested.contains(feature.geometry.union_all().representative_point()):
+                feature.extras["disputed"] = True
 
     def finish(self, features: list[Feature]) -> dict[str, str]:
         slugs = unique_slugs(features)
