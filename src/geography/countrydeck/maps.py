@@ -4,10 +4,25 @@ import multiprocessing
 import pathlib
 from collections.abc import Iterable
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
+
+import geopandas as gpd
+from shapely.errors import GEOSException
+from shapely.geometry import shape
 
 from geography.data import NaturalEarth
 from geography.detail import DetailLayers
+from geography.features.kinds import Kind, Shape
+from geography.features.maps import (
+    LINE_BAND_SHARE,
+    PLACE_ZOOM_THRESHOLD,
+    POINT_LENS_SPAN_M,
+    POINT_RADIUS_M,
+    local_projection,
+    outline,
+    size_of,
+)
+from geography.features.spatial import CRS
 from geography.labels import CityLabel
 from geography.map_cache import through_cache
 from geography.maps import MapJob, our_country_names, render_maps
@@ -56,6 +71,73 @@ class AreaMapWorker:
         job.output.parent.mkdir(parents=True, exist_ok=True)
         cls.renderer.render(scene, job.output, job.answer_output)
         return job.target
+
+
+@dataclass(frozen=True)
+class PlaceMapJob:
+    key: str
+    kind: str
+    shape: dict
+    host: str
+    label: str
+    photo: pathlib.Path | None
+    output: pathlib.Path
+    answer_output: pathlib.Path
+
+
+def place_scene(job: PlaceMapJob, data: NaturalEarth) -> Scene:
+    kind = Kind(job.kind)
+    country = data.country(job.host)
+    geometry = gpd.GeoSeries([shape(job.shape)], crs=CRS)
+    common = {
+        "frame": country.core.geometry, "disputed": country.disputed.geometry, "regions": country.regions.geometry, "framing": Framing.ANCHORED,
+        "country": country.core.geometry, "photo": job.photo, "naming": Naming(job.label), "zoom_threshold": PLACE_ZOOM_THRESHOLD,
+    }
+    local = local_projection(geometry)
+    if geometry.geom_type.iloc[0] == "Point":
+        spot = geometry.to_crs(local).buffer(POINT_RADIUS_M).to_crs(CRS)
+        return Scene(highlight=spot, host=country.core.geometry, lens_highlight=spot, min_zoom_span=POINT_LENS_SPAN_M, style=kind.spec.palette.style(Shape.POINT), **common)
+    if kind.spec.shape.is_line:
+        band = geometry.to_crs(local).buffer(size_of(country.core.geometry) * LINE_BAND_SHARE).to_crs(CRS)
+        return Scene(highlight=band, host=empty(country.core.geometry), lens_highlight=band, style=kind.spec.palette.style(Shape.LINE), **common)
+    marked = outline(geometry, kind)
+    return Scene(highlight=marked, host=geometry, lens_highlight=marked, style=kind.spec.palette.style(Shape.AREA), **common)
+
+
+class PlaceMapWorker:
+    renderer: LocatorMap | None = None
+
+    @classmethod
+    def start(cls) -> None:
+        cls.renderer = LocatorMap(NaturalEarth.load(), DetailLayers.load(), country_names=our_country_names())
+
+    @classmethod
+    def render(cls, job: PlaceMapJob) -> str:
+        job.output.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            scene = place_scene(job, cls.renderer.data)
+            cls.renderer.render(scene, job.output, job.answer_output)
+        except (ValueError, TypeError, GEOSException):
+            point = shape(job.shape).representative_point()
+            fallback = replace(job, shape={"type": "Point", "coordinates": (point.x, point.y)})
+            cls.renderer.render(place_scene(fallback, cls.renderer.data), job.output, job.answer_output)
+        return job.key
+
+
+def render_place_maps(jobs: list[PlaceMapJob], workers: int) -> Iterable[tuple[PlaceMapJob, Exception | None]]:
+    return through_cache(jobs, lambda missing: draw_place_maps(missing, workers))
+
+
+def draw_place_maps(jobs: list[PlaceMapJob], workers: int) -> Iterable[tuple[PlaceMapJob, Exception | None]]:
+    if not jobs:
+        return
+    context = multiprocessing.get_context("fork")
+    with ProcessPoolExecutor(max_workers=workers, mp_context=context, initializer=PlaceMapWorker.start) as pool:
+        futures = {pool.submit(PlaceMapWorker.render, job): job for job in jobs}
+        for done, future in enumerate(as_completed(futures), start=1):
+            if done % 10 == 0 or done == len(jobs):
+                logger.info("Place maps: %d/%d rendered", done, len(jobs))
+            yield futures[future], future.exception()
 
 
 def jobs_for(directory: pathlib.Path) -> list[AreaMapJob]:

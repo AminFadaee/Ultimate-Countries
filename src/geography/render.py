@@ -134,6 +134,7 @@ class Scene:
     photo: pathlib.Path | None = None
     naming: Naming | None = None
     marker: tuple[float, float] | None = None
+    country: gpd.GeoSeries | None = None
 
     @classmethod
     def for_country(cls, country: Country, borders: Borders) -> "Scene":
@@ -481,7 +482,7 @@ class LocatorMap:
 
     def _label_neighbours(self, placer: Placer, scene: Scene, projection: ccrs.Projection, extent: Extent) -> None:
         countries = get_visible(self.data.countries, projection, extent).to_crs(projection.proj4_init)
-        focus = scene.host.to_crs(projection.proj4_init).union_all()
+        focus = (scene.host if scene.country is None else scene.country).to_crs(projection.proj4_init).union_all()
         target = scene.highlight.to_crs(projection.proj4_init).union_all()
         spots = countries.geometry.representative_point()
         neighbours = countries[~spots.within(focus) & ~spots.within(target)]

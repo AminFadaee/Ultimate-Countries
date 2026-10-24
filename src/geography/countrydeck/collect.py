@@ -11,6 +11,7 @@ from geography.countrydeck.maps import (
 )
 from geography.countrydeck.names import official_language
 from geography.countrydeck.neighbours import neighbours_of
+from geography.countrydeck.places import CountryPlacesCollector
 from geography.countrydeck.provinces import collect_provinces
 from geography.data import NaturalEarth
 from geography.sources.http import create_session
@@ -55,4 +56,17 @@ def run_country(code: str, language: str | None = None, include_overseas: bool =
     for job, error in render_area_maps(jobs, workers):
         if error:
             logger.error("Map failed for %s: %s", job.label, error)
-    draw_city_maps(city_jobs(target, load_documents(countries_dir)), workers, rerender_maps)
+    documents = load_documents(countries_dir)
+    draw_city_maps(city_jobs(target, documents), workers, rerender_maps)
+    run_places(target, code, documents[code], rerender_maps, workers)
+
+
+def run_places(directory: pathlib.Path, code: str, country: dict, rerender_maps: bool, workers: int) -> None:
+    meta = json.loads((directory / "meta.json").read_text())
+    excluded = {city["id"] for city in json.loads((directory / "cities.json").read_text())}
+    excluded |= {province["id"] for province in json.loads((directory / "provinces.json").read_text())}
+    collector = CountryPlacesCollector(directory, create_session())
+    features = collector.collect(NaturalEarth.load(), code, country, meta["language"], excluded)
+    slugs = collector.finish(features)
+    collector.draw_maps(features, slugs, code, rerender_maps, workers)
+    logger.info("Exported %d places to %s", collector.export(features, slugs), directory / "places")

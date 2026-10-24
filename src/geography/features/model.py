@@ -35,6 +35,7 @@ class Feature:
     built: str | None = None
     culture: str | None = None
     description: str | None = None
+    native: str | None = None
     world_heritage: bool = False
     photo: Photo | None = None
     map: str | None = None

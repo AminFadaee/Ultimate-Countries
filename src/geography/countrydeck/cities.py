@@ -88,11 +88,21 @@ def wanted(city: City, bigger: list[City]) -> bool:
 
 
 def near_mainland(data: NaturalEarth, code: str, cities: list[City]) -> list[City]:
+    points = [Point(city.longitude, city.latitude) for city in cities]
+    return [city for city, near in zip(cities, within_reach(data, code, points), strict=True) if near]
+
+
+def within_reach(data: NaturalEarth, code: str, points: list) -> list[bool]:
     mainland = get_mainland(data.country(code).core.geometry)
     local = local_projection(mainland)
     reach = mainland.to_crs(local).iloc[0]
-    points = gpd.GeoSeries([Point(city.longitude, city.latitude) for city in cities], crs="EPSG:4326").to_crs(local)
-    return [city for city, near in zip(cities, points.distance(reach) <= NEARBY_PART_DISTANCE, strict=True) if near]
+    distances = gpd.GeoSeries(points, crs="EPSG:4326").to_crs(local).distance(reach)
+    return [bool(near) for near in distances <= NEARBY_PART_DISTANCE]
+
+
+def near_mainland_features(data: NaturalEarth, code: str, features: list) -> list:
+    shapes = [feature.geometry.union_all() for feature in features]
+    return [feature for feature, near in zip(features, within_reach(data, code, shapes), strict=True) if near]
 
 
 def assign_provinces(data: NaturalEarth, code: str, cities: list[City]) -> None:

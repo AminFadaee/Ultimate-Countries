@@ -313,6 +313,7 @@ def document(feature: Feature) -> dict:
         "built": feature.built,
         "culture": feature.culture,
         "description": feature.description,
+        "native": feature.native,
         "world_heritage": feature.world_heritage,
         "tags": feature.tags,
         "map": feature.map,

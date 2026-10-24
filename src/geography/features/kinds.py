@@ -79,6 +79,9 @@ class Kind(StrEnum):
     CANYON = "Canyon"
     LANDMARK = "Landmark"
     CANAL = "Canal"
+    ISLAND = "Island"
+    PARK = "National park"
+    POLDER = "Polder"
     LINE = "Line"
 
     @property
@@ -117,5 +120,8 @@ SPECS = {
     Kind.CANYON: KindSpec(ROCK, Shape.AREA, photo_card=True),
     Kind.LANDMARK: KindSpec(LAND, Shape.POINT, photo_card=True),
     Kind.CANAL: KindSpec(FLOW, Shape.LINE, photo_card=True),
+    Kind.ISLAND: KindSpec(LOWLAND, Shape.AREA),
+    Kind.PARK: KindSpec(FOREST, Shape.AREA, photo_card=True),
+    Kind.POLDER: KindSpec(LOWLAND, Shape.AREA),
     Kind.LINE: KindSpec(LINES, Shape.WORLD_LINE),
 }

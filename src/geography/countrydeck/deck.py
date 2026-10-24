@@ -8,6 +8,7 @@ import genanki
 
 from geography.cards import CardType, answers
 from geography.countrydeck.collect import COUNTRY_DECKS_DIR, load_documents
+from geography.countrydeck.places import read_documents
 from geography.deck import (
     COUNTRIES_ANKIWEB_URL,
     COUNTRY_NAME,
@@ -32,12 +33,22 @@ from geography.deck import (
     image,
     stable_id,
 )
+from geography.features.deck import (
+    DETAILS,
+    MAP_BLOCK,
+    PHOTO_BLOCK,
+    PLACES_CSS,
+    details_html,
+    kind_label,
+)
+from geography.features.kinds import Kind
 from geography.naming import slugify
 
 logger = logging.getLogger(__name__)
 PROVINCE_MODEL_ID = 1_730_418_570
 NEIGHBOUR_MODEL_ID = 1_730_418_571
 CITY_MODEL_ID = 1_730_418_572
+PLACE_MODEL_ID = 1_730_418_573
 MODEL_FAMILY = "Ultimate Nation"
 TAG_UNSAFE = re.compile(r"[^\w-]+")
 NATIVE_LINE = '{{#Native}}<div class="subtitle">{{Native}}</div>{{/Native}}'
@@ -45,6 +56,7 @@ KIND_CONTEXT = "{{Country}} · {{Kind}}"
 
 PROVINCE_FIELDS = ("Id", "Name", "Native", "Centre", "CentreNative", "Map", "MapAnswer", "Population", "Area", "Country", "Kind")
 CITY_FIELDS = ("Id", "City", "Native", "Province", "ProvinceNative", "Map", "MapAnswer", "Population", "Country", "Kind", "IsCentre")
+PLACE_FIELDS = ("Id", "Name", "Native", "Kind", "Map", "Photo", "Details")
 NEIGHBOUR_FIELDS = ("Id", "Name", "Flag", "Map", "MapAnswer", "Capital", "Country", "Kind", *(fact.field for fact in FACTS))
 
 PROVINCE_CHIPS = '<div class="facts">' + chip("Centre", "Centre") + chip("Population", "Population") + chip("Area", "Area") + "</div>"
@@ -77,6 +89,15 @@ def city_templates() -> tuple[Template, ...]:
     )
 
 
+def place_templates() -> tuple[Template, ...]:
+    answer = entity("{{Name}}" + NATIVE_LINE, answered=True)
+    return (
+        Template("Map", "Map", conditional("Map", UNKNOWN_ENTITY + kind_label() + MAP_BLOCK), answer + kind_label() + MAP_BLOCK + DETAILS),
+        Template("Photo", "Photo", conditional("Photo", f'<div class="photo-front">{PHOTO_BLOCK}</div>'),
+                 answer + kind_label() + PHOTO_BLOCK + MAP_BLOCK + DETAILS),
+    )
+
+
 def neighbour_templates() -> tuple[Template, ...]:
     front = face(UNKNOWN_ENTITY, "Neighbour", image("Map", "map"))
     back = face(entity(COUNTRY_NAME, answered=True), "Neighbour", image("MapAnswer", "map")) + f'<div class="context">{KIND_CONTEXT}</div>{NEIGHBOUR_CHIPS}'
@@ -106,6 +127,7 @@ class CountryDeckBuilder:
         self.province_model = self._model(PROVINCE_MODEL_ID, "province", PROVINCE_FIELDS, province_templates(), css)
         self.neighbour_model = self._model(NEIGHBOUR_MODEL_ID, "neighbour", NEIGHBOUR_FIELDS, neighbour_templates(), css)
         self.city_model = self._model(CITY_MODEL_ID, "city", CITY_FIELDS, city_templates(), css)
+        self.place_model = self._model(PLACE_MODEL_ID, "place", PLACE_FIELDS, place_templates(), PLACES_CSS + FACTS_CSS + MAP_ZOOM_CSS)
         self.deck = genanki.Deck(stable_id(self.name), self.name, description(meta["name"]))
         self.notes = 0
 
@@ -133,6 +155,21 @@ class CountryDeckBuilder:
         }
         ords = [0] if city["centre"] else [0, 1]
         self._add(self.city_model, CITY_FIELDS, values, ords, [tag(self.prefix, "City")] + ([tag(self.prefix, "Centre")] if city["centre"] else []), city["id"])
+
+    def add_place(self, document: dict, in_places: set[str]) -> None:
+        root = f"country_decks/{self.meta['code']}"
+        values = {
+            "Id": document["key"], "Name": escaped(document["name"]), "Native": escaped(document["native"]), "Kind": escaped(document["kind"]),
+            "Map": self.media.image(f"{root}/{document['map']}", "map") if document["map"] else "",
+            "Photo": self.media.image(f"{root}/{document['photo']['file']}", "photo") if document["photo"] else "",
+            "Details": details_html(document),
+        }
+        ords = [ord for ord, template in enumerate(place_templates()) if values[template.requires]]
+        if not ords:
+            return
+        tags = [tag(self.prefix, Kind(document["kind"]).tag)] + ([tag(self.prefix, "World_Heritage")] if document["world_heritage"] else [])
+        tags += [tag(self.prefix, "Also_in_Places")] if document["qid"] in in_places else []
+        self._add(self.place_model, PLACE_FIELDS, values, ords, tags, document["key"])
 
     def add_neighbour(self, neighbour: dict, document: dict) -> None:
         stem = f"country_decks/{self.meta['code']}/maps/neighbour__{slugify(neighbour['name'])}"
@@ -180,4 +217,7 @@ def build_country_deck(code: str, build_dir: pathlib.Path, output: pathlib.Path 
         builder.add_city(city, by_id)
     for neighbour in json.loads((directory / "neighbours.json").read_text()):
         builder.add_neighbour(neighbour, documents[neighbour["alpha_3"]])
+    in_places = {document["qid"] for document in read_documents(data_dir)}
+    for document in read_documents(directory):
+        builder.add_place(document, in_places)
     builder.write(output or build_dir / f"ultimate_{meta['name'].lower().replace(' ', '_')}.apkg")
