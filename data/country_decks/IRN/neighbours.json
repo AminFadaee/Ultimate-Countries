@@ -1,0 +1,80 @@
+[
+  {
+    "id": "Q889",
+    "alpha_3": "AFG",
+    "name": "Afghanistan",
+    "kind": "land"
+  },
+  {
+    "id": "Q399",
+    "alpha_3": "ARM",
+    "name": "Armenia",
+    "kind": "land"
+  },
+  {
+    "id": "Q227",
+    "alpha_3": "AZE",
+    "name": "Azerbaijan",
+    "kind": "land"
+  },
+  {
+    "id": "Q796",
+    "alpha_3": "IRQ",
+    "name": "Iraq",
+    "kind": "land"
+  },
+  {
+    "id": "Q843",
+    "alpha_3": "PAK",
+    "name": "Pakistan",
+    "kind": "land"
+  },
+  {
+    "id": "Q43",
+    "alpha_3": "TUR",
+    "name": "Turkey",
+    "kind": "land"
+  },
+  {
+    "id": "Q874",
+    "alpha_3": "TKM",
+    "name": "Turkmenistan",
+    "kind": "land"
+  },
+  {
+    "id": "Q398",
+    "alpha_3": "BHR",
+    "name": "Bahrain",
+    "kind": "sea"
+  },
+  {
+    "id": "Q817",
+    "alpha_3": "KWT",
+    "name": "Kuwait",
+    "kind": "sea"
+  },
+  {
+    "id": "Q842",
+    "alpha_3": "OMN",
+    "name": "Oman",
+    "kind": "sea"
+  },
+  {
+    "id": "Q846",
+    "alpha_3": "QAT",
+    "name": "Qatar",
+    "kind": "sea"
+  },
+  {
+    "id": "Q851",
+    "alpha_3": "SAU",
+    "name": "Saudi Arabia",
+    "kind": "sea"
+  },
+  {
+    "id": "Q878",
+    "alpha_3": "ARE",
+    "name": "United Arab Emirates",
+    "kind": "sea"
+  }
+]

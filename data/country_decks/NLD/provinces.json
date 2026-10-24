@@ -1,0 +1,170 @@
+[
+  {
+    "id": "Q772",
+    "name": "Drenthe",
+    "native": "Drenthe",
+    "centre": {
+      "id": "Q798",
+      "name": "Assen",
+      "native": "Assen",
+      "longitude": 6.560555555,
+      "latitude": 52.995277777
+    },
+    "population": 491792,
+    "area_km2": 2680.37
+  },
+  {
+    "id": "Q707",
+    "name": "Flevoland",
+    "native": "Flevoland",
+    "centre": {
+      "id": "Q166065",
+      "name": "Lelystad",
+      "native": "Lelystad",
+      "longitude": 5.483333333,
+      "latitude": 52.516666666
+    },
+    "population": 399893,
+    "area_km2": 1419.0
+  },
+  {
+    "id": "Q770",
+    "name": "Friesland",
+    "native": "Friesland",
+    "centre": {
+      "id": "Q25390",
+      "name": "Leeuwarden",
+      "native": "Leeuwarden",
+      "longitude": 5.783333333,
+      "latitude": 53.2
+    },
+    "population": 649944,
+    "area_km2": 5748.74
+  },
+  {
+    "id": "Q775",
+    "name": "Gelderland",
+    "native": "Gelderland",
+    "centre": {
+      "id": "Q1310",
+      "name": "Arnhem",
+      "native": "Arnhem",
+      "longitude": 5.916666666,
+      "latitude": 51.983333333
+    },
+    "population": 2019692,
+    "area_km2": 5136.51
+  },
+  {
+    "id": "Q752",
+    "name": "Groningen",
+    "native": "Groningen",
+    "centre": {
+      "id": "Q749",
+      "name": "Groningen",
+      "native": "Groningen",
+      "longitude": 6.5675,
+      "latitude": 53.218888888
+    },
+    "population": 582728,
+    "area_km2": 2960.0
+  },
+  {
+    "id": "Q1093",
+    "name": "Limburg",
+    "native": "Limburg",
+    "centre": {
+      "id": "Q1309",
+      "name": "Maastricht",
+      "native": "Maastricht",
+      "longitude": 5.683333333,
+      "latitude": 50.866666666
+    },
+    "population": 1120006,
+    "area_km2": 2153.0
+  },
+  {
+    "id": "Q1101",
+    "name": "North Brabant",
+    "native": "Noord-Brabant",
+    "centre": {
+      "id": "Q2766547",
+      "name": "'s-Hertogenbosch",
+      "native": "'s-Hertogenbosch",
+      "longitude": 5.316666666,
+      "latitude": 51.7
+    },
+    "population": 2256848,
+    "area_km2": 4919.0
+  },
+  {
+    "id": "Q701",
+    "name": "North Holland",
+    "native": "Noord-Holland",
+    "centre": {
+      "id": "Q9920",
+      "name": "Haarlem",
+      "native": "Haarlem",
+      "longitude": 4.635555555,
+      "latitude": 52.381388888
+    },
+    "population": 2813466,
+    "area_km2": 4091.76
+  },
+  {
+    "id": "Q773",
+    "name": "Overijssel",
+    "native": "Overijssel",
+    "centre": {
+      "id": "Q793",
+      "name": "Zwolle",
+      "native": "Zwolle",
+      "longitude": 6.1,
+      "latitude": 52.516666666
+    },
+    "population": 1142360,
+    "area_km2": 3327.0
+  },
+  {
+    "id": "Q694",
+    "name": "South Holland",
+    "native": "Zuid-Holland",
+    "centre": {
+      "id": "Q36600",
+      "name": "The Hague",
+      "native": "Den Haag",
+      "longitude": 4.31,
+      "latitude": 52.08
+    },
+    "population": 3577032,
+    "area_km2": 3418.5
+  },
+  {
+    "id": "Q776",
+    "name": "Utrecht",
+    "native": "Utrecht",
+    "centre": {
+      "id": "Q803",
+      "name": "Utrecht",
+      "native": "Utrecht",
+      "longitude": 5.121666666,
+      "latitude": 52.090833333
+    },
+    "population": 1253672,
+    "area_km2": 1386.0
+  },
+  {
+    "id": "Q705",
+    "name": "Zeeland",
+    "native": "Zeeland",
+    "centre": {
+      "id": "Q52101",
+      "name": "Middelburg",
+      "native": "Middelburg",
+      "longitude": 3.613611111,
+      "latitude": 51.499722222
+    },
+    "population": 386707,
+    "area_km2": 2934.0
+  }
+]

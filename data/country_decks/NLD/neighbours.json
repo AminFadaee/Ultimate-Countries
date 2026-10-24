@@ -1,0 +1,20 @@
+[
+  {
+    "id": "Q31",
+    "alpha_3": "BEL",
+    "name": "Belgium",
+    "kind": "land"
+  },
+  {
+    "id": "Q183",
+    "alpha_3": "DEU",
+    "name": "Germany",
+    "kind": "land"
+  },
+  {
+    "id": "Q145",
+    "alpha_3": "GBR",
+    "name": "United Kingdom",
+    "kind": "sea"
+  }
+]

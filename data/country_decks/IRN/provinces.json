@@ -1,0 +1,436 @@
+[
+  {
+    "id": "Q392522",
+    "name": "Alborz",
+    "native": "البرز",
+    "centre": {
+      "id": "Q36529",
+      "name": "Karaj",
+      "native": "کرج",
+      "longitude": 50.991666666,
+      "latitude": 35.832777777
+    },
+    "population": 2712400,
+    "area_km2": 5833.0
+  },
+  {
+    "id": "Q134228",
+    "name": "Ardabil",
+    "native": "اردبیل",
+    "centre": {
+      "id": "Q180103",
+      "name": "Ardabil",
+      "native": "اردبیل",
+      "longitude": 48.3,
+      "latitude": 38.25
+    },
+    "population": 1270420,
+    "area_km2": 17800.0
+  },
+  {
+    "id": "Q132945",
+    "name": "Bushehr",
+    "native": "بوشهر",
+    "centre": {
+      "id": "Q158928",
+      "name": "Bushehr",
+      "native": "بندر بوشهر",
+      "longitude": 50.836666666,
+      "latitude": 28.968888888
+    },
+    "population": 1163400,
+    "area_km2": 22743.0
+  },
+  {
+    "id": "Q171702",
+    "name": "Chaharmahal and Bakhtiari",
+    "native": "چهارمحال و بختیاری",
+    "centre": {
+      "id": "Q386649",
+      "name": "Shahr-e Kord",
+      "native": "شهرکرد",
+      "longitude": 50.864444444,
+      "latitude": 32.325555555
+    },
+    "population": 947763,
+    "area_km2": 16332.0
+  },
+  {
+    "id": "Q176081",
+    "name": "East Azerbaijan",
+    "native": "آذربایجان شرقی",
+    "centre": {
+      "id": "Q80053",
+      "name": "Tabriz",
+      "native": "تبریز",
+      "longitude": 46.296111111,
+      "latitude": 38.073888888
+    },
+    "population": 3909652,
+    "area_km2": 45650.0
+  },
+  {
+    "id": "Q1004666",
+    "name": "Fars",
+    "native": "فارس",
+    "centre": {
+      "id": "Q6397066",
+      "name": "Shiraz",
+      "native": "شیراز",
+      "longitude": 52.531111111,
+      "latitude": 29.610277777
+    },
+    "population": 4851274,
+    "area_km2": 122608.0
+  },
+  {
+    "id": "Q928828",
+    "name": "Gilan",
+    "native": "گیلان",
+    "centre": {
+      "id": "Q178373",
+      "name": "Rasht",
+      "native": "رشت",
+      "longitude": 49.588611111,
+      "latitude": 37.276111111
+    },
+    "population": 2530696,
+    "area_km2": 14042.0
+  },
+  {
+    "id": "Q170041",
+    "name": "Golestan",
+    "native": "گلستان",
+    "centre": {
+      "id": "Q188155",
+      "name": "Gorgan",
+      "native": "گرگان",
+      "longitude": 54.43,
+      "latitude": 36.846666666
+    },
+    "population": 1868819,
+    "area_km2": 20367.0
+  },
+  {
+    "id": "Q187373",
+    "name": "Hamadan",
+    "native": "همدان",
+    "centre": {
+      "id": "Q28587",
+      "name": "Hamadan",
+      "native": "همدان",
+      "longitude": 48.516666666,
+      "latitude": 34.8
+    },
+    "population": 1738234,
+    "area_km2": 19368.0
+  },
+  {
+    "id": "Q633659",
+    "name": "Hormozgan",
+    "native": "هرمزگان",
+    "centre": {
+      "id": "Q154814",
+      "name": "Bandar Abbas",
+      "native": "بندرعباس",
+      "longitude": 56.280833333,
+      "latitude": 27.186388888
+    },
+    "population": 1776415,
+    "area_km2": 70697.0
+  },
+  {
+    "id": "Q170570",
+    "name": "Ilam",
+    "native": "ایلام",
+    "centre": {
+      "id": "Q499470",
+      "name": "Ilam",
+      "native": "ایلام",
+      "longitude": 46.422777777,
+      "latitude": 33.6375
+    },
+    "population": 580158,
+    "area_km2": 20133.0
+  },
+  {
+    "id": "Q1367759",
+    "name": "Isfahan",
+    "native": "اصفهان",
+    "centre": {
+      "id": "Q42053",
+      "name": "Isfahan",
+      "native": "اصفهان",
+      "longitude": 51.674722222,
+      "latitude": 32.6525
+    },
+    "population": 5120850,
+    "area_km2": 107029.0
+  },
+  {
+    "id": "Q165352",
+    "name": "Kerman",
+    "native": "کرمان",
+    "centre": {
+      "id": "Q171714",
+      "name": "Kerman",
+      "native": "کرمان",
+      "longitude": 57.067777777,
+      "latitude": 30.291111111
+    },
+    "population": 3164718,
+    "area_km2": 180726.0
+  },
+  {
+    "id": "Q174010",
+    "name": "Kermanshah",
+    "native": "کرمانشاه",
+    "centre": {
+      "id": "Q180078",
+      "name": "Kermanshah",
+      "native": "کرمانشاه",
+      "longitude": 47.068611111,
+      "latitude": 34.316666666
+    },
+    "population": 1952434,
+    "area_km2": 25009.0
+  },
+  {
+    "id": "Q241119",
+    "name": "Khuzestan",
+    "native": "خوزستان",
+    "centre": {
+      "id": "Q170366",
+      "name": "Ahvaz",
+      "native": "اهواز",
+      "longitude": 48.684166666,
+      "latitude": 31.318888888
+    },
+    "population": 4710509,
+    "area_km2": 64055.0
+  },
+  {
+    "id": "Q180068",
+    "name": "Kohgiluyeh and Boyer-Ahmad",
+    "native": "کهگیلویه و بویراحمد",
+    "centre": {
+      "id": "Q383129",
+      "name": "Yasuj",
+      "native": "یاسوج",
+      "longitude": 51.583333333,
+      "latitude": 30.666666666
+    },
+    "population": 713052,
+    "area_km2": 15504.0
+  },
+  {
+    "id": "Q134386",
+    "name": "Kurdistan",
+    "native": "کردستان",
+    "centre": {
+      "id": "Q272093",
+      "name": "Sanandaj",
+      "native": "سنندج",
+      "longitude": 46.998888888,
+      "latitude": 35.309722222
+    },
+    "population": 1603011,
+    "area_km2": 29137.0
+  },
+  {
+    "id": "Q1131727",
+    "name": "Lorestan",
+    "native": "لرستان",
+    "centre": {
+      "id": "Q502212",
+      "name": "Khorramabad",
+      "native": "خرمآباد",
+      "longitude": 48.35,
+      "latitude": 33.466666666
+    },
+    "population": 1760649,
+    "area_km2": 28294.0
+  },
+  {
+    "id": "Q134417",
+    "name": "Markazi",
+    "native": "مرکزی",
+    "centre": {
+      "id": "Q212628",
+      "name": "Arak",
+      "native": "اراک",
+      "longitude": 49.698055555,
+      "latitude": 34.095
+    },
+    "population": 1429475,
+    "area_km2": 29127.0
+  },
+  {
+    "id": "Q308864",
+    "name": "Mazandaran",
+    "native": "مازندران",
+    "centre": {
+      "id": "Q168843",
+      "name": "Sari",
+      "native": "ساری",
+      "longitude": 53.059722222,
+      "latitude": 36.565833333
+    },
+    "population": 3283582,
+    "area_km2": 23842.0
+  },
+  {
+    "id": "Q180075",
+    "name": "North Khorasan",
+    "native": "خراسان شمالی",
+    "centre": {
+      "id": "Q317946",
+      "name": "Bojnord",
+      "native": "بجنورد",
+      "longitude": 57.333333333,
+      "latitude": 37.466666666
+    },
+    "population": 863092,
+    "area_km2": 28434.0
+  },
+  {
+    "id": "Q1105893",
+    "name": "Qazvin",
+    "native": "قزوین",
+    "centre": {
+      "id": "Q181578",
+      "name": "Qazvin",
+      "native": "قزوین",
+      "longitude": 50.0041,
+      "latitude": 36.285436666
+    },
+    "population": 1273761,
+    "area_km2": 15567.0
+  },
+  {
+    "id": "Q131664",
+    "name": "Qom",
+    "native": "قم",
+    "centre": {
+      "id": "Q170573",
+      "name": "Qom",
+      "native": "قم",
+      "longitude": 50.876388888,
+      "latitude": 34.64
+    },
+    "population": 1292283,
+    "area_km2": 11526.0
+  },
+  {
+    "id": "Q587090",
+    "name": "Razavi Khorasan",
+    "native": "خراسان رضوی",
+    "centre": {
+      "id": "Q121157",
+      "name": "Mashhad",
+      "native": "مشهد",
+      "longitude": 59.605923055,
+      "latitude": 36.297494444
+    },
+    "population": 6434501,
+    "area_km2": 118884.0
+  },
+  {
+    "id": "Q168949",
+    "name": "Semnan",
+    "native": "سمنان",
+    "centre": {
+      "id": "Q203045",
+      "name": "Semnan",
+      "native": "سمنان",
+      "longitude": 53.383333333,
+      "latitude": 35.583333333
+    },
+    "population": 702360,
+    "area_km2": 97491.0
+  },
+  {
+    "id": "Q939575",
+    "name": "Sistan and Baluchestan",
+    "native": "سیستان و بلوچستان",
+    "centre": {
+      "id": "Q140561",
+      "name": "Zahedan",
+      "native": "زاهدان",
+      "longitude": 60.8503017,
+      "latitude": 29.4928874
+    },
+    "population": 2775014,
+    "area_km2": 181785.0
+  },
+  {
+    "id": "Q171551",
+    "name": "South Khorasan",
+    "native": "خراسان جنوبی",
+    "centre": {
+      "id": "Q193806",
+      "name": "Birjand",
+      "native": "بیرجند",
+      "longitude": 59.221111111,
+      "latitude": 32.866388888
+    },
+    "population": 768898,
+    "area_km2": 151913.0
+  },
+  {
+    "id": "Q590866",
+    "name": "Tehran",
+    "native": "تهران",
+    "centre": {
+      "id": "Q3616",
+      "name": "Tehran",
+      "native": "تهران",
+      "longitude": 51.389722222,
+      "latitude": 35.688888888
+    },
+    "population": 13267637,
+    "area_km2": 18814.0
+  },
+  {
+    "id": "Q134411",
+    "name": "West Azerbaijan",
+    "native": "آذربایجان غربی",
+    "centre": {
+      "id": "Q179665",
+      "name": "Urmia",
+      "native": "ارومیه",
+      "longitude": 45.0675,
+      "latitude": 37.548611111
+    },
+    "population": 3265219,
+    "area_km2": 37437.0
+  },
+  {
+    "id": "Q170568",
+    "name": "Yazd",
+    "native": "یزد",
+    "centre": {
+      "id": "Q182394",
+      "name": "Yazd",
+      "native": "یزد",
+      "longitude": 54.3675,
+      "latitude": 31.897222222
+    },
+    "population": 1138533,
+    "area_km2": 129285.0
+  },
+  {
+    "id": "Q146726",
+    "name": "Zanjan",
+    "native": "زنجان",
+    "centre": {
+      "id": "Q146699",
+      "name": "Zanjan",
+      "native": "زنجان",
+      "longitude": 48.483333333,
+      "latitude": 36.666666666
+    },
+    "population": 1057461,
+    "area_km2": 21773.0
+  }
+]
