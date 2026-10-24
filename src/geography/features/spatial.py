@@ -5,7 +5,7 @@ from dataclasses import dataclass
 import geopandas as gpd
 from shapely.geometry import LineString, MultiLineString, Point
 
-from geography.data import NaturalEarth
+from geography.data import CONTESTED_TYPES, NaturalEarth
 from geography.render import EQUAL_AREA, get_mainland, get_nearby_parts
 
 CRS = "EPSG:4326"
@@ -18,7 +18,6 @@ CLAIM_REACH_M = 50_000
 MIN_CONTAINED_SHARE = 0.5
 MAX_LONGITUDE = 180
 LINE_TYPES = ("LineString", "MultiLineString")
-CONTESTED_TYPES = ("Disputed", "Indeterminate", "Breakaway")
 OUTLIER_FACTOR = 3
 
 

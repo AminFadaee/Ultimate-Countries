@@ -133,7 +133,7 @@ def description() -> str:
 waterfalls, canyons, rainforests, regions and famous landmarks, each shown on a map. Places with a recognisable look also have a photo card.</p>
 <p>A companion to <a href="{COUNTRIES_ANKIWEB_URL}">Ultimate Countries</a>, inspired by
 <a href="{ULTIMATE_GEOGRAPHY_URL}">Ultimate Geography</a>.</p>
-<p>The back of every card has a one-sentence description from Wikipedia. Everything is in one deck. Every note is tagged with its kind and continent (for example <code>UP::Volcano</code> or
+<p>The back of every card has a one-sentence description from Wikipedia, and a place's photo sits inside the magnifier of its map. Everything is in one deck. Every note is tagged with its kind and continent (for example <code>UP::Volcano</code> or
 <code>UP::Africa</code>), so you can study one kind at a time with a filtered deck: Tools → Create Filtered Deck,
 then search for <code>deck:"Ultimate Places" tag:UP::Volcano</code>.</p>
 <p>Data comes from Natural Earth (public domain), Marine Regions IHO sea areas (CC BY), RESOLVE Ecoregions (CC BY),

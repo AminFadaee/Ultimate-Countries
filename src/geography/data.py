@@ -16,6 +16,8 @@ COUNTRIES_FILE = "ne_10m_admin_0_countries_lakes.zip"
 DISPUTED_FILE = "ne_10m_admin_0_disputed_areas.zip"
 REGIONS_FILE = "ne_10m_admin_1_states_provinces_lakes.zip"
 MAP_UNITS_FILE = "ne_10m_admin_0_map_units.zip"
+CONTESTED_TYPES = ("Disputed", "Indeterminate", "Breakaway")
+LEASE = "Lease"
 COUNTRY_NAME_COLUMNS = ("ADM0_A3", "ISO_A2_EH", "ADMIN", "NAME", "NAME_LONG")
 SHAPE_NAME_COLUMNS = ("ADMIN", "NAME", "NAME_LONG")
 MAP_UNIT_CODE_COLUMNS = ("GU_A3", "SU_A3", "ISO_A3_EH")
@@ -137,10 +139,11 @@ class NaturalEarth:
             group = self.countries[self.countries["ADM0_A3"] == code]
 
         core_mask = (group["ADM0_A3"] == code) | (group["ADM0_TLC"] == code)
-        disputed = group[~core_mask]
+        disputed = group[~core_mask & (group["TYPE"] != LEASE)]
 
         core = group[core_mask]
-        extra = self.disputed_areas[(self.disputed_areas["ADM0_A3_US"] == code) | self._administered_within(core, code)]
+        areas = self.disputed_areas[self.disputed_areas["TYPE"] != LEASE]
+        extra = areas[(areas["ADM0_A3_US"] == code) | self._administered_within(areas, core, code)]
         if not extra.empty:
             disputed = gpd.GeoDataFrame(
                 pd.concat([disputed, extra], ignore_index=True),
@@ -150,12 +153,12 @@ class NaturalEarth:
         regions = self.regions[self.regions["adm0_a3"] == code]
         return Country(code, core, disputed, regions)
 
-    def _administered_within(self, core: gpd.GeoDataFrame, code: str) -> pd.Series:
+    @staticmethod
+    def _administered_within(areas: gpd.GeoDataFrame, core: gpd.GeoDataFrame, code: str) -> pd.Series:
         if core.empty:
-            return pd.Series(False, index=self.disputed_areas.index)
-        territory = core.geometry.union_all()
-        inside = self.disputed_areas.geometry.representative_point().within(territory)
-        return inside & (self.disputed_areas["ADM0_A3_US"] != code)
+            return pd.Series(False, index=areas.index)
+        inside = areas.geometry.representative_point().within(core.geometry.union_all())
+        return inside & (areas["ADM0_A3_US"] != code)
 
     def _standalone(self, rows: gpd.GeoDataFrame) -> Country:
         empty = rows.iloc[0:0]

@@ -302,7 +302,7 @@ def description() -> str:
 <p>Inspired by <a href="{ULTIMATE_GEOGRAPHY_URL}">Ultimate Geography</a>, the deck that got me excited about learning geography.
 Ultimate Countries covers every country and territory with a permanent population. You learn capitals, flags and maps, and
 the back of every card also shows the country's demonym, languages, currency, religion, population, government and
-notable cities. The best-known cities of the world are in the deck too, each on an atlas-style map.</p>
+notable cities. The best-known cities of the world are in the deck too, each on an atlas-style map that names the neighbouring countries.</p>
 <p>Everything is in one deck. Notes are tagged by kind, region, status and membership (for example <code>UC::City</code>,
 <code>UC::Asia</code> or <code>UC::NATO</code>), so you can study one group at a time with a filtered deck: Tools → Create Filtered Deck, then
 search for <code>deck:"Ultimate Countries" tag:UC::Asia</code>. You can filter by card type too, for example
