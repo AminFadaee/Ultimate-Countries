@@ -24,12 +24,13 @@ jobs:
         run: |
           uv run geography deck
           uv run geography places-deck
+          for directory in data/country_decks/*/; do uv run geography country-deck "$(basename "$directory")"; done
 
       - name: Publish release
         run: |
           notes="docs/releases/${GITHUB_REF_NAME}.md"
-          [ -f "$notes" ] || echo "Anki decks built from the data in this commit: ultimate_countries.apkg and ultimate_places.apkg." > "$notes"
-          gh release create "$GITHUB_REF_NAME" build/ultimate_countries.apkg build/ultimate_places.apkg \
-            --title "Ultimate Countries and Ultimate Places ${GITHUB_REF_NAME#v}" \
+          [ -f "$notes" ] || echo "Anki decks built from the data in this commit." > "$notes"
+          gh release create "$GITHUB_REF_NAME" build/*.apkg \
+            --title "Ultimate Geography decks ${GITHUB_REF_NAME#v}" \
             --notes-file "$notes" \
             --verify-tag

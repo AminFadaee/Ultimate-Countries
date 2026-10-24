@@ -7,7 +7,7 @@ import geopandas as gpd
 from shapely.geometry import Point, mapping, shape
 
 from geography.countrydeck.cities import near_mainland_features
-from geography.countrydeck.maps import PlaceMapJob, answer_path, render_place_maps
+from geography.countrydeck.maps import PlaceMapJob, render_place_maps
 from geography.countrydeck.names import named
 from geography.countrydeck.selection import select_places
 from geography.data import NaturalEarth
@@ -17,6 +17,7 @@ from geography.features.kinds import Shape
 from geography.features.model import Feature
 from geography.features.spatial import CRS, OurCountry
 from geography.features.wikidata import FeatureQueries
+from geography.naming import answer_path
 from geography.places import Nominatim
 from geography.sources.natural_earth_physical import PhysicalLayer, load_layer
 from geography.sources.wikidata import Wikidata
@@ -76,7 +77,7 @@ class CountryPlacesCollector(PlacesCollector):
             features.append(Feature(candidate.qid, "", candidate.kind, geometry, facts[candidate.qid].sitelinks, candidate.qid))
         tiers = {candidate.qid: candidate.tier for candidate in candidates}
         resolve_shapes(self.wikidata, features)
-        features = [feature for feature in features if not feature.geometry.empty]
+        features = [feature for feature in features if not feature.geometry.empty and not feature.geometry.union_all().is_empty]
         features = near_mainland_features(data, code, features)
         features = one_per_extreme(features, tiers, extremes)
         names = named(self.wikidata, {feature.qid for feature in features}, language)

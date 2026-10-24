@@ -110,7 +110,7 @@ def tag(prefix: str, *parts: str) -> str:
 
 def description(name: str) -> str:
     return f"""
-<p><b>Ultimate {name}</b>: {name}'s provinces and their centres, its neighbours, cities and places.</p>
+<p><b>Ultimate {name} Geography</b>: {name}'s provinces and their centres, neighbours, cities, natural features and landmarks, each on a map.</p>
 <p>Part of a family with <a href="{COUNTRIES_ANKIWEB_URL}">Ultimate Countries</a> and <a href="{PLACES_ANKIWEB_URL}">Ultimate Places</a>, inspired by
 <a href="{ULTIMATE_GEOGRAPHY_URL}">Ultimate Geography</a>. Names are shown in the country's own language too.</p>
 <p>Data comes from Wikidata (CC0), Wikipedia (CC BY-SA), Natural Earth (public domain), Marine Regions (CC BY) and OpenStreetMap (ODbL).</p>
@@ -120,7 +120,7 @@ def description(name: str) -> str:
 class CountryDeckBuilder:
     def __init__(self, meta: dict, build_dir: pathlib.Path, data_dir: pathlib.Path):
         self.meta = meta
-        self.name = f"Ultimate {meta['name']}"
+        self.name = f"Ultimate {meta['name']} Geography"
         self.prefix = meta["alpha_2"].upper()
         self.media = MediaLibrary(data_dir, build_dir / "media" / meta["code"].lower(), f"nd-{meta['code'].lower()}")
         css = CSS + FACTS_CSS + MAP_ZOOM_CSS
@@ -220,4 +220,4 @@ def build_country_deck(code: str, build_dir: pathlib.Path, output: pathlib.Path 
     in_places = {document["qid"] for document in read_documents(data_dir)}
     for document in read_documents(directory):
         builder.add_place(document, in_places)
-    builder.write(output or build_dir / f"ultimate_{meta['name'].lower().replace(' ', '_')}.apkg")
+    builder.write(output or build_dir / f"ultimate_{meta['name'].lower().replace(' ', '_')}_geography.apkg")

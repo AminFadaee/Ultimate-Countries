@@ -138,6 +138,35 @@ Countries are computed from the shapes: the countries that hold a share of an ar
 crossed by a line or river. A country that Wikidata names for a place is added only if it lies within 50 km of it. Continents come from the Natural Earth continent shapes, so Siberia is in Asia and Martinique in the Americas. Facts (heights, lengths, areas) come from Wikidata, converted to metric; build dates and cultures
 from the Wikipedia infobox; the sentence on the back of each card from the English Wikipedia summary; photos from Wikimedia Commons, with their author and licence recorded in `data/places/CREDITS.md`. A place inside a disputed area is listed with its city only, not a country.
 
+## Country decks
+
+A deck for one country, in the same style as the other two: **Ultimate Iran Geography** and **Ultimate Netherlands
+Geography** are published, and `geography country CODE` builds one for any other country. Each deck stands alone, and a
+place that is also in Ultimate Places is tagged `Also_in_Places`, so you can suspend one copy if you use both.
+
+| Note | Cards |
+|---|---|
+| Province | the map (province highlighted, its centre a black dot) → name; province → centre; centre → province |
+| City | the map, with the other cities and the neighbouring countries named → city; city → province (not asked for provincial centres) |
+| Neighbour | the map, anchored on the country → neighbour, with its capital, flag and facts on the back |
+| Place | the map or the photo → name, as in Ultimate Places |
+
+Every name is also shown in the country's own language: the first official language on Wikidata, or the one you pass with
+`--language`. Maps share one frame per deck, so the country stays the same size on every card, and areas that Natural Earth
+lists as disputed are drawn in the disputed colour.
+
+What goes in is chosen by rules relative to the country, not by hand:
+
+- **Provinces:** the first-level divisions in Natural Earth that lie on the mainland (units more than 300 km away, such as
+  the Caribbean Netherlands, are left out unless you pass `--include-overseas`), with the centre, population and area from Wikidata.
+- **Cities:** every provincial centre, plus cities of at least 100,000 people with 40 Wikipedia languages, or at least 60,000
+  with 65. A smaller city close to a much larger one is left out unless it has 50 languages, and administrative mergers of
+  several towns are not counted as cities.
+- **Neighbours:** countries that touch, plus countries that share a maritime boundary within 300 km, from Marine Regions.
+- **Places:** the UNESCO sites, the best-covered mountains, rivers, lakes, islands, seas, parks and similar kinds (the cut-off
+  is relative to the country, because Wikipedia covers some countries far better than others), landmarks with a heritage
+  designation, a few museums, stadiums, airports, ports and flood defences, and the country's highest and lowest points.
+
 ## How the data is chosen
 
 | Field | Source | Rule |
@@ -175,6 +204,8 @@ uv run geography check        # accuracy against the reference set, anomalies, c
 uv run geography deck         # build build/ultimate_countries.apkg
 uv run geography places       # collect places, photos and maps into data/places/
 uv run geography places-deck  # build build/ultimate_places.apkg
+uv run geography country IRN       # collect a country's provinces, cities, neighbours and places, and draw its maps
+uv run geography country-deck IRN  # build build/ultimate_iran_geography.apkg
 uv run geography samples      # render the sample cards in docs/samples/ from the built decks
 ```
 
@@ -212,8 +243,9 @@ git tag v$(date +%Y.%m.%d)
 git push origin v$(date +%Y.%m.%d)
 ```
 
-Versions are dates, so the version says how fresh the data is. Pushing the tag builds `ultimate_countries.apkg` and
-`ultimate_places.apkg` and publishes them as a release under that tag.
+Versions are dates, so the version says how fresh the data is. Pushing the tag builds `ultimate_countries.apkg`,
+`ultimate_places.apkg` and one deck for every country in `data/country_decks`, and publishes them as a release under that tag.
+The release notes are read from `docs/releases/<tag>.md`.
 
 ## Quality checks
 

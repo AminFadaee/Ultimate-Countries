@@ -18,7 +18,7 @@ from geography.features.spatial import (
     CountryLocator,
     load_our_countries,
 )
-from geography.naming import slugify
+from geography.naming import answer_path, slugify
 from geography.render import EQUAL_AREA, PROJECTABLE_LATITUDE
 from geography.sources import commons
 from geography.sources.natural_earth_physical import PhysicalLayer, load_layer
@@ -224,6 +224,7 @@ class PlacesCollector:
         documents = {slugs[feature.key]: document(feature) for feature in features}
         referenced = {self.paths.features / f"{slug}.json" for slug in documents}
         referenced |= {self.paths.root / content["map"] for content in documents.values() if content["map"]}
+        referenced |= {answer_path(self.paths.root / content["map"]) for content in documents.values() if content["map"]}
         referenced |= {self.paths.root / content["photo"]["file"] for content in documents.values() if content["photo"]}
         for directory, suffix in ((self.paths.features, ".json"), (self.paths.maps, ".png"), (self.paths.photos, ".jpg")):
             for stale in directory.glob(f"*{suffix}"):

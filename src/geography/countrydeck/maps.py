@@ -26,8 +26,8 @@ from geography.features.spatial import CRS
 from geography.labels import CityLabel
 from geography.map_cache import through_cache
 from geography.maps import MapJob, our_country_names, render_maps
-from geography.naming import slugify
-from geography.render import Framing, LocatorMap, Naming, Scene
+from geography.naming import answer_path, slugify
+from geography.render import Framing, LocatorMap, Naming, Scene, get_mainland, get_nearby_parts
 
 logger = logging.getLogger(__name__)
 
@@ -98,7 +98,8 @@ def place_scene(job: PlaceMapJob, data: NaturalEarth) -> Scene:
         spot = geometry.to_crs(local).buffer(POINT_RADIUS_M).to_crs(CRS)
         return Scene(highlight=spot, host=country.core.geometry, lens_highlight=spot, min_zoom_span=POINT_LENS_SPAN_M, style=kind.spec.palette.style(Shape.POINT), **common)
     if kind.spec.shape.is_line:
-        band = geometry.to_crs(local).buffer(size_of(country.core.geometry) * LINE_BAND_SHARE).to_crs(CRS)
+        mainland = get_nearby_parts(country.core.geometry, get_mainland(country.core.geometry))
+        band = geometry.to_crs(local).buffer(size_of(mainland) * LINE_BAND_SHARE).to_crs(CRS)
         return Scene(highlight=band, host=empty(country.core.geometry), lens_highlight=band, style=kind.spec.palette.style(Shape.LINE), **common)
     marked = outline(geometry, kind)
     return Scene(highlight=marked, host=geometry, lens_highlight=marked, style=kind.spec.palette.style(Shape.AREA), **common)
@@ -177,10 +178,6 @@ def draw_city_maps(jobs: list[MapJob], workers: int, rerender: bool) -> None:
     for job, error in render_maps(pending, workers):
         if error:
             logger.error("Map failed for %s: %s", job.place_name, error)
-
-
-def answer_path(path: pathlib.Path) -> pathlib.Path:
-    return path.with_name(f"{path.stem}-answer{path.suffix}")
 
 
 def render_area_maps(jobs: list[AreaMapJob], workers: int) -> Iterable[tuple[AreaMapJob, Exception | None]]:
