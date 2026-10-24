@@ -164,7 +164,7 @@ class Catalog:
         return self.without_parts(list(unique.values()))
 
     def without_parts(self, features: list[Feature]) -> list[Feature]:
-        by_qid = {feature.qid: feature for feature in features if feature.qid}
+        by_qid = {feature.qid: feature for feature in features if feature.qid and feature.kind is Kind.LANDMARK}
         dropped = {
             min(by_qid[part], by_qid[whole], key=lambda feature: feature.sitelinks).qid
             for part, whole in self.queries.parts_of(set(by_qid))

@@ -15,6 +15,7 @@ COAST_M = 10_000
 LAKE_SHORE_M = 1_000
 POINT_M = 3_000
 CLAIM_REACH_M = 50_000
+MIN_CONTAINED_SHARE = 0.5
 MAX_LONGITUDE = 180
 LINE_TYPES = ("LineString", "MultiLineString")
 CONTESTED_TYPES = ("Disputed", "Indeterminate", "Breakaway")
@@ -91,7 +92,9 @@ class CountryLocator:
 
     def by_area(self, geometry: gpd.GeoSeries) -> list[OurCountry]:
         shape = geometry.to_crs(EQUAL_AREA).union_all()
-        return self._ranked(lambda country: country.intersection(shape).area / shape.area, MIN_AREA_SHARE)
+        found = self._ranked(lambda country: country.intersection(shape).area / shape.area, MIN_AREA_SHARE)
+        inside = self._ranked(lambda country: country.intersection(shape).area / country.area if country.area else 0.0, MIN_CONTAINED_SHARE)
+        return found + [country for country in inside if country not in found]
 
     def by_line(self, geometry: gpd.GeoSeries) -> list[OurCountry]:
         split = gpd.GeoSeries([split_antimeridian(shape) for shape in geometry.geometry], crs=geometry.crs)
