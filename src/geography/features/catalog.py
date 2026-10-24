@@ -109,8 +109,8 @@ def drawn_km(geometry: gpd.GeoSeries) -> float:
     return sum(GEOD.geometry_length(line) for line in geometry) / 1000
 
 
-def stems(text: str) -> set[str]:
-    return {word[:STEM_LENGTH] for word in re.findall(r"[a-z]+", text.casefold())}
+def stems(text: object) -> set[str]:
+    return {word[:STEM_LENGTH] for word in re.findall(r"[a-z]+", str(text).casefold())}
 
 
 def title_of(facts: ItemFacts) -> str:
@@ -209,7 +209,7 @@ class Catalog:
     def rebuild_from_provinces(self, regions: list[Feature]) -> None:
         parts = self.queries.part_labels({region.qid for region in regions})
         provinces = self.data.regions
-        names = provinces["region_sub"].astype(str)
+        names = provinces["region_sub"]
         for region in regions:
             wanted = [stems(label) for label in parts.get(region.qid, [])]
             matched = provinces[[len(stems(name)) >= MIN_NAME_STEMS and any(stems(name) <= part for part in wanted) for name in names]]
