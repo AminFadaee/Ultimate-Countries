@@ -100,7 +100,7 @@ coloured by kind (snowy white for mountains, orange for deserts, blue for water,
 
 | Question | Answer |
 |---|---|
-| the map, with the kind of place (MOUNTAIN RANGE, DESERT…) and, when the place has one, a small photo of it in the corner | its name, with countries, one fact, a one-sentence description from Wikipedia and, for landmarks, the city and when it was built |
+| the map, with the kind of place (MOUNTAIN RANGE, DESERT…) and, when the place has one, its photo inside the magnifying circle (in the corner when the map has no magnifier) | its name, with countries, one fact, a one-sentence description from Wikipedia and, for landmarks, the city and when it was built |
 | a photo (mountains, volcanoes, waterfalls, canyons, reefs, rainforests, canals and landmarks) | its name, kind, map and the same details |
 
 <p>
@@ -130,8 +130,8 @@ To leave a kind out for good, open the Browser, search for its tag and suspend t
 | Mountains and volcanoes | Natural Earth peaks and Wikidata | Well known; volcanoes by their Wikidata type |
 | Waterfalls, canyons, canals | Wikidata, with shapes from Natural Earth and OpenStreetMap | The best known of each kind |
 | Rainforests | RESOLVE Ecoregions 2017 | Large continuous blocks of tropical moist forest, named after the forest or the basin or island they cover |
-| Regions | Wikipedia | Regions whose Wikipedia infobox lists their countries (Scandinavia, the Middle East…), drawn from those countries and listed with all of them |
-| Landmarks | Wikidata | World Heritage sites and famous structures that are buildings, monuments or archaeological sites; living cities are left out |
+| Regions | Wikipedia, Natural Earth | Regions whose Wikipedia infobox lists their countries (Scandinavia, the Middle East…), drawn from those countries; Natural Earth's own outline is used where the listed countries only partly belong to the region (the Sahel) and for island groups (Melanesia, Micronesia, Polynesia). Siberia is built from the Russian provinces that Wikidata lists as its parts |
+| Landmarks | Wikidata, OpenStreetMap | World Heritage sites and famous structures that are buildings, monuments or archaeological sites; living cities are left out. When Wikidata says one landmark is part of another that is also in the deck (the Great Pyramid in the Giza complex), only the more widely covered one is kept. Walls (the Great Wall, Hadrian's Wall) are drawn as lines from OpenStreetMap, joined across gaps of up to about 40 km |
 | Lines | Natural Earth | The Equator, the tropics, the polar circles and the International Date Line, plus the Prime Meridian |
 
 Countries are computed from the shapes: the countries that hold a share of an area, border a sea or lake, contain a point or are
