@@ -1,3 +1,4 @@
+import json
 import logging
 import multiprocessing
 import pathlib
@@ -45,7 +46,7 @@ class MapWorker:
 
     @classmethod
     def start(cls) -> None:
-        cls.renderer = LocatorMap(NaturalEarth.load(), DetailLayers.load())
+        cls.renderer = LocatorMap(NaturalEarth.load(), DetailLayers.load(), country_names=our_country_names())
 
     @classmethod
     def render(cls, job: MapJob) -> str:
@@ -71,6 +72,11 @@ class MapWorker:
             scene = replace(scene, cities=job.cities)
         cls.renderer.render(scene, job.output, job.answer_output)
         return job.key
+
+
+def our_country_names(directory: pathlib.Path = pathlib.Path("data/countries")) -> dict[str, str]:
+    documents = (json.loads(path.read_text()) for path in directory.glob("*.json"))
+    return {document["codes"]["alpha_3"]: document["name"] for document in documents if document["codes"]["alpha_3"]}
 
 
 def local_projection(longitude: float, latitude: float) -> str:

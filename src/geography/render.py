@@ -17,6 +17,7 @@ from PIL import Image
 from shapely.geometry import box
 from shapely.ops import transform
 
+from geography.country_labels import CountryLabels
 from geography.data import Country, NaturalEarth
 from geography.detail import DetailLayers
 from geography.images import save_compact
@@ -378,8 +379,10 @@ class LocatorMap:
         aspect_ratio: float = 1.9,
         width: float = 10,
         dpi: int = 200,
+        country_names: dict[str, str] | None = None,
     ):
         self.data = data
+        self.country_names = country_names or {}
         self.detail = detail
         self.aspect_ratio = aspect_ratio
         self.width = width
@@ -420,6 +423,7 @@ class LocatorMap:
                 self._plot_corner_photo(fig, scene)
             if scene.cities:
                 labels = CityLabels(fig, fig.axes[0], projection, extent, scene.cities, scene.style.highlight)
+                self._label_neighbours(fig, scene, projection, extent, labels.obstacles())
                 labels.show_answer(False)
                 self._save(fig, out_path, scene.style)
                 labels.show_answer(True)
@@ -428,6 +432,13 @@ class LocatorMap:
                 self._save(fig, out_path, scene.style)
         finally:
             plt.close(fig)
+
+    def _label_neighbours(self, fig: Figure, scene: Scene, projection: ccrs.Projection, extent: Extent, obstacles: list) -> None:
+        countries = get_visible(self.data.countries, projection, extent).to_crs(projection.proj4_init)
+        focus = scene.host.to_crs(projection.proj4_init).union_all()
+        neighbours = countries[~countries.geometry.representative_point().within(focus)]
+        labels = [self.country_names.get(code, name) for code, name in zip(neighbours["ADM0_A3"], neighbours["NAME_EN"], strict=True)]
+        CountryLabels(fig, fig.axes[0], extent, neighbours.assign(label=labels), focus, obstacles)
 
     def render_centred(self, scene: CentredScene, out_path: pathlib.Path) -> None:
         extent = scene.extent

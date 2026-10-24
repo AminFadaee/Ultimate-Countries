@@ -3,7 +3,7 @@ from typing import BinaryIO
 
 from PIL import Image, ImageColor
 
-MAP_WIDTH = 1000
+MAP_WIDTH = 2000
 MAP_COLORS = 64
 PALETTE_SIZE = 256
 

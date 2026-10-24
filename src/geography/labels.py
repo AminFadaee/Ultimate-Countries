@@ -68,6 +68,9 @@ class CityLabels:
         self.blocked = [other.get_window_extent(self.renderer) for other in fig.axes[1:]]
         self._place()
 
+    def obstacles(self) -> list[Bbox]:
+        return self.taken + self.lines + self.blocked
+
     def show_answer(self, shown: bool) -> None:
         if self.answer is not None:
             self.answer.set_visible(shown)
