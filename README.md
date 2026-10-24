@@ -136,7 +136,7 @@ To leave a kind out for good, open the Browser, search for its tag and suspend t
 
 Countries are computed from the shapes: the countries that hold a share of an area, border a sea or lake, contain a point or are
 crossed by a line or river. A country that Wikidata names for a place is added only if it lies within 50 km of it. Continents come from the Natural Earth continent shapes, so Siberia is in Asia and Martinique in the Americas. Facts (heights, lengths, areas) come from Wikidata, converted to metric; build dates and cultures
-from the Wikipedia infobox; the sentence on the back of each card from the English Wikipedia summary; photos from Wikimedia Commons, with their author and licence recorded in `data/places/CREDITS.md`. A place inside a disputed area is listed with its city only, not a country.
+from the Wikipedia infobox; the sentence on the back of each card from the English Wikipedia summary; photos from Wikimedia Commons, with their author and licence recorded in `data/places/CREDITS.md`; when a deck is built, each photo gets an automatic contrast and brightness correction only if it looks flat, dark or washed out (`--plain-photos` on `places-deck` and `country-deck` keeps the originals). A place inside a disputed area is listed with its city only, not a country.
 
 ## Country decks
 

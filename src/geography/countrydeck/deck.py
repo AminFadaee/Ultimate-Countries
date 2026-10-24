@@ -124,11 +124,11 @@ def description(name: str) -> str:
 
 
 class CountryDeckBuilder:
-    def __init__(self, meta: dict, build_dir: pathlib.Path, data_dir: pathlib.Path):
+    def __init__(self, meta: dict, build_dir: pathlib.Path, data_dir: pathlib.Path, tone_photos: bool = True):
         self.meta = meta
         self.name = f"Ultimate {meta['name']} Geography"
         self.prefix = meta["alpha_2"].upper()
-        self.media = MediaLibrary(data_dir, build_dir / "media" / meta["code"].lower(), f"nd-{meta['code'].lower()}")
+        self.media = MediaLibrary(data_dir, build_dir / "media" / meta["code"].lower(), f"nd-{meta['code'].lower()}", tone_photos)
         css = CSS + FACTS_CSS + MAP_ZOOM_CSS
         self.province_model = self._model(PROVINCE_MODEL_ID, "province", PROVINCE_FIELDS, province_templates(), css)
         self.neighbour_model = self._model(NEIGHBOUR_MODEL_ID, "neighbour", NEIGHBOUR_FIELDS, neighbour_templates(), css)
@@ -214,11 +214,11 @@ class CountryDeckBuilder:
                              templates=[template.as_genanki(MAP_ZOOM_SCRIPT) for template in templates], css=css, sort_field_index=1)
 
 
-def build_country_deck(code: str, build_dir: pathlib.Path, output: pathlib.Path | None = None, data_dir: pathlib.Path = pathlib.Path("data")) -> None:
+def build_country_deck(code: str, build_dir: pathlib.Path, output: pathlib.Path | None = None, data_dir: pathlib.Path = pathlib.Path("data"), tone_photos: bool = True) -> None:
     directory = COUNTRY_DECKS_DIR / code
     meta = json.loads((directory / "meta.json").read_text())
     documents = load_documents(data_dir / "countries")
-    builder = CountryDeckBuilder(meta, build_dir, data_dir)
+    builder = CountryDeckBuilder(meta, build_dir, data_dir, tone_photos)
     provinces = json.loads((directory / "provinces.json").read_text())
     for province in provinces:
         builder.add_province(province)

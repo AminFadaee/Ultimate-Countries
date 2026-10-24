@@ -31,9 +31,9 @@ MIN_NOTABLE_HEIGHT_M = 20
 FIELDS = ("Id", "Name", "Kind", "Map", "Photo", "Details")
 PLACES_CSS = CSS + """
 .blurb { margin-top: 12px; font-size: 15px; line-height: 1.45; color: var(--info); }
-.photo img { width: 100%; max-height: 220px; object-fit: cover; border-radius: 6px; }
+.photo img { width: auto; max-width: 100%; max-height: 260px; object-fit: contain; border-radius: 6px; }
 .photo-front { display: grid; place-items: center; min-height: 260px; }
-.photo-front .photo img { max-height: 340px; }
+.photo-front .photo img { max-height: 420px; }
 .photo + .map { margin-top: 10px; }
 .kind-name { color: var(--kind); font-weight: 600; }
 .nightMode .kind-name, .night_mode .kind-name { filter: brightness(1.6); }
@@ -145,8 +145,8 @@ Built {date.today().isoformat()}.</p>
 
 
 class PlacesDeckBuilder:
-    def __init__(self, data_dir: pathlib.Path, build_dir: pathlib.Path):
-        self.media = MediaLibrary(data_dir, build_dir / "media", MEDIA_PREFIX)
+    def __init__(self, data_dir: pathlib.Path, build_dir: pathlib.Path, tone_photos: bool = True):
+        self.media = MediaLibrary(data_dir, build_dir / "media", MEDIA_PREFIX, tone_photos)
         self.deck = genanki.Deck(stable_id(DECK_NAME), DECK_NAME, description())
         self.model = genanki.Model(
             PLACE_MODEL_ID,
@@ -189,8 +189,8 @@ class PlacesDeckBuilder:
         logger.info("Wrote %d places and %d media files to %s", self.notes, len(set(self.media.files)), output)
 
 
-def build_places_deck(documents: list[dict], data_dir: pathlib.Path, build_dir: pathlib.Path, output: pathlib.Path) -> None:
-    builder = PlacesDeckBuilder(data_dir, build_dir)
+def build_places_deck(documents: list[dict], data_dir: pathlib.Path, build_dir: pathlib.Path, output: pathlib.Path, tone_photos: bool = True) -> None:
+    builder = PlacesDeckBuilder(data_dir, build_dir, tone_photos)
     for document in sorted(documents, key=lambda document: document["name"]):
         builder.add(document)
     builder.write(output)

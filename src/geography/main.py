@@ -74,6 +74,7 @@ def parse_args() -> argparse.Namespace:
     places_deck = commands.add_parser("places-deck", help="build the Ultimate Places Anki deck")
     places_deck.add_argument("--data-dir", type=pathlib.Path, default=DATA_DIR)
     places_deck.add_argument("--output", type=pathlib.Path, default=PLACES_DECK_FILE)
+    places_deck.add_argument("--plain-photos", action="store_true", help="use the photos as downloaded, without automatic tone correction")
 
     country = commands.add_parser("country", help="collect the data and maps for one country's own deck, by ISO alpha-3 code")
     country.add_argument("code")
@@ -85,6 +86,7 @@ def parse_args() -> argparse.Namespace:
     country_deck = commands.add_parser("country-deck", help="build the Anki deck of one country")
     country_deck.add_argument("code")
     country_deck.add_argument("--output", type=pathlib.Path)
+    country_deck.add_argument("--plain-photos", action="store_true", help="use the photos as downloaded, without automatic tone correction")
 
     samples = commands.add_parser("samples", help="render sample cards from the built decks for the README")
     samples.add_argument("--build-dir", type=pathlib.Path, default=BUILD_DIR)
@@ -144,11 +146,11 @@ def main() -> None:
             PlacesCollector(PlacesPaths(args.data_dir), create_session()).run(PlacesOptions(args.rerender_maps, args.workers))
         case "places-deck":
             documents = [json.loads(path.read_text()) for path in sorted(PlacesPaths(args.data_dir).features.glob("*.json"))]
-            build_places_deck(documents, args.data_dir, BUILD_DIR, args.output)
+            build_places_deck(documents, args.data_dir, BUILD_DIR, args.output, not args.plain_photos)
         case "country":
             run_country(args.code.upper(), args.language, args.include_overseas, args.rerender_maps, args.workers)
         case "country-deck":
-            build_country_deck(args.code.upper(), BUILD_DIR, args.output)
+            build_country_deck(args.code.upper(), BUILD_DIR, args.output, tone_photos=not args.plain_photos)
         case "samples":
             render_samples(args.build_dir, args.output)
         case "place":

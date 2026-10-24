@@ -12,6 +12,7 @@ import genanki
 from geography.cards import Answer, CardType, Context, answers, shared_context
 from geography.models import CityRole
 from geography.naming import slugify
+from geography.tone import auto_tone
 
 DECK_NAME = "Ultimate Countries"
 COUNTRY_MODEL_ID = 1_730_418_562
@@ -354,10 +355,11 @@ class MissingMediaError(FileNotFoundError):
 
 
 class MediaLibrary:
-    def __init__(self, data_dir: pathlib.Path, build_dir: pathlib.Path, prefix: str = MEDIA_PREFIX):
+    def __init__(self, data_dir: pathlib.Path, build_dir: pathlib.Path, prefix: str = MEDIA_PREFIX, tone_photos: bool = True):
         self.data_dir = data_dir
         self.build_dir = build_dir
         self.prefix = prefix
+        self.tone_photos = tone_photos
         self.files: list[str] = []
         self.missing: list[pathlib.Path] = []
 
@@ -369,14 +371,15 @@ class MediaLibrary:
             self.missing.append(source)
             return ""
         target = self.build_dir / f"{self.prefix}-{kind}-{slugify(source.stem)}{source.suffix}"
-        if not target.exists() or target.stat().st_mtime < source.stat().st_mtime:
-            self._prepare(source, target)
+        toned = kind == "photo" and self.tone_photos
+        if toned or not target.exists() or target.stat().st_mtime < source.stat().st_mtime:
+            self._prepare(source, target, toned)
         self.files.append(str(target))
         return f'<img src="{target.name}">'
 
-    def _prepare(self, source: pathlib.Path, target: pathlib.Path) -> None:
+    def _prepare(self, source: pathlib.Path, target: pathlib.Path, toned: bool) -> None:
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_bytes(source.read_bytes())
+        target.write_bytes(auto_tone(source.read_bytes()) if toned else source.read_bytes())
 
 
 class DeckBuilder:
