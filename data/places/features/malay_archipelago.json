@@ -1,0 +1,34 @@
+{
+  "key": "Q208643",
+  "qid": "Q208643",
+  "name": "Malay Archipelago",
+  "kind": "Region",
+  "countries": [
+    "Indonesia",
+    "Philippines",
+    "Malaysia",
+    "Brunei",
+    "Timor-Leste",
+    "Singapore"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 2000000.0,
+  "built": null,
+  "culture": null,
+  "description": "The Malay Archipelago is the archipelago between Mainland Southeast Asia and Australia, and is also called Insulindia or the Indo-Australian Archipelago.",
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Asia"
+  ],
+  "map": "places/maps/malay_archipelago.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Malay_Archipelago",
+  "fame": 88
+}

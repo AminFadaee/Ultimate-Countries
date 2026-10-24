@@ -1,0 +1,43 @@
+{
+  "key": "Q35942",
+  "qid": "Q35942",
+  "name": "Polynesia",
+  "kind": "Region",
+  "countries": [
+    "Niue",
+    "American Samoa",
+    "Cook Islands",
+    "French Polynesia",
+    "Tuvalu",
+    "Wallis and Futuna",
+    "Samoa",
+    "Pitcairn Islands",
+    "Tonga",
+    "New Zealand",
+    "Kiribati",
+    "Chile",
+    "United States"
+  ],
+  "continents": [
+    "Americas",
+    "Oceania"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Polynesia is a subregion of Oceania, made up of more than 1,000 islands scattered over the central and southern Pacific Ocean.",
+  "world_heritage": false,
+  "tags": [
+    "Region",
+    "Americas",
+    "Oceania"
+  ],
+  "map": "places/maps/polynesia.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Polynesia",
+  "fame": 152
+}

@@ -4,21 +4,20 @@
   "name": "Sahel",
   "kind": "Region",
   "countries": [
+    "Sudan",
+    "Niger",
+    "Chad",
+    "Mali",
+    "Mauritania",
+    "South Sudan",
+    "Senegal",
+    "Eritrea",
     "Algeria",
     "Burkina Faso",
     "Cameroon",
-    "Cape Verde",
     "Central African Republic",
-    "Chad",
-    "Eritrea",
-    "The Gambia",
-    "Mali",
-    "Mauritania",
-    "Niger",
-    "Nigeria",
-    "Senegal",
-    "South Sudan",
-    "Sudan"
+    "Egypt",
+    "Nigeria"
   ],
   "continents": [
     "Africa"

@@ -6,14 +6,12 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 |---|---|---|---|
 | Abu Simbel | Olaf Tausch | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gro%C3%9Fer_Tempel_(Abu_Simbel)_31.jpg) |
 | Aconcagua | Bjørn Christian Tørrissen | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aconcagua2016.jpg) |
-| Acropolis of Athens | A.Savin | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg) |
 | Ajanta Caves | Soman | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ajanta_(63).jpg) |
 | Al-Aqsa Mosque | Godot13 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jerusalem-2013-Temple_Mount-Al-Aqsa_Mosque_(NE_exposure).jpg) |
 | Al-Masjid Al-Haram | Khalili Collections | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Khalili_Collection_Hajj_and_Arts_of_Pilgrimage_arc.pp_0211.04_CROP.jpg) |
 | Alhambra | Jebulon | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Alhambra_detail.jpg) |
 | Amazon rainforest | Phil P Harris. | [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Amazon_Manaus_forest.jpg) |
 | Angel Falls | Paulo Capiotti | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:SaltoAngel4.jpg) |
-| Angkor | Manfred Werner (talk · contribs) | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Angkor_Wat_W-Seite.jpg) |
 | Angkor Wat | The original uploader was Fuzheado at English Wikipedia. | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Angkor_wat_temple.jpg) |
 | Antelope Canyon | Lucas Löffler | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:USA_Antelope-Canyon.jpg) |
 | Aoraki / Mount Cook | W. Bulach | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:00_0985_Mount_Cook_-_New_Zealand_Alps.jpg) |
@@ -50,7 +48,6 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Erie Canal | Joshua Karn | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sunset_over_the_Erie_Canal_in_North_Tonawanda,_NY..jpg) |
 | Forbidden City | N509FZ | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hall_of_Supreme_Harmony_(20241127120000).jpg) |
 | Gangkhar Puensum | Christopher J. Fynn | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Himalayan_peak_from_Bumthang.jpg) |
-| Giza pyramid complex | KennyOMG | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pyramids_of_the_Giza_Necropolis.jpg) |
 | Golden Gate Bridge | Rich Niewiroski Jr. | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GoldenGateBridge-001.jpg) |
 | Grand Canal (Venice) | Martin Falbisoner | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Panorama_of_Canal_Grande_and_Ponte_di_Rialto,_Venice_-_September_2017.jpg) |
 | Grand Canyon | Chensiyuan | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Grand_Canyon_view_from_Pima_Point_2010.jpg) |

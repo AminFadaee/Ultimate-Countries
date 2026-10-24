@@ -4,10 +4,13 @@
   "name": "Melanesia",
   "kind": "Region",
   "countries": [
-    "Fiji",
+    "Indonesia",
     "Papua New Guinea",
+    "New Caledonia",
+    "Vanuatu",
+    "Norfolk Island",
     "Solomon Islands",
-    "Vanuatu"
+    "Fiji"
   ],
   "continents": [
     "Oceania"
