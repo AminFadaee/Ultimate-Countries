@@ -1,0 +1,38 @@
+{
+  "key": "Q924335",
+  "qid": "Q924335",
+  "name": "Stedelijk Museum Amsterdam",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Stedelijk Museum Amsterdam, colloquially known as the Stedelijk, is a museum for modern art, contemporary art, and design located in Amsterdam, Netherlands.",
+  "native": "Stedelijk Museum Amsterdam",
+  "group": "Museum",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/stedelijk_museum_amsterdam.png",
+  "photo": {
+    "file": "places/photos/stedelijk_museum_amsterdam.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/De%20nieuwe%20vleugel%20van%20het%20Stedelijk%20Museum%20Amsterdam.jpg",
+    "author": "John Lewis Marshall",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:De_nieuwe_vleugel_van_het_Stedelijk_Museum_Amsterdam.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Stedelijk_Museum_Amsterdam",
+  "fame": 38
+}

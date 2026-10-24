@@ -1,0 +1,30 @@
+{
+  "key": "Q1145392",
+  "qid": "Q1145392",
+  "name": "Tholen",
+  "kind": "Peninsula",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": null,
+  "native": "Tholen",
+  "world_heritage": false,
+  "tags": [
+    "Peninsula",
+    "Europe"
+  ],
+  "map": "places/maps/tholen.png",
+  "photo": null,
+  "wikipedia": null,
+  "fame": 12
+}

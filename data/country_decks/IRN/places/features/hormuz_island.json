@@ -1,0 +1,30 @@
+{
+  "key": "Q695265",
+  "qid": "Q695265",
+  "name": "Hormuz Island",
+  "kind": "Island",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 187.0,
+  "length_km": 7.0,
+  "area_km2": 42.0,
+  "built": null,
+  "culture": null,
+  "description": "Hormuz Island, also spelled Hormoz, Ormoz, Ormuz or Ormus, is an Iranian island in the Persian Gulf.",
+  "native": "جزیره هرمز",
+  "world_heritage": false,
+  "tags": [
+    "Island",
+    "Asia"
+  ],
+  "map": "places/maps/hormuz_island.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Hormuz_Island",
+  "fame": 53
+}

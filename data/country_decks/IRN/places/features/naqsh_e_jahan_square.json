@@ -1,0 +1,38 @@
+{
+  "key": "Q4519",
+  "qid": "Q4519",
+  "name": "Naqsh-e Jahan Square",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Isfahan",
+  "height_m": null,
+  "elevation_m": 1570.0,
+  "length_km": 0.56,
+  "area_km2": 0.0896,
+  "built": null,
+  "culture": null,
+  "description": "The Naqsh-e Jahan Square, also known as the Shah Square prior to 1979, and sometimes known as the Imam Square, is a square situated at the center of Isfahan, Iran.",
+  "native": "میدان نقش جهان",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/naqsh_e_jahan_square.png",
+  "photo": {
+    "file": "places/photos/naqsh_e_jahan_square.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Naghshe%20Jahan%20Square%20Isfahan%20modified2.jpg",
+    "author": "Arad Mojtahedi",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Naghshe_Jahan_Square_Isfahan_modified2.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Naqsh-e_Jahan_Square",
+  "fame": 67
+}

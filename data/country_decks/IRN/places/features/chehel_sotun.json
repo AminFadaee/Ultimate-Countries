@@ -1,0 +1,37 @@
+{
+  "key": "Q16566",
+  "qid": "Q16566",
+  "name": "Chehel Sotun",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Isfahan",
+  "height_m": null,
+  "elevation_m": 1582.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Chehel Sotoun is a 17th century pavilion and garden, in Isfahan, Iran.",
+  "native": "چهلستون",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/chehel_sotun.png",
+  "photo": {
+    "file": "places/photos/chehel_sotun.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Chehelsotun1.JPG",
+    "author": "Zenith210 (talk) (Uploads)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chehelsotun1.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Chehel_Sotoun",
+  "fame": 33
+}

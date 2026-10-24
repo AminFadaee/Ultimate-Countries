@@ -1,0 +1,38 @@
+{
+  "key": "Q240960",
+  "qid": "Q240960",
+  "name": "Afsluitdijk",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 32.5,
+  "area_km2": null,
+  "built": "1927–1932",
+  "culture": null,
+  "description": "The Afsluitdijk is a major dam and causeway in the Netherlands.",
+  "native": "Afsluitdijk",
+  "group": "Dam",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/afsluitdijk.png",
+  "photo": {
+    "file": "places/photos/afsluitdijk.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Afsluitdijk%201031.jpg",
+    "author": "C messier",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Afsluitdijk_1031.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Afsluitdijk",
+  "fame": 42
+}

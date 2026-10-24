@@ -1,0 +1,38 @@
+{
+  "key": "Q478707",
+  "qid": "Q478707",
+  "name": "Grachtengordel",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 4.817,
+  "built": null,
+  "culture": null,
+  "description": "The Grachtengordel, known in English as the Canal District, is a neighborhood in Amsterdam, Netherlands located in the Centrum district.",
+  "native": "grachtengordel van Amsterdam",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/grachtengordel.png",
+  "photo": {
+    "file": "places/photos/grachtengordel.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Amsterdam%20airphoto.jpg",
+    "author": "",
+    "license": "Attribution",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Amsterdam_airphoto.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Grachtengordel",
+  "fame": 17
+}

@@ -1,0 +1,37 @@
+{
+  "key": "Q1364168",
+  "qid": "Q1364168",
+  "name": "Sabalan",
+  "kind": "Mountain",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4811.0,
+  "length_km": null,
+  "area_km2": 65.85,
+  "built": null,
+  "culture": null,
+  "description": "Sabalan or Savalan is an inactive stratovolcano in northwestern Iran located in Ardabil province.",
+  "native": "سبلان",
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/sabalan.png",
+  "photo": {
+    "file": "places/photos/sabalan.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sab%20dalj1.JPG",
+    "author": "CrniBombarder!!!",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Sab_dalj1.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Sabalan",
+  "fame": 37
+}

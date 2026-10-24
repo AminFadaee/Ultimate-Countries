@@ -1,0 +1,38 @@
+{
+  "key": "Q1348234",
+  "qid": "Q1348234",
+  "name": "Eindhoven Airport",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "Eindhoven",
+  "height_m": null,
+  "elevation_m": 23.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Eindhoven Airport is an international airport located 7.6 km (4.7 mi) west of Eindhoven, Netherlands.",
+  "native": "Vliegbasis Eindhoven",
+  "group": "Airport",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/eindhoven_airport.png",
+  "photo": {
+    "file": "places/photos/eindhoven_airport.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Vertekhal%20Eindhoven%20airport.jpg",
+    "author": "CoolmenNL",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Vertekhal_Eindhoven_airport.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Eindhoven_Airport",
+  "fame": 42
+}

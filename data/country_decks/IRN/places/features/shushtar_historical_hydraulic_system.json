@@ -1,0 +1,38 @@
+{
+  "key": "Q2274974",
+  "qid": "Q2274974",
+  "name": "Shushtar Historical Hydraulic System",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 15.722009,
+  "built": null,
+  "culture": null,
+  "description": "The Shoushtar Historical Hydraulic System is a complex irrigation system of the island city Shoushtar from the Sasanian era.",
+  "native": "سازههای آبی شوشتر",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/shushtar_historical_hydraulic_system.png",
+  "photo": {
+    "file": "places/photos/shushtar_historical_hydraulic_system.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Shushtar%20Historical%20Hydraulic%20System%20Darafsh%20%286%29.jpg",
+    "author": "Darafsh",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Shushtar_Historical_Hydraulic_System_Darafsh_(6).jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Shoushtar_Historical_Hydraulic_System",
+  "fame": 30
+}

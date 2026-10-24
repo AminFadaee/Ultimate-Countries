@@ -1,0 +1,31 @@
+{
+  "key": "Q140869527",
+  "qid": "Q140869527",
+  "name": "Schokland",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 13.06,
+  "built": null,
+  "culture": null,
+  "description": "Schokland is a former island in the Dutch Zuiderzee, in the municipality of Noordoostpolder.",
+  "native": null,
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/schokland.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Schokland",
+  "fame": 43
+}

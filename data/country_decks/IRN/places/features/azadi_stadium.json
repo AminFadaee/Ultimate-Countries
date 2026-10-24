@@ -1,0 +1,38 @@
+{
+  "key": "Q653535",
+  "qid": "Q653535",
+  "name": "Azadi Stadium",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Tehran",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1970–1971",
+  "culture": null,
+  "description": "The Azadi Stadium, opened and also well known as the Aryamehr Stadium, is an all-seater football stadium in Tehran, Iran.",
+  "native": "ورزشگاه آزادی تهران",
+  "group": "Stadium",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/azadi_stadium.png",
+  "photo": {
+    "file": "places/photos/azadi_stadium.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Azadi%20Stadium%20ACL%202018.jpg",
+    "author": "Mahdi Zare/Fars News Agency",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Azadi_Stadium_ACL_2018.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Azadi_Stadium",
+  "fame": 42
+}

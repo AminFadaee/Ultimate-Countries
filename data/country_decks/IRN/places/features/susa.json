@@ -1,0 +1,38 @@
+{
+  "key": "Q180773",
+  "qid": "Q180773",
+  "name": "Susa",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 6.0,
+  "built": "4395-4200 BCE",
+  "culture": null,
+  "description": "Susa was an ancient city in the lower Zagros Mountains about 250 km (160 mi) east of the Tigris, between the Karkheh and Dez Rivers in Iran.",
+  "native": "شوش",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/susa.png",
+  "photo": {
+    "file": "places/photos/susa.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Apadana%2C%20a%20large%20hypostyle%20room%20of%2036%20columns%20in%20the%20Palace%20of%20Darius%2C%20Susa%2C%20capital%20of%20Elam%20and%20of%20the%20Achaemenid%20Empire%2C%20Iran%20%2846950284624%29.jpg",
+    "author": "Carole Raddato from Frankfurt, Germany",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Apadana,_a_large_hypostyle_room_of_36_columns_in_the_Palace_of_Darius,_Susa,_capital_of_Elam_and_of_the_Achaemenid_Empire,_Iran_(46950284624).jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Susa",
+  "fame": 79
+}

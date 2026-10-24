@@ -1,0 +1,37 @@
+{
+  "key": "Q936545",
+  "qid": "Q936545",
+  "name": "St. Martin's Cathedral, Utrecht",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "Utrecht",
+  "height_m": 112.3,
+  "elevation_m": null,
+  "length_km": 0.049,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "St. Martin's Cathedral, Utrecht, or Dom Church, is a Gothic church dedicated to Saint Martin of Tours, which was the cathedral of the Diocese of Utrecht during the Middle Ages.",
+  "native": "Domkerk",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/st__martin_s_cathedral__utrecht.png",
+  "photo": {
+    "file": "places/photos/st__martin_s_cathedral__utrecht.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/DomTorenUtrechtNederland.jpg",
+    "author": "Massimo Catarinella",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:DomTorenUtrechtNederland.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/St._Martin%27s_Cathedral,_Utrecht",
+  "fame": 29
+}

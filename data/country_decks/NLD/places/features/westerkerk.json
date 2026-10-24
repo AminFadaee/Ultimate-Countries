@@ -1,0 +1,37 @@
+{
+  "key": "Q1130722",
+  "qid": "Q1130722",
+  "name": "Westerkerk",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": 85.0,
+  "elevation_m": null,
+  "length_km": 0.058,
+  "area_km2": null,
+  "built": "1620–1631",
+  "culture": null,
+  "description": "The Westerkerk is a Reformed church within Dutch Protestant Calvinism in central Amsterdam, Netherlands.",
+  "native": "Westerkerk",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/westerkerk.png",
+  "photo": {
+    "file": "places/photos/westerkerk.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Westerkerk%20interieur%202021.jpg",
+    "author": "Mark de Nijs",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Westerkerk_interieur_2021.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Westerkerk",
+  "fame": 28
+}

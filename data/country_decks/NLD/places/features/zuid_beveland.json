@@ -1,0 +1,30 @@
+{
+  "key": "Q228614",
+  "qid": "Q228614",
+  "name": "Zuid-Beveland",
+  "kind": "Peninsula",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 344.33,
+  "built": null,
+  "culture": null,
+  "description": "Zuid-Beveland is part of the province of Zeeland in the Netherlands north of the Western Scheldt and south of the Eastern Scheldt.",
+  "native": "Zuid-Beveland",
+  "world_heritage": false,
+  "tags": [
+    "Peninsula",
+    "Europe"
+  ],
+  "map": "places/maps/zuid_beveland.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Zuid-Beveland",
+  "fame": 23
+}

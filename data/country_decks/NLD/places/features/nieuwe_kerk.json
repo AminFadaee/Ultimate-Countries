@@ -1,0 +1,37 @@
+{
+  "key": "Q1419675",
+  "qid": "Q1419675",
+  "name": "Nieuwe Kerk",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "begun c. 1385",
+  "culture": null,
+  "description": "The Nieuwe Kerk is a 15th-century church in Amsterdam located on Dam Square, next to the Royal Palace.",
+  "native": "Nieuwe Kerk",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/nieuwe_kerk.png",
+  "photo": {
+    "file": "places/photos/nieuwe_kerk.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Iglesia%20Nueva%2C%20%C3%81msterdam%2C%20Pa%C3%ADses%20Bajos%2C%202016-05-30%2C%20DD%2010-12%20HDR.jpg",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Iglesia_Nueva,_%C3%81msterdam,_Pa%C3%ADses_Bajos,_2016-05-30,_DD_10-12_HDR.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Nieuwe_Kerk,_Amsterdam",
+  "fame": 26
+}

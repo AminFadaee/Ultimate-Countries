@@ -1,0 +1,38 @@
+{
+  "key": "Q3273189",
+  "qid": "Q3273189",
+  "name": "Yadegar-e Emam Stadium",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1996",
+  "culture": null,
+  "description": "Sahand Stadium, also popularly known as Tabriz Sahand Stadium is a multi-purpose stadium in Tabriz, Iran.",
+  "native": "ورزشگاه یادگار امام تبریز",
+  "group": "Stadium",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/yadegar_e_emam_stadium.png",
+  "photo": {
+    "file": "places/photos/yadegar_e_emam_stadium.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sahand%20Stadium.jpg",
+    "author": "Nshervsampad at Persian Wikipedia",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Sahand_Stadium.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Yadegar-e_Emam_Stadium_(Tabriz)",
+  "fame": 21
+}

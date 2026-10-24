@@ -1,0 +1,37 @@
+{
+  "key": "Q5058182",
+  "qid": "Q5058182",
+  "name": "Laton Waterfall",
+  "kind": "Waterfall",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Latun (Barzov) Waterfall is a freefalling waterfall located in the eastern Alborz mountain range and in Lavandavil, Astara County, within Gilan Province of far northwestern Iran.",
+  "native": "آبشار لاتون",
+  "world_heritage": false,
+  "tags": [
+    "Waterfall",
+    "Asia"
+  ],
+  "map": "places/maps/laton_waterfall.png",
+  "photo": {
+    "file": "places/photos/laton_waterfall.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Waterfall%20Laton.jpg",
+    "author": "Samaksasanian",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Waterfall_Laton.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Laton_Waterfall",
+  "fame": 12
+}

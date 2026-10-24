@@ -1,0 +1,37 @@
+{
+  "key": "Q178064",
+  "qid": "Q178064",
+  "name": "Cauberg",
+  "kind": "Mountain",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 137.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Cauberg is a hill in Valkenburg aan de Geul, a town in the South Limburg region of the Netherlands.",
+  "native": "Cauberg",
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Europe"
+  ],
+  "map": "places/maps/cauberg.png",
+  "photo": {
+    "file": "places/photos/cauberg.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Valkenburg%2C%20Cauberg01.jpg",
+    "author": "Kleon3",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Valkenburg,_Cauberg01.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Cauberg",
+  "fame": 15
+}

@@ -1,0 +1,30 @@
+{
+  "key": "Q428517",
+  "qid": "Q428517",
+  "name": "Wieringermeer",
+  "kind": "Polder",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 307.76,
+  "built": null,
+  "culture": null,
+  "description": "Wieringermeer is a polder and former municipality in the Netherlands, in the province of North Holland.",
+  "native": "Wieringermeer",
+  "world_heritage": false,
+  "tags": [
+    "Polder",
+    "Europe"
+  ],
+  "map": "places/maps/wieringermeer.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Wieringermeer",
+  "fame": 35
+}

@@ -1,0 +1,38 @@
+{
+  "key": "Q55379486",
+  "qid": "Q55379486",
+  "name": "Sassanid Archaeological Landscape of Fars Region",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 127.15,
+  "built": null,
+  "culture": null,
+  "description": "Sassanid Archaeological Landscape of Fars Region is the official denomination given by UNESCO to eight Sasanian archaeological sites situated in the southeast of Fars province, Iran.",
+  "native": "چشمانداز باستانشناسی ساسانی منطقه فارس",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/sassanid_archaeological_landscape_of_fars_region.png",
+  "photo": {
+    "file": "places/photos/sassanid_archaeological_landscape_of_fars_region.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Both%20domes%20of%20Sarvestan%20Palace.JPG",
+    "author": "Erik Albers",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Both_domes_of_Sarvestan_Palace.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Sassanid_Archaeological_Landscape_of_Fars_Region",
+  "fame": 24
+}

@@ -1,0 +1,30 @@
+{
+  "key": "Q179751",
+  "qid": "Q179751",
+  "name": "Aras River",
+  "kind": "River",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": -16.0,
+  "length_km": 1072.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Aras is a transboundary river in the Caucasus.",
+  "native": "ارس",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Asia"
+  ],
+  "map": "places/maps/aras_river.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Aras_River",
+  "fame": 81
+}

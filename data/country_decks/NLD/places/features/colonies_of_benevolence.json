@@ -1,0 +1,38 @@
+{
+  "key": "Q64590591",
+  "qid": "Q64590591",
+  "name": "Colonies of Benevolence",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "Hoogstraten",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": null,
+  "native": "Koloniën van Weldadigheid",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/colonies_of_benevolence.png",
+  "photo": {
+    "file": "places/photos/colonies_of_benevolence.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tweede%20gesticht%20Veenhuizen.jpg",
+    "author": "Gouwenaar",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Tweede_gesticht_Veenhuizen.jpg"
+  },
+  "wikipedia": null,
+  "fame": 10
+}

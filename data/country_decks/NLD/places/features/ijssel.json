@@ -1,0 +1,30 @@
+{
+  "key": "Q217818",
+  "qid": "Q217818",
+  "name": "IJssel",
+  "kind": "River",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 123.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The IJssel is a Dutch distributary of the river Rhine that flows northward and ultimately discharges into the IJsselmeer, a North Sea natural harbour.",
+  "native": "IJssel",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Europe"
+  ],
+  "map": "places/maps/ijssel.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/IJssel",
+  "fame": 49
+}

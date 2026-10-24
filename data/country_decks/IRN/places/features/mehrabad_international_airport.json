@@ -1,0 +1,38 @@
+{
+  "key": "Q513684",
+  "qid": "Q513684",
+  "name": "Mehrabad International Airport",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Tehran",
+  "height_m": null,
+  "elevation_m": 1207.6199772,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1938",
+  "culture": null,
+  "description": "Tehran Mehrabad International Airport – commonly known as Mehrabad Airport – is an airport located in the city of Tehran, the capital of Iran.",
+  "native": "فرودگاه بینالمللی مهرآباد",
+  "group": "Airport",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/mehrabad_international_airport.png",
+  "photo": {
+    "file": "places/photos/mehrabad_international_airport.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mehrabad%20Airport%20Terminal%201%262.jpg",
+    "author": "Chrisrabinson",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mehrabad_Airport_Terminal_1%262.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mehrabad_International_Airport",
+  "fame": 43
+}

@@ -1,0 +1,30 @@
+{
+  "key": "Q923381",
+  "qid": "Q923381",
+  "name": "Rhine–Meuse–Scheldt delta",
+  "kind": "Plain",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Rhine–Meuse–Scheldt Delta is a river delta in the Netherlands formed by the confluence of the Rhine, the Meuse and the Scheldt rivers.",
+  "native": "Rijn-Maas-Scheldedelta",
+  "world_heritage": false,
+  "tags": [
+    "Plain",
+    "Europe"
+  ],
+  "map": "places/maps/rhinemeusescheldt_delta.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Rhine%E2%80%93Meuse%E2%80%93Scheldt_Delta",
+  "fame": 26
+}

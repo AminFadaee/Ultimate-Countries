@@ -1,0 +1,37 @@
+{
+  "key": "Q180012",
+  "qid": "Q180012",
+  "name": "Behistun inscription",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Behistun inscription is a multilingual Achaemenid royal inscription and large rock relief on a cliff at Mount Behistun in the Kermanshah Province of Iran, near the city of Kermanshah in western Iran, established by Darius the Great.",
+  "native": "سنگنبشته بیستون",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/behistun_inscription.png",
+  "photo": {
+    "file": "places/photos/behistun_inscription.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%DA%A9%D8%AA%DB%8C%D8%A8%D9%87%20%D8%AF%D8%A7%D8%B1%DB%8C%D9%88%D8%B4%20%28%20%D8%A8%DB%8C%D8%B3%D8%AA%D9%88%D9%86%28.jpg",
+    "author": "Korosh.091",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%DA%A9%D8%AA%DB%8C%D8%A8%D9%87_%D8%AF%D8%A7%D8%B1%DB%8C%D9%88%D8%B4_(_%D8%A8%DB%8C%D8%B3%D8%AA%D9%88%D9%86(.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Behistun_inscription",
+  "fame": 70
+}

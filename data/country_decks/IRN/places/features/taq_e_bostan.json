@@ -1,0 +1,37 @@
+{
+  "key": "Q940045",
+  "qid": "Q940045",
+  "name": "Taq-e Bostan",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Kermanshah",
+  "height_m": null,
+  "elevation_m": 1326.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": "Persian architecture",
+  "description": "Taq-e Bostan is a site with a series of large rock reliefs in Kermanshah, Iran, carved around the 4th century CE during the Sasanian era.",
+  "native": "طاق بستان",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/taq_e_bostan.png",
+  "photo": {
+    "file": "places/photos/taq_e_bostan.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%D8%AA%D8%A7%D9%82%E2%80%8C%D8%A8%D8%B3%D8%AA%D8%A7%D9%86.jpg",
+    "author": "Ali Heidari - علی حیدری",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D8%AA%D8%A7%D9%82%E2%80%8C%D8%A8%D8%B3%D8%AA%D8%A7%D9%86.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Taq-e_Bostan",
+  "fame": 23
+}

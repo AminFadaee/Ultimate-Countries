@@ -1,0 +1,38 @@
+{
+  "key": "Q1207298",
+  "qid": "Q1207298",
+  "name": "Dez Dam",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 354.0,
+  "length_km": 0.212,
+  "area_km2": null,
+  "built": "1959–1963",
+  "culture": null,
+  "description": "The Dez Dam, formerly known as Mohammad-Reza Shah Pahlavi Dam, before the 1979 Revolution, is an arch dam on the Dez River in the southwestern province of Khuzsetan, Andimeshk.",
+  "native": "سد دز",
+  "group": "Dam",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/dez_dam.png",
+  "photo": {
+    "file": "places/photos/dez_dam.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Dez%20Dam.jpg",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Dez_Dam.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Dez_Dam",
+  "fame": 18
+}

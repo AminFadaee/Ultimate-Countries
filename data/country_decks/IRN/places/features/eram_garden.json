@@ -1,0 +1,37 @@
+{
+  "key": "Q127963",
+  "qid": "Q127963",
+  "name": "Eram Garden",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.705,
+  "built": null,
+  "culture": null,
+  "description": "Eram Garden is a historic Persian garden in Shiraz, Iran.",
+  "native": "باغ ارم",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/eram_garden.png",
+  "photo": {
+    "file": "places/photos/eram_garden.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/DJI%200021%280%29.jpg",
+    "author": "Siamak.ess",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:DJI_0021(0).jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Eram_Garden",
+  "fame": 37
+}

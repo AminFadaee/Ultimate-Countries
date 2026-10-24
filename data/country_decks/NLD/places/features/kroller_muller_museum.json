@@ -1,0 +1,37 @@
+{
+  "key": "Q1051928",
+  "qid": "Q1051928",
+  "name": "Kröller-Müller Museum",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Kröller-Müller Museum is a national art museum and sculpture garden, located in the Hoge Veluwe National Park in Otterlo in the Netherlands.",
+  "native": "Kröller Müller Museum",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/kroller_muller_museum.png",
+  "photo": {
+    "file": "places/photos/kroller_muller_museum.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Entrance%20Kr%C3%B6ller-M%C3%BCller%20Museum.JPG",
+    "author": "Gerardus",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Entrance_Kr%C3%B6ller-M%C3%BCller_Museum.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Kr%C3%B6ller-M%C3%BCller_Museum",
+  "fame": 32
+}

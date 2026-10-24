@@ -1,0 +1,37 @@
+{
+  "key": "Q1255386",
+  "qid": "Q1255386",
+  "name": "Golestan National Park",
+  "kind": "National park",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 918.97,
+  "built": null,
+  "culture": null,
+  "description": "Golestan National Park is a national park in northeastern Iran with an area of 918.95 km2 (354.81 sq mi) at elevations of 450 to 2,411 m.",
+  "native": "پارک ملی گلستان",
+  "world_heritage": false,
+  "tags": [
+    "National_park",
+    "Asia"
+  ],
+  "map": "places/maps/golestan_national_park.png",
+  "photo": {
+    "file": "places/photos/golestan_national_park.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Golestan%20jungle.jpg",
+    "author": "Nima Farid 2007",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Golestan_jungle.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Golestan_National_Park",
+  "fame": 23
+}

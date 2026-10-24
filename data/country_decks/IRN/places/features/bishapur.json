@@ -1,0 +1,37 @@
+{
+  "key": "Q477898",
+  "qid": "Q477898",
+  "name": "Bishapur",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 74.8,
+  "built": "AD 226",
+  "culture": "Persian",
+  "description": "Bishapur was an ancient city in Iran and one of the capitals of the Sasanian Empire, near the city of Kazerun.",
+  "native": "بیشاپور",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/bishapur.png",
+  "photo": {
+    "file": "places/photos/bishapur.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Bishapur%20by%20HADI%2040.jpg",
+    "author": "HADI",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bishapur_by_HADI_40.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Bishapur",
+  "fame": 26
+}

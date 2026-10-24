@@ -1,0 +1,37 @@
+{
+  "key": "Q1756399",
+  "qid": "Q1756399",
+  "name": "Tehran Museum of Contemporary Art",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Tehran",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.016,
+  "built": null,
+  "culture": null,
+  "description": "Tehran Museum of Contemporary Art, also known as TMoCA, is among the largest art museums in Tehran and Iran.",
+  "native": "موزه هنرهای معاصر تهران",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/tehran_museum_of_contemporary_art.png",
+  "photo": {
+    "file": "places/photos/tehran_museum_of_contemporary_art.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Contemporary%20arts%20tehran.jpg",
+    "author": "Photo by Zereshk.",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Contemporary_arts_tehran.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Tehran_Museum_of_Contemporary_Art",
+  "fame": 28
+}

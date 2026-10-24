@@ -1,0 +1,37 @@
+{
+  "key": "Q206220",
+  "qid": "Q206220",
+  "name": "Arg of Karim Khan",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": 15.0,
+  "elevation_m": null,
+  "length_km": 0.1248,
+  "area_km2": null,
+  "built": "1766–1767",
+  "culture": "Iranian architecture",
+  "description": "The Arg of Karim Khan or Karim Khan Citadel, is a citadel located in central Shiraz, Iran.",
+  "native": "ارگ کریمخان",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/arg_of_karim_khan.png",
+  "photo": {
+    "file": "places/photos/arg_of_karim_khan.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Arg%20of%20Karim%20Khan%20-%20outside%20view.jpg",
+    "author": "User:Hardscarf",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Arg_of_Karim_Khan_-_outside_view.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Arg_of_Karim_Khan",
+  "fame": 22
+}

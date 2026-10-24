@@ -1,0 +1,30 @@
+{
+  "key": "Q726696",
+  "qid": "Q726696",
+  "name": "Ashuradeh",
+  "kind": "Island",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 5.8,
+  "area_km2": 8.0,
+  "built": null,
+  "culture": null,
+  "description": "Ashūradeh, or Ashur Ada, besides Esmail Sai and Akaz islands, is one of the islands off the Iranian coast in the Caspian Sea.",
+  "native": "آشوراده",
+  "world_heritage": false,
+  "tags": [
+    "Island",
+    "Asia"
+  ],
+  "map": "places/maps/ashuradeh.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Ashuradeh",
+  "fame": 29
+}

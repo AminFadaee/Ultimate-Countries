@@ -1,0 +1,30 @@
+{
+  "key": "Q167814",
+  "qid": "Q167814",
+  "name": "Zayanderud",
+  "kind": "River",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 400.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Zayanderud or Zayandehrud, also spelled as Zayanderud or Zayanderood,..., is the largest river of the Iranian Plateau in central Iran.",
+  "native": "زایندهرود",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Asia"
+  ],
+  "map": "places/maps/zayanderud.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Zayanderud",
+  "fame": 30
+}

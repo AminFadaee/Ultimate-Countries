@@ -1,0 +1,37 @@
+{
+  "key": "Q1581555",
+  "qid": "Q1581555",
+  "name": "Tepe Sialk",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Tepe Sialk is a large ancient archeological site in a suburb of Kashan, Isfahan province, central Iran, close to the Fin Garden.",
+  "native": "تپه سیلک",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/tepe_sialk.png",
+  "photo": {
+    "file": "places/photos/tepe_sialk.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sialk%20slide.jpg",
+    "author": "Zereshk",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sialk_slide.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Tepe_Sialk",
+  "fame": 28
+}

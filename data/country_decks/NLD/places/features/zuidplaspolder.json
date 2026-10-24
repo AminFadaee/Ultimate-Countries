@@ -1,0 +1,30 @@
+{
+  "key": "Q2077313",
+  "qid": "Q2077313",
+  "name": "Zuidplaspolder",
+  "kind": "Polder",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Zuidplaspolder is a polder in the western Netherlands, located northeast of Rotterdam, Zuid-Holland, neighbouring settlements such as Zuidplas, Zevenhuizen, Waddinxveen, Moerkapelle, Gouda, Moordrecht, and Nieuwerkerk aan den IJssel.",
+  "native": "Zuidplaspolder",
+  "world_heritage": false,
+  "tags": [
+    "Polder",
+    "Europe"
+  ],
+  "map": "places/maps/zuidplaspolder.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Zuidplaspolder",
+  "fame": 13
+}

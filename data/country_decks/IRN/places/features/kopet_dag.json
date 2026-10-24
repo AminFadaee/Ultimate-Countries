@@ -1,0 +1,30 @@
+{
+  "key": "Q328072",
+  "qid": "Q328072",
+  "name": "Köpet Dag",
+  "kind": "Mountain range",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 3211.0,
+  "length_km": 650.0,
+  "area_km2": 35000.0,
+  "built": null,
+  "culture": null,
+  "description": "The Köpet Dag, also known as the Turkmen–Khorasan Mountain Range, is a mountain range on the border between Turkmenistan and Iran that extends about 650 kilometres (400 mi) along the border southeast of the Caspian Sea, stretching northwest-southeast from near the Caspian Sea in the northwest to the Hari River in the southeast.",
+  "native": "کپهداغ",
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia"
+  ],
+  "map": "places/maps/kopet_dag.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Kopet_Dag",
+  "fame": 56
+}

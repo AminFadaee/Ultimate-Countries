@@ -1,0 +1,37 @@
+{
+  "key": "Q3437688",
+  "qid": "Q3437688",
+  "name": "Tughrul Tower",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Toghrol Tower is a 12th-century monument, located in the city of Rey, Tehran province, Iran.",
+  "native": "برج طغرل",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/tughrul_tower.png",
+  "photo": {
+    "file": "places/photos/tughrul_tower.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Borj-toghrul.jpg",
+    "author": "User Zereshk on en.wikipedia",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Borj-toghrul.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Toghrol_Tower",
+  "fame": 21
+}

@@ -1,0 +1,37 @@
+{
+  "key": "Q622796",
+  "qid": "Q622796",
+  "name": "Milad Tower",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Tehran",
+  "height_m": 435.0,
+  "elevation_m": 1436.0,
+  "length_km": null,
+  "area_km2": 0.012,
+  "built": "1997–2007",
+  "culture": null,
+  "description": "The Milad Tower is a multi-purpose tower in Tehran, Iran.",
+  "native": "برج میلاد",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/milad_tower.png",
+  "photo": {
+    "file": "places/photos/milad_tower.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%D8%A8%D8%B1%D8%AC%20%D9%85%DB%8C%D9%84%D8%A7%D8%AF%20%D9%88%20%DA%A9%D9%88%D9%87%20%D8%AF%D9%85%D8%A7%D9%88%D9%86%D8%AF%20%D8%A7%D8%B2%20%D8%A2%D8%B2%D8%A7%D8%AF%D8%B1%D8%A7%D9%87%20%D8%AA%D9%87%D8%B1%D8%A7%D9%86%20%DA%A9%D8%B1%D8%AC%20-%20panoramio.jpg",
+    "author": "‫سید محمود جوادی‬‎",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D8%A8%D8%B1%D8%AC_%D9%85%DB%8C%D9%84%D8%A7%D8%AF_%D9%88_%DA%A9%D9%88%D9%87_%D8%AF%D9%85%D8%A7%D9%88%D9%86%D8%AF_%D8%A7%D8%B2_%D8%A2%D8%B2%D8%A7%D8%AF%D8%B1%D8%A7%D9%87_%D8%AA%D9%87%D8%B1%D8%A7%D9%86_%DA%A9%D8%B1%D8%AC_-_panoramio.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Milad_Tower",
+  "fame": 51
+}

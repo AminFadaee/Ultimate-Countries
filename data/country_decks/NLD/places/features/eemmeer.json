@@ -1,0 +1,30 @@
+{
+  "key": "Q1295357",
+  "qid": "Q1295357",
+  "name": "Eemmeer",
+  "kind": "Lake",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": -4.0,
+  "length_km": null,
+  "area_km2": 13.4,
+  "built": null,
+  "culture": null,
+  "description": "The Eemmeer is a lake situated in the middle of the Netherlands between the provinces of Flevoland, Utrecht, and North Holland.",
+  "native": "Eemmeer",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Europe"
+  ],
+  "map": "places/maps/eemmeer.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Eemmeer",
+  "fame": 21
+}

@@ -1,0 +1,37 @@
+{
+  "key": "Q1651298",
+  "qid": "Q1651298",
+  "name": "Lauwersmeer National Park",
+  "kind": "National park",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 60.099734299999994,
+  "built": null,
+  "culture": null,
+  "description": "Lauwersmeer National Park is a national park in the provinces of Friesland and Groningen in the Netherlands.",
+  "native": "Nationaal Park Lauwersmeer",
+  "world_heritage": false,
+  "tags": [
+    "National_park",
+    "Europe"
+  ],
+  "map": "places/maps/lauwersmeer_national_park.png",
+  "photo": {
+    "file": "places/photos/lauwersmeer_national_park.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Beeldmerk%20Lauwersmeer%2C%20omgeving%20Zoutkamp%20%28cropped%29.JPG",
+    "author": "Ellywa",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Beeldmerk_Lauwersmeer,_omgeving_Zoutkamp_(cropped).JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Lauwersmeer_National_Park",
+  "fame": 19
+}

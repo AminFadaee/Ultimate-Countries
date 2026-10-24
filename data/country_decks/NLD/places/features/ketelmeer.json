@@ -1,0 +1,30 @@
+{
+  "key": "Q1739879",
+  "qid": "Q1739879",
+  "name": "Ketelmeer",
+  "kind": "Lake",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": -4.0,
+  "length_km": 13.0,
+  "area_km2": 35.0,
+  "built": null,
+  "culture": null,
+  "description": "The Ketelmeer is the tongue of the IJsselmeer into which the IJssel river drains.",
+  "native": "Ketelmeer",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Europe"
+  ],
+  "map": "places/maps/ketelmeer.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Ketelmeer",
+  "fame": 17
+}

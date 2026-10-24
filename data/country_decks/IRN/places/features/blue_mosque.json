@@ -1,0 +1,37 @@
+{
+  "key": "Q1519733",
+  "qid": "Q1519733",
+  "name": "Blue Mosque",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1480",
+  "culture": null,
+  "description": "The Blue Mosque, also known as the Masjed-e Moẓaffariya and as the Kabood Mosque, is a former mosque and mausoleum complex, in a partial ruinous state, partially preserved as a museum, located in Tabriz, East Azerbaijan province, Iran.",
+  "native": "مسجد کبود",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/blue_mosque.png",
+  "photo": {
+    "file": "places/photos/blue_mosque.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Blue%20Mosque%20%28Tabriz%29%20General%20view.jpg",
+    "author": "Saeedeh Joshaghani et al.",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Blue_Mosque_(Tabriz)_General_view.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Blue_Mosque,_Tabriz",
+  "fame": 34
+}

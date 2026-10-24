@@ -1,0 +1,38 @@
+{
+  "key": "Q207109",
+  "qid": "Q207109",
+  "name": "Johan Cruyff Arena",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1993–1996",
+  "culture": null,
+  "description": "The Johan Cruyff Arena is the home stadium of football club Ajax since its opening and the main stadium of the Dutch capital city of Amsterdam.",
+  "native": "Johan Cruijff Arena",
+  "group": "Stadium",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/johan_cruyff_arena.png",
+  "photo": {
+    "file": "places/photos/johan_cruyff_arena.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Arena%2C%20Ajax%20stadion%2C%20Amsterdam.JPG",
+    "author": "Alf van Beem",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Arena,_Ajax_stadion,_Amsterdam.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Johan_Cruyff_Arena",
+  "fame": 54
+}

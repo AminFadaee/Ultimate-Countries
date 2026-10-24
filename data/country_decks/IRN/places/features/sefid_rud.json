@@ -1,0 +1,30 @@
+{
+  "key": "Q1430986",
+  "qid": "Q1430986",
+  "name": "Sefid Rud",
+  "kind": "River",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 670.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Espi Bie/Ru is a river, approximately 670 kilometres (416 mi) long, rising in the Alborz mountain range of north-western Iran and flowing generally north-east to empty into the Caspian Sea at Kiashahr.",
+  "native": "سفیدرود",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Asia"
+  ],
+  "map": "places/maps/sefid_rud.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Sefid-Rud",
+  "fame": 31
+}

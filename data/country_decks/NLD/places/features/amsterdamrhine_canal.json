@@ -1,0 +1,30 @@
+{
+  "key": "Q478348",
+  "qid": "Q478348",
+  "name": "Amsterdam–Rhine Canal",
+  "kind": "Canal",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1952",
+  "culture": null,
+  "description": "The Amsterdam–Rhine Canal is a canal in the Netherlands that was built to connect the port and capital city of Amsterdam to the main shipping artery of the Rhine.",
+  "native": "Amsterdam-Rijnkanaal",
+  "world_heritage": false,
+  "tags": [
+    "Canal",
+    "Europe"
+  ],
+  "map": "places/maps/amsterdamrhine_canal.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Amsterdam%E2%80%93Rhine_Canal",
+  "fame": 26
+}

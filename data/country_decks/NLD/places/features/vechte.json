@@ -1,0 +1,30 @@
+{
+  "key": "Q168904",
+  "qid": "Q168904",
+  "name": "Vechte",
+  "kind": "River",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 167.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Vechte or Vecht, often called Overijsselse Vecht in the Netherlands to avoid confusion with its Utrecht counterpart, is a river in Germany and the Netherlands.",
+  "native": "Overijsselse Vecht",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Europe"
+  ],
+  "map": "places/maps/vechte.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Vechte",
+  "fame": 28
+}

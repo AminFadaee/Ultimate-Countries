@@ -1,0 +1,37 @@
+{
+  "key": "Q212110",
+  "qid": "Q212110",
+  "name": "Fatima Masumeh Shrine",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Fatima Masumeh Shrine is the mausoleum of Fatima bint Musa, located in Qom, Iran.",
+  "native": "حرم فاطمه معصومه",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/fatima_masumeh_shrine.png",
+  "photo": {
+    "file": "places/photos/fatima_masumeh_shrine.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20image%20of%20Hazrat%20Masoumeh%27s%20shrine.jpg",
+    "author": "Mahdi Fathi Arjmand",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_image_of_Hazrat_Masoumeh%27s_shrine.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Fatima_Masumeh_Shrine",
+  "fame": 24
+}

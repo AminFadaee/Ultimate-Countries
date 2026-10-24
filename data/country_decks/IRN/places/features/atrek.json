@@ -1,0 +1,30 @@
+{
+  "key": "Q283622",
+  "qid": "Q283622",
+  "name": "Atrek",
+  "kind": "River",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 669.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Atrek, also known as the Attrack, Atrak, and Etrek, is a fast-moving river which begins in the mountains of north-eastern Iran and flows 563 kilometres (350 mi) westward, draining into the south-eastern corner of the Caspian Sea in Turkmenistan.",
+  "native": "اترک",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Asia"
+  ],
+  "map": "places/maps/atrek.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Atrek",
+  "fame": 40
+}

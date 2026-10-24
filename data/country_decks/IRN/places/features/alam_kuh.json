@@ -1,0 +1,37 @@
+{
+  "key": "Q3696208",
+  "qid": "Q3696208",
+  "name": "Alam-Kuh",
+  "kind": "Mountain",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4848.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Alam-Kūh or Mount Alam is a mountain in Alborz mountain range in northern Iran, Mazandaran Province, forming a peak of Takht-e Suleyman Massif.",
+  "native": "علمکوه",
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/alam_kuh.png",
+  "photo": {
+    "file": "places/photos/alam_kuh.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/AlamKooh.jpg",
+    "author": "The original uploader was Siamax at English Wikipedia.",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:AlamKooh.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Alam-Kuh",
+  "fame": 16
+}

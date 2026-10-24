@@ -1,0 +1,38 @@
+{
+  "key": "Q12012965",
+  "qid": "Q12012965",
+  "name": "Kinderdijk windmills",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 3.22,
+  "built": null,
+  "culture": null,
+  "description": "The Kinderdijk windmills are a group of 19 monumental windmills in the Alblasserwaard polder, in the province of South Holland, Netherlands.",
+  "native": "Kinderdijkse molens",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/kinderdijk_windmills.png",
+  "photo": {
+    "file": "places/photos/kinderdijk_windmills.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/KinderdijkMolens02.jpg",
+    "author": "Lucas Hirschegger",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:KinderdijkMolens02.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Kinderdijk_windmills",
+  "fame": 24
+}

@@ -1,0 +1,30 @@
+{
+  "key": "Q4121",
+  "qid": "Q4121",
+  "name": "IJsselmeer",
+  "kind": "Lake",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": -0.3,
+  "length_km": 53.0,
+  "area_km2": 1100.0,
+  "built": null,
+  "culture": null,
+  "description": "The IJsselmeer, also known as Lake IJssel in English, is a closed-off freshwater lake in the central Netherlands bordering the provinces of Flevoland, North Holland and Friesland.",
+  "native": "IJsselmeer",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Europe"
+  ],
+  "map": "places/maps/ijsselmeer.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/IJsselmeer",
+  "fame": 55
+}

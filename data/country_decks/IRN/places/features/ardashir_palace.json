@@ -1,0 +1,37 @@
+{
+  "key": "Q32434",
+  "qid": "Q32434",
+  "name": "Ardashir Palace",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.059,
+  "built": null,
+  "culture": "Sasanian",
+  "description": "Palace of Ardashir Bābakān, also known as the Ātashkadeh, is a castle located on the slopes of the mountain on which Qal'eh Dokhtar is situated.",
+  "native": "کاخ اردشیر بابکان",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/ardashir_palace.png",
+  "photo": {
+    "file": "places/photos/ardashir_palace.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Firozahur.jpg",
+    "author": "Ahura21",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Firozahur.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Palace_of_Ardashir",
+  "fame": 23
+}

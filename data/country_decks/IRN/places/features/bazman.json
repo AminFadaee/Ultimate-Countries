@@ -1,0 +1,30 @@
+{
+  "key": "Q812681",
+  "qid": "Q812681",
+  "name": "Bazman",
+  "kind": "Mountain",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 3490.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Bazman is a dormant stratovolcano in a remote desert region of Sistan and Baluchestan Province in southeastern Iran.",
+  "native": "کوه بزمان",
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/bazman.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Bazman",
+  "fame": 20
+}

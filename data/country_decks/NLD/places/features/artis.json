@@ -1,0 +1,37 @@
+{
+  "key": "Q713124",
+  "qid": "Q713124",
+  "name": "Artis",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Natura Artis Magistra, commonly known just as Artis, is a zoo and botanical garden in the centre of Amsterdam.",
+  "native": "Artis",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/artis.png",
+  "photo": {
+    "file": "places/photos/artis.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/NL-Artis-ingang.jpg",
+    "author": "Dejonkheer",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:NL-Artis-ingang.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Artis_(zoo)",
+  "fame": 30
+}

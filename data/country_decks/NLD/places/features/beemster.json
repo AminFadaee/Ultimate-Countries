@@ -1,0 +1,38 @@
+{
+  "key": "Q9900",
+  "qid": "Q9900",
+  "name": "Beemster",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": -4.0,
+  "length_km": null,
+  "area_km2": 72.07,
+  "built": null,
+  "culture": null,
+  "description": "Beemster is a former municipality in the Netherlands, in the province of North Holland.",
+  "native": "Beemster",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/beemster.png",
+  "photo": {
+    "file": "places/photos/beemster.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/West-Beemster%2C%20Jisperweg%2029.jpg",
+    "author": "Arhu",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:West-Beemster,_Jisperweg_29.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Beemster",
+  "fame": 57
+}

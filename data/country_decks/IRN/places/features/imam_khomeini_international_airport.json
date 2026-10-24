@@ -1,0 +1,38 @@
+{
+  "key": "Q734729",
+  "qid": "Q734729",
+  "name": "Imam Khomeini International Airport",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1007.365983,
+  "length_km": null,
+  "area_km2": null,
+  "built": "2005",
+  "culture": null,
+  "description": "Tehran Imam Khomeini International Airport is the international airport of Tehran, the capital of Iran.",
+  "native": "فرودگاه بینالمللی امام خمینی",
+  "group": "Airport",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/imam_khomeini_international_airport.png",
+  "photo": {
+    "file": "places/photos/imam_khomeini_international_airport.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/IKA%20Airport%20main%20terminal%20%28cropped%29.jpg",
+    "author": "Kat1100",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:IKA_Airport_main_terminal_(cropped).jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Imam_Khomeini_International_Airport",
+  "fame": 48
+}

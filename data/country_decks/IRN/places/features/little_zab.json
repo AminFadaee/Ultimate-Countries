@@ -1,0 +1,30 @@
+{
+  "key": "Q954645",
+  "qid": "Q954645",
+  "name": "Little Zab",
+  "kind": "River",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 456.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Little Zab or Lower Zab is a river that originates in Iran and joins the Tigris just south of Al Zab in Iraq.",
+  "native": "زاب کوچک",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Asia"
+  ],
+  "map": "places/maps/little_zab.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Little_Zab",
+  "fame": 38
+}

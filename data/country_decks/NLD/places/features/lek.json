@@ -1,0 +1,30 @@
+{
+  "key": "Q1143852",
+  "qid": "Q1143852",
+  "name": "Lek",
+  "kind": "River",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 62.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Lek is a river in the western Netherlands of some 60 km (37 mi) in length.",
+  "native": "Lek",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Europe"
+  ],
+  "map": "places/maps/lek.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lek_(river)",
+  "fame": 37
+}

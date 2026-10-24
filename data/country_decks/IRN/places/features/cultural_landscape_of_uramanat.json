@@ -1,0 +1,38 @@
+{
+  "key": "Q7899619",
+  "qid": "Q7899619",
+  "name": "Cultural Landscape of Uramanat",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 3036.23,
+  "built": null,
+  "culture": null,
+  "description": "Cultural Landscape of Hawraman or Cultural Landscape of Uramanat is the 26th tangible cultural heritage of Iran.",
+  "native": "روستاهای اورامانات",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/cultural_landscape_of_uramanat.png",
+  "photo": {
+    "file": "places/photos/cultural_landscape_of_uramanat.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Uraman%20Takht.jpg",
+    "author": "جواد یوسفی",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Uraman_Takht.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Cultural_Landscape_of_Uramanat",
+  "fame": 15
+}

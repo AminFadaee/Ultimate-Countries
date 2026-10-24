@@ -1,0 +1,30 @@
+{
+  "key": "Q967421",
+  "qid": "Q967421",
+  "name": "Larak Island",
+  "kind": "Island",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 81.0,
+  "length_km": null,
+  "area_km2": 49.0,
+  "built": null,
+  "culture": null,
+  "description": "Larak Island is a small Iranian island located off the coast of Bandar Abbas, Iran, east of Qeshm Island and south of Hormuz Island.",
+  "native": "جزیره لارک",
+  "world_heritage": false,
+  "tags": [
+    "Island",
+    "Asia"
+  ],
+  "map": "places/maps/larak_island.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Larak_Island",
+  "fame": 31
+}

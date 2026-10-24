@@ -1,0 +1,38 @@
+{
+  "key": "Q2465052",
+  "qid": "Q2465052",
+  "name": "Houtribdijk",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "Enkhuizen",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Houtribdijk is a dam in the Netherlands, built between 1963 and 1976 as part of the Zuiderzee Works, which connects the cities of Lelystad and Enkhuizen.",
+  "native": "Houtribdijk",
+  "group": "Water_defence",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/houtribdijk.png",
+  "photo": {
+    "file": "places/photos/houtribdijk.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Houtribdijk%20luchtfoto%20richting%20Lelystad.jpg",
+    "author": "Snempaa",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Houtribdijk_luchtfoto_richting_Lelystad.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Houtribdijk",
+  "fame": 17
+}

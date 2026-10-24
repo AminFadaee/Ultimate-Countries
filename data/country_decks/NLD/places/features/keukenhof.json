@@ -1,0 +1,38 @@
+{
+  "key": "Q18769666",
+  "qid": "Q18769666",
+  "name": "Keukenhof",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.32,
+  "built": null,
+  "culture": null,
+  "description": "Keukenhof, also known as the Garden of Europe, is one of the world's largest flower gardens, situated in the municipality of Lisse, in the Netherlands.",
+  "native": "Keukenhof",
+  "group": "Garden",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/keukenhof.png",
+  "photo": {
+    "file": "places/photos/keukenhof.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/NL-keukenhof-10.jpg",
+    "author": "Balou46",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:NL-keukenhof-10.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Keukenhof",
+  "fame": 52
+}

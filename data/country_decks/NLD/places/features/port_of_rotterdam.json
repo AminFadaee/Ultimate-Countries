@@ -1,0 +1,31 @@
+{
+  "key": "Q1027807",
+  "qid": "Q1027807",
+  "name": "Port of Rotterdam",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 127.13,
+  "built": null,
+  "culture": null,
+  "description": "The Port of Rotterdam is the largest seaport in Europe, and the world's largest seaport outside of Asia, located in and near the city of Rotterdam, in the province of South Holland in the Netherlands.",
+  "native": "haven van Rotterdam",
+  "group": "Port",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/port_of_rotterdam.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Port_of_Rotterdam",
+  "fame": 40
+}

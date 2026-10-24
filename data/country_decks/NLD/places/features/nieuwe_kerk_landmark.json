@@ -1,0 +1,37 @@
+{
+  "key": "Q678611",
+  "qid": "Q678611",
+  "name": "Nieuwe Kerk",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "Delft",
+  "height_m": 108.75,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1396–1496",
+  "culture": null,
+  "description": "The Nieuwe Kerk is a Protestant church in the city of Delft in the Netherlands.",
+  "native": "Nieuwe Kerk",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/nieuwe_kerk_landmark.png",
+  "photo": {
+    "file": "places/photos/nieuwe_kerk_landmark.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/00%200725%20Tower%20of%20Nieuwe%20Kerk%20-%20Delft.jpg",
+    "author": "W. Bulach",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:00_0725_Tower_of_Nieuwe_Kerk_-_Delft.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Nieuwe_Kerk_(Delft)",
+  "fame": 25
+}

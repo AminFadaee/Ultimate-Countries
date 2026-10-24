@@ -1,0 +1,30 @@
+{
+  "key": "Q669547",
+  "qid": "Q669547",
+  "name": "Wieringen",
+  "kind": "Island",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 212.5,
+  "built": null,
+  "culture": null,
+  "description": "Wieringen is located in the province of North Holland in the Netherlands.",
+  "native": "Wieringen",
+  "world_heritage": false,
+  "tags": [
+    "Island",
+    "Europe"
+  ],
+  "map": "places/maps/wieringen.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Wieringen",
+  "fame": 37
+}

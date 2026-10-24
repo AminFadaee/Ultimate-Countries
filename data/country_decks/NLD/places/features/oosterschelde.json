@@ -1,0 +1,30 @@
+{
+  "key": "Q1266165",
+  "qid": "Q1266165",
+  "name": "Oosterschelde",
+  "kind": "Sea",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Eastern Scheldt is a former estuary in the province of Zeeland, Netherlands, between Schouwen-Duiveland and Tholen on the north and Noord-Beveland and Zuid-Beveland on the south.",
+  "native": "Oosterschelde",
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Europe"
+  ],
+  "map": "places/maps/oosterschelde.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Eastern_Scheldt",
+  "fame": 25
+}

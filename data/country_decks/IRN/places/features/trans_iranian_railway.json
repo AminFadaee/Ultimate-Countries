@@ -1,0 +1,38 @@
+{
+  "key": "Q162835",
+  "qid": "Q162835",
+  "name": "Trans-Iranian railway",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 1394.0,
+  "area_km2": null,
+  "built": "1938",
+  "culture": null,
+  "description": "The Trans-Iranian Railway was a major railway building project started in Pahlavi Iran in 1927 and completed in 1938, under the direction of the then-Iranian monarch Reza Shah.",
+  "native": "راهآهن سراسری ایران",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/trans_iranian_railway.png",
+  "photo": {
+    "file": "places/photos/trans_iranian_railway.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/VERESK%20Bridge%20-%20panoramio.jpg",
+    "author": "Alireza Shakernia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:VERESK_Bridge_-_panoramio.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Trans-Iranian_Railway",
+  "fame": 31
+}

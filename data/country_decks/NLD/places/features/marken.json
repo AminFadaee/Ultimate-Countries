@@ -1,0 +1,30 @@
+{
+  "key": "Q301415",
+  "qid": "Q301415",
+  "name": "Marken",
+  "kind": "Peninsula",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 3.3,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Marken is a village in the municipality of Waterland in the province of North Holland, Netherlands.",
+  "native": "Marken",
+  "world_heritage": false,
+  "tags": [
+    "Peninsula",
+    "Europe"
+  ],
+  "map": "places/maps/marken.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Marken",
+  "fame": 30
+}

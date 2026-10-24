@@ -1,0 +1,37 @@
+{
+  "key": "Q643098",
+  "qid": "Q643098",
+  "name": "Shah Mosque",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Isfahan",
+  "height_m": 54.0,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.019,
+  "built": "1611–c. 1630",
+  "culture": null,
+  "description": "The Shah Mosque, also officially known as the Imam Mosque or Imam Khomeini Mosque, is a mosque located on the south side of Naqsh-e Jahan Square in Isfahan, in the province of Isfahan, Iran.",
+  "native": "مسجد شاه",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/shah_mosque.png",
+  "photo": {
+    "file": "places/photos/shah_mosque.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Naghsh-e-jahan%20masjed-e-shah%20esfahan.jpg",
+    "author": "",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Naghsh-e-jahan_masjed-e-shah_esfahan.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Shah_Mosque_(Isfahan)",
+  "fame": 49
+}

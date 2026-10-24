@@ -1,0 +1,37 @@
+{
+  "key": "Q159860",
+  "qid": "Q159860",
+  "name": "Vaalserberg",
+  "kind": "Mountain",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 322.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Vaalserberg is a hill with a height of 322.4 metres (1,058 ft) above NAP that is the highest point in the European part of the Netherlands.",
+  "native": "Vaalserberg",
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Europe"
+  ],
+  "map": "places/maps/vaalserberg.png",
+  "photo": {
+    "file": "places/photos/vaalserberg.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ac%20vaalserberg.JPG",
+    "author": "Xamos",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ac_vaalserberg.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Vaalserberg",
+  "fame": 47
+}

@@ -1,0 +1,30 @@
+{
+  "key": "Q36856",
+  "qid": "Q36856",
+  "name": "Zwin",
+  "kind": "Sea",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Zwin is a nature reserve at the North Sea coast, on the Belgian–Dutch border.",
+  "native": "Zwin",
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Europe"
+  ],
+  "map": "places/maps/zwin.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Zwin",
+  "fame": 18
+}

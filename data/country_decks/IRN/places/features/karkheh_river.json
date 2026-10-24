@@ -1,0 +1,30 @@
+{
+  "key": "Q1472376",
+  "qid": "Q1472376",
+  "name": "Karkheh River",
+  "kind": "River",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 870.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Karkheh or Karkhen is a river in Khūzestān Province, in southwest Iran.",
+  "native": "کرخه",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Asia"
+  ],
+  "map": "places/maps/karkheh_river.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Karkheh_River",
+  "fame": 31
+}

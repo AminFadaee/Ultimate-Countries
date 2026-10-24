@@ -1,0 +1,37 @@
+{
+  "key": "Q834448",
+  "qid": "Q834448",
+  "name": "Peace Palace",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "The Hague",
+  "height_m": 80.0,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1907–1913",
+  "culture": "Neo-Renaissance",
+  "description": "The Peace Palace is an international courthouse in The Hague, Netherlands.",
+  "native": "Vredespaleis",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/peace_palace.png",
+  "photo": {
+    "file": "places/photos/peace_palace.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Friedenspalast%20Den%20Haag%20%28100MP%29.jpg",
+    "author": "Thomas Wolf, www.foto-tw.de",
+    "license": "CC BY-SA 3.0 de",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Friedenspalast_Den_Haag_(100MP).jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Peace_Palace",
+  "fame": 45
+}

@@ -1,0 +1,38 @@
+{
+  "key": "Q601223",
+  "qid": "Q601223",
+  "name": "Eise Eisinga Planetarium",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Royal Eise Eisinga Planetarium is an 18th-century orrery in Franeker, Friesland, Netherlands.",
+  "native": "Koninklijk Eise Eisinga Planetarium",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/eise_eisinga_planetarium.png",
+  "photo": {
+    "file": "places/photos/eise_eisinga_planetarium.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Franeker%2C%20Planetarium.jpg",
+    "author": "Bouwe Brouwer",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Franeker,_Planetarium.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Eise_Eisinga_Planetarium",
+  "fame": 28
+}

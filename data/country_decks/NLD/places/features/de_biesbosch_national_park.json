@@ -1,0 +1,37 @@
+{
+  "key": "Q1702833",
+  "qid": "Q1702833",
+  "name": "De Biesbosch National Park",
+  "kind": "National park",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 89.8,
+  "built": null,
+  "culture": null,
+  "description": "De Biesbosch National Park is one of the largest national parks in the Netherlands and one of the last extensive areas of freshwater tidal wetlands in Northwestern Europe.",
+  "native": "Nationaal Park De Biesbosch",
+  "world_heritage": false,
+  "tags": [
+    "National_park",
+    "Europe"
+  ],
+  "map": "places/maps/de_biesbosch_national_park.png",
+  "photo": {
+    "file": "places/photos/de_biesbosch_national_park.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Biesbosch%201.jpg",
+    "author": "Jensbn~commonswiki",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Biesbosch_1.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/De_Biesbosch_National_Park",
+  "fame": 20
+}

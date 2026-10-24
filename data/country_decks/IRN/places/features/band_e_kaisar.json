@@ -1,0 +1,37 @@
+{
+  "key": "Q806225",
+  "qid": "Q806225",
+  "name": "Band-e Kaisar",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 0.5,
+  "area_km2": null,
+  "built": "begun 260",
+  "culture": null,
+  "description": "The Band-e Kaisar, Pol-e Kaisar, Bridge of Valerian or Shadorvan was an ancient arch bridge in the city of Shushtar, Khuzestan province, Iran, and the first in the country to combine it with a dam.",
+  "native": "پل و سد شادروان شوشتر",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/band_e_kaisar.png",
+  "photo": {
+    "file": "places/photos/band_e_kaisar.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sushtar%20Bridge.jpg",
+    "author": "Ali Afghah",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Sushtar_Bridge.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Band-e_Kaisar",
+  "fame": 25
+}

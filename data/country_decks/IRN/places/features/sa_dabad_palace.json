@@ -1,0 +1,37 @@
+{
+  "key": "Q1969012",
+  "qid": "Q1969012",
+  "name": "Sa'dabad Palace",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Tehran",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "begun 1921",
+  "culture": "Neoclassical",
+  "description": "The Sa'dabad Complex is an 80 hectare complex built by the Qajar and Pahlavi monarchs, located in Shemiran, Greater Tehran, Iran.",
+  "native": "کاخموزه سعدآباد",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/sa_dabad_palace.png",
+  "photo": {
+    "file": "places/photos/sa_dabad_palace.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sadabad9.jpg",
+    "author": "Ahura21",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sadabad9.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Sa%27dabad_Complex",
+  "fame": 25
+}

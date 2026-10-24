@@ -1,0 +1,37 @@
+{
+  "key": "Q1149433",
+  "qid": "Q1149433",
+  "name": "Jiroft culture",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Jiroft culture, also known as the Intercultural style or the Halilrud style, is an early Bronze Age archaeological culture, located in the territory of present-day Sistan and Baluchestan and Kermān provinces of Iran.",
+  "native": "تمدن جیرفت",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/jiroft_culture.png",
+  "photo": {
+    "file": "places/photos/jiroft_culture.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%D8%B4%D9%87%D8%B1%20%D9%82%D8%AF%DB%8C%D9%85%20%D8%AC%DB%8C%D8%B1%D9%81%D8%AA%202.jpg",
+    "author": "Sanjari1380",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D8%B4%D9%87%D8%B1_%D9%82%D8%AF%DB%8C%D9%85_%D8%AC%DB%8C%D8%B1%D9%81%D8%AA_2.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Jiroft_culture",
+  "fame": 23
+}

@@ -1,0 +1,37 @@
+{
+  "key": "Q50719",
+  "qid": "Q50719",
+  "name": "Amsterdam Central station",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 9.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1889",
+  "culture": null,
+  "description": "Amsterdam Centraal station is the largest railway station in Amsterdam, North Holland, the Netherlands.",
+  "native": "Amsterdam Centraal",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/amsterdam_central_station.png",
+  "photo": {
+    "file": "places/photos/amsterdam_central_station.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Estaci%C3%B3n%20Central%2C%20%C3%81msterdam%2C%20Pa%C3%ADses%20Bajos%2C%202016-05-30%2C%20DD%2001-03%20HDR.jpg",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Central,_%C3%81msterdam,_Pa%C3%ADses_Bajos,_2016-05-30,_DD_01-03_HDR.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Amsterdam_Centraal_station",
+  "fame": 36
+}

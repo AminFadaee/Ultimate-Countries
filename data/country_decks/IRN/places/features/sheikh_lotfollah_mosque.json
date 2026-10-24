@@ -1,0 +1,37 @@
+{
+  "key": "Q856356",
+  "qid": "Q856356",
+  "name": "Sheikh Lotfollah Mosque",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Isfahan",
+  "height_m": 32.0,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.0025,
+  "built": "1011–1028",
+  "culture": null,
+  "description": "The Sheikh Lotfollah Mosque is a Shi'ite mosque, located on the eastern side of Naqsh-e Jahan Square, Isfahan, Iran.",
+  "native": "مسجد شیخ لطفالله",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/sheikh_lotfollah_mosque.png",
+  "photo": {
+    "file": "places/photos/sheikh_lotfollah_mosque.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%D9%85%D8%B3%D8%AC%D8%AF%20%D8%B4%DB%8C%D8%AE%20%D9%84%D8%B7%D9%81%20%D8%A7%D9%84%D9%84%D9%87%20II.jpg",
+    "author": "شهاب الدین علیشاهی",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D8%AC%D8%AF_%D8%B4%DB%8C%D8%AE_%D9%84%D8%B7%D9%81_%D8%A7%D9%84%D9%84%D9%87_II.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Sheikh_Lotfollah_Mosque",
+  "fame": 37
+}

@@ -1,0 +1,37 @@
+{
+  "key": "Q14515922",
+  "qid": "Q14515922",
+  "name": "Kazem Dashi",
+  "kind": "Mountain",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1364.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Kazem-Dashi is a rock, located in about fifty meters from shore in Lake Urmia.",
+  "native": "کاظمداشی",
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/kazem_dashi.png",
+  "photo": {
+    "file": "places/photos/kazem_dashi.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kazem%20Dashi.JPG",
+    "author": "Professional Assassin",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Kazem_Dashi.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Kazim-Dashi",
+  "fame": 14
+}

@@ -1,0 +1,31 @@
+{
+  "key": "Q25998008",
+  "qid": "Q25998008",
+  "name": "Persian Qanat",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "A qanāt or kārīz is a water supply system that was developed in ancient Iran for the purpose of transporting usable water to the surface from an aquifer or a well through an underground aqueduct.",
+  "native": "قنات ایرانی",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/persian_qanat.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Persian_Qanat",
+  "fame": 10
+}

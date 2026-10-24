@@ -1,0 +1,37 @@
+{
+  "key": "Q152994",
+  "qid": "Q152994",
+  "name": "De Groote Peel National Park",
+  "kind": "National park",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 15.0,
+  "built": null,
+  "culture": null,
+  "description": "De Groote Peel National Park is a national park in De Peel, a region in the southeast of the Netherlands on the border between the provinces of Limburg and North Brabant.",
+  "native": "Nationaal Park De Groote Peel",
+  "world_heritage": false,
+  "tags": [
+    "National_park",
+    "Europe"
+  ],
+  "map": "places/maps/de_groote_peel_national_park.png",
+  "photo": {
+    "file": "places/photos/de_groote_peel_national_park.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Netherlands%20Grote%20Peel%20lake.jpg",
+    "author": "The original uploader was DirkvdM at English Wikipedia.",
+    "license": "CC BY 1.0",
+    "license_url": "https://creativecommons.org/licenses/by/1.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Netherlands_Grote_Peel_lake.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/De_Groote_Peel_National_Park",
+  "fame": 18
+}

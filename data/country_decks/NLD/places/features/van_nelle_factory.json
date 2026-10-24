@@ -1,0 +1,38 @@
+{
+  "key": "Q2328849",
+  "qid": "Q2328849",
+  "name": "Van Nelle Factory",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.8757,
+  "built": "1925–1931",
+  "culture": "Modern (Nieuwe Bouwen)",
+  "description": "The former Van Nelle Factory on the Schie in Rotterdam, is considered a prime example of the modernist and functionalist architecture.",
+  "native": "Van Nellefabriek",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/van_nelle_factory.png",
+  "photo": {
+    "file": "places/photos/van_nelle_factory.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Rotterdam%20van%20nelle%20fabriek.jpg",
+    "author": "F.Eveleens",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rotterdam_van_nelle_fabriek.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Van_Nelle_Factory",
+  "fame": 27
+}

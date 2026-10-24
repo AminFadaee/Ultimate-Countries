@@ -1,0 +1,30 @@
+{
+  "key": "Q10079",
+  "qid": "Q10079",
+  "name": "Schouwen-Duiveland",
+  "kind": "Island",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 0.0,
+  "length_km": null,
+  "area_km2": 301.34,
+  "built": null,
+  "culture": null,
+  "description": "Schouwen-Duiveland is a municipality and an island in the southwestern Netherlands province of Zeeland.",
+  "native": "Schouwen-Duiveland",
+  "world_heritage": false,
+  "tags": [
+    "Island",
+    "Europe"
+  ],
+  "map": "places/maps/schouwen_duiveland.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Schouwen-Duiveland",
+  "fame": 53
+}

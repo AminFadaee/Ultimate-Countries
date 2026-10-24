@@ -1,0 +1,37 @@
+{
+  "key": "Q627928",
+  "qid": "Q627928",
+  "name": "Babak Fort",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Pāpak Fort or Babak Castle, is a large citadel on the top of a mountain in the Arasbaran forests, 50 km from Ahar, one parasang from Ardabil, 6 km southwest of Kalibar City in northwestern Iran.",
+  "native": "قلعه بابک",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/babak_fort.png",
+  "photo": {
+    "file": "places/photos/babak_fort.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Bazz%20fortress.jpg",
+    "author": "Alireza824 at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bazz_fortress.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Babak_Fort",
+  "fame": 22
+}

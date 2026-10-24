@@ -1,0 +1,30 @@
+{
+  "key": "Q1009271",
+  "qid": "Q1009271",
+  "name": "Ghent–Terneuzen Canal",
+  "kind": "Canal",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 32.0,
+  "area_km2": null,
+  "built": "1823–1827",
+  "culture": null,
+  "description": "The Ghent–Terneuzen Canal, also known as the \"Sea Canal\" (Zeekanaal) is a canal linking Ghent in Belgium to the port of Terneuzen on the Westerschelde (Scheldt) Estuary in the Netherlands, thereby providing the former with better access to the sea.",
+  "native": "Kanaal Gent-Terneuzen",
+  "world_heritage": false,
+  "tags": [
+    "Canal",
+    "Europe"
+  ],
+  "map": "places/maps/ghentterneuzen_canal.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Ghent%E2%80%93Terneuzen_Canal",
+  "fame": 20
+}

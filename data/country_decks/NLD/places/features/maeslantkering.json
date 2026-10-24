@@ -1,0 +1,38 @@
+{
+  "key": "Q1647536",
+  "qid": "Q1647536",
+  "name": "Maeslantkering",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Maeslantkering 'Maeslant barrier' is a storm surge barrier on the Nieuwe Waterweg, in South Holland, Netherlands.",
+  "native": "Maeslantkering",
+  "group": "Water_defence",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/maeslantkering.png",
+  "photo": {
+    "file": "places/photos/maeslantkering.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Maeslantkering.jpg",
+    "author": "DeltaWorks Online - Eszter Simonfi",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Maeslantkering.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Maeslantkering",
+  "fame": 15
+}

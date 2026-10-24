@@ -1,0 +1,30 @@
+{
+  "key": "Q1362309",
+  "qid": "Q1362309",
+  "name": "Nieuwe Maas",
+  "kind": "River",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 24.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Nieuwe Maas is a distributary of the Rhine River, and a former distributary of the Maas River, in the Dutch province of South Holland.",
+  "native": "Nieuwe Maas",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Europe"
+  ],
+  "map": "places/maps/nieuwe_maas.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Nieuwe_Maas",
+  "fame": 34
+}

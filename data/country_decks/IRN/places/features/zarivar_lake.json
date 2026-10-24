@@ -1,0 +1,30 @@
+{
+  "key": "Q3058006",
+  "qid": "Q3058006",
+  "name": "Zarivar Lake",
+  "kind": "Lake",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 5.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Lake Zarivār, is a lake in the Zagros Mountains, within Kurdistan province of western Iran.",
+  "native": "دریاچه زریوار",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Asia"
+  ],
+  "map": "places/maps/zarivar_lake.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Zarivar_Lake",
+  "fame": 15
+}

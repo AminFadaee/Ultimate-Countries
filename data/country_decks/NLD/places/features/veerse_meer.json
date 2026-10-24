@@ -1,0 +1,30 @@
+{
+  "key": "Q958780",
+  "qid": "Q958780",
+  "name": "Veerse Meer",
+  "kind": "Lake",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 22.0,
+  "area_km2": 20.3,
+  "built": null,
+  "culture": null,
+  "description": "The Veerse Meer is a lagoon in the southwest Netherlands in the province of Zeeland.",
+  "native": "Veerse Meer",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Europe"
+  ],
+  "map": "places/maps/veerse_meer.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Veerse_Meer",
+  "fame": 18
+}

@@ -1,0 +1,38 @@
+{
+  "key": "Q1025825",
+  "qid": "Q1025825",
+  "name": "Shahr-e Sukhteh",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 22.0,
+  "built": "c. 3550 BC",
+  "culture": "Helmand culture",
+  "description": "Shahr-e Sukhteh, c. 3550–2300 BC, also spelled Shahr-e Sūkhté and Shahr-i Sōkhta, is an archaeological site of a sizable Bronze Age urban settlement, associated with the Helmand culture.",
+  "native": "شهر سوخته",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/shahr_e_sukhteh.png",
+  "photo": {
+    "file": "places/photos/shahr_e_sukhteh.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%DA%A9%D8%A7%D8%AE%20%D8%B3%D9%88%D8%AE%D8%AA%D9%87%20%D8%B4%D9%87%D8%B1%20%D8%B3%D9%88%D8%AD%D8%AA%D9%87.jpg",
+    "author": "Saeedrahdari (سعید راهداری)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%DA%A9%D8%A7%D8%AE_%D8%B3%D9%88%D8%AE%D8%AA%D9%87_%D8%B4%D9%87%D8%B1_%D8%B3%D9%88%D8%AD%D8%AA%D9%87.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Shahr-e_Sukhteh",
+  "fame": 50
+}

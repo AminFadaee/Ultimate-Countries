@@ -1,0 +1,37 @@
+{
+  "key": "Q2429287",
+  "qid": "Q2429287",
+  "name": "Ali Qapu",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Isfahan",
+  "height_m": 48.0,
+  "elevation_m": 1573.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1597",
+  "culture": "Safavid",
+  "description": "Ali Qapu is an imperial palace in Isfahan, Iran.",
+  "native": "عالیقاپو",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/ali_qapu.png",
+  "photo": {
+    "file": "places/photos/ali_qapu.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Alighapodibajizahra.jpg",
+    "author": "Zahradibaji",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Alighapodibajizahra.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Ali_Qapu",
+  "fame": 27
+}

@@ -1,0 +1,37 @@
+{
+  "key": "Q648705",
+  "qid": "Q648705",
+  "name": "Naqsh-e Rustam",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": "Persian",
+  "description": "Naqsh-e Rostam is an ancient archeological site and necropolis located about 13 km northwest of Persepolis, in Fars province, Iran.",
+  "native": "نقش رستم",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/naqsh_e_rustam.png",
+  "photo": {
+    "file": "places/photos/naqsh_e_rustam.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Islamic%20Republic%20049%20%288498647398%29.jpg",
+    "author": "Stefan Krasowski from New York, NY, USA",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Islamic_Republic_049_(8498647398).jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Naqsh-e_Rostam",
+  "fame": 50
+}

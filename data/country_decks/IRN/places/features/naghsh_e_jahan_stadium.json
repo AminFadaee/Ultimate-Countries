@@ -1,0 +1,38 @@
+{
+  "key": "Q5931161",
+  "qid": "Q5931161",
+  "name": "Naghsh-e-Jahan Stadium",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Isfahan",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1999–2003",
+  "culture": null,
+  "description": "Naghsh-e-Jahan Stadium, is a football stadium in Isfahan, Iran.",
+  "native": "ورزشگاه نقش جهان",
+  "group": "Stadium",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/naghsh_e_jahan_stadium.png",
+  "photo": {
+    "file": "places/photos/naghsh_e_jahan_stadium.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Naghsh-e-Jahan%20Stadium3.jpg",
+    "author": "Ali Khodaei",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Naghsh-e-Jahan_Stadium3.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Naghsh-e_Jahan_Stadium",
+  "fame": 17
+}

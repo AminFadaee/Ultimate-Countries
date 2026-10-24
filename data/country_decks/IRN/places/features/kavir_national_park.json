@@ -1,0 +1,30 @@
+{
+  "key": "Q1518527",
+  "qid": "Q1518527",
+  "name": "Kavir National Park",
+  "kind": "National park",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 6911.69,
+  "built": null,
+  "culture": null,
+  "description": "Kavir National Park is a national park in northern Iran with an area of 4,000 km2 (1,500 sq mi) located on the western end of the Kavir Desert.",
+  "native": "پارک ملی کویر",
+  "world_heritage": false,
+  "tags": [
+    "National_park",
+    "Asia"
+  ],
+  "map": "places/maps/kavir_national_park.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Kavir_National_Park",
+  "fame": 22
+}

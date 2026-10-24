@@ -1,0 +1,37 @@
+{
+  "key": "Q4706020",
+  "qid": "Q4706020",
+  "name": "Alamut Castle",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2131.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": "865",
+  "culture": "Iranian",
+  "description": "Alamut is a ruined mountain fortress located in the Alamut region in the South Caspian, near the village of Gazor Khan in Qazvin province in Iran, approximately 200 km from Tehran.",
+  "native": "قلعه الموت",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/alamut_castle.png",
+  "photo": {
+    "file": "places/photos/alamut_castle.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/2008iran.%20Iran%2C%20Alamut%20Castle%20%282573255326%29.jpg",
+    "author": "Ninara from Helsinki, Finland",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2008iran._Iran,_Alamut_Castle_(2573255326).jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Alamut_Castle",
+  "fame": 50
+}

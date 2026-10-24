@@ -1,0 +1,37 @@
+{
+  "key": "Q503319",
+  "qid": "Q503319",
+  "name": "Olympic Stadium",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1927–1928",
+  "culture": null,
+  "description": "The Olympic Stadium is a sporting venue which was used as the main stadium for the 1928 Summer Olympics in Amsterdam.",
+  "native": "Olympisch Stadion",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/olympic_stadium.png",
+  "photo": {
+    "file": "places/photos/olympic_stadium.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Olstadion.jpg",
+    "author": "http://www.bmz.amsterdam.nl",
+    "license": "Attribution",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Olstadion.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Olympic_Stadium_(Amsterdam)",
+  "fame": 37
+}

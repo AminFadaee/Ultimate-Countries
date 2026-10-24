@@ -1,0 +1,37 @@
+{
+  "key": "Q1740490",
+  "qid": "Q1740490",
+  "name": "Khaju Bridge",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Isfahan",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 0.137,
+  "area_km2": null,
+  "built": "1650",
+  "culture": null,
+  "description": "The Khaju Bridge is a historic bridge on the Zayanderud, the largest river of the Iranian plateau, in Isfahan, Iran.",
+  "native": "پل خواجو",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/khaju_bridge.png",
+  "photo": {
+    "file": "places/photos/khaju_bridge.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pole%20Kahjoo%201.JPG",
+    "author": "درفش کاویانی",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pole_Kahjoo_1.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Khaju_Bridge",
+  "fame": 26
+}

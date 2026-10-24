@@ -1,0 +1,30 @@
+{
+  "key": "Q228651",
+  "qid": "Q228651",
+  "name": "Zuiderzee Works",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Zuiderzee Works is a system of dams and dikes, land reclamation and water drainage work, which was the largest hydraulic engineering project undertaken by the Netherlands during the twentieth century.",
+  "native": "Zuiderzeewerken",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/zuiderzee_works.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Zuiderzee_Works",
+  "fame": 25
+}

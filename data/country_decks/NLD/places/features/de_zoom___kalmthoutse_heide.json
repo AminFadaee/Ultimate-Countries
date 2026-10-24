@@ -1,0 +1,37 @@
+{
+  "key": "Q2156810",
+  "qid": "Q2156810",
+  "name": "De Zoom - Kalmthoutse Heide",
+  "kind": "National park",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 38.3278751,
+  "built": null,
+  "culture": null,
+  "description": "De Zoom–Kalmthoutse Heide Cross-Border Park is a cross-border park on the Belgian–Dutch border.",
+  "native": "Grenspark De Zoom-Kalmthoutse Heide",
+  "world_heritage": false,
+  "tags": [
+    "National_park",
+    "Europe"
+  ],
+  "map": "places/maps/de_zoom___kalmthoutse_heide.png",
+  "photo": {
+    "file": "places/photos/de_zoom___kalmthoutse_heide.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kalmthoutse%20heide.jpg",
+    "author": "Tbc",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Kalmthoutse_heide.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/De_Zoom%E2%80%93Kalmthoutse_Heide_Cross-Border_Park",
+  "fame": 21
+}

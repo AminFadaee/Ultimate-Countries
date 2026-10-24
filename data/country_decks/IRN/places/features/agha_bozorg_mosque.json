@@ -1,0 +1,37 @@
+{
+  "key": "Q3396964",
+  "qid": "Q3396964",
+  "name": "Agha Bozorg Mosque",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "AD 1844–1850",
+  "culture": null,
+  "description": "The Agha Bozorg Mosque is a mosque and madrasa in Kashan, in the province of Isfahan, Iran.",
+  "native": "مسجد آقابزرگ",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/agha_bozorg_mosque.png",
+  "photo": {
+    "file": "places/photos/agha_bozorg_mosque.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mezquita%20de%20Agha%20Bozorg%2C%20Kashan%2C%20Ir%C3%A1n%2C%202016-09-19%2C%20DD%2081.jpg",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mezquita_de_Agha_Bozorg,_Kashan,_Ir%C3%A1n,_2016-09-19,_DD_81.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Agha_Bozorg_Mosque",
+  "fame": 21
+}

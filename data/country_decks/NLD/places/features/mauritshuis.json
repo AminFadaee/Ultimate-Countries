@@ -1,0 +1,38 @@
+{
+  "key": "Q221092",
+  "qid": "Q221092",
+  "name": "Mauritshuis",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "The Hague",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Mauritshuis is an art museum in The Hague, Netherlands.",
+  "native": "Mauritshuis",
+  "group": "Museum",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/mauritshuis.png",
+  "photo": {
+    "file": "places/photos/mauritshuis.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mauritshuis%20Museum%20%2814346890947%29.jpg",
+    "author": "Roman Boed from The Netherlands",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mauritshuis_Museum_(14346890947).jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Mauritshuis",
+  "fame": 49
+}

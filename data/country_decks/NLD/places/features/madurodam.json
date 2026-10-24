@@ -1,0 +1,37 @@
+{
+  "key": "Q747322",
+  "qid": "Q747322",
+  "name": "Madurodam",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "The Hague",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1952",
+  "culture": null,
+  "description": "Madurodam is a miniature park and tourist attraction in the Scheveningen district of The Hague in the Netherlands.",
+  "native": "Madurodam",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/madurodam.png",
+  "photo": {
+    "file": "places/photos/madurodam.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Madurodam%20pays%20bas.JPG",
+    "author": "Cqui",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Madurodam_pays_bas.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Madurodam",
+  "fame": 35
+}

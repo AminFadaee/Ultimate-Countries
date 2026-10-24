@@ -1,0 +1,37 @@
+{
+  "key": "Q737835",
+  "qid": "Q737835",
+  "name": "University of Tehran",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Tehran",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The University of Tehran (UT) is a public collegiate university in Iran, and the oldest and most prominent Iranian university located in Tehran.",
+  "native": "دانشگاه تهران",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/university_of_tehran.png",
+  "photo": {
+    "file": "places/photos/university_of_tehran.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/University%20of%20Tehran%201704.jpg",
+    "author": "GTVM92",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:University_of_Tehran_1704.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/University_of_Tehran",
+  "fame": 54
+}

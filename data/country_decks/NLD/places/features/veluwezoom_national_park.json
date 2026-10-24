@@ -1,0 +1,37 @@
+{
+  "key": "Q1703055",
+  "qid": "Q1703055",
+  "name": "Veluwezoom National Park",
+  "kind": "National park",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 50.1475205,
+  "built": null,
+  "culture": null,
+  "description": "Veluwezoom National Park is a national park in the Netherlands located in the province of Gelderland.",
+  "native": "Nationaal Park Veluwezoom",
+  "world_heritage": false,
+  "tags": [
+    "National_park",
+    "Europe"
+  ],
+  "map": "places/maps/veluwezoom_national_park.png",
+  "photo": {
+    "file": "places/photos/veluwezoom_national_park.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Nationaal%20Park%20Veluwezoom%20near%20Posbank.jpg",
+    "author": "MartinD",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Nationaal_Park_Veluwezoom_near_Posbank.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Veluwezoom_National_Park",
+  "fame": 23
+}

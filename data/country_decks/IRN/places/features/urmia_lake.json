@@ -1,0 +1,30 @@
+{
+  "key": "Q199551",
+  "qid": "Q199551",
+  "name": "Urmia Lake",
+  "kind": "Lake",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1270.0,
+  "length_km": 140.0,
+  "area_km2": 5200.0,
+  "built": null,
+  "culture": null,
+  "description": "Lake Urmia is an endorheic salt lake in Iran.",
+  "native": "دریاچه ارومیه",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Asia"
+  ],
+  "map": "places/maps/urmia_lake.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lake_Urmia",
+  "fame": 82
+}

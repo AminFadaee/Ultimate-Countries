@@ -1,0 +1,37 @@
+{
+  "key": "Q667674",
+  "qid": "Q667674",
+  "name": "Si-o-se Pol",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Isfahan",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 0.29775999999999997,
+  "area_km2": null,
+  "built": "1599–1602",
+  "culture": null,
+  "description": "The Allahverdi Khan Bridge, popularly known as Si-o-se-pol, is the largest of the eleven historical bridges on the Zayanderud, the largest river of the Iranian Plateau, in Isfahan, Iran.",
+  "native": "سیوسهپل",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/si_o_se_pol.png",
+  "photo": {
+    "file": "places/photos/si_o_se_pol.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Si-o-se-pol%20Bridge%2C%20Isfahan%2C%20Iran.png",
+    "author": "Corina Möller",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Si-o-se-pol_Bridge,_Isfahan,_Iran.png"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Si-o-se-pol",
+  "fame": 34
+}

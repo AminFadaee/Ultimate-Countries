@@ -1,0 +1,38 @@
+{
+  "key": "Q656807",
+  "qid": "Q656807",
+  "name": "Rotterdam The Hague Airport",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": -4.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Rotterdam The Hague Airport is a minor international airport serving Rotterdam, the Netherlands' second largest city, and The Hague, its administrative and royal capital.",
+  "native": "Rotterdam The Hague Airport",
+  "group": "Airport",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/rotterdam_the_hague_airport.png",
+  "photo": {
+    "file": "places/photos/rotterdam_the_hague_airport.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/2010-05-16-rotterdam-by-RalfR-02.jpg",
+    "author": "Ralf Roletschek",
+    "license": "GFDL 1.2",
+    "license_url": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "page": "https://commons.wikimedia.org/wiki/File:2010-05-16-rotterdam-by-RalfR-02.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Rotterdam_The_Hague_Airport",
+  "fame": 34
+}

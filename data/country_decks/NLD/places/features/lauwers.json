@@ -1,0 +1,30 @@
+{
+  "key": "Q505650",
+  "qid": "Q505650",
+  "name": "Lauwers",
+  "kind": "River",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 40.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Lauwers is a river in the Netherlands.",
+  "native": "Lauwers",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Europe"
+  ],
+  "map": "places/maps/lauwers.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lauwers",
+  "fame": 28
+}

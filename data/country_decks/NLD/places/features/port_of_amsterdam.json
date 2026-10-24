@@ -1,0 +1,30 @@
+{
+  "key": "Q1397383",
+  "qid": "Q1397383",
+  "name": "Port of Amsterdam",
+  "kind": "Sea",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The port of Amsterdam is an inland seaport in Amsterdam in North Holland, Netherlands.",
+  "native": "haven van Amsterdam",
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Europe"
+  ],
+  "map": "places/maps/port_of_amsterdam.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Port_of_Amsterdam",
+  "fame": 18
+}

@@ -1,0 +1,38 @@
+{
+  "key": "Q1893089",
+  "qid": "Q1893089",
+  "name": "Oosterscheldekering",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Oosterscheldekering, between the islands Schouwen-Duiveland and Noord-Beveland, is the largest of the Delta Works, a series of dams and storm surge barriers designed to protect the Netherlands from flooding from the North Sea.",
+  "native": "Oosterscheldekering",
+  "group": "Water_defence",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/oosterscheldekering.png",
+  "photo": {
+    "file": "places/photos/oosterscheldekering.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Oosterscheldekering-pohled.jpg",
+    "author": "Vladimír Šiman (online)",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Oosterscheldekering-pohled.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Oosterscheldekering",
+  "fame": 19
+}

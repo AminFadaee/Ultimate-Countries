@@ -1,0 +1,30 @@
+{
+  "key": "Q1653947",
+  "qid": "Q1653947",
+  "name": "IJmeer",
+  "kind": "Lake",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": -4.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The IJmeer is a 'bordering lake' (Randmeer) in the Netherlands straddling the provinces of North Holland and Flevoland.",
+  "native": "IJmeer",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Europe"
+  ],
+  "map": "places/maps/ijmeer.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/IJmeer",
+  "fame": 19
+}

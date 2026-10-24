@@ -1,0 +1,30 @@
+{
+  "key": "Q237660",
+  "qid": "Q237660",
+  "name": "Iranian plateau",
+  "kind": "Plateau",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Iranian plateau or Persian plateau is a geological feature spanning parts of Central Asia, South Asia, West Asia, and the South Caucasus.",
+  "native": "فلات ایران",
+  "world_heritage": false,
+  "tags": [
+    "Plateau",
+    "Asia"
+  ],
+  "map": "places/maps/iranian_plateau.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Iranian_plateau",
+  "fame": 67
+}

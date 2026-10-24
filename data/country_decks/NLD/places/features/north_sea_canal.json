@@ -1,0 +1,37 @@
+{
+  "key": "Q119314",
+  "qid": "Q119314",
+  "name": "North Sea Canal",
+  "kind": "Canal",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 21.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The North Sea Canal is a Dutch ship canal from Amsterdam to the North Sea at IJmuiden, constructed between 1865 and 1876 to enable seafaring vessels to reach the port of Amsterdam.",
+  "native": "Noordzeekanaal",
+  "world_heritage": false,
+  "tags": [
+    "Canal",
+    "Europe"
+  ],
+  "map": "places/maps/north_sea_canal.png",
+  "photo": {
+    "file": "places/photos/north_sea_canal.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Nzkanaal3.jpg",
+    "author": "",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Nzkanaal3.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/North_Sea_Canal",
+  "fame": 24
+}

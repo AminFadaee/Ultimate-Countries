@@ -1,0 +1,30 @@
+{
+  "key": "Q383841",
+  "qid": "Q383841",
+  "name": "Bakhtegan Lake",
+  "kind": "Lake",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 70.0,
+  "area_km2": 3500.0,
+  "built": null,
+  "culture": null,
+  "description": "Bakhtegan Lake was a salt lake in Fars province, southern Iran, about 160 km (99 mi) east of Shiraz and 15 km (9.3 mi) west of the town of Neyriz.",
+  "native": "دریاچه بختگان",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Asia"
+  ],
+  "map": "places/maps/bakhtegan_lake.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Bakhtegan_Lake",
+  "fame": 24
+}

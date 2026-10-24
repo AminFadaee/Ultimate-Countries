@@ -1,0 +1,37 @@
+{
+  "key": "Q2635530",
+  "qid": "Q2635530",
+  "name": "Tomb of Cyrus the Great",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": 11.1,
+  "elevation_m": null,
+  "length_km": 0.013349999999999999,
+  "area_km2": null,
+  "built": null,
+  "culture": "Achaemenid",
+  "description": "The tomb of Cyrus the Great is located in Pasargadae, which was the first capital city of his Achaemenid Empire and is now an archaeological site in the Fars Province of Iran.",
+  "native": "آرامگاه کوروش بزرگ",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/tomb_of_cyrus_the_great.png",
+  "photo": {
+    "file": "places/photos/tomb_of_cyrus_the_great.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pasargad%20Tomb%20Cyrus3.jpg",
+    "author": "Bernd81",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pasargad_Tomb_Cyrus3.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Tomb_of_Cyrus_the_Great",
+  "fame": 43
+}

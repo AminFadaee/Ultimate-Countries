@@ -1,0 +1,37 @@
+{
+  "key": "Q1957722",
+  "qid": "Q1957722",
+  "name": "Shah Cheragh",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Shah Cheragh is a Twelver Shia funerary monument and religious complex located in Shiraz, in the province of Fars, Iran.",
+  "native": "حرم شاهچراغ",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/shah_cheragh.png",
+  "photo": {
+    "file": "places/photos/shah_cheragh.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Shah-cheragh.JPG",
+    "author": "Roozbeh Taassob",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Shah-cheragh.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Shah_Cheragh",
+  "fame": 27
+}

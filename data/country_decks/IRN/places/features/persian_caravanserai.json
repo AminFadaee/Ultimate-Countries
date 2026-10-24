@@ -1,0 +1,38 @@
+{
+  "key": "Q66030932",
+  "qid": "Q66030932",
+  "name": "Persian Caravanserai",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 32.8332,
+  "built": null,
+  "culture": null,
+  "description": "The Persian Caravanserai is a UNESCO World Heritage Site composed of 54 different caravanserais.",
+  "native": "کاروانسراهای ایرانی",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/persian_caravanserai.png",
+  "photo": {
+    "file": "places/photos/persian_caravanserai.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%DA%A9%D8%A7%D8%B1%D9%88%D8%A7%D9%86%D8%B3%D8%B1%D8%A7%DB%8C%20%D8%AF%DB%8C%D8%B1%20%DA%AF%DA%86%DB%8C%D9%86%D8%8C%20%D9%85%DB%8C%D8%B1%D8%A7%D8%AB%20%D9%85%D9%84%DB%8C%20%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%2026.jpg",
+    "author": "Mostafameraji",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%DA%A9%D8%A7%D8%B1%D9%88%D8%A7%D9%86%D8%B3%D8%B1%D8%A7%DB%8C_%D8%AF%DB%8C%D8%B1_%DA%AF%DA%86%DB%8C%D9%86%D8%8C_%D9%85%DB%8C%D8%B1%D8%A7%D8%AB_%D9%85%D9%84%DB%8C_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86_26.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/The_Persian_Caravanserai",
+  "fame": 17
+}

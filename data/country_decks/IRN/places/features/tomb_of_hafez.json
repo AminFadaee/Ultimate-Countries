@@ -1,0 +1,37 @@
+{
+  "key": "Q129479",
+  "qid": "Q129479",
+  "name": "Tomb of Hafez",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Tomb of Hafez, commonly known as Hāfezieh, are two memorial structures erected in the northern edge of Shiraz, Iran, in memory of the celebrated Persian poet Hafez.",
+  "native": "حافظیه",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/tomb_of_hafez.png",
+  "photo": {
+    "file": "places/photos/tomb_of_hafez.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/H%C3%A1fezova%20hrobka.jpg",
+    "author": "Ondřej Žváček",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:H%C3%A1fezova_hrobka.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Tomb_of_Hafez",
+  "fame": 26
+}

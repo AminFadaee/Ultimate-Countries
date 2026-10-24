@@ -1,0 +1,30 @@
+{
+  "key": "Q525364",
+  "qid": "Q525364",
+  "name": "Lauwersmeer",
+  "kind": "Lake",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Lauwersmeer is a man-made lake in the north of the Netherlands, on the border of the provinces of Groningen and Friesland.",
+  "native": "Lauwersmeer",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Europe"
+  ],
+  "map": "places/maps/lauwersmeer.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lauwersmeer",
+  "fame": 20
+}

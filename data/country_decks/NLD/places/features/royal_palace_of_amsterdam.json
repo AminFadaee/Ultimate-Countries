@@ -1,0 +1,37 @@
+{
+  "key": "Q1056152",
+  "qid": "Q1056152",
+  "name": "Royal Palace of Amsterdam",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": 90.0,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.022031,
+  "built": "1648–1665",
+  "culture": "Dutch Baroque architecture",
+  "description": "The Royal Palace of Amsterdam in Amsterdam is one of three palaces in the Netherlands which are at the disposal of the monarch by Act of Parliament.",
+  "native": "Paleis op de Dam",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/royal_palace_of_amsterdam.png",
+  "photo": {
+    "file": "places/photos/royal_palace_of_amsterdam.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Palacio%20Real%2C%20%C3%81msterdam%2C%20Pa%C3%ADses%20Bajos%2C%202016-05-30%2C%20DD%2007-09%20HDR.jpg",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Palacio_Real,_%C3%81msterdam,_Pa%C3%ADses_Bajos,_2016-05-30,_DD_07-09_HDR.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Royal_Palace_of_Amsterdam",
+  "fame": 37
+}

@@ -1,0 +1,30 @@
+{
+  "key": "Q211263",
+  "qid": "Q211263",
+  "name": "Armenian Highlands",
+  "kind": "Mountain range",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 5.165,
+  "length_km": null,
+  "area_km2": 400000.0,
+  "built": null,
+  "culture": null,
+  "description": "The Armenian highlands comprise the most central and the highest of the three plateaus that together form the northern sector of West Asia.",
+  "native": "سرزمین کوهستانی ارمنستان",
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia"
+  ],
+  "map": "places/maps/armenian_highlands.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Armenian_highlands",
+  "fame": 63
+}

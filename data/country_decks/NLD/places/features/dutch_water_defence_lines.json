@@ -1,0 +1,38 @@
+{
+  "key": "Q64590253",
+  "qid": "Q64590253",
+  "name": "Dutch Water Defence Lines",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 547.7902,
+  "built": null,
+  "culture": null,
+  "description": "The Dutch Water Defence lines is a UNESCO World Heritage Site in the Netherlands comprising the New Dutch Waterline and Stelling van Amsterdam.",
+  "native": "Nederlandse waterverdedigingslinie",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/dutch_water_defence_lines.png",
+  "photo": {
+    "file": "places/photos/dutch_water_defence_lines.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Pampus%2020041105%202429.JPG",
+    "author": "Debot at Dutch Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pampus_20041105_2429.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Dutch_Water_Defence_Lines",
+  "fame": 7
+}

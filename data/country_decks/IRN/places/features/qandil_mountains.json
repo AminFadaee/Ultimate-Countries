@@ -1,0 +1,30 @@
+{
+  "key": "Q1511240",
+  "qid": "Q1511240",
+  "name": "Qandil Mountains",
+  "kind": "Mountain range",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Qandil Mountains, are a mountainous area of Iraqi Kurdistan near the Iranian and Turkish borders.",
+  "native": "کوه قندیل",
+  "world_heritage": false,
+  "tags": [
+    "Mountain_range",
+    "Asia"
+  ],
+  "map": "places/maps/qandil_mountains.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Qandil_Mountains",
+  "fame": 20
+}

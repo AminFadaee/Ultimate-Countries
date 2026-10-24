@@ -1,0 +1,37 @@
+{
+  "key": "Q15075626",
+  "qid": "Q15075626",
+  "name": "Marble Palace",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Tehran",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 0.03997,
+  "area_km2": 0.035462,
+  "built": "1933–1937",
+  "culture": "Eclectic architecture",
+  "description": "The Marble Palace is a historic building and former royal residence in Tehran, Iran.",
+  "native": "کاخ مرمر",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/marble_palace.png",
+  "photo": {
+    "file": "places/photos/marble_palace.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Marmar%20Palace%2043906.jpg",
+    "author": "Hamid Tavakoli",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Marmar_Palace_43906.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Marble_Palace_(Tehran)",
+  "fame": 21
+}

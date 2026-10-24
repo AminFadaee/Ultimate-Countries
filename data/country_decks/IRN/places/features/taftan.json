@@ -1,0 +1,37 @@
+{
+  "key": "Q524954",
+  "qid": "Q524954",
+  "name": "Taftan",
+  "kind": "Volcano",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 3941.0,
+  "length_km": null,
+  "area_km2": 2.25,
+  "built": null,
+  "culture": null,
+  "description": "Taftan is an active stratovolcano in south-eastern Iran in the Sistan and Baluchestan province.",
+  "native": "کوه تفتان",
+  "world_heritage": false,
+  "tags": [
+    "Volcano",
+    "Asia"
+  ],
+  "map": "places/maps/taftan.png",
+  "photo": {
+    "file": "places/photos/taftan.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Taftan%20Volcano.jpg",
+    "author": "Amirhossein Nikroo",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Taftan_Volcano.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Taftan_(volcano)",
+  "fame": 30
+}

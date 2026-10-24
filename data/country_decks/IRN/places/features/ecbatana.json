@@ -1,0 +1,38 @@
+{
+  "key": "Q696193",
+  "qid": "Q696193",
+  "name": "Ecbatana",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Hamadan",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": "Persian",
+  "description": "Ecbatana was an ancient city, the capital of the Median kingdom, and the first capital in Iranian history.",
+  "native": "هگمتانه",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/ecbatana.png",
+  "photo": {
+    "file": "places/photos/ecbatana.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Excavations%20in%20Ecbatana.jpg",
+    "author": "ninara",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Excavations_in_Ecbatana.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Ecbatana",
+  "fame": 50
+}

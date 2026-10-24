@@ -1,0 +1,37 @@
+{
+  "key": "Q1314130",
+  "qid": "Q1314130",
+  "name": "Hasht Behesht",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Isfahan",
+  "height_m": null,
+  "elevation_m": 1582.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": "Iranian",
+  "description": "Hasht Behesht or Hasht-Behesht is a 17th-century pavilion in Isfahan, Iran.",
+  "native": "هشتبهشت",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/hasht_behesht.png",
+  "photo": {
+    "file": "places/photos/hasht_behesht.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%DA%A9%D8%A7%D8%AE%20%D9%87%D8%B4%D8%AA%20%D8%A8%D9%87%D8%B4%D8%AA%2001%2B.jpg",
+    "author": "Ermac Kiyani",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%DA%A9%D8%A7%D8%AE_%D9%87%D8%B4%D8%AA_%D8%A8%D9%87%D8%B4%D8%AA_01%2B.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Hasht_Behesht",
+  "fame": 26
+}

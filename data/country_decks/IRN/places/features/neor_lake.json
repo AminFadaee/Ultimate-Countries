@@ -1,0 +1,30 @@
+{
+  "key": "Q3215087",
+  "qid": "Q3215087",
+  "name": "Neor Lake",
+  "kind": "Lake",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 2700.0,
+  "length_km": null,
+  "area_km2": 2.2,
+  "built": null,
+  "culture": null,
+  "description": "Neor Lake is a shallow lake located in 48 km from Ardabil in Ardabil Province in the Baghru mountain range in North West Iran.",
+  "native": "دریاچه نئور",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Asia"
+  ],
+  "map": "places/maps/neor_lake.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Neor_Lake",
+  "fame": 15
+}

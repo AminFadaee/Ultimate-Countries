@@ -1,0 +1,38 @@
+{
+  "key": "Q914231",
+  "qid": "Q914231",
+  "name": "Rietveld Schröder House",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "Utrecht",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 7.5e-05,
+  "built": "1924",
+  "culture": "De Stijl",
+  "description": "The Rietveld Schröder House in Utrecht was built in 1924 by Dutch architect Gerrit Rietveld for Mrs.",
+  "native": "Rietveld Schröderhuis",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/rietveld_schroder_house.png",
+  "photo": {
+    "file": "places/photos/rietveld_schroder_house.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Rietveld%20Schr%C3%B6derhuis%20HayKranen-20.JPG",
+    "author": "User:Husky",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rietveld_Schr%C3%B6derhuis_HayKranen-20.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Rietveld_Schr%C3%B6der_House",
+  "fame": 36
+}

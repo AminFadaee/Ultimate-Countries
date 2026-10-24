@@ -1,0 +1,37 @@
+{
+  "key": "Q559054",
+  "qid": "Q559054",
+  "name": "Khar Turan National Park",
+  "kind": "National park",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 14415.23,
+  "built": null,
+  "culture": null,
+  "description": "Khar Turan National Park and Touran Wildlife Refuge are adjoining protected areas in Iran.",
+  "native": "ذخیرهگاه زیستکره توران",
+  "world_heritage": false,
+  "tags": [
+    "National_park",
+    "Asia"
+  ],
+  "map": "places/maps/khar_turan_national_park.png",
+  "photo": {
+    "file": "places/photos/khar_turan_national_park.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%D9%BE%D8%A7%D8%B1%DA%A9%20%D9%85%D9%84%DB%8C%20%D8%AA%D9%88%D8%B1%D8%A7%D9%86.jpg",
+    "author": "Mh kavir",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D9%BE%D8%A7%D8%B1%DA%A9_%D9%85%D9%84%DB%8C_%D8%AA%D9%88%D8%B1%D8%A7%D9%86.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Khar_Turan_National_Park",
+  "fame": 14
+}

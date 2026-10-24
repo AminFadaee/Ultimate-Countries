@@ -1,0 +1,30 @@
+{
+  "key": "Q228655",
+  "qid": "Q228655",
+  "name": "Zuiderzee",
+  "kind": "Sea",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Zuiderzee or Zuider Zee, historically called Lake Almere and Lake Flevo, was a shallow bay of the North Sea in the northwest of the Netherlands.",
+  "native": "Zuiderzee",
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Europe"
+  ],
+  "map": "places/maps/zuiderzee.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Zuiderzee",
+  "fame": 52
+}

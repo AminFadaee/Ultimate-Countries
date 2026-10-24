@@ -1,0 +1,30 @@
+{
+  "key": "Q218377",
+  "qid": "Q218377",
+  "name": "Dollart",
+  "kind": "Sea",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Dollart or Dollard is a bay in the south‑eastern Wadden Sea at the Germany–Netherlands border, west of the Ems estuary.",
+  "native": "Dollard",
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Europe"
+  ],
+  "map": "places/maps/dollart.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Dollart",
+  "fame": 29
+}

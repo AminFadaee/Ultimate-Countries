@@ -1,0 +1,30 @@
+{
+  "key": "Q1397166",
+  "qid": "Q1397166",
+  "name": "Farsi Island",
+  "kind": "Island",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 0.852,
+  "area_km2": 0.25,
+  "built": null,
+  "culture": null,
+  "description": "Farsi Island is a tiny, barren Iranian island in the Persian Gulf.",
+  "native": "جزیره فارسی",
+  "world_heritage": false,
+  "tags": [
+    "Island",
+    "Asia"
+  ],
+  "map": "places/maps/farsi_island.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Farsi_Island",
+  "fame": 24
+}

@@ -1,0 +1,30 @@
+{
+  "key": "Q8505",
+  "qid": "Q8505",
+  "name": "Hari",
+  "kind": "River",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 1150.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Hari River or Herat River or Tejen River or Harirud is a river flowing 1,100 kilometres (680 mi) from the mountains of central Afghanistan to Turkmenistan, where it forms the Tejen oasis and disappears in the Karakum Desert.",
+  "native": "هریرود",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Asia"
+  ],
+  "map": "places/maps/hari.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Hari_(Afghanistan)",
+  "fame": 59
+}

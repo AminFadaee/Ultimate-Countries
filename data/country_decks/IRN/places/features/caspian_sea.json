@@ -1,0 +1,30 @@
+{
+  "key": "Q5484",
+  "qid": "Q5484",
+  "name": "Caspian Sea",
+  "kind": "Lake",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": -28.0,
+  "length_km": 1200.0,
+  "area_km2": 386400.0,
+  "built": null,
+  "culture": null,
+  "description": "The Caspian Sea is the world's largest inland body of water, also described as the world's largest lake and usually referred to as a full-fledged sea.",
+  "native": "دریای مازندران",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Asia"
+  ],
+  "map": "places/maps/caspian_sea.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Caspian_Sea",
+  "fame": 207
+}

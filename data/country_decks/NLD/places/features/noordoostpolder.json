@@ -1,0 +1,30 @@
+{
+  "key": "Q69262",
+  "qid": "Q69262",
+  "name": "Noordoostpolder",
+  "kind": "Polder",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": -3.0,
+  "length_km": null,
+  "area_km2": 595.43,
+  "built": null,
+  "culture": null,
+  "description": "Noordoostpolder is a polder and municipality in the Flevoland province in the central Netherlands.",
+  "native": "Noordoostpolder",
+  "world_heritage": false,
+  "tags": [
+    "Polder",
+    "Europe"
+  ],
+  "map": "places/maps/noordoostpolder.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Noordoostpolder",
+  "fame": 57
+}

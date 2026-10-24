@@ -1,0 +1,37 @@
+{
+  "key": "Q20645774",
+  "qid": "Q20645774",
+  "name": "Soltaniyeh Dome",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": 49.0,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "c. AD 1313",
+  "culture": null,
+  "description": "The Dome of Soltaniyeh – variously called the Mausoleum of Oljaytu, Tomb of Uljaytu, or Soltaniya complex, among other designations – is a historic mausoleum and monument complex, located in Soltaniyeh, Zanjan, Iran.",
+  "native": "گنبد سلطانیه",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/soltaniyeh_dome.png",
+  "photo": {
+    "file": "places/photos/soltaniyeh_dome.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Gonbad%20Soltaniye.jpg",
+    "author": "Farzad Yousefian",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gonbad_Soltaniye.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Dome_of_Soltaniyeh",
+  "fame": 33
+}

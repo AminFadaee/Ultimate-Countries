@@ -1,0 +1,37 @@
+{
+  "key": "Q692381",
+  "qid": "Q692381",
+  "name": "Het Loo Palace",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1684–1686",
+  "culture": "Dutch Baroque",
+  "description": "Het Loo Palace is a palace in Apeldoorn, Netherlands, which was built by the House of Orange-Nassau.",
+  "native": "Paleis Het Loo",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/het_loo_palace.png",
+  "photo": {
+    "file": "places/photos/het_loo_palace.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Het%20loo%20front.jpg",
+    "author": "",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Het_loo_front.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Het_Loo_Palace",
+  "fame": 22
+}

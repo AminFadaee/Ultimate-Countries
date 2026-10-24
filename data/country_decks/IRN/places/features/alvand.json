@@ -1,0 +1,37 @@
+{
+  "key": "Q2302910",
+  "qid": "Q2302910",
+  "name": "Alvand",
+  "kind": "Mountain",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 3580.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Alvand is a subrange of the Zagros Mountains in western Iran located 10 km south of the city of Hamadan in Hamadan province.",
+  "native": "کوهستان الوند",
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/alvand.png",
+  "photo": {
+    "file": "places/photos/alvand.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Alvand%202007.jpg",
+    "author": "Daneshju2006 (talk) (Uploads)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Alvand_2007.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Alvand",
+  "fame": 24
+}

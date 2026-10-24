@@ -1,0 +1,38 @@
+{
+  "key": "Q190804",
+  "qid": "Q190804",
+  "name": "Rijksmuseum",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Rijksmuseum is the national museum of the Netherlands dedicated to Dutch arts and history, located at the Museum Square in the borough of Amsterdam South, close to the Van Gogh Museum, the Stedelijk Museum Amsterdam, and the Royal Concertgebouw.",
+  "native": "Rijksmuseum Amsterdam",
+  "group": "Museum",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/rijksmuseum.png",
+  "photo": {
+    "file": "places/photos/rijksmuseum.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Rijksmuseum%20in%20Amsterdam.jpg",
+    "author": "Marco Almbauer",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rijksmuseum_in_Amsterdam.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Rijksmuseum",
+  "fame": 70
+}

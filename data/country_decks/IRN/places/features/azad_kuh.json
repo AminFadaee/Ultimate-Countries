@@ -1,0 +1,37 @@
+{
+  "key": "Q793442",
+  "qid": "Q793442",
+  "name": "Azad Kuh",
+  "kind": "Mountain",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4355.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Azad Kooh is one of the highest peaks in the central Alborz Range in Mazandaran province in northern Iran.",
+  "native": "آزادکوه",
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/azad_kuh.png",
+  "photo": {
+    "file": "places/photos/azad_kuh.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/AzadKuh.jpg",
+    "author": "Hoomanbahreini",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:AzadKuh.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Azad_Kooh",
+  "fame": 15
+}

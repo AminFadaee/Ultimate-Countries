@@ -1,0 +1,37 @@
+{
+  "key": "Q842826",
+  "qid": "Q842826",
+  "name": "Church of Saint Thaddeus",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 9.3294,
+  "built": null,
+  "culture": null,
+  "description": "The Monastery of Saint Thaddeus is an Armenian monastery in a mountainous area of West Azerbaijan province, Iran.",
+  "native": "کلیسای تادئوس مقدس",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/church_of_saint_thaddeus.png",
+  "photo": {
+    "file": "places/photos/church_of_saint_thaddeus.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Thaddeus%20Monastery%2C%20Iran%2C%20northwestern%20view.jpg",
+    "author": "",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Saint_Thaddeus_Monastery,_Iran,_northwestern_view.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Monastery_of_Saint_Thaddeus",
+  "fame": 34
+}

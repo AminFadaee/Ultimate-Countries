@@ -1,0 +1,37 @@
+{
+  "key": "Q1962312",
+  "qid": "Q1962312",
+  "name": "Nasir-ol-Molk Mosque",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.00298,
+  "built": "AD 1876–1888",
+  "culture": null,
+  "description": "The Nasir-ol-Molk Mosque, also known as the Pink Mosque, is a mosque located in Shiraz, in the province of Fars, Iran.",
+  "native": "مسجد نصیرالملک",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/nasir_ol_molk_mosque.png",
+  "photo": {
+    "file": "places/photos/nasir_ol_molk_mosque.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Nasr%20ol%20Molk%20mosque2.jpg",
+    "author": "dynamosquito",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Nasr_ol_Molk_mosque2.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Nasir-ol-Molk_Mosque",
+  "fame": 44
+}

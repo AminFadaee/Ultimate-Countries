@@ -1,0 +1,30 @@
+{
+  "key": "Q304413",
+  "qid": "Q304413",
+  "name": "Diyala River",
+  "kind": "River",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 231.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Diyala is a river and tributary of the Tigris.",
+  "native": "رود سیروان",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Asia"
+  ],
+  "map": "places/maps/diyala_river.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Diyala_River",
+  "fame": 37
+}

@@ -1,0 +1,37 @@
+{
+  "key": "Q391162",
+  "qid": "Q391162",
+  "name": "Walibi Holland",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.4,
+  "built": "1971",
+  "culture": null,
+  "description": "Walibi Holland is a theme park in Biddinghuizen, Netherlands.",
+  "native": "Walibi Holland",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/walibi_holland.png",
+  "photo": {
+    "file": "places/photos/walibi_holland.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Walibi%20Holland%20-%20Maingate.jpg",
+    "author": "SGeerlings",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Walibi_Holland_-_Maingate.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Walibi_Holland",
+  "fame": 28
+}

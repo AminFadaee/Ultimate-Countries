@@ -1,0 +1,37 @@
+{
+  "key": "Q1398856",
+  "qid": "Q1398856",
+  "name": "Vank Cathedral",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Isfahan",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1655–1664",
+  "culture": null,
+  "description": "The Holy Savior Cathedral, also known the Church of the Saintly Sisters, is an Armenian Apostolic cathedral located in the New Julfa district of Isfahan, Iran.",
+  "native": "کلیسای وانک",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/vank_cathedral.png",
+  "photo": {
+    "file": "places/photos/vank_cathedral.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/%DA%A9%D9%84%DB%8C%D8%B3%D8%A7%DB%8C%20%D9%88%D8%A7%D9%86%DA%A9.%20%D8%B9%DA%A9%D8%B3%20Rasool%20AB.JPG",
+    "author": "Rasool abbasi17",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%DA%A9%D9%84%DB%8C%D8%B3%D8%A7%DB%8C_%D9%88%D8%A7%D9%86%DA%A9._%D8%B9%DA%A9%D8%B3_Rasool_AB.JPG"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Vank_Cathedral",
+  "fame": 32
+}

@@ -1,0 +1,38 @@
+{
+  "key": "Q1121835",
+  "qid": "Q1121835",
+  "name": "Ir.D.F. Woudagemaal",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 0.2068,
+  "built": null,
+  "culture": null,
+  "description": null,
+  "native": "Ir.D.F. Woudagemaal",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/ir_d_f__woudagemaal.png",
+  "photo": {
+    "file": "places/photos/ir_d_f__woudagemaal.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Woudagemaal%201.jpg",
+    "author": "Uberprutser",
+    "license": "CC BY-SA 3.0 nl",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Woudagemaal_1.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Wouda_pumping_station",
+  "fame": 28
+}

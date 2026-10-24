@@ -1,0 +1,30 @@
+{
+  "key": "Q79883",
+  "qid": "Q79883",
+  "name": "Strait of Hormuz",
+  "kind": "Sea",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Strait of Hormuz is a waterway between the Persian Gulf and the Gulf of Oman.",
+  "native": "تنگه هرمز",
+  "world_heritage": false,
+  "tags": [
+    "Sea",
+    "Asia"
+  ],
+  "map": "places/maps/strait_of_hormuz.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Strait_of_Hormuz",
+  "fame": 135
+}

@@ -1,0 +1,30 @@
+{
+  "key": "Q195389",
+  "qid": "Q195389",
+  "name": "Hamun-e Jaz Murian",
+  "kind": "Lake",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 367.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Hamun-e Jaz Murian is an inland basin or depression in southeast Iran, straddling the provinces of Kerman and Sistan-Baluchistan.",
+  "native": "هامون جازموریان",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Asia"
+  ],
+  "map": "places/maps/hamun_e_jaz_murian.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Hamun-e_Jaz_Murian",
+  "fame": 15
+}

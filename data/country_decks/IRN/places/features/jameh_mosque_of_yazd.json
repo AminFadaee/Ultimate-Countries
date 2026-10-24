@@ -1,0 +1,37 @@
+{
+  "key": "Q1454816",
+  "qid": "Q1454816",
+  "name": "Jameh Mosque of Yazd",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Yazd",
+  "height_m": 52.0,
+  "elevation_m": 1214.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": "AD 1375",
+  "culture": null,
+  "description": "The Jāmeh Mosque of Yazd is a Friday mosque (jāmeh) located in the city of Yazd, in the province of Yazd, Iran.",
+  "native": "مسجد جامع یزد",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/jameh_mosque_of_yazd.png",
+  "photo": {
+    "file": "places/photos/jameh_mosque_of_yazd.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Masjed%20jame%2020181108%20122633.jpg",
+    "author": "Ebrahimlotfi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Masjed_jame_20181108_122633.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Jameh_Mosque_of_Yazd",
+  "fame": 22
+}

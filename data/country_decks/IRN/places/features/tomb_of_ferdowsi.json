@@ -1,0 +1,37 @@
+{
+  "key": "Q5959602",
+  "qid": "Q5959602",
+  "name": "Tomb of Ferdowsi",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1002.0,
+  "length_km": 0.016,
+  "area_km2": null,
+  "built": "1934",
+  "culture": "Iranian architecture",
+  "description": "The Tomb of Ferdowsi is a tomb complex composed of a white marble base, and a decorative edifice erected in honour of the Persian poet Ferdowsi located in Tus, Razavi Khorasan province, Iran.",
+  "native": "آرامگاه فردوسی",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/tomb_of_ferdowsi.png",
+  "photo": {
+    "file": "places/photos/tomb_of_ferdowsi.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Tomb-of-Ferdowsi%20%D8%A2%D8%B1%D8%A7%D9%85%DA%AF%D8%A7%D9%87-%D9%81%D8%B1%D8%AF%D9%88%D8%B3%DB%8C%20Davoud-Davoudi%201.jpg",
+    "author": "DavoudDavoudi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tomb-of-Ferdowsi_%D8%A2%D8%B1%D8%A7%D9%85%DA%AF%D8%A7%D9%87-%D9%81%D8%B1%D8%AF%D9%88%D8%B3%DB%8C_Davoud-Davoudi_1.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Tomb_of_Ferdowsi",
+  "fame": 24
+}

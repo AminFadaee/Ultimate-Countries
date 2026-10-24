@@ -1,0 +1,37 @@
+{
+  "key": "Q330298",
+  "qid": "Q330298",
+  "name": "De Kuip",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1935–1937",
+  "culture": null,
+  "description": "Stadion Feijenoord, more commonly known by its nickname De Kuip, is a stadium in Rotterdam, Netherlands.",
+  "native": "Stadion Feĳenoord",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/de_kuip.png",
+  "photo": {
+    "file": "places/photos/de_kuip.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/StadionFeyenoord.jpg",
+    "author": "Author and original uploader was ART at nl.wikipedia",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:StadionFeyenoord.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/De_Kuip",
+  "fame": 46
+}

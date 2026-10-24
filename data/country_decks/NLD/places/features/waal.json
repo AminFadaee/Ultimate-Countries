@@ -1,0 +1,30 @@
+{
+  "key": "Q216171",
+  "qid": "Q216171",
+  "name": "Waal",
+  "kind": "River",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": 82.0,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Waal is the main distributary branch of the river Rhine flowing approximately 80 km (50 mi) through the Netherlands.",
+  "native": "Waal",
+  "world_heritage": false,
+  "tags": [
+    "River",
+    "Europe"
+  ],
+  "map": "places/maps/waal.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Waal_(river)",
+  "fame": 55
+}

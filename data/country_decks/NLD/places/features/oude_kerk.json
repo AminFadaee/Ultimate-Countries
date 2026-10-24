@@ -1,0 +1,37 @@
+{
+  "key": "Q623558",
+  "qid": "Q623558",
+  "name": "Oude Kerk",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Oude Kerk is a Reformed church in Amsterdam, Netherlands, being the oldest parish church in the city.",
+  "native": "Oude Kerk",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/oude_kerk.png",
+  "photo": {
+    "file": "places/photos/oude_kerk.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Amsterdam-508-Oude%20Kerk-2010-gje.jpg",
+    "author": "Gerd Eichmann",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Amsterdam-508-Oude_Kerk-2010-gje.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Oude_Kerk,_Amsterdam",
+  "fame": 22
+}

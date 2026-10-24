@@ -1,0 +1,38 @@
+{
+  "key": "Q841896",
+  "qid": "Q841896",
+  "name": "Armenian Monastic Ensembles of Iran",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 6.550122,
+  "built": null,
+  "culture": null,
+  "description": "The Armenian Monastic Ensembles of Iran is a UNESCO World Heritage Site located in the West Azerbaijan and East Azerbaijan provinces in Iran.",
+  "native": "مجموعه آثار رهبانی ارامنه ایران",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Asia",
+    "World_Heritage"
+  ],
+  "map": "places/maps/armenian_monastic_ensembles_of_iran.png",
+  "photo": {
+    "file": "places/photos/armenian_monastic_ensembles_of_iran.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Qareh%20kelissa.jpg",
+    "author": "Zereshk",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Qareh_kelissa.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Armenian_Monastic_Ensembles_of_Iran",
+  "fame": 28
+}

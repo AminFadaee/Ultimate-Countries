@@ -1,0 +1,38 @@
+{
+  "key": "Q500972",
+  "qid": "Q500972",
+  "name": "Philips Stadion",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "Eindhoven",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1910",
+  "culture": null,
+  "description": "The Philips Stadion is a football stadium in Eindhoven, Netherlands.",
+  "native": "Philips Stadion",
+  "group": "Stadium",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/philips_stadion.png",
+  "photo": {
+    "file": "places/photos/philips_stadion.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Philips%20Stadion.jpg",
+    "author": "TaraO",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Philips_Stadion.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Philips_Stadion",
+  "fame": 38
+}

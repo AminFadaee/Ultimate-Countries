@@ -1,0 +1,30 @@
+{
+  "key": "Q295272",
+  "qid": "Q295272",
+  "name": "Namak Lake",
+  "kind": "Lake",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 788.0,
+  "length_km": null,
+  "area_km2": 1800.0,
+  "built": null,
+  "culture": null,
+  "description": "Namak Lake is a salt lake in Iran on the Western edge of the Great Salt Desert.",
+  "native": "دریاچه نمک قم",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Asia"
+  ],
+  "map": "places/maps/namak_lake.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Namak_Lake",
+  "fame": 29
+}

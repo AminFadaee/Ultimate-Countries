@@ -1,0 +1,37 @@
+{
+  "key": "Q5953466",
+  "qid": "Q5953466",
+  "name": "Yazd Fire Temple",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1220.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": "begun 1934",
+  "culture": null,
+  "description": "The Fire Temple of Yazd, also known as Yazd Atash Behram, is a Zoroastrian fire temple in Yazd, Yazd province, Iran.",
+  "native": "آتشکده یزد",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/yazd_fire_temple.png",
+  "photo": {
+    "file": "places/photos/yazd_fire_temple.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Yazd%20fire%20temple.jpg",
+    "author": "",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Yazd_fire_temple.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Fire_Temple_of_Yazd",
+  "fame": 21
+}

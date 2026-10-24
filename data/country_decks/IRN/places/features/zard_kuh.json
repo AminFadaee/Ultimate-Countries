@@ -1,0 +1,37 @@
+{
+  "key": "Q147826",
+  "qid": "Q147826",
+  "name": "Zard Kuh",
+  "kind": "Mountain",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4221.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Zard-Kuh, also Zard Kuh-e Bakhtiari, is a sub-range in the central Zagros Mountains, Iran.",
+  "native": "زردکوه",
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/zard_kuh.png",
+  "photo": {
+    "file": "places/photos/zard_kuh.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/View%20of%20Zardkuh.jpg",
+    "author": "Bazofti",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:View_of_Zardkuh.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Zard-Kuh",
+  "fame": 23
+}

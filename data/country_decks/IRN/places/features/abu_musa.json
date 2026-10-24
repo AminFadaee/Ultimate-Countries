@@ -1,0 +1,31 @@
+{
+  "key": "Q167217",
+  "qid": "Q167217",
+  "name": "Abu Musa",
+  "kind": "Island",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 68.0,
+  "length_km": 5.0,
+  "area_km2": 12.0,
+  "built": null,
+  "culture": null,
+  "description": "Abu Musa is a 12.8-square-kilometre (4.9 sq mi) island in the eastern Persian Gulf, near the entrance to the Strait of Hormuz.",
+  "native": "جزیره بوموسی",
+  "disputed": true,
+  "world_heritage": false,
+  "tags": [
+    "Island",
+    "Asia"
+  ],
+  "map": "places/maps/abu_musa.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Abu_Musa",
+  "fame": 43
+}

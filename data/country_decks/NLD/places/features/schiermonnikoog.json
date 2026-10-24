@@ -1,0 +1,30 @@
+{
+  "key": "Q208011",
+  "qid": "Q208011",
+  "name": "Schiermonnikoog",
+  "kind": "Island",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 4.0,
+  "length_km": null,
+  "area_km2": 191.19,
+  "built": null,
+  "culture": null,
+  "description": "Schiermonnikoog is an island, a municipality and national park in the Northern Netherlands.",
+  "native": "Schiermonnikoog",
+  "world_heritage": false,
+  "tags": [
+    "Island",
+    "Europe"
+  ],
+  "map": "places/maps/schiermonnikoog.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Schiermonnikoog",
+  "fame": 63
+}

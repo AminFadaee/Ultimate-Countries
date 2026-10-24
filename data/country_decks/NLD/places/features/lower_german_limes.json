@@ -1,0 +1,31 @@
+{
+  "key": "Q1265889",
+  "qid": "Q1265889",
+  "name": "Lower German Limes",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 19.1642,
+  "built": null,
+  "culture": null,
+  "description": "The Lower Germanic Limes is the former frontier between the Roman province of Germania Inferior and Germania Magna.",
+  "native": "Nedergermaanse limes",
+  "world_heritage": true,
+  "tags": [
+    "Landmark",
+    "Europe",
+    "World_Heritage"
+  ],
+  "map": "places/maps/lower_german_limes.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Lower_Germanic_Limes",
+  "fame": 17
+}

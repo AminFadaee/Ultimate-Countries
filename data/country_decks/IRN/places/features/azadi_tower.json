@@ -1,0 +1,37 @@
+{
+  "key": "Q1140026",
+  "qid": "Q1140026",
+  "name": "Azadi Tower",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Tehran",
+  "height_m": 45.0,
+  "elevation_m": 1183.0,
+  "length_km": 0.063,
+  "area_km2": null,
+  "built": "1972",
+  "culture": null,
+  "description": "The Azadi Tower, also known by its former name, the Shahyad Tower, is a monument at Azadi Square in Tehran, Iran.",
+  "native": "برج آزادی ایران",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/azadi_tower.png",
+  "photo": {
+    "file": "places/photos/azadi_tower.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Azadi%20Tower%2C%20Tehran.jpg",
+    "author": "Bernard Gagnon",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Azadi_Tower,_Tehran.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Azadi_Tower",
+  "fame": 47
+}

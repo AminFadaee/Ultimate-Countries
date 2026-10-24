@@ -1,0 +1,30 @@
+{
+  "key": "Q550459",
+  "qid": "Q550459",
+  "name": "Maharlu Lake",
+  "kind": "Lake",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 1461.0,
+  "length_km": null,
+  "area_km2": 250.0,
+  "built": null,
+  "culture": null,
+  "description": "Maharloo Lake is a seasonal and endorheic hypersaline wetland in the highlands of Iran, 27.0 km southeast of the city of Shiraz in Fars province.",
+  "native": "دریاچه مهارلو",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Asia"
+  ],
+  "map": "places/maps/maharlu_lake.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Maharloo_Lake",
+  "fame": 22
+}

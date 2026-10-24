@@ -1,0 +1,38 @@
+{
+  "key": "Q224124",
+  "qid": "Q224124",
+  "name": "Van Gogh Museum",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The Van Gogh Museum is a Dutch art museum dedicated to the works of Vincent van Gogh and his contemporaries in the Museum Square in Amsterdam South, close to the Stedelijk Museum, the Rijksmuseum, and the Concertgebouw.",
+  "native": "Van Gogh Museum",
+  "group": "Museum",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/van_gogh_museum.png",
+  "photo": {
+    "file": "places/photos/van_gogh_museum.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20Museum.jpg",
+    "author": "Warrox",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Van_Gogh_Museum.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Van_Gogh_Museum",
+  "fame": 60
+}

@@ -1,0 +1,37 @@
+{
+  "key": "Q1072284",
+  "qid": "Q1072284",
+  "name": "Huis ten Bosch",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": "The Hague",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": "begun 1645",
+  "culture": "Dutch Baroque",
+  "description": "Huis ten Bosch is a royal palace in The Hague, Netherlands.",
+  "native": "Paleis Huis ten Bosch",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/huis_ten_bosch.png",
+  "photo": {
+    "file": "places/photos/huis_ten_bosch.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Huis%20ten%20bosch.jpg",
+    "author": "Ruben de Rijcke",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Huis_ten_bosch.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Huis_ten_Bosch",
+  "fame": 25
+}

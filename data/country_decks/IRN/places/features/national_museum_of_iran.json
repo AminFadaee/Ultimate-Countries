@@ -1,0 +1,38 @@
+{
+  "key": "Q1631008",
+  "qid": "Q1631008",
+  "name": "National Museum of Iran",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Tehran",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "The National Museum of Iran houses the richest and largest collection of Iranian antiquities in the world.",
+  "native": "موزه ملی ایران",
+  "group": "Museum",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/national_museum_of_iran.png",
+  "photo": {
+    "file": "places/photos/national_museum_of_iran.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/N%C3%A1rodn%C3%AD%20muzeum%20%C3%8Dr%C3%A1nu.jpg",
+    "author": "Ondřej Žváček",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:N%C3%A1rodn%C3%AD_muzeum_%C3%8Dr%C3%A1nu.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/National_Museum_of_Iran",
+  "fame": 34
+}

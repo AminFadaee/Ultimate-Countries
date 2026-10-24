@@ -1,0 +1,37 @@
+{
+  "key": "Q1548608",
+  "qid": "Q1548608",
+  "name": "Grand Bazaar",
+  "kind": "Landmark",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": "Tehran",
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": ".mw-parser-output .plainlist ol",
+  "description": "The Grand Bazaar is a bazaar, located in Central Tehran, Iran.",
+  "native": "بازار تهران",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Asia"
+  ],
+  "map": "places/maps/grand_bazaar.png",
+  "photo": {
+    "file": "places/photos/grand_bazaar.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Grand%20Bazaar%2C%20Tehran%20%2841723686785%29.jpg",
+    "author": "Ninara from Helsinki, Finland",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Grand_Bazaar,_Tehran_(41723686785).jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Grand_Bazaar,_Tehran",
+  "fame": 28
+}

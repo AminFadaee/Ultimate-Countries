@@ -1,0 +1,30 @@
+{
+  "key": "Q2653976",
+  "qid": "Q2653976",
+  "name": "Miankaleh",
+  "kind": "Peninsula",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 688.0,
+  "built": null,
+  "culture": null,
+  "description": "Miyānkāle peninsula is a long, narrow peninsula in Behshahr County of Māzandarān Province in the north of Iran situated in the extreme south-eastern part of the Caspian Sea.",
+  "native": "میانکاله",
+  "world_heritage": false,
+  "tags": [
+    "Peninsula",
+    "Asia"
+  ],
+  "map": "places/maps/miankaleh.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Miankaleh_peninsula",
+  "fame": 16
+}

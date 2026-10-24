@@ -1,0 +1,37 @@
+{
+  "key": "Q1432738",
+  "qid": "Q1432738",
+  "name": "Sahand",
+  "kind": "Mountain",
+  "countries": [
+    "Iran"
+  ],
+  "continents": [
+    "Asia"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": 3710.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Sahand, is a massive, heavily eroded stratovolcano in East Azerbaijan Province, northwestern Iran.",
+  "native": "سهند",
+  "world_heritage": false,
+  "tags": [
+    "Mountain",
+    "Asia"
+  ],
+  "map": "places/maps/sahand.png",
+  "photo": {
+    "file": "places/photos/sahand.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Mount-Sahand.jpg",
+    "author": "ایوب فارابی اصل",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mount-Sahand.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Sahand",
+  "fame": 28
+}
