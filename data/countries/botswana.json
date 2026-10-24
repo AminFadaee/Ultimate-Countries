@@ -80,13 +80,13 @@
     {
       "name": "English",
       "code": "eng",
-      "official": null,
+      "official": "national",
       "percent": 81.0
     },
     {
       "name": "Tswana",
       "code": "tsn",
-      "official": "national",
+      "official": null,
       "percent": 62.0
     },
     {

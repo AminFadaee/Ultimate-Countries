@@ -45,7 +45,7 @@
       "name": "Geneva",
       "latitude": 46.2,
       "longitude": 6.15,
-      "population": 209061
+      "population": 211152
     },
     {
       "role": "notable",
@@ -59,8 +59,8 @@
       "role": "notable",
       "id": "Q78",
       "name": "Basel",
-      "latitude": 47.560555555,
-      "longitude": 7.590555555,
+      "latitude": 47.558055555,
+      "longitude": 7.587777777,
       "population": 176329
     },
     {
@@ -96,7 +96,7 @@
       "name": "Geneva",
       "latitude": 46.2,
       "longitude": 6.15,
-      "population": 209061,
+      "population": 211152,
       "map": "maps/cities/switzerland__geneva.png",
       "answer_map": "maps/cities/switzerland__geneva-answer.png",
       "most_visited": true

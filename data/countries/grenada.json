@@ -87,7 +87,7 @@
     }
   ],
   "government": {
-    "label": "Unitary Parliamentary constitutional monarchy",
+    "label": "Unitary constitutional monarchy",
     "form": "Constitutional monarchy"
   },
   "economy": {
@@ -117,11 +117,11 @@
     },
     "currencies": {
       "source": "restcountries",
-      "as_of": "2026-10-17"
+      "as_of": "2026-10-18"
     },
     "demonym": {
       "source": "restcountries",
-      "as_of": "2026-10-17"
+      "as_of": "2026-10-18"
     },
     "economic_system": {
       "source": "derived",
@@ -141,7 +141,7 @@
     },
     "government": {
       "source": "restcountries",
-      "as_of": "2026-10-17"
+      "as_of": "2026-10-18"
     },
     "government_form": {
       "source": "derived",
@@ -153,7 +153,7 @@
     },
     "identity": {
       "source": "restcountries",
-      "as_of": "2026-10-17"
+      "as_of": "2026-10-18"
     },
     "income_group": {
       "source": "world_bank",
@@ -169,7 +169,7 @@
     },
     "memberships": {
       "source": "restcountries",
-      "as_of": "2026-10-17"
+      "as_of": "2026-10-18"
     },
     "military_spending": {
       "source": "world_bank",
@@ -197,7 +197,7 @@
     },
     "region": {
       "source": "restcountries",
-      "as_of": "2026-10-17"
+      "as_of": "2026-10-18"
     },
     "religions": {
       "source": "pew",
