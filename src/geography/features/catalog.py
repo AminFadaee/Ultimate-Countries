@@ -63,6 +63,7 @@ MIN_RAINFOREST_KM2 = 500_000
 MIN_REGION_MEMBERS = 2
 MIN_RIVER_COVERAGE = 0.7
 MIN_PROVINCE_COVERAGE = 0.5
+OVERSHOOT = 2
 STEM_LENGTH = 4
 MIN_NAME_STEMS = 2
 LINEAR_RELATIONS = ("collection", "site")
@@ -142,8 +143,7 @@ class Catalog:
 
     def collect(self) -> list[Feature]:
         features = [
-            *self.natural_earth_regions(),
-            *self.cultural_regions(),
+            *self.reconciled(self.natural_earth_regions(), self.cultural_regions()),
             *self.reefs(),
             *self.seas(),
             *self.lakes(),
@@ -162,6 +162,25 @@ class Catalog:
         for feature in unique.values():
             feature.name = feature.name[:1].upper() + feature.name[1:]
         return self.without_parts(list(unique.values()))
+
+    def reconciled(self, physical: list[Feature], cultural: list[Feature]) -> list[Feature]:
+        def twin_of(region: Feature) -> Feature | None:
+            return next((other for other in physical if other.qid == region.qid or other.name.casefold() == region.name.casefold()), None)
+
+        def area(feature: Feature) -> float:
+            return feature.geometry.to_crs(EQUAL_AREA).area.sum()
+
+        kept = list(physical)
+        for region in cultural:
+            twin = twin_of(region)
+            if twin is None:
+                kept.append(region)
+            elif twin.kind is not Kind.REGION:
+                kept.remove(twin)
+                if area(region) > OVERSHOOT * area(twin):
+                    region.geometry, region.countries = twin.geometry, []
+                kept.append(region)
+        return kept
 
     def without_parts(self, features: list[Feature]) -> list[Feature]:
         by_qid = {feature.qid: feature for feature in features if feature.qid and feature.kind is Kind.LANDMARK}
