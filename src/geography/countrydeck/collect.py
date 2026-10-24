@@ -68,5 +68,5 @@ def run_places(directory: pathlib.Path, code: str, country: dict, rerender_maps:
     collector = CountryPlacesCollector(directory, create_session())
     features = collector.collect(NaturalEarth.load(), code, country, meta["language"], excluded)
     slugs = collector.finish(features)
-    collector.draw_maps(features, slugs, code, rerender_maps, workers)
+    features = collector.draw_maps(features, slugs, code, rerender_maps, workers)
     logger.info("Exported %d places to %s", collector.export(features, slugs), directory / "places")

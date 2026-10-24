@@ -111,7 +111,7 @@ class CountryPlacesCollector(PlacesCollector):
         self._add_photos(features, slugs)
         return slugs
 
-    def draw_maps(self, features: list[Feature], slugs: dict[str, str], host: str, rerender: bool, workers: int) -> None:
+    def draw_maps(self, features: list[Feature], slugs: dict[str, str], host: str, rerender: bool, workers: int) -> list[Feature]:
         jobs = []
         for feature in features:
             output = self.paths.maps / f"{slugs[feature.key]}.png"
@@ -124,6 +124,7 @@ class CountryPlacesCollector(PlacesCollector):
             if error:
                 logger.error("Map failed for %s: %s", job.label, error)
                 by_key[job.key].map = None
+        return [feature for feature in features if feature.map]
 
     def export(self, features: list[Feature], slugs: dict[str, str]) -> int:
         return self._export(features, slugs)
