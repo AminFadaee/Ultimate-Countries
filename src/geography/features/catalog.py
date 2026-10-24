@@ -170,16 +170,24 @@ class Catalog:
         def area(feature: Feature) -> float:
             return feature.geometry.to_crs(EQUAL_AREA).area.sum()
 
+        outlines = load_layer(PhysicalLayer.REGIONS)
+        outlines = outlines[outlines["featurecla"].isin(NATURAL_EARTH_KINDS)]
+
+        def outline_of(region: Feature) -> gpd.GeoSeries | None:
+            found = outlines[outlines["name"].str.casefold() == region.name.casefold()]
+            return None if found.empty else gpd.GeoSeries([found.geometry.union_all()], crs=CRS)
+
         kept = list(physical)
         for region in cultural:
             twin = twin_of(region)
-            if twin is None:
-                kept.append(region)
-            elif twin.kind is not Kind.REGION:
+            if twin is not None and twin.kind is Kind.REGION:
+                continue
+            if twin is not None:
                 kept.remove(twin)
-                if area(region) > OVERSHOOT * area(twin):
-                    region.geometry, region.countries = twin.geometry, []
-                kept.append(region)
+            outline = twin.geometry if twin is not None else outline_of(region)
+            if outline is not None and area(region) > OVERSHOOT * outline.to_crs(EQUAL_AREA).area.sum():
+                region.geometry, region.countries = outline, []
+            kept.append(region)
         return kept
 
     def without_parts(self, features: list[Feature]) -> list[Feature]:
