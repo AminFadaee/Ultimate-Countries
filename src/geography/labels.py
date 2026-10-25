@@ -73,6 +73,7 @@ class CityLabels:
         self.renderer = fig.canvas.get_renderer()
         self.answer_color = answer_color
         self.answer: Artist | None = None
+        self.labels: dict[str, tuple[Artist, Bbox]] = {}
         self.visible = [(city, *projection.transform_point(city.longitude, city.latitude, ccrs.Geodetic())) for city in cities]
         self.visible = [(city, x, y) for city, x, y in self.visible if self._inside(extent, x, y)]
         self.dots = {city.name: self._dot(city, x, y) for city, x, y in self.visible if not city.target}
@@ -113,8 +114,11 @@ class CityLabels:
         ordered = sorted(self.visible, key=lambda item: (not item[0].target, not item[0].capital))
         retry = [item for item in ordered if not self._try(*item, avoid_lines=True)]
         for city, x, y in retry:
-            if not self._try(city, x, y, avoid_lines=False) and city.name in self.dots:
-                self.dots.pop(city.name).remove()
+            if not self._try(city, x, y, avoid_lines=False):
+                if city.target:
+                    self._claim_room(city, x, y)
+                elif city.name in self.dots:
+                    self.dots.pop(city.name).remove()
 
     def _try(self, city: CityLabel, x: float, y: float, avoid_lines: bool) -> bool:
         for dx, dy, ha, va in OFFSETS:
@@ -122,12 +126,40 @@ class CityLabels:
             box = annotation.get_window_extent(self.renderer)
             obstacles = self.taken + (self.lines if avoid_lines else [])
             if self._fits(box) and not overlaps(box, obstacles) and not overlaps(box, self.blocked, INSET_PADDING):
-                self.taken.append(box)
-                if city.target:
-                    self.answer = annotation
+                self._keep(city, annotation, box)
                 return True
             annotation.remove()
         return False
+
+    def _keep(self, city: CityLabel, annotation: Artist, box: Bbox) -> None:
+        self.taken.append(box)
+        self.labels[city.name] = (annotation, box)
+        if city.target:
+            self.answer = annotation
+
+    def _claim_room(self, city: CityLabel, x: float, y: float) -> None:
+        options = []
+        for dx, dy, ha, va in OFFSETS:
+            annotation = self._annotate(city, x, y, dx, dy, ha, va)
+            box = annotation.get_window_extent(self.renderer)
+            crowded = [name for name, (_, other) in self.labels.items() if overlaps(box, [other])]
+            if self._fits(box) and not overlaps(box, self.blocked, INSET_PADDING):
+                options.append((len(crowded), len(options), annotation, box, crowded))
+            else:
+                annotation.remove()
+        if not options:
+            return
+        _, _, annotation, box, crowded = min(options, key=lambda option: option[:2])
+        for option in options:
+            if option[2] is not annotation:
+                option[2].remove()
+        for name in crowded:
+            label, other = self.labels.pop(name)
+            label.remove()
+            self.taken.remove(other)
+            if name in self.dots:
+                self.dots.pop(name).remove()
+        self._keep(city, annotation, box)
 
     def _annotate(self, city: CityLabel, x: float, y: float, dx: float, dy: float, ha: str, va: str) -> Artist:
         pill = dict(
