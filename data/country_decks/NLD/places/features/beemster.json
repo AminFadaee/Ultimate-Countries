@@ -2,7 +2,7 @@
   "key": "Q9900",
   "qid": "Q9900",
   "name": "Beemster",
-  "kind": "Landmark",
+  "kind": "Polder",
   "countries": [
     "Netherlands"
   ],
@@ -20,19 +20,12 @@
   "native": "Beemster",
   "world_heritage": true,
   "tags": [
-    "Landmark",
+    "Polder",
     "Europe",
     "World_Heritage"
   ],
   "map": "places/maps/beemster.png",
-  "photo": {
-    "file": "places/photos/beemster.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/West-Beemster%2C%20Jisperweg%2029.jpg",
-    "author": "Arhu",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:West-Beemster,_Jisperweg_29.jpg"
-  },
+  "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Beemster",
   "fame": 57
 }

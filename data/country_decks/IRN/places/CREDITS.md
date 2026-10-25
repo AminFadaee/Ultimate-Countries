@@ -48,8 +48,6 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Khaju Bridge | درفش کاویانی | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pole_Kahjoo_1.JPG) |
 | Khar Turan National Park | Mh kavir | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%D9%BE%D8%A7%D8%B1%DA%A9_%D9%85%D9%84%DB%8C_%D8%AA%D9%88%D8%B1%D8%A7%D9%86.jpg) |
 | Laton Waterfall | Samaksasanian | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Waterfall_Laton.jpg) |
-| Little Ararat | uncredited | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Little_Ararat.jpg) |
-| Lut Desert | Betta27 | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sand_castles_-_Dasht-e_Lut_desert_-_Kerman.JPG) |
 | Maragheh Observatory | aydin tabrizi | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Maragheh_observatory1.jpg) |
 | Marble Palace | Hamid Tavakoli | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Marmar_Palace_43906.jpg) |
 | Maymand | SM MIRHOSSEINI | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Maymand_village.jpg) |

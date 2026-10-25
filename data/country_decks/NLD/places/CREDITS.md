@@ -7,7 +7,6 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Afsluitdijk | C messier | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Afsluitdijk_1031.jpg) |
 | Amsterdam Central station | Diego Delso | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Central,_%C3%81msterdam,_Pa%C3%ADses_Bajos,_2016-05-30,_DD_01-03_HDR.jpg) |
 | Artis | Dejonkheer | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:NL-Artis-ingang.jpg) |
-| Beemster | Arhu | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:West-Beemster,_Jisperweg_29.jpg) |
 | Cauberg | Kleon3 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Valkenburg,_Cauberg01.jpg) |
 | Colonies of Benevolence | Gouwenaar | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tweede_gesticht_Veenhuizen.jpg) |
 | Concertgebouw | yisris | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Concertgebouw_in_Amsterdam_April_2015.jpg) |

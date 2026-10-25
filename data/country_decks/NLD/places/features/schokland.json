@@ -2,7 +2,7 @@
   "key": "Q140869527",
   "qid": "Q140869527",
   "name": "Schokland",
-  "kind": "Landmark",
+  "kind": "Island",
   "countries": [
     "Netherlands"
   ],
@@ -20,7 +20,7 @@
   "native": null,
   "world_heritage": true,
   "tags": [
-    "Landmark",
+    "Island",
     "Europe",
     "World_Heritage"
   ],

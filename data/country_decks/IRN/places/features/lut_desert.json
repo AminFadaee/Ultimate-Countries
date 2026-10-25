@@ -2,7 +2,7 @@
   "key": "Q767128",
   "qid": "Q767128",
   "name": "Lut Desert",
-  "kind": "Landmark",
+  "kind": "Desert",
   "countries": [
     "Iran"
   ],
@@ -21,19 +21,12 @@
   "natural_site": true,
   "world_heritage": true,
   "tags": [
-    "Landmark",
+    "Desert",
     "Asia",
     "World_Heritage"
   ],
   "map": "places/maps/lut_desert.png",
-  "photo": {
-    "file": "places/photos/lut_desert.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Sand%20castles%20-%20Dasht-e%20Lut%20desert%20-%20Kerman.JPG",
-    "author": "Betta27",
-    "license": "Public domain",
-    "license_url": "",
-    "page": "https://commons.wikimedia.org/wiki/File:Sand_castles_-_Dasht-e_Lut_desert_-_Kerman.JPG"
-  },
+  "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Lut_Desert",
   "fame": 64
 }

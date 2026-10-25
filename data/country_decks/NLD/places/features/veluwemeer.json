@@ -1,0 +1,30 @@
+{
+  "key": "Q543460",
+  "qid": "Q543460",
+  "name": "Veluwemeer",
+  "kind": "Lake",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": -0.3,
+  "length_km": null,
+  "area_km2": 32.5,
+  "built": null,
+  "culture": null,
+  "description": "The Veluwemeer (Dutch) or Lake Veluwe is a bordering lake in the Netherlands, between the provinces of Flevoland on the west side and Gelderland on the east side.",
+  "native": "Veluwemeer",
+  "world_heritage": false,
+  "tags": [
+    "Lake",
+    "Europe"
+  ],
+  "map": "places/maps/veluwemeer.png",
+  "photo": null,
+  "wikipedia": "https://en.wikipedia.org/wiki/Veluwemeer",
+  "fame": 17
+}
