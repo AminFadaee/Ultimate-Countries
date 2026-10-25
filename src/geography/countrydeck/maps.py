@@ -28,6 +28,7 @@ from geography.map_cache import through_cache
 from geography.maps import MapJob, our_country_names, render_maps
 from geography.naming import answer_path, slugify
 from geography.render import (
+    NEARBY_PART_DISTANCE,
     Framing,
     LocatorMap,
     Naming,
@@ -72,12 +73,22 @@ class AreaMapWorker:
             highlight = data.country(job.target).core.geometry
             regions = empty(country.core.geometry)
         scene = Scene(
-            highlight=highlight, frame=country.core.geometry, disputed=empty(country.core.geometry), host=country.core.geometry,
+            highlight=highlight, frame=country.core.geometry if job.kind == "province" else frame_with_neighbour(country.core.geometry, highlight), disputed=empty(country.core.geometry), host=country.core.geometry,
             regions=regions, framing=Framing.ANCHORED, naming=Naming(job.label), marker=job.marker,
         )
         job.output.parent.mkdir(parents=True, exist_ok=True)
         cls.renderer.render(scene, job.output, job.answer_output)
         return job.target
+
+
+def frame_with_neighbour(country: gpd.GeoSeries, neighbour: gpd.GeoSeries) -> gpd.GeoSeries:
+    mainland = get_mainland(country)
+    local = local_projection(mainland)
+    reach = mainland.to_crs(local).union_all().buffer(NEARBY_PART_DISTANCE)
+    nearest = neighbour.to_crs(local).union_all().intersection(reach)
+    if nearest.is_empty:
+        return country
+    return gpd.GeoSeries([*country.geometry, *gpd.GeoSeries([nearest], crs=local).to_crs(CRS).geometry], crs=CRS)
 
 
 @dataclass(frozen=True)
