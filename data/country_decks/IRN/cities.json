@@ -200,7 +200,7 @@
   {
     "id": "Q862519",
     "name": "Eslamshahr",
-    "native": "اسلامشهر",
+    "native": "اسلام‌شهر",
     "longitude": 51.235,
     "latitude": 35.552222222,
     "population": 448129,
@@ -244,7 +244,7 @@
   {
     "id": "Q502212",
     "name": "Khorramabad",
-    "native": "خرمآباد",
+    "native": "خرم‌آباد",
     "longitude": 48.35,
     "latitude": 33.466666666,
     "population": 373416,
@@ -376,7 +376,7 @@
   {
     "id": "Q721198",
     "name": "Najafabad",
-    "native": "نجفآباد",
+    "native": "نجف‌آباد",
     "longitude": 51.365277777,
     "latitude": 32.634722222,
     "population": 235281,
@@ -453,7 +453,7 @@
   {
     "id": "Q720937",
     "name": "Qaem Shahr",
-    "native": "قائمشهر",
+    "native": "قائم‌شهر",
     "longitude": 52.86,
     "latitude": 36.463055555,
     "population": 204953,

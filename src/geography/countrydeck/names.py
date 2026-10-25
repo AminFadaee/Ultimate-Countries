@@ -2,6 +2,7 @@ import itertools
 import re
 from dataclasses import dataclass
 
+from geography.sources.http import TIMEOUT
 from geography.sources.wikidata import (
     DETAIL_BATCH,
     Wikidata,
@@ -14,6 +15,8 @@ TYPE_SUFFIX = re.compile(r"\s+(province|state|county|region)$", re.IGNORECASE)
 POINT = re.compile(r"Point\(([-\d.eE]+) ([-\d.eE]+)\)")
 WIKIPEDIA_SITE = "https://en.wikipedia.org/"
 UNIT_TYPES = ("Q34876", "Q35657", "Q28575", "Q82794")
+ENTITY_API = "https://www.wikidata.org/w/api.php"
+ENTITY_BATCH = 50
 
 
 @dataclass(frozen=True)
@@ -47,6 +50,18 @@ def without_unit_word(native: str | None, words: set[str]) -> str | None:
     return native
 
 
+def native_labels(wikidata: Wikidata, qids: list[str], language: str) -> dict[str, str]:
+    found = {}
+    for batch in itertools.batched(qids, ENTITY_BATCH, strict=False):
+        params = {"action": "wbgetentities", "ids": "|".join(batch), "props": "labels", "languages": language, "format": "json"}
+        response = wikidata.session.get(ENTITY_API, params=params, timeout=TIMEOUT)
+        response.raise_for_status()
+        for qid, entity in response.json()["entities"].items():
+            if label := entity.get("labels", {}).get(language):
+                found[qid] = label["value"]
+    return found
+
+
 def named(wikidata: Wikidata, qids: set[str], language: str, strip_type: bool = False) -> dict[str, Names]:
     found: dict[str, Names] = {}
     words = unit_words(wikidata, language) if strip_type else set()
@@ -59,9 +74,10 @@ def named(wikidata: Wikidata, qids: set[str], language: str, strip_type: bool = 
               OPTIONAL {{ ?article schema:about ?i ; schema:isPartOf <{WIKIPEDIA_SITE}> ; schema:name ?title }}
               OPTIONAL {{ ?i rdfs:label ?native . FILTER(lang(?native) = "{language}") }}
             }}""")
+        exact = native_labels(wikidata, list(batch), language)
         for row in rows:
             qid = qid_of(row["i"])
             label = row.get("label") or row.get("mul") or row.get("native") or qid
             name = shorter_name(label, row.get("title"))
-            found.setdefault(qid, Names(TYPE_SUFFIX.sub("", name) if strip_type else name, without_unit_word(row.get("native"), words)))
+            found.setdefault(qid, Names(TYPE_SUFFIX.sub("", name) if strip_type else name, without_unit_word(exact.get(qid, row.get("native")), words)))
     return found
