@@ -147,7 +147,8 @@ class CountryDeckBuilder:
             "Population": f"{province['population']:,}" if province["population"] else "",
             "Area": f"{province['area_km2']:,.0f} km²" if province["area_km2"] else "", "Country": escaped(self.meta["name"]), "Kind": "Province",
         }
-        ords = [0] + ([1, 2] if centre else [])
+        named_apart = centre and centre["name"].casefold() != province["name"].casefold()
+        ords = [0] + ([1, 2] if named_apart else [])
         self._add(self.province_model, PROVINCE_FIELDS, values, ords, [tag(self.prefix, "Province")], province["id"])
 
     def add_city(self, city: dict, provinces: dict[str, dict], capitals: set[str]) -> None:

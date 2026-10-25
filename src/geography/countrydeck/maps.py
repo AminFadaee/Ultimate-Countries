@@ -38,6 +38,8 @@ from geography.render import (
 )
 
 logger = logging.getLogger(__name__)
+TOUCHING_M = 1_000
+ACROSS_WATER_REACH_M = 700_000
 
 
 @dataclass(frozen=True)
@@ -84,8 +86,10 @@ class AreaMapWorker:
 def frame_with_neighbour(country: gpd.GeoSeries, neighbour: gpd.GeoSeries) -> gpd.GeoSeries:
     mainland = get_mainland(country)
     local = local_projection(mainland)
-    reach = mainland.to_crs(local).union_all().buffer(NEARBY_PART_DISTANCE)
-    nearest = neighbour.to_crs(local).union_all().intersection(reach)
+    home = mainland.to_crs(local).union_all()
+    shape = neighbour.to_crs(local).union_all()
+    reach = home.buffer(NEARBY_PART_DISTANCE if shape.distance(home) < TOUCHING_M else ACROSS_WATER_REACH_M)
+    nearest = shape.intersection(reach)
     if nearest.is_empty:
         return country
     return gpd.GeoSeries([*country.geometry, *gpd.GeoSeries([nearest], crs=local).to_crs(CRS).geometry], crs=CRS)

@@ -9,7 +9,7 @@ from shapely.geometry import Point, mapping, shape
 from geography.countrydeck.cities import near_mainland_features, within_territory
 from geography.countrydeck.maps import PlaceMapJob, render_place_maps
 from geography.countrydeck.names import named
-from geography.countrydeck.selection import natural_sites, select_places
+from geography.countrydeck.selection import inscribed, natural_sites, select_places
 from geography.data import CONTESTED_TYPES, NaturalEarth
 from geography.features.catalog import complete_rivers, dissolved
 from geography.features.collect import PlacesCollector, PlacesPaths, unique_slugs
@@ -91,8 +91,9 @@ class CountryPlacesCollector(PlacesCollector):
         self._mark(features, data, tiers, groups)
         catalog = SimpleNamespace(facts=facts, queries=queries)
         self._add_facts(features, catalog)
+        listed = inscribed(self.wikidata, {feature.qid for feature in features})
         for feature in features:
-            feature.world_heritage = feature.world_heritage or tiers[feature.qid] == "unesco"
+            feature.world_heritage = feature.world_heritage or feature.qid in listed
         self._add_cities(features, catalog)
         self._add_construction(features)
         self._add_descriptions(features)

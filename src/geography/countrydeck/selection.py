@@ -117,6 +117,14 @@ def extremes(wikidata: Wikidata, country_qid: str) -> dict[str, list[str]]:
     }
 
 
+def inscribed(wikidata: Wikidata, qids: set[str]) -> set[str]:
+    found: set[str] = set()
+    for batch in itertools.batched(sorted(qids), DETAIL_BATCH, strict=False):
+        rows = wikidata._select(f"SELECT DISTINCT ?i WHERE {{ VALUES ?i {{ {values_clause(batch)} }} ?i wdt:P757 ?id }}")
+        found |= {qid_of(row["i"]) for row in rows}
+    return found
+
+
 def natural_sites(wikidata: Wikidata, qids: set[str]) -> set[str]:
     criteria: dict[str, set[str]] = {}
     for batch in itertools.batched(sorted(qids), DETAIL_BATCH, strict=False):
