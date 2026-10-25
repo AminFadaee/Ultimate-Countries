@@ -1,5 +1,6 @@
 import json
 import logging
+import re
 import pathlib
 from dataclasses import asdict, dataclass
 
@@ -30,6 +31,7 @@ INFOBOX_KINDS = {Kind.LANDMARK, Kind.CANAL}
 WITHOUT_COUNTRIES = {Kind.CONTINENT, Kind.OCEAN}
 WITHOUT_CONTINENT = {Kind.OCEAN, Kind.LINE}
 AREA_TOLERANCE = 5
+CONTESTED_ALIAS = re.compile(r",? (?:sometimes |also |often )?(?:called|known as|referred to as) (?:the )?Arabian Gulf,?")
 MIN_CONTINENT_SHARE = 0.1
 NEAREST_CONTINENT_M = 1_000_000
 CONTINENT_TAGS = {
@@ -169,7 +171,8 @@ class PlacesCollector:
     def _add_descriptions(self, features: list[Feature]) -> None:
         for feature in features:
             if feature.wikipedia:
-                feature.description = self.wikipedia.first_sentence(article_title(feature.wikipedia))
+                sentence = self.wikipedia.first_sentence(article_title(feature.wikipedia))
+                feature.description = CONTESTED_ALIAS.sub("", sentence) if sentence else sentence
 
     def _add_photos(self, features: list[Feature], slugs: dict[str, str]) -> None:
         previous = self._previous_photos()
