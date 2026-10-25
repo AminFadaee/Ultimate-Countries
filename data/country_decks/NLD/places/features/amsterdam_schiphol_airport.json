@@ -1,0 +1,38 @@
+{
+  "key": "Q9694",
+  "qid": "Q9694",
+  "name": "Amsterdam Schiphol Airport",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": -3.0,
+  "length_km": null,
+  "area_km2": null,
+  "built": "1916",
+  "culture": null,
+  "description": "Amsterdam Airport Schiphol, known informally as Schiphol Airport, is the main international airport of the Netherlands.",
+  "native": "Luchthaven Schiphol",
+  "group": "Airport",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/amsterdam_schiphol_airport.png",
+  "photo": {
+    "file": "places/photos/amsterdam_schiphol_airport.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Ams-above-2007.jpg",
+    "author": "Fyodor Borisov",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ams-above-2007.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Amsterdam_Airport_Schiphol",
+  "fame": 94
+}

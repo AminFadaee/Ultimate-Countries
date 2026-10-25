@@ -1,0 +1,38 @@
+{
+  "key": "Q740066",
+  "qid": "Q740066",
+  "name": "Kinderdijk",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Kinderdijk is a town in the municipality of Molenlanden, in the province of South Holland, Netherlands.",
+  "native": "Kinderdijk",
+  "group": "Water_defence",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/kinderdijk.png",
+  "photo": {
+    "file": "places/photos/kinderdijk.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/KinderdijkMolens02.jpg",
+    "author": "Lucas Hirschegger",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:KinderdijkMolens02.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Kinderdijk",
+  "fame": 46
+}

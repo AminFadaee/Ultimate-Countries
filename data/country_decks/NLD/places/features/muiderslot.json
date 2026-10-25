@@ -18,10 +18,11 @@
   "culture": null,
   "description": "Muiden Castle is a castle in the Netherlands, located at the mouth of the Vecht river, some 15 kilometers southeast of Amsterdam, in Muiden, where it flows into what used to be the Zuiderzee.",
   "native": "Muiderslot",
-  "world_heritage": false,
+  "world_heritage": true,
   "tags": [
     "Landmark",
-    "Europe"
+    "Europe",
+    "World_Heritage"
   ],
   "map": "places/maps/muiderslot.png",
   "photo": {

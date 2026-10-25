@@ -6,6 +6,7 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 |---|---|---|---|
 | Afsluitdijk | C messier | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Afsluitdijk_1031.jpg) |
 | Amsterdam Central station | Diego Delso | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Central,_%C3%81msterdam,_Pa%C3%ADses_Bajos,_2016-05-30,_DD_01-03_HDR.jpg) |
+| Amsterdam Schiphol Airport | Fyodor Borisov | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ams-above-2007.jpg) |
 | Artis | Dejonkheer | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:NL-Artis-ingang.jpg) |
 | Cauberg | Kleon3 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Valkenburg,_Cauberg01.jpg) |
 | Colonies of Benevolence | Gouwenaar | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tweede_gesticht_Veenhuizen.jpg) |
@@ -27,6 +28,7 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Ir.D.F. Woudagemaal | Uberprutser | [CC BY-SA 3.0 nl](https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Woudagemaal_1.jpg) |
 | Johan Cruyff Arena | Alf van Beem | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Arena,_Ajax_stadion,_Amsterdam.JPG) |
 | Keukenhof | Balou46 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:NL-keukenhof-10.jpg) |
+| Kinderdijk | Lucas Hirschegger | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:KinderdijkMolens02.jpg) |
 | Kinderdijk windmills | Lucas Hirschegger | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:KinderdijkMolens02.jpg) |
 | Kröller-Müller Museum | Gerardus | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Entrance_Kr%C3%B6ller-M%C3%BCller_Museum.JPG) |
 | Lauwersmeer National Park | Ellywa | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Beeldmerk_Lauwersmeer,_omgeving_Zoutkamp_(cropped).JPG) |
@@ -61,3 +63,4 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Wadden Sea | Ralf Roletschek | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:13-09-29-nordfriesisches-wattenmeer-RalfR-19.jpg) |
 | Walibi Holland | SGeerlings | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Walibi_Holland_-_Maingate.jpg) |
 | Westerkerk | Mark de Nijs | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Westerkerk_interieur_2021.jpg) |
+| Zaanse Schans | Mustang Joe | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_Windmills_of_Zaanse_Schans,_Netherlands.jpg) |

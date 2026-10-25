@@ -18,10 +18,11 @@
   "culture": null,
   "description": "Chehel Sotoun is a 17th century pavilion and garden, in Isfahan, Iran.",
   "native": "چهل‌ستون",
-  "world_heritage": false,
+  "world_heritage": true,
   "tags": [
     "Landmark",
-    "Asia"
+    "Asia",
+    "World_Heritage"
   ],
   "map": "places/maps/chehel_sotun.png",
   "photo": {

@@ -1,0 +1,38 @@
+{
+  "key": "Q136661",
+  "qid": "Q136661",
+  "name": "Zaanse Schans",
+  "kind": "Landmark",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": null,
+  "built": null,
+  "culture": null,
+  "description": "Zaanse Schans is a neighbourhood of Zaandam, near Zaandijk, Netherlands.",
+  "native": "Zaanse Schans",
+  "group": "Museum",
+  "world_heritage": false,
+  "tags": [
+    "Landmark",
+    "Europe"
+  ],
+  "map": "places/maps/zaanse_schans.png",
+  "photo": {
+    "file": "places/photos/zaanse_schans.jpg",
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/The%20Windmills%20of%20Zaanse%20Schans%2C%20Netherlands.jpg",
+    "author": "Mustang Joe",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Windmills_of_Zaanse_Schans,_Netherlands.jpg"
+  },
+  "wikipedia": "https://en.wikipedia.org/wiki/Zaanse_Schans",
+  "fame": 28
+}
