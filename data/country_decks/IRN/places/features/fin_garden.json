@@ -18,10 +18,11 @@
   "culture": null,
   "description": "Fin Garden is a historic Persian garden located in Kashan, Iran.",
   "native": "باغ فین",
-  "world_heritage": false,
+  "world_heritage": true,
   "tags": [
     "Landmark",
-    "Asia"
+    "Asia",
+    "World_Heritage"
   ],
   "map": "places/maps/fin_garden.png",
   "photo": {

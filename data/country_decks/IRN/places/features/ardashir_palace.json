@@ -18,10 +18,11 @@
   "culture": "Sasanian",
   "description": "Palace of Ardashir Bābakān, also known as the Ātashkadeh, is a castle located on the slopes of the mountain on which Qal'eh Dokhtar is situated.",
   "native": "کاخ اردشیر بابکان",
-  "world_heritage": false,
+  "world_heritage": true,
   "tags": [
     "Landmark",
-    "Asia"
+    "Asia",
+    "World_Heritage"
   ],
   "map": "places/maps/ardashir_palace.png",
   "photo": {

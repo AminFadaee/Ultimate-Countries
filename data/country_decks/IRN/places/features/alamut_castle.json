@@ -18,10 +18,11 @@
   "culture": "Iranian",
   "description": "Alamut is a ruined mountain fortress located in the Alamut region in the South Caspian, near the village of Gazor Khan in Qazvin province in Iran, approximately 200 km from Tehran.",
   "native": "قلعه الموت",
-  "world_heritage": false,
+  "world_heritage": true,
   "tags": [
     "Landmark",
-    "Asia"
+    "Asia",
+    "World_Heritage"
   ],
   "map": "places/maps/alamut_castle.png",
   "photo": {

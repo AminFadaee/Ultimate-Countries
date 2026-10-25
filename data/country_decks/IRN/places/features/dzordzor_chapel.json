@@ -18,10 +18,11 @@
   "culture": null,
   "description": "The Chapel of Dzordzor is part of an Armenian monastery located in Maku County, West Azerbaijan province, Iran, on Zangmar River near the village of Barun.",
   "native": "کلیسای سور سور",
-  "world_heritage": false,
+  "world_heritage": true,
   "tags": [
     "Landmark",
-    "Asia"
+    "Asia",
+    "World_Heritage"
   ],
   "map": "places/maps/dzordzor_chapel.png",
   "photo": {

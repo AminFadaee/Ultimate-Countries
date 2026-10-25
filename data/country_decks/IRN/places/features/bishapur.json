@@ -18,10 +18,11 @@
   "culture": "Persian",
   "description": "Bishapur was an ancient city in Iran and one of the capitals of the Sasanian Empire, near the city of Kazerun.",
   "native": "بیشاپور",
-  "world_heritage": false,
+  "world_heritage": true,
   "tags": [
     "Landmark",
-    "Asia"
+    "Asia",
+    "World_Heritage"
   ],
   "map": "places/maps/bishapur.png",
   "photo": {

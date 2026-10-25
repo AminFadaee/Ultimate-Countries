@@ -18,10 +18,11 @@
   "culture": null,
   "description": "The Saint Stepanos Monastery, also known in Armenian as Maghardavank, is an Armenian monastery located about 15 km northwest of the city of Julfa in the province of East Azarbaijan, northwestern Iran.",
   "native": "کلیسای استپانوس مقدس",
-  "world_heritage": false,
+  "world_heritage": true,
   "tags": [
     "Landmark",
-    "Asia"
+    "Asia",
+    "World_Heritage"
   ],
   "map": "places/maps/saint_stepanos_monastery.png",
   "photo": {

@@ -18,10 +18,11 @@
   "culture": null,
   "description": "The Dome of Soltaniyeh – variously called the Mausoleum of Oljaytu, Tomb of Uljaytu, or Soltaniya complex, among other designations – is a historic mausoleum and monument complex, located in Soltaniyeh, Zanjan, Iran.",
   "native": "گنبد سلطانیه",
-  "world_heritage": false,
+  "world_heritage": true,
   "tags": [
     "Landmark",
-    "Asia"
+    "Asia",
+    "World_Heritage"
   ],
   "map": "places/maps/soltaniyeh_dome.png",
   "photo": {

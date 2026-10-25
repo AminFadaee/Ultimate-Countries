@@ -18,10 +18,11 @@
   "culture": null,
   "description": "The Monastery of Saint Thaddeus is an Armenian monastery in a mountainous area of West Azerbaijan province, Iran.",
   "native": "کلیسای تادئوس مقدس",
-  "world_heritage": false,
+  "world_heritage": true,
   "tags": [
     "Landmark",
-    "Asia"
+    "Asia",
+    "World_Heritage"
   ],
   "map": "places/maps/church_of_saint_thaddeus.png",
   "photo": {

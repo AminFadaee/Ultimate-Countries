@@ -18,10 +18,11 @@
   "culture": null,
   "description": "Eram Garden is a historic Persian garden in Shiraz, Iran.",
   "native": "باغ ارم",
-  "world_heritage": false,
+  "world_heritage": true,
   "tags": [
     "Landmark",
-    "Asia"
+    "Asia",
+    "World_Heritage"
   ],
   "map": "places/maps/eram_garden.png",
   "photo": {
