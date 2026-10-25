@@ -120,8 +120,21 @@ def extremes(wikidata: Wikidata, country_qid: str) -> dict[str, list[str]]:
 def inscribed(wikidata: Wikidata, qids: set[str]) -> set[str]:
     found: set[str] = set()
     for batch in itertools.batched(sorted(qids), DETAIL_BATCH, strict=False):
-        rows = wikidata._select(f"SELECT DISTINCT ?i WHERE {{ VALUES ?i {{ {values_clause(batch)} }} ?i wdt:P757 ?id }}")
+        rows = wikidata._select(f"""
+            SELECT DISTINCT ?i WHERE {{ VALUES ?i {{ {values_clause(batch)} }} ?i wdt:P757 ?id }}""")
         found |= {qid_of(row["i"]) for row in rows}
+        rows = wikidata._select(f"""
+            SELECT DISTINCT ?i WHERE {{ VALUES ?i {{ {values_clause(batch)} }} ?i wdt:P361/wdt:P361? ?whole . ?whole wdt:P757 ?id }}""")
+        found |= {qid_of(row["i"]) for row in rows}
+    return found
+
+
+def wholes(wikidata: Wikidata, qids: set[str]) -> dict[str, set[str]]:
+    found: dict[str, set[str]] = {}
+    for batch in itertools.batched(sorted(qids), DETAIL_BATCH, strict=False):
+        rows = wikidata._select(f"SELECT DISTINCT ?i ?whole WHERE {{ VALUES ?i {{ {values_clause(batch)} }} ?i wdt:P361/wdt:P361? ?whole }}")
+        for row in rows:
+            found.setdefault(qid_of(row["i"]), set()).add(qid_of(row["whole"]))
     return found
 
 
@@ -173,6 +186,10 @@ def select_places(wikidata: Wikidata, country_qid: str, excluded: set[str]) -> t
         chosen.setdefault(qid, Candidate(qid, Kind.MOUNTAIN, 0, "highest"))
     for qid in found["lowest"]:
         chosen.setdefault(qid, Candidate(qid, Kind.POLDER if qid in polders else Kind.PLAIN, 0, "lowest"))
-    checked = {qid for qid, candidate in chosen.items() if candidate.tier in ("natural", "functional") and candidate.kind not in ADMINISTRATIVE_KINDS}
+    checked = {
+        qid
+        for qid, candidate in chosen.items()
+        if (candidate.tier == "natural" or candidate.tier == "functional" and not candidate.group) and candidate.kind not in ADMINISTRATIVE_KINDS
+    }
     settlements = queries.instances_of(checked, HUMAN_SETTLEMENT)
     return [candidate for candidate in chosen.values() if candidate.qid not in settlements and candidate.qid not in excluded], found

@@ -9,7 +9,7 @@ from shapely.geometry import Point, mapping, shape
 from geography.countrydeck.cities import near_mainland_features, within_territory
 from geography.countrydeck.maps import PlaceMapJob, render_place_maps
 from geography.countrydeck.names import named
-from geography.countrydeck.selection import inscribed, natural_sites, select_places
+from geography.countrydeck.selection import inscribed, natural_sites, select_places, wholes
 from geography.data import CONTESTED_TYPES, NaturalEarth
 from geography.features.catalog import complete_rivers, dissolved
 from geography.features.collect import PlacesCollector, PlacesPaths, unique_slugs
@@ -52,6 +52,13 @@ def resolve_shapes(wikidata: Wikidata, features: list[Feature]) -> None:
             feature.geometry = gpd.GeoSeries([shape(found["geometry"])], crs=CRS)
 
 
+def without_parts(features: list[Feature], wholes: dict[str, set[str]]) -> list[Feature]:
+    named = {feature.qid: feature.name.casefold() for feature in features}
+    def duplicate(feature: Feature) -> bool:
+        return any(whole in named and feature.name.casefold().startswith(named[whole]) for whole in wholes.get(feature.qid, ()))
+    return [feature for feature in features if not duplicate(feature)]
+
+
 def one_per_extreme(features: list[Feature], tiers: dict[str, str], order: dict[str, list[str]]) -> list[Feature]:
     dropped: set[str] = set()
     for tier, ranking in order.items():
@@ -65,6 +72,7 @@ class CountryPlacesCollector(PlacesCollector):
         super().__init__(PlacesPaths(directory), session)
 
     def collect(self, data: NaturalEarth, code: str, country: dict, language: str, excluded: set[str]) -> list[Feature]:
+        self.country_qid = country["id"]
         candidates, extremes = select_places(self.wikidata, country["id"], excluded)
         queries = FeatureQueries(self.wikidata)
         facts = queries.facts({candidate.qid for candidate in candidates})
@@ -79,15 +87,16 @@ class CountryPlacesCollector(PlacesCollector):
         groups = {candidate.qid: candidate.group for candidate in candidates}
         resolve_shapes(self.wikidata, features)
         complete_rivers(self.wikidata, [feature for feature in features if feature.kind is Kind.RIVER], {qid: found.length_km for qid, found in facts.items()})
-        features = [feature for feature in features if not feature.geometry.empty and not feature.geometry.union_all().is_empty]
-        features = near_mainland_features(data, code, within_territory(data, code, features))
-        features = one_per_extreme(features, tiers, extremes)
+        features = self._kept("without a shape", features, [feature for feature in features if not feature.geometry.empty and not feature.geometry.union_all().is_empty])
+        features = self._kept("too far from the mainland", features, near_mainland_features(data, code, within_territory(data, code, features)))
+        features = self._kept("not the highest or lowest", features, one_per_extreme(features, tiers, extremes))
         names = named(self.wikidata, {feature.qid for feature in features}, language)
         host = OurCountry(country["id"], code, country["name"], country["region"], country["wikipedia_url"])
         for feature in features:
             feature.name, feature.native = names[feature.qid].name, names[feature.qid].native
             feature.countries, feature.continents = [host], [country["region"]]
-        features = [feature for feature in features if feature.name != feature.qid]
+        features = self._kept("without a name", features, [feature for feature in features if feature.name != feature.qid])
+        features = without_parts(features, wholes(self.wikidata, {feature.qid for feature in features}))
         self._mark(features, data, tiers, groups)
         catalog = SimpleNamespace(facts=facts, queries=queries)
         self._add_facts(features, catalog)
@@ -98,6 +107,14 @@ class CountryPlacesCollector(PlacesCollector):
         self._add_construction(features)
         self._add_descriptions(features)
         return features
+
+    @staticmethod
+    def _kept(reason: str, before: list[Feature], after: list[Feature]) -> list[Feature]:
+        kept = {feature.qid for feature in after}
+        for feature in before:
+            if feature.qid not in kept:
+                logger.info("Dropped %s (%s): %s", feature.qid, feature.kind.value, reason)
+        return after
 
     def _mark(self, features: list[Feature], data: NaturalEarth, tiers: dict[str, str], groups: dict[str, str]) -> None:
         natural = natural_sites(self.wikidata, {feature.qid for feature in features if tiers[feature.qid] == "unesco"})

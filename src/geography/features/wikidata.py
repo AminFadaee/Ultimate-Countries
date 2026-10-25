@@ -180,7 +180,7 @@ class FeatureQueries:
             found.update(qid_of(row["item"]) for row in rows)
         return found
 
-    def cities(self, qids: set[str]) -> dict[str, list[str]]:
+    def cities(self, qids: set[str], country_qid: str | None = None) -> dict[str, list[str]]:
         places: dict[str, dict[str, str]] = defaultdict(dict)
         for batch in itertools.batched(sorted(qids), BATCH, strict=False):
             rows = self.wikidata._select(f"""
@@ -195,10 +195,19 @@ class FeatureQueries:
                 if "far" in row:
                     places[qid_of(row["item"])][qid_of(row["far"])] = row["farLabel"]
         city_ids = self.instances_of({place for found in places.values() for place in found}, CITY)
+        if country_qid:
+            city_ids &= self.in_country({place for found in places.values() for place in found}, country_qid)
         return {
             qid: sorted({label for place, label in found.items() if place in city_ids})
             for qid, found in places.items()
         }
+
+    def in_country(self, qids: set[str], country_qid: str) -> set[str]:
+        found: set[str] = set()
+        for batch in itertools.batched(sorted(qids), BATCH, strict=False):
+            rows = self.wikidata._select(f"SELECT ?i WHERE {{ VALUES ?i {{ {values_clause(batch)} }} ?i wdt:P17 wd:{country_qid} }}")
+            found |= {qid_of(row["i"]) for row in rows}
+        return found
 
     def sea_items(self, mrgids: set[str]) -> dict[str, SeaItem]:
         rows = self.wikidata._select(f"""

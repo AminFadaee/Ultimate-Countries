@@ -78,6 +78,8 @@ class PlacesOptions:
 
 
 class PlacesCollector:
+    country_qid: str | None = None
+
     def __init__(self, paths: PlacesPaths, session: requests.Session):
         self.paths = paths
         self.session = session
@@ -158,7 +160,7 @@ class PlacesCollector:
 
     def _add_cities(self, features: list[Feature], catalog: Catalog) -> None:
         landmarks = {feature.qid: feature for feature in features if feature.kind is Kind.LANDMARK and feature.qid}
-        for qid, cities in catalog.queries.cities(set(landmarks)).items():
+        for qid, cities in catalog.queries.cities(set(landmarks), self.country_qid).items():
             if len(cities) == 1:
                 landmarks[qid].city = cities[0]
 

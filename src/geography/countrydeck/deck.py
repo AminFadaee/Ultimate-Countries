@@ -44,7 +44,7 @@ from geography.features.deck import (
     kind_label,
 )
 from geography.features.kinds import Kind
-from geography.naming import slugify
+from geography.naming import answer_path, slugify
 
 logger = logging.getLogger(__name__)
 PROVINCE_MODEL_ID = 1_730_418_570
@@ -58,7 +58,8 @@ KIND_CONTEXT = "{{Country}} · {{Kind}}"
 
 PROVINCE_FIELDS = ("Id", "Name", "Native", "Centre", "CentreNative", "Map", "MapAnswer", "Population", "Area", "Country", "Kind")
 CITY_FIELDS = ("Id", "City", "Native", "Province", "ProvinceNative", "Map", "MapAnswer", "Population", "Country", "Kind", "IsCentre")
-PLACE_FIELDS = ("Id", "Name", "Native", "Kind", "Map", "Photo", "Hint", "Details")
+PLACE_FIELDS = ("Id", "Name", "Native", "Kind", "Map", "MapAnswer", "Photo", "Hint", "Details")
+MAP_ANSWER_BLOCK = MAP_BLOCK.replace("{{Map}}", "{{MapAnswer}}")
 NEIGHBOUR_FIELDS = ("Id", "Name", "Flag", "Map", "MapAnswer", "Capital", "Country", "Kind", *(fact.field for fact in FACTS))
 
 PROVINCE_CHIPS = '<div class="facts">' + chip("Centre", "Centre") + chip("Population", "Population") + chip("Area", "Area") + "</div>"
@@ -98,9 +99,9 @@ HINT_CSS = ".hint { font-size: 15px; line-height: 1.45; color: var(--info); marg
 def place_templates() -> tuple[Template, ...]:
     answer = entity("{{Name}}" + NATIVE_LINE, answered=True)
     return (
-        Template("Map", "Map", conditional("Map", UNKNOWN_ENTITY + kind_label() + MAP_BLOCK + HINT), answer + kind_label() + MAP_BLOCK + DETAILS),
+        Template("Map", "Map", conditional("Map", UNKNOWN_ENTITY + kind_label() + MAP_BLOCK + HINT), answer + kind_label() + MAP_ANSWER_BLOCK + DETAILS),
         Template("Photo", "Photo", conditional("Photo", f'<div class="photo-front">{PHOTO_BLOCK}</div>'),
-                 answer + kind_label() + PHOTO_BLOCK + MAP_BLOCK + DETAILS),
+                 answer + kind_label() + PHOTO_BLOCK + MAP_ANSWER_BLOCK + DETAILS),
     )
 
 
@@ -170,6 +171,7 @@ class CountryDeckBuilder:
         values = {
             "Id": document["key"], "Name": escaped(document["name"]), "Native": escaped(document["native"]), "Kind": escaped(document["kind"]),
             "Map": self.media.image(f"{root}/{document['map']}", "map") if document["map"] else "",
+            "MapAnswer": self.media.image(f"{root}/{answer_path(pathlib.Path(document['map']))}", "map") if document["map"] else "",
             "Photo": self.media.image(f"{root}/{document['photo']['file']}", "photo") if photo_card else "",
             "Hint": "" if photo_card else escaped(masked(document)),
             "Details": details_html(document),
