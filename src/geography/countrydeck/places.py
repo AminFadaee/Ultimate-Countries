@@ -6,14 +6,14 @@ from types import SimpleNamespace
 import geopandas as gpd
 from shapely.geometry import Point, mapping, shape
 
-from geography.countrydeck.cities import near_mainland_features
+from geography.countrydeck.cities import near_mainland_features, within_territory
 from geography.countrydeck.maps import PlaceMapJob, render_place_maps
 from geography.countrydeck.names import named
 from geography.countrydeck.selection import natural_sites, select_places
 from geography.data import CONTESTED_TYPES, NaturalEarth
-from geography.features.catalog import dissolved
+from geography.features.catalog import complete_rivers, dissolved
 from geography.features.collect import PlacesCollector, PlacesPaths, unique_slugs
-from geography.features.kinds import Shape
+from geography.features.kinds import Kind, Shape
 from geography.features.model import Feature
 from geography.features.spatial import CRS, OurCountry
 from geography.features.wikidata import FeatureQueries
@@ -78,8 +78,9 @@ class CountryPlacesCollector(PlacesCollector):
         tiers = {candidate.qid: candidate.tier for candidate in candidates}
         groups = {candidate.qid: candidate.group for candidate in candidates}
         resolve_shapes(self.wikidata, features)
+        complete_rivers(self.wikidata, [feature for feature in features if feature.kind is Kind.RIVER], {qid: found.length_km for qid, found in facts.items()})
         features = [feature for feature in features if not feature.geometry.empty and not feature.geometry.union_all().is_empty]
-        features = near_mainland_features(data, code, features)
+        features = near_mainland_features(data, code, within_territory(data, code, features))
         features = one_per_extreme(features, tiers, extremes)
         names = named(self.wikidata, {feature.qid for feature in features}, language)
         host = OurCountry(country["id"], code, country["name"], country["region"], country["wikipedia_url"])
@@ -90,6 +91,8 @@ class CountryPlacesCollector(PlacesCollector):
         self._mark(features, data, tiers, groups)
         catalog = SimpleNamespace(facts=facts, queries=queries)
         self._add_facts(features, catalog)
+        for feature in features:
+            feature.world_heritage = feature.world_heritage or tiers[feature.qid] == "unesco"
         self._add_cities(features, catalog)
         self._add_construction(features)
         self._add_descriptions(features)

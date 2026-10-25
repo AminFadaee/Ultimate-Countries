@@ -137,15 +137,20 @@ def select_places(wikidata: Wikidata, country_qid: str, excluded: set[str]) -> t
             if qid not in excluded and qid not in chosen:
                 chosen[qid] = Candidate(qid, kind, links, tier, group)
 
-    add(unesco(wikidata, country_qid), Kind.LANDMARK, "unesco")
     seaports = {qid for qid, _ in ranked(wikidata, country_qid, (SEAPORT,), 8)}
+    naturals = []
     for kind, classes, cap in NATURAL:
         items = above_floor(ranked(wikidata, country_qid, classes))
         items = [item for item in items if item[0] not in seaports]
         if kind is Kind.MOUNTAIN:
             volcanoes = set().union(*(queries.instances_of({qid for qid, _ in items}, cls) for cls in VOLCANO_CLASSES))
-            add([item for item in items if item[0] in volcanoes], Kind.VOLCANO, "natural", cap)
+            naturals.append((Kind.VOLCANO, [item for item in items if item[0] in volcanoes], cap))
             items = [item for item in items if item[0] not in volcanoes]
+        naturals.append((kind, items, cap))
+    natural_kind = {qid: kind for kind, items, _ in reversed(naturals) for qid, _ in items}
+    for qid, links in unesco(wikidata, country_qid):
+        add([(qid, links)], natural_kind.get(qid, Kind.LANDMARK), "unesco")
+    for kind, items, cap in naturals:
         add(items, kind, "natural", cap)
     built = heritage(wikidata, country_qid)
     third = built[min(2, len(built) - 1)][1] if built else 0

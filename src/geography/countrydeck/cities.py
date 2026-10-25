@@ -1,4 +1,5 @@
 import itertools
+import logging
 import math
 from dataclasses import asdict, dataclass
 
@@ -7,7 +8,8 @@ from shapely.geometry import Point
 
 from geography.countrydeck.names import POINT, named
 from geography.countrydeck.provinces import mainland_units
-from geography.data import NaturalEarth
+from geography.data import CONTESTED_TYPES, NaturalEarth
+from geography.features.kinds import WATER_KINDS
 from geography.features.wikidata import FeatureQueries
 from geography.render import (
     EQUAL_AREA,
@@ -25,7 +27,13 @@ SMALL_POPULATION, SMALL_LINKS = 60_000, 65
 SATELLITE_RATIO = 3
 SATELLITE_KM = 0.45
 FAMOUS_LINKS = 50
+logger = logging.getLogger(__name__)
 EARTH_RADIUS_KM = 6371
+BORDER_TOLERANCE_M = 10_000
+POINT_TOLERANCE_M = 3_000
+MIN_INSIDE_SHARE = 0.4
+MIN_INSIDE_LENGTH_M = 15_000
+TERRITORIAL_WATERS_M = 30_000
 
 
 @dataclass
@@ -103,6 +111,35 @@ def within_reach(data: NaturalEarth, code: str, points: list) -> list[bool]:
 def near_mainland_features(data: NaturalEarth, code: str, features: list) -> list:
     shapes = [feature.geometry.union_all() for feature in features]
     return [feature for feature, near in zip(features, within_reach(data, code, shapes), strict=True) if near]
+
+
+def within_territory(data: NaturalEarth, code: str, features: list) -> list:
+    mainland = get_mainland(data.country(code).core.geometry)
+    local = local_projection(mainland)
+    contested = data.disputed_areas[data.disputed_areas["TYPE"].isin(CONTESTED_TYPES)].geometry
+    territory = gpd.GeoSeries([data.country(code).core.geometry.union_all(), *contested], crs="EPSG:4326").to_crs(local).union_all()
+    land = data.countries.geometry.make_valid().union_all()
+    wide, narrow, coast = territory.buffer(BORDER_TOLERANCE_M), territory.buffer(POINT_TOLERANCE_M), territory.buffer(TERRITORIAL_WATERS_M)
+    geodetic = [feature.geometry.union_all() for feature in features]
+    shapes = gpd.GeoSeries(geodetic, crs="EPSG:4326").to_crs(local)
+    kept = [
+        feature
+        for feature, shape, original in zip(features, shapes, geodetic, strict=True)
+        if feature.kind in WATER_KINDS or mostly_inside(shape, wide, narrow, coast, land.intersects(original))
+    ]
+    for feature in features:
+        if feature not in kept:
+            logger.info("Outside %s: %s", code, feature.qid)
+    return kept
+
+
+def mostly_inside(shape, wide, narrow, coast, on_land: bool) -> bool:
+    if shape.area:
+        return shape.intersection(wide).area >= MIN_INSIDE_SHARE * shape.area
+    if shape.length:
+        inside = shape.intersection(wide).length
+        return inside >= MIN_INSIDE_LENGTH_M or inside >= MIN_INSIDE_SHARE * shape.length
+    return narrow.intersects(shape) or coast.intersects(shape) and not on_land
 
 
 def assign_provinces(data: NaturalEarth, code: str, cities: list[City]) -> None:

@@ -106,6 +106,21 @@ def article_title(article_url: str) -> str:
     return urllib.parse.unquote(article_url.rsplit("/wiki/", 1)[-1]).replace("_", " ")
 
 
+def complete_rivers(wikidata: Wikidata, rivers: list[Feature], lengths: dict[str, float | None]) -> None:
+    def coverage(river: Feature) -> float:
+        length = lengths.get(river.qid)
+        return drawn_km(river.geometry) / length if length else 1.0
+
+    short = [river for river in rivers if coverage(river) < MIN_RIVER_COVERAGE]
+    relations = wikidata.osm_relations({river.qid for river in short})
+    surveyed = Nominatim().relations(list(relations.values()))
+    for river in short:
+        if feature := surveyed.get(relations.get(river.qid, "")):
+            traced = gpd.GeoSeries([shape(feature["geometry"])], crs=CRS)
+            if drawn_km(traced) > drawn_km(river.geometry):
+                river.geometry = traced
+
+
 def drawn_km(geometry: gpd.GeoSeries) -> float:
     return sum(GEOD.geometry_length(line) for line in geometry) / 1000
 
@@ -294,18 +309,7 @@ class Catalog:
         return self.completed(features)
 
     def completed(self, rivers: list[Feature]) -> list[Feature]:
-        def coverage(river: Feature) -> float:
-            length = self.facts[river.qid].length_km
-            return drawn_km(river.geometry) / length if length else 1.0
-
-        short = [river for river in rivers if coverage(river) < MIN_RIVER_COVERAGE]
-        relations = self.wikidata.osm_relations({river.qid for river in short})
-        surveyed = Nominatim().relations(list(relations.values()))
-        for river in short:
-            if feature := surveyed.get(relations.get(river.qid, "")):
-                traced = gpd.GeoSeries([shape(feature["geometry"])], crs=CRS)
-                if drawn_km(traced) > drawn_km(river.geometry):
-                    river.geometry = traced
+        complete_rivers(self.wikidata, rivers, {river.qid: self.facts[river.qid].length_km for river in rivers})
         return rivers
 
     def mountains(self) -> list[Feature]:
