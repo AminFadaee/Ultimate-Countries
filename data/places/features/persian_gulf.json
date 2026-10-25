@@ -23,7 +23,8 @@
   "area_km2": 251000.0,
   "built": null,
   "culture": null,
-  "description": "The Persian Gulf, sometimes called the Arabian Gulf, is a mediterranean sea in West Asia.",
+  "description": "The Persian Gulf is a mediterranean sea in West Asia.",
+  "native": null,
   "world_heritage": false,
   "tags": [
     "Sea",
