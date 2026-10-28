@@ -24,6 +24,13 @@ dependencies = [
     "shapely>=2.1",
 ]
 
+[project.optional-dependencies]
+speech = [
+    "piper-tts>=1.8",
+    "soundfile>=0.13",
+    "supertonic>=1.3.1",
+]
+
 [project.scripts]
 geography = "geography.main:main"
 

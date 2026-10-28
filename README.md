@@ -152,7 +152,10 @@ place that is also in Ultimate Places is tagged `Also_in_Places`, so you can sus
 | Place | the map or the photo → name, as in Ultimate Places |
 
 Every name is also shown in the country's own language: the first official language on Wikidata, or the one you pass with
-`--language`. Maps share one frame per deck, so the country stays the same size on every card, and areas that Natural Earth
+`--language`. Where a voice is configured for that language (Dutch and Persian), a ▶ button next to the native name speaks it;
+nothing plays by itself. `uv run --extra speech geography country-audio CODE` makes the clips (Dutch with Supertonic-3, voice M1;
+Persian with Piper, voice `fa_IR-ganji-medium`), named after a hash of the voice and text so an update only adds new names, and
+the deck build needs no speech libraries. To add a language, add its engine and voice to `SPEECH` in `countrydeck/speech.py`. Maps share one frame per deck, so the country stays the same size on every card, and areas that Natural Earth
 lists as disputed are drawn in the disputed colour.
 
 What goes in is chosen by rules relative to the country, not by hand:
@@ -292,4 +295,5 @@ The code is released under the [MIT licence](LICENSE). The data keeps the licenc
 - RESOLVE Ecoregions 2017: CC BY
 - Wikimedia Commons photos: each under the licence given on its Commons page
 - Unicode CLDR: Unicode License
+- Speech: [Supertonic-3](https://github.com/supertone-inc/supertonic) (OpenRAIL-M) for Dutch; Piper (MIT) with the `fa_IR-ganji-medium` voice (CC0 dataset) for Persian
 - restcountries, World Bank, Pew Research Center, IMF and ISO 4217 data are used under their respective terms

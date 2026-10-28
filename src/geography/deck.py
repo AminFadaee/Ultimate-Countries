@@ -377,6 +377,16 @@ class MediaLibrary:
         self.files.append(str(target))
         return f'<img src="{target.name}">'
 
+    def sound(self, relative: str | None) -> str:
+        source = self.data_dir / relative if relative else None
+        if source is None or not source.exists():
+            return ""
+        target = self.build_dir / f"{self.prefix}-sound-{source.name}"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(source.read_bytes())
+        self.files.append(str(target))
+        return f'<a class="speak" onclick="this.nextElementSibling.play()">&#9654;</a><audio preload="none" src="{target.name}"></audio>'
+
     def _prepare(self, source: pathlib.Path, target: pathlib.Path, toned: bool) -> None:
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(auto_tone(source.read_bytes()) if toned else source.read_bytes())

@@ -44,6 +44,7 @@ from geography.features.deck import (
     kind_label,
 )
 from geography.features.kinds import Kind
+from geography.countrydeck.speech import CLIPS, load_manifest
 from geography.naming import answer_path, slugify
 
 logger = logging.getLogger(__name__)
@@ -53,12 +54,13 @@ CITY_MODEL_ID = 1_730_418_572
 PLACE_MODEL_ID = 1_730_418_573
 MODEL_FAMILY = "Ultimate Nation"
 TAG_UNSAFE = re.compile(r"[^\w-]+")
-NATIVE_LINE = '{{#Native}}<div class="subtitle">{{Native}}</div>{{/Native}}'
+NATIVE_LINE = '{{#Native}}<div class="subtitle">{{Native}}{{NativeAudio}}</div>{{/Native}}'
+AUDIO_CSS = ".speak { cursor: pointer; margin-left: 10px; font-size: 0.8em; opacity: 0.7; } .speak:hover { opacity: 1; } audio { display: none; }\n"
 KIND_CONTEXT = "{{Country}} · {{Kind}}"
 
-PROVINCE_FIELDS = ("Id", "Name", "Native", "Centre", "CentreNative", "Map", "MapAnswer", "Population", "Area", "Country", "Kind")
-CITY_FIELDS = ("Id", "City", "Native", "Province", "ProvinceNative", "Map", "MapAnswer", "Population", "Country", "Kind", "IsCentre")
-PLACE_FIELDS = ("Id", "Name", "Native", "Kind", "Map", "MapAnswer", "Photo", "Hint", "Details")
+PROVINCE_FIELDS = ("Id", "Name", "Native", "NativeAudio", "Centre", "CentreNative", "Map", "MapAnswer", "Population", "Area", "Country", "Kind")
+CITY_FIELDS = ("Id", "City", "Native", "NativeAudio", "Province", "ProvinceNative", "Map", "MapAnswer", "Population", "Country", "Kind", "IsCentre")
+PLACE_FIELDS = ("Id", "Name", "Native", "NativeAudio", "Kind", "Map", "MapAnswer", "Photo", "Hint", "Details")
 MAP_ANSWER_BLOCK = MAP_BLOCK.replace("{{Map}}", "{{MapAnswer}}")
 NEIGHBOUR_FIELDS = ("Id", "Name", "Flag", "Map", "MapAnswer", "Capital", "Country", "Kind", *(fact.field for fact in FACTS))
 
@@ -115,12 +117,14 @@ def tag(prefix: str, *parts: str) -> str:
     return "::".join([prefix, *(TAG_UNSAFE.sub("_", part).strip("_") for part in parts)])
 
 
-def description(name: str) -> str:
+def description(name: str, voiced: bool = False) -> str:
+    speech = "<p>Press ▶ next to a native name to hear it, spoken by a synthetic voice (it never plays by itself).</p>\n" if voiced else ""
     return f"""
-<p><b>Ultimate {name} Geography</b>: {name}'s provinces and their centres, neighbours, cities, natural features and landmarks, each on a map.</p>
+<p><b>Ultimate {name} Geography</b>: provinces and their centres, neighbours, cities, natural features and landmarks, each on a map.</p>
 <p>Part of a family with <a href="{COUNTRIES_ANKIWEB_URL}">Ultimate Countries</a> and <a href="{PLACES_ANKIWEB_URL}">Ultimate Places</a>, inspired by
 <a href="{ULTIMATE_GEOGRAPHY_URL}">Ultimate Geography</a>. Names are shown in the country's own language too.</p>
-<p>Data comes from Wikidata (CC0), Wikipedia (CC BY-SA), Natural Earth (public domain), Marine Regions (CC BY) and OpenStreetMap (ODbL).</p>
+{speech}<p>Data comes from Wikidata (CC0), Wikipedia (CC BY-SA), Natural Earth (public domain), Marine Regions (CC BY) and OpenStreetMap (ODbL).
+Photos come from Wikimedia Commons, each under the licence given on its Commons page.</p>
 <p>Source code, data and new releases: <a href="{REPOSITORY_URL}">{REPOSITORY_URL.removeprefix("https://")}</a>. Built {date.today().isoformat()}.</p>"""
 
 
@@ -130,19 +134,23 @@ class CountryDeckBuilder:
         self.name = f"Ultimate {meta['name']} Geography"
         self.prefix = meta["alpha_2"].upper()
         self.media = MediaLibrary(data_dir, build_dir / "media" / meta["code"].lower(), f"nd-{meta['code'].lower()}", tone_photos)
-        css = CSS + FACTS_CSS + MAP_ZOOM_CSS
+        css = CSS + FACTS_CSS + MAP_ZOOM_CSS + AUDIO_CSS
+        self.voice = load_manifest(COUNTRY_DECKS_DIR / meta["code"])
         self.province_model = self._model(PROVINCE_MODEL_ID, "province", PROVINCE_FIELDS, province_templates(), css)
         self.neighbour_model = self._model(NEIGHBOUR_MODEL_ID, "neighbour", NEIGHBOUR_FIELDS, neighbour_templates(), css)
         self.city_model = self._model(CITY_MODEL_ID, "city", CITY_FIELDS, city_templates(), css)
-        self.place_model = self._model(PLACE_MODEL_ID, "place", PLACE_FIELDS, place_templates(), PLACES_CSS + HINT_CSS + FACTS_CSS + MAP_ZOOM_CSS)
-        self.deck = genanki.Deck(stable_id(self.name), self.name, description(meta["name"]))
+        self.place_model = self._model(PLACE_MODEL_ID, "place", PLACE_FIELDS, place_templates(), PLACES_CSS + HINT_CSS + FACTS_CSS + MAP_ZOOM_CSS + AUDIO_CSS)
+        self.deck = genanki.Deck(stable_id(self.name), self.name, description(meta["name"], bool(self.voice)))
         self.notes = 0
+
+    def spoken(self, native: str | None) -> str:
+        return self.media.sound(f"country_decks/{self.meta['code']}/{CLIPS}/{self.voice[native]}") if native in self.voice else ""
 
     def add_province(self, province: dict) -> None:
         centre = province["centre"]
         stem = f"country_decks/{self.meta['code']}/maps/province__{slugify(province['name'])}"
         values = {
-            "Id": province["id"], "Name": escaped(province["name"]), "Native": escaped(province["native"]),
+            "Id": province["id"], "Name": escaped(province["name"]), "Native": escaped(province["native"]), "NativeAudio": self.spoken(province["native"]),
             "Centre": escaped(centre["name"] if centre else None), "CentreNative": escaped(centre["native"] if centre else None),
             "Map": self.media.image(f"{stem}.png", "map"), "MapAnswer": self.media.image(f"{stem}-answer.png", "map"),
             "Population": f"{province['population']:,}" if province["population"] else "",
@@ -156,7 +164,7 @@ class CountryDeckBuilder:
         province = provinces[city["province"]]
         stem = f"country_decks/{self.meta['code']}/maps/city__{slugify(city['name'])}"
         values = {
-            "Id": city["id"], "City": escaped(city["name"]), "Native": escaped(city["native"]), "Province": escaped(province["name"]),
+            "Id": city["id"], "City": escaped(city["name"]), "Native": escaped(city["native"]), "NativeAudio": self.spoken(city["native"]), "Province": escaped(province["name"]),
             "ProvinceNative": escaped(province["native"]), "Map": self.media.image(f"{stem}.png", "map"),
             "MapAnswer": self.media.image(f"{stem}-answer.png", "map"), "Population": f"{city['population']:,}" if city["population"] else "",
             "Country": escaped(self.meta["name"]), "Kind": "Provincial centre" if city["centre"] else "City", "IsCentre": "yes" if city["centre"] else "",
@@ -169,7 +177,7 @@ class CountryDeckBuilder:
         kind = Kind(document["kind"])
         photo_card = bool(document["photo"]) and kind in PHOTO_CARD_KINDS and not document.get("natural_site")
         values = {
-            "Id": document["key"], "Name": escaped(document["name"]), "Native": escaped(document["native"]), "Kind": escaped(document["kind"]),
+            "Id": document["key"], "Name": escaped(document["name"]), "Native": escaped(document["native"]), "NativeAudio": self.spoken(document["native"]), "Kind": escaped(document["kind"]),
             "Map": self.media.image(f"{root}/{document['map']}", "map") if document["map"] else "",
             "MapAnswer": self.media.image(f"{root}/{answer_path(pathlib.Path(document['map']))}", "map") if document["map"] else "",
             "Photo": self.media.image(f"{root}/{document['photo']['file']}", "photo") if photo_card else "",

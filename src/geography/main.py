@@ -10,6 +10,7 @@ from geography import cards, quality
 from geography.collect import Collector, DataPaths, Options
 from geography.countrydeck.collect import run_country
 from geography.countrydeck.deck import build_country_deck
+from geography.countrydeck.speech import speak_country
 from geography.data import NaturalEarth
 from geography.db import Database
 from geography.deck import build_deck
@@ -88,6 +89,9 @@ def parse_args() -> argparse.Namespace:
     country_deck.add_argument("--output", type=pathlib.Path)
     country_deck.add_argument("--plain-photos", action="store_true", help="use the photos as downloaded, without automatic tone correction")
 
+    country_audio = commands.add_parser("country-audio", help="speak the native names of one country's deck")
+    country_audio.add_argument("code")
+
     samples = commands.add_parser("samples", help="render sample cards from the built decks for the README")
     samples.add_argument("--build-dir", type=pathlib.Path, default=BUILD_DIR)
     samples.add_argument("--output", type=pathlib.Path, default=SAMPLES_DIR)
@@ -151,6 +155,8 @@ def main() -> None:
             run_country(args.code.upper(), args.language, args.include_overseas, args.rerender_maps, args.workers)
         case "country-deck":
             build_country_deck(args.code.upper(), BUILD_DIR, args.output, tone_photos=not args.plain_photos)
+        case "country-audio":
+            speak_country(args.code.upper())
         case "samples":
             render_samples(args.build_dir, args.output)
         case "place":
