@@ -54,12 +54,13 @@ CITY_MODEL_ID = 1_730_418_572
 PLACE_MODEL_ID = 1_730_418_573
 MODEL_FAMILY = "Ultimate Nation"
 TAG_UNSAFE = re.compile(r"[^\w-]+")
+CENTRE_LINE = '{{#CentreNative}}<div class="subtitle">{{CentreNative}}{{CentreAudio}}</div>{{/CentreNative}}'
 NATIVE_LINE = '{{#Native}}<div class="subtitle">{{Native}}{{NativeAudio}}</div>{{/Native}}'
 AUDIO_CSS = ".speak { cursor: pointer; margin-left: 10px; font-size: 0.8em; opacity: 0.7; } .speak:hover { opacity: 1; } audio { display: none; }\n"
 KIND_CONTEXT = "{{Country}} · {{Kind}}"
 
-PROVINCE_FIELDS = ("Id", "Name", "Native", "NativeAudio", "Centre", "CentreNative", "Map", "MapAnswer", "Population", "Area", "Country", "Kind")
-CITY_FIELDS = ("Id", "City", "Native", "NativeAudio", "Province", "ProvinceNative", "Map", "MapAnswer", "Population", "Country", "Kind", "IsCentre")
+PROVINCE_FIELDS = ("Id", "Name", "Native", "NativeAudio", "Centre", "CentreNative", "CentreAudio", "Map", "MapAnswer", "Population", "Area", "Country", "Kind")
+CITY_FIELDS = ("Id", "City", "Native", "NativeAudio", "Province", "ProvinceNative", "ProvinceAudio", "Map", "MapAnswer", "Population", "Country", "Kind", "IsCentre")
 PLACE_FIELDS = ("Id", "Name", "Native", "NativeAudio", "Kind", "Map", "MapAnswer", "Photo", "Hint", "Details")
 MAP_ANSWER_BLOCK = MAP_BLOCK.replace("{{Map}}", "{{MapAnswer}}")
 NEIGHBOUR_FIELDS = ("Id", "Name", "Flag", "Map", "MapAnswer", "Capital", "Country", "Kind", *(fact.field for fact in FACTS))
@@ -74,8 +75,8 @@ def province_templates() -> tuple[Template, ...]:
     map_back = face(entity("{{Name}}" + NATIVE_LINE, answered=True), "Province", image("MapAnswer", "map")) + (
         f'<div class="context">{KIND_CONTEXT}</div>{PROVINCE_CHIPS}'
     )
-    centre = ask_attribute("Centre", "Centre", info_field="CentreNative", subject="{{Name}}" + NATIVE_LINE, context=KIND_CONTEXT, facts=PROVINCE_CHIPS)
-    reverse = ask_attribute("Province", "Name", info_field="Native", subject="{{Centre}}", context=KIND_CONTEXT, facts=PROVINCE_CHIPS)
+    centre = ask_attribute("Centre", "Centre", info_field="CentreNative", subject="{{Name}}" + NATIVE_LINE, context=KIND_CONTEXT, facts=PROVINCE_CHIPS, info_suffix="{{CentreAudio}}")
+    reverse = ask_attribute("Province", "Name", info_field="Native", subject="{{Centre}}" + CENTRE_LINE, context=KIND_CONTEXT, facts=PROVINCE_CHIPS, info_suffix="{{NativeAudio}}")
     return (
         Template("Map", "Map", conditional("Map", map_front), map_back),
         Template("Centre", "Centre", conditional("Centre", centre[0]), centre[1]),
@@ -87,7 +88,7 @@ def city_templates() -> tuple[Template, ...]:
     subject = "{{City}}" + NATIVE_LINE
     front = face(UNKNOWN_ENTITY, "City", image("Map", "map"))
     back = face(entity(subject, answered=True), "City", image("MapAnswer", "map")) + f'<div class="context">{KIND_CONTEXT}</div>{CITY_CHIPS}'
-    province = ask_attribute("Province", "Province", info_field="ProvinceNative", subject=subject, context=KIND_CONTEXT, facts=CITY_CHIPS)
+    province = ask_attribute("Province", "Province", info_field="ProvinceNative", subject=subject, context=KIND_CONTEXT, facts=CITY_CHIPS, info_suffix="{{ProvinceAudio}}")
     return (
         Template("Map", "Map", conditional("Map", front), back),
         Template("Province", "City", f"{{{{^IsCentre}}}}{province[0]}{{{{/IsCentre}}}}", province[1]),
@@ -152,6 +153,7 @@ class CountryDeckBuilder:
         values = {
             "Id": province["id"], "Name": escaped(province["name"]), "Native": escaped(province["native"]), "NativeAudio": self.spoken(province["native"]),
             "Centre": escaped(centre["name"] if centre else None), "CentreNative": escaped(centre["native"] if centre else None),
+            "CentreAudio": self.spoken(centre["native"] if centre else None),
             "Map": self.media.image(f"{stem}.png", "map"), "MapAnswer": self.media.image(f"{stem}-answer.png", "map"),
             "Population": f"{province['population']:,}" if province["population"] else "",
             "Area": f"{province['area_km2']:,.0f} km²" if province["area_km2"] else "", "Country": escaped(self.meta["name"]), "Kind": "Province",
@@ -165,7 +167,7 @@ class CountryDeckBuilder:
         stem = f"country_decks/{self.meta['code']}/maps/city__{slugify(city['name'])}"
         values = {
             "Id": city["id"], "City": escaped(city["name"]), "Native": escaped(city["native"]), "NativeAudio": self.spoken(city["native"]), "Province": escaped(province["name"]),
-            "ProvinceNative": escaped(province["native"]), "Map": self.media.image(f"{stem}.png", "map"),
+            "ProvinceNative": escaped(province["native"]), "ProvinceAudio": self.spoken(province["native"]), "Map": self.media.image(f"{stem}.png", "map"),
             "MapAnswer": self.media.image(f"{stem}-answer.png", "map"), "Population": f"{city['population']:,}" if city["population"] else "",
             "Country": escaped(self.meta["name"]), "Kind": "Provincial centre" if city["centre"] else "City", "IsCentre": "yes" if city["centre"] else "",
         }

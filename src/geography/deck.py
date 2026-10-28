@@ -92,8 +92,8 @@ def face(entity_html: str, label: str, value_html: str) -> str:
     return f'{entity_html}<hr class="divider"><div class="label">{label}</div>{value_html}'
 
 
-def details(info_field: str | None, context: str, extra: str = "", facts: str = "") -> str:
-    info = conditional(info_field, f'<div class="info">{placeholder(info_field)}</div>') if info_field else ""
+def details(info_field: str | None, context: str, extra: str = "", facts: str = "", info_suffix: str = "") -> str:
+    info = conditional(info_field, f'<div class="info">{placeholder(info_field)}{info_suffix}</div>') if info_field else ""
     return f'{info}{extra}<div class="context">{context}</div>{facts}'
 
 
@@ -104,9 +104,10 @@ def ask_attribute(
     subject: str = COUNTRY_NAME,
     context: str = REGION_CONTEXT,
     facts: str = "",
+    info_suffix: str = "",
 ) -> tuple[str, str]:
     front = face(entity(subject), label, UNKNOWN_VALUE)
-    back = face(entity(subject), label, value(placeholder(field), answered=True)) + details(info_field, context, facts=facts)
+    back = face(entity(subject), label, value(placeholder(field), answered=True)) + details(info_field, context, facts=facts, info_suffix=info_suffix)
     return front, back
 
 

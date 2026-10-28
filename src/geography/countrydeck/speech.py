@@ -98,7 +98,9 @@ ENGINES = {"supertonic": SupertonicVoice, "piper": PiperVoice}
 def spoken_names(directory: pathlib.Path) -> list[str]:
     names: set[str] = set()
     for file in ("provinces.json", "cities.json"):
-        names |= {item["native"] for item in json.loads((directory / file).read_text()) if item.get("native")}
+        items = json.loads((directory / file).read_text())
+        names |= {item["native"] for item in items if item.get("native")}
+        names |= {item["centre"]["native"] for item in items if isinstance(item.get("centre"), dict) and item["centre"].get("native")}
     for path in (directory / "places" / "features").glob("*.json"):
         if native := json.loads(path.read_text()).get("native"):
             names.add(native)
