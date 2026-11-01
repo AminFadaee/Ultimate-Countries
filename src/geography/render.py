@@ -1,7 +1,8 @@
 import io
+import itertools
 import math
 import pathlib
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from enum import StrEnum
 
 import cartopy.crs as ccrs
@@ -131,6 +132,7 @@ class Scene:
     frame_scale: float = 1.0
     lens_highlight: gpd.GeoSeries | None = None
     lens_host: gpd.GeoSeries | None = None
+    lenses: tuple[gpd.GeoSeries, ...] = ()
     framing: Framing = Framing.REGION
     style: Style = Style()
     cities: tuple[CityLabel, ...] = ()
@@ -458,7 +460,9 @@ class LocatorMap:
             if scene.marker:
                 self._plot_marker(fig, projection, scene.marker)
             self._plot_inset(fig, projection, extent, inset_corner)
-            if zoom:
+            if zoom and scene.lenses:
+                self._plot_lenses(fig, scene, projection, extent, inset_corner)
+            elif zoom:
                 self._plot_zoom(fig, scene, projection, extent, zoom, inset_corner)
             elif scene.photo:
                 self._plot_corner_photo(fig, scene)
@@ -734,6 +738,36 @@ class LocatorMap:
             (rect[0] + rect[2] / 2, rect[1] + rect[3] / 2), rect[2], rect[3], transform=fig.transFigure,
             fill=False, edgecolor=scene.style.highlight, linewidth=1.6,
         ))
+
+    def _plot_lenses(self, fig: Figure, scene: Scene, projection: ccrs.Projection, extent: Extent, inset_corner: Corner) -> None:
+        fig_w, fig_h = fig.get_size_inches()
+        xmin, _, ymin, _ = extent.bounds
+        scale = fig_w / extent.width
+        zooms = [get_zoom(subject, projection, extent, 0.0, 1.0) for subject in scene.lenses]
+        spots = [((zoom.lens.x - xmin) * scale, (zoom.lens.y - ymin) * scale) for zoom in zooms]
+        corners = [corner for corner in LENS_CORNERS if corner is not inset_corner]
+        lenses = {corner: lens_at(corner, fig_w, fig_h) for corner in corners}
+        placement = min(
+            itertools.permutations(corners, len(zooms)),
+            key=lambda option: sum(math.dist(spot, (lenses[corner].x, lenses[corner].y)) for spot, corner in zip(spots, option, strict=True)),
+        )
+        style = {"color": scene.style.highlight, "linewidth": 1.2, "transform": fig.dpi_scale_trans}
+        for subject, zoom, spot, corner in zip(scene.lenses, zooms, spots, placement, strict=True):
+            marker = Circle(*spot, max(MARKER_RADIUS, MARKER_REACH * zoom.subject_size / 2 * scale))
+            lens = lenses[corner]
+            x, y, w, h = lens.rect
+            ax = fig.add_axes([x / fig_w, y / fig_h, w / fig_w, h / fig_h], projection=projection)
+            ax.set_boundary(flatten(Path.circle((0.5, 0.5), 0.5)), transform=ax.transAxes)
+            ax.spines["geo"].set_edgecolor(scene.style.highlight)
+            ax.spines["geo"].set_linewidth(1.2)
+            shown = replace(scene, lens_highlight=subject)
+            if self.detail is None:
+                self._draw_layers(ax, shown, projection, zoom.lens)
+            else:
+                self._draw_detail(ax, shown, projection, zoom.lens)
+            fig.add_artist(patches.Circle((marker.x, marker.y), marker.radius, fill=False, **style))
+            for xs, ys in marker.tangents_to(lens):
+                fig.add_artist(Line2D(xs, ys, **style))
 
     def _plot_zoom(
         self,
