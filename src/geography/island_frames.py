@@ -29,12 +29,19 @@ ISLAND_FRAMES = {
     "BHR": IslandFrame(whole=True),
     "COM": IslandFrame(anchor="MDG", whole=True),
     "CPV": IslandFrame(whole=True, marker_only=True),
+    "FSM": IslandFrame(anchor="PNG", focus=(158.2, 6.9), marker_only=True),
     "GRD": IslandFrame(whole=True),
+    "KIR": IslandFrame(anchor="FJI", focus=(173.0, 1.4), marker_only=True, zoom_out=1.8),
     "MDV": IslandFrame(anchor="IND", whole=True, marker_only=True),
+    "MHL": IslandFrame(anchor="PNG", whole=True, marker_only=True),
     "MUS": IslandFrame(),
     "PLW": IslandFrame(focus=(134.5, 7.4), zoom_out=1.7),
+    "STP": IslandFrame(whole=True, marker_only=True),
     "SYC": IslandFrame(anchor="TZA", anchor_reach_m=2_100_000, zoom_out=1.3, marker_only=True),
+    "TON": IslandFrame(anchor="AUS", whole=True, marker_only=True, zoom_out=1.08),
+    "TUV": IslandFrame(anchor="AUS", whole=True, marker_only=True),
     "VCT": IslandFrame(whole=True, zoom_out=1.7),
+    "WSM": IslandFrame(anchor="AUS", whole=True, zoom_out=1.08),
 }
 
 
