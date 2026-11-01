@@ -9,6 +9,7 @@ import requests
 
 from geography.data import NaturalEarth
 from geography.features.catalog import Catalog, article_title
+from geography.features.lengths import disagrees
 from geography.features.kinds import WATER_KINDS, Kind, Shape
 from geography.features.maps import map_job, render_feature_maps
 from geography.features.model import Feature, Photo
@@ -175,6 +176,10 @@ class PlacesCollector:
             if feature.wikipedia:
                 sentence = self.wikipedia.first_sentence(article_title(feature.wikipedia))
                 feature.description = CONTESTED_ALIAS.sub("", sentence) if sentence else sentence
+        for feature in features:
+            if feature.length_km and feature.description and disagrees(feature.length_km, feature.description):
+                logger.info("Leaving the length of %s empty: Wikidata says %.0f km, its description says otherwise", feature.name, feature.length_km)
+                feature.length_km = None
 
     def _add_photos(self, features: list[Feature], slugs: dict[str, str]) -> None:
         previous = self._previous_photos()
