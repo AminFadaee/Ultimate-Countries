@@ -7,7 +7,7 @@ from geography.features.wikidata import FeatureQueries
 from geography.sources.wikidata import DETAIL_BATCH, Wikidata, qid_of, values_clause
 
 MIN_LINKS = 12
-UNESCO_MIN_LINKS = 5
+INHABITED_ISLAND = 1000
 HILL = "Q54050"
 POLDER = "Q106259"
 FLOOR_SHARE = 0.3
@@ -84,8 +84,6 @@ def unesco(wikidata: Wikidata, country_qid: str) -> list[tuple[str, int]]:
             continue
         key = re.sub(r"\D*$", "", row["id"]) or row["id"]
         item = (qid_of(row["i"]), int(row["links"]))
-        if item[1] < UNESCO_MIN_LINKS:
-            continue
         if key not in best or item[1] > best[key][1]:
             best[key] = item
     return sorted(best.values(), key=lambda item: -item[1])
@@ -102,6 +100,15 @@ def heritage(wikidata: Wikidata, country_qid: str) -> list[tuple[str, int]]:
         if not NOT_BUILT_HERITAGE.search(row["label"]):
             items[qid_of(row["i"])] = int(row["links"])
     return sorted(items.items(), key=lambda item: -item[1])
+
+
+def inhabited_islands(wikidata: Wikidata, country_qid: str) -> list[tuple[str, int]]:
+    rows = wikidata._select(f"""
+        SELECT DISTINCT ?i ?links WHERE {{
+          ?i wdt:P17 wd:{country_qid} ; wdt:P31/wdt:P279* wd:Q23442 ; wdt:P1082 ?population ; wikibase:sitelinks ?links .
+          FILTER(?population >= {INHABITED_ISLAND} && ?links < {MIN_LINKS})
+        }}""")
+    return sorted(((qid_of(row["i"]), int(row["links"])) for row in rows), key=lambda item: -item[1])
 
 
 def extremes(wikidata: Wikidata, country_qid: str) -> dict[str, list[str]]:
@@ -173,6 +180,7 @@ def select_places(wikidata: Wikidata, country_qid: str, excluded: set[str]) -> t
         add([(qid, links)], natural_kind.get(qid, Kind.LANDMARK), "unesco")
     for kind, items, cap in naturals:
         add(items, kind, "natural", cap)
+    add(inhabited_islands(wikidata, country_qid), Kind.ISLAND, "natural")
     built = heritage(wikidata, country_qid)
     third = built[min(2, len(built) - 1)][1] if built else 0
     built = [item for item in built if item[1] >= max(HERITAGE_MIN_LINKS, FLOOR_SHARE * third)]
