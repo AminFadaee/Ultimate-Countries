@@ -37,6 +37,8 @@ government and notable cities, under a line with its region. They are there to r
 
 A card is only created when its data exists, and a fact that is missing is simply left out. When two countries have a capital of the same name (Jerusalem, Victoria, Kingston), the "Capital of" card is left out, because the name alone could not tell them apart.
 
+The maps of ten small island countries are framed by hand, in the list in `island_frames.py`, because a rule that helps Tuvalu would spoil Greece. Each shows a red circle around its islands; most add a magnifier with the islands drawn no smaller than a minimum size, so a speck such as Redonda stays a speck next to Antigua and Barbuda, and some zoom out to show a larger neighbour (India for the Maldives, Madagascar for the Comoros). `uv run geography country-maps` redraws those maps, or the countries whose codes you pass.
+
 Tap or click a country or city map to zoom in on that spot; drag to look around, and tap again to close.
 
 <p>
