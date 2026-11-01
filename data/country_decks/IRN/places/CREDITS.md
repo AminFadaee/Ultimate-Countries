@@ -38,6 +38,8 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Gonbad-e Qabus | Hadi Karimi | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gonbad-e_Qabus_Tower_by_Hadi_Karimi.jpg) |
 | Grand Bazaar | Ninara from Helsinki, Finland | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Grand_Bazaar,_Tehran_(41723686785).jpg) |
 | Hasht Behesht | Ermac Kiyani | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%DA%A9%D8%A7%D8%AE_%D9%87%D8%B4%D8%AA_%D8%A8%D9%87%D8%B4%D8%AA_01%2B.jpg) |
+| Heritage district of Yazd | s1ingshot | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Yazd_Historic_City.jpg) |
+| Hyrcanian Forests | Gholamreza Rezaei Aghozgole | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Caspian_Hyrcanian_Mixed_Forests_in_Northern_Iran_10.jpg) |
 | Imam Khomeini International Airport | Kat1100 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:IKA_Airport_main_terminal_(cropped).jpg) |
 | Imam Reza Shrine | Iahsan at English Wikipedia | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:RezaShrine.jpg) |
 | Jameh Mosque of Isfahan | Hamidespanani | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20180301124354_IMG_4179And6more_Interior_3.jpg) |
