@@ -13,9 +13,11 @@ from geography.countrydeck.deck import build_country_deck
 from geography.countrydeck.speech import speak_country
 from geography.data import NaturalEarth
 from geography.db import Database
+from geography.island_frames import ISLAND_FRAMES
 from geography.deck import build_deck
 from geography.features.collect import PlacesCollector, PlacesOptions, PlacesPaths
 from geography.features.deck import build_places_deck
+from geography.maps import redraw_country_maps
 from geography.naming import slugify
 from geography.places import PlaceFinder
 from geography.render import Borders, LocatorMap
@@ -83,6 +85,11 @@ def parse_args() -> argparse.Namespace:
     country.add_argument("--include-overseas", action="store_true", help="also make cards for provinces far from the mainland")
     country.add_argument("--rerender-maps", action="store_true", help="redraw maps that already exist, reusing any whose inputs are unchanged")
     country.add_argument("--workers", type=int, default=2, help="parallel map renderers")
+
+    country_maps = commands.add_parser("country-maps", help="redraw the maps of the given countries (ISO alpha-3 codes) from the exported data, or of every island country with its own framing")
+    country_maps.add_argument("codes", nargs="*")
+    country_maps.add_argument("--data-dir", type=pathlib.Path, default=DATA_DIR)
+    country_maps.add_argument("--workers", type=int, default=2)
 
     country_deck = commands.add_parser("country-deck", help="build the Anki deck of one country")
     country_deck.add_argument("code")
@@ -155,6 +162,8 @@ def main() -> None:
             run_country(args.code.upper(), args.language, args.include_overseas, args.rerender_maps, args.workers)
         case "country-deck":
             build_country_deck(args.code.upper(), BUILD_DIR, args.output, tone_photos=not args.plain_photos)
+        case "country-maps":
+            redraw_country_maps({code.upper() for code in args.codes} or set(ISLAND_FRAMES), args.data_dir, args.workers)
         case "country-audio":
             speak_country(args.code.upper())
         case "samples":

@@ -31,6 +31,7 @@ RENDERER_FILES = (
     "features/kinds.py",
     "sources/natural_earth_physical.py",
     "country_labels.py",
+    "island_frames.py",
     "countrydeck/maps.py",
 )
 LIBRARIES = ("matplotlib", "cartopy", "shapely", "geopandas", "pillow", "pyproj", "numpy", "pandas")

@@ -97,6 +97,7 @@ class Framing(StrEnum):
     REGION = "region"
     COUNTRY = "country"
     ANCHORED = "anchored"
+    CONTEXT = "context"
 
 
 class Borders(StrEnum):
@@ -126,6 +127,8 @@ class Scene:
     regions: gpd.GeoSeries
     min_zoom_span: float = 0.0
     zoom_threshold: float = ZOOM_THRESHOLD
+    marker_only: bool = False
+    frame_scale: float = 1.0
     lens_highlight: gpd.GeoSeries | None = None
     lens_host: gpd.GeoSeries | None = None
     framing: Framing = Framing.REGION
@@ -308,6 +311,8 @@ def least_covered_corner(highlight: gpd.GeoSeries, projection: ccrs.Projection, 
 def get_frame_area(scene: "Scene", mainland: gpd.GeoSeries, projection: ccrs.Projection) -> tuple[gpd.GeoSeries, Framing]:
     if scene.framing is Framing.REGION:
         return mainland, Framing.REGION
+    if scene.framing is Framing.CONTEXT:
+        return scene.frame, Framing.COUNTRY
     country = get_nearby_parts(scene.frame, mainland)
     minx, miny, maxx, maxy = country.to_crs(projection).total_bounds
     if max(maxx - minx, maxy - miny) < MIN_COUNTRY_FRAME_HEIGHT:
@@ -431,11 +436,13 @@ class LocatorMap:
         save_compact(rendered, out_path, (style.highlight, style.host, style.outline, Color.DISPUTED))
 
     def render(self, scene: Scene, out_path: pathlib.Path, answer_path: pathlib.Path | None = None) -> None:
-        mainland = get_mainland(scene.frame)
+        mainland = gpd.GeoSeries([scene.frame.union_all()], crs=scene.frame.crs) if scene.framing is Framing.CONTEXT else get_mainland(scene.frame)
         lat, lng = get_center(mainland)
         projection = ccrs.LambertAzimuthalEqualArea(central_longitude=lng, central_latitude=lat)
         area, framing = get_frame_area(scene, mainland, projection)
         extent = get_frame(area, projection, self.aspect_ratio, framing)
+        if scene.frame_scale != 1.0:
+            extent = Extent(extent.width * scene.frame_scale, extent.height * scene.frame_scale, extent.x, extent.y)
         zoom = get_zoom(scene.lens_subject, projection, extent, scene.min_zoom_span, scene.zoom_threshold)
         aspect = extent.width / extent.height
         if scene.cities:
@@ -746,6 +753,10 @@ class LocatorMap:
             (zoom.lens.y - ymin) * scale,
             max(MARKER_RADIUS, MARKER_REACH * reach),
         )
+        style = {"color": scene.style.highlight, "linewidth": 1.2, "transform": fig.dpi_scale_trans}
+        if scene.marker_only:
+            fig.add_artist(patches.Circle((marker.x, marker.y), marker.radius, fill=False, **style))
+            return
         lens = place_lens(marker, fig_w, fig_h, inset_corner)
 
         x, y, w, h = lens.rect
@@ -761,7 +772,6 @@ class LocatorMap:
             else:
                 self._draw_detail(ax, scene, projection, zoom.lens)
 
-        style = {"color": scene.style.highlight, "linewidth": 1.2, "transform": fig.dpi_scale_trans}
         fig.add_artist(patches.Circle((marker.x, marker.y), marker.radius, fill=False, **style))
         for xs, ys in marker.tangents_to(lens):
             fig.add_artist(Line2D(xs, ys, **style))

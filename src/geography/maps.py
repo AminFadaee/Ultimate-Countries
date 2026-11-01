@@ -12,6 +12,7 @@ from shapely.geometry import Point, shape
 
 from geography.data import Country, NaturalEarth
 from geography.detail import AREA_TYPES, DetailLayers, simplify
+from geography.island_frames import ISLAND_FRAMES, island_scene
 from geography.labels import CityLabel
 from geography.map_cache import through_cache
 from geography.places import Place
@@ -61,6 +62,8 @@ class MapWorker:
             scene = Scene.for_country(country, Borders.COUNTRIES)
             if detail is not None:
                 scene = replace(scene, lens_highlight=gpd.GeoSeries([detail], crs=data.crs))
+            if job.alpha_3 in ISLAND_FRAMES:
+                scene = island_scene(scene, country, data, ISLAND_FRAMES[job.alpha_3])
         else:
             geometry = place_geometry(job, data.crs)
             if job.place_geometry is not None:
@@ -140,3 +143,15 @@ def draw_maps(jobs: list[MapJob], workers: int) -> Iterable[tuple[MapJob, Except
             if done % 25 == 0 or done == len(jobs):
                 logger.info("Maps: %d/%d rendered", done, len(jobs))
             yield job, error
+
+
+def redraw_country_maps(codes: Iterable[str], data_dir: pathlib.Path, workers: int, output_dir: pathlib.Path | None = None) -> None:
+    jobs = []
+    for path in sorted((data_dir / "countries").glob("*.json")):
+        document = json.loads(path.read_text())
+        if document["codes"]["alpha_3"] in codes:
+            output = data_dir / document["map"] if output_dir is None else output_dir / pathlib.Path(document["map"]).name
+            jobs.append(MapJob(document["id"], document["id"], output, document["name"], document["codes"]["alpha_3"]))
+    for job, error in render_maps(jobs, workers):
+        if error:
+            logger.error("Map failed for %s: %s", job.entity_name, error)
