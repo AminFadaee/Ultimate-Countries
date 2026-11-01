@@ -1,5 +1,6 @@
 import itertools
 import re
+import unicodedata
 from dataclasses import dataclass
 
 from geography.sources.http import TIMEOUT
@@ -38,6 +39,10 @@ def unit_words(wikidata: Wikidata, language: str) -> set[str]:
     rows = wikidata._select(f"""
         SELECT ?label WHERE {{ VALUES ?type {{ {values_clause(UNIT_TYPES)} }} ?type rdfs:label ?label . FILTER(lang(?label) = "{language}") }}""")
     return {row["label"] for row in rows}
+
+
+def normalised(native: str | None) -> str | None:
+    return unicodedata.normalize("NFKC", native) if native else native
 
 
 def without_unit_word(native: str | None, words: set[str]) -> str | None:
@@ -79,5 +84,5 @@ def named(wikidata: Wikidata, qids: set[str], language: str, strip_type: bool = 
             qid = qid_of(row["i"])
             label = row.get("label") or row.get("mul") or row.get("native") or qid
             name = shorter_name(label, row.get("title"))
-            found.setdefault(qid, Names(TYPE_SUFFIX.sub("", name) if strip_type else name, without_unit_word(exact.get(qid, row.get("native")), words)))
+            found.setdefault(qid, Names(TYPE_SUFFIX.sub("", name) if strip_type else name, without_unit_word(normalised(exact.get(qid, row.get("native"))), words)))
     return found
