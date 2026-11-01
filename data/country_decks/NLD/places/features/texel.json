@@ -1,0 +1,30 @@
+{
+  "key": "Q47009672",
+  "qid": "Q47009672",
+  "name": "Texel",
+  "kind": "Island",
+  "countries": [
+    "Netherlands"
+  ],
+  "continents": [
+    "Europe"
+  ],
+  "city": null,
+  "height_m": null,
+  "elevation_m": null,
+  "length_km": null,
+  "area_km2": 463.28,
+  "built": null,
+  "culture": null,
+  "description": null,
+  "native": "Texel",
+  "world_heritage": false,
+  "tags": [
+    "Island",
+    "Europe"
+  ],
+  "map": "places/maps/texel.png",
+  "photo": null,
+  "wikipedia": null,
+  "fame": 4
+}
