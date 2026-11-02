@@ -13,6 +13,7 @@ from geography.features.lengths import disagrees
 from geography.features.kinds import WATER_KINDS, Kind, Shape
 from geography.features.maps import map_job, render_feature_maps
 from geography.features.model import Feature, Photo
+from geography.features.riverart.facts import RiverArt, RiverResearch
 from geography.features.spatial import (
     CLAIM_REACH_M,
     LAKE_SHORE_M,
@@ -218,16 +219,34 @@ class PlacesCollector:
 
     def _render_maps(self, features: list[Feature], slugs: dict[str, str], options: PlacesOptions) -> None:
         jobs = []
+        art = self._river_art(features)
         for feature in features:
             output = self.paths.maps / f"{slugs[feature.key]}.png"
             feature.map = self.paths.relative(output)
             if options.rerender_maps or not output.exists():
-                jobs.append(map_job(feature, output, self.paths.root / feature.photo.file if feature.photo else None))
+                jobs.append(map_job(feature, output, self.paths.root / feature.photo.file if feature.photo else None, art.get(feature.key)))
         by_key = {feature.key: feature for feature in features}
         for job, error in render_feature_maps(jobs, options.workers):
             if error:
                 logger.error("Map failed for %s: %s", by_key[job.key].name, error)
                 by_key[job.key].map = None
+
+    def _river_art(self, features: list[Feature]) -> dict[str, RiverArt]:
+        rivers = [feature for feature in features if feature.kind is Kind.RIVER and feature.qid]
+        if not rivers:
+            return {}
+        research = RiverResearch(self.session, self.wikidata)
+        found = {}
+        for feature in rivers:
+            try:
+                art = research.art(feature)
+            except Exception:
+                logger.exception("No river art for %s; its map stays plain", feature.name)
+                continue
+            if art:
+                found[feature.key] = art
+                feature.extras["river"] = art.facts
+        return found
 
     def _export(self, features: list[Feature], slugs: dict[str, str]) -> int:
         self.paths.features.mkdir(parents=True, exist_ok=True)

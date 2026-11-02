@@ -10,6 +10,7 @@ from enum import StrEnum
 import cartopy.crs as ccrs
 import geopandas as gpd
 import numpy as np
+import pandas as pd
 import shapely
 from shapely import affinity
 from shapely.errors import GEOSException
@@ -19,6 +20,9 @@ from geography.data import NaturalEarth
 from geography.detail import DetailLayers
 from geography.features.kinds import WATER_KINDS, Kind, Shape
 from geography.features.model import Feature
+from geography.features.riverart.facts import RiverArt
+from geography.features.riverart.kinds import MouthKind
+from geography.features.riverart.paint import paint_river
 from geography.features.spatial import CRS
 from geography.map_cache import through_cache
 from geography.render import (
@@ -46,6 +50,10 @@ BORDER_FRAME_M = 350_000
 FRAME_SEGMENTS = 32
 MAX_FRAME_WIDTH_M = 15_000_000
 MIN_CONTEXT = 1.05
+RIVER_CONTEXT = 1.3
+RIVER_MIN_FRAME_M = 350_000
+RIVER_HAIRLINE_SHARE = 0.0004
+RIVER_BLUE = "#4f93cf"
 WALL_BAND_FACTOR = 1.5
 LINE_TYPES = ("LineString", "MultiLineString")
 PLACE_ZOOM_THRESHOLD = 0.07
@@ -69,6 +77,7 @@ class FeatureMapJob:
     host_country: str | None
     on_border: bool
     photo: pathlib.Path | None = None
+    art: RiverArt | None = None
 
 
 def is_line(job: FeatureMapJob) -> bool:
@@ -84,15 +93,15 @@ def size_of(geometry: gpd.GeoSeries) -> float:
     return max(maxx - minx, maxy - miny)
 
 
-def frame_around(geometry: gpd.GeoSeries, context: float = CONTEXT) -> gpd.GeoSeries:
+def frame_around(geometry: gpd.GeoSeries, context: float = CONTEXT, min_frame: float = MIN_FRAME_M) -> gpd.GeoSeries:
     local = local_projection(geometry)
     projected = gpd.GeoSeries([box(*geometry.to_crs(local).total_bounds)], crs=local)
     size = size_of(geometry)
-    factor = max(context, MIN_FRAME_M / size) if size else 1.0
+    factor = max(context, min_frame / size) if size else 1.0
     scaled = projected.apply(lambda envelope: affinity.scale(envelope, factor, factor))
     if not size:
-        scaled = projected.centroid.buffer(MIN_FRAME_M / 2).envelope
-    return scaled.segmentize(size * factor / FRAME_SEGMENTS if size else MIN_FRAME_M).to_crs(CRS)
+        scaled = projected.centroid.buffer(min_frame / 2).envelope
+    return scaled.segmentize(size * factor / FRAME_SEGMENTS if size else min_frame).to_crs(CRS)
 
 
 def without_specks(shape, min_area: float):
@@ -165,6 +174,19 @@ def line_scene(job: FeatureMapJob) -> Scene:
         zoom_threshold=PLACE_ZOOM_THRESHOLD,
         style=job.kind.spec.palette.style(Shape.LINE),
     )
+
+
+def river_scene(job: FeatureMapJob) -> Scene:
+    art = job.art
+    context = [*art.tributaries.values(), gpd.GeoSeries([art.source_point], crs=CRS)]
+    if art.source_area is not None:
+        context.append(art.source_area)
+    if art.sink and art.sink.outline is not None and art.mouth.kind is not MouthKind.LAKE:
+        context.append(art.sink.outline)
+    frame = frame_around(gpd.GeoSeries(pd.concat([job.geometry, *context]).values, crs=CRS), RIVER_CONTEXT, RIVER_MIN_FRAME_M)
+    scene = line_scene(job)
+    hairline = job.geometry.to_crs(local_projection(job.geometry)).buffer(size_of(frame) * RIVER_HAIRLINE_SHARE).to_crs(CRS)
+    return replace(scene, frame=frame, highlight=hairline, style=replace(scene.style, highlight=RIVER_BLUE), overlay=functools.partial(paint_river, art))
 
 
 def point_scene(job: FeatureMapJob, data: NaturalEarth) -> Scene:
@@ -324,7 +346,8 @@ class FeatureMapWorker:
         elif view is not View.REGIONAL:
             cls._render_world(job)
         elif is_line(job):
-            cls.renderer.render(replace(line_scene(job), photo=job.photo), job.output)
+            scene = river_scene(job) if job.art else line_scene(job)
+            cls.renderer.render(replace(scene, photo=job.photo), job.output)
         elif shape is Shape.POINT or job.geometry.geom_type.iloc[0] == "Point":
             try:
                 cls.renderer.render(replace(point_scene(job, cls.renderer.data), photo=job.photo), job.output)
@@ -348,9 +371,10 @@ class FeatureMapWorker:
             cls.renderer.render_world(job.output, style, centre, areas=job.geometry)
 
 
-def map_job(feature: Feature, output: pathlib.Path, photo: pathlib.Path | None = None) -> FeatureMapJob:
+def map_job(feature: Feature, output: pathlib.Path, photo: pathlib.Path | None = None, art: RiverArt | None = None) -> FeatureMapJob:
     host = feature.countries[0].alpha_3 if feature.countries else None
-    return FeatureMapJob(feature.key, feature.kind, feature.geometry, output, host, len(feature.countries) > 1, photo)
+    geometry = art.river if art else feature.geometry
+    return FeatureMapJob(feature.key, feature.kind, geometry, output, host, len(feature.countries) > 1, photo, art)
 
 
 def render_feature_maps(jobs: list[FeatureMapJob], workers: int) -> Iterable[tuple[FeatureMapJob, Exception | None]]:

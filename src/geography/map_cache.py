@@ -29,6 +29,11 @@ RENDERER_FILES = (
     "places.py",
     "features/maps.py",
     "features/kinds.py",
+    "features/riverart/facts.py",
+    "features/riverart/geometry.py",
+    "features/riverart/icons.py",
+    "features/riverart/kinds.py",
+    "features/riverart/paint.py",
     "sources/natural_earth_physical.py",
     "country_labels.py",
     "island_frames.py",
@@ -66,6 +71,18 @@ def feed(content, value) -> None:
         content.update(b"".join(geometry.wkb for geometry in value if geometry is not None))
     elif isinstance(value, pathlib.Path) and value.exists():
         content.update(file_digest(value).encode())
+    elif dataclasses.is_dataclass(value):
+        for field in dataclasses.fields(value):
+            feed(content, getattr(value, field.name))
+    elif isinstance(value, dict):
+        for key in sorted(value):
+            feed(content, key)
+            feed(content, value[key])
+    elif isinstance(value, (list, tuple)):
+        for item in value:
+            feed(content, item)
+    elif hasattr(value, "wkb"):
+        content.update(value.wkb)
     else:
         content.update(repr(value).encode())
 
