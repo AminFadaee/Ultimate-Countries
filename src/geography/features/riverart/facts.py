@@ -145,7 +145,8 @@ class RiverResearch:
         linked, source_rivers = self._linked_rivers(mouth_row if mouth_is_river else None, [c for c in candidates if c["classes"] & RIVER_LIKE], window)
         sink = None if mouth_is_river or not mouth_row or mouth_classes & MARINE else self._sink(mouth_row["m"], river, window)
         source_area, source_lake, kind = self._source_terrain(origin)
-        upstream, mouth_point = self._ends(river, origin, source_area, source_lake, mouth_row, mouth_classes, mouth_is_river, tributaries)
+        mouth_river = linked.get(mouth_row["ml"]) if mouth_is_river else None
+        upstream, mouth_point = self._ends(river, origin, source_area, source_lake, mouth_row, mouth_classes, mouth_is_river, mouth_river, tributaries)
         main = river_geometry.main_pieces(river)
         path = river_geometry.ordered_path(main, upstream, mouth_point)
         river = river_geometry.without_side_channels(river, path)
@@ -306,13 +307,15 @@ class RiverResearch:
             area = None
         return area, lake, kind
 
-    def _ends(self, river, origin, area, lake, mouth_row, mouth_classes, mouth_is_river, tributaries) -> tuple[Point, Point]:
+    def _ends(self, river, origin, area, lake, mouth_row, mouth_classes, mouth_is_river, mouth_river, tributaries) -> tuple[Point, Point]:
         first, second = river_geometry.river_ends(river_geometry.main_pieces(river))
         origin_point = as_point(point_of(origin["c"])) if origin else None
         mouth_point = as_point(point_of(self._point_of_item(mouth_row["m"]))) if mouth_row else None
         if origin_point:
             reference = lake.union_all() if lake is not None else area.union_all() if area is not None else None
             upstream, mouth = sorted((first, second), key=lambda p: (round(p.distance(reference), 3) if reference is not None else 0, p.distance(origin_point)))
+        elif mouth_river is not None:
+            mouth, upstream = sorted((first, second), key=lambda p: p.distance(mouth_river.union_all()))
         elif mouth_point and tributaries and mouth_classes and not mouth_classes & MARINE and not mouth_is_river:
             centre = MultiPoint([Point(c) for lines in tributaries.values() for line in lines.explode(index_parts=False) for c in list(line.coords)[::10]]).centroid
             upstream, mouth = sorted((first, second), key=lambda p: p.distance(centre))
