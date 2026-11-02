@@ -145,6 +145,21 @@ def dissolved(frame: gpd.GeoDataFrame, id_column: str) -> dict[str, gpd.GeoSerie
     }
 
 
+SHAPED_LAYERS = (PhysicalLayer.RIVERS, PhysicalLayer.LAKES, PhysicalLayer.REGIONS, PhysicalLayer.MARINE)
+
+
+def natural_earth_shapes() -> dict[str, gpd.GeoSeries]:
+    shapes: dict[str, gpd.GeoSeries] = {}
+    for layer in SHAPED_LAYERS:
+        frame = load_layer(layer)
+        if layer is PhysicalLayer.RIVERS:
+            by_name = frame.groupby(frame["name"].str.casefold())["wikidataid"].transform(lambda ids: ids.dropna().iloc[0] if ids.notna().any() else None)
+            frame["wikidataid"] = frame["wikidataid"].fillna(by_name)
+        for qid, geometry in dissolved(frame, "wikidataid").items():
+            shapes.setdefault(qid, geometry)
+    return shapes
+
+
 class Catalog:
     def __init__(self, session, wikidata: Wikidata, wikipedia: Wikipedia, locator: CountryLocator, data: NaturalEarth):
         self.session = session

@@ -11,7 +11,7 @@ from geography.countrydeck.maps import PlaceMapJob, render_place_maps
 from geography.countrydeck.names import named
 from geography.countrydeck.selection import inscribed, natural_sites, select_places, wholes
 from geography.data import CONTESTED_TYPES, NaturalEarth
-from geography.features.catalog import complete_rivers, dissolved
+from geography.features.catalog import complete_rivers, natural_earth_shapes
 from geography.features.collect import PlacesCollector, PlacesPaths, unique_slugs
 from geography.features.kinds import Kind, Shape
 from geography.features.model import Feature
@@ -23,21 +23,6 @@ from geography.sources.natural_earth_physical import PhysicalLayer, load_layer
 from geography.sources.wikidata import Wikidata
 
 logger = logging.getLogger(__name__)
-SHAPED_LAYERS = (PhysicalLayer.RIVERS, PhysicalLayer.LAKES, PhysicalLayer.REGIONS, PhysicalLayer.MARINE)
-
-
-def natural_earth_shapes() -> dict[str, gpd.GeoSeries]:
-    shapes: dict[str, gpd.GeoSeries] = {}
-    for layer in SHAPED_LAYERS:
-        frame = load_layer(layer)
-        if layer is PhysicalLayer.RIVERS:
-            by_name = frame.groupby(frame["name"].str.casefold())["wikidataid"].transform(lambda ids: ids.dropna().iloc[0] if ids.notna().any() else None)
-            frame["wikidataid"] = frame["wikidataid"].fillna(by_name)
-        for qid, geometry in dissolved(frame, "wikidataid").items():
-            shapes.setdefault(qid, geometry)
-    return shapes
-
-
 def resolve_shapes(wikidata: Wikidata, features: list[Feature]) -> None:
     shapes = natural_earth_shapes()
     pending = [feature for feature in features if feature.kind.spec.shape is not Shape.POINT and feature.qid not in shapes]
