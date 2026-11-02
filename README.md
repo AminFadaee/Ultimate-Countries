@@ -128,13 +128,22 @@ To leave a kind out for good, open the Browser, search for its tag and suspend t
 | Continents | Natural Earth | All of them |
 | Oceans and seas | Marine Regions (the IHO sea areas), Natural Earth for seas IHO doesn't cover (Caspian) | Linked to Wikidata; halves and basins merge into the whole sea, and marginal seas into the sea they belong to |
 | Mountain ranges, deserts, plateaus, plains, basins, valleys, deltas, wetlands, peninsulas, isthmuses | Natural Earth physical regions | Natural Earth's importance rank, plus enough Wikipedia coverage to be well known |
-| Rivers, lakes, reefs | Natural Earth | Same as above |
+| Rivers, lakes, reefs | Natural Earth | Same as above. A river's map also shows its source and mouth (see below) |
 | Mountains and volcanoes | Natural Earth peaks and Wikidata | Well known; volcanoes by their Wikidata type |
 | Waterfalls, canyons, canals | Wikidata, with shapes from Natural Earth and OpenStreetMap | The best known of each kind |
 | Rainforests | RESOLVE Ecoregions 2017 | Large continuous blocks of tropical moist forest, named after the forest or the basin or island they cover |
 | Regions | Wikipedia, Natural Earth | Regions whose Wikipedia infobox lists their countries (Scandinavia, the Middle East…), drawn from those countries; Natural Earth's own outline is used where the listed countries only partly belong to the region (the Sahel) and for island groups (Melanesia, Micronesia, Polynesia). Siberia is built from the Russian provinces that Wikidata lists as its parts |
 | Landmarks | Wikidata, OpenStreetMap | World Heritage sites and famous structures that are buildings, monuments or archaeological sites; living cities are left out. When Wikidata says one landmark is part of another that is also in the deck (the Great Pyramid in the Giza complex), only the more widely covered one is kept. Walls (the Great Wall, Hadrian's Wall) are drawn as lines from OpenStreetMap, joined across gaps of up to about 40 km |
 | Lines | Natural Earth | The Equator, the tropics, the polar circles and the International Date Line, plus the Prime Meridian |
+
+### River maps
+
+A river map shows the river as a blue line with small arrows for the direction of flow, and marks where it begins, where it ends and the best-known places on the way. Every name sits on the map and no river is labelled with its own name.
+
+- **Source.** A mountain range, plateau or pass gets ink mountains and a brown label; a glacier an icy peak; a spring a rock with water coming out; a swamp or other wetland trees or reeds; a cave, a dam, a lake or a reservoir its own picture; a city, town, commune or village a small group of buildings that matches. A source that is itself a river (the Breg and Brigach for the Danube) is drawn in grey with its name. A source with no known type shows nothing, and a name that only describes the source ("source of the Seine River") becomes its type ("Spring").
+- **Mouth.** The sea, lake or river it flows into is named. A river that ends inland fades into dunes, or runs into a drawn basin, delta or dried lake ("Aral Sea (dried)"). A delta Wikidata does not outline is drawn as a fan of channels.
+- **On the way.** Waterfalls, dams, gorges and lakes with at least 100 Wikipedia language editions that lie within half a degree of the river (Victoria Falls on the Zambezi, the Aswan Dam on the Nile, the Grand Canyon on the Colorado).
+- **Sources of the facts.** Wikidata gives the source, mouth, tributaries and places; when it has no source, or names an area such as a basin as the mouth, the river's English Wikipedia infobox is used instead. The line comes from Natural Earth, or OpenStreetMap where that is clearly longer. What each river map shows is recorded in the `river` field of its file in `data/places/features`.
 
 Countries are computed from the shapes: the countries that hold a share of an area, border a sea or lake, contain a point or are
 crossed by a line or river. A country that Wikidata names for a place is added only if it lies within 50 km of it. Continents come from the Natural Earth continent shapes, so Siberia is in Asia and Martinique in the Americas. Facts (heights, lengths, areas) come from Wikidata, converted to metric; build dates and cultures
