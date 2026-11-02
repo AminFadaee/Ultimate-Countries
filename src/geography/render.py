@@ -2,6 +2,7 @@ import io
 import itertools
 import math
 import pathlib
+from collections.abc import Callable
 from dataclasses import dataclass, replace
 from enum import StrEnum
 
@@ -140,6 +141,7 @@ class Scene:
     naming: Naming | None = None
     marker: tuple[float, float] | None = None
     country: gpd.GeoSeries | None = None
+    overlay: Callable | None = None
 
     @classmethod
     def for_country(cls, country: Country, borders: Borders) -> "Scene":
@@ -466,6 +468,8 @@ class LocatorMap:
                 self._plot_zoom(fig, scene, projection, extent, zoom, inset_corner)
             elif scene.photo:
                 self._plot_corner_photo(fig, scene)
+            if scene.overlay:
+                scene.overlay(self, fig, projection, extent)
             if scene.cities:
                 labels = CityLabels(fig, fig.axes[0], projection, extent, scene.cities, scene.style.highlight)
                 self._label_neighbours(Placer(fig, fig.axes[0], labels.obstacles()), scene, projection, extent)
