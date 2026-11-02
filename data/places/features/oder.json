@@ -20,6 +20,33 @@
   "culture": null,
   "description": "The Oder is a river in Central Europe.",
   "native": null,
+  "river": {
+    "source": null,
+    "mouth": {
+      "name": "Szczecin Lagoon",
+      "qid": "Q161385",
+      "kind": "land",
+      "classes": [
+        "estuarine lagoon"
+      ],
+      "point": [
+        14.140277777,
+        53.804444444
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Barycz",
+      "Bóbr",
+      "Lusatian Nysa",
+      "Nysa Kłodzka",
+      "Warta"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

@@ -20,6 +20,47 @@
   "culture": null,
   "description": "The Congo River, formerly also known as the Zaire River, is the second-longest river in Africa, shorter only than the Nile, as well as the third largest river in the world by discharge volume, following the Amazon and Ganges–Brahmaputra rivers.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Boyoma Falls",
+      "qid": "Q38417",
+      "kind": "unknown",
+      "classes": [
+        "rapids",
+        "waterfall"
+      ],
+      "point": [
+        25.206388888,
+        0.491111111
+      ]
+    },
+    "mouth": {
+      "name": "Atlantic Ocean",
+      "qid": "Q97",
+      "kind": "sea",
+      "classes": [
+        "ocean"
+      ],
+      "point": [
+        -30.0,
+        0.0
+      ]
+    },
+    "linked_rivers": [
+      "Lualaba River"
+    ],
+    "tributaries": [
+      "Aruwimi River",
+      "Kasai River",
+      "Lomami River",
+      "Lualaba River",
+      "Tshuapa River"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

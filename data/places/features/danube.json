@@ -27,6 +27,35 @@
   "culture": null,
   "description": "The Danube is a river in Europe, the second-longest after the Volga.",
   "native": null,
+  "river": {
+    "source": null,
+    "mouth": {
+      "name": "Black Sea",
+      "qid": "Q166",
+      "kind": "sea",
+      "classes": [
+        "adjacent sea"
+      ],
+      "point": [
+        34.26,
+        43.41
+      ]
+    },
+    "linked_rivers": [
+      "Brigach"
+    ],
+    "tributaries": [
+      "Drava",
+      "Prut",
+      "Sava",
+      "Siret River",
+      "Tisza"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

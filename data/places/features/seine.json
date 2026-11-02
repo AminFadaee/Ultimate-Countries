@@ -18,6 +18,45 @@
   "culture": null,
   "description": "The Seine is a 777-kilometre-long (483 mi) river in northern France.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Spring",
+      "qid": "Q19969177",
+      "kind": "spring",
+      "classes": [
+        "river source"
+      ],
+      "point": [
+        4.717,
+        47.4859
+      ]
+    },
+    "mouth": {
+      "name": "English Channel",
+      "qid": "Q34640",
+      "kind": "sea",
+      "classes": [
+        "sea",
+        "strait"
+      ],
+      "point": [
+        -2.0,
+        50.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Aube",
+      "Eure",
+      "Marne",
+      "Oise",
+      "Yonne"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

@@ -18,6 +18,54 @@
   "culture": null,
   "description": "The Yangtze River, Yangzi River or Chang Jiang is the longest river in China and the third-longest river in the world.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Tibetan Plateau",
+      "qid": "Q179842",
+      "kind": "highland",
+      "classes": [
+        "plateau",
+        "region"
+      ],
+      "point": [
+        88.0,
+        33.0
+      ]
+    },
+    "mouth": {
+      "name": "East China Sea",
+      "qid": "Q45341",
+      "kind": "sea",
+      "classes": [
+        "marginal sea"
+      ],
+      "point": [
+        125.0,
+        30.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Han River",
+      "Huai River",
+      "Jialing River",
+      "Wu River",
+      "Yalong River"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [
+      {
+        "name": "Three Gorges Dam",
+        "qid": "Q12514",
+        "point": [
+          111.00367,
+          30.82386
+        ]
+      }
+    ],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

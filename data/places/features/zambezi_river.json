@@ -22,6 +22,55 @@
   "culture": null,
   "description": "The Zambezi is the fourth-longest river in Africa, the longest east-flowing river in Africa and the largest flowing into the Indian Ocean from Africa.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Lunda Plateau",
+      "qid": "Q1877395",
+      "kind": "highland",
+      "classes": [
+        "plateau"
+      ],
+      "point": [
+        22.234,
+        -7.3985
+      ]
+    },
+    "mouth": {
+      "name": "Indian Ocean",
+      "qid": "Q1239",
+      "kind": "sea",
+      "classes": [
+        "ocean",
+        "region",
+        "sea"
+      ],
+      "point": [
+        80.0,
+        -20.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Cuando River",
+      "Kabompo River",
+      "Kafue River",
+      "Luangwa River",
+      "Lungwebungu River"
+    ],
+    "lakes": [],
+    "waterfalls": [
+      {
+        "name": "Victoria Falls",
+        "qid": "Q43278",
+        "point": [
+          25.858055555,
+          -17.924777777
+        ]
+      }
+    ],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

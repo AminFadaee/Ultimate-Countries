@@ -20,6 +20,46 @@
   "culture": null,
   "description": "The Tigris is the eastern of the two great rivers that define Mesopotamia, the other being the Euphrates.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Lake Hazar",
+      "qid": "Q2380189",
+      "kind": "lake",
+      "classes": [
+        "rift lake"
+      ],
+      "point": [
+        39.4047,
+        38.4845
+      ]
+    },
+    "mouth": {
+      "name": "Shatt al-Arab",
+      "qid": "Q166966",
+      "kind": "river",
+      "classes": [
+        "river"
+      ],
+      "point": [
+        48.6077,
+        29.9369
+      ]
+    },
+    "linked_rivers": [
+      "Shatt al-Arab"
+    ],
+    "tributaries": [
+      "Botan River",
+      "Diyala River",
+      "Great Zab",
+      "Karkheh River",
+      "Little Zab"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

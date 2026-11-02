@@ -18,6 +18,49 @@
   "culture": null,
   "description": "The Volga is the longest river in Europe and the longest endorheic basin river in the world.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Valdai Hills",
+      "qid": "Q194196",
+      "kind": "highland",
+      "classes": [
+        "hill",
+        "mountain range",
+        "upland"
+      ],
+      "point": [
+        33.5,
+        57.0
+      ]
+    },
+    "mouth": {
+      "name": "Caspian Sea",
+      "qid": "Q5484",
+      "kind": "sea",
+      "classes": [
+        "endorheic lake",
+        "lake",
+        "salt lake",
+        "sea"
+      ],
+      "point": [
+        50.5,
+        42.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Kama",
+      "Oka",
+      "Samara",
+      "Sura",
+      "Vetluga"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

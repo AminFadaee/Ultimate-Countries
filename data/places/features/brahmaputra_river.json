@@ -21,6 +21,35 @@
   "culture": null,
   "description": "The Brahmaputra is a trans-boundary river which flows through Southwestern China, Northeastern India, and Bangladesh.",
   "native": null,
+  "river": {
+    "source": null,
+    "mouth": {
+      "name": "Ganges",
+      "qid": "Q5089",
+      "kind": "river",
+      "classes": [
+        "river",
+        "sacred river"
+      ],
+      "point": [
+        78.5975,
+        30.145
+      ]
+    },
+    "linked_rivers": [
+      "Ganges"
+    ],
+    "tributaries": [
+      "Lhasa River",
+      "Manas River",
+      "Subansiri River",
+      "Teesta River"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

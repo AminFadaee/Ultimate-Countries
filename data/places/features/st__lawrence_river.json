@@ -19,6 +19,45 @@
   "culture": null,
   "description": "The St. Lawrence River is a large international river in the middle latitudes of North America connecting the Great Lakes with the North Atlantic Ocean.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Lake Ontario",
+      "qid": "Q1062",
+      "kind": "lake",
+      "classes": [
+        "lake"
+      ],
+      "point": [
+        -78.106388888,
+        43.728888888
+      ]
+    },
+    "mouth": {
+      "name": "Gulf of Saint Lawrence",
+      "qid": "Q169523",
+      "kind": "sea",
+      "classes": [
+        "estuary",
+        "gulf"
+      ],
+      "point": [
+        -62.0,
+        48.25
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Ottawa River",
+      "Rivière Betsiamites",
+      "Rivière Moisie",
+      "Rivière aux Outardes",
+      "Saint-Maurice river"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

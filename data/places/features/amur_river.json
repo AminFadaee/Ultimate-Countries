@@ -19,6 +19,35 @@
   "culture": null,
   "description": "The Amur River or Heilong River is a perennial river in Northeast Asia, forming the natural border between the Russian Far East and Northeast China.",
   "native": null,
+  "river": {
+    "source": null,
+    "mouth": {
+      "name": "Sea of Okhotsk",
+      "qid": "Q41602",
+      "kind": "sea",
+      "classes": [
+        "marginal sea"
+      ],
+      "point": [
+        150.0,
+        55.0
+      ]
+    },
+    "linked_rivers": [
+      "Onon River"
+    ],
+    "tributaries": [
+      "Amgun River",
+      "Argun River",
+      "Songhua River",
+      "Ussuri",
+      "Zeya"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

@@ -20,6 +20,45 @@
   "culture": null,
   "description": "The Dnieper or Dnepr, also known as the Dnipro, is one of the major transboundary rivers of Europe, rising in the Valdai Hills near Smolensk, Russia, before flowing through Belarus and Ukraine to the Black Sea.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Valdai Hills",
+      "qid": "Q194196",
+      "kind": "highland",
+      "classes": [
+        "hill",
+        "mountain range",
+        "upland"
+      ],
+      "point": [
+        33.5,
+        57.0
+      ]
+    },
+    "mouth": {
+      "name": "Dnieper Estuary",
+      "qid": "Q2621029",
+      "kind": "sea",
+      "classes": [
+        "estuary"
+      ],
+      "point": [
+        31.765555555,
+        46.583055555
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Desna",
+      "Pripyat River",
+      "Psel",
+      "Sozh"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

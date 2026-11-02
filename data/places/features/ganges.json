@@ -19,6 +19,44 @@
   "culture": null,
   "description": "The Ganges is a trans-boundary river of Asia which flows through India and Bangladesh.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Gangotri Glacier",
+      "qid": "Q691557",
+      "kind": "glacier",
+      "classes": [
+        "glacier"
+      ],
+      "point": [
+        78.983333333,
+        30.983333333
+      ]
+    },
+    "mouth": {
+      "name": "Bay of Bengal",
+      "qid": "Q38684",
+      "kind": "sea",
+      "classes": [
+        "bay",
+        "body of water"
+      ],
+      "point": [
+        88.0,
+        15.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Ghaghara River",
+      "Gomti River",
+      "Son River",
+      "Yamuna"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

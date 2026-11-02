@@ -19,6 +19,52 @@
   "culture": null,
   "description": "The Nile is a major north-flowing river in northeast Africa which empties into the Mediterranean Sea.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Lake Victoria",
+      "qid": "Q5505",
+      "kind": "lake",
+      "classes": [
+        "freshwater lake",
+        "lake"
+      ],
+      "point": [
+        33.0,
+        -1.0
+      ]
+    },
+    "mouth": {
+      "name": "Mediterranean Sea",
+      "qid": "Q4918",
+      "kind": "sea",
+      "classes": [
+        "adjacent sea",
+        "drainage basin"
+      ],
+      "point": [
+        17.0,
+        38.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Blue Nile",
+      "White Nile"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [
+      {
+        "name": "Aswan Dam",
+        "qid": "Q38891",
+        "point": [
+          32.880192,
+          23.971431
+        ]
+      }
+    ],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

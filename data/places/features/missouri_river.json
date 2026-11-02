@@ -18,6 +18,37 @@
   "culture": null,
   "description": "The Missouri River is a river in the Central and Mountain West regions of the United States.",
   "native": null,
+  "river": {
+    "source": null,
+    "mouth": {
+      "name": "Mississippi River",
+      "qid": "Q1497",
+      "kind": "river",
+      "classes": [
+        "river"
+      ],
+      "point": [
+        -89.2508,
+        29.1536
+      ]
+    },
+    "linked_rivers": [
+      "Firehole River",
+      "Madison River",
+      "Mississippi River"
+    ],
+    "tributaries": [
+      "James River",
+      "Milk River",
+      "Niobrara River",
+      "White River",
+      "Yellowstone River"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

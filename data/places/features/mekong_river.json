@@ -23,6 +23,44 @@
   "culture": null,
   "description": "The Mekong or Mekong River is a transboundary river in East Asia and Southeast Asia.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Tibetan Plateau",
+      "qid": "Q179842",
+      "kind": "highland",
+      "classes": [
+        "plateau",
+        "region"
+      ],
+      "point": [
+        88.0,
+        33.0
+      ]
+    },
+    "mouth": {
+      "name": "South China Sea",
+      "qid": "Q37660",
+      "kind": "sea",
+      "classes": [
+        "sea"
+      ],
+      "point": [
+        113.0,
+        12.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Mun River",
+      "Nam Ngum",
+      "Nam Ou",
+      "Ngom Qu"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

@@ -20,6 +20,45 @@
   "culture": null,
   "description": "The Indus is a transboundary river of Asia and a trans-Himalayan river of South and Central Asia.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Tibetan Plateau",
+      "qid": "Q179842",
+      "kind": "highland",
+      "classes": [
+        "plateau",
+        "region"
+      ],
+      "point": [
+        88.0,
+        33.0
+      ]
+    },
+    "mouth": {
+      "name": "Arabian Sea",
+      "qid": "Q58705",
+      "kind": "sea",
+      "classes": [
+        "sea"
+      ],
+      "point": [
+        64.0,
+        16.0
+      ]
+    },
+    "linked_rivers": [
+      "Sengge Zangbo"
+    ],
+    "tributaries": [
+      "Gilgit River",
+      "Kabul River",
+      "Shyok River"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

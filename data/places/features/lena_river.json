@@ -18,6 +18,44 @@
   "culture": null,
   "description": "The Lena is a river in the Russian Far East and is the easternmost river of the three great rivers of Siberia which flow into the Arctic Ocean, the others being Ob and Yenisey.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Baikal Mountains",
+      "qid": "Q215950",
+      "kind": "highland",
+      "classes": [
+        "mountain range"
+      ],
+      "point": [
+        108.68972222,
+        55.56166667
+      ]
+    },
+    "mouth": {
+      "name": "Laptev Sea",
+      "qid": "Q7988",
+      "kind": "sea",
+      "classes": [
+        "marginal sea"
+      ],
+      "point": [
+        125.0,
+        76.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Aldan",
+      "Linde River",
+      "Olyokma",
+      "Vilyuy",
+      "Vitim"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

@@ -18,6 +18,42 @@
   "culture": null,
   "description": "The Yellow River, also known as Huang He, is the second-longest river in China and the sixth-longest in the world, with an estimated length of 5,464 km (3,395 mi) and a drainage basin of 795,000 km2 (307,000 sq mi).",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Bayan Har Mountains",
+      "qid": "Q619687",
+      "kind": "highland",
+      "classes": [
+        "mountain range"
+      ],
+      "point": [
+        98.21666667,
+        34.7
+      ]
+    },
+    "mouth": {
+      "name": "Bohai Sea",
+      "qid": "Q181969",
+      "kind": "sea",
+      "classes": [
+        "marginal sea"
+      ],
+      "point": [
+        119.9,
+        38.7
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Fen River",
+      "Tao River",
+      "Wei River"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

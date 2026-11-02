@@ -22,6 +22,44 @@
   "culture": null,
   "description": "The Niger River is the main river of West Africa, extending about 4,180 kilometres.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Fouta Djallon",
+      "qid": "Q850245",
+      "kind": "highland",
+      "classes": [
+        "mountain range",
+        "region"
+      ],
+      "point": [
+        -12.2975,
+        11.315
+      ]
+    },
+    "mouth": {
+      "name": "Gulf of Guinea",
+      "qid": "Q41430",
+      "kind": "sea",
+      "classes": [
+        "bay"
+      ],
+      "point": [
+        4.0,
+        1.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Bani River",
+      "Benue River",
+      "Kaduna River",
+      "Sokoto River"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

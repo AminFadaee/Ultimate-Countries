@@ -18,6 +18,45 @@
   "culture": null,
   "description": "The Mississippi River is the primary river of the largest drainage basin in the United States.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Lake Itasca",
+      "qid": "Q877319",
+      "kind": "lake",
+      "classes": [
+        "glacial lake"
+      ],
+      "point": [
+        -95.207222222,
+        47.218055555
+      ]
+    },
+    "mouth": {
+      "name": "Gulf of Mexico",
+      "qid": "Q12630",
+      "kind": "sea",
+      "classes": [
+        "gulf",
+        "mediterranean sea"
+      ],
+      "point": [
+        -90.0,
+        25.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Arkansas River",
+      "Des Moines River",
+      "Missouri River",
+      "Ohio River",
+      "White River"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

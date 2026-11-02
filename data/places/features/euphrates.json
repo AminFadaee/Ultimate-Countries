@@ -20,6 +20,37 @@
   "culture": null,
   "description": "The Euphrates is the longest and one of the most historically important rivers of West Asia.",
   "native": null,
+  "river": {
+    "source": null,
+    "mouth": {
+      "name": "Shatt al-Arab",
+      "qid": "Q166966",
+      "kind": "river",
+      "classes": [
+        "river"
+      ],
+      "point": [
+        48.6077,
+        29.9369
+      ]
+    },
+    "linked_rivers": [
+      "Karasu River",
+      "Murat River",
+      "Shatt al-Arab"
+    ],
+    "tributaries": [
+      "Balikh River",
+      "Karasu River",
+      "Khabur River",
+      "Murat River",
+      "Sayur Brook"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

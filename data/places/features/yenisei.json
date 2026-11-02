@@ -18,6 +18,47 @@
   "culture": null,
   "description": "The Yenisei or Yenisey is the fifth-longest river system in the world, and the largest to drain into the Arctic Ocean.",
   "native": null,
+  "river": {
+    "source": {
+      "name": "Tuva",
+      "qid": "Q960",
+      "kind": "unknown",
+      "classes": [
+        "federal subject of russia",
+        "republic of russia"
+      ],
+      "point": [
+        94.75,
+        51.783333333
+      ]
+    },
+    "mouth": {
+      "name": "Yenisei Gulf",
+      "qid": "Q1338198",
+      "kind": "sea",
+      "classes": [
+        "bay"
+      ],
+      "point": [
+        80.5,
+        72.3
+      ]
+    },
+    "linked_rivers": [
+      "Delgermörön",
+      "Ider River"
+    ],
+    "tributaries": [
+      "Angara",
+      "Kureyka",
+      "Nizhnyaya Tunguska",
+      "Podkamennaya Tunguska"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

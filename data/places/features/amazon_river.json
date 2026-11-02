@@ -20,6 +20,36 @@
   "culture": null,
   "description": "The Amazon River in South America is the largest river in the world by discharge volume of water, and the second-longest or longest river system in the world, a title which is disputed with the Nile.",
   "native": null,
+  "river": {
+    "source": null,
+    "mouth": {
+      "name": "Atlantic Ocean",
+      "qid": "Q97",
+      "kind": "sea",
+      "classes": [
+        "ocean"
+      ],
+      "point": [
+        -30.0,
+        0.0
+      ]
+    },
+    "linked_rivers": [
+      "Marañón River",
+      "Ucayali River"
+    ],
+    "tributaries": [
+      "Japurá River",
+      "Juruá River",
+      "Marañón River",
+      "Rio Negro",
+      "Tapajós River"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",
