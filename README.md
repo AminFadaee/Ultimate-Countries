@@ -140,10 +140,10 @@ To leave a kind out for good, open the Browser, search for its tag and suspend t
 
 A river map shows the river as a blue line with small arrows for the direction of flow, and marks where it begins, where it ends and the best-known places on the way. Every name sits on the map and no river is labelled with its own name.
 
-- **Source.** A mountain range, plateau or pass gets ink mountains and a brown label; a glacier an icy peak; a spring a rock with water coming out; a swamp or other wetland trees or reeds; a cave, a dam, a lake or a reservoir its own picture; a city, town, commune or village a small group of buildings that matches. A source that is itself a river (the Breg and Brigach for the Danube) is drawn in grey with its name. A source with no known type shows nothing, and a name that only describes the source ("source of the Seine River") becomes its type ("Spring").
+- **Source.** A mountain range, plateau or pass gets ink mountains and a brown label; a glacier an icy peak; a spring a rock with water coming out; a swamp or other wetland trees or reeds; a cave, a dam, a lake or a reservoir its own picture; a city, town, commune or village a small group of buildings that matches. A source that is itself a river (the Breg and Brigach for the Danube) is drawn in grey with its name. A source with no known type is a blue dot with its name where the drawn river begins, and a name that only describes the source ("source of the Seine River") becomes its type ("Spring"). A source drawn as a picture is moved to the start of the line when it is far from it, since what the source is matters more on a card than exactly where it lies.
 - **Mouth.** The sea, lake or river it flows into is named. A river that ends inland fades into dunes, or runs into a drawn basin, delta or dried lake ("Aral Sea (dried)"). A delta Wikidata does not outline is drawn as a fan of channels.
 - **On the way.** Waterfalls, dams, gorges and lakes with at least 100 Wikipedia language editions that lie within half a degree of the river (Victoria Falls on the Zambezi, the Aswan Dam on the Nile, the Grand Canyon on the Colorado).
-- **Sources of the facts.** Wikidata gives the source, mouth, tributaries and places; when it has no source, or names an area such as a basin as the mouth, the river's English Wikipedia infobox is used instead. The line comes from Natural Earth, or OpenStreetMap where that is clearly longer. What each river map shows is recorded in the `river` field of its file in `data/places/features`.
+- **Sources of the facts.** Wikidata gives the source, mouth, tributaries and places; when it has no source, or names an area such as a basin as the mouth, the river's English Wikipedia infobox (its source or source-location field) is used instead. In a country deck, when neither names a source, the infobox in the deck's language is read too (the Atrek's Hezar Masjed Mountains come from Persian Wikipedia), and a source more than 100 km from the English infobox's coordinates is dropped. The line comes from Natural Earth, or OpenStreetMap where that is clearly longer. What each river map shows is recorded in the `river` field of its file in `data/places/features`.
 
 Countries are computed from the shapes: the countries that hold a share of an area, border a sea or lake, contain a point or are
 crossed by a line or river. A country that Wikidata names for a place is added only if it lies within 50 km of it. Continents come from the Natural Earth continent shapes, so Siberia is in Asia and Martinique in the Americas. Facts (heights, lengths, areas) come from Wikidata, converted to metric; build dates and cultures
@@ -169,6 +169,13 @@ Persian with Piper, voice `fa_IR-ganji-medium`), named after a hash of the voice
 the deck build needs no speech libraries. To add a language, add its engine and voice to `SPEECH` in `countrydeck/speech.py`. Maps share one frame per deck, so the country stays the same size on every card, and areas that Natural Earth
 lists as disputed are drawn in the disputed colour.
 
+River maps are the exception: they use the same river art as Ultimate Places (see [River maps](#river-maps)), framed on the
+river itself (at least 40 km across, with the detailed coastline and lakes when the frame is that small), and the deck's
+cities within 10 km of the river are named. The river's name appears only on the answer side. Each river map is measured as
+it is drawn: the river must fill at least 15% of the card, the source and mouth must touch the line, flow arrows must be at
+least 40 pt apart, and no label may overlap another, the river or the edge. A map that fails is logged and the river gets a
+plain map instead.
+
 What goes in is chosen by rules relative to the country, not by hand:
 
 - **Provinces:** the first-level divisions in Natural Earth that lie on the mainland (units more than 300 km away, such as
@@ -180,6 +187,7 @@ What goes in is chosen by rules relative to the country, not by hand:
 - **Places:** the UNESCO sites, the best-covered mountains, rivers, lakes, islands, seas, parks and similar kinds (the cut-off
   is relative to the country, because Wikipedia covers some countries far better than others), landmarks with a heritage
   designation, a few museums, stadiums, airports, ports and flood defences, and the country's highest and lowest points.
+  A river is left out when Natural Earth and OpenStreetMap draw less than 40% of its length.
 
 ## How the data is chosen
 
