@@ -22,13 +22,13 @@
     "source": {
       "name": "Darfeld",
       "qid": "Q1165827",
-      "kind": "unknown",
+      "kind": "village",
       "classes": [
         "ortsteil"
       ],
       "point": [
-        7.282,
-        52.019
+        7.273611111,
+        52.024166666
       ]
     },
     "mouth": {

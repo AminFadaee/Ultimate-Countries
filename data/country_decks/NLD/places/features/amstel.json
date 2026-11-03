@@ -22,13 +22,13 @@
     "source": {
       "name": "Aarkanaal",
       "qid": "Q301498",
-      "kind": "unknown",
+      "kind": "canal",
       "classes": [
         "canal"
       ],
       "point": [
-        4.87,
-        52.253
+        4.69099,
+        52.11684
       ]
     },
     "mouth": {

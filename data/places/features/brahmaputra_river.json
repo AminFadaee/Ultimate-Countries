@@ -23,15 +23,15 @@
   "native": null,
   "river": {
     "source": {
-      "name": "Lake Manasarovar",
-      "qid": "Q233627",
-      "kind": "lake",
+      "name": "Chemayungdung glacier",
+      "qid": "",
+      "kind": "glacier",
       "classes": [
-        "lake"
+        "glacier"
       ],
       "point": [
-        81.5,
-        30.666666666
+        82.13333333333334,
+        30.316666666666666
       ]
     },
     "mouth": {

@@ -1,7 +1,7 @@
 {
   "key": "Q3503",
   "qid": "Q3503",
-  "name": "River Congo",
+  "name": "Congo River",
   "kind": "River",
   "countries": [
     "Democratic Republic of the Congo",
@@ -66,7 +66,7 @@
     "River",
     "Africa"
   ],
-  "map": "places/maps/river_congo.png",
+  "map": "places/maps/congo_river.png",
   "photo": null,
   "wikipedia": "https://en.wikipedia.org/wiki/Congo_River",
   "fame": 168
