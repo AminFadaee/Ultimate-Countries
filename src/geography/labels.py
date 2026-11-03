@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
 import cartopy.crs as ccrs
+import matplotlib.patheffects as effects
 from matplotlib.artist import Artist
 from matplotlib.lines import Line2D
 from matplotlib.transforms import Bbox
@@ -15,6 +16,8 @@ LABEL_EDGE = "#9a9aa0"
 LABEL_SIZE = 13
 LABEL_OPACITY = 0.93
 PILL = "round,pad=0.25,rounding_size=0.5"
+PLAIN_SIZE = 10
+PLAIN_HALO = [effects.withStroke(linewidth=2.6, foreground="white", alpha=0.9)]
 MARKER_REACH = 7
 LINE_REACH = 4
 LINE_STEP = 8
@@ -67,17 +70,18 @@ def connector_boxes(fig) -> list[Bbox]:
 
 
 class CityLabels:
-    def __init__(self, fig, ax, projection: ccrs.Projection, extent, cities: tuple[CityLabel, ...], answer_color: str):
+    def __init__(self, fig, ax, projection: ccrs.Projection, extent, cities: tuple[CityLabel, ...], answer_color: str, avoid: list[Bbox] | None = None, boxed: bool = True):
         self.fig = fig
         self.ax = ax
         self.renderer = fig.canvas.get_renderer()
         self.answer_color = answer_color
+        self.boxed = boxed
         self.answer: Artist | None = None
         self.labels: dict[str, tuple[Artist, Bbox]] = {}
         self.visible = [(city, *projection.transform_point(city.longitude, city.latitude, ccrs.Geodetic())) for city in cities]
         self.visible = [(city, x, y) for city, x, y in self.visible if self._inside(extent, x, y)]
         self.dots = {city.name: self._dot(city, x, y) for city, x, y in self.visible if not city.target}
-        self.taken = [self._around(x, y, MARKER_REACH) for _, x, y in self.visible]
+        self.taken = [self._around(x, y, MARKER_REACH) for _, x, y in self.visible] + list(avoid or [])
         self.lines = connector_boxes(fig)
         self.blocked = [other.get_window_extent(self.renderer) for other in fig.axes[1:]]
         self._place()
@@ -162,6 +166,11 @@ class CityLabels:
         self._keep(city, annotation, box)
 
     def _annotate(self, city: CityLabel, x: float, y: float, dx: float, dy: float, ha: str, va: str) -> Artist:
+        if not self.boxed:
+            return self.ax.annotate(
+                city.name, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
+                fontsize=PLAIN_SIZE, fontweight="bold", color=LABEL_COLOR, zorder=9, path_effects=PLAIN_HALO,
+            )
         pill = dict(
             boxstyle=PILL,
             fc=self.answer_color if city.target else LABEL_FILL,

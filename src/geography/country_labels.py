@@ -34,6 +34,7 @@ PILL_COLOR = "#A6192E"
 PILL_OFFSETS = ((10, 0, "left", "center"), (-10, 0, "right", "center"), (0, 12, "center", "bottom"), (0, -12, "center", "top"),
                 (12, 12, "left", "bottom"), (-12, 12, "right", "bottom"), (12, -12, "left", "top"), (-12, -12, "right", "top"),
                 (30, 0, "left", "center"), (-30, 0, "right", "center"), (0, 32, "center", "bottom"), (0, -32, "center", "top"))
+PILL_ANCHORS = tuple(step / 10 for step in range(1, 10))
 FIGURE_MARGIN = 4
 POLE_TOLERANCE_M = 1_000
 
@@ -121,24 +122,40 @@ class ProvinceLabels:
 
 
 class AnswerLabel:
-    def __init__(self, placer: Placer, extent, label: str, target):
+    def __init__(self, placer: Placer, extent, label: str, target, along: bool = False):
         xmin, xmax, ymin, ymax = extent.bounds
         visible = target.intersection(box(xmin, ymin, xmax, ymax))
-        self.text = placer.place(label, visible, None, ANSWER_SIZES, TOUCHING_INSIDE, 1.0, ANSWER_COLOR, ANSWER_HALO) or self._pill(placer, label, visible)
+        inside = None if along else placer.place(label, visible, None, ANSWER_SIZES, TOUCHING_INSIDE, 1.0, ANSWER_COLOR, ANSWER_HALO)
+        self.text = inside or self._pill(placer, label, self._anchors(visible, along), along)
 
     @staticmethod
-    def _pill(placer: Placer, label: str, visible):
-        point = visible.representative_point()
+    def _anchors(visible, along: bool) -> list:
+        middle = visible.representative_point()
+        if not along:
+            return [middle]
+        line = visible.boundary
+        spots = [line.interpolate(share, normalized=True) for share in PILL_ANCHORS]
+        return [middle, *sorted(spots, key=lambda spot: spot.distance(middle))]
+
+    @staticmethod
+    def _pill(placer: Placer, label: str, anchors: list, always: bool):
         style = {"boxstyle": PILL, "fc": PILL_COLOR, "ec": PILL_COLOR}
-        for dx, dy, ha, va in PILL_OFFSETS:
-            note = placer.ax.annotate(label, (point.x, point.y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va, fontsize=12,
-                                      fontweight="bold", color="white", zorder=9, bbox=style)
-            extent = note.get_window_extent(placer.renderer)
-            if placer.free(extent):
-                placer.placed.append(extent)
-                return note
-            note.remove()
-        return None
+        fallback = None
+        for point in anchors:
+            for dx, dy, ha, va in PILL_OFFSETS:
+                note = placer.ax.annotate(label, (point.x, point.y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va, fontsize=12,
+                                          fontweight="bold", color="white", zorder=9, bbox=style)
+                extent = note.get_window_extent(placer.renderer)
+                if placer.free(extent):
+                    placer.placed.append(extent)
+                    if fallback is not None:
+                        fallback.remove()
+                    return note
+                if fallback is None and always:
+                    fallback = note
+                else:
+                    note.remove()
+        return fallback
 
     def show(self, shown: bool) -> None:
         if self.text is not None:

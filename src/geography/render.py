@@ -37,6 +37,8 @@ FRAME_MARGIN_Y = 40 * METERS_PER_DEGREE
 MIN_FRAME_HEIGHT = 10 * METERS_PER_DEGREE
 COUNTRY_FRAME_MARGIN = 0.12
 MIN_COUNTRY_FRAME_HEIGHT = 1.5 * METERS_PER_DEGREE
+CLEAR_SAMPLES = 400
+CLEAR_PAD_PT = 3
 NEARBY_PART_DISTANCE = 300_000
 MIN_INSET_BOX = 8 * METERS_PER_DEGREE
 
@@ -118,6 +120,8 @@ class Style:
 class Naming:
     answer: str
     provinces: gpd.GeoDataFrame | None = None
+    neighbours: bool = True
+    off_target: bool = False
 
 
 @dataclass(frozen=True)
@@ -131,6 +135,7 @@ class Scene:
     zoom_threshold: float = ZOOM_THRESHOLD
     marker_only: bool = False
     frame_scale: float = 1.0
+    min_frame_height: float = MIN_COUNTRY_FRAME_HEIGHT
     lens_highlight: gpd.GeoSeries | None = None
     lens_host: gpd.GeoSeries | None = None
     lenses: tuple[gpd.GeoSeries, ...] = ()
@@ -142,6 +147,7 @@ class Scene:
     marker: tuple[float, float] | None = None
     country: gpd.GeoSeries | None = None
     overlay: Callable | None = None
+    inspect: Callable | None = None
 
     @classmethod
     def for_country(cls, country: Country, borders: Borders) -> "Scene":
@@ -368,13 +374,13 @@ def get_center(mainland: gpd.GeoSeries) -> tuple[float, float]:
     return centroid.y, centroid.x
 
 
-def get_frame(area: gpd.GeoSeries, projection: ccrs.Projection, aspect_ratio: float, framing: Framing) -> Extent:
+def get_frame(area: gpd.GeoSeries, projection: ccrs.Projection, aspect_ratio: float, framing: Framing, min_height: float = MIN_COUNTRY_FRAME_HEIGHT) -> Extent:
     minx, miny, maxx, maxy = area.to_crs(projection).total_bounds
     if framing is Framing.REGION:
         height = max(pad(maxy - miny, FRAME_MARGIN_Y), MIN_FRAME_HEIGHT)
         width = max(pad(maxx - minx, FRAME_MARGIN_X), aspect_ratio * height)
         return Extent(width, width / aspect_ratio)
-    height = max((maxy - miny) * (1 + 2 * COUNTRY_FRAME_MARGIN), MIN_COUNTRY_FRAME_HEIGHT)
+    height = max((maxy - miny) * (1 + 2 * COUNTRY_FRAME_MARGIN), min_height)
     width = max((maxx - minx) * (1 + 2 * COUNTRY_FRAME_MARGIN), aspect_ratio * height)
     return Extent(width, width / aspect_ratio, (minx + maxx) / 2, (miny + maxy) / 2)
 
@@ -444,7 +450,7 @@ class LocatorMap:
         lat, lng = get_center(mainland)
         projection = ccrs.LambertAzimuthalEqualArea(central_longitude=lng, central_latitude=lat)
         area, framing = get_frame_area(scene, mainland, projection)
-        extent = get_frame(area, projection, self.aspect_ratio, framing)
+        extent = get_frame(area, projection, self.aspect_ratio, framing, scene.min_frame_height)
         if scene.frame_scale != 1.0:
             extent = Extent(extent.width * scene.frame_scale, extent.height * scene.frame_scale, extent.x, extent.y)
         zoom = get_zoom(scene.lens_subject, projection, extent, scene.min_zoom_span, scene.zoom_threshold)
@@ -470,23 +476,46 @@ class LocatorMap:
                 self._plot_corner_photo(fig, scene)
             if scene.overlay:
                 scene.overlay(self, fig, projection, extent)
-            if scene.cities:
+            if scene.cities and scene.naming:
+                CityLabels(fig, fig.axes[0], projection, extent, scene.cities, scene.style.highlight, self._kept_clear(fig, scene, projection), boxed=False)
+            if scene.cities and not scene.naming:
                 labels = CityLabels(fig, fig.axes[0], projection, extent, scene.cities, scene.style.highlight)
                 self._label_neighbours(Placer(fig, fig.axes[0], labels.obstacles()), scene, projection, extent)
                 labels.show_answer(False)
                 self._save(fig, out_path, scene.style)
                 labels.show_answer(True)
+                self._inspect(fig, scene)
                 self._save(fig, answer_path, scene.style)
             elif scene.naming:
                 answer = self._name_areas(fig, scene, projection, extent)
                 answer.show(False)
                 self._save(fig, out_path, scene.style)
                 answer.show(True)
+                self._inspect(fig, scene)
                 self._save(fig, answer_path, scene.style)
             else:
+                self._inspect(fig, scene)
                 self._save(fig, out_path, scene.style)
         finally:
             plt.close(fig)
+
+    @classmethod
+    def _kept_clear(cls, fig: Figure, scene: Scene, projection: ccrs.Projection) -> list[Bbox]:
+        renderer = fig.canvas.get_renderer()
+        return cls._target_boxes(fig, scene, projection) + [text.get_window_extent(renderer) for text in fig.axes[0].texts]
+
+    @staticmethod
+    def _target_boxes(fig: Figure, scene: Scene, projection: ccrs.Projection) -> list[Bbox]:
+        shape = scene.highlight.to_crs(projection.proj4_init).union_all().boundary
+        points = fig.axes[0].transData.transform([shape.interpolate(step / CLEAR_SAMPLES, normalized=True).coords[0] for step in range(CLEAR_SAMPLES + 1)])
+        pad = CLEAR_PAD_PT * fig.dpi / 72
+        return [Bbox.from_extents(x - pad, y - pad, x + pad, y + pad) for x, y in points]
+
+    @staticmethod
+    def _inspect(fig: Figure, scene: Scene) -> None:
+        if scene.inspect:
+            fig.canvas.draw()
+            scene.inspect(fig)
 
     @staticmethod
     def _marker_box(fig: Figure, projection: ccrs.Projection, scene: Scene) -> list[Bbox]:
@@ -507,13 +536,16 @@ class LocatorMap:
     def _name_areas(self, fig: Figure, scene: Scene, projection: ccrs.Projection, extent: Extent) -> AnswerLabel:
         renderer = fig.canvas.get_renderer()
         blocked = [other.get_window_extent(renderer) for other in fig.axes[1:]]
-        placer = Placer(fig, fig.axes[0], blocked + connector_boxes(fig) + self._marker_box(fig, projection, scene))
+        written = [text.get_window_extent(renderer) for text in fig.axes[0].texts]
+        clear = self._target_boxes(fig, scene, projection) if scene.naming.off_target else []
+        placer = Placer(fig, fig.axes[0], blocked + written + clear + connector_boxes(fig) + self._marker_box(fig, projection, scene))
         target = scene.highlight.to_crs(projection.proj4_init).union_all()
-        answer = AnswerLabel(placer, extent, scene.naming.answer, target)
+        answer = AnswerLabel(placer, extent, scene.naming.answer, target, scene.naming.off_target)
         if scene.naming.provinces is not None:
             provinces = scene.naming.provinces.to_crs(projection.proj4_init)
             ProvinceLabels(placer, extent, provinces, target)
-        self._label_neighbours(placer, scene, projection, extent)
+        if scene.naming.neighbours:
+            self._label_neighbours(placer, scene, projection, extent)
         return answer
 
     def render_centred(self, scene: CentredScene, out_path: pathlib.Path) -> None:
@@ -676,7 +708,10 @@ class LocatorMap:
     def _plot_main(self, fig: Figure, scene: Scene, projection: ccrs.Projection, extent: Extent) -> None:
         ax = fig.add_axes([0, 0, 1, 1], projection=projection)
         ax.spines["geo"].set_visible(False)
-        self._draw_layers(ax, scene, projection, extent)
+        if self.detail is not None and extent.height < MIN_COUNTRY_FRAME_HEIGHT:
+            self._draw_detail(ax, scene, projection, extent)
+        else:
+            self._draw_layers(ax, scene, projection, extent)
 
     def _plot_inset(self, fig: Figure, projection: ccrs.Projection, extent: Extent, corner: Corner) -> None:
         inset = self._inset_axes(fig, corner)
