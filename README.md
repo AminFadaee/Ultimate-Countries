@@ -275,6 +275,23 @@ The release notes are read from `docs/releases/<tag>.md`.
 feeds into the data. `geography check` scores every field against it, scans all entries for anomalies (duplicate
 languages, capitals smaller than they should be, contradictory flags) and reports how many countries have each card and fact.
 
+### Tests
+
+`uv run pytest` runs in about a minute without touching the network:
+
+- **Rules:** infobox parsing, source and mouth choice, river geometry, name normalisation and the length check.
+- **Recorded research:** the river facts of a dozen rivers, from Wikidata, Wikipedia and Nominatim answers stored in
+  `tests/fixtures/http`. `uv run pytest --record` fetches whatever a new or changed test is missing.
+- **Data:** every place has its map and answer map, names are written out and normalised, no text carries the
+  Arabian Gulf alias, no length contradicts its description, and every map has the card size with its feature visible.
+- **Decks:** run with `uv run pytest -m decks` after building. Note ids are unique across all decks, every media file is
+  in its package, sounds are referenced so Anki exports them, and no note type or note changed since the snapshot in
+  `tests/snapshots`.
+
+`uv run pytest -m slow` also draws the recorded rivers and runs the map checks on them (a few minutes). When a change to
+the island frames or the decks is intended, `uv run pytest --update-snapshots` rewrites the snapshots so the change shows
+up in the commit. Every push runs the tests, and a release runs them before building and the deck tests before publishing.
+
 ## Repository layout
 
 ```
@@ -296,6 +313,7 @@ data/
   maps/             locator maps for countries and cities
   places/           Ultimate Places: one JSON file per place, maps and photos
 reference/          hand-checked answers for the quality check
+tests/              tests, recorded HTTP answers and deck snapshots
 docs/samples/       sample cards for this README
 ```
 
