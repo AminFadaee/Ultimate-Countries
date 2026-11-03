@@ -26,11 +26,11 @@
   "map": "places/maps/great_pyramid_of_giza.png",
   "photo": {
     "file": "places/photos/great_pyramid_of_giza.jpg",
-    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Kheops-Pyramid.jpg",
-    "author": "Nina",
-    "license": "CC BY 2.5",
-    "license_url": "https://creativecommons.org/licenses/by/2.5",
-    "page": "https://commons.wikimedia.org/wiki/File:Kheops-Pyramid.jpg"
+    "source": "http://commons.wikimedia.org/wiki/Special:FilePath/Great%20Pyramid%20of%20Giza%20-%20Pyramid%20of%20Khufu.jpg",
+    "author": "Douwe C. van der Zee",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg"
   },
   "wikipedia": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
   "fame": 126

@@ -51,7 +51,7 @@ The photos in Ultimate Places come from Wikimedia Commons, each under the licenc
 | Golden Gate Bridge | Rich Niewiroski Jr. | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GoldenGateBridge-001.jpg) |
 | Grand Canal (Venice) | Martin Falbisoner | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Panorama_of_Canal_Grande_and_Ponte_di_Rialto,_Venice_-_September_2017.jpg) |
 | Grand Canyon | Chensiyuan | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Grand_Canyon_view_from_Pima_Point_2010.jpg) |
-| Great Pyramid of Giza | Nina | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kheops-Pyramid.jpg) |
+| Great Pyramid of Giza | Douwe C. van der Zee | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg) |
 | Great Wall of China | Severin.stalder | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:The_Great_Wall_of_China_at_Jinshanling-edit.jpg) |
 | Grossglockner | DennisPeeters | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gro%C3%9Fglockner1.jpg) |
 | Gullfoss | Andreas Tille | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:GullfossOverview.jpg) |

@@ -6,7 +6,7 @@
     "longitude": 51.389722222,
     "latitude": 35.688888888,
     "population": 8693706,
-    "links": 240,
+    "links": 241,
     "centre": true,
     "province": "Q590866"
   },
@@ -17,7 +17,7 @@
     "longitude": 59.605923055,
     "latitude": 36.297494444,
     "population": 3001184,
-    "links": 121,
+    "links": 122,
     "centre": true,
     "province": "Q587090"
   },
@@ -523,7 +523,7 @@
     "longitude": 50.864444444,
     "latitude": 32.325555555,
     "population": 190441,
-    "links": 64,
+    "links": 63,
     "centre": true,
     "province": "Q171702"
   },
