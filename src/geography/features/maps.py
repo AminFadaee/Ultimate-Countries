@@ -20,9 +20,9 @@ from geography.data import NaturalEarth
 from geography.detail import DetailLayers
 from geography.features.kinds import WATER_KINDS, Kind, Shape
 from geography.features.model import Feature
+from geography.features.riverart.checks import RiverCheck
 from geography.features.riverart.facts import RiverArt
 from geography.features.riverart.kinds import MouthKind
-from geography.features.riverart.paint import paint_river
 from geography.features.spatial import CRS
 from geography.map_cache import through_cache
 from geography.render import (
@@ -186,7 +186,7 @@ def river_scene(job: FeatureMapJob, min_frame: float = RIVER_MIN_FRAME_M, with_t
     frame = frame_around(gpd.GeoSeries(pd.concat([job.geometry, *context]).values, crs=CRS), RIVER_CONTEXT, min_frame)
     scene = line_scene(job)
     hairline = job.geometry.to_crs(local_projection(job.geometry)).buffer(size_of(frame) * RIVER_HAIRLINE_SHARE).to_crs(CRS)
-    return replace(scene, frame=frame, highlight=hairline, style=replace(scene.style, highlight=RIVER_BLUE, outline=RIVER_BLUE), overlay=functools.partial(paint_river, art))
+    return replace(scene, frame=frame, highlight=hairline, style=replace(scene.style, highlight=RIVER_BLUE, outline=RIVER_BLUE))
 
 
 def point_scene(job: FeatureMapJob, data: NaturalEarth) -> Scene:
@@ -346,8 +346,8 @@ class FeatureMapWorker:
         elif view is not View.REGIONAL:
             cls._render_world(job)
         elif is_line(job):
-            scene = river_scene(job) if job.art else line_scene(job)
-            cls.renderer.render(replace(scene, photo=job.photo), job.output)
+            if not (job.art and cls._render_river(job)):
+                cls.renderer.render(replace(line_scene(job), photo=job.photo), job.output)
         elif shape is Shape.POINT or job.geometry.geom_type.iloc[0] == "Point":
             try:
                 cls.renderer.render(replace(point_scene(job, cls.renderer.data), photo=job.photo), job.output)
@@ -360,6 +360,14 @@ class FeatureMapWorker:
                 logger.warning("World view for %s: %s", job.key, error)
                 cls._render_world(job)
         return job.key
+
+    @classmethod
+    def _render_river(cls, job: FeatureMapJob) -> bool:
+        check = RiverCheck(job.art)
+        cls.renderer.render(replace(river_scene(job), photo=job.photo, overlay=check.paint, inspect=check.inspect), job.output)
+        if check.problems:
+            logger.warning("River art for %s failed its checks, so it gets a plain map: %s", job.key, "; ".join(check.problems))
+        return not check.problems
 
     @classmethod
     def _render_world(cls, job: FeatureMapJob) -> None:
