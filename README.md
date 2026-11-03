@@ -288,7 +288,9 @@ languages, capitals smaller than they should be, contradictory flags) and report
   in its package, sounds are referenced so Anki exports them, and no note type or note changed since the snapshot in
   `tests/snapshots`.
 
-`uv run pytest -m slow` also draws the recorded rivers and runs the map checks on them (a few minutes). When a change to
+Every map is checked as it is drawn: no label overlaps another, is cut off or covers the inset, and the highlighted
+feature is either big enough to see or magnified. Problems are logged with the map's name. `uv run pytest -m slow`
+draws a sample of every kind of map and the recorded rivers, and requires these checks to pass (a few minutes). When a change to
 the island frames or the decks is intended, `uv run pytest --update-snapshots` rewrites the snapshots so the change shows
 up in the commit. Every push runs the tests, and a release runs them before building and the deck tests before publishing.
 
