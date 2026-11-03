@@ -18,6 +18,38 @@
   "culture": null,
   "description": "The Amstel is a river in the province of North Holland in the Netherlands.",
   "native": "Amstel",
+  "river": {
+    "source": {
+      "name": "Aarkanaal",
+      "qid": "Q301498",
+      "kind": "unknown",
+      "classes": [
+        "canal"
+      ],
+      "point": [
+        4.87,
+        52.253
+      ]
+    },
+    "mouth": {
+      "name": "IJ",
+      "qid": "Q338137",
+      "kind": "sea",
+      "classes": [
+        "channel"
+      ],
+      "point": [
+        4.91642,
+        52.37976
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

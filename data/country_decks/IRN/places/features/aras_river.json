@@ -18,6 +18,44 @@
   "culture": null,
   "description": "The Aras is a transboundary river in the Caucasus.",
   "native": "ارس",
+  "river": {
+    "source": {
+      "name": "Bingöl Dağları",
+      "qid": "Q15856901",
+      "kind": "highland",
+      "classes": [
+        "highland",
+        "mountain",
+        "mountain range"
+      ],
+      "point": [
+        41.333,
+        39.333
+      ]
+    },
+    "mouth": {
+      "name": "Kura River",
+      "qid": "Q156557",
+      "kind": "river",
+      "classes": [
+        "river"
+      ],
+      "point": [
+        42.820133,
+        40.833554
+      ]
+    },
+    "linked_rivers": [
+      "Kura River"
+    ],
+    "tributaries": [
+      "Akhurian River"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

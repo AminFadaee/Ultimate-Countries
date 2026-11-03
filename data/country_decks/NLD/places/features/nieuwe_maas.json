@@ -18,6 +18,37 @@
   "culture": null,
   "description": "The Nieuwe Maas is a distributary of the Rhine River, and a former distributary of the Maas River, in the Dutch province of South Holland.",
   "native": "Nieuwe Maas",
+  "river": {
+    "source": null,
+    "mouth": {
+      "name": "Scheur",
+      "qid": "Q2669073",
+      "kind": "river",
+      "classes": [
+        "river"
+      ],
+      "point": [
+        4.242,
+        51.915
+      ]
+    },
+    "linked_rivers": [
+      "Lek",
+      "Noord",
+      "Scheur"
+    ],
+    "tributaries": [
+      "Hollandse IJssel",
+      "Lek",
+      "Noord",
+      "Schie",
+      "Schiedamse Schie"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

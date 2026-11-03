@@ -18,6 +18,38 @@
   "culture": null,
   "description": "The Zayanderud or Zayandehrud, also spelled as Zayanderud or Zayanderood,..., is the largest river of the Iranian Plateau in central Iran.",
   "native": "زاینده‌رود",
+  "river": {
+    "source": {
+      "name": "Zagros Mountains",
+      "qid": "Q167021",
+      "kind": "highland",
+      "classes": [
+        "mountain range"
+      ],
+      "point": [
+        47.0,
+        33.666667
+      ]
+    },
+    "mouth": {
+      "name": "Gavkhuni Lake",
+      "qid": "Q3214900",
+      "kind": "lake",
+      "classes": [
+        "salt lake"
+      ],
+      "point": [
+        52.853888888,
+        32.149166666
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

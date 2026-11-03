@@ -18,6 +18,35 @@
   "culture": null,
   "description": "The Shatt al-Arab is a river about 200 kilometres (120 mi) in length that is formed at the confluence of the Euphrates and Tigris rivers in the town of al-Qurnah in the Basra Governorate of southern Iraq.",
   "native": "اروندرود",
+  "river": {
+    "source": null,
+    "mouth": {
+      "name": "Persian Gulf",
+      "qid": "Q34675",
+      "kind": "sea",
+      "classes": [
+        "gulf",
+        "sea"
+      ],
+      "point": [
+        52.0,
+        26.0
+      ]
+    },
+    "linked_rivers": [
+      "Euphrates",
+      "Tigris"
+    ],
+    "tributaries": [
+      "Euphrates",
+      "Karun River",
+      "Tigris"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

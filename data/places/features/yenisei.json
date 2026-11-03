@@ -28,8 +28,8 @@
         "republic of russia"
       ],
       "point": [
-        94.75,
-        51.783333333
+        94.451,
+        51.728
       ]
     },
     "mouth": {
@@ -37,7 +37,7 @@
       "qid": "Q1338198",
       "kind": "sea",
       "classes": [
-        "bay"
+        "gulf"
       ],
       "point": [
         80.5,

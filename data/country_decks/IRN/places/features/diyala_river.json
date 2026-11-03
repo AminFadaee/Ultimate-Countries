@@ -18,6 +18,40 @@
   "culture": null,
   "description": "The Diyala is a river and tributary of the Tigris.",
   "native": "رود سیروان",
+  "river": {
+    "source": {
+      "name": "Zagros Mountains",
+      "qid": "Q167021",
+      "kind": "highland",
+      "classes": [
+        "mountain range"
+      ],
+      "point": [
+        47.0,
+        33.666667
+      ]
+    },
+    "mouth": {
+      "name": "Tigris",
+      "qid": "Q35591",
+      "kind": "river",
+      "classes": [
+        "river"
+      ],
+      "point": [
+        47.4421,
+        31.0043
+      ]
+    },
+    "linked_rivers": [
+      "Tigris"
+    ],
+    "tributaries": [],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

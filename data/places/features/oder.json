@@ -21,7 +21,19 @@
   "description": "The Oder is a river in Central Europe.",
   "native": null,
   "river": {
-    "source": null,
+    "source": {
+      "name": "Oderské vrchy",
+      "qid": "Q1479012",
+      "kind": "highland",
+      "classes": [
+        "geomorphological subunit",
+        "mountain range"
+      ],
+      "point": [
+        17.50513889,
+        49.62053889
+      ]
+    },
     "mouth": {
       "name": "Szczecin Lagoon",
       "qid": "Q161385",

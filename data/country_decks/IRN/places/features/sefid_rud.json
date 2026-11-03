@@ -18,6 +18,43 @@
   "culture": null,
   "description": "The Espi Bie/Ru is a river, approximately 670 kilometres (416 mi) long, rising in the Alborz mountain range of north-western Iran and flowing generally north-east to empty into the Caspian Sea at Kiashahr.",
   "native": "سفیدرود",
+  "river": {
+    "source": {
+      "name": "Zagros Mountains",
+      "qid": "Q167021",
+      "kind": "highland",
+      "classes": [
+        "mountain range"
+      ],
+      "point": [
+        47.0,
+        33.666667
+      ]
+    },
+    "mouth": {
+      "name": "Caspian Sea",
+      "qid": "Q5484",
+      "kind": "sea",
+      "classes": [
+        "endorheic lake",
+        "lake",
+        "salt lake",
+        "sea"
+      ],
+      "point": [
+        50.5,
+        42.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Qezel Uzan"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

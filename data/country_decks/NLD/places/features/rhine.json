@@ -18,6 +18,53 @@
   "culture": null,
   "description": "The Rhine is one of the major rivers of Europe.",
   "native": "Rijn",
+  "river": {
+    "source": {
+      "name": "Tomasee",
+      "qid": "Q690343",
+      "kind": "lake",
+      "classes": [
+        "lake"
+      ],
+      "point": [
+        8.672222222,
+        46.6325
+      ]
+    },
+    "mouth": {
+      "name": "North Sea",
+      "qid": "Q1693",
+      "kind": "sea",
+      "classes": [
+        "sea"
+      ],
+      "point": [
+        3.0,
+        55.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Königsbach",
+      "Main",
+      "Moselle",
+      "Neckar",
+      "Plessur"
+    ],
+    "lakes": [
+      {
+        "name": "Lake Constance",
+        "qid": "Q4127",
+        "point": [
+          9.316666666,
+          47.65
+        ]
+      }
+    ],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

@@ -18,6 +18,32 @@
   "culture": null,
   "description": "The IJssel is a Dutch distributary of the river Rhine that flows northward and ultimately discharges into the IJsselmeer, a North Sea natural harbour.",
   "native": "IJssel",
+  "river": {
+    "source": null,
+    "mouth": {
+      "name": "Ketelmeer",
+      "qid": "Q1739879",
+      "kind": "lake",
+      "classes": [
+        "lake"
+      ],
+      "point": [
+        5.762222222,
+        52.596666666
+      ]
+    },
+    "linked_rivers": [
+      "Nederrijn"
+    ],
+    "tributaries": [
+      "Oude IJssel",
+      "Twentekanaal"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

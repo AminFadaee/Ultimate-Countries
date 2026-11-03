@@ -18,6 +18,32 @@
   "culture": null,
   "description": "The Lek is a river in the western Netherlands of some 60 km (37 mi) in length.",
   "native": "Lek",
+  "river": {
+    "source": null,
+    "mouth": {
+      "name": "Nieuwe Maas",
+      "qid": "Q1362309",
+      "kind": "river",
+      "classes": [
+        "river"
+      ],
+      "point": [
+        4.3219,
+        51.8931
+      ]
+    },
+    "linked_rivers": [
+      "Nederrijn",
+      "Nieuwe Maas"
+    ],
+    "tributaries": [
+      "Nederrijn"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

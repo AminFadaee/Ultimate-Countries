@@ -18,6 +18,44 @@
   "culture": null,
   "description": "The Meuse or Maas is a major European river, rising in France and flowing through Belgium and the Netherlands before draining into the North Sea from the Rhine–Meuse–Scheldt Delta.",
   "native": "Maas",
+  "river": {
+    "source": {
+      "name": "Le Châtelet-sur-Meuse",
+      "qid": "Q42014",
+      "kind": "commune",
+      "classes": [
+        "commune of france"
+      ],
+      "point": [
+        5.6275,
+        47.982777777
+      ]
+    },
+    "mouth": {
+      "name": "North Sea",
+      "qid": "Q1693",
+      "kind": "sea",
+      "classes": [
+        "sea"
+      ],
+      "point": [
+        3.0,
+        55.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [
+      "Niers",
+      "Ourthe",
+      "Rur",
+      "Sambre",
+      "Semois"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

@@ -18,6 +18,40 @@
   "culture": null,
   "description": "The Karun is the Iranian river with the highest water flow, and the country's only navigable river.",
   "native": "کارون",
+  "river": {
+    "source": {
+      "name": "Zard Kuh",
+      "qid": "Q147826",
+      "kind": "highland",
+      "classes": [
+        "mountain"
+      ],
+      "point": [
+        50.0775,
+        32.364444444
+      ]
+    },
+    "mouth": {
+      "name": "Shatt al-Arab",
+      "qid": "Q166966",
+      "kind": "river",
+      "classes": [
+        "river"
+      ],
+      "point": [
+        48.6077,
+        29.9369
+      ]
+    },
+    "linked_rivers": [
+      "Shatt al-Arab"
+    ],
+    "tributaries": [],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

@@ -18,6 +18,33 @@
   "culture": null,
   "description": "The Waal is the main distributary branch of the river Rhine flowing approximately 80 km (50 mi) through the Netherlands.",
   "native": "Waal",
+  "river": {
+    "source": null,
+    "mouth": {
+      "name": "Boven-Merwede",
+      "qid": "Q2577726",
+      "kind": "river",
+      "classes": [
+        "river"
+      ],
+      "point": [
+        4.9375,
+        51.828333333
+      ]
+    },
+    "linked_rivers": [
+      "Boven-Merwede",
+      "Rhine"
+    ],
+    "tributaries": [
+      "Amsterdam–Rhine Canal",
+      "Linge"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

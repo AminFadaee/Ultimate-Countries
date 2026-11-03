@@ -18,6 +18,41 @@
   "culture": null,
   "description": "The Atrek, also known as the Attrack, Atrak, and Etrek, is a fast-moving river which begins in the mountains of north-eastern Iran and flows 563 kilometres (350 mi) westward, draining into the south-eastern corner of the Caspian Sea in Turkmenistan.",
   "native": "اترک",
+  "river": {
+    "source": {
+      "name": "Hezar Masjed Mountains",
+      "qid": "Q20987818",
+      "kind": "highland",
+      "classes": [
+        "mountain range"
+      ],
+      "point": [
+        59.356391666,
+        36.9738611
+      ]
+    },
+    "mouth": {
+      "name": "Caspian Sea",
+      "qid": "Q5484",
+      "kind": "sea",
+      "classes": [
+        "endorheic lake",
+        "lake",
+        "salt lake",
+        "sea"
+      ],
+      "point": [
+        50.5,
+        42.0
+      ]
+    },
+    "linked_rivers": [],
+    "tributaries": [],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",

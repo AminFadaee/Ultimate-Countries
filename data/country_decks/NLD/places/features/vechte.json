@@ -18,6 +18,45 @@
   "culture": null,
   "description": "The Vechte or Vecht, often called Overijsselse Vecht in the Netherlands to avoid confusion with its Utrecht counterpart, is a river in Germany and the Netherlands.",
   "native": "Overijsselse Vecht",
+  "river": {
+    "source": {
+      "name": "Darfeld",
+      "qid": "Q1165827",
+      "kind": "unknown",
+      "classes": [
+        "ortsteil"
+      ],
+      "point": [
+        7.282,
+        52.019
+      ]
+    },
+    "mouth": {
+      "name": "Zwarte Water",
+      "qid": "Q231763",
+      "kind": "river",
+      "classes": [
+        "river"
+      ],
+      "point": [
+        6.0881,
+        52.5144
+      ]
+    },
+    "linked_rivers": [
+      "Zwarte Water"
+    ],
+    "tributaries": [
+      "Dinkel",
+      "Lee",
+      "Regge",
+      "Steinfurter Aa"
+    ],
+    "lakes": [],
+    "waterfalls": [],
+    "dams": [],
+    "gorges": []
+  },
   "world_heritage": false,
   "tags": [
     "River",
