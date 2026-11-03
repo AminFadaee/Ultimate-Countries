@@ -82,9 +82,10 @@ class PlacesOptions:
 class PlacesCollector:
     country_qid: str | None = None
 
-    def __init__(self, paths: PlacesPaths, session: requests.Session):
+    def __init__(self, paths: PlacesPaths, session: requests.Session, language: str | None = None):
         self.paths = paths
         self.session = session
+        self.language = language
         self.wikidata = Wikidata(session)
         self.wikipedia = Wikipedia(session)
 
@@ -235,7 +236,7 @@ class PlacesCollector:
         rivers = [feature for feature in features if feature.kind is Kind.RIVER and feature.qid]
         if not rivers:
             return {}
-        research = RiverResearch(self.session, self.wikidata)
+        research = RiverResearch(self.session, self.wikidata, self.language)
         found = {}
         for feature in rivers:
             try:

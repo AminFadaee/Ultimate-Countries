@@ -15,6 +15,10 @@ SIDE_CHANNEL_REJOIN = 0.06
 LAKE_MARGIN = 0.03
 STUB_MARGIN = 0.01
 MAX_STUB_SHARE = 0.25
+MAX_EXTENSIONS = 6
+EXTENSION_REACH = 0.15
+CONFLUENCE_MARGIN = 0.005
+MIN_OVERRUN_SHARE = 0.03
 
 Vertex = tuple[float, float]
 Graph = dict[Vertex, dict[Vertex, float]]
@@ -141,3 +145,35 @@ def trimmed_at_lake(river: gpd.GeoSeries, path: LineString, exit_index: int | No
         return None
     rest = river.difference(stub.buffer(STUB_MARGIN)).explode(index_parts=False)
     return gpd.GeoSeries([line for line in rest if not line.is_empty], crs=CRS), LineString(coordinates[exit_index:])
+
+
+def trimmed_at_confluence(river: gpd.GeoSeries, path: LineString, target: gpd.GeoSeries) -> tuple[gpd.GeoSeries, LineString] | None:
+    coordinates = list(path.coords)
+    joined = target.union_all().buffer(CONFLUENCE_MARGIN)
+    meeting = next((index for index in range(len(coordinates) // 2, len(coordinates)) if joined.contains(Point(coordinates[index]))), None)
+    if meeting is None:
+        return None
+    overrun = LineString(coordinates[meeting:]) if meeting < len(coordinates) - 1 else None
+    if overrun is None or overrun.length < MIN_OVERRUN_SHARE * path.length:
+        return None
+    rest = river.difference(overrun.buffer(STUB_MARGIN)).explode(index_parts=False)
+    return gpd.GeoSeries([line for line in rest if not line.is_empty], crs=CRS), LineString(coordinates[: meeting + 1])
+
+
+def extended(path: LineString, pool: gpd.GeoSeries) -> tuple[LineString, list[LineString]]:
+    coordinates, added = list(path.coords), []
+    for _ in range(MAX_EXTENSIONS):
+        end, current = Point(coordinates[-1]), LineString(coordinates)
+        options = []
+        for piece in pieces_of(pool):
+            ends = [Point(piece.coords[0]), Point(piece.coords[-1])]
+            forwards = ends[0].distance(end) <= ends[1].distance(end)
+            near, far = (ends[0], ends[1]) if forwards else (ends[1], ends[0])
+            if near.distance(end) < EXTENSION_REACH and far.distance(current) > EXTENSION_REACH:
+                options.append((piece.length, piece, forwards))
+        if not options:
+            break
+        _, piece, forwards = max(options, key=lambda option: option[0])
+        coordinates += list(piece.coords if forwards else piece.coords[::-1])
+        added.append(piece)
+    return LineString(coordinates), added

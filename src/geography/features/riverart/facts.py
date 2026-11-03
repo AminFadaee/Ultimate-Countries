@@ -6,10 +6,10 @@ import pandas as pd
 import requests
 from shapely.geometry import LineString, MultiPoint, Point, box, shape as to_shape
 
-from geography.features.catalog import article_title, complete_rivers, drawn_km, natural_earth_shapes
+from geography.features.catalog import GEOD, article_title, drawn_km, natural_earth_shapes
 from geography.features.model import Feature
 from geography.features.riverart import geometry as river_geometry
-from geography.features.riverart.infobox import RiverInfobox
+from geography.features.riverart.infobox import InfoboxLinks, RiverInfobox
 from geography.features.riverart.kinds import (
     AREA_WORDS, DRIED_WORDS, HIGHLAND, MARINE, RIVER_LIKE, WATER_BODY, WETTED_LAND, MouthKind, SourceKind, source_kind, source_label,
 )
@@ -26,6 +26,8 @@ MIN_SINK_SHARE = 0.6
 FADING_SHARE = 0.8
 OSM_GAIN = 1.1
 LAKE_QUERY_LIMIT = 6
+OVERSIZED_AREA = 1.2
+SOURCE_AGREEMENT_KM = 100
 LAKE, WATERFALL, DAM, CANYON, GORGE, RIVER = "Q23397", "Q34038", "Q12323", "Q150784", "Q1668451", "Q4022"
 AREAS = ("Polygon", "MultiPolygon")
 LINES = ("LineString", "MultiLineString")
@@ -123,9 +125,11 @@ def is_area(shape: gpd.GeoSeries | None) -> bool:
 
 
 class RiverResearch:
-    def __init__(self, session: requests.Session, wikidata: Wikidata):
+    def __init__(self, session: requests.Session, wikidata: Wikidata, language: str | None = None):
         self.wikidata = wikidata
         self.infobox = RiverInfobox(session)
+        self.language = language if language != "en" else None
+        self.native = RiverInfobox(session, self.language) if self.language else None
         self.nominatim = Nominatim()
         self.shapes = natural_earth_shapes()
         self._landmarks: dict[str, list[tuple[Landmark, Point]]] = {}
@@ -134,10 +138,11 @@ class RiverResearch:
         river = self._drawn_river(feature)
         if river is None:
             return None
-        links = self.infobox.links(article_title(feature.wikipedia)) if feature.wikipedia else {"source": [], "mouth": []}
-        candidates = self._sources(feature.qid, links["source"])
+        natural = river_geometry_of(feature.geometry)
+        links = self.infobox.links(article_title(feature.wikipedia)) if feature.wikipedia else InfoboxLinks((), ())
+        candidates = self._sources(feature.qid, links) or self._native_sources(feature.qid, links)
         origin = self._origin(candidates)
-        mouth_row, dried = self._mouth_row(feature.qid, links["mouth"])
+        mouth_row, dried = self._mouth_row(feature.qid, list(links.mouth))
         mouth_classes = self._classes(mouth_row["m"]) if mouth_row else set()
         mouth_is_river = bool(mouth_row) and self._is_a(mouth_row["m"], RIVER)
         window = self._window(river)
@@ -150,12 +155,20 @@ class RiverResearch:
         main = river_geometry.main_pieces(river)
         path = river_geometry.ordered_path(main, upstream, mouth_point)
         river = river_geometry.without_side_channels(river, path)
+        if natural is not None:
+            path, added = river_geometry.extended(path, natural)
+            river = gpd.GeoSeries([*river, *added], crs=CRS)
+            if added:
+                mouth_point = Point(path.coords[-1])
+        if mouth_river is not None and (trimmed := river_geometry.trimmed_at_confluence(river, path, mouth_river)):
+            river, path = trimmed
+            mouth_point = Point(path.coords[-1])
         if kind is SourceKind.LAKE:
             exit_index = river_geometry.lake_exit(path, source_lake, as_point(point_of(origin["c"])) if origin else None)
             if trimmed := river_geometry.trimmed_at_lake(river, path, exit_index):
                 river, path = trimmed
                 upstream = Point(path.coords[0])
-        if source_area is not None and kind is SourceKind.HIGHLAND and self._far_from(upstream, source_area, river):
+        if source_area is not None and kind is SourceKind.HIGHLAND and (self._far_from(upstream, source_area, river) or oversized(source_area, river)):
             source_area = None
         if kind is not SourceKind.HIGHLAND:
             source_area = None
@@ -164,7 +177,7 @@ class RiverResearch:
             path=path,
             upstream=upstream,
             mouth_point=mouth_point,
-            source=self._source(origin, kind),
+            source=self._source(origin, kind, upstream),
             source_area=source_area,
             source_lake=source_lake,
             mouth=self._mouth(mouth_row, mouth_classes, mouth_is_river, dried, sink),
@@ -212,9 +225,10 @@ class RiverResearch:
     def _is_a(self, qid_uri: str, class_qid: str) -> bool:
         return bool(self._rows(f"SELECT ?x WHERE {{ wd:{qid_of(qid_uri)} wdt:P31/wdt:P279* wd:{class_qid} BIND(1 AS ?x) }}"))
 
-    def _sources(self, river_qid: str, listed: list[str]) -> list[dict]:
+    def _sources(self, river_qid: str, links: InfoboxLinks) -> list[dict]:
         select = "SELECT ?s ?sl ?c ?tl ?n WHERE {{ {anchor} ?s rdfs:label ?sl FILTER(lang(?sl)='en') OPTIONAL {{ ?s wdt:P625 ?c }} OPTIONAL {{ ?s wikibase:sitelinks ?n }} OPTIONAL {{ ?s wdt:P31 ?t . ?t rdfs:label ?tl FILTER(lang(?tl)='en') }} }}"
         rows = self._rows(select.format(anchor=f"wd:{river_qid} wdt:P885 ?s ."))
+        listed = [item for source in links.sources for item in source.items]
         if not rows and listed:
             rows = self._rows(select.format(anchor=f"VALUES ?s {{ {' '.join('wd:' + qid for qid in listed)} }}"))
         found: dict[str, dict] = {}
@@ -222,7 +236,32 @@ class RiverResearch:
             item = found.setdefault(row["s"], {"uri": row["s"], "qid": qid_of(row["s"]), "label": row["sl"], "c": row.get("c"), "classes": set(), "links": int(row.get("n", 0))})
             if "tl" in row:
                 item["classes"].add(row["tl"].lower())
+        if not found and not self.native:
+            return self._written_sources(links)
         return list(found.values())
+
+    def _native_sources(self, river_qid: str, links: InfoboxLinks) -> list[dict]:
+        if not self.native:
+            return []
+        rows = self._rows(f"SELECT ?t WHERE {{ ?a schema:about wd:{river_qid} ; schema:isPartOf <https://{self.language}.wikipedia.org/> ; schema:name ?t }}")
+        native = self.native.links(rows[0]["t"]) if rows else InfoboxLinks((), ())
+        found = [item for item in self._sources(river_qid, native) if self._agrees(item, links)]
+        return found or self._written_sources(links)
+
+    @staticmethod
+    def _agrees(item: dict, links: InfoboxLinks) -> bool:
+        stated = next((as_point(source.point) for source in links.sources if source.point), None)
+        found = as_point(point_of(item["c"]))
+        if stated is None or found is None:
+            return True
+        return GEOD.inv(stated.x, stated.y, found.x, found.y)[2] / 1000 <= SOURCE_AGREEMENT_KM
+
+    def _written_sources(self, links: InfoboxLinks) -> list[dict]:
+        return [self._written(source) for source in links.sources if source.names and source.point][:1]
+
+    def _written(self, source) -> dict:
+        x, y = source.point
+        return {"uri": None, "qid": "", "label": " / ".join(source.names), "c": f"Point({x} {y})", "classes": set(), "links": 0}
 
     def _origin(self, candidates: list[dict]) -> dict | None:
         def rank(item: dict):
@@ -296,7 +335,7 @@ class RiverResearch:
             return None, None, SourceKind.UNKNOWN
         classes = origin["classes"]
         kind = source_kind(classes, False)
-        if kind is SourceKind.UNKNOWN and self._is_a(origin["uri"], LAKE):
+        if kind is SourceKind.UNKNOWN and origin["uri"] and self._is_a(origin["uri"], LAKE):
             kind = SourceKind.LAKE
         area = self.shapes.get(origin["qid"])
         area = area if is_area(area) else None
@@ -333,10 +372,11 @@ class RiverResearch:
         x0, y0, x1, y1 = river.total_bounds
         return upstream.distance(area.union_all()) > 0.05 * ((x1 - x0) ** 2 + (y1 - y0) ** 2) ** 0.5
 
-    def _source(self, origin: dict | None, kind: SourceKind) -> Source | None:
+    def _source(self, origin: dict | None, kind: SourceKind, upstream: Point) -> Source | None:
         if origin is None:
             return None
-        return Source(source_label(origin["label"], origin["classes"]), origin["qid"], kind, tuple(sorted(origin["classes"])), point_of(origin["c"]))
+        point = (upstream.x, upstream.y) if kind is SourceKind.UNKNOWN else point_of(origin["c"])
+        return Source(source_label(origin["label"], origin["classes"]), origin["qid"], kind, tuple(sorted(origin["classes"])), point)
 
     def _mouth(self, row: dict | None, classes: set[str], is_river: bool, dried: bool, sink: Sink | None) -> Mouth | None:
         if row is None:
@@ -390,6 +430,15 @@ class RiverResearch:
                 outline = self.shape(qid_item, AREAS)
                 found[qid_item] = PathLake(Landmark(row["fl"], qid_item, point), outline if is_area(outline) else None)
         return tuple(list(found.values())[:MAX_PER_KIND])
+
+
+def span_of(shape: gpd.GeoSeries) -> float:
+    x0, y0, x1, y1 = shape.total_bounds
+    return ((x1 - x0) ** 2 + (y1 - y0) ** 2) ** 0.5
+
+
+def oversized(area: gpd.GeoSeries, river: gpd.GeoSeries) -> bool:
+    return span_of(area) > OVERSIZED_AREA * span_of(river)
 
 
 def river_geometry_of(geometry: gpd.GeoSeries) -> gpd.GeoSeries | None:
