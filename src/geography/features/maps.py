@@ -176,17 +176,17 @@ def line_scene(job: FeatureMapJob) -> Scene:
     )
 
 
-def river_scene(job: FeatureMapJob) -> Scene:
+def river_scene(job: FeatureMapJob, min_frame: float = RIVER_MIN_FRAME_M, with_tributaries: bool = True) -> Scene:
     art = job.art
-    context = [*art.tributaries.values(), gpd.GeoSeries([art.source_point], crs=CRS)]
+    context = [*(art.tributaries.values() if with_tributaries else ()), gpd.GeoSeries([art.source_point], crs=CRS)]
     if art.source_area is not None:
         context.append(art.source_area)
     if art.sink and art.sink.outline is not None and art.mouth.kind is not MouthKind.LAKE:
         context.append(art.sink.outline)
-    frame = frame_around(gpd.GeoSeries(pd.concat([job.geometry, *context]).values, crs=CRS), RIVER_CONTEXT, RIVER_MIN_FRAME_M)
+    frame = frame_around(gpd.GeoSeries(pd.concat([job.geometry, *context]).values, crs=CRS), RIVER_CONTEXT, min_frame)
     scene = line_scene(job)
     hairline = job.geometry.to_crs(local_projection(job.geometry)).buffer(size_of(frame) * RIVER_HAIRLINE_SHARE).to_crs(CRS)
-    return replace(scene, frame=frame, highlight=hairline, style=replace(scene.style, highlight=RIVER_BLUE), overlay=functools.partial(paint_river, art))
+    return replace(scene, frame=frame, highlight=hairline, style=replace(scene.style, highlight=RIVER_BLUE, outline=RIVER_BLUE), overlay=functools.partial(paint_river, art))
 
 
 def point_scene(job: FeatureMapJob, data: NaturalEarth) -> Scene:

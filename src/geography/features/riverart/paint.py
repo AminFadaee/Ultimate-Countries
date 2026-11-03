@@ -36,8 +36,14 @@ SAMPLES = 500
 RIBBON_HALF_WIDTH = 2.3
 CHEVRON_ARM, CHEVRON_ANGLE = 4.7, math.radians(42)
 CHEVRON_SPACING = 85
+CHEVRON_MIN_SPACING = 55
+CHEVRON_MIN_GAP = 40
+NUDGE_STEP_PT, NUDGE_STEPS = 6, 8
+EDGE_MARGIN_PT = 40
+SINK_REACH_PT = 40
 MAX_CHEVRONS, MIN_CHEVRONS = 8, 4
 MAX_PEAKS = 48
+INLAND_REACH_PT = 12
 LAKE_ICON_PT = (16, 20)
 WIDE_LAKE_PT = 70
 COUNTRY_LABELS = 8
@@ -77,6 +83,11 @@ class RiverPainter:
         self.unit = extent.width / (fig.get_size_inches()[0] * 72)
         self.kind = art.source.kind if art.source else SourceKind.UNKNOWN
         self.source_point = art.source_point
+        self.area = art.source_area
+        self.peaks: list[tuple[float, float, float]] = []
+        self.chevrons: list[float] = []
+        self.mouth_labels: list[matplotlib.text.Text] = []
+        self.mouth_symbol_pt = 0.0
         self._trace_path()
 
     def paint(self) -> None:
@@ -136,8 +147,8 @@ class RiverPainter:
         self.ax.add_geometries(list(shape.geometry), crs=GEODETIC, facecolor="none", edgecolor=dashed or edge, linestyle=(0, (4, 3)), linewidth=1.2, zorder=3)
 
     def _areas(self) -> None:
-        if self.art.source_area is not None:
-            self._outline(self.art.source_area, "#cdb892", "#8c7355", 0.35, "#6b5740")
+        if self.area is not None:
+            self._outline(self.area, "#cdb892", "#8c7355", 0.35, "#6b5740")
         sink = self.art.sink
         if sink and sink.outline is not None and self.art.mouth.kind is not MouthKind.LAKE:
             face, edge = {MouthKind.DRIED: ("#d0d0d0", "#6f6f6f"), MouthKind.DELTA: ("#cfd9a8", "#6f7a3f")}.get(self.art.mouth.kind, ("#cdb892", "#6b5740"))
@@ -148,12 +159,19 @@ class RiverPainter:
             self.ax.add_geometries(list(lines.geometry), crs=GEODETIC, facecolor="none", edgecolor="white", linewidth=3.4, alpha=0.7, zorder=4.7)
             self.ax.add_geometries(list(lines.geometry), crs=GEODETIC, facecolor="none", edgecolor=LINK_GREY, linewidth=2.4, zorder=4.8)
         for name in self.art.source_rivers:
-            ends = [Point(c) for line in self.art.linked[name].explode(index_parts=False) for c in (line.coords[0], line.coords[-1])]
-            far = max(ends, key=lambda p: p.distance(self.art.upstream))
-            self.text(far.x, far.y, name, 8, ha="center", va="bottom", fontstyle="italic", color=WATER_TEXT, path_effects=halo())
+            spots = [Point(c) for line in self.art.linked[name].explode(index_parts=False) for c in line.coords if self._well_inside(Point(c))]
+            if spots:
+                far = max(spots, key=lambda p: p.distance(self.art.upstream))
+                self.text(far.x, far.y, name, 8, ha="center", va="bottom", fontstyle="italic", color=WATER_TEXT, path_effects=halo())
         for lines in self.art.tributaries.values():
             self.ax.add_geometries(list(lines.geometry), crs=GEODETIC, facecolor="none", edgecolor="white", linewidth=1.8, alpha=0.45, zorder=3.5)
             self.ax.add_geometries(list(lines.geometry), crs=GEODETIC, facecolor="none", edgecolor=TRIBUTARY_BLUE, linewidth=0.9, zorder=4)
+
+    def _well_inside(self, point: Point) -> bool:
+        x, y = self.project(point.x, point.y)
+        xmin, xmax, ymin, ymax = self.extent.bounds
+        margin = EDGE_MARGIN_PT * self.unit
+        return xmin + margin <= x <= xmax - margin and ymin + margin <= y <= ymax - margin
 
     def _width_pts(self, shape: gpd.GeoSeries) -> float:
         x0, y0, x1, y1 = shape.total_bounds
@@ -181,10 +199,10 @@ class RiverPainter:
 
     def _peaks(self) -> None:
         glacier = self.kind is SourceKind.GLACIER
-        area = self.art.source_area.union_all() if self.art.source_area is not None else None
+        area = self.area.union_all() if self.area is not None else None
         size = 34 if glacier else 24 if area is None or (area.bounds[2] - area.bounds[0]) < 8 else 30
         if area is not None:
-            size = max(size, self._width_pts(self.art.source_area) / 7)
+            size = max(size, self._width_pts(self.area) / 7)
         centre = area.representative_point() if area is not None else self.anchor()
         if glacier:
             unit = self.deg(size)
@@ -197,6 +215,7 @@ class RiverPainter:
             ]
         else:
             spots = self._peak_spots(area, size)
+        self.peaks = spots
         for index, (x, y, points) in enumerate(sorted(spots, key=lambda spot: (-spot[1], spot[0]))):
             px, py = self.project(x, y)
             z = 5 + index * 0.004
@@ -307,6 +326,7 @@ class RiverPainter:
         low, high = int(SAMPLES * 0.08), int(SAMPLES * 0.92)
         if self.kind.has_icon:
             low = max(low, int(np.searchsorted(self.along, 1.2 * float(np.clip(self.along[-1] * 0.2, 14, 26)))))
+        count = min(count, int((self.along[high] - self.along[low]) // CHEVRON_MIN_SPACING))
         sigma = max(4, SAMPLES // 45)
         kernel = np.exp(-0.5 * (np.arange(-3 * sigma, 3 * sigma + 1) / sigma) ** 2)
         kernel /= kernel.sum()
@@ -320,6 +340,9 @@ class RiverPainter:
             centre = int(low + (high - low) * (slot + 0.5) / count)
             candidates = range(max(window, centre - reach), min(SAMPLES - window, centre + reach) + 1)
             i = min(candidates, key=lambda k: np.ptp(heading[k - window:k + window + 1]))
+            if any(abs(self.along[i] - placed) < CHEVRON_MIN_GAP for placed in self.chevrons):
+                continue
+            self.chevrons.append(float(self.along[i]))
             tip = self.xy[i] + tangent[i] * CHEVRON_ARM * 0.5 * self.unit
             for sign in (1, -1):
                 end = tip - (tangent[i] * math.cos(CHEVRON_ANGLE) - sign * normal[i] * math.sin(CHEVRON_ANGLE)) * CHEVRON_ARM * self.unit
@@ -336,14 +359,45 @@ class RiverPainter:
             return
         away = self._flow_away()
         if kind in (SourceKind.HIGHLAND, SourceKind.GLACIER):
-            area = self.art.source_area.union_all() if self.art.source_area is not None else None
-            anchor = area.representative_point() if area is not None else self.anchor()
-            low = (area.bounds[1] if area is not None else anchor.y) - self.deg(34 if kind is SourceKind.GLACIER else 24)
-            self.chip(anchor.x, low, source.name, kind)
+            self._range_chip(source.name)
         elif kind.has_icon:
             self._icon_chip(source.name, away)
         elif kind is SourceKind.LAKE:
             self._lake(source.name, self.art.source_lake, self.anchor(), True, away)
+        elif kind is SourceKind.UNKNOWN:
+            self._written_source(source.name, away)
+
+    def _range_chip(self, name: str) -> None:
+        start = self.anchor()
+        if not self.peaks:
+            area = self.area.union_all() if self.area is not None else None
+            x = (area.representative_point() if area is not None else start).x
+            low = (area.bounds[1] if area is not None else start.y) - self.deg(34 if self.kind is SourceKind.GLACIER else 24)
+            self.chip(x, low, name, self.kind)
+            return
+        x, y, points = self.nearest_peak()
+        px, py = self.project(x, y)
+        reach = (points * 0.4 + 14) * self.unit
+        spots = [(px, py - reach), (px, py + reach + points * 0.6 * self.unit), (px - reach * 2.5, py), (px + reach * 2.5, py)]
+        chip = self.chip(x, y, name, self.kind)
+        renderer = self.fig.canvas.get_renderer()
+        path = self.ax.transData.transform(self.xy)
+        for spot in spots:
+            chip.set_position(self.geodetic(*spot))
+            box = chip.get_window_extent(renderer)
+            if not ((path[:, 0] > box.x0) & (path[:, 0] < box.x1) & (path[:, 1] > box.y0) & (path[:, 1] < box.y1)).any():
+                return
+        chip.set_position(self.geodetic(*spots[0]))
+
+    def nearest_peak(self) -> tuple[float, float, float]:
+        start = self.anchor()
+        return min(self.peaks, key=lambda peak: math.dist(peak[:2], (start.x, start.y)))
+
+    def _written_source(self, name: str, away: np.ndarray) -> None:
+        point = self.source_point
+        px, py = self.project(point.x, point.y)
+        self.ax.add_patch(matplotlib.patches.Circle((px, py), 4.5 * self.unit, facecolor=RIVER_BLUE, edgecolor="white", linewidth=1.6, zorder=ICONS_ON_TOP))
+        self.chip(point.x + away[0] * self.deg(22), point.y + away[1] * self.deg(22), name, self.kind)
 
     def _icon_chip(self, name: str, away: np.ndarray) -> None:
         anchor = self.anchor()
@@ -363,22 +417,35 @@ class RiverPainter:
         mouth = self.art.mouth
         if mouth is None:
             return
+        before = len(self.ax.texts)
+        self._write_mouth(mouth, self._mouth_direction())
+        self.mouth_labels = list(self.ax.texts[before:])
+
+    def _mouth_direction(self) -> np.ndarray:
         tail = self.art.path.interpolate(0.97, normalized=True)
-        direction = unit_vector(np.array([self.art.mouth_point.x - tail.x, self.art.mouth_point.y - tail.y]))
-        if mouth.kind is MouthKind.RIVER:
-            horizontal = abs(direction[0]) > abs(direction[1])
-            self.text(
-                self.art.mouth_point.x + direction[0] * self.deg(10), self.art.mouth_point.y + direction[1] * self.deg(10), mouth.name, 8,
-                ha=("left" if direction[0] > 0 else "right") if horizontal else "center",
-                va="center_baseline" if horizontal else ("bottom" if direction[1] > 0 else "top"),
-                fontstyle="italic", color=WATER_TEXT, path_effects=halo(),
-            )
+        return unit_vector(np.array([self.art.mouth_point.x - tail.x, self.art.mouth_point.y - tail.y]))
+
+    def _write_mouth(self, mouth, direction: np.ndarray) -> None:
+        if mouth.kind is MouthKind.RIVER or (mouth.kind is MouthKind.SEA and self._mouth_inland()):
+            self._end_label(mouth.name, direction)
         elif mouth.kind is MouthKind.LAKE:
             self._lake_mouth(mouth.name, direction)
         elif mouth.kind is MouthKind.SEA:
             self._sea_label(mouth.name)
         else:
             self._sink_label(mouth.name, direction)
+
+    def _mouth_inland(self) -> bool:
+        return self.renderer.data.countries.geometry.union_all().contains(self.art.mouth_point.buffer(self.deg(INLAND_REACH_PT)))
+
+    def _end_label(self, name: str, direction: np.ndarray) -> None:
+        horizontal = abs(direction[0]) > abs(direction[1])
+        self.text(
+            self.art.mouth_point.x + direction[0] * self.deg(10), self.art.mouth_point.y + direction[1] * self.deg(10), name, 8,
+            ha=("left" if direction[0] > 0 else "right") if horizontal else "center",
+            va="center_baseline" if horizontal else ("bottom" if direction[1] > 0 else "top"),
+            fontstyle="italic", color=WATER_TEXT, path_effects=halo(),
+        )
 
     def _lake_mouth(self, name: str, direction: np.ndarray) -> None:
         whole = self.art.sink.whole
@@ -401,13 +468,17 @@ class RiverPainter:
         align = {"ha": "center", "va": "center_baseline"}
         if sink.outline is not None:
             spot = sink.outline.union_all().representative_point()
+            if math.dist(self.project(spot.x, spot.y), self.xy[-1]) > SINK_REACH_PT * self.unit:
+                spot, align = Point(self.geodetic(*(self.xy[-1] + along * 14 * self.unit))), aligned_to(angle)
         elif kind is MouthKind.DELTA:
             size = float(np.clip(self.along[-1] * 0.14, 26, 46))
             icons.delta_fan(self.ax, self.xy[-1][0], self.xy[-1][1], size * self.unit, angle)
+            self.mouth_symbol_pt = size
             beyond = self.xy[-1] + along * (size + 5) * self.unit
             spot, align = Point(self.geodetic(*beyond)), aligned_to(angle)
         elif sink.fades and kind is MouthKind.LAND:
             self._dunes(along)
+            self.mouth_symbol_pt = 56
             beyond = self.xy[-1] + along * 56 * self.unit
             spot, align = Point(self.geodetic(*beyond)), aligned_to(angle)
         else:
@@ -450,6 +521,8 @@ class RiverPainter:
             if hit := place(text, size, rings, 0.04 if size <= 6.5 and rings == 14 else 0.0):
                 self.text(hit[0], hit[1], text, size, va="center", linespacing=1.05, color=SEA_TEXT, path_effects=halo(1.2, "#aedcf5"))
                 return
+        beyond = unit_vector(np.array([math.cos(flow), math.sin(flow)]))
+        self.text(mouth.x + beyond[0] * self.deg(14), mouth.y + beyond[1] * self.deg(14), name, 8, fontstyle="italic", color=SEA_TEXT, path_effects=halo())
 
     def _move(self, label, dy: float, dx: float = 0.0) -> None:
         x, y = label.get_position()
@@ -465,6 +538,7 @@ class RiverPainter:
                 a, b = drawn[i].get_window_extent(renderer), drawn[j].get_window_extent(renderer)
                 if a.overlaps(b):
                     self._move(drawn[i], (b.y0 - a.y1 - 2) if a.y0 + a.y1 >= b.y0 + b.y1 else (b.y1 - a.y0 + 2))
+        self._off_the_river(renderer)
         for label in self.ax.texts:
             extent = label.get_window_extent(renderer)
             for other in self.fig.axes[1:]:
@@ -473,6 +547,24 @@ class RiverPainter:
                     right, up = keep.x1 + 8 - extent.x0, keep.y1 + 8 - extent.y0
                     self._move(label, 0, right) if right <= up else self._move(label, up)
                     extent = label.get_window_extent(renderer)
+
+    def _off_the_river(self, renderer) -> None:
+        path = self.ax.transData.transform(self.xy)
+
+        def on_river(box) -> bool:
+            return bool(((path[:, 0] > box.x0) & (path[:, 0] < box.x1) & (path[:, 1] > box.y0) & (path[:, 1] < box.y1)).any())
+
+        step = NUDGE_STEP_PT * self.fig.dpi / 72
+        moves = [(dx * k * step, dy * k * step) for k in range(1, NUDGE_STEPS + 1) for dx, dy in ((0, 1), (0, -1), (1, 0), (-1, 0))]
+        for label in self.ax.texts:
+            if not on_river(label.get_window_extent(renderer)):
+                continue
+            others = [other.get_window_extent(renderer) for other in self.ax.texts if other is not label]
+            for dx, dy in moves:
+                box = label.get_window_extent(renderer).translated(dx, dy)
+                if not on_river(box) and not any(box.overlaps(other) for other in others):
+                    self._move(label, dy, dx)
+                    break
 
     def _country_labels(self) -> None:
         renderer = self.fig.canvas.get_renderer()
@@ -521,5 +613,7 @@ class RiverPainter:
         return crossed, around
 
 
-def paint_river(art: RiverArt, renderer: LocatorMap, fig, projection: ccrs.Projection, extent) -> None:
-    RiverPainter(art, renderer, fig, projection, extent).paint()
+def paint_river(art: RiverArt, renderer: LocatorMap, fig, projection: ccrs.Projection, extent) -> RiverPainter:
+    painter = RiverPainter(art, renderer, fig, projection, extent)
+    painter.paint()
+    return painter
