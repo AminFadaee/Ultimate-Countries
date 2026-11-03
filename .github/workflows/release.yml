@@ -20,11 +20,17 @@ jobs:
       - name: Install dependencies
         run: uv sync --frozen
 
+      - name: Run tests
+        run: uv run pytest
+
       - name: Build decks
         run: |
           uv run geography deck
           uv run geography places-deck
           for directory in data/country_decks/*/; do uv run geography country-deck "$(basename "$directory")"; done
+
+      - name: Check the built decks
+        run: uv run pytest -m decks
 
       - name: Publish release
         run: |
