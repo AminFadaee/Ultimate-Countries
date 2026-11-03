@@ -12,6 +12,7 @@ SOURCE_PLACE = re.compile(r"^\s*\|\s*source(\d*)_location\s*=\s*(.*)$", re.IGNOR
 WIKILINK = re.compile(r"\[\[([^\]|#]+)(?:\|([^\]]+))?")
 COORD = re.compile(r"\{\{\s*coord\s*\|([^}]*)\}\}", re.IGNORECASE)
 NUMBER = re.compile(r"^-?\d+(?:\.\d+)?$")
+NAMED_AT = re.compile(r"^([^\[\]{}<|]*[A-Za-z][^\[\]{}<|]*?),\s*\[\[")
 MAX_LINKS = 6
 
 
@@ -66,11 +67,15 @@ class RiverInfobox:
         sources = []
         for line in lines:
             if match := pattern.match(line):
-                links = WIKILINK.findall(match.group(2))[:MAX_LINKS]
+                index, text = match.group(1) or "", match.group(2).strip()
+                links = WIKILINK.findall(text)[:MAX_LINKS]
                 items = tuple(item for title, _ in links if (item := self._item(title.strip())))
                 names = tuple((label or title).strip() for title, label in links)
-                index = match.group(1) or ""
-                sources.append(InfoboxSource(names, items, points.get(index), index))
+                if pattern is SOURCE and (named := NAMED_AT.match(text)):
+                    sources.append(InfoboxSource((named.group(1).strip(),), (), points.get(index), index))
+                    sources.append(InfoboxSource(names, items, points.get(index), index, located=True))
+                else:
+                    sources.append(InfoboxSource(names, items, points.get(index), index))
         return sources
 
     def _item(self, title: str) -> str | None:

@@ -11,7 +11,7 @@ from geography.features.model import Feature
 from geography.features.riverart import geometry as river_geometry
 from geography.features.riverart.infobox import InfoboxLinks, RiverInfobox
 from geography.features.riverart.kinds import (
-    AREA_WORDS, DRIED_WORDS, HIGHLAND, MARINE, RIVER_LIKE, WATER_BODY, WETTED_LAND, MouthKind, SourceKind, source_kind, source_label,
+    AREA_WORDS, CATEGORIES, DRIED_WORDS, HIGHLAND, MARINE, RIVER_LIKE, WATER_BODY, WETTED_LAND, MouthKind, SourceKind, source_kind, source_label,
 )
 from geography.features.spatial import CRS
 from geography.places import Nominatim
@@ -234,10 +234,17 @@ class RiverResearch:
         if any(source.items for source in links.sources if not source.located):
             return self._listed(links.sources)
         native = self._native_links(river_qid)
-        for sources, located in ((native.sources, False), (links.sources, True), (native.sources, True)):
-            if agreeing := [item for item in self._listed([s for s in sources if s.located is located]) if self._agrees(item, links)]:
+        if agreeing := self._agreeing(native.sources, False, links):
+            return agreeing
+        if written := self._written_sources(links):
+            return written
+        for sources in (links.sources, native.sources):
+            if agreeing := self._agreeing(sources, True, links):
                 return agreeing
-        return self._written_sources(links)
+        return []
+
+    def _agreeing(self, sources, located: bool, links: InfoboxLinks) -> list[dict]:
+        return [item for item in self._listed([source for source in sources if source.located is located]) if self._agrees(item, links)]
 
     def _native_links(self, river_qid: str) -> InfoboxLinks:
         if not self.native:
@@ -270,11 +277,12 @@ class RiverResearch:
         return GEOD.inv(stated.x, stated.y, found.x, found.y)[2] / 1000 <= SOURCE_AGREEMENT_KM
 
     def _written_sources(self, links: InfoboxLinks) -> list[dict]:
-        return [self._written(source) for source in links.sources if source.names and source.point][:1]
+        return [self._written(source) for source in links.sources if source.names and source.point and not source.located][:1]
 
     def _written(self, source) -> dict:
         x, y = source.point
-        return {"uri": None, "qid": "", "label": " / ".join(source.names), "c": f"Point({x} {y})", "classes": set(), "links": 0}
+        label = " / ".join(source.names)
+        return {"uri": None, "qid": "", "label": label, "c": f"Point({x} {y})", "classes": {word for word in CATEGORIES if word in label.lower()}, "links": 0}
 
     def _origin(self, candidates: list[dict]) -> dict | None:
         def rank(item: dict):
