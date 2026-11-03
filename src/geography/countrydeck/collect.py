@@ -65,8 +65,8 @@ def run_places(directory: pathlib.Path, code: str, country: dict, rerender_maps:
     meta = json.loads((directory / "meta.json").read_text())
     excluded = {city["id"] for city in json.loads((directory / "cities.json").read_text())}
     excluded |= {province["id"] for province in json.loads((directory / "provinces.json").read_text())}
-    collector = CountryPlacesCollector(directory, create_session())
-    features = collector.collect(NaturalEarth.load(), code, country, meta["language"], excluded)
+    collector = CountryPlacesCollector(directory, create_session(), meta["language"])
+    features = collector.collect(NaturalEarth.load(), code, country, excluded)
     slugs = collector.finish(features)
-    features = collector.draw_maps(features, slugs, code, rerender_maps, workers)
+    features = collector.draw_maps(features, slugs, country, code, rerender_maps, workers)
     logger.info("Exported %d places to %s", collector.export(features, slugs), directory / "places")

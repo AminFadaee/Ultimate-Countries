@@ -18,10 +18,14 @@ from geography.features.maps import (
     PLACE_ZOOM_THRESHOLD,
     POINT_LENS_SPAN_M,
     POINT_RADIUS_M,
+    FeatureMapJob,
     local_projection,
     outline,
+    river_scene,
     size_of,
 )
+from geography.features.riverart.checks import RiverCheck
+from geography.features.riverart.facts import RiverArt
 from geography.features.spatial import CRS
 from geography.labels import CityLabel
 from geography.map_cache import through_cache
@@ -40,6 +44,8 @@ from geography.render import (
 logger = logging.getLogger(__name__)
 TOUCHING_M = 1_000
 ACROSS_WATER_REACH_M = 700_000
+RIVER_MIN_FRAME_M = 40_000
+RIVER_CITY_REACH_M = 10_000
 
 
 @dataclass(frozen=True)
@@ -105,6 +111,24 @@ class PlaceMapJob:
     photo: pathlib.Path | None
     output: pathlib.Path
     answer_output: pathlib.Path
+    art: RiverArt | None = None
+    cities: tuple[CityLabel, ...] = ()
+
+
+def cities_along(art: RiverArt, cities: tuple[CityLabel, ...]) -> tuple[CityLabel, ...]:
+    local = local_projection(art.river)
+    river = art.river.to_crs(local).union_all()
+    spots = gpd.GeoSeries.from_xy([city.longitude for city in cities], [city.latitude for city in cities], crs=CRS).to_crs(local)
+    return tuple(city for city, spot in zip(cities, spots, strict=True) if spot.distance(river) <= RIVER_CITY_REACH_M)
+
+
+def river_place_scene(job: PlaceMapJob, check: RiverCheck) -> Scene:
+    kind = Kind(job.kind)
+    river = river_scene(FeatureMapJob(job.key, kind, job.art.river, job.output, job.host, False, art=job.art), RIVER_MIN_FRAME_M, with_tributaries=False)
+    return replace(
+        river, framing=Framing.CONTEXT, min_frame_height=0.0, zoom_threshold=0.0, cities=cities_along(job.art, job.cities), photo=job.photo,
+        naming=Naming(job.label, neighbours=False, off_target=True), overlay=check.paint, inspect=check.inspect,
+    )
 
 
 def place_scene(job: PlaceMapJob, data: NaturalEarth) -> Scene:
@@ -137,6 +161,11 @@ class PlaceMapWorker:
     @classmethod
     def render(cls, job: PlaceMapJob) -> str:
         job.output.parent.mkdir(parents=True, exist_ok=True)
+        if job.art:
+            if not (problems := cls.render_river(job)):
+                return job.key
+            logger.warning("River art for %s failed its checks, so it gets a plain map: %s", job.label, "; ".join(problems))
+            job = replace(job, art=None, cities=())
         try:
             scene = place_scene(job, cls.renderer.data)
             cls.renderer.render(scene, job.output, job.answer_output)
@@ -145,6 +174,12 @@ class PlaceMapWorker:
             fallback = replace(job, shape={"type": "Point", "coordinates": (point.x, point.y)})
             cls.renderer.render(place_scene(fallback, cls.renderer.data), job.output, job.answer_output)
         return job.key
+
+    @classmethod
+    def render_river(cls, job: PlaceMapJob) -> list[str]:
+        check = RiverCheck(job.art)
+        cls.renderer.render(river_place_scene(job, check), job.output, job.answer_output)
+        return check.problems
 
 
 def render_place_maps(jobs: list[PlaceMapJob], workers: int) -> Iterable[tuple[PlaceMapJob, Exception | None]]:
@@ -180,15 +215,23 @@ def jobs_for(directory: pathlib.Path) -> list[AreaMapJob]:
     return jobs
 
 
+def deck_cities(directory: pathlib.Path) -> list[dict]:
+    return sorted(json.loads((directory / "cities.json").read_text()), key=lambda city: -city["population"])
+
+
+def city_labels(cities: list[dict], country: dict, target: str | None = None) -> tuple[CityLabel, ...]:
+    capitals = {city["id"] for city in country["cities"] if city["role"] == "capital"}
+    return tuple(CityLabel(city["name"], city["longitude"], city["latitude"], city["id"] in capitals, city["id"] == target) for city in cities)
+
+
 def city_jobs(directory: pathlib.Path, documents: dict[str, dict]) -> list[MapJob]:
     meta = json.loads((directory / "meta.json").read_text())
     country = documents[meta["code"]]
-    capitals = {city["id"] for city in country["cities"] if city["role"] == "capital"}
-    cities = sorted(json.loads((directory / "cities.json").read_text()), key=lambda city: -city["population"])
+    cities = deck_cities(directory)
     maps = directory / "maps"
     jobs = []
     for city in cities:
-        labels = tuple(CityLabel(other["name"], other["longitude"], other["latitude"], other["id"] in capitals, other["id"] == city["id"]) for other in cities)
+        labels = city_labels(cities, country, city["id"])
         output = maps / f"city__{slugify(city['name'])}.png"
         jobs.append(MapJob(city["id"], country["id"], output, country["name"], meta["code"], city["name"], None, (city["longitude"], city["latitude"]),
                            answer_path(output), labels))
