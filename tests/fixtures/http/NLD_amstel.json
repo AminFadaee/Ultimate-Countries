@@ -1,0 +1,147 @@
+{
+"0e8b2d0310f2937ce12e92e6397a32857b977bc8": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"c\", \"osm\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"1de84cb18705be2cb1a76c84077ab8f8b2686377": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"c\", \"osm\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"24275340544027d004c946358d6bb0a80fa0a595": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"m\", \"ml\", \"rank\", \"c\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ {\n      \"m\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://www.wikidata.org/entity/Q338137\"\n      },\n      \"ml\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"IJ\"\n      },\n      \"rank\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://wikiba.se/ontology#NormalRank\"\n      },\n      \"c\" : {\n        \"datatype\" : \"http://www.opengis.net/ont/geosparql#wktLiteral\",\n        \"type\" : \"literal\",\n        \"value\" : \"Point(4.91642 52.37976)\"\n      }\n    } ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"326cbc005b68284f2a8aed46c0dc292575681f43": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"s\", \"sl\", \"c\", \"tl\", \"n\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"34d12e1cb37ade01bbf079cd060c05922f076e2d": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"c\", \"osm\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"476af6389b80f5fb1bb444fa51ecd2cde15f61d0": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"g\", \"gl\", \"c\", \"n\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ {\n      \"g\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://www.wikidata.org/entity/Q34221\"\n      },\n      \"gl\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"Niagara Falls\"\n      },\n      \"c\" : {\n        \"datatype\" : \"http://www.opengis.net/ont/geosparql#wktLiteral\",\n        \"type\" : \"literal\",\n        \"value\" : \"Point(-79.071 43.08)\"\n      },\n      \"n\" : {\n        \"datatype\" : \"http://www.w3.org/2001/XMLSchema#integer\",\n        \"type\" : \"literal\",\n        \"value\" : \"135\"\n      }\n    }, {\n      \"g\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://www.wikidata.org/entity/Q43278\"\n      },\n      \"gl\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"Victoria Falls\"\n      },\n      \"c\" : {\n        \"datatype\" : \"http://www.opengis.net/ont/geosparql#wktLiteral\",\n        \"type\" : \"literal\",\n        \"value\" : \"Point(25.858055555 -17.924777777)\"\n      },\n      \"n\" : {\n        \"datatype\" : \"http://www.w3.org/2001/XMLSchema#integer\",\n        \"type\" : \"literal\",\n        \"value\" : \"111\"\n      }\n    } ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"4d976493b7d9c1a19bc79b6b8f0b406d56d551e0": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"t\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ {\n      \"t\" : {\n        \"xml:lang\" : \"nl\",\n        \"type\" : \"literal\",\n        \"value\" : \"Amstel (rivier)\"\n      }\n    } ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"5061e4d167fe655bc5407743b3b96d61f7aff434": {
+"body": "{\"parse\":{\"title\":\"Amstel (rivier)\",\"pageid\":21,\"redirects\":[],\"wikitext\":\"{{Infobox rivier\\n| afbeelding = Location Amstel with Drechtkanaal.PNG\\n| onderschrift = Locatie van de Amstel op de kaart van Nederland\\n| naam= Amstel\\n| lengte = 31\\n| hoogte=\\n| debiet=\\n| oppervlakte=\\n| oorsprong = [[Aarkanaal]]\\n| bron_lat_deg = 52\\n| bron_lat_min = 13\\n| bron_lat_sec = 42.78\\n| bron_lat_dir = N\\n| bron_lon_deg = 4\\n| bron_lon_min = 49\\n| bron_lon_sec = 3\\n| bron_lon_dir = E\\n| uitmonding= [[Amsterdam (hoofdbetekenis)|Amsterdam]]\\n| mon_lat_deg = 52\\n| mon_lat_min = 22\\n| mon_lat_sec = 3\\n| mon_lat_dir = N\\n| mon_lon_deg = 4\\n| mon_lon_min = 53\\n| mon_lon_sec = 37.9\\n| mon_lon_dir = E\\n| stroomtdoor= [[Noord-Holland]]\\n| afbeelding2=Amsterdam Amstel 20041105.jpg\\n| onderschrift2 = Luchtfoto van de Amstel in Amsterdam<br>(gezien van zuid naar noord)\\n| afbeelding3 = Amstelveen Oostermeer 2005 07 12.JPG\\n| onderschrift3 = Oostermeer bij [[Amstelveen]]\\n}}\\n{{maplink|id=|type=line|marker-size=small|zoom=11|frame=yes|frame-height=400|frame-width=110|plain=no|stroke-width=2|frame-align=left|stroke-color=#bb00ff|fill=#444444|fill-opacity=0.1|text=De {{tekstkleur|#bb00ff|Amstel}}}}\\n[[Bestand:Kaart van het noordelijke stroomgebied van de Amstel.jpg|thumb|[[Kaart van het noordelijke stroomgebied van de Amstel]]: linksonder Amsterdam, linksboven de [[Zuiderzee]] en [[Waterland (regio)|Waterland]], in het midden [[Ouderkerk aan de Amstel]], rechtsboven [[Mijdrecht]]; 1555.]]\\n[[Bestand:Adam van Breen - Skating on the Frozen Amstel River - Google Art Project.jpg|thumb|Schaatsers op de bevroren Amstel. [[Adam van Breen]]; 1611.]]\\n[[Bestand:IJsbreker op de Amstel - Pieter Schenk, 1746.jpg|thumb|De [[IJsbreker|ijsbreker]] op de Amstel, ter hoogte van het huidige café [[De Ysbreeker]] aan de [[Weesperzijde (straat)|Weesperzijde]], op een prent van Pieter Schenk uit 1746]]\\n[[Bestand:Zwem- en Badinrichting De Amstel.jpg|thumb|Zwem- en Badinrichting De Amstel, tegenover de [[Schollenbrug (Amsterdam)|Schollenbrug]]]]\\n[[Bestand:Amsterdam - De Buitenamstel.jpg|thumb|De Amstel gezien in zuidelijke richting vanaf de [[Hogesluis]], omstreeks 1900]]\\n[[Bestand:Bruggenin Amsterdam.jpg|thumb|Amstel met [[Magere Brug]].]]\\n[[Bestand:Amstelsluizen amsterdam.jpg|thumb|De [[Amstelsluizen]] ter hoogte van [[Koninklijk Theater Carré|Theater Carré]].]]\\n[[Bestand:View from the stone bridge, called Nieuwe Amstelbrug over the river Amstel; free photo Amsterdam city, Fons Heijnsbroek 08-11-2021.jpg|thumb|Uitzicht vanaf de [[Nieuwe Amstelbrug]], richting centrum, 2021.]]\\n[[Bestand:Headamstel.jpg|thumb|Roeien op de Amstel: Achten wachten op de start van de [[Head of the River Amstel]].]]\\n[[Bestand:Scheepswerf de Amstel.jpg|thumb|De inmiddels gesloopte Scheepswerf 'de Amstel' op het Amsteleiland, ten zuiden van Ouderkerk aan de Amstel in 2009]]\\n[[Bestand:Amstel near Nes.jpg|thumb|De Amstel bij [[Nes aan de Amstel]]]]\\n[[Bestand:Amstel river at Uithoorn in winter.jpg|thumb|Schaatsers op de Amstel in [[Uithoorn]]]]\\n[[Bestand:Amstel herfst.JPG|thumb|De Amstel ten zuiden van Uithoorn]]\\nDe '''Amstel''' is een [[Kanaliseren|gekanaliseerde]] [[rivier]] in het zuiden van [[Noord-Holland]], voor een deel op de grens van Noord-Holland met [[Zuid-Holland]] en [[Utrecht (provincie)|Utrecht]]. Het gebied langs de rivier wordt aangeduid als [[Amstelland]]. Amsterdam heeft zijn naam te danken aan de Amstel.\"}}",
+"status": 200,
+"url": "https://nl.wikipedia.org/w/api.php?action=parse&page=Amstel+%28rivier%29&prop=wikitext&section=0&redirects=1&format=json&formatversion=2"
+},
+"546dba54b0c383298eeba23d7f4d5f4d7fe10628": {
+"body": "{\"type\":\"FeatureCollection\",\"licence\":\"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright\",\"features\":[{\"type\":\"Feature\",\"properties\":{\"place_id\":156904638,\"osm_type\":\"relation\",\"osm_id\":12882829,\"place_rank\":18,\"category\":\"waterway\",\"type\":\"river\",\"importance\":0.48495004261115443,\"addresstype\":\"river\",\"name\":\"Amstel\",\"display_name\":\"Amstel, Ouderkerk aan de Amstel, Ouder-Amstel, Noord-Holland, Nederland\",\"address\":{\"river\":\"Amstel\",\"village\":\"Ouderkerk aan de Amstel\",\"municipality\":\"Ouder-Amstel\",\"state\":\"Noord-Holland\",\"ISO3166-2-lvl4\":\"NL-NH\",\"country\":\"Nederland\",\"country_code\":\"nl\"}},\"bbox\":[4.8700285,52.2532535,4.9154360,52.3674473],\"geometry\":{\"type\":\"MultiLineString\",\"coordinates\":[[[4.8700285,52.2532535],[4.8736023,52.2579144],[4.873028,52.2599355],[4.8735305,52.2608707],[4.8781861,52.261354],[4.8824739,52.2642315],[4.8794651,52.2672881],[4.8815808,52.2716021],[4.8816328,52.2749448],[4.8791442,52.2776665],[4.8792223,52.2796824],[4.8839914,52.2835019],[4.885474,52.2862281],[4.8895273,52.2872713],[4.889589,52.2881113],[4.8872996,52.288937],[4.887096,52.2897753],[4.8908159,52.2914088],[4.8913448,52.2943946],[4.9013107,52.2963103],[4.8988568,52.2988609],[4.8986487,52.3001601],[4.9078462,52.3068273],[4.9052367,52.3111076],[4.9061057,52.3142953],[4.9055183,52.3158163],[4.9089112,52.3177458],[4.9090384,52.3188249],[4.902528,52.321196],[4.8969037,52.3219888],[4.8953125,52.3240473],[4.8990569,52.3300272],[4.8986626,52.3327477],[4.9051294,52.333902],[4.9081493,52.3382743],[4.9140609,52.3402015],[4.915436,52.3415058],[4.9125378,52.3478812],[4.9097558,52.3521446],[4.9064658,52.3554085],[4.904671,52.3591671],[4.9040616,52.3601271],[4.9033221,52.3616382],[4.9030545,52.3620026],[4.9027595,52.362808],[4.9033221,52.3616382]],[[4.9027595,52.362808],[4.9006458,52.3666216],[4.8939945,52.3673606]]]}}]}",
+"status": 200,
+"url": "https://nominatim.openstreetmap.org/lookup?osm_ids=R12882829&format=geojson&polygon_geojson=1&polygon_threshold=0.0005"
+},
+"5fa78169418ccc6f27158672e36e004e7ac88de0": {
+"body": "{\"batchcomplete\":true,\"query\":{\"pages\":[{\"pageid\":946822,\"ns\":0,\"title\":\"IJ (Amsterdam)\",\"pageprops\":{\"wikibase_item\":\"Q338137\"}}]}}",
+"status": 200,
+"url": "https://en.wikipedia.org/w/api.php?action=query&titles=IJ+%28Amsterdam%29&prop=pageprops&ppprop=wikibase_item&redirects=1&format=json&formatversion=2"
+},
+"6181df38aa636f31a80d5d1847645255a8989271": {
+"body": "{\"batchcomplete\":true,\"query\":{\"pages\":[{\"pageid\":28687,\"ns\":0,\"title\":\"South Holland\",\"pageprops\":{\"wikibase_item\":\"Q694\"}}]}}",
+"status": 200,
+"url": "https://en.wikipedia.org/w/api.php?action=query&titles=South+Holland&prop=pageprops&ppprop=wikibase_item&redirects=1&format=json&formatversion=2"
+},
+"789649bb072ab28d6e3e7467ad7b19b2c412eab8": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"e\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"821b85a8968ad3dffaa90d1f4c762702e4235485": {
+"body": "{\"batchcomplete\":true,\"query\":{\"pages\":[{\"ns\":0,\"title\":\"Drecht\",\"missing\":true}]}}",
+"status": 200,
+"url": "https://en.wikipedia.org/w/api.php?action=query&titles=Drecht&prop=pageprops&ppprop=wikibase_item&redirects=1&format=json&formatversion=2"
+},
+"8814f190336785b472c6668ca2f5efe754d3b82e": {
+"body": "{\"parse\":{\"title\":\"Amstel\",\"pageid\":715790,\"redirects\":[],\"wikitext\":\"{{Short description|River in North Holland, the Netherlands}}\\n{{About|the Dutch river|the brewery|Amstel Brewery}}\\n{{Infobox river\\n| name                = Amstel\\n| native_name         = \\n| native_name_lang    = \\n| other_name          = \\n| etymology           = \\n<!---------------------- IMAGE & MAP -->\\n| image               = Amsterdam Amstel 12.jpg\\n| image_size          = 250px\\n| image_caption       = The Amstel in city center of Amsterdam with the [[Stopera]] (center) and [[H'ART Museum]] (right)\\n| map                 = Location Amstel with Drechtkanaal.PNG\\n| map_size            = 250px\\n| map_caption         = Location of the Amstel in dark blue\\n| pushpin_map         = \\n| pushpin_map_size    = \\n| pushpin_caption     = \\n<!---------------------- LOCATION -->\\n| subdivision_type1   = Country\\n| subdivision_name1   = [[Netherlands]]\\n| subdivision_type2   = Province\\n| subdivision_name2   = [[North Holland]], [[South Holland]], [[Utrecht (province)|Utrecht]]\\n| subdivision_type3   = Water board\\n| subdivision_name3   = [[Water board (Netherlands)#List of water boards|Amstel, Gooi en Vecht]]\\n| subdivision_type4   = Municipalities\\n| subdivision_name4   = [[Nieuwkoop]], [[Uithoorn]], [[De Ronde Venen]], [[Amstelveen]], [[Ouder-Amstel]], [[Amsterdam]]\\n| subdivision_type5   = \\n| subdivision_name5   = \\n<!---------------------- PHYSICAL CHARACTERISTICS -->\\n| length              = {{convert|31|km|mi|abbr=on}}\\n| width_min           = \\n| width_avg           = \\n| width_max           = \\n| depth_min           = \\n| depth_avg           = \\n| depth_max           = \\n| discharge1_location = \\n| discharge1_min      = \\n| discharge1_avg      = \\n| discharge1_max      = \\n<!---------------------- BASIN FEATURES -->\\n| source1             = [[Aarkanaal]] / [[Drecht]]\\n| source1_location    = [[Nieuwveen]], [[South Holland]]\\n| source1_coordinates = {{coord|52|12|24|N|4|44|05|E|display=inline}}\\n| source1_elevation   = \\n| mouth               = [[IJ (Amsterdam)|IJ]]\\n| mouth_location      = [[Amsterdam]], [[North Holland]]\\n| mouth_coordinates   = {{coord|52|22|08|N|4|53|33|E|display=inline}}\\n| mouth_elevation     = \\n| progression         = \\n| river_system        = \\n| basin_size          = \\n| tributaries_left    = \\n| tributaries_right   = \\n| custom_label        = \\n| custom_data         = \\n| extra               = \\n}}\\n\\nThe '''Amstel''' ({{IPA|nl|ˈɑmstəl|lang|Nl-Amstel.ogg}}) is a river in the province of [[North Holland]] in the [[Netherlands]].<ref>{{cite web|url=https://m.theindependentbd.com//magazine/details/7145/Amsterdam-%E2%80%93-Venice-of-the-North|title=Amsterdam {{•}} Venice of the North|website=theindependentbd.com|publisher=[[The Independent]]|first=Shamim|last=Ahmed|access-date=15 June 2022|date=10 July 2015|archive-url=https://web.archive.org/web/20220615062341/https://m.theindependentbd.com//magazine/details/7145/Amsterdam-%E2%80%93-Venice-of-the-North|archive-date=15 June 2022}}</ref> It flows from the Aarkanaal and Drecht in [[Nieuwveen]] northwards, passing [[Uithoorn]], [[Amstelveen]], and [[Ouderkerk aan de Amstel]], to the [[IJ (Amsterdam)|IJ]] in [[Amsterdam]], to which the river gives its name. Annually, the river is the location of the [[Liberation Day (Netherlands)|Liberation Day]] concert, [[Head of the River Amstel]] rowing match, and the [[Amsterdam Gay Pride]] boat parade.\"}}",
+"status": 200,
+"url": "https://en.wikipedia.org/w/api.php?action=parse&page=Amstel&prop=wikitext&section=0&redirects=1&format=json&formatversion=2"
+},
+"8fe71833ed1d584b462a3167134559d4def7f8d8": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"s\", \"sl\", \"c\", \"tl\", \"n\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ {\n      \"s\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://www.wikidata.org/entity/Q301498\"\n      },\n      \"tl\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"canal\"\n      },\n      \"sl\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"Aarkanaal\"\n      },\n      \"c\" : {\n        \"datatype\" : \"http://www.opengis.net/ont/geosparql#wktLiteral\",\n        \"type\" : \"literal\",\n        \"value\" : \"Point(4.69099 52.11684)\"\n      },\n      \"n\" : {\n        \"datatype\" : \"http://www.w3.org/2001/XMLSchema#integer\",\n        \"type\" : \"literal\",\n        \"value\" : \"8\"\n      }\n    } ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"93dcc8e480982a9e8c7582e6a4d1fe4ea0751649": {
+"body": "{\"batchcomplete\":true,\"query\":{\"pages\":[{\"pageid\":9286,\"ns\":0,\"title\":\"Aarkanaal\",\"pageprops\":{\"wikibase_item\":\"Q301498\"}}]}}",
+"status": 200,
+"url": "https://nl.wikipedia.org/w/api.php?action=query&titles=Aarkanaal&prop=pageprops&ppprop=wikibase_item&redirects=1&format=json&formatversion=2"
+},
+"94acaf7cfcde9f0748aa1c9d5c4c8b4a3e7737ab": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"c\", \"osm\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ {\n      \"c\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://www.wikidata.org/entity/Q185405\"\n      },\n      \"osm\" : {\n        \"type\" : \"literal\",\n        \"value\" : \"12882829\"\n      }\n    } ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"955e937770e11d7d054492ebff92280526a69e32": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"t\", \"tl\", \"len\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ {\n      \"t\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://www.wikidata.org/entity/Q594669\"\n      },\n      \"tl\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"Kromme Mijdrecht\"\n      },\n      \"len\" : {\n        \"datatype\" : \"http://www.w3.org/2001/XMLSchema#decimal\",\n        \"type\" : \"literal\",\n        \"value\" : \"10\"\n      }\n    }, {\n      \"t\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://www.wikidata.org/entity/Q1814472\"\n      },\n      \"tl\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"Bullewijk\"\n      },\n      \"len\" : {\n        \"datatype\" : \"http://www.w3.org/2001/XMLSchema#decimal\",\n        \"type\" : \"literal\",\n        \"value\" : \"3\"\n      }\n    }, {\n      \"t\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://www.wikidata.org/entity/Q2371545\"\n      },\n      \"tl\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"Amstel-Drechtkanaal\"\n      },\n      \"len\" : {\n        \"datatype\" : \"http://www.w3.org/2001/XMLSchema#decimal\",\n        \"type\" : \"literal\",\n        \"value\" : \"18.5\"\n      }\n    }, {\n      \"t\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://www.wikidata.org/entity/Q2591613\"\n      },\n      \"tl\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"Waver\"\n      }\n    } ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"97d066069acb7e20189d7c87bf72f33f33e9f2a9": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"g\", \"gl\", \"c\", \"n\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ {\n      \"g\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://www.wikidata.org/entity/Q12514\"\n      },\n      \"gl\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"Three Gorges Dam\"\n      },\n      \"c\" : {\n        \"datatype\" : \"http://www.opengis.net/ont/geosparql#wktLiteral\",\n        \"type\" : \"literal\",\n        \"value\" : \"Point(111.00367 30.82386)\"\n      },\n      \"n\" : {\n        \"datatype\" : \"http://www.w3.org/2001/XMLSchema#integer\",\n        \"type\" : \"literal\",\n        \"value\" : \"106\"\n      }\n    }, {\n      \"g\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://www.wikidata.org/entity/Q38891\"\n      },\n      \"gl\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"Aswan Dam\"\n      },\n      \"c\" : {\n        \"datatype\" : \"http://www.opengis.net/ont/geosparql#wktLiteral\",\n        \"type\" : \"literal\",\n        \"value\" : \"Point(32.880192 23.971431)\"\n      },\n      \"n\" : {\n        \"datatype\" : \"http://www.w3.org/2001/XMLSchema#integer\",\n        \"type\" : \"literal\",\n        \"value\" : \"100\"\n      }\n    } ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"a11912b10ac22f78fe87484664ffd4c9ea197dd2": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"c\", \"osm\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"abcf97c3ca343fbb6198a4b3aa4ca4aff6f7dd71": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"g\", \"gl\", \"c\", \"n\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"b57ed713d0102fad47e13221bf8b44e110984a15": {
+"body": "{\"batchcomplete\":true,\"query\":{\"pages\":[{\"pageid\":5706791,\"ns\":0,\"title\":\"Nieuwveen\",\"pageprops\":{\"wikibase_item\":\"Q2177358\"}}]}}",
+"status": 200,
+"url": "https://en.wikipedia.org/w/api.php?action=query&titles=Nieuwveen&prop=pageprops&ppprop=wikibase_item&redirects=1&format=json&formatversion=2"
+},
+"bc8924f139b4a9990b7ddf65663438c7ee2038c9": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"p\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"c7f4c3738a8f9d823d9aec614bc9735bbfb071dc": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"c\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ {\n      \"c\" : {\n        \"datatype\" : \"http://www.opengis.net/ont/geosparql#wktLiteral\",\n        \"type\" : \"literal\",\n        \"value\" : \"Point(4.91642 52.37976)\"\n      }\n    } ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"d0d27a8189dacd55f487155003b053743a58c74f": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"cl\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ {\n      \"cl\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"channel\"\n      }\n    } ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"d36cb2c1fb56d93d4329e8cf2341a2eecd62a0e3": {
+"body": "{\"batchcomplete\":true,\"query\":{\"pages\":[{\"ns\":0,\"title\":\"Aarkanaal\",\"missing\":true}]}}",
+"status": 200,
+"url": "https://en.wikipedia.org/w/api.php?action=query&titles=Aarkanaal&prop=pageprops&ppprop=wikibase_item&redirects=1&format=json&formatversion=2"
+},
+"d45b1970213941f6f50277b4518ef7b7d5775483": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"x\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"ec3fe99aa7bb8e2e9bb64c0188e4eec42cb5c298": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"f\", \"fl\", \"c\", \"n\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+},
+"fb1972590f2508aaca1f278041c649abca47948b": {
+"body": "{\n  \"head\" : {\n    \"vars\" : [ \"g\", \"gl\", \"c\", \"n\" ]\n  },\n  \"results\" : {\n    \"bindings\" : [ {\n      \"g\" : {\n        \"type\" : \"uri\",\n        \"value\" : \"http://www.wikidata.org/entity/Q118841\"\n      },\n      \"gl\" : {\n        \"xml:lang\" : \"en\",\n        \"type\" : \"literal\",\n        \"value\" : \"Grand Canyon\"\n      },\n      \"c\" : {\n        \"datatype\" : \"http://www.opengis.net/ont/geosparql#wktLiteral\",\n        \"type\" : \"literal\",\n        \"value\" : \"Point(-112.095277777 36.0975)\"\n      },\n      \"n\" : {\n        \"datatype\" : \"http://www.w3.org/2001/XMLSchema#integer\",\n        \"type\" : \"literal\",\n        \"value\" : \"116\"\n      }\n    } ]\n  }\n}",
+"status": 200,
+"url": "https://query.wikidata.org/sparql"
+}
+}
