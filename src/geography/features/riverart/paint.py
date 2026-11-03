@@ -88,6 +88,7 @@ class RiverPainter:
         self.chevrons: list[float] = []
         self.mouth_labels: list[matplotlib.text.Text] = []
         self.mouth_symbol_pt = 0.0
+        self.source_labels: list[matplotlib.text.Text] = []
         self._trace_path()
 
     def paint(self) -> None:
@@ -166,6 +167,12 @@ class RiverPainter:
         for lines in self.art.tributaries.values():
             self.ax.add_geometries(list(lines.geometry), crs=GEODETIC, facecolor="none", edgecolor="white", linewidth=1.8, alpha=0.45, zorder=3.5)
             self.ax.add_geometries(list(lines.geometry), crs=GEODETIC, facecolor="none", edgecolor=TRIBUTARY_BLUE, linewidth=0.9, zorder=4)
+
+    def _fits_card(self, x: float, y: float, half_width_pt: float, half_height_pt: float) -> bool:
+        px, py = self.project(x, y)
+        xmin, xmax, ymin, ymax = self.extent.bounds
+        dx, dy = half_width_pt * self.unit, half_height_pt * self.unit
+        return xmin + dx <= px <= xmax - dx and ymin + dy <= py <= ymax - dy
 
     def _well_inside(self, point: Point) -> bool:
         x, y = self.project(point.x, point.y)
@@ -354,10 +361,14 @@ class RiverPainter:
         return unit_vector(np.array([head.x - ahead.x, head.y - ahead.y]))
 
     def _source_label(self) -> None:
-        source, kind = self.art.source, self.kind
-        if source is None:
+        if self.art.source is None:
             return
-        away = self._flow_away()
+        before = len(self.ax.texts)
+        self._write_source(self.art.source, self._flow_away())
+        self.source_labels = list(self.ax.texts[before:])
+
+    def _write_source(self, source, away: np.ndarray) -> None:
+        kind = self.kind
         if kind in (SourceKind.HIGHLAND, SourceKind.GLACIER):
             self._range_chip(source.name)
         elif kind.has_icon:
@@ -377,8 +388,8 @@ class RiverPainter:
             return
         x, y, points = self.nearest_peak()
         px, py = self.project(x, y)
-        reach = (points * 0.4 + 14) * self.unit
-        spots = [(px, py - reach), (px, py + reach + points * 0.6 * self.unit), (px - reach * 2.5, py), (px + reach * 2.5, py)]
+        below, above = (points * 0.4 + 12) * self.unit, (points * 0.7 + 10) * self.unit
+        spots = [(px, py - below), (px, py + above), (px - below * 2.5, py), (px + below * 2.5, py)]
         chip = self.chip(x, y, name, self.kind)
         renderer = self.fig.canvas.get_renderer()
         path = self.ax.transData.transform(self.xy)
@@ -512,13 +523,15 @@ class RiverPainter:
                     x, y = mouth.x + self.deg(10) * ring * math.cos(angle), mouth.y + self.deg(10) * ring * math.sin(angle)
                     half_w = width * self.unit / (METRES_PER_DEGREE * max(math.cos(math.radians(y)), 0.2)) / 2 * 1.15
                     cell = box(x - half_w, y - height * self.unit / METRES_PER_DEGREE / 2, x + half_w, y + height * self.unit / METRES_PER_DEGREE / 2)
+                    if not self._fits_card(x, y, 0.5 * width + 4, 0.5 * height + 4):
+                        continue
                     if not land.intersects(cell) or (tolerance and land_all.intersection(cell).area < tolerance * cell.area):
                         return x, y
             return None
 
         attempts = ((name, 9.5, 14), (wrapped, 9.5, 14), (wrapped, 8, 14), (wrapped, 6.5, 14), (wrapped, 5.5, 14), (name, 5.5, 14), (wrapped, 5.5, 40), (name, 5.5, 40))
         for text, size, rings in attempts:
-            if hit := place(text, size, rings, 0.04 if size <= 6.5 and rings == 14 else 0.0):
+            if hit := place(text, size, rings, 0.04 if size <= 8 and rings == 14 else 0.0):
                 self.text(hit[0], hit[1], text, size, va="center", linespacing=1.05, color=SEA_TEXT, path_effects=halo(1.2, "#aedcf5"))
                 return
         beyond = unit_vector(np.array([math.cos(flow), math.sin(flow)]))

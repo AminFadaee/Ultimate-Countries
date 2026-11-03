@@ -12,6 +12,9 @@ from geography.features.riverart.paint import CHEVRON_MIN_GAP, RiverPainter, pai
 MIN_RIVER_SHARE = 0.15
 MAX_GAP_PT = 12
 MAX_LABEL_REACH_PT = 40
+MAX_SEA_LABEL_REACH_PT = 110
+SOURCE_LABEL_REACH_PT = 20
+MIN_MOUTH_LABEL_PT = 7
 OVERLAP_PT = 1
 
 
@@ -56,12 +59,32 @@ class RiverCheck:
             return ["no source in the data"]
         if painter.kind in (SourceKind.HIGHLAND, SourceKind.GLACIER) and painter.peaks:
             x, y, size = painter.nearest_peak()
-            gap = max(self._pt(float(np.linalg.norm(self._display(Point(x, y)) - start))) - size * 0.6, 0)
+            gap = max(self._pt(float(np.linalg.norm(self._display(Point(x, y)) - start))) - size, 0)
+        elif painter.kind is SourceKind.LAKE and art.source_lake is not None:
+            lake = art.source_lake.to_crs(painter.projection.proj4_init).union_all()
+            gap = lake.distance(Point(painter.xy[0])) / painter.unit
         elif painter.kind is SourceKind.UNKNOWN:
             gap = self._pt(float(np.linalg.norm(self._display(painter.source_point) - start)))
         else:
             gap = self._pt(float(np.linalg.norm(self._display(painter.anchor()) - start)))
-        return [f"source is {gap:.0f} pt from the river"] if gap > MAX_GAP_PT else []
+        problems = [f"source is {gap:.0f} pt from the river"] if gap > MAX_GAP_PT else []
+        return problems + self._source_label()
+
+    def _source_label(self) -> list[str]:
+        painter = self.painter
+        labels = [label for label in painter.source_labels if label.get_visible()]
+        if painter.kind is SourceKind.LAKE:
+            return []
+        if not labels:
+            return ["source is not labelled"]
+        if painter.kind in (SourceKind.HIGHLAND, SourceKind.GLACIER) and painter.peaks:
+            x, y, size = painter.nearest_peak()
+            spot, allowance = self._display(Point(x, y)), size * 0.7 + SOURCE_LABEL_REACH_PT
+        else:
+            spot = self._display(painter.anchor())
+            allowance = (painter._icon_size() if painter.kind.has_icon else 0) + MAX_LABEL_REACH_PT
+        gap = min(gap_to_box(label.get_window_extent(self.renderer), *spot) for label in labels) / self.points
+        return [f"source label is {gap:.0f} pt from the source"] if gap > allowance else []
 
     def _linked_at(self, point: Point) -> bool:
         reach = self.painter.deg(MAX_GAP_PT)
@@ -76,7 +99,9 @@ class RiverCheck:
         labels = [label for label in painter.mouth_labels if label.get_visible()]
         if not labels:
             problems.append("mouth is not labelled")
-        elif min(gap_to_box(label.get_window_extent(self.renderer), *end) for label in labels) > (MAX_LABEL_REACH_PT + painter.mouth_symbol_pt) * self.points:
+        elif min(label.get_fontsize() for label in labels) < MIN_MOUTH_LABEL_PT:
+            problems.append(f"mouth label is only {min(label.get_fontsize() for label in labels):g} pt")
+        elif min(gap_to_box(label.get_window_extent(self.renderer), *end) for label in labels) > (self._mouth_reach() + painter.mouth_symbol_pt) * self.points:
             problems.append("mouth label is far from the river's end")
         reach = painter.deg(MAX_GAP_PT)
         mouth_end = Point(art.path.coords[-1])
@@ -91,6 +116,10 @@ class RiverCheck:
             elif target.union_all().distance(mouth_end) > reach:
                 problems.append("river ends away from the river it flows into")
         return problems
+
+    def _mouth_reach(self) -> float:
+        sea = self.art.mouth.kind is MouthKind.SEA and not self.painter._mouth_inland()
+        return MAX_SEA_LABEL_REACH_PT if sea else MAX_LABEL_REACH_PT
 
     def _chevrons(self) -> list[str]:
         spots = sorted(self.painter.chevrons)

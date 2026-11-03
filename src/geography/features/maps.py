@@ -54,6 +54,7 @@ RIVER_CONTEXT = 1.3
 RIVER_MIN_FRAME_M = 350_000
 RIVER_HAIRLINE_SHARE = 0.0004
 RIVER_BLUE = "#4f93cf"
+SEA_ROOM_SHARE = 0.15
 WALL_BAND_FACTOR = 1.5
 LINE_TYPES = ("LineString", "MultiLineString")
 PLACE_ZOOM_THRESHOLD = 0.07
@@ -183,6 +184,10 @@ def river_scene(job: FeatureMapJob, min_frame: float = RIVER_MIN_FRAME_M, with_t
         context.append(art.source_area)
     if art.sink and art.sink.outline is not None and art.mouth.kind is not MouthKind.LAKE:
         context.append(art.sink.outline)
+    if art.mouth and art.mouth.kind is MouthKind.SEA:
+        mouth = gpd.GeoSeries([art.mouth_point], crs=CRS)
+        local = local_projection(mouth)
+        context.append(mouth.to_crs(local).buffer(SEA_ROOM_SHARE * size_of(job.geometry)).to_crs(CRS))
     frame = frame_around(gpd.GeoSeries(pd.concat([job.geometry, *context]).values, crs=CRS), RIVER_CONTEXT, min_frame)
     scene = line_scene(job)
     hairline = job.geometry.to_crs(local_projection(job.geometry)).buffer(size_of(frame) * RIVER_HAIRLINE_SHARE).to_crs(CRS)
