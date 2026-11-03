@@ -16,6 +16,7 @@ from geography.features.riverart import icons
 from geography.features.riverart.facts import RiverArt
 from geography.features.riverart.kinds import MouthKind, SourceKind
 from geography.features.spatial import CRS
+from geography.features.water_labels import WaterLabeller, two_lines
 from geography.render import LocatorMap, get_visible
 
 GEODETIC = ccrs.PlateCarree()
@@ -57,14 +58,6 @@ PLACE_ICONS = {
 
 def halo(width: float = 1.6, colour: str = LAND_HALO) -> list:
     return [effects.withStroke(linewidth=width, foreground=colour)]
-
-
-def two_lines(text: str) -> str | None:
-    words = text.split()
-    if len(words) < 2:
-        return None
-    cut = min(range(1, len(words)), key=lambda k: abs(len(" ".join(words[:k])) - len(" ".join(words[k:]))))
-    return " ".join(words[:cut]) + "\n" + " ".join(words[cut:])
 
 
 def aligned_to(angle: float) -> dict:
@@ -169,12 +162,6 @@ class RiverPainter:
         for lines in self.art.tributaries.values():
             self.ax.add_geometries(list(lines.geometry), crs=GEODETIC, facecolor="none", edgecolor="white", linewidth=1.8, alpha=0.45, zorder=3.5)
             self.ax.add_geometries(list(lines.geometry), crs=GEODETIC, facecolor="none", edgecolor=TRIBUTARY_BLUE, linewidth=0.9, zorder=4)
-
-    def _fits_card(self, x: float, y: float, half_width_pt: float, half_height_pt: float) -> bool:
-        px, py = self.project(x, y)
-        xmin, xmax, ymin, ymax = self.extent.bounds
-        dx, dy = half_width_pt * self.unit, half_height_pt * self.unit
-        return xmin + dx <= px <= xmax - dx and ymin + dy <= py <= ymax - dy
 
     def _well_inside(self, point: Point) -> bool:
         x, y = self.project(point.x, point.y)
@@ -512,37 +499,13 @@ class RiverPainter:
             self.ax.add_patch(matplotlib.patches.Polygon(crest, closed=True, facecolor="#dcc28f", edgecolor="#9c8260", linewidth=0.8, zorder=3))
 
     def _sea_label(self, name: str) -> None:
-        from shapely.prepared import prep
-
-        land_all = self.renderer.data.countries.geometry.union_all()
-        land = prep(land_all)
         mouth = self.art.mouth_point
         tail = self.art.path.interpolate(0.985, normalized=True)
         flow = math.atan2(mouth.y - tail.y, mouth.x - tail.x)
-        wrapped = two_lines(name) or name
-
-        def place(text: str, size: float, rings: int, tolerance: float = 0.0):
-            lines = text.split("\n")
-            width, height = 0.62 * size * max(len(line) for line in lines), size * 1.5 * len(lines)
-            for ring in range(1, rings + 1):
-                for turn in sorted(range(24), key=lambda k: abs(math.atan2(math.sin(k * math.pi / 12 - flow), math.cos(k * math.pi / 12 - flow)))):
-                    angle = turn * math.pi / 12
-                    x, y = mouth.x + self.deg(10) * ring * math.cos(angle), mouth.y + self.deg(10) * ring * math.sin(angle)
-                    half_w = width * self.unit / (METRES_PER_DEGREE * max(math.cos(math.radians(y)), 0.2)) / 2 * 1.15
-                    cell = box(x - half_w, y - height * self.unit / METRES_PER_DEGREE / 2, x + half_w, y + height * self.unit / METRES_PER_DEGREE / 2)
-                    if not self._fits_card(x, y, 0.5 * width + 4, 0.5 * height + 4):
-                        continue
-                    if not land.intersects(cell) or (tolerance and land_all.intersection(cell).area < tolerance * cell.area):
-                        return x, y
-            return None
-
-        attempts = ((name, 9.5, 14), (wrapped, 9.5, 14), (wrapped, 8, 14), (wrapped, 6.5, 14), (wrapped, 5.5, 14), (name, 5.5, 14), (wrapped, 5.5, 40), (name, 5.5, 40))
-        for text, size, rings in attempts:
-            if hit := place(text, size, rings, 0.04 if size <= 8 and rings == 14 else 0.0):
-                self.text(hit[0], hit[1], text, size, va="center", linespacing=1.05, color=SEA_TEXT, path_effects=halo(1.2, "#aedcf5"))
-                return
-        beyond = unit_vector(np.array([math.cos(flow), math.sin(flow)]))
-        self.text(mouth.x + beyond[0] * self.deg(14), mouth.y + beyond[1] * self.deg(14), name, 8, fontstyle="italic", color=SEA_TEXT, path_effects=halo())
+        labeller = WaterLabeller(self.ax, self.projection, self.extent, self.unit, self.renderer.data.countries.geometry.union_all())
+        if labeller.place(mouth, name, flow) is None:
+            beyond = unit_vector(np.array([math.cos(flow), math.sin(flow)]))
+            self.text(mouth.x + beyond[0] * self.deg(14), mouth.y + beyond[1] * self.deg(14), name, 8, fontstyle="italic", color=SEA_TEXT, path_effects=halo())
 
     def _move(self, label, dy: float, dx: float = 0.0) -> None:
         x, y = label.get_position()
