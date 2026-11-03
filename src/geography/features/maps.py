@@ -24,6 +24,11 @@ from geography.features.riverart.checks import RiverCheck
 from geography.features.riverart.facts import RiverArt
 from geography.features.riverart.kinds import MouthKind
 from geography.features.spatial import CRS
+from geography.features.surroundings import Surroundings
+from geography.features.surroundings_paint import (
+    paint_surroundings,
+    paint_surroundings_in_lens,
+)
 from geography.map_cache import through_cache
 from geography.render import (
     EQUAL_AREA,
@@ -79,6 +84,7 @@ class FeatureMapJob:
     on_border: bool
     photo: pathlib.Path | None = None
     art: RiverArt | None = None
+    surroundings: Surroundings | None = None
 
 
 def is_line(job: FeatureMapJob) -> bool:
@@ -192,6 +198,13 @@ def river_scene(job: FeatureMapJob, min_frame: float = RIVER_MIN_FRAME_M, with_t
     scene = line_scene(job)
     hairline = job.geometry.to_crs(local_projection(job.geometry)).buffer(size_of(frame) * RIVER_HAIRLINE_SHARE).to_crs(CRS)
     return replace(scene, frame=frame, highlight=hairline, style=replace(scene.style, highlight=RIVER_BLUE, outline=RIVER_BLUE))
+
+
+def surrounded(scene: Scene, job: FeatureMapJob) -> Scene:
+    if not job.surroundings:
+        return scene
+    return replace(scene, overlay=functools.partial(paint_surroundings, job.surroundings, job.geometry),
+                   lens_overlay=functools.partial(paint_surroundings_in_lens, job.surroundings, job.geometry))
 
 
 def point_scene(job: FeatureMapJob, data: NaturalEarth) -> Scene:
@@ -352,15 +365,15 @@ class FeatureMapWorker:
             cls._render_world(job)
         elif is_line(job):
             if not (job.art and cls._render_river(job)):
-                cls.renderer.render(replace(line_scene(job), photo=job.photo), job.output)
+                cls.renderer.render(surrounded(replace(line_scene(job), photo=job.photo), job), job.output)
         elif shape is Shape.POINT or job.geometry.geom_type.iloc[0] == "Point":
             try:
-                cls.renderer.render(replace(point_scene(job, cls.renderer.data), photo=job.photo), job.output)
+                cls.renderer.render(surrounded(replace(point_scene(job, cls.renderer.data), photo=job.photo), job), job.output)
             except (ValueError, TypeError, GEOSException):
-                cls.renderer.render(replace(point_scene(replace(job, on_border=True), cls.renderer.data), photo=job.photo), job.output)
+                cls.renderer.render(surrounded(replace(point_scene(replace(job, on_border=True), cls.renderer.data), photo=job.photo), job), job.output)
         else:
             try:
-                cls.renderer.render(replace(area_scene(job), photo=job.photo), job.output)
+                cls.renderer.render(surrounded(replace(area_scene(job), photo=job.photo), job), job.output)
             except (ValueError, TypeError, GEOSException) as error:
                 logger.warning("World view for %s: %s", job.key, error)
                 cls._render_world(job)

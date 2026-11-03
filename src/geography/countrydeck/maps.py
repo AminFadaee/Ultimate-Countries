@@ -1,3 +1,4 @@
+import functools
 import json
 import logging
 import multiprocessing
@@ -27,6 +28,11 @@ from geography.features.maps import (
 from geography.features.riverart.checks import RiverCheck
 from geography.features.riverart.facts import RiverArt
 from geography.features.spatial import CRS
+from geography.features.surroundings import Surroundings
+from geography.features.surroundings_paint import (
+    paint_surroundings,
+    paint_surroundings_in_lens,
+)
 from geography.labels import CityLabel
 from geography.map_cache import through_cache
 from geography.maps import MapJob, our_country_names, render_maps
@@ -113,6 +119,7 @@ class PlaceMapJob:
     answer_output: pathlib.Path
     art: RiverArt | None = None
     cities: tuple[CityLabel, ...] = ()
+    surroundings: Surroundings | None = None
 
 
 def cities_along(art: RiverArt, cities: tuple[CityLabel, ...]) -> tuple[CityLabel, ...]:
@@ -132,6 +139,14 @@ def river_place_scene(job: PlaceMapJob, check: RiverCheck) -> Scene:
 
 
 def place_scene(job: PlaceMapJob, data: NaturalEarth) -> Scene:
+    scene = plain_place_scene(job, data)
+    if not job.surroundings:
+        return scene
+    feature = gpd.GeoSeries([shape(job.shape)], crs=CRS)
+    return replace(scene, overlay=functools.partial(paint_surroundings, job.surroundings, feature), lens_overlay=functools.partial(paint_surroundings_in_lens, job.surroundings, feature))
+
+
+def plain_place_scene(job: PlaceMapJob, data: NaturalEarth) -> Scene:
     kind = Kind(job.kind)
     country = data.country(job.host)
     geometry = gpd.GeoSeries([shape(job.shape)], crs=CRS)

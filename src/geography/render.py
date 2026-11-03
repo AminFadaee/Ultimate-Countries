@@ -151,6 +151,7 @@ class Scene:
     marker: tuple[float, float] | None = None
     country: gpd.GeoSeries | None = None
     overlay: Callable | None = None
+    lens_overlay: Callable | None = None
     inspect: Callable | None = None
 
     @classmethod
@@ -815,6 +816,8 @@ class LocatorMap:
                 self._draw_layers(ax, shown, projection, zoom.lens)
             else:
                 self._draw_detail(ax, shown, projection, zoom.lens)
+            if scene.lens_overlay:
+                scene.lens_overlay(ax, projection)
             fig.add_artist(patches.Circle((marker.x, marker.y), marker.radius, fill=False, **style))
             for xs, ys in marker.tangents_to(lens):
                 fig.add_artist(Line2D(xs, ys, **style))
@@ -855,6 +858,8 @@ class LocatorMap:
                 self._draw_layers(ax, scene, projection, zoom.lens)
             else:
                 self._draw_detail(ax, scene, projection, zoom.lens)
+            if scene.lens_overlay:
+                scene.lens_overlay(ax, projection)
 
         fig.add_artist(patches.Circle((marker.x, marker.y), marker.radius, fill=False, **style))
         for xs, ys in marker.tangents_to(lens):
