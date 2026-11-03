@@ -1,14 +1,14 @@
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 
 import requests
 
 from geography.sources.http import TIMEOUT
 
-MOUTH = re.compile(r"^\|\s*mouth\s*=\s*(.*)$", re.IGNORECASE)
-SOURCE = re.compile(r"^\|\s*source(\d*)\s*=\s*(.*)$", re.IGNORECASE)
-SOURCE_COORDINATES = re.compile(r"^\|\s*source(\d*)_coordinates\s*=\s*(.*)$", re.IGNORECASE)
-SOURCE_PLACE = re.compile(r"^\|\s*(?:source(\d*)_location|oorsprong)\s*=\s*(.*)$", re.IGNORECASE)
+MOUTH = re.compile(r"^\s*\|\s*mouth\s*=\s*(.*)$", re.IGNORECASE)
+SOURCE = re.compile(r"^\s*\|\s*(?:source(\d*)|oorsprong)\s*=\s*(.*)$", re.IGNORECASE)
+SOURCE_COORDINATES = re.compile(r"^\s*\|\s*source(\d*)_coordinates\s*=\s*(.*)$", re.IGNORECASE)
+SOURCE_PLACE = re.compile(r"^\s*\|\s*source(\d*)_location\s*=\s*(.*)$", re.IGNORECASE)
 WIKILINK = re.compile(r"\[\[([^\]|#]+)(?:\|([^\]]+))?")
 COORD = re.compile(r"\{\{\s*coord\s*\|([^}]*)\}\}", re.IGNORECASE)
 NUMBER = re.compile(r"^-?\d+(?:\.\d+)?$")
@@ -20,6 +20,8 @@ class InfoboxSource:
     names: tuple[str, ...]
     items: tuple[str, ...]
     point: tuple[float, float] | None
+    index: str = ""
+    located: bool = False
 
 
 @dataclass(frozen=True)
@@ -51,13 +53,13 @@ class RiverInfobox:
         self.api = f"https://{language}.wikipedia.org/w/api.php"
 
     def links(self, article_title: str) -> InfoboxLinks:
-        wikitext = self._get({"action": "parse", "page": article_title, "prop": "wikitext", "section": 0})["parse"]["wikitext"]
+        wikitext = self._get({"action": "parse", "page": article_title, "prop": "wikitext", "section": 0, "redirects": 1})["parse"]["wikitext"]
         lines = wikitext.splitlines()
         mouths = [title for line in lines if (match := MOUTH.match(line)) for title, _ in WIKILINK.findall(match.group(1))]
         points = {match.group(1): coordinates(match.group(2)) for line in lines if (match := SOURCE_COORDINATES.match(line))}
-        sources = self._sources(lines, SOURCE, points)
-        if not any(source.names for source in sources):
-            sources = [*self._sources(lines, SOURCE_PLACE, points), *sources]
+        places = {source.index: replace(source, located=True) for source in self._sources(lines, SOURCE_PLACE, points)}
+        sources = [source if source.names else places.get(source.index, source) for source in self._sources(lines, SOURCE, points)]
+        sources += [place for index, place in places.items() if index not in {source.index for source in sources}]
         return InfoboxLinks(tuple(item for title in mouths[:MAX_LINKS] if (item := self._item(title.strip()))), tuple(sources))
 
     def _sources(self, lines: list[str], pattern: re.Pattern, points: dict) -> list[InfoboxSource]:
@@ -67,7 +69,8 @@ class RiverInfobox:
                 links = WIKILINK.findall(match.group(2))[:MAX_LINKS]
                 items = tuple(item for title, _ in links if (item := self._item(title.strip())))
                 names = tuple((label or title).strip() for title, label in links)
-                sources.append(InfoboxSource(names, items, points.get(match.group(1) or "")))
+                index = match.group(1) or ""
+                sources.append(InfoboxSource(names, items, points.get(index), index))
         return sources
 
     def _item(self, title: str) -> str | None:

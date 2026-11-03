@@ -28,6 +28,7 @@ OSM_GAIN = 1.1
 LAKE_QUERY_LIMIT = 6
 OVERSIZED_AREA = 1.2
 SOURCE_AGREEMENT_KM = 100
+MEETING_REACH = 0.25
 LAKE, WATERFALL, DAM, CANYON, GORGE, RIVER = "Q23397", "Q34038", "Q12323", "Q150784", "Q1668451", "Q4022"
 AREAS = ("Polygon", "MultiPolygon")
 LINES = ("LineString", "MultiLineString")
@@ -140,9 +141,9 @@ class RiverResearch:
             return None
         natural = river_geometry_of(feature.geometry)
         links = self.infobox.links(article_title(feature.wikipedia)) if feature.wikipedia else InfoboxLinks((), ())
-        candidates = self._sources(feature.qid, links) or self._native_sources(feature.qid, links)
+        candidates = self._sources(feature.qid, links)
         origin = self._origin(candidates)
-        mouth_row, dried = self._mouth_row(feature.qid, list(links.mouth))
+        mouth_row, dried = self._mouth_row(feature.qid, list(links.mouth), MultiPoint(river_geometry.river_ends(river_geometry.main_pieces(river))))
         mouth_classes = self._classes(mouth_row["m"]) if mouth_row else set()
         mouth_is_river = bool(mouth_row) and self._is_a(mouth_row["m"], RIVER)
         window = self._window(river)
@@ -168,6 +169,8 @@ class RiverResearch:
             if trimmed := river_geometry.trimmed_at_lake(river, path, exit_index):
                 river, path = trimmed
                 upstream = Point(path.coords[0])
+        upstream = Point(path.coords[0])
+        source = self._source(origin, kind, upstream) or self._meeting([*candidates, *self._listed(links.sources)], linked, upstream)
         if source_area is not None and kind is SourceKind.HIGHLAND and (self._far_from(upstream, source_area, river) or oversized(source_area, river)):
             source_area = None
         if kind is not SourceKind.HIGHLAND:
@@ -177,7 +180,7 @@ class RiverResearch:
             path=path,
             upstream=upstream,
             mouth_point=mouth_point,
-            source=self._source(origin, kind, upstream),
+            source=source,
             source_area=source_area,
             source_lake=source_lake,
             mouth=self._mouth(mouth_row, mouth_classes, mouth_is_river, dried, sink),
@@ -226,27 +229,37 @@ class RiverResearch:
         return bool(self._rows(f"SELECT ?x WHERE {{ wd:{qid_of(qid_uri)} wdt:P31/wdt:P279* wd:{class_qid} BIND(1 AS ?x) }}"))
 
     def _sources(self, river_qid: str, links: InfoboxLinks) -> list[dict]:
-        select = "SELECT ?s ?sl ?c ?tl ?n WHERE {{ {anchor} ?s rdfs:label ?sl FILTER(lang(?sl)='en') OPTIONAL {{ ?s wdt:P625 ?c }} OPTIONAL {{ ?s wikibase:sitelinks ?n }} OPTIONAL {{ ?s wdt:P31 ?t . ?t rdfs:label ?tl FILTER(lang(?tl)='en') }} }}"
-        rows = self._rows(select.format(anchor=f"wd:{river_qid} wdt:P885 ?s ."))
-        listed = [item for source in links.sources for item in source.items]
-        if not rows and listed:
-            rows = self._rows(select.format(anchor=f"VALUES ?s {{ {' '.join('wd:' + qid for qid in listed)} }}"))
+        if found := self._items(f"wd:{river_qid} wdt:P885 ?s ."):
+            return found
+        if any(source.items for source in links.sources if not source.located):
+            return self._listed(links.sources)
+        native = self._native_links(river_qid)
+        for sources, located in ((native.sources, False), (links.sources, True), (native.sources, True)):
+            if agreeing := [item for item in self._listed([s for s in sources if s.located is located]) if self._agrees(item, links)]:
+                return agreeing
+        return self._written_sources(links)
+
+    def _native_links(self, river_qid: str) -> InfoboxLinks:
+        if not self.native:
+            return InfoboxLinks((), ())
+        rows = self._rows(f"SELECT ?t WHERE {{ ?a schema:about wd:{river_qid} ; schema:isPartOf <https://{self.language}.wikipedia.org/> ; schema:name ?t }}")
+        return self.native.links(rows[0]["t"]) if rows else InfoboxLinks((), ())
+
+    def _listed(self, sources) -> list[dict]:
+        listed = [item for source in sources for item in source.items]
+        return self._items(f"VALUES ?s {{ {' '.join('wd:' + qid for qid in listed)} }}") if listed else []
+
+    def _items(self, anchor: str) -> list[dict]:
+        rows = self._rows(
+            f"SELECT ?s ?sl ?c ?tl ?n WHERE {{ {anchor} ?s rdfs:label ?sl FILTER(lang(?sl)='en') OPTIONAL {{ ?s wdt:P625 ?c }} "
+            "OPTIONAL { ?s wikibase:sitelinks ?n } OPTIONAL { ?s wdt:P31 ?t . ?t rdfs:label ?tl FILTER(lang(?tl)='en') } }"
+        )
         found: dict[str, dict] = {}
         for row in rows:
             item = found.setdefault(row["s"], {"uri": row["s"], "qid": qid_of(row["s"]), "label": row["sl"], "c": row.get("c"), "classes": set(), "links": int(row.get("n", 0))})
             if "tl" in row:
                 item["classes"].add(row["tl"].lower())
-        if not found and not self.native:
-            return self._written_sources(links)
         return list(found.values())
-
-    def _native_sources(self, river_qid: str, links: InfoboxLinks) -> list[dict]:
-        if not self.native:
-            return []
-        rows = self._rows(f"SELECT ?t WHERE {{ ?a schema:about wd:{river_qid} ; schema:isPartOf <https://{self.language}.wikipedia.org/> ; schema:name ?t }}")
-        native = self.native.links(rows[0]["t"]) if rows else InfoboxLinks((), ())
-        found = [item for item in self._sources(river_qid, native) if self._agrees(item, links)]
-        return found or self._written_sources(links)
 
     @staticmethod
     def _agrees(item: dict, links: InfoboxLinks) -> bool:
@@ -270,11 +283,19 @@ class RiverResearch:
         origin = min(candidates, key=rank) if candidates else None
         return None if origin and origin["classes"] & RIVER_LIKE else origin
 
-    def _mouth_row(self, river_qid: str, infobox_mouths: list[str]) -> tuple[dict | None, bool]:
-        rows = self._rows(f"SELECT ?m ?ml WHERE {{ wd:{river_qid} wdt:P403 ?m . ?m rdfs:label ?ml FILTER(lang(?ml)='en') }}")
+    def _mouth_row(self, river_qid: str, infobox_mouths: list[str], ends: MultiPoint) -> tuple[dict | None, bool]:
+        rows = self._rows(
+            f"SELECT ?m ?ml ?rank ?c WHERE {{ wd:{river_qid} p:P403 ?statement . ?statement ps:P403 ?m ; wikibase:rank ?rank . "
+            "FILTER(?rank != wikibase:DeprecatedRank) ?m rdfs:label ?ml FILTER(lang(?ml)='en') OPTIONAL { ?m wdt:P625 ?c } }"
+        )
         if not rows:
             return None, False
-        first = rows[0]
+
+        def rank(row: dict):
+            point = as_point(point_of(row.get("c")))
+            return (not row["rank"].endswith("PreferredRank"), point.distance(ends) if point else float("inf"), row["ml"])
+
+        first = min(rows, key=rank)
         classes = self._classes(first["m"])
         ended = bool(self._rows(f"SELECT ?e WHERE {{ wd:{qid_of(first['m'])} wdt:P576|wdt:P582 ?e }}"))
         dried = ended or any(word in name for name in classes for word in DRIED_WORDS)
@@ -371,6 +392,16 @@ class RiverResearch:
     def _far_from(self, upstream: Point, area: gpd.GeoSeries, river: gpd.GeoSeries) -> bool:
         x0, y0, x1, y1 = river.total_bounds
         return upstream.distance(area.union_all()) > 0.05 * ((x1 - x0) ** 2 + (y1 - y0) ** 2) ** 0.5
+
+    @staticmethod
+    def _meeting(candidates: list[dict], linked: dict[str, gpd.GeoSeries], upstream: Point) -> Source | None:
+        rivers = [item for item in candidates if item["classes"] & RIVER_LIKE]
+        if any(linked[item["label"]].union_all().distance(upstream) <= MEETING_REACH for item in rivers if item["label"] in linked):
+            return None
+        meeting = list(dict.fromkeys(item["label"] for item in rivers if (point := as_point(point_of(item["c"]))) and point.distance(upstream) <= MEETING_REACH))
+        if not meeting:
+            return None
+        return Source(" / ".join(meeting), "", SourceKind.UNKNOWN, ("river",), (upstream.x, upstream.y))
 
     def _source(self, origin: dict | None, kind: SourceKind, upstream: Point) -> Source | None:
         if origin is None:
