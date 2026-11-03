@@ -41,6 +41,8 @@ CHEVRON_MIN_GAP = 40
 NUDGE_STEP_PT, NUDGE_STEPS = 6, 8
 EDGE_MARGIN_PT = 40
 SINK_REACH_PT = 40
+DESERT = "desert"
+DESERT_ICON_PT = 34
 MAX_CHEVRONS, MIN_CHEVRONS = 8, 4
 MAX_PEAKS = 48
 INLAND_REACH_PT = 12
@@ -324,7 +326,7 @@ class RiverPainter:
         shift = 0.5 if kind is SourceKind.WETLAND else 0.2
         self.icon_box = (px + back[0] * shift * size * self.unit, py + back[1] * shift * size * self.unit - 0.08 * size * self.unit, size)
         swamp = kind is SourceKind.WETLAND and "swamp" in self.art.source.classes
-        draw = {SourceKind.WETLAND: icons.wet_swamp if swamp else icons.wet_marsh, SourceKind.CAVE: icons.cave, SourceKind.DAM: icons.dam}.get(kind) or PLACE_ICONS[kind]
+        draw = {SourceKind.WETLAND: icons.wet_swamp if swamp else icons.wet_marsh, SourceKind.CAVE: icons.cave, SourceKind.DAM: icons.dam, SourceKind.CANAL: icons.canal}.get(kind) or PLACE_ICONS[kind]
         draw(self.ax, self.icon_box[0], self.icon_box[1], size * self.unit, zorder=ICONS_ON_TOP)
 
     def _chevrons(self) -> None:
@@ -477,7 +479,12 @@ class RiverPainter:
         angle = math.atan2(flow[1], flow[0])
         along = np.array([math.cos(angle), math.sin(angle)])
         align = {"ha": "center", "va": "center_baseline"}
-        if sink.outline is not None:
+        if DESERT in self.art.mouth.classes:
+            centre = self.xy[-1] + along * DESERT_ICON_PT * 0.7 * self.unit
+            icons.desert(self.ax, centre[0], centre[1] - DESERT_ICON_PT * 0.25 * self.unit, DESERT_ICON_PT * self.unit, zorder=ICONS_ON_TOP)
+            self.mouth_symbol_pt = DESERT_ICON_PT
+            spot, align = Point(self.geodetic(centre[0], centre[1] - (DESERT_ICON_PT * 0.25 + 9) * self.unit)), {"ha": "center", "va": "top"}
+        elif sink.outline is not None:
             spot = sink.outline.union_all().representative_point()
             if math.dist(self.project(spot.x, spot.y), self.xy[-1]) > SINK_REACH_PT * self.unit:
                 spot, align = Point(self.geodetic(*(self.xy[-1] + along * 14 * self.unit))), aligned_to(angle)

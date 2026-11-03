@@ -14,7 +14,8 @@ HIGHLAND = {
     "mountain pass", "pass", "mountain chain", "mountain ridge", "ridge", "peak", "mountain peak", "summit", "mountain group", "mountains",
 }
 CITY = {"city", "big city", "metropolis", "megacity", "capital", "national capital", "federal capital", "largest city"}
-VILLAGE = {"village", "hamlet", "rural locality", "village in the united states", "settlement"}
+VILLAGE = {"village", "hamlet", "rural locality", "village in the united states", "settlement", "ortsteil", "locality"}
+CANAL = {"canal", "navigation canal", "ship canal", "irrigation canal", "drainage canal"}
 MARINE = {
     "sea", "ocean", "gulf", "bay", "strait", "marginal sea", "adjacent sea", "mediterranean sea", "inlet", "estuary", "fjord", "lagoon",
     "sound", "channel", "sea inlet", "bight", "cove", "firth", "ria",
@@ -33,6 +34,7 @@ DESCRIPTION = re.compile(r"\b(source|sources|spring|springs|headwater|headwaters
 class SourceKind(StrEnum):
     GLACIER = "glacier"
     CAVE = "cave"
+    CANAL = "canal"
     DAM = "dam"
     HIGHLAND = "highland"
     WETLAND = "wetland"
@@ -81,7 +83,7 @@ def settlement_kind(classes: set[str]) -> SourceKind | None:
 def source_kind(classes: set[str], is_lake: bool) -> SourceKind:
     ordered = (
         (GLACIER, SourceKind.GLACIER), (CAVE, SourceKind.CAVE), (DAM, SourceKind.DAM), (HIGHLAND, SourceKind.HIGHLAND),
-        (WETLAND, SourceKind.WETLAND), (SPRING, SourceKind.SPRING),
+        (WETLAND, SourceKind.WETLAND), (SPRING, SourceKind.SPRING), (CANAL, SourceKind.CANAL),
     )
     for names, kind in ordered:
         if classes & names:

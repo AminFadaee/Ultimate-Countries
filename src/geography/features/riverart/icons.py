@@ -189,6 +189,41 @@ def dam(ax, x, y, size, zorder=5):
     _foam(ax, pt, [(0.40, 0.09, 0.05), (0.52, 0.08, 0.06), (0.62, 0.09, 0.05)], zorder + 0.022)
 
 
+def canal(ax, x, y, size, zorder=5):
+    def pt(p): return (x + (p[0] - 0.5) * size, y + p[1] * size)
+    ax.add_patch(_Polygon([pt(p) for p in ((0.02, 0.06), (0.98, 0.06), (0.86, 0.70), (0.14, 0.70))], closed=True, facecolor=(0.80, 0.86, 0.62), edgecolor=INK, linewidth=0.9, joinstyle="round", zorder=zorder))
+    ax.add_patch(_Polygon([pt(p) for p in ((0.20, 0.06), (0.80, 0.06), (0.64, 0.70), (0.36, 0.70))], closed=True, facecolor="#8cc3e8", edgecolor="#2f6a99", linewidth=0.8, joinstyle="round", zorder=zorder + 0.005))
+    for start, end in (((0.20, 0.06), (0.36, 0.70)), ((0.80, 0.06), (0.64, 0.70))):
+        _line(ax, [pt(start), pt(end)], color=STONE, linewidth=2.4, zorder=zorder + 0.01)
+        _line(ax, [pt(start), pt(end)], color=INK, linewidth=0.6, zorder=zorder + 0.011)
+    for side in (0.27, 0.73):
+        _line(ax, [pt((side, 0.34)), pt((0.50, 0.42))], color=BARK, linewidth=2.2, zorder=zorder + 0.02)
+        _line(ax, [pt((side, 0.34)), pt((0.50, 0.42))], color=INK, linewidth=0.5, zorder=zorder + 0.021)
+    for ripple, half in ((0.18, 0.13), (0.58, 0.07)):
+        _line(ax, [pt((0.50 - half, ripple)), pt((0.50 + half, ripple))], color="white", linewidth=0.9, zorder=zorder + 0.015)
+
+
+def _dune_profile(left: float, width: float, height: float, crest: float = 0.62, samples: int = 24) -> list[tuple[float, float]]:
+    rise = [(left + crest * width * t, 0.04 + height * np.sin(t * np.pi / 2) ** 1.6) for t in np.linspace(0, 1, samples)]
+    fall = [(left + width * (crest + (1 - crest) * t), 0.04 + height * np.cos(t * np.pi / 2) ** 0.8) for t in np.linspace(0, 1, samples // 2)[1:]]
+    return rise + fall
+
+
+def desert(ax, x, y, size, zorder=5):
+    def pt(p): return (x + (p[0] - 0.5) * size, y + p[1] * size)
+    sand, shade = (0.93, 0.80, 0.55), (0.80, 0.64, 0.38)
+    for left, width, height, z in ((0.00, 0.62, 0.30, 0.00), (0.36, 0.64, 0.40, 0.01), (0.14, 0.56, 0.20, 0.02)):
+        profile = _dune_profile(left, width, height)
+        ax.add_patch(_Polygon([pt(p) for p in profile], closed=True, facecolor=sand, edgecolor=INK, linewidth=0.9, joinstyle="round", zorder=zorder + z))
+        top = max(range(len(profile)), key=lambda i: profile[i][1])
+        ax.add_patch(_Polygon([pt(p) for p in profile[top:]] + [pt((profile[top][0] + width * 0.04, 0.04))], closed=True, facecolor=shade, edgecolor="none", zorder=zorder + z + 0.001))
+        _line(ax, [pt(p) for p in profile], color=INK, linewidth=0.9, zorder=zorder + z + 0.002)
+        for share in (0.35, 0.6):
+            ripple = profile[int(top * share)]
+            _line(ax, [pt((ripple[0] - width * 0.06, ripple[1] - height * 0.18)), pt((ripple[0] + width * 0.04, ripple[1] - height * 0.12))], color=shade, linewidth=0.7, zorder=zorder + z + 0.003)
+    _line(ax, [pt((0.0, 0.04)), pt((1.0, 0.04))], color=INK, linewidth=0.9, zorder=zorder + 0.03)
+
+
 def cave(ax, x, y, size, zorder=5):
     def pt(p): return (x + (p[0] - 0.5) * size, y + p[1] * size)
     _rock(ax, pt, ((0.02, 0.10), (0.06, 0.40), (0.20, 0.70), (0.42, 0.88), (0.66, 0.84), (0.86, 0.62), (0.96, 0.34), (0.98, 0.10)), zorder)
