@@ -1,5 +1,6 @@
 import io
 import itertools
+import logging
 import math
 import pathlib
 from collections.abc import Callable
@@ -25,6 +26,7 @@ from geography.data import Country, NaturalEarth
 from geography.detail import DetailLayers
 from geography.images import save_compact
 from geography.labels import CityLabel, CityLabels, connector_boxes
+from geography.map_checks import label_problems, visibility_problems
 from geography.places import Place
 
 GEODETIC = ccrs.PlateCarree()
@@ -62,6 +64,8 @@ WORLD_SIMPLIFY = 0.05
 SEAM_CLOSING = 0.2
 WORLD_OUTLINE_WIDTH = 1.6
 WORLD_LINE_WIDTH = 2.4
+
+logger = logging.getLogger(__name__)
 
 
 class Color(StrEnum):
@@ -427,6 +431,7 @@ class LocatorMap:
         self.data = data
         self.country_names = country_names or {}
         self.detail = detail
+        self.problems: list[str] = []
         self.aspect_ratio = aspect_ratio
         self.width = width
         self.dpi = dpi
@@ -446,6 +451,7 @@ class LocatorMap:
         save_compact(rendered, out_path, (style.highlight, style.host, style.outline, Color.DISPUTED))
 
     def render(self, scene: Scene, out_path: pathlib.Path, answer_path: pathlib.Path | None = None) -> None:
+        self.problems = []
         mainland = gpd.GeoSeries([scene.frame.union_all()], crs=scene.frame.crs) if scene.framing is Framing.CONTEXT else get_mainland(scene.frame)
         lat, lng = get_center(mainland)
         projection = ccrs.LambertAzimuthalEqualArea(central_longitude=lng, central_latitude=lat)
@@ -484,17 +490,17 @@ class LocatorMap:
                 labels.show_answer(False)
                 self._save(fig, out_path, scene.style)
                 labels.show_answer(True)
-                self._inspect(fig, scene)
+                self._inspect(fig, scene, projection, out_path)
                 self._save(fig, answer_path, scene.style)
             elif scene.naming:
                 answer = self._name_areas(fig, scene, projection, extent)
                 answer.show(False)
                 self._save(fig, out_path, scene.style)
                 answer.show(True)
-                self._inspect(fig, scene)
+                self._inspect(fig, scene, projection, out_path)
                 self._save(fig, answer_path, scene.style)
             else:
-                self._inspect(fig, scene)
+                self._inspect(fig, scene, projection, out_path)
                 self._save(fig, out_path, scene.style)
         finally:
             plt.close(fig)
@@ -511,10 +517,13 @@ class LocatorMap:
         pad = CLEAR_PAD_PT * fig.dpi / 72
         return [Bbox.from_extents(x - pad, y - pad, x + pad, y + pad) for x, y in points]
 
-    @staticmethod
-    def _inspect(fig: Figure, scene: Scene) -> None:
+    def _inspect(self, fig: Figure, scene: Scene, projection: ccrs.Projection, out_path: pathlib.Path) -> None:
+        fig.canvas.draw()
+        bounds = tuple(scene.highlight.to_crs(projection.proj4_init).total_bounds)
+        self.problems = label_problems(fig) + visibility_problems(fig, bounds)
+        if self.problems:
+            logger.warning("Map %s: %s", out_path.name, "; ".join(self.problems))
         if scene.inspect:
-            fig.canvas.draw()
             scene.inspect(fig)
 
     @staticmethod
@@ -549,6 +558,7 @@ class LocatorMap:
         return answer
 
     def render_centred(self, scene: CentredScene, out_path: pathlib.Path) -> None:
+        self.problems = []
         extent = scene.extent
         fig = plt.figure(figsize=(self.width, self.width * extent.height / extent.width))
         try:
@@ -587,6 +597,7 @@ class LocatorMap:
         areas: gpd.GeoSeries | None = None,
         lines: gpd.GeoSeries | None = None,
     ) -> None:
+        self.problems = []
         fig = plt.figure(figsize=WORLD_SIZE)
         try:
             ax = fig.add_axes([0, 0, 1, 1], projection=ccrs.Robinson(central_longitude=centre))
