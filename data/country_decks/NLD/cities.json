@@ -132,6 +132,17 @@
     "province": "Q775"
   },
   {
+    "id": "Q10002",
+    "name": "Enschede",
+    "native": "Enschede",
+    "longitude": 6.8925,
+    "latitude": 52.2225,
+    "population": 162683,
+    "links": 95,
+    "centre": false,
+    "province": "Q773"
+  },
+  {
     "id": "Q9920",
     "name": "Haarlem",
     "native": "Haarlem",
@@ -141,17 +152,6 @@
     "links": 109,
     "centre": true,
     "province": "Q701"
-  },
-  {
-    "id": "Q10002",
-    "name": "Enschede",
-    "native": "Enschede",
-    "longitude": 6.8925,
-    "latitude": 52.2225,
-    "population": 159732,
-    "links": 95,
-    "centre": false,
-    "province": "Q773"
   },
   {
     "id": "Q2766547",
@@ -412,7 +412,7 @@
     "native": "Gouda",
     "longitude": 4.705555555,
     "latitude": 52.018055555,
-    "population": 73681,
+    "population": 77818,
     "links": 82,
     "centre": false,
     "province": "Q694"
