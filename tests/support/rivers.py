@@ -7,6 +7,7 @@ from unittest import mock
 
 import geopandas as gpd
 import requests
+from shapely.geometry import Point
 
 from geography import places
 from geography.countrydeck.places import resolve_shapes
@@ -15,6 +16,8 @@ from geography.features.kinds import Kind
 from geography.features.model import Feature
 from geography.features.riverart.facts import RiverArt, RiverResearch
 from geography.features.spatial import CRS
+from geography.features.surroundings import SurroundingsResearch
+from geography.features.wikidata import FeatureQueries
 from geography.sources.http import create_session
 from geography.sources.wikidata import Wikidata
 from tests.conftest import COUNTRY_DECKS, DATA
@@ -56,3 +59,17 @@ def research(deck: str, slug: str, record: bool) -> Researched:
         complete_rivers(wikidata, [feature], {feature.qid: document["length_km"]})
         art = RiverResearch(session, wikidata, language).art(feature)
     return Researched(deck, feature, document, art)
+
+
+def surroundings(deck: str, slug: str, record: bool):
+    root, _ = DECKS[deck]
+    document = json.loads((root / "places" / "features" / f"{slug}.json").read_text())
+    kind = Kind(document["kind"])
+    with recorded(f"{deck}_{slug}", record):
+        wikidata = Wikidata(create_session())
+        facts = FeatureQueries(wikidata).facts({document["qid"]})
+        spot = facts[document["qid"]].coordinates if document["qid"] in facts else None
+        feature = Feature(document["key"], document["name"], kind, gpd.GeoSeries([Point(*spot)] if spot else [], crs=CRS), qid=document["qid"])
+        if kind is not Kind.WATERFALL:
+            resolve_shapes(wikidata, [feature])
+        return SurroundingsResearch(wikidata).of(kind, document["qid"], feature.geometry)
