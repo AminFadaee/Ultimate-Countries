@@ -397,10 +397,11 @@ class FeatureMapWorker:
             cls.renderer.render_world(job.output, style, centre, areas=job.geometry)
 
 
-def map_job(feature: Feature, output: pathlib.Path, photo: pathlib.Path | None = None, art: RiverArt | None = None) -> FeatureMapJob:
+def map_job(feature: Feature, output: pathlib.Path, photo: pathlib.Path | None = None, art: RiverArt | None = None,
+            surroundings: Surroundings | None = None) -> FeatureMapJob:
     host = feature.countries[0].alpha_3 if feature.countries else None
     geometry = art.river if art else feature.geometry
-    return FeatureMapJob(feature.key, feature.kind, geometry, output, host, len(feature.countries) > 1, photo, art)
+    return FeatureMapJob(feature.key, feature.kind, geometry, output, host, len(feature.countries) > 1, photo, art, surroundings)
 
 
 def render_feature_maps(jobs: list[FeatureMapJob], workers: int) -> Iterable[tuple[FeatureMapJob, Exception | None]]:

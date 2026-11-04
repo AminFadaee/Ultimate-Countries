@@ -21,6 +21,7 @@ LAKE_LINKS = ("P201", "P200")
 CANAL_LINKS = ("P2789", "P403", "P885", "P206")
 ON_RIVER_LINKS = ("P206",)
 ON_A_RIVER = (Kind.WATERFALL, Kind.CANYON)
+SURROUNDED = (Kind.LAKE, Kind.CANAL, *ON_A_RIVER)
 
 
 @dataclass(frozen=True)

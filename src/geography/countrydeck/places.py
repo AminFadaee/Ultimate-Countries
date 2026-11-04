@@ -7,9 +7,19 @@ import geopandas as gpd
 from shapely.geometry import Point, mapping, shape
 
 from geography.countrydeck.cities import near_mainland_features, within_territory
-from geography.countrydeck.maps import PlaceMapJob, city_labels, deck_cities, render_place_maps
+from geography.countrydeck.maps import (
+    PlaceMapJob,
+    city_labels,
+    deck_cities,
+    render_place_maps,
+)
 from geography.countrydeck.names import named
-from geography.countrydeck.selection import inscribed, natural_sites, select_places, wholes
+from geography.countrydeck.selection import (
+    inscribed,
+    natural_sites,
+    select_places,
+    wholes,
+)
 from geography.data import CONTESTED_TYPES, NaturalEarth
 from geography.features.catalog import complete_rivers, drawn_km, natural_earth_shapes
 from geography.features.collect import PlacesCollector, PlacesPaths, unique_slugs
@@ -130,13 +140,15 @@ class CountryPlacesCollector(PlacesCollector):
     def draw_maps(self, features: list[Feature], slugs: dict[str, str], country: dict, host: str, rerender: bool, workers: int) -> list[Feature]:
         jobs = []
         art = self._river_art(features)
+        surroundings = self._surroundings(features)
         cities = city_labels(deck_cities(self.paths.root), country)
         for feature in features:
             output = self.paths.maps / f"{slugs[feature.key]}.png"
             feature.map = self.paths.relative(output)
             if rerender or not (output.exists() and answer_path(output).exists()):
                 photo = self.paths.root / feature.photo.file if feature.photo else None
-                jobs.append(PlaceMapJob(feature.key, feature.kind.value, mapping(feature.geometry.union_all()), host, feature.name, photo, output, answer_path(output), art.get(feature.key), cities if feature.key in art else ()))
+                jobs.append(PlaceMapJob(feature.key, feature.kind.value, mapping(feature.geometry.union_all()), host, feature.name, photo, output, answer_path(output),
+                                        art.get(feature.key), cities if feature.key in art else (), surroundings.get(feature.key)))
         by_key = {feature.key: feature for feature in features}
         for job, error in render_place_maps(jobs, workers):
             if error:

@@ -1,7 +1,7 @@
 import json
 import logging
-import re
 import pathlib
+import re
 from dataclasses import asdict, dataclass
 
 import geopandas as gpd
@@ -9,8 +9,8 @@ import requests
 
 from geography.data import NaturalEarth
 from geography.features.catalog import Catalog, article_title
-from geography.features.lengths import disagrees
 from geography.features.kinds import WATER_KINDS, Kind, Shape
+from geography.features.lengths import disagrees
 from geography.features.maps import map_job, render_feature_maps
 from geography.features.model import Feature, Photo
 from geography.features.riverart.facts import RiverArt, RiverResearch
@@ -20,6 +20,11 @@ from geography.features.spatial import (
     POINT_M,
     CountryLocator,
     load_our_countries,
+)
+from geography.features.surroundings import (
+    SURROUNDED,
+    Surroundings,
+    SurroundingsResearch,
 )
 from geography.naming import answer_path, slugify
 from geography.render import EQUAL_AREA, PROJECTABLE_LATITUDE
@@ -221,11 +226,13 @@ class PlacesCollector:
     def _render_maps(self, features: list[Feature], slugs: dict[str, str], options: PlacesOptions) -> None:
         jobs = []
         art = self._river_art(features)
+        surroundings = self._surroundings(features)
         for feature in features:
             output = self.paths.maps / f"{slugs[feature.key]}.png"
             feature.map = self.paths.relative(output)
             if options.rerender_maps or not output.exists():
-                jobs.append(map_job(feature, output, self.paths.root / feature.photo.file if feature.photo else None, art.get(feature.key)))
+                photo = self.paths.root / feature.photo.file if feature.photo else None
+                jobs.append(map_job(feature, output, photo, art.get(feature.key), surroundings.get(feature.key)))
         by_key = {feature.key: feature for feature in features}
         for job, error in render_feature_maps(jobs, options.workers):
             if error:
@@ -247,6 +254,22 @@ class PlacesCollector:
             if art:
                 found[feature.key] = art
                 feature.extras["river"] = art.facts
+        return found
+
+    def _surroundings(self, features: list[Feature]) -> dict[str, Surroundings]:
+        research = SurroundingsResearch(self.wikidata)
+        found = {}
+        for feature in features:
+            if feature.kind not in SURROUNDED or not feature.qid:
+                continue
+            try:
+                surroundings = research.of(feature.kind, feature.qid, feature.geometry)
+            except Exception:
+                logger.exception("No surroundings for %s; its map stays plain", feature.name)
+                continue
+            if surroundings:
+                found[feature.key] = surroundings
+                feature.extras["surroundings"] = surroundings.facts
         return found
 
     def _export(self, features: list[Feature], slugs: dict[str, str]) -> int:
