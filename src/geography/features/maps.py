@@ -200,11 +200,13 @@ def river_scene(job: FeatureMapJob, min_frame: float = RIVER_MIN_FRAME_M, with_t
     return replace(scene, frame=frame, highlight=hairline, style=replace(scene.style, highlight=RIVER_BLUE, outline=RIVER_BLUE))
 
 
-def surrounded(scene: Scene, job: FeatureMapJob) -> Scene:
+def surrounded(scene: Scene | CentredScene, job: FeatureMapJob) -> Scene | CentredScene:
     if not job.surroundings:
         return scene
-    return replace(scene, overlay=functools.partial(paint_surroundings, job.surroundings, job.geometry),
-                   lens_overlay=functools.partial(paint_surroundings_in_lens, job.surroundings, job.geometry))
+    overlay = functools.partial(paint_surroundings, job.surroundings, job.geometry)
+    if isinstance(scene, CentredScene):
+        return replace(scene, overlay=overlay)
+    return replace(scene, overlay=overlay, lens_overlay=functools.partial(paint_surroundings_in_lens, job.surroundings, job.geometry))
 
 
 def point_scene(job: FeatureMapJob, data: NaturalEarth) -> Scene:
@@ -360,7 +362,7 @@ class FeatureMapWorker:
         job.output.parent.mkdir(parents=True, exist_ok=True)
         view = view_for(job, cls.renderer.aspect_ratio)
         if view is View.CENTRED and (scene := centred_scene(job, cls.renderer.data, cls.renderer.aspect_ratio)):
-            cls.renderer.render_centred(scene, job.output)
+            cls.renderer.render_centred(surrounded(scene, job), job.output)
         elif view is not View.REGIONAL:
             cls._render_world(job)
         elif is_line(job):

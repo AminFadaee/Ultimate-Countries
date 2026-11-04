@@ -5,21 +5,29 @@ import geopandas as gpd
 import matplotlib
 
 matplotlib.use("Agg")
+import matplotlib.colors
 import matplotlib.patches
 import matplotlib.pyplot as plt
 import numpy as np
 import pytest
+from matplotlib.transforms import Bbox
 from shapely.geometry import LineString, Point, box
 
 from geography.features.kinds import Kind
 from geography.features.spatial import CRS
 from geography.features.surroundings import (
     Linked,
+    Marker,
     Surroundings,
     SurroundingsResearch,
     Waterway,
 )
-from geography.features.surroundings_paint import SurroundingsPainter, outside
+from geography.features.surroundings_paint import (
+    RIVER_BLUE,
+    SurroundingsPainter,
+    draw_river,
+    outside,
+)
 from geography.features.water_labels import WaterLabeller
 from geography.render import Extent
 
@@ -86,7 +94,7 @@ def test_a_waterfall_without_a_linked_river_takes_the_nearest_one(research):
 
 
 def test_other_kinds_get_no_surroundings(research):
-    assert not research.of(Kind.MOUNTAIN, "Q0", gpd.GeoSeries([Point(0, 0)], crs=CRS))
+    assert not research.of(Kind.REGION, "Q0", gpd.GeoSeries([Point(0, 0)], crs=CRS))
 
 
 def test_rivers_stop_at_the_lake_shore():
@@ -176,3 +184,93 @@ def test_a_water_without_an_outline_is_named_at_its_point_only_if_that_is_water(
     if named:
         x, y = texts[0].get_position()
         assert Point(x, y).distance(point) < 3
+
+
+def test_a_sea_name_skips_parts_that_do_not_border_the_feature(marked_map):
+    fig, ax, projection, extent = marked_map
+    feature = gpd.GeoSeries([box(-5, -5, 5, 5)], crs=CRS)
+    ocean = Waterway("Far Ocean", gpd.GeoSeries([box(5, -5, 15, 5), box(-5, 8, 5, 12)], crs=CRS))
+    SurroundingsPainter(Surroundings(waters=(ocean,)), feature, Base(box(-30, -30, -25, -25)), fig, projection, extent).paint()
+    label = next(text for text in ax.texts if text.get_text().replace("\n", " ") == "Far Ocean")
+    assert label.get_position()[0] > 5
+
+
+def test_a_town_name_keeps_off_the_marker(marked_map):
+    fig, ax, projection, extent = marked_map
+    x, y = projection.transform_point(0.6, 0, ccrs.PlateCarree())
+    ax.scatter([x], [y], s=400, zorder=7)
+    town = Marker("Ede", Point(0, 0))
+    SurroundingsPainter(Surroundings(towns=(town,)), gpd.GeoSeries([Point(0.6, 0)], crs=CRS), None, fig, projection, extent).paint()
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    label = next(text for text in ax.texts if text.get_text() == "Ede")
+    mx, my = ax.transData.transform((x, y))
+    radius = 10 * fig.dpi / 72
+    assert not label.get_window_extent(renderer).overlaps(Bbox.from_extents(mx - radius, my - radius, mx + radius, my + radius))
+
+
+def test_rivers_on_other_cards_are_blue_not_grey(marked_map):
+    _, ax, _, _ = marked_map
+    draw_river(ax, line((0, 0), (1, 1)))
+    assert matplotlib.colors.to_hex(ax.patches[-1].get_edgecolor() if ax.patches else ax.collections[-1].get_edgecolor()[0]) == RIVER_BLUE
+
+
+def test_textures_keep_clear_of_rivers(marked_map):
+    fig, ax, projection, extent = marked_map
+    river = Waterway("Middle", line((0, -15), (0, 15)))
+    surroundings = Surroundings(rivers=(river,), texture=Kind.WETLAND, rivers_inside=True)
+    painter = SurroundingsPainter(surroundings, gpd.GeoSeries([box(-10, -10, 10, 10)], crs=CRS), None, fig, projection, extent)
+    before = len(ax.patches)
+    painter._texture()
+    near_river = abs(projection.transform_point(0, 0, ccrs.PlateCarree())[0])
+    xs = ax.transData.inverted().transform(icon_bounds(ax, before))[:, 0]
+    assert len(xs) and np.abs(xs - near_river).min() > 0
+
+
+def test_a_peak_with_two_coordinates_takes_the_one_in_its_range(research):
+    belukha = Linked("Q1", "Belukha", "P610", 50, Point(116.8, 51.3), frozenset({"mountain"}), (Point(116.8, 51.3), Point(86.6, 49.8)))
+    research._linked = lambda qid, props: [belukha]
+    peaks = research.of(Kind.MOUNTAIN_RANGE, "Q0", gpd.GeoSeries([box(84, 48, 90, 52)], crs=CRS)).peaks
+    assert peaks[0].point == Point(86.6, 49.8)
+
+
+def test_a_sea_with_no_linked_waters_names_the_open_water_around_it(research):
+    research._linked = lambda qid, props: []
+    sea = box(0, 0, 10, 10)
+    waters = gpd.GeoDataFrame({"name": ["Ocean", "Lagoon", "Itself", "Bay inside"], "name_en": [None] * 4,
+                               "featurecla": ["ocean", "lagoon", "sea", "bay"], "scalerank": [0, 8, 1, 3],
+                               "wikidataid": ["Q9", "Q8", "Q0", "Q7"]},
+                              geometry=[box(10, 0, 20, 10), box(-2, 0, 0, 2), sea, box(1, 1, 3, 3)], crs=CRS)
+    with mock.patch.object(SurroundingsResearch, "waters", return_value=waters), mock.patch.object(SurroundingsResearch, "shapes", return_value={}):
+        found = research.of(Kind.SEA, "Q0", gpd.GeoSeries([sea], crs=CRS))
+    assert [water.name for water in found.waters] == ["Ocean"]
+
+
+@pytest.mark.parametrize(("above", "shown"), [({"Q1", "Q2"}, ["Big Range"]), ({"Q1"}, [])])
+def test_a_mountain_takes_a_containing_range_only_if_wikidata_places_its_range_inside_it(research, above, shown):
+    research._linked = lambda qid, props: [linked("Q1", "Small Massif", "P4552", classes=("massif",))] if props == ("P4552",) else []
+    research._ranges_above = lambda qids: above
+    regions = gpd.GeoDataFrame({"name": ["Big Range"], "name_en": [None], "featurecla": ["Range/mtn"], "wikidataid": ["Q2"]},
+                               geometry=[box(-5, -5, 5, 5)], crs=CRS)
+    with mock.patch.object(SurroundingsResearch, "regions", return_value=regions), mock.patch.object(SurroundingsResearch, "shapes", return_value={}):
+        found = research.of(Kind.MOUNTAIN, "Q0", gpd.GeoSeries([Point(0, 0)], crs=CRS))
+    assert [outline.name for outline in found.ranges] == shown
+
+
+def test_a_landmark_icon_goes_above_a_small_marker_at_the_bottom_edge(marked_map):
+    fig, ax, projection, extent = marked_map
+    bottom = ccrs.PlateCarree().transform_point(0, extent.bounds[2] + 2 * extent.width / (10 * 72), projection)
+    centre = ax.transData.transform(projection.transform_point(*bottom, ccrs.PlateCarree())) / fig.dpi
+    fig.add_artist(matplotlib.patches.Circle(tuple(centre), 0.12, fill=False, transform=fig.dpi_scale_trans))
+    before = len(ax.patches)
+    SurroundingsPainter(Surroundings(landmark=Kind.VOLCANO), gpd.GeoSeries([Point(*bottom)], crs=CRS), None, fig, projection, extent).paint()
+    assert icon_bounds(ax, before)[:, 1].min() >= centre[1] * fig.dpi
+
+
+def test_a_range_outline_that_stops_short_of_the_mountain_is_not_shown(research):
+    research._linked = lambda qid, props: [linked("Q1", "Himalayas", "P4552", classes=("mountain range",))] if props == ("P4552",) else []
+    research._ranges_above = lambda qids: set()
+    empty = gpd.GeoDataFrame({"featurecla": [], "wikidataid": []}, geometry=[], crs=CRS)
+    with mock.patch.object(SurroundingsResearch, "shapes", return_value={"Q1": gpd.GeoSeries([box(80, 26, 90, 30)], crs=CRS)}), \
+            mock.patch.object(SurroundingsResearch, "regions", return_value=empty):
+        assert not research.of(Kind.MOUNTAIN, "Q0", gpd.GeoSeries([Point(74.6, 35.2)], crs=CRS)).ranges

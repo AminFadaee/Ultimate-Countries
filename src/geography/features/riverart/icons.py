@@ -224,6 +224,14 @@ def desert(ax, x, y, size, zorder=5):
     _line(ax, [pt((0.0, 0.04)), pt((1.0, 0.04))], color=INK, linewidth=0.9, zorder=zorder + 0.03)
 
 
+def forest(ax, x, y, size, zorder=5):
+    def pt(p): return (x + (p[0] - 0.5) * size, y + p[1] * size)
+    for cx, base, crown, z in ((0.24, 0.04, 0.22, 0.0), (0.76, 0.04, 0.22, 0.01), (0.50, 0.00, 0.28, 0.02)):
+        _box(ax, pt, cx - 0.035, base, cx + 0.035, base + 0.30, BARK, zorder + z, width=0.6)
+        _ellipse(ax, pt, cx, base + 0.30 + crown * 0.8, crown, crown * 0.95, zorder + z + 0.001, facecolor=GREEN, edgecolor=GREEN_DARK, linewidth=0.9)
+        _ellipse(ax, pt, cx - crown * 0.3, base + 0.30 + crown * 1.0, crown * 0.35, crown * 0.3, zorder + z + 0.002, facecolor="#8fb86a", edgecolor="none")
+
+
 def cave(ax, x, y, size, zorder=5):
     def pt(p): return (x + (p[0] - 0.5) * size, y + p[1] * size)
     _rock(ax, pt, ((0.02, 0.10), (0.06, 0.40), (0.20, 0.70), (0.42, 0.88), (0.66, 0.84), (0.86, 0.62), (0.96, 0.34), (0.98, 0.10)), zorder)

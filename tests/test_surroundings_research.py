@@ -40,3 +40,35 @@ def test_a_waterfall_without_a_linked_river_finds_the_nearest_one(found):
 def test_a_canyon_lies_on_its_river(found):
     canyon = found("UP", "grand_canyon")
     assert [river.name for river in canyon.rivers] == ["Colorado River"] and canyon.landmark is Kind.CANYON
+
+
+def test_a_mountain_sits_in_its_range(found):
+    everest = found("UP", "mount_everest")
+    assert [outline.name for outline in everest.ranges] == ["Himalayas"] and everest.landmark is Kind.MOUNTAIN
+
+
+def test_a_range_shows_its_highest_peak(found):
+    assert [peak.name for peak in found("UP", "alps").peaks] == ["Mont Blanc"]
+
+
+def test_a_peninsula_names_the_waters_around_it(found):
+    waters = [water.name for water in found("UP", "arabian_peninsula").waters]
+    assert {"Red Sea", "Persian Gulf"} <= set(waters) and len(waters) <= 4
+
+
+def test_an_isthmus_skips_obscure_bays_for_the_waters_it_touches(found):
+    waters = [water.name for water in found("UP", "isthmus_of_panama").waters]
+    assert "Caribbean Sea" in waters and not any("Mosqu" in name for name in waters)
+
+
+def test_a_valley_shows_the_river_crossing_it(found):
+    assert "Syr Darya" in [river.name for river in found("UP", "ferghana_valley").rivers]
+
+
+def test_a_landmark_shows_its_river_but_not_its_town(found):
+    taj = found("UP", "taj_mahal")
+    assert [river.name for river in taj.rivers] == ["Yamuna"] and not taj.towns
+
+
+def test_a_park_shows_its_town(found):
+    assert [town.name for town in found("NLD", "hoge_veluwe_national_park").towns] == ["Ede"]

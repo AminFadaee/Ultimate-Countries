@@ -220,6 +220,7 @@ class CentredScene:
     countries: gpd.GeoSeries
     style: Style = Style()
     inset_shape: gpd.GeoSeries | None = None
+    overlay: Callable | None = None
 
 
 @dataclass(frozen=True)
@@ -586,6 +587,8 @@ class LocatorMap:
                 self._plot_inset(fig, scene.projection, extent, corner)
             else:
                 self._plot_inset_shape(fig, scene.inset_shape, corner)
+            if scene.overlay:
+                scene.overlay(self, fig, scene.projection, extent)
             self._save(fig, out_path, scene.style)
         finally:
             plt.close(fig)
