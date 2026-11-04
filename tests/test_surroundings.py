@@ -13,7 +13,12 @@ from shapely.geometry import LineString, Point, box
 
 from geography.features.kinds import Kind
 from geography.features.spatial import CRS
-from geography.features.surroundings import Linked, Surroundings, SurroundingsResearch
+from geography.features.surroundings import (
+    Linked,
+    Surroundings,
+    SurroundingsResearch,
+    Waterway,
+)
 from geography.features.surroundings_paint import SurroundingsPainter, outside
 from geography.features.water_labels import WaterLabeller
 from geography.render import Extent
@@ -31,6 +36,7 @@ def line(*points) -> gpd.GeoSeries:
 def research():
     found = SurroundingsResearch.__new__(SurroundingsResearch)
     found._traced = lambda qids: {}
+    found._parts = lambda qid: []
     return found
 
 
@@ -51,13 +57,23 @@ def test_a_lake_shows_its_outflow_first_then_its_best_known_inflows(research):
     assert [river.name for river in rivers] == ["Out", "Big", "Middle", "Fourth"]
 
 
-def test_a_canal_names_only_waters_it_can_outline(research):
+def test_a_canal_names_waters_it_can_outline_or_place(research):
     items = [linked("Q20", "Mediterranean Sea", "P2789", classes=("sea",)), linked("Q21", "Tiny Bay", "P2789", classes=("bay",)),
-             linked("Q22", "Ghent", "P2789", classes=("city",))]
+             Linked("Q23", "Saronic Gulf", "P2789", 10, Point(23.5, 37.7), frozenset({"gulf"})), linked("Q22", "Ghent", "P2789", classes=("city",))]
     research._linked = lambda qid, props: items
     with mock.patch.object(SurroundingsResearch, "shapes", return_value={"Q20": gpd.GeoSeries([box(0, 0, 5, 5)], crs=CRS)}):
         found = research.of(Kind.CANAL, "Q0", line((0, 0), (1, 0)))
-    assert [water.name for water in found.waters] == ["Mediterranean Sea"] and not found.rivers
+    assert [(water.name, water.shape is None) for water in found.waters] == [("Mediterranean Sea", False), ("Saronic Gulf", True)]
+    assert not found.rivers
+
+
+def test_a_sea_is_outlined_with_its_parts(research):
+    research._linked = lambda qid, props: [linked("Q97", "Atlantic Ocean", "P2789", classes=("ocean",))]
+    research._parts = lambda qid: ["Q1247", "Q999"]
+    shapes = {"Q97": gpd.GeoSeries([box(-40, 0, -20, 20)], crs=CRS), "Q1247": gpd.GeoSeries([box(-85, 9, -60, 20)], crs=CRS)}
+    with mock.patch.object(SurroundingsResearch, "shapes", return_value=shapes):
+        atlantic = research.of(Kind.CANAL, "Q0", line((-80, 9), (-79.5, 9.3))).waters[0]
+    assert atlantic.shape.union_all().contains(Point(-75, 12))
 
 
 def test_a_waterfall_without_a_linked_river_takes_the_nearest_one(research):
@@ -143,3 +159,20 @@ def test_a_landmark_icon_sits_inside_a_large_marker_and_below_a_small_one(marked
         assert points[:, 1].min() >= circle_bottom
     else:
         assert points[:, 1].max() <= circle_bottom + 1
+
+
+class Base:
+    def __init__(self, land):
+        self.data = type("Data", (), {"countries": gpd.GeoSeries([land], crs=CRS)})()
+
+
+@pytest.mark.parametrize(("point", "named"), [(Point(5, 0), True), (Point(-5, 0), False)])
+def test_a_water_without_an_outline_is_named_at_its_point_only_if_that_is_water(marked_map, point, named):
+    fig, ax, projection, extent = marked_map
+    surroundings = Surroundings(waters=(Waterway("Saronic Gulf", None, point),))
+    SurroundingsPainter(surroundings, line((0, -1), (0, 1)), Base(box(-25, -15, 0, 15)), fig, projection, extent).paint()
+    texts = [text for text in ax.texts if text.get_text().replace("\n", " ") == "Saronic Gulf"]
+    assert bool(texts) is named
+    if named:
+        x, y = texts[0].get_position()
+        assert Point(x, y).distance(point) < 3
