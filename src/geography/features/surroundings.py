@@ -34,6 +34,7 @@ class Waterway:
 class Surroundings:
     rivers: tuple[Waterway, ...] = ()
     waters: tuple[Waterway, ...] = ()
+    landmark: Kind | None = None
 
     @property
     def facts(self) -> dict:
@@ -77,7 +78,7 @@ class SurroundingsResearch:
             return Surroundings(rivers=self._drawn(item for item in linked if item.is_river)[:MAX_RIVERS], waters=waters)
         if kind in ON_A_RIVER:
             rivers = self._drawn(sorted((item for item in self._linked(qid, ON_RIVER_LINKS) if item.is_river), key=lambda item: -item.links))
-            return Surroundings(rivers=rivers[:1] or self._nearest_river(geometry))
+            return Surroundings(rivers=rivers[:1] or self._nearest_river(geometry), landmark=kind)
         return Surroundings()
 
     @staticmethod

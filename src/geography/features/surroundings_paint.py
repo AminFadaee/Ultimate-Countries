@@ -4,9 +4,12 @@ import cartopy.crs as ccrs
 import geopandas as gpd
 import matplotlib.patheffects as effects
 import numpy as np
+from matplotlib import patches
 from shapely.geometry import Point
 from shapely.ops import nearest_points
 
+from geography.features.kinds import Kind
+from geography.features.riverart import icons
 from geography.features.surroundings import Surroundings, Waterway
 from geography.features.water_labels import WaterLabeller
 from geography.render import Extent, LocatorMap
@@ -17,6 +20,10 @@ RIVER_TEXT = "#4d5560"
 LAND_HALO = "#e9dfc7"
 RIVER_WIDTH, RIVER_EDGE = 2.0, 3.0
 RIVER_ZORDER = 2.6
+ICONS_ON_TOP = 8.5
+LANDMARK_ICONS = {Kind.WATERFALL: (icons.waterfall, 28, 0.62), Kind.CANYON: (icons.gorge, 24, 0.94)}
+ICON_SHARE_OF_MARKER = 0.75
+MIN_ICON_PT = 20
 NAME_SIZE = 8
 NAME_GAPS_PT = (45, 70, 30, 100, 140)
 SAMPLES = 400
@@ -34,12 +41,40 @@ class SurroundingsPainter:
     def paint(self) -> None:
         for _, lines in self.rivers:
             draw_river(self.ax, lines)
+        if self.surroundings.landmark in LANDMARK_ICONS:
+            self._landmark()
         for river, lines in self.rivers:
             self._river_name(river.name, lines)
         if self.surroundings.waters:
             labeller = WaterLabeller(self.ax, self.projection, self.extent, self.unit, self.renderer.data.countries.geometry.union_all())
             for water in self.surroundings.waters:
                 self._water_name(labeller, water)
+
+    def _landmark(self) -> None:
+        draw, size, height = LANDMARK_ICONS[self.surroundings.landmark]
+        spot = self.feature.representative_point()
+        x, y = self.projection.transform_point(spot.x, spot.y, GEODETIC)
+        base = y - height * size * self.unit / 2
+        if (marker := self._marker(x, y)) is not None:
+            (cx, cy), radius_pt = marker
+            x, y = self.ax.transData.inverted().transform((cx, cy))
+            if ICON_SHARE_OF_MARKER * 2 * radius_pt >= MIN_ICON_PT:
+                size = min(size, ICON_SHARE_OF_MARKER * 2 * radius_pt / height)
+                base = y - height * size * self.unit / 2
+            else:
+                base = y - (radius_pt + height * size) * self.unit
+        draw(self.ax, x, base, size * self.unit, zorder=ICONS_ON_TOP)
+
+    def _marker(self, x: float, y: float):
+        spot = self.ax.transData.transform((x, y))
+        circles = [artist for artist in self.fig.artists if isinstance(artist, patches.Circle)]
+        found = []
+        for circle in circles:
+            centre = np.array(circle.center) * self.fig.dpi
+            radius = circle.radius * self.fig.dpi
+            if np.linalg.norm(centre - spot) <= radius:
+                found.append((radius, (tuple(centre), circle.radius * 72)))
+        return min(found)[1] if found else None
 
     def _display(self, x: float, y: float) -> np.ndarray:
         return self.ax.transData.transform(self.projection.transform_point(x, y, GEODETIC))
