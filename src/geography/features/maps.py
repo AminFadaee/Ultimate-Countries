@@ -63,6 +63,7 @@ SEA_ROOM_SHARE = 0.15
 WALL_BAND_FACTOR = 1.5
 LINE_TYPES = ("LineString", "MultiLineString")
 PLACE_ZOOM_THRESHOLD = 0.07
+DRAWN_DETAIL = 5_000
 CONTEXT_STEP = 0.05
 HEMISPHERE_M = 8_500_000
 POLAR_RING_LATITUDE = 60
@@ -399,10 +400,17 @@ class FeatureMapWorker:
             cls.renderer.render_world(job.output, style, centre, areas=job.geometry)
 
 
+def drawable(geometry: gpd.GeoSeries) -> gpd.GeoSeries:
+    if not geometry.geom_type.isin(("Polygon", "MultiPolygon")).any():
+        return geometry
+    minx, miny, maxx, maxy = geometry.total_bounds
+    return geometry.simplify(max(maxx - minx, maxy - miny) / DRAWN_DETAIL)
+
+
 def map_job(feature: Feature, output: pathlib.Path, photo: pathlib.Path | None = None, art: RiverArt | None = None,
             surroundings: Surroundings | None = None) -> FeatureMapJob:
     host = feature.countries[0].alpha_3 if feature.countries else None
-    geometry = art.river if art else feature.geometry
+    geometry = art.river if art else drawable(feature.geometry)
     return FeatureMapJob(feature.key, feature.kind, geometry, output, host, len(feature.countries) > 1, photo, art, surroundings)
 
 

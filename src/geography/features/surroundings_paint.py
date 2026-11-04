@@ -14,7 +14,7 @@ from shapely.ops import nearest_points
 from geography.features.kinds import Kind
 from geography.features.riverart import icons
 from geography.features.spatial import CRS
-from geography.features.surroundings import Surroundings, Waterway
+from geography.features.surroundings import SIMPLIFY_DEG, Surroundings, Waterway
 from geography.features.water_labels import WaterLabeller
 from geography.render import Extent, LocatorMap
 
@@ -49,6 +49,7 @@ class SurroundingsPainter:
     def __init__(self, surroundings: Surroundings, feature: gpd.GeoSeries, renderer: LocatorMap, fig, projection: ccrs.Projection, extent):
         self.surroundings, self.renderer, self.fig, self.projection, self.extent = surroundings, renderer, fig, projection, extent
         self.feature = feature.union_all()
+        self.outline = self.feature.simplify(SIMPLIFY_DEG)
         self.rivers = [(river, river.shape if surroundings.rivers_inside else outside(river.shape, self.feature)) for river in surroundings.rivers]
         self.ax = fig.axes[0]
         self.unit = extent.width / (fig.get_size_inches()[0] * 72)
@@ -224,11 +225,11 @@ class SurroundingsPainter:
         if water.shape is not None and not water.shape.empty:
             body, reach = water.shape.union_all(), None
             if self.feature.geom_type in ("Polygon", "MultiPolygon"):
-                body = body.difference(self.feature)
+                body = body.difference(self.outline)
             body = self._facing_piece(body)
             if body is None:
                 return
-            spot = nearest_points(self.feature, body)[0]
+            spot = nearest_points(self.outline, body)[0]
         elif water.point is not None and not labeller.land.contains(water.point):
             body, reach, spot = None, POINT_REACH_RINGS, water.point
         else:
@@ -243,8 +244,8 @@ class SurroundingsPainter:
     def _facing_piece(self, body):
         pieces = list(getattr(body, "geoms", [body]))
         if self.feature.geom_type in ("Polygon", "MultiPolygon"):
-            pieces = [piece for piece in pieces if piece.distance(self.feature) <= BORDERING_DEG]
-        return min(pieces, key=lambda piece: piece.distance(self.feature), default=None)
+            pieces = [piece for piece in pieces if piece.distance(self.outline) <= BORDERING_DEG]
+        return min(pieces, key=lambda piece: piece.distance(self.outline), default=None)
 
     def _lens(self):
         return next((axes for axes in self.fig.axes[1:] if getattr(axes, "projection", None) == self.projection), None)
