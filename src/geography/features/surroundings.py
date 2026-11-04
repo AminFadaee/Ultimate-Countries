@@ -38,6 +38,7 @@ MAX_WATERS = 4
 MIN_WATER_LINKS = 20
 TOUCHING_DEG = 0.02
 OWN_SHARE = 0.5
+SIMPLIFY_DEG = 0.01
 RANGE_REACH_DEG = 0.5
 OPEN_WATER = ("ocean", "sea", "gulf", "bay", "strait", "channel", "sound", "fjord", "inlet")
 MAX_LOCATION_STEPS = 4
@@ -184,7 +185,7 @@ class SurroundingsResearch:
         return ()
 
     def _touching_waters(self, geometry: gpd.GeoSeries, own: set[str] = frozenset(), marine: bool = False) -> tuple[Waterway, ...]:
-        shape = geometry.union_all()
+        shape = geometry.union_all().simplify(SIMPLIFY_DEG)
         waters = self.waters()
         if marine:
             waters = waters[waters["featurecla"].isin(OPEN_WATER)]
