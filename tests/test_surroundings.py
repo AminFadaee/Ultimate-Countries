@@ -274,3 +274,23 @@ def test_a_range_outline_that_stops_short_of_the_mountain_is_not_shown(research)
     with mock.patch.object(SurroundingsResearch, "shapes", return_value={"Q1": gpd.GeoSeries([box(80, 26, 90, 30)], crs=CRS)}), \
             mock.patch.object(SurroundingsResearch, "regions", return_value=empty):
         assert not research.of(Kind.MOUNTAIN, "Q0", gpd.GeoSeries([Point(74.6, 35.2)], crs=CRS)).ranges
+
+
+def test_a_sea_names_a_neighbour_by_its_own_outline_not_its_parts(research):
+    research._linked = lambda qid, props: [linked("Q9", "North Atlantic Ocean", "P2789", classes=("ocean",))]
+    research._parts = lambda qid: ["Q166"] if qid == "Q9" else []
+    with mock.patch.object(SurroundingsResearch, "shapes", return_value={"Q166": gpd.GeoSeries([box(27, 41, 41, 47)], crs=CRS)}), \
+            mock.patch.object(SurroundingsResearch, "waters", return_value=gpd.GeoDataFrame(
+                {"name": [], "name_en": [], "featurecla": [], "scalerank": [], "wikidataid": []}, geometry=[], crs=CRS)):
+        found = research.of(Kind.SEA, "Q0", gpd.GeoSeries([box(0, 30, 36, 41)], crs=CRS))
+    assert not any(water.name == "North Atlantic Ocean" and water.shape is not None for water in found.waters)
+
+
+def test_waters_with_the_same_name_are_named_once(research):
+    research._linked = lambda qid, props: []
+    waters = gpd.GeoDataFrame({"name": ["North Atlantic Ocean", "South Atlantic Ocean"], "name_en": ["Atlantic Ocean", "Atlantic Ocean"],
+                               "featurecla": ["ocean", "ocean"], "scalerank": [0, 0], "wikidataid": ["Q97", "Q97"]},
+                              geometry=[box(-10, 0, 0, 10), box(-10, -10, 0, 0)], crs=CRS)
+    with mock.patch.object(SurroundingsResearch, "waters", return_value=waters), mock.patch.object(SurroundingsResearch, "shapes", return_value={}):
+        found = research.of(Kind.SEA, "Q0", gpd.GeoSeries([box(0, -5, 10, 5)], crs=CRS))
+    assert [water.name for water in found.waters] == ["Atlantic Ocean"]

@@ -119,7 +119,7 @@ class SurroundingsResearch:
         if kind in SEAS:
             own = {qid, *self._parts(qid)}
             connected = (item for item in self._linked(qid, SEA_LINKS) if item.is_water and item.qid not in own)
-            return Surroundings(waters=self._outlined(connected, own)[:MAX_WATERS] or self._touching_waters(geometry, own, marine=True))
+            return Surroundings(waters=self._outlined(connected, own, with_parts=False)[:MAX_WATERS] or self._touching_waters(geometry, own, marine=True))
         if kind is Kind.POLDER:
             return Surroundings(waters=self._touching_waters(geometry))
         if kind is Kind.LANDMARK:
@@ -192,7 +192,10 @@ class SurroundingsResearch:
         touching = waters[waters.intersects(shape.buffer(TOUCHING_DEG)) & ~waters["wikidataid"].isin(own)]
         touching = touching[shapely.area(touching.geometry.intersection(shape).values) < OWN_SHARE * shapely.area(touching.geometry.values)]
         touching = touching.sort_values("scalerank", kind="stable")
-        return tuple(Waterway(english(row), gpd.GeoSeries([row.geometry], crs=CRS)) for _, row in touching.iterrows())[:MAX_WATERS]
+        named = {}
+        for _, row in touching.iterrows():
+            named.setdefault(english(row), []).append(row.geometry)
+        return tuple(Waterway(name, gpd.GeoSeries(shapes, crs=CRS)) for name, shapes in named.items())[:MAX_WATERS]
 
     @staticmethod
     @functools.cache
@@ -256,7 +259,7 @@ class SurroundingsResearch:
                 drawn.append(Waterway(item.name, lines[lines.geom_type.isin(LINE_TYPES)]))
         return tuple(drawn)
 
-    def _outlined(self, items, excluded: set[str] = frozenset()) -> tuple[Waterway, ...]:
+    def _outlined(self, items, excluded: set[str] = frozenset(), with_parts: bool = True) -> tuple[Waterway, ...]:
         items = list(items)
         traced = self._traced({item.qid for item in items if item.qid not in self.shapes()})
         outlined = []
@@ -265,8 +268,9 @@ class SurroundingsResearch:
             if outline is None:
                 outline = traced.get(item.qid)
             areas = [] if outline is None else [shape for shape in outline.geometry if shape.geom_type in AREA_TYPES]
-            areas += [shape for part in self._parts(item.qid) if part not in excluded and (found := self.shapes().get(part)) is not None
-                      for shape in found.geometry if shape.geom_type in AREA_TYPES]
+            if with_parts:
+                areas += [shape for part in self._parts(item.qid) if part not in excluded and (found := self.shapes().get(part)) is not None
+                          for shape in found.geometry if shape.geom_type in AREA_TYPES]
             if areas:
                 outlined.append(Waterway(item.name, gpd.GeoSeries(areas, crs=CRS), item.point))
             elif item.point is not None:
