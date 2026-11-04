@@ -14,6 +14,7 @@ from geography.countrydeck.neighbours import neighbours_of
 from geography.countrydeck.places import CountryPlacesCollector
 from geography.countrydeck.provinces import collect_provinces
 from geography.data import NaturalEarth
+from geography.features.collect import PlacesOptions
 from geography.sources.http import create_session
 from geography.sources.wikidata import Wikidata
 
@@ -50,19 +51,22 @@ def collect_country(code: str, language: str | None = None, include_overseas: bo
 
 
 def run_country(code: str, language: str | None = None, include_overseas: bool = False, rerender_maps: bool = False, workers: int = 2,
-                countries_dir: pathlib.Path = pathlib.Path("data/countries")) -> None:
-    target = collect_country(code, language, include_overseas)
+                countries_dir: pathlib.Path = pathlib.Path("data/countries"), maps_only: bool = False) -> None:
+    target = COUNTRY_DECKS_DIR / code if maps_only else collect_country(code, language, include_overseas)
     jobs = [job for job in jobs_for(target) if rerender_maps or not (job.output.exists() and job.answer_output.exists())]
     for job, error in render_area_maps(jobs, workers):
         if error:
             logger.error("Map failed for %s: %s", job.label, error)
     documents = load_documents(countries_dir)
     draw_city_maps(city_jobs(target, documents), workers, rerender_maps)
-    run_places(target, code, documents[code], rerender_maps, workers)
+    run_places(target, code, documents[code], rerender_maps, workers, maps_only)
 
 
-def run_places(directory: pathlib.Path, code: str, country: dict, rerender_maps: bool, workers: int) -> None:
+def run_places(directory: pathlib.Path, code: str, country: dict, rerender_maps: bool, workers: int, maps_only: bool = False) -> None:
     meta = json.loads((directory / "meta.json").read_text())
+    if maps_only:
+        CountryPlacesCollector(directory, create_session(), meta["language"]).redraw_for(country, code, PlacesOptions(rerender_maps, workers, maps_only=True))
+        return
     excluded = {city["id"] for city in json.loads((directory / "cities.json").read_text())}
     excluded |= {province["id"] for province in json.loads((directory / "provinces.json").read_text())}
     collector = CountryPlacesCollector(directory, create_session(), meta["language"])

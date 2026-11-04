@@ -8,6 +8,7 @@ import geopandas as gpd
 import requests
 
 from geography.data import NaturalEarth
+from geography.detail import CACHE_DIR
 from geography.features.catalog import Catalog, article_title
 from geography.features.kinds import WATER_KINDS, Kind, Shape
 from geography.features.lengths import disagrees
@@ -16,6 +17,7 @@ from geography.features.model import Feature, Photo
 from geography.features.riverart.facts import RiverArt, RiverResearch
 from geography.features.spatial import (
     CLAIM_REACH_M,
+    CRS,
     LAKE_SHORE_M,
     POINT_M,
     CountryLocator,
@@ -51,6 +53,9 @@ CONTINENT_TAGS = {
     "SOUTH AMERICA": "Americas",
 }
 
+REDRAWN_EXTRAS = ("river", "surroundings")
+SHAPES_DIR = CACHE_DIR / "place_shapes"
+
 logger = logging.getLogger(__name__)
 
 
@@ -82,6 +87,7 @@ class PlacesPaths:
 class PlacesOptions:
     rerender_maps: bool = False
     workers: int = 4
+    maps_only: bool = False
 
 
 class PlacesCollector:
@@ -95,11 +101,15 @@ class PlacesCollector:
         self.wikipedia = Wikipedia(session)
 
     def run(self, options: PlacesOptions) -> None:
+        if options.maps_only:
+            self.redraw(options)
+            return
         data = NaturalEarth.load()
         locator = CountryLocator(data, load_our_countries(self.paths.countries))
         catalog = Catalog(self.session, self.wikidata, self.wikipedia, locator, data)
         features = catalog.collect()
         logger.info("%d places selected", len(features))
+        self._save_shapes(features)
 
         self._add_facts(features, catalog)
         self._add_countries(features, locator, catalog)
@@ -112,6 +122,52 @@ class PlacesCollector:
         self._render_maps(features, slugs, options)
         count = self._export(features, slugs)
         logger.info("Exported %d places to %s", count, self.paths.features)
+
+    def redraw(self, options: PlacesOptions) -> None:
+        documents = {path.stem: json.loads(path.read_text()) for path in sorted(self.paths.features.glob("*.json"))}
+        shapes = self._load_shapes() or self._rebuild_shapes(list(documents.values()))
+        countries = {country.name: country for country in load_our_countries(self.paths.countries).values()}
+        features, slugs = [], {}
+        for slug, content in documents.items():
+            if content["key"] not in shapes:
+                logger.warning("No saved shape for %s; run the full step to draw its map", content["name"])
+                continue
+            features.append(Feature(content["key"], content["name"], Kind(content["kind"]), shapes[content["key"]], content["fame"], content["qid"],
+                                    countries=[countries[name] for name in content["countries"] if name in countries],
+                                    photo=Photo(**content["photo"]) if content["photo"] else None))
+            slugs[content["key"]] = slug
+        self._draw(features, slugs, options)
+        for feature in features:
+            path = self.paths.features / f"{slugs[feature.key]}.json"
+            text = json.dumps(redrawn(documents[slugs[feature.key]], feature), ensure_ascii=False, indent=2) + "\n"
+            if path.read_text() != text:
+                path.write_text(text)
+        logger.info("Redrew the maps of %d places in %s", len(features), self.paths.features)
+
+    def _draw(self, features: list[Feature], slugs: dict[str, str], options: PlacesOptions) -> None:
+        self._render_maps(features, slugs, options)
+
+    @property
+    def _shapes_file(self) -> pathlib.Path:
+        return SHAPES_DIR / f"{self.paths.root.resolve().name.lower()}.gpkg"
+
+    def _save_shapes(self, features: list[Feature]) -> None:
+        rows = [(feature.key, part) for feature in features for part in feature.geometry if part is not None and not part.is_empty]
+        SHAPES_DIR.mkdir(parents=True, exist_ok=True)
+        gpd.GeoDataFrame({"key": [key for key, _ in rows]}, geometry=[part for _, part in rows], crs=CRS).to_file(self._shapes_file, driver="GPKG")
+
+    def _load_shapes(self) -> dict[str, gpd.GeoSeries]:
+        if not self._shapes_file.exists():
+            return {}
+        frame = gpd.read_file(self._shapes_file)
+        return {key: gpd.GeoSeries(list(group.geometry), crs=CRS) for key, group in frame.groupby("key", sort=False)}
+
+    def _rebuild_shapes(self, documents: list[dict]) -> dict[str, gpd.GeoSeries]:
+        logger.info("No saved shapes in %s; rebuilding them from the catalog", self._shapes_file)
+        data = NaturalEarth.load()
+        features = Catalog(self.session, self.wikidata, self.wikipedia, CountryLocator(data, load_our_countries(self.paths.countries)), data).collect()
+        self._save_shapes(features)
+        return {feature.key: feature.geometry for feature in features}
 
     def _add_facts(self, features: list[Feature], catalog: Catalog) -> None:
         for feature in features:
@@ -349,6 +405,19 @@ def unique_slugs(features: list[Feature]) -> dict[str, str]:
         taken.add(slug)
         slugs[feature.key] = slug
     return slugs
+
+
+def redrawn(content: dict, feature: Feature) -> dict:
+    kept = {key: value for key, value in content.items() if key not in REDRAWN_EXTRAS and key != "map"}
+    researched = {key: feature.extras[key] for key in REDRAWN_EXTRAS if key in feature.extras}
+    ordered = {}
+    for key, value in kept.items():
+        if key == "world_heritage":
+            ordered |= researched
+        ordered[key] = value
+        if key == "tags":
+            ordered["map"] = feature.map
+    return ordered
 
 
 def document(feature: Feature) -> dict:

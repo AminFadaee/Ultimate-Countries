@@ -22,7 +22,12 @@ from geography.countrydeck.selection import (
 )
 from geography.data import CONTESTED_TYPES, NaturalEarth
 from geography.features.catalog import complete_rivers, drawn_km, natural_earth_shapes
-from geography.features.collect import PlacesCollector, PlacesPaths, unique_slugs
+from geography.features.collect import (
+    PlacesCollector,
+    PlacesOptions,
+    PlacesPaths,
+    unique_slugs,
+)
 from geography.features.kinds import Kind, Shape
 from geography.features.model import Feature
 from geography.features.spatial import CRS, OurCountry
@@ -133,6 +138,7 @@ class CountryPlacesCollector(PlacesCollector):
                 feature.extras["disputed"] = True
 
     def finish(self, features: list[Feature]) -> dict[str, str]:
+        self._save_shapes(features)
         slugs = unique_slugs(features)
         self._add_photos(features, slugs)
         return slugs
@@ -158,6 +164,25 @@ class CountryPlacesCollector(PlacesCollector):
 
     def export(self, features: list[Feature], slugs: dict[str, str]) -> int:
         return self._export(features, slugs)
+
+    def redraw_for(self, country: dict, code: str, options: PlacesOptions) -> None:
+        self.country, self.code = country, code
+        self.redraw(options)
+
+    def _draw(self, features: list[Feature], slugs: dict[str, str], options: PlacesOptions) -> None:
+        self.draw_maps(features, slugs, self.country, self.code, options.rerender_maps, options.workers)
+
+    def _rebuild_shapes(self, documents: list[dict]) -> dict[str, gpd.GeoSeries]:
+        logger.info("No saved shapes in %s; rebuilding them from Wikidata", self._shapes_file)
+        facts = FeatureQueries(self.wikidata).facts({content["qid"] for content in documents})
+        features = []
+        for content in documents:
+            spot = facts[content["qid"]].coordinates if content["qid"] in facts else None
+            features.append(Feature(content["key"], content["name"], Kind(content["kind"]), gpd.GeoSeries([Point(*spot)] if spot else [], crs=CRS), qid=content["qid"]))
+        resolve_shapes(self.wikidata, features)
+        complete_rivers(self.wikidata, [feature for feature in features if feature.kind is Kind.RIVER], {qid: found.length_km for qid, found in facts.items()})
+        self._save_shapes(features)
+        return {feature.key: feature.geometry for feature in features}
 
 
 def read_documents(directory: pathlib.Path) -> list[dict]:
