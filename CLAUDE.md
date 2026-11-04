@@ -6,7 +6,9 @@
   place from Wikidata, Wikipedia and Commons and takes about an hour.
 - After changing map drawing, river art or surroundings code, delete the affected map files and run
   `uv run geography places --maps-only` or `uv run geography country CODE --maps-only`. These reuse the saved place files
-  and outlines and only redo the river and surroundings research and the missing maps.
+  and outlines and only redo the river and surroundings research and the missing maps. They also reuse Wikidata answers
+  younger than a week from `src/geography/cache/wikidata`, which full runs write, so a second redraw barely touches the
+  network.
 - Try a change on a few places first, with a small script that renders them into `scratch/`, before redrawing a deck.
 - Run long jobs under a memory cap so a runaway can't take the machine down:
   `systemd-run --user --scope -q -p MemoryMax=8G -p MemorySwapMax=0 uv run geography ...`. Use one worker for Places.
