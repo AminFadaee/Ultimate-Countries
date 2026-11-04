@@ -2,6 +2,8 @@ import functools
 from dataclasses import dataclass
 
 import geopandas as gpd
+import pandas as pd
+import shapely
 from shapely.geometry import Point, shape
 
 from geography.features.catalog import natural_earth_shapes
@@ -159,10 +161,10 @@ class SurroundingsResearch:
     def _nearest_river(self, geometry: gpd.GeoSeries) -> tuple[Waterway, ...]:
         spot = geometry.union_all().representative_point()
         rivers = self.rivers()
-        nearby = rivers[rivers.distance(spot) <= RIVER_REACH_DEG]
-        if nearby.empty:
+        degrees = pd.Series(shapely.distance(rivers.geometry.values, spot), index=rivers.index)
+        if degrees.min() > RIVER_REACH_DEG:
             return ()
-        nearest = nearby.loc[nearby.distance(spot).idxmin()]
+        nearest = rivers.loc[degrees.idxmin()]
         name = nearest["name_en"] if isinstance(nearest["name_en"], str) else nearest["name"]
         lines = rivers[(rivers["name_en"] == name) | (rivers["name"] == nearest["name"])].geometry
         return (Waterway(name, gpd.GeoSeries(list(lines), crs=CRS)),)
