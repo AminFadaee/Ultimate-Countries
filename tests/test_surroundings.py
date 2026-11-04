@@ -5,14 +5,16 @@ import geopandas as gpd
 import matplotlib
 
 matplotlib.use("Agg")
+import matplotlib.patches
 import matplotlib.pyplot as plt
+import numpy as np
 import pytest
 from shapely.geometry import LineString, Point, box
 
 from geography.features.kinds import Kind
 from geography.features.spatial import CRS
-from geography.features.surroundings import Linked, SurroundingsResearch
-from geography.features.surroundings_paint import outside
+from geography.features.surroundings import Linked, Surroundings, SurroundingsResearch
+from geography.features.surroundings_paint import SurroundingsPainter, outside
 from geography.features.water_labels import WaterLabeller
 from geography.render import Extent
 
@@ -98,9 +100,46 @@ def test_a_water_name_stays_inside_its_own_water(water_map):
 
 
 def test_water_names_do_not_land_on_each_other(water_map):
-    fig, ax, labeller = water_map
+    fig, _, labeller = water_map
     first = labeller.place(Point(1, 0), "Mediterranean Sea")
     second = labeller.place(Point(1, 0), "Red Sea")
     fig.canvas.draw()
     renderer = fig.canvas.get_renderer()
     assert not first.get_window_extent(renderer).overlaps(second.get_window_extent(renderer))
+
+
+def test_waterfalls_and_canyons_carry_their_icon(research):
+    research._linked = lambda qid, props: [linked("Q30", "Zambezi", "P206")]
+    with mock.patch.object(SurroundingsResearch, "shapes", return_value={"Q30": line((25, -18), (26, -17.9))}):
+        assert research.of(Kind.WATERFALL, "Q0", gpd.GeoSeries([Point(25.85, -17.92)], crs=CRS)).landmark is Kind.WATERFALL
+
+
+@pytest.fixture
+def marked_map():
+    fig = plt.figure(figsize=(10, 5.26), dpi=100)
+    projection = ccrs.LambertAzimuthalEqualArea()
+    ax = fig.add_axes([0, 0, 1, 1], projection=projection)
+    extent = Extent(4_400_000, 2_300_000, 0, 0)
+    ax.set_extent(extent.bounds, crs=projection)
+    yield fig, ax, projection, extent
+    plt.close(fig)
+
+
+def icon_bounds(ax, before: int):
+    vertices = np.concatenate([patch.get_path().transformed(patch.get_patch_transform()).vertices for patch in ax.patches[before:]])
+    return ax.transData.transform(vertices)
+
+
+@pytest.mark.parametrize(("radius_in", "inside"), [(0.12, False), (0.6, True)])
+def test_a_landmark_icon_sits_inside_a_large_marker_and_below_a_small_one(marked_map, radius_in, inside):
+    fig, ax, projection, extent = marked_map
+    centre = ax.transData.transform(projection.transform_point(0, 0, ccrs.PlateCarree())) / fig.dpi
+    fig.add_artist(matplotlib.patches.Circle(tuple(centre), radius_in, fill=False, transform=fig.dpi_scale_trans))
+    before = len(ax.patches)
+    SurroundingsPainter(Surroundings(landmark=Kind.WATERFALL), gpd.GeoSeries([Point(0, 0)], crs=CRS), None, fig, projection, extent).paint()
+    points = icon_bounds(ax, before)
+    circle_bottom = (centre[1] - radius_in) * fig.dpi
+    if inside:
+        assert points[:, 1].min() >= circle_bottom
+    else:
+        assert points[:, 1].max() <= circle_bottom + 1
