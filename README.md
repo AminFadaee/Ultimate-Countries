@@ -145,6 +145,21 @@ A river map shows the river as a blue line with small arrows for the direction o
 - **On the way.** Waterfalls, dams, gorges and lakes with at least 100 Wikipedia language editions that lie within half a degree of the river (Victoria Falls on the Zambezi, the Aswan Dam on the Nile, the Grand Canyon on the Colorado).
 - **Sources of the facts.** Wikidata gives the source, mouth, tributaries and places; when it has no source, or names an area such as a basin as the mouth, the river's English Wikipedia infobox is used instead. A source field that links something wins over a location field, and a source written as a name followed by a linked place ("Chemayungdung glacier, Manasarovar" for the Brahmaputra) is that name, typed by the words in it. In a country deck, when neither names a source, the infobox in the deck's language is read too (the Atrek's Hezar Masjed Mountains come from Persian Wikipedia, the Vechte's Darfeld from Dutch), and a source more than 100 km from the English infobox's coordinates is dropped. When Wikidata lists several mouths, the preferred one wins, then the one nearest the river's ends. The line comes from Natural Earth, or OpenStreetMap where that is clearly longer. What each river map shows is recorded in the `river` field of its file in `data/places/features`.
 
+### Lake, canal, waterfall and canyon maps
+
+These maps show what the place connects to, drawn in thin grey so they never look like a river card:
+
+- **Lakes:** the river that flows out first, then the best-known rivers that flow in, up to four in all. The rivers stop at the
+  shore and are drawn inside the magnifier too.
+- **Canals:** the seas, lakes and rivers they join, named inside the water at the canal's end. A sea's name may go in a sea that
+  is part of it (the Atlantic in the Caribbean for the Panama Canal); a water with no outline is named at its own point when that
+  lies in open water (the Saronic Gulf), and a name that does not fit on the map goes inside the magnifier.
+- **Waterfalls and canyons:** the river they lie on, with a waterfall or gorge picture inside a large magnifier marker or just
+  below a small one. A waterfall with no river on Wikidata takes the nearest Natural Earth river within a few kilometres.
+- **Sources of the facts.** Wikidata's inflow, outflow, "connects with", mouth, source and body-of-water statements; lines and
+  outlines from Natural Earth, or OpenStreetMap where Natural Earth has none. What each map shows is recorded in the
+  `surroundings` field of its file.
+
 Countries are computed from the shapes: the countries that hold a share of an area, border a sea or lake, contain a point or are
 crossed by a line or river. A country that Wikidata names for a place is added only if it lies within 50 km of it. Continents come from the Natural Earth continent shapes, so Siberia is in Asia and Martinique in the Americas. Facts (heights, lengths, areas) come from Wikidata, converted to metric; build dates and cultures
 from the Wikipedia infobox; the sentence on the back of each card from the English Wikipedia summary; photos from Wikimedia Commons, with their author and licence recorded in `data/places/CREDITS.md`; when a deck is built, each photo gets an automatic contrast and brightness correction only if it looks flat, dark or washed out (`--plain-photos` on `places-deck` and `country-deck` keeps the originals). A place inside a disputed area is listed with its city only, not a country.
