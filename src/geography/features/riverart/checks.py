@@ -6,7 +6,12 @@ from matplotlib.transforms import Bbox
 from shapely.geometry import Point
 
 from geography.features.riverart.kinds import MouthKind, SourceKind
-from geography.features.riverart.paint import CHEVRON_MIN_GAP, RiverPainter, paint_river
+from geography.features.riverart.paint import (
+    CHEVRON_MIN_GAP,
+    MIN_MOUTH_LABEL_PT,
+    RiverPainter,
+    paint_river,
+)
 from geography.map_checks import label_problems
 
 MIN_RIVER_SHARE = 0.15
@@ -14,7 +19,6 @@ MAX_GAP_PT = 12
 MAX_LABEL_REACH_PT = 40
 MAX_SEA_LABEL_REACH_PT = 110
 SOURCE_LABEL_REACH_PT = 20
-MIN_MOUTH_LABEL_PT = 7
 
 
 def gap_to_box(box: Bbox, x: float, y: float) -> float:

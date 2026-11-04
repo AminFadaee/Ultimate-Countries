@@ -29,6 +29,7 @@ RIVERS = [
     Expected("UP", "amur_river", "Shilka / Argun River", SourceKind.UNKNOWN, "Sea of Okhotsk"),
     Expected("UP", "congo_river", "Boyoma Falls", None, "Atlantic Ocean"),
     Expected("UP", "danube", None, None, "Black Sea"),
+    Expected("UP", "yellow_river", "Bayan Har Mountains", SourceKind.HIGHLAND, "Bohai Sea"),
     Expected("NLD", "amstel", "Aarkanaal", SourceKind.CANAL, "IJ"),
     Expected("NLD", "vechte", "Darfeld", SourceKind.VILLAGE, "Zwarte Water"),
     Expected("NLD", "lek", None, None, "Nieuwe Maas"),

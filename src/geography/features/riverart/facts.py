@@ -85,6 +85,7 @@ class RiverArt:
     source_lake: gpd.GeoSeries | None = None
     mouth: Mouth | None = None
     sink: Sink | None = None
+    sea: gpd.GeoSeries | None = None
     tributaries: dict[str, gpd.GeoSeries] = field(default_factory=dict)
     linked: dict[str, gpd.GeoSeries] = field(default_factory=dict)
     source_rivers: tuple[str, ...] = ()
@@ -185,6 +186,7 @@ class RiverResearch:
             source_lake=source_lake,
             mouth=self._mouth(mouth_row, mouth_classes, mouth_is_river, dried, sink),
             sink=sink,
+            sea=self.shape(qid_of(mouth_row["m"]), AREAS) if mouth_row and mouth_classes & MARINE else None,
             tributaries=tributaries,
             linked=linked,
             source_rivers=source_rivers,

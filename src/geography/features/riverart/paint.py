@@ -47,6 +47,8 @@ DESERT_ICON_PT = 34
 MAX_CHEVRONS, MIN_CHEVRONS = 8, 4
 MAX_PEAKS = 48
 INLAND_REACH_PT = 12
+SEA_REACH_DEG = 0.5
+MIN_MOUTH_LABEL_PT = 7
 LAKE_ICON_PT = (16, 20)
 WIDE_LAKE_PT = 70
 COUNTRY_LABELS = 8
@@ -503,7 +505,14 @@ class RiverPainter:
         tail = self.art.path.interpolate(0.985, normalized=True)
         flow = math.atan2(mouth.y - tail.y, mouth.x - tail.x)
         labeller = WaterLabeller(self.ax, self.projection, self.extent, self.unit, self.renderer.data.countries.geometry.union_all())
-        if labeller.place(mouth, name, flow) is None:
+        sea = next((piece for piece in self.art.sea if piece.distance(mouth) <= SEA_REACH_DEG), None) if self.art.sea is not None else None
+        label = labeller.place(mouth, name, flow, sea)
+        if label is not None and label.get_fontsize() < MIN_MOUTH_LABEL_PT:
+            label.remove()
+            label = None
+        if label is None and sea is not None:
+            self._end_label(name, self._mouth_direction())
+        elif label is None:
             beyond = unit_vector(np.array([math.cos(flow), math.sin(flow)]))
             self.text(mouth.x + beyond[0] * self.deg(14), mouth.y + beyond[1] * self.deg(14), name, 8, fontstyle="italic", color=SEA_TEXT, path_effects=halo())
 
