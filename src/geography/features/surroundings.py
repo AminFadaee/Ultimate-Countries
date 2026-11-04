@@ -134,9 +134,18 @@ class SurroundingsResearch:
             outline = self.shapes().get(item.qid)
             if outline is None:
                 outline = traced.get(item.qid)
-            if outline is not None and outline.geom_type.isin(AREA_TYPES).any():
-                outlined.append(Waterway(item.name, outline[outline.geom_type.isin(AREA_TYPES)], item.point))
+            areas = [] if outline is None else [shape for shape in outline.geometry if shape.geom_type in AREA_TYPES]
+            areas += [shape for part in self._parts(item.qid) if (found := self.shapes().get(part)) is not None
+                      for shape in found.geometry if shape.geom_type in AREA_TYPES]
+            if areas:
+                outlined.append(Waterway(item.name, gpd.GeoSeries(areas, crs=CRS), item.point))
+            elif item.point is not None:
+                outlined.append(Waterway(item.name, None, item.point))
         return tuple(outlined)
+
+    def _parts(self, qid: str) -> list[str]:
+        rows = self.wikidata._select(f"SELECT DISTINCT ?part WHERE {{ {{ ?part wdt:P361+ wd:{qid} }} UNION {{ wd:{qid} wdt:P527 ?part }} }}")
+        return [qid_of(row["part"]) for row in rows]
 
     def _traced(self, qids: set[str]) -> dict[str, gpd.GeoSeries]:
         if not qids:

@@ -24,6 +24,7 @@ ICONS_ON_TOP = 8.5
 LANDMARK_ICONS = {Kind.WATERFALL: (icons.waterfall, 28, 0.62), Kind.CANYON: (icons.gorge, 24, 0.94)}
 ICON_SHARE_OF_MARKER = 0.75
 MIN_ICON_PT = 20
+POINT_REACH_RINGS = 3
 NAME_SIZE = 8
 NAME_GAPS_PT = (45, 70, 30, 100, 140)
 SAMPLES = 400
@@ -116,17 +117,20 @@ class SurroundingsPainter:
         return card.x0 <= box.x0 and box.x1 <= card.x1 and card.y0 <= box.y0 and box.y1 <= card.y1
 
     def _water_name(self, labeller: WaterLabeller, water: Waterway) -> None:
-        if water.shape is None or water.shape.empty:
-            return
-        body = water.shape.union_all()
-        end = nearest_points(self.feature, body)[0]
         centre = self.feature.centroid
-        toward = math.atan2(end.y - centre.y, end.x - centre.x)
-        if labeller.place(end, water.name, toward, body) is None and (lens := self._lens()) is not None:
+        if water.shape is not None and not water.shape.empty:
+            body, reach = water.shape.union_all(), None
+            spot = nearest_points(self.feature, body)[0]
+        elif water.point is not None and not labeller.land.contains(water.point):
+            body, reach, spot = None, POINT_REACH_RINGS, water.point
+        else:
+            return
+        toward = math.atan2(spot.y - centre.y, spot.x - centre.x)
+        if labeller.place(spot, water.name, toward, body, reach) is None and (lens := self._lens()) is not None:
             x0, x1, y0, y1 = lens.get_extent(crs=self.projection)
             extent = Extent(x1 - x0, y1 - y0, (x0 + x1) / 2, (y0 + y1) / 2)
             unit = extent.width / (lens.get_position().width * self.fig.get_size_inches()[0] * 72)
-            WaterLabeller(lens, self.projection, extent, unit, labeller.land).place(end, water.name, toward, body)
+            WaterLabeller(lens, self.projection, extent, unit, labeller.land).place(spot, water.name, toward, body, reach)
 
     def _lens(self):
         return next((axes for axes in self.fig.axes[1:] if getattr(axes, "projection", None) == self.projection), None)

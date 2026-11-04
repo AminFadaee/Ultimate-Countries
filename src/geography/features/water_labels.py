@@ -38,14 +38,14 @@ class WaterLabeller:
         dx, dy = half_width_pt * self.unit, half_height_pt * self.unit
         return xmin + dx <= px <= xmax - dx and ymin + dy <= py <= ymax - dy
 
-    def place(self, near: Point, name: str, toward: float = 0.0, inside=None):
+    def place(self, near: Point, name: str, toward: float = 0.0, inside=None, reach: int | None = None):
         wrapped = two_lines(name) or name
         attempts = ((name, 9.5, NEAR), (wrapped, 9.5, NEAR), (wrapped, 8, NEAR), (wrapped, 6.5, NEAR), (wrapped, 5.5, NEAR), (name, 5.5, NEAR), (wrapped, 5.5, FAR), (name, 5.5, FAR))
         renderer = self.ax.figure.canvas.get_renderer()
         clearance = CLEARANCE_PT * self.ax.figure.dpi / 72
         taken = [other.get_window_extent(renderer).padded(clearance) for other in self.ax.texts if other.get_visible()]
         for text, size, rings in attempts:
-            for spot in self._spots(near, text, size, rings, toward, 0.04 if size <= 8 and rings == NEAR else 0.0):
+            for spot in self._spots(near, text, size, min(rings, reach or rings), toward, 0.04 if size <= 8 and rings == NEAR else 0.0):
                 if inside is not None and not inside.contains(Point(spot)):
                     continue
                 label = self.ax.text(*spot, text, transform=GEODETIC, fontsize=size, zorder=16, ha="center", va="center",
