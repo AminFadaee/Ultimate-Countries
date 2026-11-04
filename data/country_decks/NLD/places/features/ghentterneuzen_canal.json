@@ -18,6 +18,12 @@
   "culture": null,
   "description": "The Ghent–Terneuzen Canal, also known as the \"Sea Canal\" (Zeekanaal) is a canal linking Ghent in Belgium to the port of Terneuzen on the Westerschelde (Scheldt) Estuary in the Netherlands, thereby providing the former with better access to the sea.",
   "native": "Kanaal Gent-Terneuzen",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Western Scheldt"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Canal",

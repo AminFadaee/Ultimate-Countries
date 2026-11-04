@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Vänern is the largest lake in Sweden, the largest lake in the European Union and the third-largest lake in Europe after Ladoga and Onega in Russia.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Göta älv",
+      "Klarälven"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

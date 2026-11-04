@@ -18,6 +18,13 @@
   "culture": null,
   "description": "The Canal du Midi is a 240 km (150 mi) long canal in Southern France.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Étang de Thau",
+      "Port de l'Embouchure"
+    ]
+  },
   "world_heritage": true,
   "tags": [
     "Canal",

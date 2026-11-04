@@ -19,6 +19,15 @@
   "culture": null,
   "description": "Lake Huron is one of the five Great Lakes of North America.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "St. Clair River",
+      "French River",
+      "Severn River",
+      "Maitland River"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

@@ -18,6 +18,16 @@
   "culture": null,
   "description": "The White Sea–Baltic Canal, often abbreviated to White Sea Canal, is a man-made ship canal in Russia.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Baltic Sea",
+      "White Sea",
+      "Lake Ladoga",
+      "Lake Onega",
+      "Vygozero"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Canal",

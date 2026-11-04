@@ -18,6 +18,15 @@
   "culture": null,
   "description": "Lake Nicaragua or Cocibolca or Granada is a freshwater lake in Nicaragua.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Río San Juan",
+      "Río Tipitapa",
+      "Río Limón",
+      "Río Ostayo"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

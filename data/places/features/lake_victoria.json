@@ -20,6 +20,15 @@
   "culture": null,
   "description": "Lake Victoria is one of the African Great Lakes.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "White Nile",
+      "Kagera River",
+      "Mara River",
+      "Nzoia River"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

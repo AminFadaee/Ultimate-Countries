@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Lake Urmia is an endorheic salt lake in Iran.",
   "native": "دریاچه ارومیه",
+  "surroundings": {
+    "rivers": [
+      "Talkheh River"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

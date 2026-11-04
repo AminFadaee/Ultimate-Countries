@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Lake Tana is the largest lake in Ethiopia and a source of the Blue Nile.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Blue Nile",
+      "Lesser Abay River"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

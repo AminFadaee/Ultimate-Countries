@@ -18,6 +18,15 @@
   "culture": null,
   "description": "Lake Michigan is one of the five Great Lakes of North America.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Grand River",
+      "St. Joseph River",
+      "Milwaukee River",
+      "Calumet River"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

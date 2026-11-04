@@ -19,6 +19,12 @@
   "culture": null,
   "description": "Victoria Falls is a waterfall on the Zambezi River, located on the border between Zambia and Zimbabwe.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Zambezi"
+    ],
+    "waters": []
+  },
   "world_heritage": true,
   "tags": [
     "Waterfall",

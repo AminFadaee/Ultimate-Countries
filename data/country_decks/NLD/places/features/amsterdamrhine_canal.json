@@ -18,6 +18,12 @@
   "culture": null,
   "description": "The Amsterdam–Rhine Canal is a canal in the Netherlands that was built to connect the port and capital city of Amsterdam to the main shipping artery of the Rhine.",
   "native": "Amsterdam-Rijnkanaal",
+  "surroundings": {
+    "rivers": [
+      "Waal"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Canal",

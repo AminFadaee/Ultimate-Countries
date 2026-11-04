@@ -19,6 +19,12 @@
   "culture": null,
   "description": "The Iguazú Falls or Iguaçu Falls are waterfalls of the Iguazu River on the border of the Argentine province of Misiones and the Brazilian state of Paraná.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Iguazu River"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Waterfall",

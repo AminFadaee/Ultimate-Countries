@@ -18,6 +18,16 @@
   "culture": null,
   "description": "The Kiel Canal is a 98-kilometer-long (61 mi) freshwater canal that links the North Sea to the Baltic Sea.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Elbe"
+    ],
+    "waters": [
+      "Baltic Sea",
+      "North Sea",
+      "Kieler Förde"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Canal",

@@ -19,6 +19,15 @@
   "culture": null,
   "description": "Lake Ontario is one of the five Great Lakes of North America.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "St. Lawrence River",
+      "Niagara River",
+      "Humber River",
+      "Don River"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

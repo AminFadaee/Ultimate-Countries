@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Namak Lake is a salt lake in Iran on the Western edge of the Great Salt Desert.",
   "native": "دریاچه نمک قم",
+  "surroundings": {
+    "rivers": [
+      "Karaj River",
+      "Qarechay"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

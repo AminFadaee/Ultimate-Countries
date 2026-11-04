@@ -18,6 +18,13 @@
   "culture": null,
   "description": "The Corinth Canal is a canal in Greece that connects the Gulf of Corinth in the Ionian Sea with the Saronic Gulf in the Aegean Sea.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Gulf of Corinth",
+      "Saronic Gulf"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Canal",

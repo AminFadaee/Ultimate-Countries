@@ -18,6 +18,14 @@
   "culture": null,
   "description": "The Great Salt Lake is the largest saltwater lake in the Western Hemisphere and the eighth-largest terminal lake in the world.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Bear River",
+      "Jordan River",
+      "Weber River"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

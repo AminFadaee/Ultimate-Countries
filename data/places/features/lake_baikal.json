@@ -18,6 +18,15 @@
   "culture": null,
   "description": "Lake Baikal is a rift lake and the deepest lake in the world.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Angara",
+      "Selenga",
+      "Barguzin",
+      "Upper Angara"
+    ],
+    "waters": []
+  },
   "world_heritage": true,
   "tags": [
     "Lake",

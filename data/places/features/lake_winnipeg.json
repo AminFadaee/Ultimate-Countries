@@ -18,6 +18,15 @@
   "culture": null,
   "description": "Lake Winnipeg is a 24,514-square-kilometre (9,465-square-mile) lake in North America, in the Canadian province of Manitoba.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Nelson River",
+      "Saskatchewan River",
+      "Red River of the North",
+      "Winnipeg River"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

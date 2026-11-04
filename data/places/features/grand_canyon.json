@@ -18,6 +18,12 @@
   "culture": null,
   "description": "The Grand Canyon is a steep-sided canyon carved by the Colorado River in Arizona, United States.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Colorado River"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Canyon",

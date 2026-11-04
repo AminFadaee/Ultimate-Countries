@@ -18,6 +18,13 @@
   "culture": null,
   "description": "The North Sea Canal is a Dutch ship canal from Amsterdam to the North Sea at IJmuiden, constructed between 1865 and 1876 to enable seafaring vessels to reach the port of Amsterdam.",
   "native": "Noordzeekanaal",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "North Sea",
+      "IJ"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Canal",

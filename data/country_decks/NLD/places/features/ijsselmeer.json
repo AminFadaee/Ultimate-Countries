@@ -18,6 +18,12 @@
   "culture": null,
   "description": "The IJsselmeer, also known as Lake IJssel in English, is a closed-off freshwater lake in the central Netherlands bordering the provinces of Flevoland, North Holland and Friesland.",
   "native": "IJsselmeer",
+  "surroundings": {
+    "rivers": [
+      "IJssel"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Lauwersmeer is a man-made lake in the north of the Netherlands, on the border of the provinces of Groningen and Friesland.",
   "native": "Lauwersmeer",
+  "surroundings": {
+    "rivers": [
+      "Lauwers"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

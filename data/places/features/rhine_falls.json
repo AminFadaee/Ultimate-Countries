@@ -18,6 +18,12 @@
   "culture": null,
   "description": "The Rhine Falls is a waterfall on the High Rhine in Switzerland.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Rhine"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Waterfall",

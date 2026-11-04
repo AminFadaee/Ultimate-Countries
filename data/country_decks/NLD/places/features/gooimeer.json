@@ -18,6 +18,12 @@
   "culture": null,
   "description": "The Gooimeer is a bordering lake in the Netherlands between the southeastern part of North Holland and Flevoland.",
   "native": "Gooimeer",
+  "surroundings": {
+    "rivers": [
+      "IJssel"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Lake",

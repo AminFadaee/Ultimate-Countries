@@ -19,6 +19,12 @@
   "culture": null,
   "description": "Niagara Falls is a group of three waterfalls at the southern end of Niagara Gorge, spanning the border between the Canadian province of Ontario and the U.S. state of New York.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Niagara"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Waterfall",
