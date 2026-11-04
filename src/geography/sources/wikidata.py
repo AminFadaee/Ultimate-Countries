@@ -1,5 +1,7 @@
+import hashlib
 import itertools
 import json
+import pathlib
 import re
 import time
 import urllib.parse
@@ -18,6 +20,7 @@ TITLE_BATCH = 50
 DETAIL_BATCH = 300
 QUERY_ATTEMPTS = 3
 RETRY_DELAY = 10
+QUERY_CACHE_DAYS = 7
 
 SETTLEMENT_KINDS = ("Q486972", "Q15284")
 NOT_A_CITY = ("Q23442", "Q839954", "Q15661340", "Q10864048", "Q16423979")
@@ -79,9 +82,30 @@ def values_clause(qids) -> str:
     return " ".join(f"wd:{qid}" for qid in qids)
 
 
+@dataclass
+class QueryCache:
+    directory: pathlib.Path
+    reuse: bool = False
+    max_age_s: float = QUERY_CACHE_DAYS * 86_400
+
+    def get(self, query: str) -> list[dict[str, str]] | None:
+        path = self._path(query)
+        if self.reuse and path.exists() and time.time() - path.stat().st_mtime < self.max_age_s:
+            return json.loads(path.read_text())
+        return None
+
+    def put(self, query: str, rows: list[dict[str, str]]) -> None:
+        self.directory.mkdir(parents=True, exist_ok=True)
+        self._path(query).write_text(json.dumps(rows))
+
+    def _path(self, query: str) -> pathlib.Path:
+        return self.directory / f"{hashlib.sha256(query.encode()).hexdigest()}.json"
+
+
 class Wikidata:
-    def __init__(self, session: requests.Session):
+    def __init__(self, session: requests.Session, cache: QueryCache | None = None):
         self.session = session
+        self.cache = cache
 
     def resolve_codes(self, alpha_2_codes: dict[str, str]) -> dict[str, str]:
         key_by_code = {code: key for key, code in alpha_2_codes.items()}
@@ -444,6 +468,14 @@ class Wikidata:
         return list(dict.fromkeys(qid_of(row["city"]) for row in rows))
 
     def _select(self, query: str) -> list[dict[str, str]]:
+        if self.cache and (rows := self.cache.get(query)) is not None:
+            return rows
+        rows = self._ask(query)
+        if self.cache:
+            self.cache.put(query, rows)
+        return rows
+
+    def _ask(self, query: str) -> list[dict[str, str]]:
         for attempt in range(1, QUERY_ATTEMPTS + 1):
             try:
                 response = self.session.post(

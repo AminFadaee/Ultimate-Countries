@@ -32,7 +32,7 @@ from geography.naming import answer_path, slugify
 from geography.render import EQUAL_AREA, PROJECTABLE_LATITUDE
 from geography.sources import commons
 from geography.sources.natural_earth_physical import PhysicalLayer, load_layer
-from geography.sources.wikidata import Wikidata
+from geography.sources.wikidata import QueryCache, Wikidata
 from geography.sources.wikipedia import Wikipedia
 
 BORDER_RADIUS_M = {Kind.WATERFALL: 6_000, Kind.MOUNTAIN: 8_000, Kind.VOLCANO: 8_000}
@@ -55,6 +55,7 @@ CONTINENT_TAGS = {
 
 REDRAWN_EXTRAS = ("river", "surroundings")
 SHAPES_DIR = CACHE_DIR / "place_shapes"
+QUERY_CACHE = CACHE_DIR / "wikidata"
 
 logger = logging.getLogger(__name__)
 
@@ -97,7 +98,7 @@ class PlacesCollector:
         self.paths = paths
         self.session = session
         self.language = language
-        self.wikidata = Wikidata(session)
+        self.wikidata = Wikidata(session, QueryCache(QUERY_CACHE))
         self.wikipedia = Wikipedia(session)
 
     def run(self, options: PlacesOptions) -> None:
@@ -124,6 +125,7 @@ class PlacesCollector:
         logger.info("Exported %d places to %s", count, self.paths.features)
 
     def redraw(self, options: PlacesOptions) -> None:
+        self.wikidata.cache.reuse = True
         documents = {path.stem: json.loads(path.read_text()) for path in sorted(self.paths.features.glob("*.json"))}
         shapes = self._load_shapes() or self._rebuild_shapes(list(documents.values()))
         countries = {country.name: country for country in load_our_countries(self.paths.countries).values()}
