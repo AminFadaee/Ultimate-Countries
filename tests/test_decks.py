@@ -109,3 +109,20 @@ def test_decks_keep_their_note_types_and_notes(packages, updating):
         moved = sorted(f"{known['notes'][guid]} -> {current['notes'][guid]}" for guid in known["notes"].keys() & current["notes"].keys() if known["notes"][guid] != current["notes"][guid])
         changes += [f"{name}: {kind} {items}" for kind, items in (("removed", removed), ("added", added), ("changed", moved)) if items]
     assert not changes, "\n".join(changes) + "\nif these are intended, run pytest --update-snapshots"
+
+
+def test_every_map_can_be_tapped_to_zoom(packages):
+    missing = []
+    for name, package in packages.items():
+        for model in package.models.values():
+            for template in model["tmpls"]:
+                for side in ("qfmt", "afmt"):
+                    if 'class="value image map' in template[side] and "zoom-overlay" not in template[side]:
+                        missing.append(f"{name}: {model['name']} {template['name']} {side}")
+    assert not missing, "\n".join(missing)
+
+
+def test_every_answer_has_its_links(packages):
+    missing = [f"{name}: {model['name']} {template['name']}" for name, package in packages.items() for model in package.models.values()
+               for template in model["tmpls"] if "links" not in template["afmt"] or "GoToLinkedPage" not in template["afmt"]]
+    assert not missing, "\n".join(missing)

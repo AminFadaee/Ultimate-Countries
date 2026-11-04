@@ -4,7 +4,7 @@ import logging
 import pathlib
 import re
 from collections import Counter
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import date
 
 import genanki
@@ -29,6 +29,54 @@ REGION_CONTEXT = "{{Region}}"
 logger = logging.getLogger(__name__)
 
 
+LINKS_CSS = """
+.links { display: flex; justify-content: center; gap: 20px; margin-top: 22px; }
+.links a { color: var(--muted); line-height: 0; opacity: .8; }
+.links a:hover { color: var(--accent); opacity: 1; }
+.links svg { width: 22px; height: 22px; }
+"""
+
+LINKS_SCRIPT = """
+<script>
+(function () {
+  var STROKE = 'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"';
+  var WIKI = '<text x="12" y="18" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="19" font-weight="700" fill="currentColor">W</text>';
+  var ICONS = {
+    images: '<rect x="3" y="5" width="18" height="14" rx="2" ' + STROKE + '/><circle cx="9" cy="10" r="1.7" fill="currentColor"/><path d="M4 18l5-5 3 3 3-4 5 6" ' + STROKE + '/>',
+    youtube: '<rect x="2.5" y="5.5" width="19" height="13" rx="4" ' + STROKE + '/><path d="M10 9.2v5.6l5-2.8z" fill="currentColor"/>',
+    maps: '<path d="M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11z" ' + STROKE + '/><circle cx="12" cy="10" r="2.3" fill="currentColor"/>'
+  };
+  var root = document.getElementById("qa") || document.body;
+
+  function wiki(language) {
+    return language ? WIKI.replace('x="12"', 'x="8.5"').replace('font-size="19"', 'font-size="16"') + '<text x="24" y="22" text-anchor="end" font-family="sans-serif" font-size="7.5" font-weight="700" fill="currentColor">' + language.toUpperCase() + '</text>' : WIKI;
+  }
+
+  function link(title, url, icon) {
+    return '<a href="' + url + '" title="' + title + '" aria-label="' + title + '"><svg viewBox="0 0 24 24">' + icon + '</svg></a>';
+  }
+
+  root.querySelectorAll(".links").forEach(function (box) {
+    var query = encodeURIComponent(box.dataset.query);
+    var page = function (language) { return "https://www.wikidata.org/wiki/Special:GoToLinkedPage/" + language + "wiki/" + box.dataset.qid; };
+    var html = "";
+    if (box.dataset.qid) html += link("Wikipedia", page("en"), wiki());
+    if (box.dataset.qid && box.dataset.native) html += link("Wikipedia (" + box.dataset.native + ")", page(box.dataset.native), wiki(box.dataset.native));
+    html += link("Google Images", "https://www.google.com/search?tbm=isch&q=" + query, ICONS.images);
+    html += link("YouTube", "https://www.youtube.com/results?search_query=" + query, ICONS.youtube);
+    html += link("Google Maps", "https://www.google.com/maps/search/?api=1&query=" + query, ICONS.maps);
+    box.innerHTML = html;
+  });
+})();
+</script>
+"""
+
+
+def links(query: str, qid: str | None = "{{Id}}", native: str | None = None) -> str:
+    language = f' data-native="{native}"' if native else ""
+    return f'<div class="links" data-qid="{qid or ""}" data-query="{query}"{language}></div>'
+
+
 @dataclass(frozen=True)
 class Template:
     name: str
@@ -38,6 +86,9 @@ class Template:
 
     def as_genanki(self, script: str = "") -> dict:
         return {"name": self.name, "qfmt": self.front + script, "afmt": self.back + script}
+
+    def with_links(self, query: str, native: str | None = None) -> "Template":
+        return replace(self, back=self.back + links(query, native=native))
 
 
 @dataclass(frozen=True)
@@ -147,7 +198,7 @@ def chip(field: str, label: str) -> str:
 
 FACT_CHIPS = '<div class="facts">' + "".join(chip(fact.field, fact.label) for fact in FACTS) + chip("NotableCities", "Cities") + "</div>"
 
-COUNTRY_TEMPLATES = (
+COUNTRY_TEMPLATES = tuple(template.with_links("{{Name}}") for template in (
     Template(
         "Capital",
         "Capital",
@@ -164,7 +215,7 @@ COUNTRY_TEMPLATES = (
         *guarded("Flag", ask_entity("Flag", image("Flag", "flag"), answer="{{Name}}", extra=MAP_THUMBNAIL, facts=FACT_CHIPS)),
     ),
     Template("Map", "Map", *guarded("Map", ask_entity("Map", image("Map", "map"), facts=FACT_CHIPS))),
-)
+))
 
 CAPITAL_OF_CARD = 1
 
@@ -185,10 +236,10 @@ CITY_MAP_FRONT, CITY_MAP_BACK = ask_entity(
 )
 CITY_COUNTRY_FRONT, CITY_COUNTRY_BACK = ask_attribute("Country", "Country", subject="{{City}}")
 
-CITY_TEMPLATES = (
+CITY_TEMPLATES = tuple(template.with_links("{{City}}, {{Country}}") for template in (
     Template("Map", "Map", conditional("Map", CITY_MAP_FRONT), CITY_MAP_BACK),
     Template("Country", "City", f"{{{{^IsCapital}}}}{CITY_COUNTRY_FRONT}{{{{/IsCapital}}}}", CITY_COUNTRY_BACK),
-)
+))
 
 CITY_MAP_CARD, CITY_COUNTRY_CARD = range(len(CITY_TEMPLATES))
 CITY_FIELDS = ("Id", "City", "Country", "Map", "IsCapital", "Region", "MapAnswer")
@@ -234,6 +285,8 @@ MAP_ZOOM_CSS = """
 .zoom-stage { display: flex; min-width: 100%; min-height: 100%; width: max-content; height: max-content; }
 .zoom-stage img { margin: auto; max-width: none; max-height: none; }
 """
+
+MAP_ZOOM_HINT = "<p>Tap a map to zoom in on that spot; drag to look around and tap again to close.</p>"
 
 MAP_ZOOM_SCRIPT = """
 <script>
@@ -310,7 +363,7 @@ notable cities. The best-known cities of the world are in the deck too, each on 
 search for <code>deck:"Ultimate Countries" tag:UC::Asia</code>. You can filter by card type too, for example
 <code>deck:"Ultimate Countries" "note:Ultimate Countries country" card:Flag</code>. To skip a kind of card, search for it in the
 Browser and suspend the cards rather than deleting them, because deleted cards come back when you import an update.</p>
-<p>Tap a country or city map to zoom in on that spot; drag to look around and tap again to close.</p>
+{MAP_ZOOM_HINT}
 <p>Companion deck: <a href="{PLACES_ANKIWEB_URL}">Ultimate Places</a>, with continents, seas, mountains, rivers, deserts,
 rainforests, regions and landmarks.</p>
 <p>Data is collected automatically from Wikidata (CC0), Wikipedia (CC BY-SA), restcountries, the World Bank,
@@ -401,15 +454,15 @@ class DeckBuilder:
             COUNTRY_MODEL_ID,
             f"{DECK_NAME} country",
             COUNTRY_FIELDS,
-            [template.as_genanki(MAP_ZOOM_SCRIPT) for template in COUNTRY_TEMPLATES],
-            CSS + FACTS_CSS + MAP_ZOOM_CSS,
+            [template.as_genanki(MAP_ZOOM_SCRIPT + LINKS_SCRIPT) for template in COUNTRY_TEMPLATES],
+            CSS + FACTS_CSS + MAP_ZOOM_CSS + LINKS_CSS,
         )
         self.city_model = self._model(
             CITY_MODEL_ID,
             f"{DECK_NAME} city",
             CITY_FIELDS,
-            [template.as_genanki(MAP_ZOOM_SCRIPT) for template in CITY_TEMPLATES],
-            CSS + MAP_ZOOM_CSS,
+            [template.as_genanki(MAP_ZOOM_SCRIPT + LINKS_SCRIPT) for template in CITY_TEMPLATES],
+            CSS + MAP_ZOOM_CSS + LINKS_CSS,
         )
         self.root = genanki.Deck(stable_id(DECK_NAME), DECK_NAME, description())
         self.notes = 0

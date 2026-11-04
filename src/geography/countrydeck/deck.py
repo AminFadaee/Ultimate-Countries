@@ -17,7 +17,10 @@ from geography.deck import (
     CSS,
     FACTS,
     FACTS_CSS,
+    LINKS_CSS,
+    LINKS_SCRIPT,
     MAP_ZOOM_CSS,
+    MAP_ZOOM_HINT,
     MAP_ZOOM_SCRIPT,
     PLACES_ANKIWEB_URL,
     REPOSITORY_URL,
@@ -33,6 +36,7 @@ from geography.deck import (
     escaped,
     face,
     image,
+    links,
     stable_id,
 )
 from geography.features.deck import (
@@ -70,29 +74,29 @@ CITY_CHIPS = '<div class="facts">' + chip("Province", "Province") + chip("Popula
 NEIGHBOUR_CHIPS = '<div class="facts">' + chip("Capital", "Capital") + "".join(chip(fact.field, fact.label) for fact in FACTS) + "</div>"
 
 
-def province_templates() -> tuple[Template, ...]:
+def province_templates(native: str | None = None) -> tuple[Template, ...]:
     map_front = face(UNKNOWN_ENTITY, "Province", image("Map", "map"))
     map_back = face(entity("{{Name}}" + NATIVE_LINE, answered=True), "Province", image("MapAnswer", "map")) + (
         f'<div class="context">{KIND_CONTEXT}</div>{PROVINCE_CHIPS}'
     )
     centre = ask_attribute("Centre", "Centre", info_field="CentreNative", subject="{{Name}}" + NATIVE_LINE, context=KIND_CONTEXT, facts=PROVINCE_CHIPS, info_suffix="{{CentreAudio}}")
     reverse = ask_attribute("Province", "Name", info_field="Native", subject="{{Centre}}" + CENTRE_LINE, context=KIND_CONTEXT, facts=PROVINCE_CHIPS, info_suffix="{{NativeAudio}}")
-    return (
+    return tuple(template.with_links("{{Name}}, {{Country}}", native) for template in (
         Template("Map", "Map", conditional("Map", map_front), map_back),
         Template("Centre", "Centre", conditional("Centre", centre[0]), centre[1]),
         Template("Province of", "Centre", conditional("Centre", reverse[0]), reverse[1]),
-    )
+    ))
 
 
-def city_templates() -> tuple[Template, ...]:
+def city_templates(native: str | None = None) -> tuple[Template, ...]:
     subject = "{{City}}" + NATIVE_LINE
     front = face(UNKNOWN_ENTITY, "City", image("Map", "map"))
     back = face(entity(subject, answered=True), "City", image("MapAnswer", "map")) + f'<div class="context">{KIND_CONTEXT}</div>{CITY_CHIPS}'
     province = ask_attribute("Province", "Province", info_field="ProvinceNative", subject=subject, context=KIND_CONTEXT, facts=CITY_CHIPS, info_suffix="{{ProvinceAudio}}")
-    return (
+    return tuple(template.with_links("{{City}}, {{Country}}", native) for template in (
         Template("Map", "Map", conditional("Map", front), back),
         Template("Province", "City", f"{{{{^IsCentre}}}}{province[0]}{{{{/IsCentre}}}}", province[1]),
-    )
+    ))
 
 
 HINT = '{{#Hint}}<div class="hint">{{Hint}}</div>{{/Hint}}'
@@ -108,10 +112,10 @@ def place_templates() -> tuple[Template, ...]:
     )
 
 
-def neighbour_templates() -> tuple[Template, ...]:
+def neighbour_templates(native: str | None = None) -> tuple[Template, ...]:
     front = face(UNKNOWN_ENTITY, "Neighbour", image("Map", "map"))
     back = face(entity(COUNTRY_NAME, answered=True), "Neighbour", image("MapAnswer", "map")) + f'<div class="context">{KIND_CONTEXT}</div>{NEIGHBOUR_CHIPS}'
-    return (Template("Map", "Map", conditional("Map", front), back),)
+    return (Template("Map", "Map", conditional("Map", front), back).with_links("{{Name}}", native),)
 
 
 def tag(prefix: str, *parts: str) -> str:
@@ -124,6 +128,7 @@ def description(name: str, voiced: bool = False) -> str:
 <p><b>Ultimate {name} Geography</b>: provinces and their centres, neighbours, cities, natural features and landmarks, each on a map.</p>
 <p>Part of a family with <a href="{COUNTRIES_ANKIWEB_URL}">Ultimate Countries</a> and <a href="{PLACES_ANKIWEB_URL}">Ultimate Places</a>, inspired by
 <a href="{ULTIMATE_GEOGRAPHY_URL}">Ultimate Geography</a>. Names are shown in the country's own language too.</p>
+{MAP_ZOOM_HINT}
 {speech}<p>Data comes from Wikidata (CC0), Wikipedia (CC BY-SA), Natural Earth (public domain), Marine Regions (CC BY) and OpenStreetMap (ODbL).
 Photos come from Wikimedia Commons, each under the licence given on its Commons page.</p>
 <p>Source code, data and new releases: <a href="{REPOSITORY_URL}">{REPOSITORY_URL.removeprefix("https://")}</a>. Built {date.today().isoformat()}.</p>"""
@@ -135,12 +140,13 @@ class CountryDeckBuilder:
         self.name = f"Ultimate {meta['name']} Geography"
         self.prefix = meta["alpha_2"].upper()
         self.media = MediaLibrary(data_dir, build_dir / "media" / meta["code"].lower(), f"nd-{meta['code'].lower()}", tone_photos)
-        css = CSS + FACTS_CSS + MAP_ZOOM_CSS + AUDIO_CSS
+        css = CSS + FACTS_CSS + MAP_ZOOM_CSS + LINKS_CSS + AUDIO_CSS
+        native = meta["language"]
         self.voice = load_manifest(COUNTRY_DECKS_DIR / meta["code"])
-        self.province_model = self._model(PROVINCE_MODEL_ID, "province", PROVINCE_FIELDS, province_templates(), css)
-        self.neighbour_model = self._model(NEIGHBOUR_MODEL_ID, "neighbour", NEIGHBOUR_FIELDS, neighbour_templates(), css)
-        self.city_model = self._model(CITY_MODEL_ID, "city", CITY_FIELDS, city_templates(), css)
-        self.place_model = self._model(PLACE_MODEL_ID, "place", PLACE_FIELDS, place_templates(), PLACES_CSS + HINT_CSS + FACTS_CSS + MAP_ZOOM_CSS + AUDIO_CSS)
+        self.province_model = self._model(PROVINCE_MODEL_ID, "province", PROVINCE_FIELDS, province_templates(native), css)
+        self.neighbour_model = self._model(NEIGHBOUR_MODEL_ID, "neighbour", NEIGHBOUR_FIELDS, neighbour_templates(native), css)
+        self.city_model = self._model(CITY_MODEL_ID, "city", CITY_FIELDS, city_templates(native), css)
+        self.place_model = self._model(PLACE_MODEL_ID, "place", PLACE_FIELDS, place_templates(), PLACES_CSS + HINT_CSS + FACTS_CSS + MAP_ZOOM_CSS + LINKS_CSS + AUDIO_CSS)
         self.deck = genanki.Deck(stable_id(self.name), self.name, description(meta["name"], bool(self.voice)))
         self.notes = 0
 
@@ -184,7 +190,7 @@ class CountryDeckBuilder:
             "MapAnswer": self.media.image(f"{root}/{answer_path(pathlib.Path(document['map']))}", "map") if document["map"] else "",
             "Photo": self.media.image(f"{root}/{document['photo']['file']}", "photo") if photo_card else "",
             "Hint": "" if photo_card else escaped(masked(document)),
-            "Details": details_html(document),
+            "Details": details_html(document) + links(f"{escaped(document['name'])}, {escaped(self.meta['name'])}", document["qid"], self.meta["language"]),
         }
         ords = [ord for ord, template in enumerate(place_templates()) if values[template.requires]]
         if not ords:
@@ -224,7 +230,7 @@ class CountryDeckBuilder:
     @staticmethod
     def _model(model_id: int, kind: str, fields: tuple[str, ...], templates: tuple[Template, ...], css: str) -> genanki.Model:
         return genanki.Model(model_id, f"{MODEL_FAMILY} {kind}", fields=[{"name": field} for field in fields],
-                             templates=[template.as_genanki(MAP_ZOOM_SCRIPT) for template in templates], css=css, sort_field_index=1)
+                             templates=[template.as_genanki(MAP_ZOOM_SCRIPT + LINKS_SCRIPT) for template in templates], css=css, sort_field_index=1)
 
 
 def build_country_deck(code: str, build_dir: pathlib.Path, output: pathlib.Path | None = None, data_dir: pathlib.Path = pathlib.Path("data"), tone_photos: bool = True) -> None:

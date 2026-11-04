@@ -9,6 +9,11 @@ import genanki
 from geography.deck import (
     COUNTRIES_ANKIWEB_URL,
     CSS,
+    LINKS_CSS,
+    LINKS_SCRIPT,
+    MAP_ZOOM_CSS,
+    MAP_ZOOM_HINT,
+    MAP_ZOOM_SCRIPT,
     REPOSITORY_URL,
     TAG_UNSAFE,
     ULTIMATE_GEOGRAPHY_URL,
@@ -18,6 +23,7 @@ from geography.deck import (
     SelectedNote,
     conditional,
     entity,
+    links,
     placeholder,
     stable_id,
 )
@@ -123,6 +129,12 @@ def details_html(document: dict) -> str:
     return "<br>".join(lines) + blurb
 
 
+def search_query(document: dict) -> str:
+    countries = document["countries"]
+    name = html.escape(document["name"])
+    return f"{name}, {html.escape(countries[0])}" if len(countries) == 1 else name
+
+
 def tags(document: dict) -> list[str]:
     return sorted({"::".join([TAG_PREFIX, TAG_UNSAFE.sub("_", tag).strip("_")]) for tag in document["tags"]})
 
@@ -136,6 +148,7 @@ waterfalls, canyons, rainforests, regions and famous landmarks, each shown on a 
 <p>The back of every card has a one-sentence description from Wikipedia, and a place's photo sits inside the magnifier of its map. Everything is in one deck. Every note is tagged with its kind and continent (for example <code>UP::Volcano</code> or
 <code>UP::Africa</code>), so you can study one kind at a time with a filtered deck: Tools → Create Filtered Deck,
 then search for <code>deck:"Ultimate Places" tag:UP::Volcano</code>.</p>
+{MAP_ZOOM_HINT}
 <p>Data comes from Natural Earth (public domain), Marine Regions IHO sea areas (CC BY), RESOLVE Ecoregions (CC BY),
 Wikidata (CC0), Wikipedia (CC BY-SA) and OpenStreetMap (ODbL). Photos come from Wikimedia Commons, each under the
 licence given on its Commons page.</p>
@@ -152,8 +165,8 @@ class PlacesDeckBuilder:
             PLACE_MODEL_ID,
             f"{DECK_NAME} place",
             fields=[{"name": field} for field in FIELDS],
-            templates=[{"name": template.name, "qfmt": template.front, "afmt": template.back} for template in TEMPLATES],
-            css=PLACES_CSS,
+            templates=[{"name": template.name, "qfmt": template.front + MAP_ZOOM_SCRIPT + LINKS_SCRIPT, "afmt": template.back + MAP_ZOOM_SCRIPT + LINKS_SCRIPT} for template in TEMPLATES],
+            css=PLACES_CSS + MAP_ZOOM_CSS + LINKS_CSS,
             sort_field_index=1,
         )
         self.notes = 0
@@ -165,7 +178,7 @@ class PlacesDeckBuilder:
             "Kind": html.escape(document["kind"]),
             "Map": self.media.image(document["map"], "map"),
             "Photo": self.media.image(document["photo"]["file"], "photo") if document["photo"] else "",
-            "Details": details_html(document),
+            "Details": details_html(document) + links(search_query(document), document["qid"]),
         }
         ords = [ord for ord, template in enumerate(TEMPLATES) if values[template.requires]]
         if not ords:
