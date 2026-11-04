@@ -34,6 +34,8 @@ RENDERER_FILES = (
     "features/riverart/icons.py",
     "features/riverart/kinds.py",
     "features/riverart/paint.py",
+    "features/surroundings_paint.py",
+    "features/water_labels.py",
     "sources/natural_earth_physical.py",
     "country_labels.py",
     "island_frames.py",
