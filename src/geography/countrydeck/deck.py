@@ -11,6 +11,7 @@ from geography.countrydeck.collect import COUNTRY_DECKS_DIR, load_documents
 from geography.countrydeck.hints import masked
 from geography.countrydeck.places import read_documents
 from geography.countrydeck.selection import PHOTO_CARD_KINDS
+from geography.countrydeck.speech import CLIPS, load_manifest
 from geography.deck import (
     COUNTRIES_ANKIWEB_URL,
     COUNTRY_NAME,
@@ -48,7 +49,6 @@ from geography.features.deck import (
     kind_label,
 )
 from geography.features.kinds import Kind
-from geography.countrydeck.speech import CLIPS, load_manifest
 from geography.naming import answer_path, slugify
 
 logger = logging.getLogger(__name__)
