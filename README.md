@@ -130,6 +130,10 @@ To leave a kind out for good, open the Browser, search for its tag and suspend t
 
 ### Kinds and sources
 
+A place is named by the title of its English Wikipedia article, without a qualifier in brackets or after a comma
+("Sagrada Família", "Christ the Redeemer", "Olympia"). A place with no English article, or whose title would clash with
+another place's, keeps its Wikidata label.
+
 | Kind | Source | Rule |
 |---|---|---|
 | Continents | Natural Earth | All of them |
