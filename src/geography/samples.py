@@ -19,12 +19,13 @@ QUALITY = 85
 FIELD_SEPARATOR = "\x1f"
 SECTION = re.compile(r"\{\{([#^])([^}]+)\}\}(.*?)\{\{/\2\}\}", re.DOTALL)
 FIELD = re.compile(r"\{\{([^#^/}][^}]*)\}\}")
+PAGE_BACKGROUND = (20, 20, 22)
 PAGE_CSS = """
-html, body { margin: 0; background: #fff; }
+html, body { margin: 0; background: rgb(20, 20, 22); }
 .pair { display: flex; gap: 16px; align-items: stretch; padding: 16px; }
-.face { width: 420px; border: 1px solid #d9dfe5; border-radius: 14px; overflow: hidden; background: #fdfdfd; }
+.face { width: 420px; border: 1px solid #3a3a3f; border-radius: 14px; overflow: hidden; background: #1e1e20; }
 .side { font: 11px/1 -apple-system, "Segoe UI", Roboto, sans-serif; letter-spacing: .08em; text-transform: uppercase;
-  color: #5b6876; padding: 10px 12px 0; }
+  color: #8a8a90; padding: 10px 12px 0; }
 .face .card { min-height: 300px; }
 """
 
@@ -47,8 +48,14 @@ SAMPLES = (
     Sample("ultimate_countries.apkg", "Ultimate Countries country", "Map", "France", "countries-map.webp"),
     Sample("ultimate_countries.apkg", "Ultimate Countries city", "Map", "Lyon", "cities-map.webp"),
     Sample("ultimate_countries.apkg", "Ultimate Countries city", "Country", "Lyon", "cities-country.webp"),
-    Sample("ultimate_places.apkg", "Ultimate Places place", "Map", "Mount Fuji", "places-map.webp"),
+    Sample("ultimate_places.apkg", "Ultimate Places place", "Map", "Mount Everest", "places-map.webp"),
     Sample("ultimate_places.apkg", "Ultimate Places place", "Photo", "Taj Mahal", "places-photo.webp"),
+    Sample("ultimate_places.apkg", "Ultimate Places place", "Map", "Yellow River", "places-river.webp"),
+    Sample("ultimate_places.apkg", "Ultimate Places place", "Map", "Lake Victoria", "places-lake.webp"),
+    Sample("ultimate_netherlands_geography.apkg", "Ultimate Nation province", "Map", "Utrecht", "netherlands-province.webp"),
+    Sample("ultimate_netherlands_geography.apkg", "Ultimate Nation place", "Map", "Terschelling", "netherlands-place.webp"),
+    Sample("ultimate_iran_geography.apkg", "Ultimate Nation city", "Map", "Isfahan", "iran-city.webp"),
+    Sample("ultimate_iran_geography.apkg", "Ultimate Nation place", "Map", "Sefid Rud", "iran-river.webp"),
 )
 
 
@@ -109,7 +116,7 @@ def render_template(template: str, fields: dict[str, str]) -> str:
 
 def sample_page(front: str, back: str, css: str) -> str:
     faces = "".join(
-        f'<div class="face"><div class="side">{side}</div><div class="card">{content}</div></div>'
+        f'<div class="face"><div class="side">{side}</div><div class="card nightMode">{content}</div></div>'
         for side, content in (("Front", front), ("Back", back))
     )
     return f'<!doctype html><html><head><meta charset="utf-8"><style>{css}{PAGE_CSS}</style></head>' \
@@ -132,7 +139,7 @@ def screenshot(chrome: str, page: pathlib.Path, output: pathlib.Path, profile: p
         check=True, capture_output=True,
     )
     image = Image.open(raw).convert("RGB")
-    content = ImageChops.difference(image, Image.new("RGB", image.size, "white")).getbbox()
+    content = ImageChops.difference(image, Image.new("RGB", image.size, PAGE_BACKGROUND)).getbbox()
     left, top, right, bottom = content
     margin = MARGIN_PX * SCALE
     image = image.crop((max(left - margin, 0), max(top - margin, 0), right + margin, bottom + margin))
