@@ -1,3 +1,4 @@
+import json
 from unittest import mock
 
 import geopandas as gpd
@@ -29,6 +30,20 @@ def test_saved_shapes_load_back_part_by_part(tmp_path):
               Feature("Q2", "Peak", Kind.MOUNTAIN, gpd.GeoSeries([Point(5, 5)], crs=CRS))]
     with mock.patch.object(collect, "SHAPES_DIR", tmp_path):
         collector = PlacesCollector(PlacesPaths(tmp_path / "data"), None)
-        collector._save_shapes(shapes)
+        collector._save_shapes({shape.key: shape.geometry for shape in shapes})
         loaded = collector._load_shapes()
     assert {key: list(series) for key, series in loaded.items()} == {shape.key: list(shape.geometry) for shape in shapes}
+
+
+def test_a_redraw_rebuilds_only_the_shapes_it_is_missing(tmp_path):
+    with mock.patch.object(collect, "SHAPES_DIR", tmp_path):
+        collector = PlacesCollector(PlacesPaths(tmp_path / "data"), None)
+        collector.paths.features.mkdir(parents=True)
+        for key in ("Q1", "Q2"):
+            (collector.paths.features / f"{key}.json").write_text(json.dumps(document(Feature(key, key, Kind.LAKE, gpd.GeoSeries([], crs=CRS), qid=key))))
+        collector._save_shapes({"Q1": gpd.GeoSeries([box(0, 0, 1, 1)], crs=CRS)})
+        rebuilt = []
+        collector._rebuild_shapes = lambda documents: rebuilt.extend(content["key"] for content in documents) or {"Q2": gpd.GeoSeries([box(2, 2, 3, 3)], crs=CRS)}
+        collector._draw = lambda features, slugs, options: None
+        collector.redraw(collect.PlacesOptions(maps_only=True))
+        assert rebuilt == ["Q2"] and set(collector._load_shapes()) == {"Q1", "Q2"}

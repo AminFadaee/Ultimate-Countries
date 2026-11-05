@@ -138,7 +138,7 @@ class CountryPlacesCollector(PlacesCollector):
                 feature.extras["disputed"] = True
 
     def finish(self, features: list[Feature]) -> dict[str, str]:
-        self._save_shapes(features)
+        self._save_shapes({feature.key: feature.geometry for feature in features})
         slugs = unique_slugs(features)
         self._add_photos(features, slugs)
         return slugs
@@ -173,7 +173,6 @@ class CountryPlacesCollector(PlacesCollector):
         self.draw_maps(features, slugs, self.country, self.code, options.rerender_maps, options.workers)
 
     def _rebuild_shapes(self, documents: list[dict]) -> dict[str, gpd.GeoSeries]:
-        logger.info("No saved shapes in %s; rebuilding them from Wikidata", self._shapes_file)
         facts = FeatureQueries(self.wikidata).facts({content["qid"] for content in documents})
         features = []
         for content in documents:
@@ -181,7 +180,6 @@ class CountryPlacesCollector(PlacesCollector):
             features.append(Feature(content["key"], content["name"], Kind(content["kind"]), gpd.GeoSeries([Point(*spot)] if spot else [], crs=CRS), qid=content["qid"]))
         resolve_shapes(self.wikidata, features)
         complete_rivers(self.wikidata, [feature for feature in features if feature.kind is Kind.RIVER], {qid: found.length_km for qid, found in facts.items()})
-        self._save_shapes(features)
         return {feature.key: feature.geometry for feature in features}
 
 

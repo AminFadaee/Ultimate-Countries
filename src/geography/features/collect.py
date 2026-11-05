@@ -110,7 +110,7 @@ class PlacesCollector:
         catalog = Catalog(self.session, self.wikidata, self.wikipedia, locator, data)
         features = catalog.collect()
         logger.info("%d places selected", len(features))
-        self._save_shapes(features)
+        self._save_shapes({feature.key: feature.geometry for feature in features})
 
         self._add_facts(features, catalog)
         self._add_countries(features, locator, catalog)
@@ -127,7 +127,11 @@ class PlacesCollector:
     def redraw(self, options: PlacesOptions) -> None:
         self.wikidata.cache.reuse = True
         documents = {path.stem: json.loads(path.read_text()) for path in sorted(self.paths.features.glob("*.json"))}
-        shapes = self._load_shapes() or self._rebuild_shapes(list(documents.values()))
+        shapes = self._load_shapes()
+        if missing := [content for content in documents.values() if content["key"] not in shapes]:
+            logger.info("Rebuilding the shapes of %d places missing from %s", len(missing), self._shapes_file)
+            shapes |= self._rebuild_shapes(missing)
+            self._save_shapes(shapes)
         countries = {country.name: country for country in load_our_countries(self.paths.countries).values()}
         features, slugs = [], {}
         for slug, content in documents.items():
@@ -153,8 +157,8 @@ class PlacesCollector:
     def _shapes_file(self) -> pathlib.Path:
         return SHAPES_DIR / f"{self.paths.root.resolve().name.lower()}.gpkg"
 
-    def _save_shapes(self, features: list[Feature]) -> None:
-        rows = [(feature.key, part) for feature in features for part in feature.geometry if part is not None and not part.is_empty]
+    def _save_shapes(self, shapes: dict[str, gpd.GeoSeries]) -> None:
+        rows = [(key, part) for key, geometry in shapes.items() for part in geometry if part is not None and not part.is_empty]
         SHAPES_DIR.mkdir(parents=True, exist_ok=True)
         gpd.GeoDataFrame({"key": [key for key, _ in rows]}, geometry=[part for _, part in rows], crs=CRS).to_file(self._shapes_file, driver="GPKG")
 
@@ -165,10 +169,8 @@ class PlacesCollector:
         return {key: gpd.GeoSeries(list(group.geometry), crs=CRS) for key, group in frame.groupby("key", sort=False)}
 
     def _rebuild_shapes(self, documents: list[dict]) -> dict[str, gpd.GeoSeries]:
-        logger.info("No saved shapes in %s; rebuilding them from the catalog", self._shapes_file)
         data = NaturalEarth.load()
         features = Catalog(self.session, self.wikidata, self.wikipedia, CountryLocator(data, load_our_countries(self.paths.countries)), data).collect()
-        self._save_shapes(features)
         return {feature.key: feature.geometry for feature in features}
 
     def _add_facts(self, features: list[Feature], catalog: Catalog) -> None:
