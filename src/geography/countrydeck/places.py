@@ -76,6 +76,8 @@ def one_per_extreme(features: list[Feature], tiers: dict[str, str], order: dict[
 
 
 class CountryPlacesCollector(PlacesCollector):
+    common_names = False
+
     def __init__(self, directory: pathlib.Path, session, language: str):
         super().__init__(PlacesPaths(directory), session, language)
 

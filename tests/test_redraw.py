@@ -47,3 +47,21 @@ def test_a_redraw_rebuilds_only_the_shapes_it_is_missing(tmp_path):
         collector._draw = lambda features, slugs, options: None
         collector.redraw(collect.PlacesOptions(maps_only=True))
         assert rebuilt == ["Q2"] and set(collector._load_shapes()) == {"Q1", "Q2"}
+
+
+def test_places_take_the_name_of_their_wikipedia_article_without_its_qualifier():
+    documents = {
+        "sagrada": {"name": "Basilica and Expiatory Church of the Holy Family", "wikipedia": "https://en.wikipedia.org/wiki/Sagrada_Fam%C3%ADlia"},
+        "christ": {"name": "Christ the Redeemer (statue)", "wikipedia": "https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)"},
+        "olympia": {"name": "Olympia", "wikipedia": "https://en.wikipedia.org/wiki/Olympia,_Greece"},
+        "unnamed": {"name": "Congo rainforest", "wikipedia": None},
+    }
+    collect.with_common_names(documents)
+    assert [content["name"] for content in documents.values()] == ["Sagrada Família", "Christ the Redeemer", "Olympia", "Congo rainforest"]
+
+
+def test_two_places_that_would_share_a_name_keep_their_labels():
+    documents = {"one": {"name": "Grand Canal (Venice)", "wikipedia": "https://en.wikipedia.org/wiki/Grand_Canal_(Venice)"},
+                 "two": {"name": "Grand Canal (China)", "wikipedia": "https://en.wikipedia.org/wiki/Grand_Canal_(China)"}}
+    collect.with_common_names(documents)
+    assert [content["name"] for content in documents.values()] == ["Grand Canal (Venice)", "Grand Canal (China)"]

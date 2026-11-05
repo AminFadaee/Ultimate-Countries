@@ -2,6 +2,7 @@ import json
 import logging
 import pathlib
 import re
+from collections import Counter
 from dataclasses import asdict, dataclass
 
 import geopandas as gpd
@@ -54,6 +55,7 @@ CONTINENT_TAGS = {
 }
 
 REDRAWN_EXTRAS = ("river", "surroundings")
+QUALIFIER = re.compile(r" \([^)]*\)$|, [^,]+$")
 SHAPES_DIR = CACHE_DIR / "place_shapes"
 QUERY_CACHE = CACHE_DIR / "wikidata"
 
@@ -93,6 +95,7 @@ class PlacesOptions:
 
 class PlacesCollector:
     country_qid: str | None = None
+    common_names: bool = True
 
     def __init__(self, paths: PlacesPaths, session: requests.Session, language: str | None = None):
         self.paths = paths
@@ -143,9 +146,12 @@ class PlacesCollector:
                                     photo=Photo(**content["photo"]) if content["photo"] else None))
             slugs[content["key"]] = slug
         self._draw(features, slugs, options)
-        for feature in features:
-            path = self.paths.features / f"{slugs[feature.key]}.json"
-            text = json.dumps(redrawn(documents[slugs[feature.key]], feature), ensure_ascii=False, indent=2) + "\n"
+        written = {slugs[feature.key]: redrawn(documents[slugs[feature.key]], feature) for feature in features}
+        if self.common_names:
+            with_common_names(written)
+        for slug, content in written.items():
+            path = self.paths.features / f"{slug}.json"
+            text = json.dumps(content, ensure_ascii=False, indent=2) + "\n"
             if path.read_text() != text:
                 path.write_text(text)
         logger.info("Redrew the maps of %d places in %s", len(features), self.paths.features)
@@ -335,6 +341,8 @@ class PlacesCollector:
     def _export(self, features: list[Feature], slugs: dict[str, str]) -> int:
         self.paths.features.mkdir(parents=True, exist_ok=True)
         documents = {slugs[feature.key]: document(feature) for feature in features}
+        if self.common_names:
+            with_common_names(documents)
         referenced = {self.paths.features / f"{slug}.json" for slug in documents}
         referenced |= {self.paths.root / content["map"] for content in documents.values() if content["map"]}
         referenced |= {answer_path(self.paths.root / content["map"]) for content in documents.values() if content["map"]}
@@ -409,6 +417,18 @@ def unique_slugs(features: list[Feature]) -> dict[str, str]:
         taken.add(slug)
         slugs[feature.key] = slug
     return slugs
+
+
+def common_name(content: dict) -> str:
+    return QUALIFIER.sub("", article_title(content["wikipedia"])) if content["wikipedia"] else content["name"]
+
+
+def with_common_names(documents: dict[str, dict]) -> None:
+    names = {slug: common_name(content) for slug, content in documents.items()}
+    counts = Counter(names.values())
+    for slug, content in documents.items():
+        if counts[names[slug]] == 1:
+            content["name"] = names[slug]
 
 
 def redrawn(content: dict, feature: Feature) -> dict:
