@@ -20,6 +20,14 @@
   "culture": null,
   "description": "The Horn of Africa (HOA), also known as the Somali Peninsula, is a large peninsula and geopolitical region located in the easternmost part of mainland Africa.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Red Sea",
+      "Arabian Sea",
+      "Gulf of Aden"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Peninsula",

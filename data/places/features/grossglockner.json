@@ -18,6 +18,13 @@
   "culture": null,
   "description": "The Großglockner, or just Glockner, is, at 3,798 metres above the Adriatic (12,461 ft), the highest mountain in Austria and highest mountain in the Alps east of the Brenner Pass.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "ranges": [
+      "Alps"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",

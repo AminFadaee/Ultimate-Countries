@@ -19,6 +19,13 @@
   "culture": null,
   "description": "The Nubian Desert is in the eastern region of the Sahara Desert, spanning approximately 400,000 km2 (150,000 sq mi) of northeastern Sudan and northern Eritrea, between the Nile and the Red Sea.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Jebel Oda"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Desert",

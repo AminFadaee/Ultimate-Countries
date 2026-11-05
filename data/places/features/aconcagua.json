@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Aconcagua is a mountain in the Principal Cordillera of the Andes range, located in Mendoza Province, Argentina.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "ranges": [
+      "Andes"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",

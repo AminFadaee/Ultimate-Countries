@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Mount Elbrus is the highest mountain in Russia and Europe.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "ranges": [
+      "Caucasus Mountains"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",

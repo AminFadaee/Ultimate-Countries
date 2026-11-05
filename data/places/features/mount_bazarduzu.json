@@ -19,6 +19,13 @@
   "culture": null,
   "description": "Mount Bazardüzü is a mountain peak in the Greater Caucasus range on the border between Azerbaijan and Russia (Dagestan).",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "ranges": [
+      "Caucasus Mountains"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",

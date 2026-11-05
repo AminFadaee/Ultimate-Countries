@@ -22,6 +22,13 @@
   "culture": null,
   "description": "The Himalayas, or Himalaya, is a mountain range in Asia separating the plains of the Indian subcontinent from the Tibetan Plateau.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Mount Everest"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain_range",

@@ -20,6 +20,13 @@
   "culture": null,
   "description": "The Scandinavian Mountains or the Scandes is a mountain range that runs through the Scandinavian Peninsula.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Galdhøpiggen"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain_range",

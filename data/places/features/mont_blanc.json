@@ -19,6 +19,13 @@
   "culture": null,
   "description": "Mont Blanc is a mountain in the Alps, rising 4,807.3 m (15,771.9 ft) above sea level, located right at the Franco-Italian border.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "ranges": [
+      "Alps"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",

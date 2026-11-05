@@ -18,6 +18,13 @@
   "culture": null,
   "description": "The Verkhoyansk Range is a mountain range in the Sakha Republic, Russia, near the settlement of Verkhoyansk, known for its frigid climate.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Mus-Khaya"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain_range",

@@ -19,6 +19,15 @@
   "culture": null,
   "description": "Baffin Bay, located between Baffin Island and the west coast of Greenland, is defined by the International Hydrographic Organization as a marginal sea of the Arctic Ocean.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Hudson Bay",
+      "Davis Strait",
+      "Northwest Passage",
+      "Lincoln Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

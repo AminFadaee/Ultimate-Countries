@@ -20,6 +20,13 @@
   "culture": null,
   "description": "The Strait of Gibraltar, also known as the Straits of Gibraltar, is a strait that connects the Atlantic Ocean to the Mediterranean Sea and separates Europe from Africa.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Mediterranean Sea",
+      "Atlantic Ocean"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

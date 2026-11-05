@@ -23,6 +23,15 @@
   "culture": null,
   "description": "The Arabian Sea is a region of sea in the northern Indian Ocean, bounded on the west by the Arabian Peninsula, Gulf of Aden and Guardafui Channel, on the northwest by Gulf of Oman and Iran, on the north by Pakistan, on the east by India, and on the southeast by the Laccadive Sea and the Maldives, and on the southwest by Somalia.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Indian Ocean",
+      "Laccadive Sea",
+      "Gulf of Aden",
+      "Gulf of Oman"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

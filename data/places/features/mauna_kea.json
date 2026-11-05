@@ -18,6 +18,10 @@
   "culture": null,
   "description": "Mauna Kea is a dormant shield volcano on the island of Hawaiʻi.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Volcano",

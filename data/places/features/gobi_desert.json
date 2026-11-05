@@ -19,6 +19,13 @@
   "culture": null,
   "description": "The Gobi Desert is a large, cold desert and grassland region in southern Mongolia and North China.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Bogd Khan Mountain"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Desert",

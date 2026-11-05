@@ -18,6 +18,10 @@
   "culture": null,
   "description": "Seljalandsfoss is a waterfall in Iceland.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Waterfall",

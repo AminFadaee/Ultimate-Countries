@@ -20,6 +20,13 @@
   "culture": null,
   "description": "The Atlas Mountains are a mountain range in the Maghreb in North Africa.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Jbel Toubkal"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain_range",

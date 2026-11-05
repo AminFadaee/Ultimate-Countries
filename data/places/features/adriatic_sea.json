@@ -24,6 +24,12 @@
   "culture": null,
   "description": "The Adriatic Sea is a body of water separating the Italian Peninsula from the Balkan Peninsula.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Ionian Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

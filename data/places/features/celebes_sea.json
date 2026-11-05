@@ -20,6 +20,14 @@
   "culture": null,
   "description": "The Celebes Sea or Sulawesi Sea of the western Pacific Ocean is bordered on the north by the Sulu Archipelago and Sulu Sea and Mindanao Island of the Philippines, on the east by the Sangihe Islands chain, on the south by Sulawesi's Minahasa Peninsula, and the west by northern Kalimantan in Indonesia.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Philippine Sea",
+      "Sulu Sea",
+      "Molucca Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

@@ -40,6 +40,13 @@
   "culture": null,
   "description": "The Mediterranean Sea is an intercontinental sea situated between Europe, Asia, and Africa.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Red Sea",
+      "North Atlantic Ocean"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

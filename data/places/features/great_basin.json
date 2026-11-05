@@ -18,6 +18,16 @@
   "culture": null,
   "description": "The Great Basin is the largest area of contiguous endorheic watersheds, those with no outlets to the ocean, in North America.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Humboldt",
+      "Pit"
+    ],
+    "waters": [],
+    "peaks": [
+      "Mount Whitney"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Basin",

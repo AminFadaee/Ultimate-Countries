@@ -25,6 +25,12 @@
   "culture": null,
   "description": "The Red Sea is a mediterranean sea lying between the Arabian Peninsula and Africa.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Mediterranean Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

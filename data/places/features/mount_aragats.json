@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Mount Aragats is an isolated four-peaked volcano massif in Armenia.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "ranges": [
+      "Lesser Caucasus"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",

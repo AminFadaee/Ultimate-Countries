@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Chimborazo is a stratovolcano in Ecuador and the Cordillera Occidental range of the Andes.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "ranges": [
+      "Andes"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Volcano",

@@ -20,18 +20,7 @@
   "description": "The Orinoco is one of the longest rivers in South America at 2,140 km (1,330 mi).",
   "native": null,
   "river": {
-    "source": {
-      "name": "Parima Mountains",
-      "qid": "Q1267492",
-      "kind": "highland",
-      "classes": [
-        "mountain range"
-      ],
-      "point": [
-        -64.25,
-        3.5
-      ]
-    },
+    "source": null,
     "mouth": {
       "name": "Atlantic Ocean",
       "qid": "Q97",
@@ -44,9 +33,7 @@
         0.0
       ]
     },
-    "linked_rivers": [
-      "Guaviare River"
-    ],
+    "linked_rivers": [],
     "tributaries": [
       "Apure River",
       "Arauca River",

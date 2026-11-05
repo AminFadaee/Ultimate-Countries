@@ -18,6 +18,10 @@
   "culture": null,
   "description": "Angel Falls is a waterfall in Venezuela.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Waterfall",

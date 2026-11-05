@@ -18,6 +18,13 @@
   "culture": null,
   "description": "The Central Siberian Plateau is a vast mountainous area in Siberia, one of the Great Russian Regions.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Mount Kamen"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Plateau",

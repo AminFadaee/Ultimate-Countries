@@ -21,6 +21,12 @@
   "culture": null,
   "description": "The Gulf of Aqaba or Gulf of Eilat is a large gulf at the northern tip of the Red Sea, southeast of the Sinai Peninsula, and west of the Arabian Peninsula.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Red Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

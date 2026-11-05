@@ -26,6 +26,18 @@
   "culture": null,
   "description": "The Arabian Peninsula, or simply Arabia, is a peninsula in West Asia.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Indian Ocean",
+      "Red Sea",
+      "Persian Gulf",
+      "Arabian Sea"
+    ],
+    "peaks": [
+      "Jabal an Nabi Shu'ayb"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Peninsula",

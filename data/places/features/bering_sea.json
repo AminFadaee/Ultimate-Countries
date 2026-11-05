@@ -19,6 +19,14 @@
   "culture": null,
   "description": "The Bering Sea is a marginal sea of the Northern Pacific Ocean.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Pacific Ocean",
+      "Gulf of Alaska",
+      "Chukchi Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

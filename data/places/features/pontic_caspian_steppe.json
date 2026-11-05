@@ -23,6 +23,13 @@
   "culture": null,
   "description": "The Pontic–Caspian steppe extends across Eastern Europe to Central Asia, formed by the Caspian and Pontic steppes.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Volga",
+      "Don"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Plain",

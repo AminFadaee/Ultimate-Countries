@@ -23,6 +23,15 @@
   "culture": null,
   "description": "The Coral Sea is a marginal sea of the South Pacific off the northeast coast of Australia, and classified as an interim Australian bioregion.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Pacific Ocean",
+      "Tasman Sea",
+      "Arafura Sea",
+      "Solomon Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

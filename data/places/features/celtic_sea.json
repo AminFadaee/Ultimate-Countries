@@ -20,6 +20,15 @@
   "culture": null,
   "description": "The Celtic Sea is the area of the Atlantic Ocean off the southern coast of Ireland bounded to the north by Saint George's Channel; other limits include the Bristol Channel, the English Channel, and the Bay of Biscay, as well as adjacent portions of Wales, Cornwall, parts of Devon and Brittany.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Atlantic Ocean",
+      "Bay of Biscay",
+      "Irish Sea",
+      "English Channel"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

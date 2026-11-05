@@ -19,6 +19,13 @@
   "culture": null,
   "description": "The Great Plains is a broad expanse of flatland in North America.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Missouri",
+      "South Saskatchewan"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Plain",

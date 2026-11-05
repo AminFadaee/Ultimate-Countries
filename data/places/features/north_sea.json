@@ -25,6 +25,12 @@
   "culture": null,
   "description": "The North Sea lies between Great Britain, Denmark, Norway, Germany, the Netherlands, Belgium, and France.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "English Channel"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

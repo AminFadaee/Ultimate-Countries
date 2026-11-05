@@ -18,6 +18,10 @@
   "culture": null,
   "description": "Mount Etna, or simply Etna, is an active stratovolcano on the east coast of Sicily, Italy, in the Metropolitan City of Catania, between the cities of Messina and Catania.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Volcano",

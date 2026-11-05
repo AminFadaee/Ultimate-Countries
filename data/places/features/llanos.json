@@ -19,6 +19,13 @@
   "culture": null,
   "description": "The Llanos is a vast tropical grassland plain situated to the east of the Andes in Colombia and Venezuela, in northwestern South America.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Meta",
+      "Apure"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Plain",

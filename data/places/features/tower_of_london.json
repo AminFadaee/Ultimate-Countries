@@ -18,6 +18,12 @@
   "culture": null,
   "description": "The Tower of London, officially His Majesty's Royal Palace and Fortress of the Tower of London, is a historic citadel and castle on the north bank of the River Thames in London, England.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "River Thames"
+    ],
+    "waters": []
+  },
   "world_heritage": true,
   "tags": [
     "Landmark",

@@ -18,6 +18,10 @@
   "culture": null,
   "description": "The Great Victoria Desert is a sparsely populated desert ecoregion and interim Australian bioregion in Western Australia and South Australia.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Desert",

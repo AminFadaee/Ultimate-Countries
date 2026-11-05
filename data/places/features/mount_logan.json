@@ -18,6 +18,10 @@
   "culture": null,
   "description": "Mount Logan is the highest mountain in Canada, and the second-highest peak in North America after Denali.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",

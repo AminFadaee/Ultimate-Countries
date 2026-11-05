@@ -24,6 +24,13 @@
   "culture": null,
   "description": "The Carpathian Mountains or Carpathians are a range of mountains forming an arc across Central and Southeast Europe.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Gerlachovský štít"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain_range",

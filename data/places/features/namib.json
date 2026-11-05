@@ -19,6 +19,13 @@
   "culture": null,
   "description": "The Namib is a coastal desert in Southern Africa.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Brandberg"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Desert",

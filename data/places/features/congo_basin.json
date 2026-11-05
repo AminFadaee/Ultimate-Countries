@@ -28,6 +28,15 @@
   "culture": null,
   "description": "The Congo Basin is the sedimentary basin of the Congo River.",
   "native": null,
+  "surroundings": {
+    "rivers": [
+      "Congo River"
+    ],
+    "waters": [],
+    "peaks": [
+      "Mount Karisimbi"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Basin",

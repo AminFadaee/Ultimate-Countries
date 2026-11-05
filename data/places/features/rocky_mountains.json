@@ -19,6 +19,13 @@
   "culture": null,
   "description": "The Rocky Mountains, also known as the Rockies, are a major mountain range and the largest mountain system in North America.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Mount Elbert"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain_range",

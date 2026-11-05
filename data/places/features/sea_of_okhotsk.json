@@ -19,6 +19,14 @@
   "culture": null,
   "description": "The Sea of Okhotsk is a marginal sea of the northwestern Pacific Ocean.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Pacific Ocean",
+      "Sea of Japan",
+      "La Pérouse Strait"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

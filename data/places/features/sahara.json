@@ -28,6 +28,13 @@
   "culture": null,
   "description": "The Sahara is a desert spanning North Africa.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Emi Koussi"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Desert",

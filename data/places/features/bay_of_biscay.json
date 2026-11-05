@@ -19,6 +19,12 @@
   "culture": null,
   "description": "The Bay of Biscay, also known as the Gulf of Biscay or the Gulf of Gascony, is a gulf of the northeast Atlantic Ocean located south of the Celtic Sea.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Atlantic Ocean"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

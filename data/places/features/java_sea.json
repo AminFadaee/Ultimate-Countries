@@ -18,6 +18,12 @@
   "culture": null,
   "description": "The Java Sea is an extensive shallow sea in Indonesia.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "South China Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

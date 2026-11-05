@@ -27,6 +27,15 @@
   "culture": null,
   "description": "The South China Sea is a marginal sea of the Western Pacific Ocean.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "East China Sea",
+      "Java Sea",
+      "Philippine Sea",
+      "Sulu Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

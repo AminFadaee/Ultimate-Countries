@@ -20,6 +20,13 @@
   "culture": null,
   "description": "The Gulf of Finland is the easternmost arm of the Baltic Sea.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Baltic Sea",
+      "Gulf of Bothnia"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

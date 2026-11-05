@@ -21,6 +21,10 @@
   "culture": null,
   "description": "The Libyan Desert is a geographical region filling the northeastern Sahara Desert, from eastern Libya to the Western Desert of Egypt and far northwestern Sudan approximately 1,300,000 km².",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Desert",

@@ -18,6 +18,10 @@
   "culture": null,
   "description": "The Atacama Desert is a desert plateau located on the Pacific coast of South America, in the north of Chile.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Desert",

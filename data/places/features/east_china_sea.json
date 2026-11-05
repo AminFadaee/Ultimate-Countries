@@ -21,6 +21,14 @@
   "culture": null,
   "description": "The East China Sea is a marginal sea of the Western Pacific Ocean, located directly offshore from East China.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "South China Sea",
+      "Sea of Japan",
+      "Yellow Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

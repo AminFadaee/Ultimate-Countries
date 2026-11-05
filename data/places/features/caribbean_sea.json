@@ -51,6 +51,13 @@
   "culture": null,
   "description": "The Caribbean Sea is a sea of the North Atlantic Ocean in the tropics of the Western Hemisphere, located south of the Gulf of Mexico and southwest of the Sargasso Sea.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Atlantic Ocean",
+      "Gulf of Mexico"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

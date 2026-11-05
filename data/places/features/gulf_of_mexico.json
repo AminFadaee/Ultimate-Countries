@@ -20,6 +20,14 @@
   "culture": null,
   "description": "The Gulf of Mexico is an oceanic basin and a marginal sea of the Atlantic Ocean, mostly surrounded by the North American continent.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Caribbean Sea",
+      "Florida Strait",
+      "Yucatán Channel"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

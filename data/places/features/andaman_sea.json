@@ -21,6 +21,14 @@
   "culture": null,
   "description": "The Andaman Sea is a marginal sea of the northeastern Indian Ocean bounded by the coastlines of Myanmar and Thailand along the Gulf of Martaban and the west side of the Malay Peninsula, and separated from the Bay of Bengal to its west by the Andaman Islands and the Nicobar Islands.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Indian Ocean",
+      "Bay of Bengal",
+      "Strait of Malacca"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

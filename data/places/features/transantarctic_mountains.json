@@ -16,6 +16,13 @@
   "culture": null,
   "description": "The Transantarctic Mountains comprise a mountain range of uplifted rock in Antarctica which extends, with some interruptions, across the continent from Cape Adare in northern Victoria Land to Coats Land.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Mount Kirkpatrick"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain_range",

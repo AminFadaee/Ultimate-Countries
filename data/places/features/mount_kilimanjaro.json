@@ -18,6 +18,10 @@
   "culture": null,
   "description": "Mount Kilimanjaro is a large dormant stratovolcano in Tanzania.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Volcano",

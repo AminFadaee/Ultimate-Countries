@@ -20,6 +20,15 @@
   "culture": null,
   "description": "The Barents Sea is a marginal sea of the Arctic Ocean, located off the northern coasts of Norway and Russia and divided between Norwegian and Russian territorial waters.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Arctic Ocean",
+      "Norwegian Sea",
+      "Greenland Sea",
+      "Kara Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

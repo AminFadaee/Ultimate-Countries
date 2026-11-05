@@ -20,6 +20,13 @@
   "culture": null,
   "description": "The Ligurian Sea is an arm of the Mediterranean Sea.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Mediterranean Sea",
+      "Tyrrhenian Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

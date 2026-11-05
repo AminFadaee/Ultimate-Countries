@@ -22,18 +22,7 @@
   "description": "The Brahmaputra is a trans-boundary river which flows through Southwestern China, Northeastern India, and Bangladesh.",
   "native": null,
   "river": {
-    "source": {
-      "name": "Chemayungdung glacier",
-      "qid": "",
-      "kind": "glacier",
-      "classes": [
-        "glacier"
-      ],
-      "point": [
-        82.13333333333334,
-        30.316666666666666
-      ]
-    },
+    "source": null,
     "mouth": {
       "name": "Ganges",
       "qid": "Q5089",

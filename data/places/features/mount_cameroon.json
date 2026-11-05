@@ -18,6 +18,10 @@
   "culture": null,
   "description": "Mount Cameroon is an active stratovolcano in the Southwest Region of Cameroon next to the city of Buea near the Gulf of Guinea.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Volcano",

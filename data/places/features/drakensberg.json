@@ -20,6 +20,13 @@
   "culture": null,
   "description": "The Drakensberg is the eastern portion of the Great Escarpment, which encloses the central Southern African plateau.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Thabana Ntlenyana"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain_range",

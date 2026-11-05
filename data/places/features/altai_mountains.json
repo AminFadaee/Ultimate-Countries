@@ -21,6 +21,13 @@
   "culture": null,
   "description": "The Altai Mountains are a mountain range in Central Asia, where Russia, China, Mongolia, and Kazakhstan converge, and where the rivers Irtysh and Ob have their headwaters.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "peaks": [
+      "Belukha Mountain"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain_range",

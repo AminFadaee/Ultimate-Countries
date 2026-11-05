@@ -18,6 +18,15 @@
   "culture": null,
   "description": "The Taymyr Peninsula is a peninsula in the Far North of Russia, in the Siberian Federal District, that forms the northernmost part of the mainland of Eurasia.",
   "native": null,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Kara Sea"
+    ],
+    "peaks": [
+      "Byrranga Mountains"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Peninsula",
