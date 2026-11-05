@@ -76,8 +76,6 @@ def one_per_extreme(features: list[Feature], tiers: dict[str, str], order: dict[
 
 
 class CountryPlacesCollector(PlacesCollector):
-    common_names = False
-
     def __init__(self, directory: pathlib.Path, session, language: str):
         super().__init__(PlacesPaths(directory), session, language)
 
@@ -167,6 +165,11 @@ class CountryPlacesCollector(PlacesCollector):
     def export(self, features: list[Feature], slugs: dict[str, str]) -> int:
         return self._export(features, slugs)
 
+    def _complete(self, documents: dict[str, dict]) -> None:
+        found = self.wikidata.articles({content["qid"] for content in documents.values()}, f"{self.language}wiki")
+        for slug, content in documents.items():
+            documents[slug] = with_native_article(content, found.get(content["qid"]))
+
     def redraw_for(self, country: dict, code: str, options: PlacesOptions) -> None:
         self.country, self.code = country, code
         self.redraw(options)
@@ -183,6 +186,16 @@ class CountryPlacesCollector(PlacesCollector):
         resolve_shapes(self.wikidata, features)
         complete_rivers(self.wikidata, [feature for feature in features if feature.kind is Kind.RIVER], {qid: found.length_km for qid, found in facts.items()})
         return {feature.key: feature.geometry for feature in features}
+
+
+def with_native_article(content: dict, url: str | None) -> dict:
+    ordered = {key: value for key, value in content.items() if key != "native_wikipedia"}
+    placed = {}
+    for key, value in ordered.items():
+        placed[key] = value
+        if key == "wikipedia":
+            placed["native_wikipedia"] = url
+    return placed
 
 
 def read_documents(directory: pathlib.Path) -> list[dict]:

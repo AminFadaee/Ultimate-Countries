@@ -15,6 +15,8 @@ from geography.sources.http import TIMEOUT
 
 FLAG_RANKS = ("PreferredRank", "NormalRank", "DeprecatedRank")
 SPARQL_URL = "https://query.wikidata.org/sparql"
+API_URL = "https://www.wikidata.org/w/api.php"
+ENTITY_BATCH = 50
 WIKIPEDIA_API_URL = "https://en.wikipedia.org/w/api.php"
 TITLE_BATCH = 50
 DETAIL_BATCH = 300
@@ -466,6 +468,17 @@ class Wikidata:
               }}
             }} ORDER BY DESC(?links)""")
         return list(dict.fromkeys(qid_of(row["city"]) for row in rows))
+
+    def articles(self, qids: set[str], site: str) -> dict[str, str]:
+        found = {}
+        for batch in itertools.batched(sorted(qid for qid in qids if qid), ENTITY_BATCH):
+            response = self.session.get(API_URL, timeout=TIMEOUT, params={
+                "action": "wbgetentities", "ids": "|".join(batch), "props": "sitelinks/urls", "sitefilter": site, "format": "json"})
+            response.raise_for_status()
+            for qid, entity in response.json()["entities"].items():
+                if site in entity.get("sitelinks", {}):
+                    found[qid] = entity["sitelinks"][site]["url"]
+        return found
 
     def _select(self, query: str) -> list[dict[str, str]]:
         if self.cache and (rows := self.cache.get(query)) is not None:

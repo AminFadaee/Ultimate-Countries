@@ -95,7 +95,6 @@ class PlacesOptions:
 
 class PlacesCollector:
     country_qid: str | None = None
-    common_names: bool = True
 
     def __init__(self, paths: PlacesPaths, session: requests.Session, language: str | None = None):
         self.paths = paths
@@ -147,14 +146,16 @@ class PlacesCollector:
             slugs[content["key"]] = slug
         self._draw(features, slugs, options)
         written = {slugs[feature.key]: redrawn(documents[slugs[feature.key]], feature) for feature in features}
-        if self.common_names:
-            with_common_names(written)
+        self._complete(written)
         for slug, content in written.items():
             path = self.paths.features / f"{slug}.json"
             text = json.dumps(content, ensure_ascii=False, indent=2) + "\n"
             if path.read_text() != text:
                 path.write_text(text)
         logger.info("Redrew the maps of %d places in %s", len(features), self.paths.features)
+
+    def _complete(self, documents: dict[str, dict]) -> None:
+        with_common_names(documents)
 
     def _draw(self, features: list[Feature], slugs: dict[str, str], options: PlacesOptions) -> None:
         self._render_maps(features, slugs, options)
@@ -341,8 +342,7 @@ class PlacesCollector:
     def _export(self, features: list[Feature], slugs: dict[str, str]) -> int:
         self.paths.features.mkdir(parents=True, exist_ok=True)
         documents = {slugs[feature.key]: document(feature) for feature in features}
-        if self.common_names:
-            with_common_names(documents)
+        self._complete(documents)
         referenced = {self.paths.features / f"{slug}.json" for slug in documents}
         referenced |= {self.paths.root / content["map"] for content in documents.values() if content["map"]}
         referenced |= {answer_path(self.paths.root / content["map"]) for content in documents.values() if content["map"]}

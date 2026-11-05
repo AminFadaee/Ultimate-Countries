@@ -9,8 +9,10 @@ from geography.countrydeck.deck import (
     neighbour_templates,
     province_templates,
 )
+from geography.countrydeck.places import with_native_article
 from geography.deck import CITY_TEMPLATES, COUNTRY_TEMPLATES, links
 from geography.features.deck import TEMPLATES, search_query
+from geography.sources.wikidata import Wikidata
 from tests.conftest import COUNTRY_DECKS
 
 TEMPLATE_SETS = {
@@ -55,3 +57,17 @@ def test_a_place_in_several_countries_is_searched_by_name_alone():
 
 def test_a_place_without_a_wikidata_item_links_no_wikipedia():
     assert 'data-qid=""' in links("Congo Rainforest", None)
+
+
+def test_a_country_deck_place_without_a_native_article_gets_no_native_link():
+    content = with_native_article({"name": "Niavaran Complex", "wikipedia": "https://en.wikipedia.org/wiki/Niavaran_Complex", "fame": 3}, None)
+    assert list(content) == ["name", "wikipedia", "native_wikipedia", "fame"] and content["native_wikipedia"] is None
+    assert "data-native" not in links("Niavaran Complex, Iran", "Q1984633", "fa" if content["native_wikipedia"] else None)
+
+
+def test_native_articles_are_read_from_the_wikidata_sitelinks():
+    class Answering:
+        def get(self, url, timeout, params):
+            entities = {"Q1": {"sitelinks": {"fawiki": {"url": "https://fa.wikipedia.org/wiki/x"}}}, "Q2": {"sitelinks": {}}}
+            return type("Response", (), {"raise_for_status": lambda self: None, "json": lambda self: {"entities": entities}})()
+    assert Wikidata(Answering()).articles({"Q1", "Q2"}, "fawiki") == {"Q1": "https://fa.wikipedia.org/wiki/x"}

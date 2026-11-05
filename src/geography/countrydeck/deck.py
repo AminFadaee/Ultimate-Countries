@@ -196,8 +196,8 @@ class CountryDeckBuilder:
             "MapAnswer": self.media.image(f"{root}/{answer_path(pathlib.Path(document['map']))}", "map") if document["map"] else "",
             "Photo": self.media.image(f"{root}/{document['photo']['file']}", "photo") if photo_card else "",
             "Hint": "" if photo_card else escaped(masked(document)),
-            "Details": details_html(document) + links(f"{escaped(document['name'])}, {escaped(self.meta['name'])}", document["qid"], self.meta["language"],
-                                                      english=bool(document["wikipedia"])),
+            "Details": details_html(document) + links(f"{escaped(document['name'])}, {escaped(self.meta['name'])}", document["qid"],
+                                                      self.meta["language"] if document.get("native_wikipedia") else None, english=bool(document["wikipedia"])),
         }
         ords = [ord for ord, template in enumerate(place_templates()) if values[template.requires]]
         if not ords:
