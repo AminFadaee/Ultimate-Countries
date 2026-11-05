@@ -33,5 +33,6 @@
   "map": "places/maps/texel.png",
   "photo": null,
   "wikipedia": null,
+  "native_wikipedia": "https://nl.wikipedia.org/wiki/Texel_(eiland)",
   "fame": 4
 }
