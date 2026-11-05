@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Sirri Island is an Iranian island in the Persian Gulf, part of Abumusa County, Hormozgan Province.",
   "native": "جزیره سیری",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Persian Gulf"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

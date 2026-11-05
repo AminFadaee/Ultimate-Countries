@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Mount Damavand is a dormant stratovolcano in Iran.",
   "native": "قله دماوند",
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "ranges": [
+      "Alborz"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Volcano",

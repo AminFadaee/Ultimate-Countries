@@ -18,6 +18,10 @@
   "culture": null,
   "description": "The Great Salt Desert or Kavir Desert is a large desert lying in the middle of the Iranian Plateau.",
   "native": "دشت کویر",
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Desert",

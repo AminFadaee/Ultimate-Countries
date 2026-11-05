@@ -18,6 +18,10 @@
   "culture": null,
   "description": "Bazman is a dormant stratovolcano in a remote desert region of Sistan and Baluchestan Province in southeastern Iran.",
   "native": "کوه بزمان",
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",

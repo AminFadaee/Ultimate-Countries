@@ -18,6 +18,10 @@
   "culture": null,
   "description": "Sabalan or Savalan is an inactive stratovolcano in northwestern Iran located in Ardabil province.",
   "native": "سبلان",
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",

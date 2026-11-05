@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Lavan Island is an Iranian island in the Persian Gulf.",
   "native": "جزیره لاوان",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Persian Gulf"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

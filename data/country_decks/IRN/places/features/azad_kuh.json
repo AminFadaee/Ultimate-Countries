@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Azad Kooh is one of the highest peaks in the central Alborz Range in Mazandaran province in northern Iran.",
   "native": "آزادکوه",
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "ranges": [
+      "Alborz"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",

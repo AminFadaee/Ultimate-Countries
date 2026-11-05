@@ -18,6 +18,10 @@
   "culture": null,
   "description": "Arasbaran, also known as Qaradagh, is a large mountainous area stretching from the Qūshā Dāgh massif, south of Ahar, to the Aras River in East Azerbaijan province of Iran.",
   "native": "ارسباران",
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",

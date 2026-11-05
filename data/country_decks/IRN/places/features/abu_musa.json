@@ -19,6 +19,12 @@
   "description": "Abu Musa is a 12.8-square-kilometre (4.9 sq mi) island in the eastern Persian Gulf, near the entrance to the Strait of Hormuz.",
   "native": "جزیره بوموسی",
   "disputed": true,
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Persian Gulf"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

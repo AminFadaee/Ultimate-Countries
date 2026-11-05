@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Miyānkāle peninsula is a long, narrow peninsula in Behshahr County of Māzandarān Province in the north of Iran situated in the extreme south-eastern part of the Caspian Sea.",
   "native": "میانکاله",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Caspian Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Peninsula",

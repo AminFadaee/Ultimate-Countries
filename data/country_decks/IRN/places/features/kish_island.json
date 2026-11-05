@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Kish is a 91.5-square-kilometre (35.3 mi2) resort island in Bandar Lengeh County, Hormozgan Province, off the southern coast of Iran in the Persian Gulf.",
   "native": "جزیره کیش",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Persian Gulf"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

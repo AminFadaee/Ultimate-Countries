@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Zard-Kuh, also Zard Kuh-e Bakhtiari, is a sub-range in the central Zagros Mountains, Iran.",
   "native": "زردکوه",
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "ranges": [
+      "Zagros Mountains"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",

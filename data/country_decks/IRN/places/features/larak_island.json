@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Larak Island is a small Iranian island located off the coast of Bandar Abbas, Iran, east of Qeshm Island and south of Hormuz Island.",
   "native": "جزیره لارک",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Persian Gulf"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

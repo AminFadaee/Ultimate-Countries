@@ -20,15 +20,15 @@
   "native": "هری‌رود",
   "river": {
     "source": {
-      "name": "Koh-e Baba",
-      "qid": "Q2886920",
-      "kind": "highland",
+      "name": "La‘l wa Sar Jangal District",
+      "qid": "Q2402318",
+      "kind": "unknown",
       "classes": [
-        "mountain range"
+        "district of afghanistan"
       ],
       "point": [
-        67.62416667,
-        34.64527778
+        66.669,
+        34.627
       ]
     },
     "mouth": {

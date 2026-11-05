@@ -19,6 +19,10 @@
   "description": "Lut Desert is a desert with both extensive salt flats and dunes located in the provinces of Kerman and Sistan-Baluchestan, Iran.",
   "native": "بیابان لوت",
   "natural_site": true,
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": true,
   "tags": [
     "Desert",

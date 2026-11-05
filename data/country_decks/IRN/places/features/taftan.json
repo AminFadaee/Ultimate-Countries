@@ -18,6 +18,10 @@
   "culture": null,
   "description": "Taftan is an active stratovolcano in south-eastern Iran in the Sistan and Baluchestan province.",
   "native": "کوه تفتان",
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Volcano",

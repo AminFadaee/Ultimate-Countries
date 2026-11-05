@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Qeshm is an Iranian island in the Strait of Hormuz of the Persian Gulf, with an area of about 1,500 square kilometres (580 sq mi).",
   "native": "جزیره قشم",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Persian Gulf"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Kharg Island, also spelled Khark Island and often referred to as the \"Forbidden Island\", is a continental island of Iran in the Persian Gulf.",
   "native": "جزیره خارک",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Persian Gulf"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

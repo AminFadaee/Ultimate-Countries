@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Hormuz Island, also spelled Hormoz, Ormoz, Ormuz or Ormus, is an Iranian island in the Persian Gulf.",
   "native": "جزیره هرمز",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Persian Gulf",
+      "Strait of Hormuz"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

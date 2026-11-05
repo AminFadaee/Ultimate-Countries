@@ -18,6 +18,12 @@
   "culture": null,
   "description": "The Strait of Hormuz is a waterway between the Persian Gulf and the Gulf of Oman.",
   "native": "تنگه هرمز",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Gulf of Oman"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",
