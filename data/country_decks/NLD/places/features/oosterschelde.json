@@ -18,6 +18,12 @@
   "culture": null,
   "description": "The Eastern Scheldt is a former estuary in the province of Zeeland, Netherlands, between Schouwen-Duiveland and Tholen on the north and Noord-Beveland and Zuid-Beveland on the south.",
   "native": "Oosterschelde",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "North Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Noordoostpolder is a polder and municipality in the Flevoland province in the central Netherlands.",
   "native": "Noordoostpolder",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "IJsselmeer"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Polder",

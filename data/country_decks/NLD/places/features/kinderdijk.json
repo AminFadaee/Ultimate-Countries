@@ -19,6 +19,12 @@
   "description": "Kinderdijk is a town in the municipality of Molenlanden, in the province of South Holland, Netherlands.",
   "native": "Kinderdijk",
   "group": "Water_defence",
+  "surroundings": {
+    "rivers": [
+      "Lek"
+    ],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Landmark",

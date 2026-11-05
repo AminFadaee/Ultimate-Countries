@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Walcheren is a region and former island in the Dutch province of Zeeland at the mouth of the Scheldt estuary.",
   "native": "Walcheren",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "North Sea",
+      "Western Scheldt"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

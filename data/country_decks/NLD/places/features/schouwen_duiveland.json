@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Schouwen-Duiveland is a municipality and an island in the southwestern Netherlands province of Zeeland.",
   "native": "Schouwen-Duiveland",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "North Sea",
+      "Oosterschelde"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

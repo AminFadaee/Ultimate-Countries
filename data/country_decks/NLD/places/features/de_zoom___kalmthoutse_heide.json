@@ -18,6 +18,13 @@
   "culture": null,
   "description": "De Zoom–Kalmthoutse Heide Cross-Border Park is a cross-border park on the Belgian–Dutch border.",
   "native": "Grenspark De Zoom-Kalmthoutse Heide",
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "towns": [
+      "Woensdrecht"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "National_park",

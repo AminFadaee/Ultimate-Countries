@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Wieringen is located in the province of North Holland in the Netherlands.",
   "native": "Wieringen",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "Wadden Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

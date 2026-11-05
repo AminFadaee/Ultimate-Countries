@@ -18,6 +18,12 @@
   "culture": null,
   "description": "The Dollart or Dollard is a bay in the south‑eastern Wadden Sea at the Germany–Netherlands border, west of the Ems estuary.",
   "native": "Dollard",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "North Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

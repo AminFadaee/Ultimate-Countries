@@ -18,6 +18,13 @@
   "culture": null,
   "description": null,
   "native": "Texel",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "North Sea",
+      "Wadden Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

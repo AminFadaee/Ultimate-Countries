@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Terschelling is a municipality and an island in the northern Netherlands, one of the West Frisian Islands.",
   "native": "Terschelling",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "North Sea",
+      "Wadden Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

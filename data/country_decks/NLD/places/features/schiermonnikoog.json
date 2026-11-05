@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Schiermonnikoog is an island, a municipality and national park in the Northern Netherlands.",
   "native": "Schiermonnikoog",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "North Sea",
+      "Wadden Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

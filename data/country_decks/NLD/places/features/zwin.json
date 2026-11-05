@@ -18,6 +18,12 @@
   "culture": null,
   "description": "The Zwin is a nature reserve at the North Sea coast, on the Belgian–Dutch border.",
   "native": "Zwin",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "North Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Sea",

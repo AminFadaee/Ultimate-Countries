@@ -18,6 +18,13 @@
   "culture": null,
   "description": "Vlieland is a municipality and island in the northern Netherlands.",
   "native": "Vlieland",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "North Sea",
+      "Wadden Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

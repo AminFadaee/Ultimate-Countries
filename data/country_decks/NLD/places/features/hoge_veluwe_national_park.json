@@ -18,6 +18,13 @@
   "culture": null,
   "description": "De Hoge Veluwe National Park is a Dutch national park in the province of Gelderland near the cities of Ede, Wageningen, Arnhem and Apeldoorn.",
   "native": "Nationaal Park De Hoge Veluwe",
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "towns": [
+      "Ede"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "National_park",

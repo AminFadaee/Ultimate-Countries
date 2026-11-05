@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Marken is a village in the municipality of Waterland in the province of North Holland, Netherlands.",
   "native": "Marken",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "IJsselmeer"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Peninsula",

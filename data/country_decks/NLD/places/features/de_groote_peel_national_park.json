@@ -18,6 +18,13 @@
   "culture": null,
   "description": "De Groote Peel National Park is a national park in De Peel, a region in the southeast of the Netherlands on the border between the provinces of Limburg and North Brabant.",
   "native": "Nationaal Park De Groote Peel",
+  "surroundings": {
+    "rivers": [],
+    "waters": [],
+    "towns": [
+      "Asten"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "National_park",

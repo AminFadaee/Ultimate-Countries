@@ -18,6 +18,12 @@
   "culture": null,
   "description": "Goeree-Overflakkee is a delta island and an administrative municipality in the province of South Holland, Netherlands, with a population of 50,589.",
   "native": "Goeree-Overflakkee",
+  "surroundings": {
+    "rivers": [],
+    "waters": [
+      "North Sea"
+    ]
+  },
   "world_heritage": false,
   "tags": [
     "Island",

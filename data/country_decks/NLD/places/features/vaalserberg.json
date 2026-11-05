@@ -18,6 +18,10 @@
   "culture": null,
   "description": "The Vaalserberg is a hill with a height of 322.4 metres (1,058 ft) above NAP that is the highest point in the European part of the Netherlands.",
   "native": "Vaalserberg",
+  "surroundings": {
+    "rivers": [],
+    "waters": []
+  },
   "world_heritage": false,
   "tags": [
     "Mountain",
