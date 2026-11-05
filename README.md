@@ -39,7 +39,11 @@ A card is only created when its data exists, and a fact that is missing is simpl
 
 The maps of thirty-five small island countries and territories are framed by hand, in the list in `island_frames.py`, because a rule that helps Tuvalu would spoil Greece. Each shows a red circle around its islands. Most add a magnifier, and scattered groups get one magnifier per island group (the Caribbean Netherlands has three), each enlarging a small cluster so the islands read as shapes. Islands are drawn no smaller than a minimum size in the magnifier, so a speck such as Redonda stays a speck next to Antigua and Barbuda. Many zoom out to show a larger neighbour (India for the Maldives, Madagascar for the Comoros, Australia for Tuvalu, Tonga and Samoa). `uv run geography country-maps` redraws those maps, or the countries whose codes you pass.
 
-Tap or click a country or city map to zoom in on that spot; drag to look around, and tap again to close.
+Tap or click a map to zoom in on that spot; drag to look around, and tap again to close. This works on every map in all decks.
+
+The back of every card in all decks ends with a row of small links that open in your browser: the Wikipedia article, a Google
+Images search, a YouTube search and the place on Google Maps. The country decks add the article in the country's language
+(Dutch or Persian). Searches name the country too ("Ede, Netherlands"), so they find the right place.
 
 <p>
   <img src="docs/samples/countries-capital.webp" width="49%" alt="Capital card for France">
@@ -93,7 +97,8 @@ you import an update.
 ## Ultimate Places
 
 A second deck about the world's geography beyond borders: 386 places, each drawn on a map with its real outline,
-coloured by kind (snowy white for mountains, orange for deserts, blue for water, green for lowlands and so on).
+coloured by kind (snowy white for mountains, orange for deserts, blue for water, green for lowlands and so on). Tap a map
+to zoom in, as in Ultimate Countries.
 
 **Get the deck:** [on AnkiWeb](https://ankiweb.net/shared/info/216393289), or download `ultimate_places.apkg` from the
 [latest release](https://github.com/AminFadaee/Ultimate-Countries/releases/latest).
@@ -106,8 +111,10 @@ coloured by kind (snowy white for mountains, orange for deserts, blue for water,
 | a photo (mountains, volcanoes, waterfalls, canyons, reefs, rainforests, canals and landmarks) | its name, kind, map and the same details |
 
 <p>
-  <img src="docs/samples/places-map.webp" width="49%" alt="Map card for Mount Fuji">
+  <img src="docs/samples/places-map.webp" width="49%" alt="Map card for Mount Everest, with the Himalayas around it">
   <img src="docs/samples/places-photo.webp" width="49%" alt="Photo card for the Taj Mahal">
+  <img src="docs/samples/places-river.webp" width="49%" alt="River card for the Yellow River, from the Bayan Har Mountains to the Bohai Sea">
+  <img src="docs/samples/places-lake.webp" width="49%" alt="Lake card for Lake Victoria, with the rivers flowing in and out">
 </p>
 
 ### Everything in one deck
@@ -145,9 +152,10 @@ A river map shows the river as a blue line with small arrows for the direction o
 - **On the way.** Waterfalls, dams, gorges and lakes with at least 100 Wikipedia language editions that lie within half a degree of the river (Victoria Falls on the Zambezi, the Aswan Dam on the Nile, the Grand Canyon on the Colorado).
 - **Sources of the facts.** Wikidata gives the source, mouth, tributaries and places; when it has no source, or names an area such as a basin as the mouth, the river's English Wikipedia infobox is used instead. A source field that links something wins over a location field, and a source written as a name followed by a linked place ("Chemayungdung glacier, Manasarovar" for the Brahmaputra) is that name, typed by the words in it. In a country deck, when neither names a source, the infobox in the deck's language is read too (the Atrek's Hezar Masjed Mountains come from Persian Wikipedia, the Vechte's Darfeld from Dutch), and a source more than 100 km from the English infobox's coordinates is dropped. When Wikidata lists several mouths, the preferred one wins, then the one nearest the river's ends. The line comes from Natural Earth, or OpenStreetMap where that is clearly longer. What each river map shows is recorded in the `river` field of its file in `data/places/features`.
 
-### Lake, canal, waterfall and canyon maps
+### Surroundings on place maps
 
-These maps show what the place connects to, drawn in thin grey so they never look like a river card:
+Most place maps show what lies around the place. Rivers are thin blue lines with italic names and no flow arrows, so they
+never look like a river card:
 
 - **Lakes:** the river that flows out first, then the best-known rivers that flow in, up to four in all. The rivers stop at the
   shore and are drawn inside the magnifier too.
@@ -156,9 +164,27 @@ These maps show what the place connects to, drawn in thin grey so they never loo
   lies in open water (the Saronic Gulf), and a name that does not fit on the map goes inside the magnifier.
 - **Waterfalls and canyons:** the river they lie on, with a waterfall or gorge picture inside a large magnifier marker or just
   below a small one. A waterfall with no river on Wikidata takes the nearest Natural Earth river within a few kilometres.
-- **Sources of the facts.** Wikidata's inflow, outflow, "connects with", mouth, source and body-of-water statements; lines and
-  outlines from Natural Earth, or OpenStreetMap where Natural Earth has none. What each map shows is recorded in the
-  `surroundings` field of its file.
+- **Mountains and volcanoes:** the range they belong to, shaded with a dashed edge and a name chip (the Himalayas for Everest),
+  and a mountain picture on the marker. When Natural Earth has no outline for the range Wikidata names, the Natural Earth range
+  around the mountain is used only if Wikidata places the named range inside it (the Mont Blanc massif is in the Alps), and a
+  range outline that stops short of the mountain is left out.
+- **Mountain ranges, plateaus, deserts, peninsulas and basins:** their highest point, with a mountain picture and its name
+  (Mont Blanc in the Alps, Aconcagua in the Andes).
+- **Peninsulas, isthmuses, islands and reefs:** the seas around them, named in the water. Waters with fewer than 20 Wikipedia
+  articles are left out; when Wikidata lists none, the Natural Earth waters that touch the place are used, best known first.
+- **Seas:** the seas and oceans they connect to, by their own outline. When Wikidata lists none that can be drawn, the open
+  Natural Earth waters that border the sea are used instead (not lagoons or lakes). A name only goes in a part of that water
+  that borders the sea on the card.
+- **Deltas, basins, valleys, plains, rainforests and wetlands:** up to two rivers crossing them, drawn over the area. Deserts
+  and wetlands add dune or reed pictures where there is room away from the rivers.
+- **Landmarks:** the river they stand on (the Yamuna at the Taj Mahal). Their town is not shown, as it would give the answer
+  away.
+- **National parks:** the nearest town, found by walking up Wikidata's "located in" statements to a settlement.
+- **Polders:** the lakes and seas they border.
+- **Sources of the facts.** Wikidata's inflow, outflow, "connects with", mouth, source, body-of-water, mountain-range,
+  highest-point and "located in" statements; lines and outlines from Natural Earth, or OpenStreetMap where Natural Earth has
+  none. What each map shows is recorded in the `surroundings` field of its file. Places with nothing to show, such as a plateau
+  with no highest point on Wikidata, keep a plain map. World-view maps (continents, oceans) stay plain.
 
 Countries are computed from the shapes: the countries that hold a share of an area, border a sea or lake, contain a point or are
 crossed by a line or river. A country that Wikidata names for a place is added only if it lies within 50 km of it. Continents come from the Natural Earth continent shapes, so Siberia is in Asia and Martinique in the Americas. Facts (heights, lengths, areas) come from Wikidata, converted to metric; build dates and cultures
@@ -176,6 +202,13 @@ place that is also in Ultimate Places is tagged `Also_in_Places`, so you can sus
 | City | the map, with the other cities and the neighbouring countries named → city; city → province (not asked for provincial centres) |
 | Neighbour | the map, anchored on the country → neighbour, with its capital, flag and facts on the back |
 | Place | the map or the photo → name, as in Ultimate Places |
+
+<p>
+  <img src="docs/samples/netherlands-province.webp" width="49%" alt="Province card for Utrecht">
+  <img src="docs/samples/netherlands-place.webp" width="49%" alt="Place card for Terschelling, with the North Sea and the Wadden Sea">
+  <img src="docs/samples/iran-city.webp" width="49%" alt="City card for Isfahan">
+  <img src="docs/samples/iran-river.webp" width="49%" alt="River card for the Sefid Rud">
+</p>
 
 Every name is also shown in the country's own language: the first official language on Wikidata, or the one you pass with
 `--language`. Where a voice is configured for that language (Dutch and Persian), a ▶ button next to the native name speaks it;
@@ -243,7 +276,7 @@ uv run geography places       # collect places, photos and maps into data/places
 uv run geography places-deck  # build build/ultimate_places.apkg
 uv run geography country IRN       # collect a country's provinces, cities, neighbours and places, and draw its maps
 uv run geography country-deck IRN  # build build/ultimate_iran_geography.apkg
-uv run geography samples      # render the sample cards in docs/samples/ from the built decks
+uv run geography samples      # render the sample cards in docs/samples/ from the built decks, in night mode
 ```
 
 The first `collect` downloads several hundred MB of source data and renders about 620 maps, which takes a few hours.
@@ -258,6 +291,10 @@ Useful options:
 - `collect --workers N` sets the number of parallel map renderers (default 4)
 - `check --details` lists every failure and anomaly
 - `places --rerender-maps` redraws every place map that has changed, using the same cache
+- `places --maps-only` and `country IRN --maps-only` skip collecting: they reuse the saved place files and the place
+  outlines kept in `src/geography/cache/place_shapes`, redo only the river and surroundings research and draw the missing
+  maps (every changed one with `--rerender-maps`). Use them after changing drawing or surroundings code; they take minutes,
+  where a full `places` run takes about an hour. Delete a map file to have it redrawn
 
 `place` renders a map for any single place, independent of the deck:
 
