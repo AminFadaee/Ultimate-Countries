@@ -38,6 +38,7 @@ from geography.deck import (
     face,
     image,
     links,
+    native_languages_script,
     stable_id,
 )
 from geography.features.deck import (
@@ -62,6 +63,7 @@ CENTRE_LINE = '{{#CentreNative}}<div class="subtitle">{{CentreNative}}{{CentreAu
 NATIVE_LINE = '{{#Native}}<div class="subtitle">{{Native}}{{NativeAudio}}</div>{{/Native}}'
 AUDIO_CSS = ".speak { cursor: pointer; margin-left: 10px; font-size: 0.8em; opacity: 0.7; } .speak:hover { opacity: 1; } audio { display: none; }\n"
 KIND_CONTEXT = "{{Country}} · {{Kind}}"
+COUNTRY_FIELD = "{{Country}}"
 
 PROVINCE_FIELDS = ("Id", "Name", "Native", "NativeAudio", "Centre", "CentreNative", "CentreAudio", "Map", "MapAnswer", "Population", "Area", "Country", "Kind")
 CITY_FIELDS = ("Id", "City", "Native", "NativeAudio", "Province", "ProvinceNative", "ProvinceAudio", "Map", "MapAnswer", "Population", "Country", "Kind", "IsCentre")
@@ -74,26 +76,31 @@ CITY_CHIPS = '<div class="facts">' + chip("Province", "Province") + chip("Popula
 NEIGHBOUR_CHIPS = '<div class="facts">' + chip("Capital", "Capital") + "".join(chip(fact.field, fact.label) for fact in FACTS) + "</div>"
 
 
-def province_templates(native: str | None = None) -> tuple[Template, ...]:
+def native_languages(decks_dir: pathlib.Path = COUNTRY_DECKS_DIR) -> dict[str, str]:
+    metas = (json.loads(path.read_text()) for path in sorted(decks_dir.glob("*/meta.json")))
+    return {meta["name"]: meta["language"] for meta in metas}
+
+
+def province_templates() -> tuple[Template, ...]:
     map_front = face(UNKNOWN_ENTITY, "Province", image("Map", "map"))
     map_back = face(entity("{{Name}}" + NATIVE_LINE, answered=True), "Province", image("MapAnswer", "map")) + (
         f'<div class="context">{KIND_CONTEXT}</div>{PROVINCE_CHIPS}'
     )
     centre = ask_attribute("Centre", "Centre", info_field="CentreNative", subject="{{Name}}" + NATIVE_LINE, context=KIND_CONTEXT, facts=PROVINCE_CHIPS, info_suffix="{{CentreAudio}}")
     reverse = ask_attribute("Province", "Name", info_field="Native", subject="{{Centre}}" + CENTRE_LINE, context=KIND_CONTEXT, facts=PROVINCE_CHIPS, info_suffix="{{NativeAudio}}")
-    return tuple(template.with_links("{{Name}}, {{Country}}", native) for template in (
+    return tuple(template.with_links("{{Name}}, {{Country}}", COUNTRY_FIELD) for template in (
         Template("Map", "Map", conditional("Map", map_front), map_back),
         Template("Centre", "Centre", conditional("Centre", centre[0]), centre[1]),
         Template("Province of", "Centre", conditional("Centre", reverse[0]), reverse[1]),
     ))
 
 
-def city_templates(native: str | None = None) -> tuple[Template, ...]:
+def city_templates() -> tuple[Template, ...]:
     subject = "{{City}}" + NATIVE_LINE
     front = face(UNKNOWN_ENTITY, "City", image("Map", "map"))
     back = face(entity(subject, answered=True), "City", image("MapAnswer", "map")) + f'<div class="context">{KIND_CONTEXT}</div>{CITY_CHIPS}'
     province = ask_attribute("Province", "Province", info_field="ProvinceNative", subject=subject, context=KIND_CONTEXT, facts=CITY_CHIPS, info_suffix="{{ProvinceAudio}}")
-    return tuple(template.with_links("{{City}}, {{Country}}", native) for template in (
+    return tuple(template.with_links("{{City}}, {{Country}}", COUNTRY_FIELD) for template in (
         Template("Map", "Map", conditional("Map", front), back),
         Template("Province", "City", f"{{{{^IsCentre}}}}{province[0]}{{{{/IsCentre}}}}", province[1]),
     ))
@@ -112,10 +119,10 @@ def place_templates() -> tuple[Template, ...]:
     )
 
 
-def neighbour_templates(native: str | None = None) -> tuple[Template, ...]:
+def neighbour_templates() -> tuple[Template, ...]:
     front = face(UNKNOWN_ENTITY, "Neighbour", image("Map", "map"))
     back = face(entity(COUNTRY_NAME, answered=True), "Neighbour", image("MapAnswer", "map")) + f'<div class="context">{KIND_CONTEXT}</div>{NEIGHBOUR_CHIPS}'
-    return (Template("Map", "Map", conditional("Map", front), back).with_links("{{Name}}", native),)
+    return (Template("Map", "Map", conditional("Map", front), back).with_links("{{Name}}", COUNTRY_FIELD),)
 
 
 def tag(prefix: str, *parts: str) -> str:
@@ -141,11 +148,10 @@ class CountryDeckBuilder:
         self.prefix = meta["alpha_2"].upper()
         self.media = MediaLibrary(data_dir, build_dir / "media" / meta["code"].lower(), f"nd-{meta['code'].lower()}", tone_photos)
         css = CSS + FACTS_CSS + MAP_ZOOM_CSS + LINKS_CSS + AUDIO_CSS
-        native = meta["language"]
         self.voice = load_manifest(COUNTRY_DECKS_DIR / meta["code"])
-        self.province_model = self._model(PROVINCE_MODEL_ID, "province", PROVINCE_FIELDS, province_templates(native), css)
-        self.neighbour_model = self._model(NEIGHBOUR_MODEL_ID, "neighbour", NEIGHBOUR_FIELDS, neighbour_templates(native), css)
-        self.city_model = self._model(CITY_MODEL_ID, "city", CITY_FIELDS, city_templates(native), css)
+        self.province_model = self._model(PROVINCE_MODEL_ID, "province", PROVINCE_FIELDS, province_templates(), css)
+        self.neighbour_model = self._model(NEIGHBOUR_MODEL_ID, "neighbour", NEIGHBOUR_FIELDS, neighbour_templates(), css)
+        self.city_model = self._model(CITY_MODEL_ID, "city", CITY_FIELDS, city_templates(), css)
         self.place_model = self._model(PLACE_MODEL_ID, "place", PLACE_FIELDS, place_templates(), PLACES_CSS + HINT_CSS + FACTS_CSS + MAP_ZOOM_CSS + LINKS_CSS + AUDIO_CSS)
         self.deck = genanki.Deck(stable_id(self.name), self.name, description(meta["name"], bool(self.voice)))
         self.notes = 0
@@ -190,7 +196,8 @@ class CountryDeckBuilder:
             "MapAnswer": self.media.image(f"{root}/{answer_path(pathlib.Path(document['map']))}", "map") if document["map"] else "",
             "Photo": self.media.image(f"{root}/{document['photo']['file']}", "photo") if photo_card else "",
             "Hint": "" if photo_card else escaped(masked(document)),
-            "Details": details_html(document) + links(f"{escaped(document['name'])}, {escaped(self.meta['name'])}", document["qid"], self.meta["language"]),
+            "Details": details_html(document) + links(f"{escaped(document['name'])}, {escaped(self.meta['name'])}", document["qid"], self.meta["language"],
+                                                      english=bool(document["wikipedia"])),
         }
         ords = [ord for ord, template in enumerate(place_templates()) if values[template.requires]]
         if not ords:
@@ -230,7 +237,8 @@ class CountryDeckBuilder:
     @staticmethod
     def _model(model_id: int, kind: str, fields: tuple[str, ...], templates: tuple[Template, ...], css: str) -> genanki.Model:
         return genanki.Model(model_id, f"{MODEL_FAMILY} {kind}", fields=[{"name": field} for field in fields],
-                             templates=[template.as_genanki(MAP_ZOOM_SCRIPT + LINKS_SCRIPT) for template in templates], css=css, sort_field_index=1)
+                             templates=[template.as_genanki(MAP_ZOOM_SCRIPT + native_languages_script(native_languages()) + LINKS_SCRIPT) for template in templates],
+                             css=css, sort_field_index=1)
 
 
 def build_country_deck(code: str, build_dir: pathlib.Path, output: pathlib.Path | None = None, data_dir: pathlib.Path = pathlib.Path("data"), tone_photos: bool = True) -> None:

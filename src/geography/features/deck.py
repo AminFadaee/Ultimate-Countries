@@ -178,7 +178,7 @@ class PlacesDeckBuilder:
             "Kind": html.escape(document["kind"]),
             "Map": self.media.image(document["map"], "map"),
             "Photo": self.media.image(document["photo"]["file"], "photo") if document["photo"] else "",
-            "Details": details_html(document) + links(search_query(document), document["qid"]),
+            "Details": details_html(document) + links(search_query(document), document["qid"], english=bool(document["wikipedia"])),
         }
         ords = [ord for ord, template in enumerate(TEMPLATES) if values[template.requires]]
         if not ords:

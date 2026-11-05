@@ -1,5 +1,6 @@
 import hashlib
 import html
+import json
 import logging
 import pathlib
 import re
@@ -58,10 +59,11 @@ LINKS_SCRIPT = """
 
   root.querySelectorAll(".links").forEach(function (box) {
     var query = encodeURIComponent(box.dataset.query);
+    var native = box.dataset.native || (window.NATIVE_WIKIPEDIA || {})[box.dataset.country];
     var page = function (language) { return "https://www.wikidata.org/wiki/Special:GoToLinkedPage/" + language + "wiki/" + box.dataset.qid; };
     var html = "";
-    if (box.dataset.qid) html += link("Wikipedia", page("en"), wiki());
-    if (box.dataset.qid && box.dataset.native) html += link("Wikipedia (" + box.dataset.native + ")", page(box.dataset.native), wiki(box.dataset.native));
+    if (box.dataset.qid && box.dataset.english !== "no") html += link("Wikipedia", page("en"), wiki());
+    if (box.dataset.qid && native) html += link("Wikipedia (" + native + ")", page(native), wiki(native));
     html += link("Google Images", "https://www.google.com/search?tbm=isch&q=" + query, ICONS.images);
     html += link("YouTube", "https://www.youtube.com/results?search_query=" + query, ICONS.youtube);
     html += link("Google Maps", "https://www.google.com/maps/search/?api=1&query=" + query, ICONS.maps);
@@ -72,9 +74,13 @@ LINKS_SCRIPT = """
 """
 
 
-def links(query: str, qid: str | None = "{{Id}}", native: str | None = None) -> str:
-    language = f' data-native="{native}"' if native else ""
-    return f'<div class="links" data-qid="{qid or ""}" data-query="{query}"{language}></div>'
+def links(query: str, qid: str | None = "{{Id}}", native: str | None = None, country: str | None = None, english: bool = True) -> str:
+    attributes = {"qid": qid or "", "query": query, "native": native, "country": country, "english": None if english else "no"}
+    return '<div class="links"' + "".join(f' data-{name}="{value}"' for name, value in attributes.items() if value is not None) + "></div>"
+
+
+def native_languages_script(languages: dict[str, str]) -> str:
+    return f"<script>window.NATIVE_WIKIPEDIA = {json.dumps(languages, sort_keys=True)};</script>"
 
 
 @dataclass(frozen=True)
@@ -87,8 +93,8 @@ class Template:
     def as_genanki(self, script: str = "") -> dict:
         return {"name": self.name, "qfmt": self.front + script, "afmt": self.back + script}
 
-    def with_links(self, query: str, native: str | None = None) -> "Template":
-        return replace(self, back=self.back + links(query, native=native))
+    def with_links(self, query: str, country: str | None = None) -> "Template":
+        return replace(self, back=self.back + links(query, country=country))
 
 
 @dataclass(frozen=True)
