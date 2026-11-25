@@ -28,6 +28,7 @@ from geography.images import save_compact
 from geography.labels import CityLabel, CityLabels, connector_boxes
 from geography.map_checks import label_problems, visibility_problems
 from geography.places import Place
+from geography.reference_lines import blocked_area, draw_references
 
 GEODETIC = ccrs.PlateCarree()
 EQUAL_AREA = "EPSG:6933"
@@ -58,6 +59,8 @@ LENS_MARGIN = 0.25
 MARKER_RADIUS = 0.12
 LENS_CLEARANCE = 0.1
 MARKER_REACH = 1.4
+RING_PAD = 0.06
+REFERENCE_LABEL_MARGIN = 0.15
 MIN_POINT_LENS_SPAN = 40_000
 WORLD_SIZE = (10, 5.26)
 WORLD_SIMPLIFY = 0.05
@@ -138,6 +141,8 @@ class Scene:
     min_zoom_span: float = 0.0
     zoom_threshold: float = ZOOM_THRESHOLD
     marker_only: bool = False
+    every_part_ringed: bool = False
+    reference_lines: bool = False
     frame_scale: float = 1.0
     min_frame_height: float = MIN_COUNTRY_FRAME_HEIGHT
     lens_highlight: gpd.GeoSeries | None = None
@@ -259,6 +264,22 @@ class Circle:
                 )
             )
         return lines
+
+
+def enclosing(points: np.ndarray, min_radius: float) -> Circle:
+    centre = (points.min(axis=0) + points.max(axis=0)) / 2
+    reach = np.hypot(*(points - centre).T).max()
+    return Circle(*centre, max(min_radius, reach + RING_PAD))
+
+
+def ring_groups(parts: list[np.ndarray], min_radius: float) -> list[Circle]:
+    groups = list(parts)
+    while True:
+        rings = [enclosing(group, min_radius) for group in groups]
+        touching = next(((i, j) for i, j in itertools.combinations(range(len(rings)), 2) if rings[i].distance_to(rings[j]) < rings[i].radius + rings[j].radius), None)
+        if touching is None:
+            return rings
+        groups = [group for k, group in enumerate(groups) if k not in touching] + [np.vstack([groups[k] for k in touching])]
 
 
 def empty_like(series: gpd.GeoSeries) -> gpd.GeoSeries:
@@ -463,6 +484,7 @@ class LocatorMap:
             extent = Extent(extent.width * scene.frame_scale, extent.height * scene.frame_scale, extent.x, extent.y)
         zoom = get_zoom(scene.lens_subject, projection, extent, scene.min_zoom_span, scene.zoom_threshold)
         aspect = extent.width / extent.height
+        rings: list[Circle] = []
         if scene.cities:
             inset_corner = clearest_corner(scene.cities, projection, extent)
         elif scene.framing is Framing.ANCHORED:
@@ -479,9 +501,11 @@ class LocatorMap:
             if zoom and scene.lenses:
                 self._plot_lenses(fig, scene, projection, extent, inset_corner)
             elif zoom:
-                self._plot_zoom(fig, scene, projection, extent, zoom, inset_corner)
+                rings = self._plot_zoom(fig, scene, projection, extent, zoom, inset_corner)
             elif scene.photo:
                 self._plot_corner_photo(fig, scene)
+            if scene.reference_lines:
+                self._plot_references(fig, scene, projection, extent, rings)
             if scene.overlay:
                 scene.overlay(self, fig, projection, extent)
             if scene.cities and scene.naming:
@@ -833,7 +857,7 @@ class LocatorMap:
         extent: Extent,
         zoom: Zoom,
         inset_corner: Corner,
-    ) -> None:
+    ) -> list[Circle]:
         fig_w, fig_h = fig.get_size_inches()
         xmin, _, ymin, _ = extent.bounds
         scale = fig_w / extent.width
@@ -845,8 +869,10 @@ class LocatorMap:
         )
         style = {"color": scene.style.highlight, "linewidth": 1.2, "transform": fig.dpi_scale_trans}
         if scene.marker_only:
-            fig.add_artist(patches.Circle((marker.x, marker.y), marker.radius, fill=False, **style))
-            return
+            rings = self._part_rings(scene, projection, extent, scale) if scene.every_part_ringed else [marker]
+            for ring in rings:
+                fig.add_artist(patches.Circle((ring.x, ring.y), ring.radius, fill=False, **style))
+            return rings
         lens = place_lens(marker, fig_w, fig_h, inset_corner)
 
         x, y, w, h = lens.rect
@@ -867,3 +893,25 @@ class LocatorMap:
         fig.add_artist(patches.Circle((marker.x, marker.y), marker.radius, fill=False, **style))
         for xs, ys in marker.tangents_to(lens):
             fig.add_artist(Line2D(xs, ys, **style))
+        return [marker]
+
+    @staticmethod
+    def _part_rings(scene: Scene, projection: ccrs.Projection, extent: Extent, scale: float) -> list[Circle]:
+        xmin, _, ymin, _ = extent.bounds
+        parts = scene.highlight.explode(index_parts=False).to_crs(projection.proj4_init)
+        rings = ring_groups([(np.asarray(part.exterior.coords) - [xmin, ymin]) * scale for part in parts if not part.is_empty], MARKER_RADIUS)
+        width, height = extent.width * scale, extent.height * scale
+        return [ring for ring in rings if 0 <= ring.x <= width and 0 <= ring.y <= height]
+
+    def _plot_references(self, fig: Figure, scene: Scene, projection: ccrs.Projection, extent: Extent, rings: list[Circle]) -> None:
+        ax = fig.axes[0]
+        xmin, xmax, ymin, ymax = extent.bounds
+        scale = fig.get_size_inches()[0] / extent.width
+        renderer = fig.canvas.get_renderer()
+        to_data = ax.transData.inverted()
+        others = [axes.get_window_extent(renderer) for axes in fig.axes[1:]]
+        keep_clear = [box(xmin + (ring.x - ring.radius) / scale, ymin + (ring.y - ring.radius) / scale, xmin + (ring.x + ring.radius) / scale, ymin + (ring.y + ring.radius) / scale) for ring in rings]
+        keep_clear += [box(*to_data.transform(area.corners()).min(axis=0), *to_data.transform(area.corners()).max(axis=0)) for area in others]
+        land = list(get_visible(self.data.countries.geometry, projection, extent))
+        subject = box(*scene.lens_subject.to_crs(projection.proj4_init).total_bounds).centroid
+        draw_references(ax, projection, (xmin, ymin, xmax, ymax), REFERENCE_LABEL_MARGIN / scale, blocked_area(land, projection, keep_clear), subject)

@@ -654,7 +654,7 @@ class Collector:
 
     def _render_country_maps(self, countries: list[Country], options: Options) -> None:
         jobs = [
-            MapJob(country.id, country.id, self._country_map_path(country), country.name, country.alpha_3)
+            MapJob(country.id, country.id, self._country_map_path(country), country.name, country.alpha_3, subregion=country.subregion)
             for country in countries
             if options.rerender_maps or not self._country_map_path(country).exists()
         ]

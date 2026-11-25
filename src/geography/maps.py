@@ -24,6 +24,7 @@ POINT_TOLERANCE = 2_000
 SETTLEMENT_TYPES = ("city", "town", "village", "municipality")
 DISTRICT_TYPES = ("county", "municipality")
 MAX_DISTRICT_AREA = 3_000_000_000
+PACIFIC_SUBREGIONS = frozenset({"Polynesia", "Micronesian Region", "Melanesia"})
 
 logger = logging.getLogger(__name__)
 
@@ -40,6 +41,7 @@ class MapJob:
     place_point: tuple[float, float] | None = None
     answer_output: pathlib.Path | None = None
     cities: tuple[CityLabel, ...] = ()
+    subregion: str | None = None
 
 
 class MapWorker:
@@ -64,6 +66,8 @@ class MapWorker:
                 scene = replace(scene, lens_highlight=gpd.GeoSeries([detail], crs=data.crs))
             if job.alpha_3 in ISLAND_FRAMES:
                 scene = island_scene(scene, country, data, ISLAND_FRAMES[job.alpha_3])
+            if job.subregion in PACIFIC_SUBREGIONS:
+                scene = replace(scene, every_part_ringed=True, reference_lines=True)
         else:
             geometry = place_geometry(job, data.crs)
             if job.place_geometry is not None:
@@ -151,7 +155,7 @@ def redraw_country_maps(codes: Iterable[str], data_dir: pathlib.Path, workers: i
         document = json.loads(path.read_text())
         if document["codes"]["alpha_3"] in codes:
             output = data_dir / document["map"] if output_dir is None else output_dir / pathlib.Path(document["map"]).name
-            jobs.append(MapJob(document["id"], document["id"], output, document["name"], document["codes"]["alpha_3"]))
+            jobs.append(MapJob(document["id"], document["id"], output, document["name"], document["codes"]["alpha_3"], subregion=document["subregion"]))
     for job, error in render_maps(jobs, workers):
         if error:
             logger.error("Map failed for %s: %s", job.entity_name, error)
