@@ -1,4 +1,5 @@
 import logging
+import os
 import pathlib
 from dataclasses import dataclass
 from datetime import UTC, datetime, timedelta
@@ -54,7 +55,7 @@ def download_file(url: str, path: pathlib.Path, max_age: timedelta | None = None
 
     logger.info("Downloading %s...", path.name)
     path.parent.mkdir(parents=True, exist_ok=True)
-    partial = path.with_name(f"{path.name}.part")
+    partial = path.with_name(f"{path.name}.{os.getpid()}.part")
     try:
         with requests.get(url, stream=True, timeout=TIMEOUT) as response:
             response.raise_for_status()
